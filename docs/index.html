@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>D&D Session Logs</title>
+  <style>
+/* D&D 5e Player's Handbook Styling - Adapted from Foundry VTT */
+
+/* Font Embedding */
+
+
+/* Base Document Styling - Foundry VTT Adapted */
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c2c2c; /* Dark browser background */
+}
+
+.phb-container {
+    color: #000;
+    padding: 1cm 1.7cm;
+    padding-bottom: 1.5cm;
+    background-color: #EEE5CE;	
+    background-image: linear-gradient(135deg, #EEE5CE 0%, #F5F1E8 100%);
+    
+    font-family: "Bookinsanity", "Book Antiqua", serif !important;
+    font-size: 0.317cm !important;
+    text-rendering: optimizeLegibility !important;
+    
+    max-width: 21cm;
+    margin: 2em auto;
+    min-height: 29.7cm; /* A4 height */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    line-height: 1.3em;
+}
+
+/* Headers - Foundry VTT Style */
+.phb-container h1, 
+.phb-container h2, 
+.phb-container h3, 
+.phb-container h4 {
+    margin-top: 0.2em !important; 
+    margin-bottom: 0.2em !important;
+    font-family: "Mr Eaves Small Caps", "Cinzel", serif !important;
+    color: rgb(93, 24, 13) !important;
+    font-weight: normal;
+}
+
+.phb-container h1 {
+    font-size: 0.987cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1.2px;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.phb-container h2 {
+    font-size: 0.705cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h3 {
+    font-size: 0.529cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: 2px solid #c9ad6a;
+    -webkit-text-stroke-width: 0.6px;
+    padding-bottom: 0.1em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h4 {
+    margin-bottom: 0 !important;
+    font-size: 0.458cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    -webkit-text-stroke-width: 0.6px;
+}
+
+.phb-container h5 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-family: "Scaly Sans Caps", "Cinzel", serif;
+    font-size: 0.423cm;
+    font-weight: 900;
+    color: rgb(93, 24, 13);
+}
+
+/* Body Text - Foundry VTT Style */
+.phb-container p {
+    margin: 0 0 10.5px;
+    line-height: 1.3em;
+    -webkit-text-stroke-width: 0px;
+}
+
+.phb-container p + p {
+    margin-top: -0.8em;
+}
+
+/* First Letter Drop Cap - Foundry Style - Only for first content paragraph */
+.phb-container .section:first-of-type p:first-of-type::first-letter {
+    float: left;
+    font-family: "Solbera Imitation", "Cinzel Decorative", serif;
+    font-size: 5em;
+    color: #222;
+    line-height: 0.8em;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+}
+
+/* Paragraph Indentation - Foundry Style */
+.phb-container p + p, 
+.phb-container ul + p,
+.phb-container ol + p {
+    text-indent: 1em;
+}
+
+/* Read-Aloud Text Boxes */
+.phb-container .read-aloud, 
+.phb-container .descriptive-text {
+    background: #faf9f4;
+    border: 2px solid #c9ad6a;
+    border-radius: 0;
+    padding: 0.8em 1em;
+    margin: 1em 0;
+    font-style: italic;
+    position: relative;
+    text-indent: 0 !important; /* No indentation in boxes */
+}
+
+.phb-container .read-aloud::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid #8b7355;
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* Tables - Foundry Style */
+.phb-container table {
+    font-family: "Scaly Sans", "Noto Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.phb-container table th {
+    background: #c9ad6a;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    text-align: left;
+}
+
+/* Dialogue Entries - Enhanced Spacing */
+.phb-container .dialogue-entry {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+    border-left: 3px solid #c9ad6a;
+    padding-left: 1em;
+    margin-left: 0.5em;
+}
+
+.phb-container table td {
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    vertical-align: top;
+}
+
+.phb-container table tr:nth-child(even) {
+    background: #f5f3ed;
+}
+
+/* Lists */
+.phb-container ul, 
+.phb-container ol {
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+
+.phb-container li {
+    margin: 0.2em 0;
+}
+
+/* Strong and Emphasis */
+.phb-container strong, 
+.phb-container b {
+    font-weight: bold;
+    color: rgb(93, 24, 13);
+}
+
+.phb-container em, 
+.phb-container i {
+    font-style: italic;
+}
+
+/* Images */
+.phb-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #c9ad6a;
+    border-radius: 3px;
+    margin: 1em 0;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .phb-container {
+        margin: 1em;
+        padding: 1em;
+        font-size: 0.35cm !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .phb-container {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+    }
+}
+</style>
+</head>
+<body class="phb-container">
+  <h1>D&D Session Logs</h1>
+  <ul>
+<li><a href="quest_log.html">D&D Session Logs</a></li>
+<li><a href="session_recap.html">D&D Session Logs</a></li>
+</ul>
+</body>
+</html>
