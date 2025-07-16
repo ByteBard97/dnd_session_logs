@@ -29,12 +29,15 @@ except ImportError:  # pragma: no cover – should not happen in project root
     sys.exit(1)
 
 
-def collect_html_files(docs_dir: Path) -> List[Path]:
-    """Return a list of .html files inside *docs_dir* (excluding index.html)."""
-    return sorted(p for p in docs_dir.glob("*.html") if p.name.lower() != "index.html")
+def collect_html_files(docs_dir: Path, recursive: bool = False) -> List[Path]:
+    """Return list of .html files inside *docs_dir* (optionally recursive), excluding index.html."""
+    pattern = "**/*.html" if recursive else "*.html"
+    return sorted(
+        p for p in docs_dir.glob(pattern) if p.name.lower() != "index.html"
+    )
 
 
-def build_index_body(html_files: List[Path]) -> str:
+def build_index_body(html_files: List[Path], docs_dir: Path) -> str:
     """Generate an unordered list of links to *html_files*."""
     items = []
     for f in html_files:
@@ -53,7 +56,8 @@ def build_index_body(html_files: List[Path]) -> str:
         if not display:
             display = f.stem.replace("_", " ").title()
 
-        items.append(f"<li><a href=\"{f.name}\">{display}</a></li>")
+        rel_path = f.relative_to(docs_dir)
+        items.append(f"<li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
 
     return "<ul>\n" + "\n".join(items) + "\n</ul>"
 
@@ -63,6 +67,7 @@ def main() -> None:
     parser.add_argument("docs_dir", nargs="?", type=Path, default=Path("docs"), help="Directory containing HTML logs (default: ./docs)")
     parser.add_argument("--title", "-t", default="D&D Session Logs", help="Title for the index page")
     parser.add_argument("--dnd-style", action="store_true", help="Use PHB styling (recommended if logs were made with --dnd-style)")
+    parser.add_argument("--recursive", action="store_true", help="Include HTML files in subdirectories as well")
     args = parser.parse_args()
 
     docs_dir: Path = args.docs_dir.resolve()
@@ -70,12 +75,12 @@ def main() -> None:
         sys.stderr.write(f"[ERROR] Docs directory not found: {docs_dir}\n")
         sys.exit(1)
 
-    html_files = collect_html_files(docs_dir)
+    html_files = collect_html_files(docs_dir, recursive=args.recursive)
     if not html_files:
         sys.stderr.write(f"[WARN] No HTML files found in {docs_dir}; nothing to index.\n")
         sys.exit(0)
 
-    body = build_index_body(html_files)
+    body = build_index_body(html_files, docs_dir)
     full_html = build_full_html(body, args.title, args.dnd_style)
 
     out_path = docs_dir / "index.html"
