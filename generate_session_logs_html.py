@@ -82,20 +82,8 @@ def collect_markdown_files(path: Path) -> List[Path]:
     return files
 
 
-def convert_files_to_html(
-    files: List[Path], *, include_toc: bool = False, debug: bool = False
-) -> str:
-    """Convert each markdown file and concatenate to a single HTML string.
-
-    Parameters
-    ----------
-    files: list of Path
-        Markdown/text files to convert.
-    include_toc: bool, optional
-        If True, prepend a generated Table of Contents.
-    debug: bool, optional
-        Emit verbose debugging information when True.
-    """
+def convert_files_to_html(files: List[Path], include_toc: bool = False) -> str:
+    """Convert each markdown file and concatenate to a single HTML string."""
     html_parts: List[str] = []
     toc_entries: List[str] = []
 
@@ -112,20 +100,16 @@ def convert_files_to_html(
             import re
             md_text = re.sub(r"\s*\{#[-a-zA-Z0-9_:.]+\}", "", md_text)
 
-            if debug:
-                # Report any raw '####' markdown headers before conversion
-                for line_no, line in enumerate(md_text.splitlines(), start=1):
-                    if line.lstrip().startswith("#### "):
-                        print(
-                            f"[DEBUG] Raw #### header in {f.name} line {line_no}: {line.strip()[:120]}"
-                        )
+            # DEBUG: Report any raw '####' markdown headers before conversion
+            for line_no, line in enumerate(md_text.splitlines(), start=1):
+                if line.lstrip().startswith("#### "):
+                    print(f"[DEBUG] Raw #### header in {f.name} line {line_no}: {line.strip()[:120]}")
 
         body_html = md.convert(md_text)
 
-        if debug and '####' in body_html:
-            print(
-                f"[DEBUG] Literal #### found in rendered HTML for {f.name}; applying fallback conversion."
-            )
+        # DEBUG: Detect remaining literal '####' sequences in rendered HTML (should not happen)
+        if '####' in body_html:
+            print(f"[DEBUG] Literal #### found in rendered HTML for {f.name}; applying fallback conversion.")
 
         # Handle headings missed and wrapped in <p> tags
         header_patterns = [
@@ -141,10 +125,21 @@ def convert_files_to_html(
         for pattern, repl in header_patterns:
             body_html = re.sub(pattern, repl, body_html, flags=re.MULTILINE)
 
-        if debug and '####' in body_html:
-            print(
-                f"[WARN] #### still present in HTML for {f.name} after fallback conversion – manual inspection recommended."
-            )
+        # Demote oversized <h1> headings (often used as paragraph markers in original markdown) to normal paragraphs.
+        # We determine "oversized" after stripping any nested HTML tags (e.g., <em>, <strong>).  If the plain text
+        # exceeds ~120 characters or ~25 words, we treat it as a paragraph, not a heading.
+        def _demote_if_long(match: "re.Match[str]") -> str:  # type: ignore[name-defined]
+            full_tag, attrs, inner = match.group(0), match.group(1), match.group(2)
+            plain = re.sub(r"<[^>]+>", "", inner)  # strip nested tags
+            if len(plain) > 120 or len(plain.split()) > 25:
+                return f"<p>{inner}</p>"
+            return full_tag
+
+        body_html = re.sub(r"<h1([^>]*)>(.*?)</h1>", _demote_if_long, body_html, flags=re.DOTALL)
+
+        # DEBUG: After fallback, double-check that no #### remain
+        if '####' in body_html:
+            print(f"[WARN] #### still present in HTML for {f.name} after fallback conversion – manual inspection recommended.")
 
         html_parts.append(heading_html)
         html_parts.append(body_html)
@@ -230,54 +225,37 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Embed D&D Player's Handbook styling (Foundry PHB CSS + embedded Solbera fonts) for authentic look.",
     )
-    parser.add_argument(
-        "--out-dir",
-        type=Path,
-        default=Path("docs"),
-        help="Destination directory for generated HTML files (default: docs). Ignored when --output is an absolute path and --separate is false.",
-    )
-    parser.add_argument(
-        "--debug",
-        action="store_true",
-        help="Enable verbose debugging output (header detection, conversion stages).",
-    )
     return parser.parse_args()
 
 
 def main() -> None:
     args = parse_args()
     files = collect_markdown_files(args.input_path)
+    # Always output generated HTML into the repository-level "docs" folder so it can be served by GitHub Pages.
+    docs_dir = (Path(__file__).parent / "docs").resolve()
+    docs_dir.mkdir(parents=True, exist_ok=True)
 
     if args.separate and args.input_path.is_dir():
         print(f"[INFO] Generating individual HTML files for {len(files)} source files…")
-
-        dest_dir = args.out_dir
-        dest_dir.mkdir(parents=True, exist_ok=True)
-
         for src in files:
-            body_html = convert_files_to_html([src], include_toc=False, debug=args.debug)
+            body_html = convert_files_to_html([src], include_toc=False)
             # Use per-file title if not default
             per_title = src.stem.replace("_", " ").title()
             full_html = build_full_html(body_html, per_title, args.dnd_style)
-            out_path = dest_dir / f"{src.stem}.html"
+            out_path = docs_dir / f"{src.stem}.html"
             out_path.write_text(full_html, encoding="utf-8")
-            if args.debug:
-                # Display a user-friendly path without raising errors for mixed absolute/relative cases
-                try:
-                    display_path = out_path.relative_to(Path.cwd()) if out_path.is_absolute() else out_path
-                except ValueError:
-                    display_path = out_path
-                print(f"  • Wrote {display_path}")
+            # Display a user-friendly path without raising errors for mixed absolute/relative cases
+            try:
+                display_path = out_path.relative_to(Path.cwd()) if out_path.is_absolute() else out_path
+            except ValueError:
+                display_path = out_path
+            print(f"  • Wrote {display_path}")
     else:
         print(f"[INFO] Converting {len(files)} file(s) to a single HTML…")
-        body_html = convert_files_to_html(files, include_toc=args.toc, debug=args.debug)
+        body_html = convert_files_to_html(files, include_toc=args.toc)
         full_html = build_full_html(body_html, args.title, args.dnd_style)
 
-        output_path = args.output
-        if args.out_dir:
-            args.out_dir.mkdir(parents=True, exist_ok=True)
-            output_path = args.out_dir / args.output.name
-
+        output_path = args.output if args.output.is_absolute() else docs_dir / args.output.name
         output_path.write_text(full_html, encoding="utf-8")
         print(f"[SUCCESS] Wrote {output_path.resolve()}")
 
