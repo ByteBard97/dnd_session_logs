@@ -1,0 +1,6 @@
+[submodule "web_frameworks/foundry-vtt-5e-phb-journal-styling"]
+	path = web_frameworks/foundry-vtt-5e-phb-journal-styling
+	url = https://github.com/Daxiongmao87/foundry-vtt-5e-phb-journal-styling.git
+[submodule "web_frameworks/solbera-dnd-fonts"]
+	path = web_frameworks/solbera-dnd-fonts
+	url = https://github.com/jonathonf/solbera-dnd-fonts.git
