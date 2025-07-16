@@ -1,0 +1,1579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quest Log</title>
+  <style>
+/* D&D 5e Player's Handbook Styling - Adapted from Foundry VTT */
+
+/* Font Embedding */
+
+
+/* Base Document Styling - Foundry VTT Adapted */
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c2c2c; /* Dark browser background */
+}
+
+.phb-container {
+    color: #000;
+    padding: 1cm 1.7cm;
+    padding-bottom: 1.5cm;
+    background-color: #EEE5CE;	
+    background-image: linear-gradient(135deg, #EEE5CE 0%, #F5F1E8 100%);
+    
+    font-family: "Bookinsanity", "Book Antiqua", serif !important;
+    font-size: 0.317cm !important;
+    text-rendering: optimizeLegibility !important;
+    
+    max-width: 21cm;
+    margin: 2em auto;
+    min-height: 29.7cm; /* A4 height */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    line-height: 1.3em;
+}
+
+/* Headers - Foundry VTT Style */
+.phb-container h1, 
+.phb-container h2, 
+.phb-container h3, 
+.phb-container h4 {
+    margin-top: 0.2em !important; 
+    margin-bottom: 0.2em !important;
+    font-family: "Mr Eaves Small Caps", "Cinzel", serif !important;
+    color: rgb(93, 24, 13) !important;
+    font-weight: normal;
+}
+
+.phb-container h1 {
+    font-size: 0.987cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1.2px;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.phb-container h2 {
+    font-size: 0.705cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h3 {
+    font-size: 0.529cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: 2px solid #c9ad6a;
+    -webkit-text-stroke-width: 0.6px;
+    padding-bottom: 0.1em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h4 {
+    margin-bottom: 0 !important;
+    font-size: 0.458cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    -webkit-text-stroke-width: 0.6px;
+}
+
+.phb-container h5 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-family: "Scaly Sans Caps", "Cinzel", serif;
+    font-size: 0.423cm;
+    font-weight: 900;
+    color: rgb(93, 24, 13);
+}
+
+/* Body Text - Foundry VTT Style */
+.phb-container p {
+    margin: 0 0 10.5px;
+    line-height: 1.3em;
+    -webkit-text-stroke-width: 0px;
+}
+
+.phb-container p + p {
+    margin-top: -0.8em;
+}
+
+/* First Letter Drop Cap - Foundry Style - Only for first content paragraph */
+.phb-container .section:first-of-type p:first-of-type::first-letter {
+    float: left;
+    font-family: "Solbera Imitation", "Cinzel Decorative", serif;
+    font-size: 5em;
+    color: #222;
+    line-height: 0.8em;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+}
+
+/* Paragraph Indentation - Foundry Style */
+.phb-container p + p, 
+.phb-container ul + p,
+.phb-container ol + p {
+    text-indent: 1em;
+}
+
+/* Read-Aloud Text Boxes */
+.phb-container .read-aloud, 
+.phb-container .descriptive-text {
+    background: #faf9f4;
+    border: 2px solid #c9ad6a;
+    border-radius: 0;
+    padding: 0.8em 1em;
+    margin: 1em 0;
+    font-style: italic;
+    position: relative;
+    text-indent: 0 !important; /* No indentation in boxes */
+}
+
+.phb-container .read-aloud::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid #8b7355;
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* Tables - Foundry Style */
+.phb-container table {
+    font-family: "Scaly Sans", "Noto Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.phb-container table th {
+    background: #c9ad6a;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    text-align: left;
+}
+
+/* Dialogue Entries - Enhanced Spacing */
+.phb-container .dialogue-entry {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+    border-left: 3px solid #c9ad6a;
+    padding-left: 1em;
+    margin-left: 0.5em;
+}
+
+.phb-container table td {
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    vertical-align: top;
+}
+
+.phb-container table tr:nth-child(even) {
+    background: #f5f3ed;
+}
+
+/* Lists */
+.phb-container ul, 
+.phb-container ol {
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+
+.phb-container li {
+    margin: 0.2em 0;
+}
+
+/* Strong and Emphasis */
+.phb-container strong, 
+.phb-container b {
+    font-weight: bold;
+    color: rgb(93, 24, 13);
+}
+
+.phb-container em, 
+.phb-container i {
+    font-style: italic;
+}
+
+/* Images */
+.phb-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #c9ad6a;
+    border-radius: 3px;
+    margin: 1em 0;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .phb-container {
+        margin: 1em;
+        padding: 1em;
+        font-size: 0.35cm !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .phb-container {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+    }
+}
+</style>
+</head>
+<body class="phb-container">
+  <h1>Quest Log</h1>
+  <h2 id="quest_log">Quest Log</h2>
+
+<h1 id="_1"></h1>
+<p><a href="#session-1">Session 1</a></p>
+<p><a href="#session-2">Session 2</a></p>
+<p><a href="#session-3">Session 3</a></p>
+<p><a href="#session-4">Session 4</a></p>
+<p><a href="#session-5">Session 5</a></p>
+<p><a href="#session-6">Session 6</a></p>
+<p><a href="#session-7">Session 7</a></p>
+<p><a href="#session-8">Session 8</a></p>
+<p><a href="#session-9">Session 9</a></p>
+<p><a href="#session-10">Session 10</a></p>
+<p><a href="#session-11">Session 11</a></p>
+<p><a href="#session-12">Session 12</a></p>
+<p><a href="#session-13">Session 13</a></p>
+<p><a href="#session-14">Session 14</a></p>
+<p><a href="#session-15">Session 15</a></p>
+<p><a href="#session-16">Session 16</a></p>
+<p><a href="#session-17">Session 17</a></p>
+<p><a href="#session-18">Session 18</a></p>
+<p><a href="#session-19">Session 19</a></p>
+<p><a href="#session-20">Session 20</a></p>
+<p><a href="#session-21">Session 21</a></p>
+<p><a href="#updated-quest-log">Updated Quest Log</a></p>
+<p><a href="#session-22">Session 22</a></p>
+<p><a href="#session-23">Session 23</a></p>
+<p><a href="#session-24">Session 24</a></p>
+<p><a href="#rescue-of-the-children">Rescue of the Children</a></p>
+<p><a href="#volkan's-dynamo-&amp;-the-new-quest">Volkan's Dynamo &amp; The New Quest</a></p>
+<p><a href="#the-web-clogged-domes:-exploration">The Web-Clogged Domes: Exploration</a></p>
+<p><a href="#boss-fight:-eurysphex,-the-broodmother">Boss Fight: Eurysphex, the Broodmother</a></p>
+<p><a href="#loot-&amp;-aftermath">Loot &amp; Aftermath</a></p>
+<p><a href="#session-end-state">Session End State</a></p>
+<p><a href="#session-25">Session 25</a></p>
+<p><a href="#session-26">Session 26</a></p>
+<p><a href="#quest-log:-session-of-june-19,-2025">Quest Log: Session of June 19, 2025</a></p>
+<p><a href="#session-27">Session 27</a></p>
+<p><a href="#session-28">Session 28</a></p>
+<p><a href="#session-29">Session 29</a></p>
+<h1 id="session-1">Session 1</h1>
+<ul>
+<li>The Sour Vintage, our adventure begins.  </li>
+<li>Oath of Peace is at its end, 75 days ad heroes must arise  </li>
+<li>We meet Aetala, the innkeeper  </li>
+<li>We are here to meet Kyra  </li>
+<li>Arisia the syren rogue, Demetrius the Nymph bard, Zepherion the gladiator centaur, and Kyrios the medusa wizard, Tharok the Minotaur Barbarian, Kain, the sea elf ranger meet after hearing about great trouble in the land after being summon to the inn  </li>
+<li>Kyrah walks in and greets the party  </li>
+<li>And then we are in the Prophecy!!!  </li>
+<li>Kyrah tells us of the Boar we have all heard about, spawned by the Titans</li>
+</ul>
+<h1 id="session-2">Session 2</h1>
+<ul>
+<li><strong>The Sour Vintage Tavern</strong>: Our adventure begins in the rustic Sour Vintage Inn, where the end of the Oath of Peace looms, granting only 75 days for heroes to rise and face the darkening tides in Thylea. Each of you has been called here, drawn by whispers of destiny.  </li>
+<li><strong>A Prophetic Gathering</strong>: Kyrah, a poet with secrets of her own, enters to greet you all—Ari, the siren rogue with charm and wit; Demetrius, the noble bard whose songs carry ancient echoes; Kain, the sea elf ranger destined to slay mighty beasts; Kyrios, the haunted medusa wizard who sees shadows in the future; Tharok, the fierce minotaur barbarian haunted by curses; and Zephyrion, the mighty centaur fighter blessed by gods. Together, you listen as Kyrah reveals your path: the Titans have unleashed a monstrous, corrupted boar—a harbinger of terror meant to cow the mortals into fear and submission.  </li>
+<li><strong>A Long Night</strong>: As you prepare for the journey, Ari attempts a little mischief, hoping to win gold at a gambler's table—but is promptly caught, much to the chagrin of the local farmers! The atmosphere grows tense as wounded hunters and frightened locals warn of the creature's devastation, its tusks leaving scars on the land and hearts alike.  </li>
+<li><strong>The Hunt Begins</strong>: At dawn, you set out, led by Kyrah and joined by two hired hunters, Taneias and Javon. The morning mist and fog roll in, but despite your efforts to track the beast, the trail eludes you, and you encounter a pack of wolves. In a brief yet fierce battle, you vanquish the wolves and press on through the wilderness.  </li>
+<li><strong>The Lair of the Boar</strong>: Finally, you discover the monstrous boar's lair, a cave echoing with the guttural sounds of the corrupted beast. Traps are set, tension builds, and the beast emerges in a fury, charging forward. The hunter Taneias is gored before your eyes, his body tossed aside, a grim reminder of the boar's terrible strength. But you fight on, giving your all in a brutal showdown until, at last, the beast falls!  </li>
+<li><strong>An Ominous Warning</strong>: As the creature's life fades, it speaks—a voice booming in your minds: "Your sins cannot be atoned. An ancient power sleeps in the heart of Thylea, and when it awakens, all mortal things shall fall to death and darkness." The warning lingers, leaving you chilled even as the last echo fades.  </li>
+<li><strong>A Hero's Offering</strong>: You light a pyre for the boar, dedicating the offering to Mytros, the goddess of dawn, who blesses you with the charm of heroism. With the flames behind you, you return to the Sour Vintage Inn, where grateful locals greet you with feasting and celebration. You're the heroes of the Heartlands, lauded and toasted, their hope rekindled in these dark times.  </li>
+<li><strong>A New Mission</strong>: As the evening winds down, Kyrah reveals a new purpose. She urges you to seek out the Oracle, Versi, whose knowledge may yet illuminate your fates and guide you against the forces of Sydon and Lutheria.  </li>
+<li><strong>The Temple of the Oracle</strong>: After a half day's journey, you find the Oracle's temple—a forbidding chasm in the earth. Watching from the shadows, you see soldiers bearing the livery of Sydon, their presence like a shadow over Versi's sanctuary. With deftness and cunning, Ari infiltrates their ranks, deceiving the head acolyte. The ruse allows you to strike with coordinated strength, routing the soldiers who pour out to meet you, finally clearing a path forward.</li>
+</ul>
+<h1 id="session-3">Session 3</h1>
+<p><strong><em>Stealth in the Shadows:</em></strong></p>
+<ul>
+<li>Under the cloak of darkness and the eerie fog emanating from the boiling geysers outside, the party stealthily navigated the treacherous grounds of the Temple of the Oracle. Every step was measured, every breath held, as the heroes moved silently through the oppressive gloom.<br />
+<strong><em>A Priest Falls:</em></strong>  </li>
+<li>With unwavering precision, <strong>Zephyrion</strong> hurled a magical javelin, piercing the heart of <strong>Braeca</strong>, the formidable priest of Sydon. The fall of Braeca sent ripples of shock through the enemy ranks, marking a significant blow against the forces of darkness.<br />
+<strong><em>Rescue and Gratitude:</em></strong>  </li>
+<li>Seizing the moment, the party swiftly freed the captive priests. <strong>Proteus</strong>, their grateful leader, expressed heartfelt thanks and rewarded each hero with a <strong>Potion of Healing</strong>, bolstering their strength for the challenges ahead.<br />
+<strong><em>The Mimic's Deception:</em></strong>  </li>
+<li>Utilizing <strong>Bardic Inspiration</strong>, the party skillfully lockpicked a formidable locked door. However, <strong>Kain</strong>'s cautious arrow strike revealed the door's true nature—a <strong>massive Mimic</strong> lying in wait! A fierce battle erupted in the stairwell as the heroes confronted the deceitful beast.  </li>
+<li><strong>Ariasia</strong> delivered a critical sneak attack, laying the Mimic low and securing their path forward amidst the chaos.<br />
+<strong><em>Descent into Darkness:</em></strong>  </li>
+<li>The heroes descended into the temple's basement, moving silently between flickering torchlights. Those without dark vision followed closely behind their sighted companions, ensuring no step gave away their presence.<br />
+<strong><em>A Chilling Discovery:</em></strong>  </li>
+<li>Peering around a shadowed corner, the party witnessed a horrifying scene: <strong>Versi</strong>, the Oracle, was trapped, while the malevolent <strong>Heleka</strong> tormented a helpless temple attendant. Determined to act, the heroes fired an arrow from the darkness, striking Heleka and startling her into vulnerability.<br />
+<strong><em>Heleka's Wrath:</em></strong>  </li>
+<li>Enraged, Heleka unleashed her <strong>Fear Aura</strong>, though it scarcely affected the resolute heroes. Desperate to regain control, she hurled piles of rotting fishbones, summoning three <strong>Kuo-Toa Minions</strong> to her side. A brutal battle ensued, with heavy blows exchanged and the air thick with tension.<br />
+<strong><em>Triumphant Victory:</em></strong>  </li>
+<li>Despite Heleka's relentless assault, the heroes pressed on. In a climactic moment, a decisive blow landed, felling the hag. As Heleka's lifeless body crumbled, the <strong>Water Weird</strong> shattered, flooding the chamber and freeing the captive <strong>Versi</strong> from her watery prison.<br />
+<strong><em>Secrets Unveiled:</em></strong>  </li>
+<li>Among Heleka's remains, the party discovered an ominous note—seemingly penned by <strong>Sydon</strong>, hinting at deeper conspiracies and greater threats lurking in the shadows.<br />
+<strong><em>Versi's Revelation:</em></strong>  </li>
+<li><strong>Versi</strong> expressed profound gratitude to the party for rescuing her and the temple acolytes from <strong>Sydon</strong>'s vile servants. She bestowed upon each hero the knowledge of their <strong>Great Labors</strong>, setting them firmly on their destined paths to fulfill the prophecy.<br />
+<strong><em>Escape and Peril:</em></strong>  </li>
+<li>As the heroes made their way out of the temple, they investigated a central island adorned with plush pillows and luxurious carpets. In a sudden twist of fate, <strong>Zephyrion</strong> galloped onto the island, only to be ensnared by a <strong>Rug of Smothering</strong>!  </li>
+<li>The party acted swiftly—<strong>Kain</strong> fired a <strong>Flaming Arrow</strong>, engulfing the enchanted rug in flames and freeing <strong>Zephyrion</strong> from near death. They extinguished the remaining ashes, reviving their brave centaur just in time.<br />
+<strong><em>Divine Counsel and Oaths:</em></strong>  </li>
+<li><strong>Proteus</strong> handed each hero a <strong>Burnished Dragonlord Coin</strong>, urging them to forsake fame in favor of their noble mission.  </li>
+<li>Defying Proteus's counsel, <strong>Kyrah</strong> passionately insisted that the heroes embrace their hard-earned fame. She proposed an <strong>Oath of Fealty</strong>, binding the party together to share their glory equally, ensuring that no single hero would overshadow the others. United by their oath, the heroes strengthened their bonds and solidified their commitment to the prophecy.<br />
+<strong><em>March to Estoria:</em></strong>  </li>
+<li>With hearts full of purpose and spirits undeterred, the party embarked on a four-hour march through the twilight hours, making their way to the <strong>Centrally Located City of Estoria</strong>. As they approached the south gate, the anticipation of new challenges and adventures loomed on the horizon.</li>
+</ul>
+<h1 id="session-4">Session 4</h1>
+<ul>
+<li>The party explores the city   </li>
+<li>The gang went to the dragon tooth inn.   </li>
+<li>Demetrius played music and impressed the bartender, getting everyone a discount on their stay at the inn as well as getting some gold from the patrons  </li>
+<li>Ari pickpocketed some gold as well   </li>
+<li>Kain learned from the innkeeper at Dragon's Tooth that Damon the priest is the Guardian of the necropolis  </li>
+<li>Those who rob the tombs of the necropolis might become cursed  </li>
+<li>Apologizing to the guardian of the necropolis can maybe remove the curse or finding a priest in the cities to the south  </li>
+<li>The gang goes to Volkan's hall  </li>
+<li>Demetrius talks to Volkan, revealing that we're the oracle's chosen  </li>
+<li>Tharok asks to make an amulet and Volkan requests that he investigate the Mythril forge in exchange  </li>
+<li>Zephyrion asks for horse shoes and about the silver spear - Volkan confirms he made that spear  </li>
+<li>Volkan is Pythor's <strong>father</strong>  </li>
+<li>Kain buys a weird amulet from a man, gets him down from 1GP to 1SP  </li>
+<li>Inspected the amulet using the arcana power's of Rhys  </li>
+<li>Necklace of fireballs (1 left)  </li>
+<li>Kain immediately loses his appetite  </li>
+<li><strong>The Wine Festival Play:</strong>  </li>
+<li><strong>The Fall of Estor.</strong> This tragedy takes place during the First War and depicts Estor Arkelander's final days. In the end, he sacrifices himself to save the entire crew of his legendary ship, the Ultros.  </li>
+<li>Come back in three days to see the play and participate in the wine  </li>
+<li>Ari gets a trident from Volkan  </li>
+<li>The gang goes to the market   </li>
+<li>Ari scams some dice players for 16 silver   </li>
+<li>Zeph buys some caltrops  </li>
+<li>Kain buys 2 flask of oils, 1 pack (20) caltrops, and donates 8 GP to a random vendor named Estor – telling him to remember him and that he will need his help sometime soon  </li>
+<li>The gang talks to the actors at the ampitheater to convince them to allow the gang to perform their battle with the boar  </li>
+<li>The gang goes to the centaur encampment to talk to the leader Baenor  </li>
+<li>Baenor will leave if we defeat him, or he will continue to attack the city, or he will sacrifice us, or he will accept the sacrifice of princess anora on the rock of estor.  </li>
+<li>The gang stops by the rock of estor and witnesses the order of sydon sacrificing a cow to Sydon - basilisks come out of the river to eat the cow  </li>
+<li>The gang heads to the necropolis and sees a bunch of weird hands  </li>
+<li>The gang encounters harpies - most plug their ears, but Ari does not and gets charmed (has immunity for 24 hours)  </li>
+<li>The gang encounters Damon at the necropolis and hands over the dragon coin thingy to enter the necropolis  </li>
+<li>Tharok learns that he must talk to the Lotus witch at scorpion island for a lead on his curse. Damon also gives Tharok his family heirloom, a gem of brightness  </li>
+<li>Damon mentions that some tombs are cursed   </li>
+<li>#3 is Talamok of something or another ( TELAMOK ARKELANDER Oathsworn of Vallus)  and the tomb is open - he's one of the dragon lords  </li>
+<li>#4 The inscription on the tomb reads: ADONIS NEURDAGON Oathsworn of Pythor - Demetrius detects magic there  </li>
+<li>We find a mechanism in the ceiling that will drop a stone at the entrance  </li>
+<li>#5 is Estor sworn to Kyrah, and she's all sad about it - he seems like a dick and no magic is detected  </li>
+<li>#6 RIZON PHOBAS Oathsworn of Volkan - magic is detected  </li>
+<li>Kain returns his necklace to the tomb #6 and is relieved of the curse  </li>
+<li>#7 COSMO PHOBAS - Son of Rizon Phobas - creepy black substance crushes a rock thrown in - investigation reveals its black pudding  </li>
+<li>#12 DORION NEURDAGON - has footprints and the sarcophagus is ajar  </li>
+<li>#14 NICHOLAS PHOBAS - Blessed of Sydon  </li>
+<li>#9 ISADORE HUORATH - detect magic  </li>
+<li>#15 The giant Tomb of Balmytria- Unlike most of the art in the Necropolis, the mosaics that line the walls and ceilings here are pristine, almost new in appearance. The panel closest to the entrance depicts five majestic dragons, one silver and four bronze, soaring through the heavens. A formidable human warrior is mounted on each dragon. The next mosaic is dominated by the verdant coast of Thylea. While the bronze dragons remain aloft, the silver dragon is shown making landfall on this new continent. Her rider greets a haggard-looking group of humans on the shore. Subsequent mosaics show human civilization on the continent blossoming from tiny towns to great walled cities under the leadership of the Dragonlords.  </li>
+<li>#16 The tomb of Xandor  </li>
+<li>Guarding the stairwell is a bronze statue of a kneeling, bull-headed minotaur.  </li>
+<li>Tharok feels a strange affinity for the path up ahead </li>
+</ul>
+<h1 id="session-5">Session 5</h1>
+<p>Agenda</p>
+<ul>
+<li>The Great Labors  </li>
+<li>Claim the Weapons of the Dragonlords  </li>
+<li>Relight the fires of the Mithral Forge  </li>
+<li>Drink from the Horn of Balmytria in the Dragon Shrine in Estoria  </li>
+<li>Ariasia: You will find a way home, but first you must find the lost treasure of the Dragonlords.   </li>
+<li>Demetrius: Recover your fabled armor and crown in the tomb of Xander  </li>
+<li>Kain: Seek out the Forgekeeper in the Mithral Mines and learn about the ancient dragonslayer artifacts  </li>
+<li>Kyrios:Seek out Demetria in the Mossy Temple. She knows about your fate.  </li>
+<li>Tharok: Seek out the Lotus Witch on Scorpion Island who knows how to break your curse  </li>
+<li>Zephyrion: Travel to Estoria and meet your father, Pythor and he will tell you what to do next.</li>
+</ul>
+<p>Log</p>
+<ul>
+<li>At the entrance of the labyrinth   </li>
+<li>The gang enters the labyrinth and follow Tharok who uses his unique minotaur senses  </li>
+<li>We make our way to a room filled with butchered creatures hanging up like sides of beef.  </li>
+<li>We hears some thundering footsteps from behind   </li>
+<li>Zeph attempts to bar the door behind them but a giant minotaur bashes in the door  </li>
+<li>Everyone had prepared an attack and lit him up  </li>
+<li>The mino runs out of the room  </li>
+<li>Continuing on, the party encounters two skeleton hoplite soldiers  </li>
+<li>Kyrah sing a song of heroism and helps the party   </li>
+<li>The gang destroys the skeletons  </li>
+<li>We open the door to the west into the The Chamber of Supplicants which contains piles of bones and debris all over the floor  </li>
+<li>Two more skeletons arise from the dust and attempt to rush the party.  </li>
+<li>We are ready for them this time and crush them with many bow shots and greatsword attacks!  </li>
+<li>We find they are wearing find mithril breastplates and have finely crafted shortbows and shortswords. The breastplates bear the mark of the dragonlords. We pack all the loot into Zephyrion's "saddle bags".  </li>
+<li>Moving on to the sarcophagus room and Ari gets wrapped up in a suffocating rug  </li>
+<li>The gang gets to killing the rug and Ari is hurt but saved  </li>
+<li>Demetrius goes to open the sarcophagus and a huge set of fangs appears on the lid and attempts to bite his hand! It is a mimic!  </li>
+<li>The gang crit'd Roll20 and Roll20 was down</li>
+</ul>
+<h1 id="session-6">Session 6</h1>
+<p>Agenda</p>
+<ul>
+<li>The Great Labors  </li>
+<li>Claim the Weapons of the Dragonlords  </li>
+<li>Relight the fires of the Mithral Forge  </li>
+<li>Drink from the Horn of Balmytria in the Dragon Shrine in Estoria  </li>
+<li>Ariasia: You will find a way home, but first you must find the lost treasure of the Dragonlords.   </li>
+<li>Demetrius: Recover your fabled armor and crown in the tomb of Xander  </li>
+<li>Kain: Seek out the Forgekeeper in the Mithral Mines and learn about the ancient dragonslayer artifacts  </li>
+<li>Kyrios:Seek out Demetria in the Mossy Temple. She knows about your fate.  </li>
+<li>Tharok: Seek out the Lotus Witch on Scorpion Island who knows how to break your curse  </li>
+<li>Zephyrion: Travel to Estoria and meet your father, Pythor and he will tell you what to do next.  </li>
+<li>Return to the Estoria and deal with the Centaur Army menacing the city; either by fighting their chieftain in single combat, Replacing princess Anora as a sacrifice; or some other clever means; or allow princess Anora to be sacrificed!</li>
+</ul>
+<p>Log</p>
+<ul>
+<li>The gang is fighting a mimic, with Zeph, Ari, and Tharok dealing damage. Kain delivers the the final blow  </li>
+<li>The gang sees a rug that depicts Xander conquering a race of minos  </li>
+<li>One creature kneels with a peace offering above his head  </li>
+<li>We see a mechanism with a level - Tharok pulls the lever  </li>
+<li>The gang makes their way to the southeast of the map and encounters a door  </li>
+<li>The room shows a high ceilinged room and flagstone floor - far end of the room has heavy bronze double doors - two skeletons on the floor that are mangled  </li>
+<li>Ari attempts to see if any traps are in the room and thinks everything is fine  </li>
+<li>Zeph goes back to pull the lever and we hear the room close in  </li>
+<li>We hear skeletons in the distance - the gang close to the room decides to head back to Zeph  </li>
+<li>Zeph encounters some skellys  </li>
+<li>Thge gang is heading back to Zeph still  </li>
+<li>Zeph drops a net on the two skellys - one skelly eventually gets free  </li>
+<li>Kain screams to draw the skelly's attention  </li>
+<li>Tharok moos  </li>
+<li>Ari flys by and chirps  </li>
+<li>Kain moves and drops oil on a skelly  </li>
+<li>The gang finally arrives to battle the skellys and help Zeph  </li>
+<li>The gang kills the skells  </li>
+<li>Short rest  </li>
+<li>Ari rolls happy and can fly until the next roll  </li>
+<li>Skellys have a fine short bow +1 and Ari takes it  </li>
+<li>The gang heads back to the room  </li>
+<li>Ari flys over the floor and opens the door  </li>
+<li>There is a barrel vaulted chamber with a sarcophagus depicting Xander   </li>
+<li>Tharok runs along the edge of the room and makes it through  </li>
+<li>Kain also makes it through  </li>
+<li>Tharok opens the sarco  </li>
+<li>A creature arises from the sarco - the gang hears noises to the north but doesn't know what they are  </li>
+<li>Demetrius asks about the items  </li>
+<li>Xander tells us to fight the guardian and he'll give us the stuff  </li>
+<li>The fight rages  </li>
+<li>Zeph uses a heroic potion  </li>
+<li>Demetrius insults Graxis to death  </li>
+<li>The gang talks to xander  </li>
+<li>We get the breastplate of Mytros  </li>
+<li>The crown of the dragon lords as well  </li>
+<li>Shield of Volkan damaged (Ari defo wants this)  </li>
+<li>Axe of Xander (damaged)  </li>
+<li>King Pythor knows about the treasure  </li>
+<li>The dragons tooth has good baklava</li>
+</ul>
+<h1 id="session-7">Session 7</h1>
+<p>Agenda</p>
+<ul>
+<li>The Great Labors  </li>
+<li>~~Claim the Weapons of the Dragonlords~~  </li>
+<li>Relight the fires of the Mithral Forge  </li>
+<li>Drink from the Horn of Balmytria in the Dragon Shrine in Estoria  </li>
+<li>Ariasia: You will find a way home, but first you must find the lost treasure of the Dragonlords.   </li>
+<li>Demetrius: Recover your fabled armor and crown in the tomb of Xander  </li>
+<li>Kain: Seek out the Forgekeeper in the Mithral Mines and learn about the ancient dragonslayer artifacts  </li>
+<li>Kalian:???  </li>
+<li>Tharok: Seek out the Lotus Witch on Scorpion Island who knows how to break your curse  </li>
+<li>Zephyrion: Travel to Estoria and meet your father, Pythor and he will tell you what to do next.</li>
+</ul>
+<p>Log</p>
+<ul>
+<li><strong>Xander's Revelation</strong>  </li>
+<li>In the hallowed halls of the Necropolis, the mighty Dragonlord <strong>Xander Huorath</strong> imparts a dire message to <strong>Demetrius</strong>:  <ul>
+<li><strong>Sydon's Chief Military Leader, Gaius</strong>, has <strong>stolen Demetrius' legendary armor</strong>.  </li>
+<li>Gaius, a formidable warrior and one of <strong>Sydon's most ruthless servants</strong>, has hidden the armor on his <strong>fortified island</strong> in the <strong>Cerulean Sea</strong>.  </li>
+</ul>
+</li>
+<li><strong>A New Ally Arrives</strong>  </li>
+<li>As the party prepares to leave the tomb of Xander, a new figure emerges from the shadows:  <ul>
+<li><strong>Kalian, "The Gifted One"</strong>, sent by the enigmatic <strong>Oracle Versi</strong> to replace their fallen wizard companion.  </li>
+<li>The party entrusts <strong>Kalian</strong> with the <strong>crown of the Dragonlords</strong>, a pivotal artifact tied to his destiny. <strong>Ari</strong> watches in bewildered astonishment, wondering about this unexpected exchange.  </li>
+</ul>
+</li>
+<li><strong>Equipping the Heroes</strong>  </li>
+<li><strong>Demetrius</strong> dons the <strong>Breastplate of Mytros</strong>, feeling its ancient power resonate with his noble heritage.  </li>
+<li><strong>Confronting the Black Pudding</strong>  </li>
+<li>Venturing into <strong>Cosmo's Tomb</strong>, the party faces a formidable <strong>black pudding</strong>:  <ul>
+<li>After a fierce battle, they triumph over the amorphous threat, securing an <strong>adamantium breastplate and shield</strong>.  </li>
+<li>However, the black pudding's corrosive <strong>acid</strong> wreaks havoc, <strong>damaging Zephyrion's mail armor</strong> and other gear.  </li>
+</ul>
+</li>
+<li><strong>Exploring the Necropolis</strong>  </li>
+<li>In <strong>Tomb #5</strong>, the party finds no body, heightening the mystery surrounding these sacred grounds.  </li>
+<li><strong>Tomb #6</strong> reveals a treasure trove:  <ul>
+<li>By carefully <strong>pulling off the lid</strong>, they uncover a <strong>mythril breastplate, a kopis, and a mythril shield</strong>.  </li>
+<li><strong>Kalian</strong> inadvertently triggers the <strong>curse of the graverobber</strong> without touching the items, adding a layer of peril to their haul.  </li>
+</ul>
+</li>
+<li><strong>Journey Back to Estoria</strong>  </li>
+<li>Deciding to leave the Necropolis, the party makes their way back to <strong>Estoria</strong>:  <ul>
+<li>They take a necessary <strong>long rest</strong> on the road, with <strong>Ari</strong> feeling a surge of joy as she gains the ability to <strong>fly</strong> until her next roll.  </li>
+</ul>
+</li>
+<li><strong>Visiting Volkan's Hall</strong>  </li>
+<li>Back in the city, the heroes head to <strong>Volkan's Hall</strong>:  <ul>
+<li><strong>Zephyrion</strong> presents his <strong>damaged armor</strong> to <strong>Volkan</strong>, who agrees to repair it in <strong>two days</strong> for <strong>10 gp</strong>.  </li>
+<li><strong>Volkan</strong> reveals that to <strong>repair their items</strong>, they need <strong>Pythor's Hammer</strong> and the <strong>Mythril Forge</strong>.  </li>
+<li>To <strong>lift the curses</strong> from their treasures and <strong>Kalian</strong>, the party plans to visit the <strong>Dragon Shrine</strong>.  </li>
+</ul>
+</li>
+<li><strong>Selling Their Loot</strong>  </li>
+<li>The party decides to <strong>sell some of their inventory to Volkan</strong> to prepare for the challenges ahead.  </li>
+<li><strong>Meeting King Pythor</strong>  </li>
+<li>An <strong>attendant</strong> approaches the party, inviting them to meet <strong>King Pythor</strong> himself. They receive a mysterious <strong>scroll</strong> before heading to the palace.  </li>
+<li>Inside the grand yet gloomy <strong>Estorian Palace</strong>, the party finds <strong>King Pythor</strong> in a state of drunken despair:  <ul>
+<li><strong>Aunty Kyrah</strong>, <strong>Goddess of Music</strong> and sister to Pythor, scolds him for his <strong>self-pitying excesses</strong>.  </li>
+<li><strong>Zephyrion</strong> steps forward, engaging in a heartfelt conversation with <strong>Pythor</strong>:  </li>
+<li>A poignant <strong>father-son moment</strong> unfolds as <strong>Pythor</strong> shares the tragic tale of <strong>Zephyrion's mother</strong>, who was <strong>stolen by the fearsome dragon Hexia</strong> and taken to a distant <strong>island</strong>.  </li>
+</ul>
+</li>
+<li><strong>Confronting Gaius</strong>  </li>
+<li><strong>Gaius</strong>, the arrogant leader of the <strong>Order of Sydon</strong>, confronts the party within the palace:  <ul>
+<li>He demands the <strong>sacrifice of Princess Anora</strong> to <strong>Sydon</strong>, seeking to <strong>humiliate King Pythor</strong>.  </li>
+<li>Through <strong>diplomacy and clever negotiation</strong>, the party persuades <strong>Gaius</strong> to allow them to <strong>take Anora's place</strong> as the sacrifice at the <strong>Rock of Estor</strong> during the next full moon, agreeing to be <strong>chained and disarmed</strong>.  </li>
+</ul>
+</li>
+<li><strong>Ari's Destiny Unveiled</strong>  </li>
+<li><strong>Ariasia</strong> inquires about her <strong>Epic Path</strong>, and <strong>Pythor</strong> reveals:  <ul>
+<li>The ghost of the venerable <strong>Dragonlord Estor Arkelander</strong> holds the key to the <strong>lost treasure of the Dragonlords</strong> aboard his legendary ship, the <strong>Ultros</strong>.  </li>
+</ul>
+</li>
+<li><strong>Journey to the Dragon Shrine</strong>  </li>
+<li>The party sets out for the <strong>Dragon Shrine</strong>, seeking to <strong>remove the curses</strong> and <strong>restore their enchanted items</strong>.  </li>
+<li>Upon arrival, they meet <strong>Aesop</strong>, the wise <strong>keeper of the Shrine</strong>:  <ul>
+<li><strong>Aesop</strong> mourns the <strong>theft of the Horn of Balmytria</strong>, a sacred artifact vital to their quest.  </li>
+</ul>
+</li>
+<li><strong>Lifting the Curses</strong>  </li>
+<li><strong>Kalian</strong> and <strong>Demetrius</strong> persuade <strong>Aesop</strong> to perform a <strong>ritual to remove the curse</strong>:  <ul>
+<li>The <strong>curse of the graverobber</strong> is lifted from <strong>Kalian</strong>, but he is now bound by an <strong>oath</strong> to <strong>return the Horn of Balmytria</strong>.  </li>
+</ul>
+</li>
+<li><strong>Clues in the Wilderness</strong>  </li>
+<li><strong>Kain</strong> discovers <strong>small hoof prints</strong> stained with <strong>magical wine</strong>, identifying the mischief-makers as <strong>goatlings</strong>—<strong>mischievous and sometimes evil fey</strong> resembling small satyrs.  </li>
+<li>The trail leads <strong>south of Estoria</strong> into the <strong>forests</strong>, pointing towards the <strong>Mossy Temple</strong>, the ominous abode of <strong>Demetria</strong>, the <strong>fey Sister of Versi</strong>.  </li>
+<li><strong>Preparing for the Full Moon Sacrifice</strong>  </li>
+<li>With five days remaining until the full moon, the party must balance their time between <strong>securing their equipment</strong>, <strong>unraveling curses</strong>, and <strong>pursuing clues</strong> to thwart the impending sacrifice.</li>
+</ul>
+<h1 id="session-8">Session 8</h1>
+<p><strong>Epic Path Reminders</strong></p>
+<ul>
+<li><strong>Ariasia ("Ari"), The Lost One:</strong><br />
+  You've learned that the key to finding your way home lies in the <strong>lost treasure of the Dragonlords</strong>. Pythor hinted that the undead captain Estor Arkelander—haunting the legendary ship Ultros—last possessed this treasure. To move forward, you must eventually seek out the Ultros and confront Estor's ghost. For now, the city's troubles and the stolen Horn of Balmytria stand in the way, but keep an ear open for anything that might lead you to that ghostly vessel.  </li>
+<li><strong>Demetrius, The Vanished One:</strong><br />
+  You recovered the Crown of the Dragonlords, but <strong>Gaius of the Order of Sydon</strong> has stolen your famed armor. He's reportedly fortified himself on an island in the Cerulean Sea, well-guarded and loyal to the Titan Sydon. To fully reclaim your legacy, you'll need to retrieve your armor from Gaius. But first, you must survive your current obligations in Estoria, including the grim deal made with Gaius over Princess Anora's sacrifice.  </li>
+<li><strong>Kain, The Dragonslayer:</strong><br />
+  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the <strong>Forgekeeper in the Mithral Mines</strong>. That journey awaits once you've dealt with the pressing threats in Estoria and reclaimed the Horn of Balmytria. Keep watch for clues that lead to the hidden Mithral Forge and the tools you'll need to face monstrous foes like Hexia.  </li>
+<li><strong>Kalian, The Gifted One:</strong><br />
+  Your grandmother's spirit and the Oracle Versi guide you towards resurrecting the glory of the Dragonlords and exacting vengeance on Sydon. Before you can do that, you must retrieve the stolen <strong>Horn of Balmytria</strong>, now lost somewhere in the Oldwoods. Aesop has cleansed you of the curse of the graverobber in exchange for your oath to return with the Horn. Finding it in the Mossy Temple, where the fey Demetria and her goatlings lurk, is now your immediate concern.  </li>
+<li><strong>Tharok, The Cursed One:</strong><br />
+  Damon, the guardian of the Necropolis, directed you to <strong>Scorpion Island</strong> to seek the Lotus Witch, who may hold the key to ending your curse. While that journey lies ahead, the path is dangerous and your party's immediate predicament in Estoria demands attention first. Remember that the answers you seek are out there, beyond the city's walls, once your current duties are done.  </li>
+<li><strong>Zephyrion, The Demi-god:</strong><br />
+  You've met your father, Pythor, who revealed that the green dragon Hexia stole your mother away. Before you can undertake that rescue and claim your divine legacy, you must help resolve the crisis in Estoria. You've agreed to take Princess Anora's place in the sacrifice at the Rock of Estor. Surviving that deadly bargain will reaffirm your worthiness and strengthen the bond with your father, who holds the key to forging your destiny as the next God of Battle.</li>
+</ul>
+<p><strong>Party-Wide Quests</strong></p>
+<ul>
+<li><strong>The Great Labors:</strong>  </li>
+<li><strong>Claim the Weapons of the Dragonlords:</strong> You've found relics like the Axe of Xander, Shield of Volkan, and Breastplate of Mytros, but they remain damaged or incomplete. They must be restored at the <strong>Mithral Forge</strong>, once you have Pythor's Hammer.  </li>
+<li><strong>Light the Mithral Forge:</strong> The Forge awaits your rekindling so that Volkan can reforge your legendary arms and armor. This will be critical before facing greater threats.  </li>
+<li><strong>Drink from the Horn of Balmytria:</strong> The Horn that once rested in Estoria's Dragon Shrine has been stolen. You must recover it from the goatlings and Demetria in the Mossy Temple if you hope to complete this ritual of guidance and power.  </li>
+<li><strong>The Sacrifice at the Rock of Estor:</strong><br />
+  In a desperate gamble to save Princess Anora, you've struck a deal to sacrifice yourselves in her stead. The full moon looms only five days away. You must decide how to survive this ordeal—whether by outwitting your foes, preparing clever defenses, or finding a way to break this dark bargain without dooming the city.  </li>
+<li><strong>Recovering the Horn of Balmytria:</strong><br />
+  Without this relic, many blessings and rituals remain beyond your grasp. Its theft has forced a confrontation with the fey and their mistress, Demetria. Before you sail off to new islands or venture deeper into cursed caverns, you must restore the Horn to Estoria's shrine and fulfill your oaths.<br />
+<strong>Log</strong> <br />
+<strong>The Forest's Whispers</strong>  </li>
+<li>The dense, ancient trees of the Oldwood loomed around you as Corinna led the way, her tear-streaked face filled with desperation. She spoke of children trapped within the Mossy Temple, ensnared by Demetria's wicked enchantments.  </li>
+<li>Zephyrion's decisive, though impulsive, blow against a goatling sent a clear message—your party was not here for games. You were here to save lives.<br />
+<strong>Secrets in the Shadows</strong>  </li>
+<li>At the standing stones, the peculiar squirrel revealed itself.. Kain's magic brought communication, and Tharok's charisma earned the creature's trust, but Herkus's riddled words hinted at deeper horrors within the temple.  </li>
+<li>At last, the temple itself came into view, its towering marble pillars tangled with massive roots and coated in moss, as though nature itself sought to reclaim this cursed place.<br />
+<strong>Trials in the Temple</strong>  </li>
+<li>Battling through animate roots that sought to halt your progress, you pressed forward. Your clever use of stealth, spells, and teamwork saw you past the treacherous pool of swirling shapes, with Kalian's magic saving Zephyrion from the waters' ominous grasp.  </li>
+<li>The statues of Sydon demanded offerings. Coins and murmured prayers allowed safe passage, though the bitter taste of appeasement lingered as you descended deeper into the temple's heart.<br />
+<strong>The Glade's Warnings</strong>  </li>
+<li>In the ancient glade, you found a tormented boy, Sostrate, harried by cruel goatlings. Arrows flew, blades flashed, and Demetrius's mocking words seared their twisted hearts. Sostrate's rescue was swift and decisive, and Corinna's reunion with her friend brought a spark of hope amidst the gloom.  </li>
+<li>Strange plants revived your spirits, and a meeting with Melenthe, the friendly dryad, gifted you magical wine and dire warnings of Demetria's fall from grace. Even the fey were wary of the vengeful dryad's growing power.<br />
+<strong>A Sinister Banquet</strong>  </li>
+<li>You stumbled upon teenagers in a pink fungus-laden cavern, their minds dulled by enchanted bread, wine, and cheese. Zephyrion's sharp discipline broke their stupor, and together with Corinna, you convinced them to flee the temple's grasp.  </li>
+<li>The horrors of Demetria's domain deepened when you discovered goatlings cooking sinister meat in the kitchen—dead children, victims of the dryad's dark rituals. The revulsion strengthened your resolve.<br />
+<strong>A Final Confrontation</strong>  </li>
+<li>At last, you entered Demetria's chambers. Her ritual was in full swing, with four teenage girls seated at a cursed feast. The plates held food that could transform them into monstrous maenads. With split-second decisions, Kain cast entangle, trapping Demetria, her gygan companion, and two of the girls.  </li>
+<li>Ari rushed forward, scattering the plates to save the innocent. Tharok and Zephyrion launched ferocious attacks, felling the gygan with heroic blows. Meanwhile, Kalian unleashed radiant magic, and Demetrius's vicious whispers unraveled Demetria's composure.  </li>
+<li>Facing the might of your combined strength, Demetria surrendered, offering a potion to reverse the maenads' transformation and swearing to change her ways. Her hatred for Estor Arkelander burned deep, and Ari shared her vow to one day slay the dragonlord who had wronged them both.<br />
+<strong>Victory and Questions</strong>  </li>
+<li>The Horn of Balmytria is yours! Its legendary power awaits, but so too does the question of Demetria's fate. Will you trust her promises of reform or take a harder path? Corinna and her rescued friends offer gratitude and speak of rewards waiting at her father's vineyard in Estoria.  </li>
+<li>Ahead lies the Mithral Forge, brimming with ancient potential, but the shadow of the full moon and the looming threat of Estor's Rock cast a dark pall over your triumphs.</li>
+</ul>
+<h1 id="session-9">Session 9</h1>
+<p><strong>Epic Path Reminders</strong></p>
+<ul>
+<li><strong>Ariasia ("Ari"), The Lost One:</strong><br />
+  You've learned that the key to finding your way home lies in the <strong>lost treasure of the Dragonlords</strong>. Pythor hinted that the undead captain Estor Arkelander—haunting the legendary ship Ultros—last possessed this treasure. To move forward, you must eventually seek out the Ultros and confront Estor's ghost. For now, the city's troubles and the stolen Horn of Balmytria stand in the way, but keep an ear open for anything that might lead you to that ghostly vessel.  </li>
+<li><strong>Demetrius, The Vanished One:</strong><br />
+  You recovered the Crown of the Dragonlords, but <strong>Gaius of the Order of Sydon</strong> has stolen your famed armor. He's reportedly fortified himself on an island in the Cerulean Sea, well-guarded and loyal to the Titan Sydon. To fully reclaim your legacy, you'll need to retrieve your armor from Gaius. But first, you must survive your current obligations in Estoria, including the grim deal made with Gaius over Princess Anora's sacrifice.  </li>
+<li><strong>Kain, The Dragonslayer:</strong><br />
+  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the <strong>Forgekeeper in the Mithral Mines</strong>. That journey awaits once you've dealt with the pressing threats in Estoria and reclaimed the Horn of Balmytria. Keep watch for clues that lead to the hidden Mithral Forge and the tools you'll need to face monstrous foes like Hexia.  </li>
+<li><strong>Kalian, The Gifted One:</strong><br />
+  Your grandmother's spirit and the Oracle Versi guide you towards resurrecting the glory of the Dragonlords and exacting vengeance on Sydon. Before you can do that, you must retrieve the stolen <strong>Horn of Balmytria</strong>, now lost somewhere in the Oldwoods. Aesop has cleansed you of the curse of the graverobber in exchange for your oath to return with the Horn. Finding it in the Mossy Temple, where the fey Demetria and her goatlings lurk, is now your immediate concern.  </li>
+<li><strong>Tharok, The Cursed One:</strong><br />
+  Damon, the guardian of the Necropolis, directed you to <strong>Scorpion Island</strong> to seek the Lotus Witch, who may hold the key to ending your curse. While that journey lies ahead, the path is dangerous and your party's immediate predicament in Estoria demands attention first. Remember that the answers you seek are out there, beyond the city's walls, once your current duties are done.  </li>
+<li><strong>Zephyrion, The Demi-god:</strong><br />
+  You've met your father, Pythor, who revealed that the green dragon Hexia stole your mother away. Before you can undertake that rescue and claim your divine legacy, you must help resolve the crisis in Estoria. You've agreed to take Princess Anora's place in the sacrifice at the Rock of Estor. Surviving that deadly bargain will reaffirm your worthiness and strengthen the bond with your father, who holds the key to forging your destiny as the next God of Battle.</li>
+</ul>
+<p><strong>Party-Wide Quests</strong></p>
+<ul>
+<li><strong>The Great Labors:</strong>  </li>
+<li><strong>Claim the Weapons of the Dragonlords:</strong> You've found relics like the Axe of Xander, Shield of Volkan, and Breastplate of Mytros, but they remain damaged or incomplete. They must be restored at the <strong>Mithral Forge</strong>, once you have Pythor's Hammer.  </li>
+<li><strong>Light the Mithral Forge:</strong> The Forge awaits your rekindling so that Volkan can reforge your legendary arms and armor. This will be critical before facing greater threats.  </li>
+<li><strong>Drink from the Horn of Balmytria:</strong> Now that we have recovered the horn we must drink from it.  </li>
+<li><strong>The Sacrifice at the Rock of Estor:</strong><br />
+  In a desperate gamble to save Princess Anora, you've struck a deal to sacrifice yourselves in her stead. The full moon looms only five days away. You must decide how to survive this ordeal—whether by outwitting your foes, preparing clever defenses, or finding a way to break this dark bargain without dooming the city.<br />
+  Log </li>
+</ul>
+<p><strong>Return from the Mossy Temple</strong></p>
+<ul>
+<li>You emerged victorious from the corrupted temple, with Demetria in chains  </li>
+<li>The grim task of harvesting the gygan's gallbladder secured the means to cure her transformed victims  </li>
+<li>You discovered her dark ritual would have turned innocent girls into maenads through a horrific feast</li>
+</ul>
+<p><strong>Arrival in Estoria</strong></p>
+<ul>
+<li>The city guard took Demetria to the palace dungeons  </li>
+<li>There you found Princess Anora, forgotten by her father King Pythor in his drunken haze  </li>
+<li>Rest at the inn provided brief respite after your dark journey</li>
+</ul>
+<p><strong>Dawn at the Dragon Shrine</strong></p>
+<ul>
+<li>Aesop gratefully received the Horn of Balmytria  </li>
+<li>Your reward: Potions of heroism for each hero  </li>
+<li>Learned the Horn's power comes with a price - eight hours of prophetic sleep</li>
+</ul>
+<p><strong>Preparations and Revelations</strong></p>
+<ul>
+<li>Met Lycos, the monster hunter, who revealed the basilisks' unnatural presence  </li>
+<li>His warning: The beasts serve Sydon's will  </li>
+<li>Acquired four potions of magical resistance from the city's alchemist  </li>
+<li>Princess Anora gifted you a magical pendant - one that will remain hidden from Sydon's zealots</li>
+</ul>
+<p><strong>Journey to the Mithral Mine</strong></p>
+<ul>
+<li>Encountered a friendly tribe of centaurs on the road  </li>
+<li>Their chieftain Hookar seeks his missing people  </li>
+<li>He gave you an ivory horn - blow it when you find his kin  </li>
+<li>Signs point to troglodytes having taken over the ancient forge</li>
+</ul>
+<p><strong>Current Situation</strong></p>
+<ul>
+<li>Kain's scouting revealed:  </li>
+<li>The mine entrance lies beneath a waterfall  </li>
+<li>Two captured centaurs held by troglodytes  </li>
+<li>The legendary Mithral Forge awaits somewhere in the depths</li>
+</ul>
+<p><strong>What's at Stake</strong></p>
+<ul>
+<li>The captured centaurs need rescue  </li>
+<li>The ancient forge must be rekindled  </li>
+<li>Your sacrificial appointment at the Rock of Estor approaches  </li>
+<li>The fate of Estoria hangs in the balance</li>
+</ul>
+<h1 id="session-10">Session 10</h1>
+<p><strong>Epic Path Reminders</strong></p>
+<ul>
+<li><strong>Ariasia ("Ari"), The Lost One:</strong><br />
+  You've learned that the key to finding your way home lies in the <strong>lost treasure of the Dragonlords</strong>. Pythor hinted that the undead captain Estor Arkelander—haunting the legendary ship Ultros—last possessed this treasure. To move forward, you must eventually seek out the Ultros and confront Estor's ghost. For now, the city's troubles and the stolen Horn of Balmytria stand in the way, but keep an ear open for anything that might lead you to that ghostly vessel.  </li>
+<li><strong>Demetrius, The Vanished One:</strong><br />
+  You recovered the Crown of the Dragonlords, but <strong>Gaius of the Order of Sydon</strong> has stolen your famed armor. He's reportedly fortified himself on an island in the Cerulean Sea, well-guarded and loyal to the Titan Sydon. To fully reclaim your legacy, you'll need to retrieve your armor from Gaius. But first, you must survive your current obligations in Estoria, including the grim deal made with Gaius over Princess Anora's sacrifice.  </li>
+<li><strong>Kain, The Dragonslayer:</strong><br />
+  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the <strong>Forgekeeper in the Mithral Mines</strong>. Keep watch for clues that lead to the hidden Mithral Forge.  </li>
+<li><strong>Kalian, The Gifted One:</strong><br />
+  Your grandmother's spirit and the Oracle Versi guide you towards resurrecting the glory of the Dragonlords and exacting vengeance on Sydon.   </li>
+<li><strong>Tharok, The Cursed One:</strong><br />
+  Damon, the guardian of the Necropolis, directed you to <strong>Scorpion Island</strong> to seek the Lotus Witch, who may hold the key to ending your curse. While that journey lies ahead, the path is dangerous and your party's immediate predicament in Estoria demands attention first. Remember that the answers you seek are out there, beyond the city's walls, once your current duties are done.  </li>
+<li><strong>Zephyrion, The Demi-god:</strong><br />
+  You've met your father, Pythor, who revealed that the green dragon Hexia stole your mother away. Before you can undertake that rescue and claim your divine legacy, you must help resolve the crisis in Estoria. You've agreed to take Princess Anora's place in the sacrifice at the Rock of Estor. Surviving that deadly bargain will reaffirm your worthiness and strengthen the bond with your father.</li>
+</ul>
+<p>Log</p>
+<ul>
+<li>We sent out our sneaky ranger who can turn invisible in darkness and he scouted ahead  </li>
+<li>He noticed stench filled rooms full of loathsome troglodytes  </li>
+<li>We decided to go north into the north (dwarvish) side of the mine complex  </li>
+<li>There is a huge dead dog with several smaller two headed dogs munching on its corps  </li>
+<li>We slay all of them in a huge battle  </li>
+<li>We explore all the rooms around here and discover a dwarven bronze room with an inscription next to its entrance  </li>
+<li>We spend some time looting the various rooms that are in decay  </li>
+<li>Kain sneaks down the corridor and can hear what sounds like the squawking of chickens  </li>
+<li>The party catches up and decides to take down the vicious chicken monsters  </li>
+<li>We realize these are the dreaded "cockatrices" and notice that there are multiple people in the area who have been turned to stone by their pecking  </li>
+<li>Finally we slay all of them and recover their beaks and gullets to be turned into "flesh to stone" arrows by a skilled artisan back in town  </li>
+<li>We loot all the dwarven rooms in this area and we recover a dwarven seal with a dragon on it. Ari finds an ornately decorated dwarven mug that appears to be magical  </li>
+<li>We decide to go back south and deal with the troglodytes  </li>
+<li>A huge fight ensues and we fight many troglodyte brutes and their stench is overpowering   </li>
+<li>Finally the party emerges victorious with many corpses littering the floor of the cave  </li>
+<li>We provided healing aid to the centaur captive who has been brutally tortured after his flesh was roasted over a fire. These are the two centaurs we are seeking who were captured by the troglodytes.</li>
+</ul>
+<h1 id="session-11">Session 11</h1>
+<ul>
+<li>The party debates the merits of escorting the two centaurs outside to the river  </li>
+<li>We tell them to head out past the waterfall. It's only a 15 minute walk to the river  </li>
+<li>We explore further into the troglodyte caves and the stench is overwhelming  </li>
+<li>We discover various dens, but they all seem to have been hastily  evacuated while we were fighting the hoard of them further up near the entrance.  </li>
+<li>We snoop around the primitive throne room and find several bars of adamantine buried behind the primitive throne  </li>
+<li>We remember that there is an ornamented brass door of dwarven construction back north in the dwarven part of the mine  </li>
+<li>We realize it is a dwarven brass elevator with dragon heads decorating it. There is a dwarven inscription next to the elevator, but only Kalian can read dwarvish and he tells us that the inscription says he need to drink alcohol when descending in the elevator  </li>
+<li>We decide to go outside and see if we can summon the centaurs to pickup their friends  </li>
+<li>We sound the ivory horn and hear the sound of it echo around the river and mountains  </li>
+<li>Thirty minutes later we can hear the sound of hoofbeats off in the distance echo down the mountain  </li>
+<li>The centaurs are here in full force and their chieftain greets us warmly seeing that we have recovered his two kinsman  </li>
+<li>He rewards us each with a greater potion of heroism for our valorous deeds. He hopes that sydon watches over our steps.   </li>
+<li>Kain, the ranger, and Demetrius, the Bard, want a larger reward and tell the chieftain that this battle was not easily won and we faced a hoard of foes to rescue his kinsman. They succeed in their plee, and the chieftain agrees to sweeten the deal with a potion of greater healing each. The party thanks the chietain and his tribe and they gallop off into the sunset.  </li>
+<li>The party decides to bed down for the night near the edge of the river bank, but in an area that will not be easily discovered by passerbys  </li>
+<li>We sleep through the night without incident  </li>
+<li>During our rest Ari, investigates the Dwarvish artifact that she found while looting the ruins. When it is filled with water, the fine runes on it glow briefly, transforming the water into delicious dwarvish fortified Ale of high alcohol content.  </li>
+<li>The next day, we decide to go investigate the elevator.   </li>
+<li>Kalian, the sorcerer tells Kain that he needs to drink from the dwarven mug in order to fullfill the command in the dwarven inscription next to the elevator  </li>
+<li>Kain greedily laps up several glasses of the fortified dwarven beer and comes to the edge of drunkenness  </li>
+<li>The party gets into the elevator and begins their descent  </li>
+<li>They hear liquid moving through the walls around the cabin  </li>
+<li>We examine the dragon heads and realize there is a mechanism in their mouths where gas or liquid could expel into the interior of the elevator carriage  </li>
+<li>They decide to reverse the elevator and the sound of liquid decelerates  </li>
+<li>Back at the top Kalian tells the truth about what the inscription actually says  </li>
+<li><em>Carved in angular dwarven script, worn by centuries but still legible:</em>  </li>
+<li>"Three breaths of dragon's grace, Then comes the black embrace. When darkness flows from high, Red children dance and fly. Speak friend, or feed the flame - The path up and down's the same.”  </li>
+<li>We decide to descend again and try to guess "the password".   </li>
+<li>Several passwords are guessed, but finally somebody.. ahem. . Kain - says "dragon" in Dwarvish and this causes the sound of liquid to decelerate  </li>
+<li>The elevator descends several hundred feet to the bottom floor  </li>
+<li>In the next room there is a large circular pool of lava with some kind of creature swimming around in it  </li>
+<li>Next to the pool of lava is a bronze sphere with a spout pointing toward the pool of lava  </li>
+<li>Two death dogs are lazily hanging out next to the bronze sphere  </li>
+<li>The  party decides to take out the death dogs before they can get in our way. Arrows and magic fly across the room, slaying the dogs  </li>
+<li>We investigate the bronze sphere and realize it has some sort of mechanism  </li>
+<li>We also go to investigate the pool of lava and a large creature emerges  </li>
+<li>She introduces herself as Pyra the forgekeeper, who has been bound here by the "cursed dwarves" who she claims tricked her into serving them  </li>
+<li>She also tells us that this cursed bronze sphere has entrapped her in this pool of lava as it will expel nasty gouts of icy cold onto her, killing her if she leaves the pool  </li>
+<li>She encourages the heroes to carefully dismantled the device so she can exit the pool  </li>
+<li>She promises to help the party for one year, if they will dismantle the bronze sphere and destroy the tablet which binds her to this place  </li>
+<li>She also warns about the giant dog in the next room, where her tablet is hidden  </li>
+<li>The cerberus like creature was sent here by Lutheria to torment her and to guard the mine to make sure that it cannot be used again to forge weapons that can be turned against the Titans  </li>
+<li>While this is happening, Ari discovers a powerful magical triton in the old dwarven armory  </li>
+<li>Down in the south, Kain is sneaking around and discovers a glowing kopis, and then sneaks up to a dock which is behind the waterfall. There is a lever, which diverts the flow of water, so that a gap in the waterfall is formed allowing watercraft to enter  the dock  </li>
+<li>Ari examines the bronze sphere and realizes that its mechanism can be "jammed" temporarily with her thieves tools  </li>
+<li>Pyra warns that the party has a limited time to dispose of the bronze sphere before it "explodes" in an icy sphere  </li>
+<li>The party decides to jam the mechanism and then roll the 1000 pound device into the lair of the young cerberus into the dormant "blast furnace".   </li>
+<li>The beefy party members, the minotaur Tharok and the strong centaur Zephyrion manhandle the bronze sphere onto its side and roll it into the blast furnace. Each round they have to roll and athletics check and a stealth check to avoid waking the giant beast  </li>
+<li>As they roll the machine into the room, one of them fails their check, making a large clanking sound as they roll the device.  </li>
+<li>The giant creature awakens and angrily begins to interrogate our beefcake heroes  </li>
+<li>Tharok and Zephyrion, decide to get the hell out of there and the the bronze sphere explodes in a gout of icy death  </li>
+<li>The giant three headed dog is wounded by the explosion, but angered by the injury  </li>
+<li>He leaps into action, and brutally lays Tharok low,  </li>
+<li>The rest of  the party keeps their distance and attacks him from range  </li>
+<li>Pyra emerges from her pool of lava and wraps here mighty tail around the great dog, grappling it  </li>
+<li>The party continues to throw everything they have at the beast  </li>
+<li>Finally Zephyrion lands a brutal blow on the creature, laying it to eternal rest, there were many critical hits</li>
+</ul>
+<h1 id="session-12">Session 12</h1>
+<ul>
+<li>Big fight with the troglodytes  </li>
+<li>Pyra thanks the party and starts working on robe of magic immunity  </li>
+<li>Pyra kain his magical compass  </li>
+<li>We travel back to the city  </li>
+<li>We went to Volkan's shop and we tell him about our adventures in the mithral forge  </li>
+<li>We drink from the Horn of Balmytria and have a vision  </li>
+<li>We leave the Dragon Shrine  </li>
+<li>We are met by 3 dragon riders who have a message for us from King Acastus in Mytros</li>
+</ul>
+<h1 id="session-13">Session 13</h1>
+<ul>
+<li>We are meeting with the Knights of King Acastus  </li>
+<li>Dragon guys want us to meet the king  </li>
+<li>We ask them to help us with the basilisks and they agree  </li>
+<li>The gang heads to the sacrifice rock and searches around  </li>
+<li>We notice that they're up river, and we walk up the river to find out what's going on - we notice something  </li>
+<li>We find a bunch of stone animals in a ring, in the center is a stone tablet, and it appears they were placed there deliberately   </li>
+<li>We find some copper poison stuff serpents bane, and collect some  </li>
+<li>Then we talk to a dwarf fishing the river and he seems to think the baskies are nearby  </li>
+<li>Zeph gives him money for a new fishing rod  </li>
+<li>We also find some poison reeds - Crimson Tipped Reeds - Kain has them  </li>
+<li>The gang meets a merchant and buys a bunch of stuff  </li>
+<li>Ari  <ul>
+<li>Strong centaur spirits  </li>
+</ul>
+</li>
+<li>Tharok  <ul>
+<li>Bronze mirror  </li>
+<li>Waterproof oil  </li>
+<li>2 live chicken  </li>
+</ul>
+</li>
+<li>Kain  <ul>
+<li>Healing herbs  </li>
+</ul>
+</li>
+<li>Nik  <ul>
+<li>Fermented mares milk  </li>
+</ul>
+</li>
+<li>Zeph  <ul>
+<li>1 live chicken  </li>
+</ul>
+</li>
+<li>The gang finds the entrance to a cave - claw marks at the entrance  </li>
+<li>Nik shoots off some fireworks to draw the dragon riders  </li>
+<li>We tell them to hang out inside the cave and hide because there are also centaurs coming  </li>
+<li>The party deceives the centaurs into believing we are drunk and partying before we die at the sacrifice tomorrow, so they leave  </li>
+<li>Kain heads into the cave and finds some slugs  </li>
+<li>Kain shoots a slug and its time. For. COMBAT!  </li>
+<li>One slug dies and we end combat because the other slugs don't seem to care  </li>
+<li>Kal harvests the slug mucus (can be used as coagulant or alchemical reagent)  </li>
+<li>In front of the entrance was a symbol with a broken chain  </li>
+<li>Nik finds a badge with a broken chain symbol on it  </li>
+<li>There was a resistance group called the oath keepers, resisting Sydon, distant relative Damaclese Arkalander lead this group  </li>
+<li>Kain finds the baskies and tells Tharok  </li>
+<li>Tharok peers into the cave using the bronze mirror to look, and tosses a chicken into the cave with a rope tied to it  </li>
+<li>The basilisk chases the chicken while Tharok runs   </li>
+<li>The baski chases and the gang fights!  </li>
+<li>We kill one baskie - Nik extracts the baskie gullet and it has some magical properties  </li>
+<li>Kain heads back into the cave to investigate more - there are some glimmerfin tetras- they are sensitive to temperature changes  </li>
+<li>Kain finds a stone human hand and some more slugs  </li>
+<li>A human man, stone, holding an axe  </li>
+<li>Also a large baskie, with its mate  </li>
+<li>There's a lot of stuff in the cave as though it was a settlement  </li>
+<li>Kain lures the baskies out  </li>
+<li>TIME FOR COMBAT!  </li>
+<li>Everyone lights up the baskies as they come out  </li>
+<li>We killed the alpha, and a baskie  </li>
+<li>Plan for next session - finish the baskies, loot the cave, tell the town we are awesome and come watch us not get sacrificed, get the hammer and give damaged items to volkan</li>
+</ul>
+<h1 id="session-14">Session 14</h1>
+<ul>
+<li>The gang heads into the cave to find the remaining baskies  </li>
+<li>The gang kills the baskies  </li>
+<li>The stone statue is the leader of the Oath Keepers  </li>
+<li>Zephyrion gets two eggs, Ari and Tharok each get their own egg  </li>
+<li>We loot the cache that appears to be at least 25 years old, untouched by human hands, save for the unlucky souls turned to stone long ago  </li>
+<li>We block the entrance in the cave to the underwater entrance and Tharok poisons the area around the water  </li>
+<li>We head back to town and go to the bar  </li>
+<li>Ari makes a speech and  we all get free food and drinks for agreeing to save the princess  </li>
+<li>We talk to Pythor and give our stuff to Anora  </li>
+<li>We go to the sacrifice rock and are attacked by harpies who claim to be sent by Lutheria  </li>
+<li>We defeat them and make it through the rest of the night  </li>
+<li>General Gaius leaves pissed off and Baenor and the his centaur army leave the city safely behind  </li>
+<li>We meet someone who fell from the sky.  This is andrew lynx our new companion, a warlock from another world.  </li>
+<li>Princess Anora frees us from our shackles and escorts us to her father Pythor in the palace  </li>
+<li>Pythor grans the party his mighty hammer  </li>
+<li>We go to Volkan's shop and tell him that we want him to start repairing our things. He tells us that he will start working on them at the Mithral forge with Pyra.   </li>
+<li>Tharok asks Volkan to build something to keep his egg safe. Instead Volkan suggests that he take the egg  with him to the forge and keep it safe there.  </li>
+<li>The dragon knights accompany the party to Mytros where a huge hurricane is battering the city.  </li>
+<li>We see Sydon up in the clouds and he flings a lightning bolt down at the party  </li>
+<li>Tharok catches it in his new magical lightning rod axe and dissipates its energy harmlessly into the ground   </li>
+<li>Ari rolls sadness and can't fly  </li>
+<li>The knights lead us into the palace and we have an audience before the king.  </li>
+<li>There we are presented with several options about how to make the storm subside, detailed below:</li>
+</ul>
+<h1 id="session-15">Session 15</h1>
+<ul>
+<li>We decided to follow Kyrah's proposal to clear the storm  </li>
+<li>Kain talked to Icarus the dragon and felt something is not right with the King's story  </li>
+<li>Before walking out the palace, we were accosted and summoned with an audience with Queen Vallus by Makhaira, which told us she will prepare a feast for us while we wait for our audience  </li>
+<li>We persuade the queen to tell us the truth about what's all happening here, and she reveals that the king is driven to dispose of us once we give him what he wants, and on top she made us take on an OATH of secrecy before revealing to us that the king received Icarus as an egg 25 years ago by Lutheria herself, and has been giving Icarus potion of aging to accelerate his maturity.<br />
+<strong>Departing the City &amp; Facing the Storm:</strong>  </li>
+<li>After leaving court, the party stepped out into the fury of Sydon's storm. The tempest not only raged over the city but carried the echoes of divine retribution.  </li>
+<li><strong>Random Encounter – HARRIED BY THE STORM:</strong>  </li>
+<li>The heroes struggled against howling winds and pelting rain, testing their resolve and unity against the chaotic elements.  </li>
+<li><strong>Random Encounter – OVERTURNED CART ON THE BRIDGE:</strong>  </li>
+<li>On a rain-slicked bridge, they encountered an overturned cart. Tharok's mighty axe—revealed to be a magical lightning rod—played a pivotal role as he pulled the cart to safety.  </li>
+<li>Kain's ranger magic spurred the growth of entangling plants, subduing the panicked horses, while Zephyrion heroically rescued Thalia, earning her lasting gratitude and a promise of healing potions plus a 25% discount at her shop.  </li>
+<li><strong>Random Encounter – LIGHTNING'S WRATH:</strong>  </li>
+<li>As Sydon's lightning threatened to wreak havoc, Tharok's axe absorbed the bolt's power. This not only protected the party but also halted the animation of nearby statues, a sign of the storm's magical malice.</li>
+</ul>
+<p><strong>Journey into the Vineyard &amp; Fae Intrigue:</strong></p>
+<ul>
+<li>The party's path eventually led them out of the city and into a sprawling vineyard. Here, the storm's fury waned, and the veil between the mortal realm and the Fey grew thin.  </li>
+<li>They discovered the Sylvan Compass—a mystical artifact etched with ancient runes—that guides travelers along hidden, enchanted pathways within the vineyard. This detail underscores the region's deep ties to fey magic and old traditions.  </li>
+<li>In the vineyard, Evalina, a courteous satyr, welcomed them. Mistaking the party for wine buyers, she offered enchanted wine samples that each carried unique magical properties. She also directed them up the river and warned them to watch for her lost children, further hinting at the vineyard's secretive, otherworldly nature.<br />
+<strong>The Glade &amp; the Confrontation with Boreas:</strong>  </li>
+<li>Following Evalina's advice, the heroes ventured deeper into the vineyard along the river until they reached a magical glade—an oasis of calm amid the tempest.  </li>
+<li>Here, they found Boreas immersed in playing his magical harp for a group of water nymphs. The nymphs vanished into the water at the sight of the heroes, adding an air of mystery.  </li>
+<li>Initially, Kyrah hid in the bushes, watching as the conversation unfolded. When the party began probing into the true nature of their quest, Boreas erupted in anger.  </li>
+<li>He accused the party of falling for Kyrah's enticing promises and tall tales, revealing his deep-seated resentment over their shared past.  </li>
+<li>His outburst made it clear that Kyrah's version of events was incomplete—and that her hidden history with Boreas was more complex and painful than the party had been led to believe.</li>
+</ul>
+<h1 id="session-16">Session 16</h1>
+<p><strong>Epic Path Reminders</strong></p>
+<ul>
+<li><strong>Kain, The Dragonslayer:</strong><br />
+  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the <strong>Forgekeeper in the Mithral Mines</strong>. That journey awaits once you've dealt with the pressing threats in Estoria and reclaimed the Horn of Balmytria. Keep watch for clues that lead to the hidden Mithral Forge and the tools you'll need to face monstrous foes like Hexia.  </li>
+<li><strong>Tharok, The Cursed One:</strong><br />
+  Damon, the guardian of the Necropolis, directed you to <strong>Scorpion Island</strong> to seek the Lotus Witch, who may hold the key to ending your curse. While that journey lies ahead, the path is dangerous and your party's immediate predicament in Estoria demands attention first. Remember that the answers you seek are out there, beyond the city's walls, once your current duties are done.  </li>
+<li><strong>Zephyrion, The Demi-god:</strong><br />
+  You've met your father, Pythor, who revealed that the green dragon Hexia stole your mother away. Before you can undertake that rescue and claim your divine legacy, you must help resolve the crisis in Estoria. You've agreed to take Princess Anora's place in the sacrifice at the Rock of Estor. Surviving that deadly bargain will reaffirm your worthiness and strengthen the bond with your father, who holds the key to forging your destiny as the next God of Battle.</li>
+</ul>
+<p>Log</p>
+<ul>
+<li>Persuasion, deception and reason does not seem to work on Boreas  </li>
+<li>Kain shoots an arrow at Boreas as he started to behave angry, combat starts  </li>
+<li>The whole group takes turn at smacking Boreas, Zephyrion grapples him and hugs him hard  </li>
+<li>Boreas calls out for help and summons 3 water elementals  </li>
+<li>A water elemental engulfs Kain, but he seems unphased as he can breath underwater  </li>
+<li>We defeat all the elementals and Boreas is knocked unconscious  </li>
+<li>Tharok is an innate performer and can attune to the magical Harp  </li>
+<li>We go back to the city and pass through the slums to get to the mountain base in order to save the city using the Harp's magical powers  </li>
+<li>Just before the slums, there is the Temple of Lutheria which for some reason is not affected at all by the storms effect.. Weird indeed.  </li>
+<li>Entering the slums we hear screams and investigate the direction it came from, we realize there is a man standing in a doorway that has turned to stone. There are 6 figures running away, Nikandros hastily webs them, preventing them from fleeing.  </li>
+<li>We unleash hell, maelstrom and hail of thorns upon these bandits and let one live to question him.  </li>
+<li>The bandits are working for someone named 'The Lady of Coins" which we understand is a medusa, and has employed these bandits to take care of specific ,musicians and get their remains and musical instruments somewhere. We have a list with the next targets and instructions which Kyrah deciphered for us.  </li>
+<li>It is now Wednesday of the 2nd week, 9 PM.</li>
+</ul>
+<h1 id="session-17">Session 17</h1>
+<ul>
+<li>We went up the mountain  </li>
+<li>We played music, killed shit  </li>
+<li>Storm subsided  </li>
+<li>Went back down to town \~midnight, spent the night (long rest) in a fancy inn near the baths  </li>
+<li>It is now morning -Thursday 2nd week | 8 AM, got some nice hot baths and massages</li>
+</ul>
+<h1 id="session-18">Session 18</h1>
+<ul>
+<li>Went up the mountain  </li>
+<li>Kyrah played the harp to calm the storm, we fought Sydon's visage and minions  </li>
+<li>The storm subsided  </li>
+<li>Went back down the mountain, Kain ventured into an empty Wyvern cave and stole a wyvern egg  </li>
+<li>We arrived to the palace to tell the news  </li>
+<li>It is Friday of the 2nd week | 4 AM</li>
+</ul>
+<h1 id="session-19">Session 19</h1>
+<p><strong>Session Log: 2025-04-16</strong></p>
+<p><strong>Palace Aftermath &amp; New Allies:</strong></p>
+<ul>
+<li>Following the dispersal of Sydon's storm, the party rested briefly in the Great Palace. The time was approximately 4 AM.  </li>
+<li>Queen Vallus introduced Rhy-At, a Warforged sorcerer, as her emissary to the party.  </li>
+<li>Vallus rewarded the heroes with a Scarab of Protection, which was given to Tharok.</li>
+</ul>
+<p><strong>Stygian Row Excursion:</strong></p>
+<ul>
+<li>Seeking leads on the Lady of Coins and the Cult of Lutheria, the party ventured into the Stygian Row slum before dawn.  </li>
+<li>Kain pursued and apprehended a goatling informant named Nippins after it threw a coin at him. Nippins confirmed the Lady of Coins used the sewers and suggested visiting the Satyr's Tail tavern for more information. Kain tasked Nippins with becoming a contact.  </li>
+<li>The party arrived at the Satyr's Tail tavern, a rough establishment frequented by sailors and criminals.</li>
+</ul>
+<p><strong>The Satyr's Tail Interactions:</strong></p>
+<ul>
+<li>Zephyrion clashed with the barkeep, Julius, over decorum and potent liquor, eventually getting ejected after a failed intimidation led to defecating on the floor.  </li>
+<li>Tharok engaged a minotaur crewman (Cepheus) of Captain Varkon in arm wrestling, winning easily.  </li>
+<li>Tharok learned Varkon's ship is the "Moist Maiden" and that they sometimes transport goods and people for Hexia.  </li>
+<li>Kain met his contact, Melandra, who identified Trellis and Septia (present in the tavern) as Lutherian cultists using their wine merchant business as a cover. Melandra also shared rumors about the Order of Sydon's wealth originating from the Isle of Yonder and pointed out two suspected enforcers of the Lady of Coins. Kain tasked Melandra with spreading anti-Lutheria rumors.  </li>
+<li>Andrew Lynx obtained Trellis and Septia's warehouse address by feigning interest in buying wine. His attempt to cause chaos with a Minor Illusion (shouting "Guards!") only caused one unrelated thief (Delphinius) to flee.  </li>
+<li>Kain apprehended Delphinius outside, learned he had a 100gp bounty, and tasked him with stealing a map to Hexia's Island from the Moist Maiden in exchange for not collecting the bounty. (Subsequent dice roll indicated Delphinius's failure).  </li>
+<li>Tharok collaborated with the satyr bard Fryxon (with Kyra's help) to compose and perform "The Storm's End," a ballad praising the heroes and subtly denigrating Lutheria.</li>
+</ul>
+<p><strong>The Agora Marketplace (Around 8 AM):</strong></p>
+<ul>
+<li>The party proceeded to the Agora marketplace.  </li>
+<li>They visited Talia's shop. She thanked them profusely for rescuing her, offered a 25% discount, and gave them a gift (contents unspecified).  </li>
+<li>The party purchased 6 Potions of Greater Healing and 7 Potions of Heroism from Talia. Kain bought 2 Oils of Sharpness, 2 nets, caltrops, and a grappling hook.  </li>
+<li>Kain acquired a regular shield and equipped the party's Mithril Breastplate, upgrading his AC to 17. He also attuned to the Radiance of Mitros short sword.  </li>
+<li>They visited the Great Menagerie, run by The Collector.  </li>
+<li>Using persuasion and deception, Andrew Lynx and Rhy-At convinced The Collector that a caged young centaur, Kalon, was diseased, securing his release.  </li>
+<li>The party sold two Basilisk eggs to The Collector for 4400gp (220pp).  </li>
+<li>Rhy-At healed Kalon, lectured him on theft, and Kain gave him gold.</li>
+</ul>
+<p><strong>Lord Taran's Offer:</strong></p>
+<ul>
+<li>While in the Agora, the party was approached by a messenger from Lord Taran Neurdagon, summoning them to his estate near noon.  </li>
+<li>They met Lord Taran, a wealthy noble and known minotaur slave trader.  </li>
+<li>Taran offered the party 5,000gp for the head of the Lady of Coins, whom he blamed for disrupting his business.  </li>
+<li>After negotiation, the party secured a deal for 6,000gp plus six Potions of Stone to Flesh/Flesh to Stone for the Lady of Coins' head.  </li>
+<li>They noted the presence of Cepheus, an associate of Taran wearing the blue cloak of the Order of Sydon.</li>
+</ul>
+<p><strong>Next Steps:</strong></p>
+<ul>
+<li>The party decided their next immediate objective is to investigate the Cult of Lutheria's warehouse, using the address provided by Trellis and Septia.  </li>
+<li></li>
+</ul>
+<h1 id="session-20">Session 20</h1>
+<ul>
+<li><strong>Date:</strong> Friday, 2nd week, early afternoon.  </li>
+<li><strong>Location:</strong> Mytros, heading towards the Lutheria cult's wine warehouse.  </li>
+<li><strong>Cult Public Outreach:</strong> Encountered Lutheria cultists distributing free food and wine. Andrew and Kain publicly challenged the cult's motives and connection to Sydon's storm. This caused unrest among the citizens and led the cultists to abandon their post and supplies.  </li>
+<li><strong>Wine Barrel Clue:</strong> Investigated the abandoned wine barrel and identified it (via Tharok's knowledge) as bearing the official seal of the Lutherian wine cartel.  </li>
+<li><strong>Wine Warehouse Arrival:</strong> Reached the wine warehouse. Initial attempts at deception by Kain (disguised as a cultist) were unsuccessful.  </li>
+<li><strong>Information Gathering:</strong> Overheard workmen discussing The Siren's Roost brothel and its expensive "companions" (including one claiming to be daughter of a Nereid). Kain and Nicandros used this to befriend the workmen with fake coupons, learning about their supervisor, Epimelites Malachor.  </li>
+<li><strong>Meeting with Malachor:</strong> Spoke with Epimelites Malachor, the warehouse supervisor.  </li>
+<li><strong>Warehouse Cargo:</strong> Learned that the warehouse transports not just wine, but also "new converts," "slaves," and "kidnapped children."  </li>
+<li><strong>The Ledger:</strong> Gained access to and stole Malachor's ledger (Tharok, with Rhy-At's help). The ledger shows a cyclical pattern of shipments of "small casks," indicating they are frequently delivered to the main Temple of Lutheria. This reinforces the suspicion that children are being transported in these casks.  </li>
+<li><strong>Colossus of Pythor:</strong> Decided to investigate the Colossus of Pythor. Found a heavily locked door at the base.  </li>
+<li><strong>Breaking In:</strong> Used a combination of immense strength (Tharok and Zephyrion, now Large size with increased Strength), lockpicking attempts (Kain), and magical force (Andrew's Eldritch Blast) to break open the reinforced door.  </li>
+<li><strong>Guardian Golems:</strong> Encountered two marble golems guarding the entrance. Discovered they can reassemble themselves after being destroyed. Attempted to delay reassembly by scattering their pieces.  </li>
+<li><strong>Lady of Coins' Minions:</strong> Entered the Colossus and encountered several minotaurs and a gladiator lady, who identified themselves as serving the Lady of Coins (their target for Lord Taran's bounty).  </li>
+<li><strong>Combat Initiated:</strong> Combat began after attempts at parley failed and the party used a blinding flash (Andrew) on some of the enemies.  </li>
+<li><strong>Combat Status:</strong>  </li>
+<li>Riot used a spell to restrain two minotaurs.  </li>
+<li>The Minotaur Hero released green gas into the room, poisoning several party members (failed Constitution saves).  </li>
+<li>Nicandros Hasted Tharok and Zephyrion.  </li>
+<li>Kain, Tharok, and Andrew dealt significant damage, defeating one minotaur.  </li>
+<li>Zephyrion pursued the gladiator lady who fled upstairs, grappling her and throwing her back down the stairs, dealing damage.  </li>
+<li>The gladiator lady is wounded but still mobile and has escaped further up the staircase.  </li>
+<li>Combat is ongoing.</li>
+</ul>
+<p>The session concluded mid-fight inside the Colossus of Pythor. You have learned more about the Cult of Lutheria's operations and have engaged the forces of the Lady of Coins.</p>
+<h1 id="session-21">Session 21</h1>
+<p><strong>Date:</strong> Friday, 2nd week, mid-afternoon <strong>Location:</strong> Mytros, Colossus of Pythor (Areas C3-C6), Sewer Entrance (C2/UL8)</p>
+<p><strong>Combat Continues in the Colossus's Belly (C3):</strong></p>
+<ul>
+<li>The session began mid-combat in the Colossus's belly chamber, filled with noxious green gas released by the Minotaur Hero.    </li>
+<li>Rhy-At cast Mirror Image for defense. The Minotaur Hero dodged and continued opening the gas valve.    </li>
+<li>The other minotaur, Kragnos the Hornbreaker, attacked Rhy-At, hitting one of the mirror images.  </li>
+<li>Nikandros used Favored by the Gods to succeed on his Constitution save against the poison gas, but Kain failed his and began coughing mucus, taking poison damage. Tharok also succeeded on his save.    </li>
+<li>Tharok engaged the Minotaur Hero, landing heavy blows with his greataxe.    </li>
+<li>Kain, despite being poisoned, used Hunter's Mark and his shortbow, injuring the Minotaur Hero.  </li>
+<li>Andrew Lynx missed with Eldritch Blast due to the Minotaur Hero dodging.    </li>
+<li>Zephyrion, having previously subdued the Gladiator Lady, used his reaction to strike her as she broke free from his grapple with surprising strength.  </li>
+<li>Tharok continued his assault, felling the Minotaur Hero, whose last words accused the party of killing their "savior". He then intimidated the remaining minotaur, Kragnos, into surrendering. Tharok shut off the poison gas valve.    </li>
+<li>Zephyrion used Mithral Thread bandages to cure Kain's poison.  </li>
+<li>The party looted the fallen foes, finding gold, silver, onyx gems, standard armor, a shield with a minotaur imprint, and a vial containing foul-smelling liquid identified by Kragnos as "putrid shit" used as a thrown weapon. Tharok allowed Kragnos to leave.</li>
+</ul>
+<p><strong>Ascending the Colossus (C4 &amp; C5):</strong></p>
+<ul>
+<li>The party decided to proceed upwards rather than explore the alternate trapdoor exit leading down to the Colossus's other foot.    </li>
+<li>They moved through the Torso chamber (C4), noting the acidic smell and strange gloss on the metal, but the acid trap was not active.    </li>
+<li>In the Chest chamber (C5), they encountered several thugs and other individuals (dwarf, goblin, hobgoblin, well-dressed man, drow) playing cards near the furnace. The furnace trap was also inactive.    </li>
+<li>The drow challenged the party, demanding a password. Tharok bluffed, claiming passage was granted by "Throx Iron Jaws" (Kragnos) to see "Moxina" regarding "lucrative deals," which surprisingly worked. The party noted several lifelike statues in the room.</li>
+</ul>
+<p><strong>Confronting the Lady of Coins (C6):</strong></p>
+<ul>
+<li>The party ascended to the head chamber (C6), finding Moxena (the Lady of Coins, a Medusa) lounging near statues of a dwarf, elf, and gnome.    </li>
+<li>A negotiation ensued. The party revealed they knew of her operations and connection to Hexia, mentioning the sea captain Varkon. Moxena confirmed she was a businesswoman who acquired "assets," including talent for Hexia, and mentioned her Amazonian sisters being traitors.    </li>
+<li>The party learned about a coup on the Isle of Themis roughly 15 years prior where the queen was overthrown by usurpers. Moxena appeared to be connected to this, possibly being one of the exiled sisters.  </li>
+<li>Zephyrion proposed a deal: the party would convince Lord Neurdagon she was dead if she laid low and ceased operations, specifically stopping the smuggling to Hexia.    </li>
+<li>Moxena counter-offered: she would cease crime in Mytros and accompany them on their great voyage to help against her traitorous sisters on Themis <em>if</em> they brought her Neurdagon's head.  </li>
+<li>The party refused to kill Neurdagon but persuaded Moxena (DC 28 Persuasion check success) to accept the deal without his head. She agreed to stop her criminal activities in Mytros and meet them outside the city via her contacts near the Satyr's Tail when they were ready to leave for Themis. She warned them not to tell Queen Vallus.    </li>
+<li>The party cleaned up the bodies from the earlier fight using Acid Splash.  </li>
+</ul>
+<p><strong>Exploring the Sewer Connection:</strong></p>
+<ul>
+<li>After the deal with Moxena, the party decided to investigate the sewer connection (C2) leading out from the Colossus's foot.  </li>
+<li>Descending the ladder, they found themselves in a sewer area (UL8 based on map description) with ankle-deep foul water and pipes discharging waste. Rhy-At recalled that Queen Vallus's water treatment operations were down here and had been experiencing issues since the hurricane.  </li>
+<li>Kain scouted east, noticing a large shape moving under the deeper water which disappeared quickly. He failed to track it. He also spotted small, tentacle-like larval growths burrowed into the walls, which reacted to his presence. Andrew Lynx used Acid Splash to clear these growths.    </li>
+<li>Kain scouted further east and observed a giant rat being snatched by a large tentacle/limb from the water. He also spotted more larval growths.    </li>
+<li>The party engaged and killed a large tentacled creature (Otyugh?) that emerged. They decided against harvesting the carcass.  </li>
+<li>Kain scouted again, finding a sewer exit leading to the Mytros shipyards near the docks, but not near the Moist Maiden's usual berth. He also noted the sewer tunnel continued east or turned north.  </li>
+<li>The party discussed their next move, considering exploring the sewers further (potentially finding the wastewater treatment plant or connections to the Temple of Lutheria) or leaving via the newly discovered exit.</li>
+</ul>
+<h2><strong>Updated Quest Log</strong></h2>
+<ul>
+<li><strong>The Lady of Coins (Lord Taran):</strong> <strong>[Updated]</strong> Encountered Moxena, the Lady of Coins. Instead of killing her for Taran's bounty, the party negotiated a deal. She agreed to cease criminal operations in Mytros and assist the party later if they help her against her sisters on the Isle of Themis. Taran's bounty remains unfulfilled, and the party intends to deceive him.  </li>
+<li><strong>Investigate the Cult of Lutheria (Queen Vallus):</strong> <strong>[No Change]</strong> Still pending. The party possesses the ledger indicating child trafficking to the Temple of Lutheria but prioritized investigating the Colossus. They know there might be sewer connections to the Temple.  </li>
+<li><strong>Recover the Ultros (King Acastus/Queen Vallus):</strong> <strong>[No Change]</strong> Still pending.  </li>
+<li><strong>Deal with Moxena (New):</strong> <strong>[Active]</strong> The party has agreed to help Moxena deal with her traitorous sister(s) on the Isle of Themis. In return, she will cease criminal activities in Mytros and accompany them on their voyage after they leave the city.  </li>
+<li><strong>Explore Mytros Sewers (New/Implied):</strong> <strong>[Active]</strong> The party discovered a sewer network connected to the Colossus of Pythor. They encountered a large monster and noticed strange larval growths. They learned of potential wastewater treatment issues and a construct overseeing machinery. They found a sewer exit near the shipyards and discussed further exploration, potentially towards the Temple of Lutheria or the waterworks.</li>
+</ul>
+<h1 id="session-22">Session 22</h1>
+<ul>
+<li>
+<p><strong>Sewer Exploration &amp; Sluice Gate Puzzles:</strong></p>
+</li>
+<li>
+<p>The session began with the party in the Mytros sewers, having recently descended from the Colossus of Pythor.  </p>
+</li>
+<li><strong>Nicandros</strong>, using Mage Hand, operated a sluice gate, attempting to drain a large chamber and reveal its contents or a path forward. The water level began to gradually decrease.  </li>
+<li>The party noted claw marks on the sluice gate and a large, damaged sewer pipe in the chamber.  </li>
+<li><strong>Rhy-At</strong> contemplated an "acid wash" of the room, a task reminiscent of his temple duties, but the party decided to wait for the water to drain.  </li>
+<li><strong>Kain</strong> scouted through a sluice gate, discovering an area with tiered water levels, and encountered a Grick creature, remaining undetected due to his invisibility. The party later engaged and killed this Grick.  </li>
+<li>There was discussion and manipulation of multiple sluice gates to control water flow, aiming to make areas traversable or expose hidden threats.  </li>
+<li>
+<p><strong>The Organ and the Beast:</strong></p>
+</li>
+<li>
+<p>The party discovered a chamber with an ornate organ.  </p>
+</li>
+<li><strong>Tharok</strong> began to play the organ. Simple notes resonated through the sewer pipes, but playing multiple keys at once caused a blast of noxious "poo vapors," which Tharok resisted.  </li>
+<li>Tharok's continued organ playing elicited a massive, guttural roar from deep within the sewers.  </li>
+<li>The organ music also caused the water in a large nearby chamber to froth and churn, heralding the arrival of a new threat.  </li>
+<li>
+<p><strong>Boss Fight: The Plague Worm:</strong></p>
+</li>
+<li>
+<p>A slimy tentacle erupted from the disturbed water, attacking <strong>Kain</strong> and <strong>Rhy-At</strong>, revealing the <strong>Plague Worm</strong>.  </p>
+</li>
+<li>A major battle ensued:  <ul>
+<li><strong>Rhy-At</strong> used Mind Sliver and an empowered Fireball.  </li>
+<li><strong>Kain</strong> fired arrows and attempted to use a net, which the worm shredded.  </li>
+<li><strong>Andrew Lynx</strong> used Eldritch Blasts.  </li>
+<li><strong>Kyra</strong> (the goddess) rode on <strong>Zephyrion's</strong> back, offering encouragement.  </li>
+<li><strong>Nicandros</strong> used necrotic energy from his mace to sever a grappling tentacle.  </li>
+<li><strong>Zephyrion</strong> engaged in melee with his Kopis and the Trident of Kenta-Mean but was downed by the worm.  </li>
+<li><strong>Kain</strong> used the Radiance of Mytros sword to revive Zephyrion.  </li>
+<li>The party successfully forced the Plague Worm to use its legendary resistances.  </li>
+</ul>
+</li>
+<li>The wounded Plague Worm attempted to flee underwater.  </li>
+<li><strong>Kain</strong>, enraged by Zephyrion's fall, pursued the fleeing worm and, with a volley of arrows, killed it.  </li>
+<li><strong>Andrew Lynx</strong> considered using a Maelstrom spell from a harp to trap the fleeing worm, but it was killed before this was fully enacted.  </li>
+<li>
+<p><strong>Looting the Worm &amp; Potion Shenanigans:</strong></p>
+</li>
+<li>
+<p><strong>Kain</strong> beheaded the Plague Worm.  </p>
+</li>
+<li><strong>Rhy-At</strong>, searching its innards, found the corpse of a <strong>Thieves' Guild ("Cult of the Snake")</strong> member and an ornate chest.  </li>
+<li>The chest contained ten crystal vials (five crimson, five azure) and a poem hinting at their transformative properties (enlarging/shrinking). <strong>Nikandros</strong> confirmed this with an Arcana check.  </li>
+<li>The party conducted an experiment by feeding a small amount of both potions simultaneously to their chicken, Henrietta.  </li>
+<li>Henrietta underwent a chaotic, painful transformation, with body parts erratically growing and shrinking.  </li>
+<li>After considerable debate and distress over the chicken's suffering (and the noise it was making), the party killed Henrietta. Her headless body continued to pulsate. The remains were bagged.  </li>
+<li>
+<p><strong>Short Rest &amp; Harvesting:</strong></p>
+</li>
+<li>
+<p>The party took a short rest. Characters healed using hit dice.  </p>
+</li>
+<li>They harvested poisonous bile from the Plague Worm. <strong>Kain</strong> performed the extraction successfully with guidance.  </li>
+<li>
+<p><strong>Encountering the Thieves' Guild ("Cult of the Snake") Hideout:</strong></p>
+</li>
+<li>
+<p>Continuing exploration, the party found a locked, heavy iron door.  </p>
+</li>
+<li><strong>Kain</strong> picked the lock. As he opened it, a "beefy goblin" slammed it shut and relocked it.  </li>
+<li>Kain picked the lock again. The party prepared for combat.  </li>
+<li>Upon opening the door, they found several thugs, a <strong>Yuan-ti</strong>, and a goblin boss. Combat ensued.  </li>
+<li><strong>Nikandros</strong> cast Toll the Dead.  </li>
+<li><strong>Andrew Lynx</strong> counterspelled a <em>Suggestion</em> spell cast by the Yuan-ti (targeting Tharok) and then unleashed Eldritch Blasts.  </li>
+<li><strong>Tharok</strong> raged and attacked the Yuan-ti.  </li>
+<li><strong>Rhy-At</strong> used Chromatic Orbs.  </li>
+<li><strong>Kain</strong> used his bow.  </li>
+<li>The party swiftly defeated these Thieves' Guild members. The alarm was not raised.  </li>
+<li>Loot included coins, a tarnished silver serpent ring, and an amulet.  </li>
+<li>
+<p><strong>Another Locked Door &amp; A Compromising Position:</strong></p>
+</li>
+<li>
+<p>Kain picked another locked door to the south.  </p>
+</li>
+<li>Inside, they found a human woman ("Lydia") and another goblin boss in a state of romantic entanglement.  </li>
+<li>Initiative was rolled again.  </li>
+<li><strong>Rhy-At</strong> hit Lydia with a Mind Sliver.  </li>
+<li><strong>Zephyrion</strong> leaped into the room and killed the goblin boss with his trident.  </li>
+<li>
+<p><strong>Interrogation and Cliffhanger Deception:</strong></p>
+</li>
+<li>
+<p>The terrified Lydia was questioned. She confirmed they were in a <strong>Thieves' Guild ("Cult of the Snake")</strong> hideout.  </p>
+</li>
+<li>The party debated how to handle Lydia and the remaining Guild members behind another door.  </li>
+<li>A plan formed: Lydia, intimidated by <strong>Tharok</strong> and the pulsating chicken-in-a-bag, would approach the door and try to bluff the occupants.  </li>
+<li>Lydia knocked and gave the password ("avocado"). Her nervous demeanor made the guard suspicious.  </li>
+<li><strong>Tharok</strong> interjected, claiming they were associates of <strong>Moxena, the Lady of Coins</strong>, had just saved Lydia from the Plague Worm, and presented its severed head as proof.  </li>
+<li>The Guild members on the other side, confused, told the party to step back from the door.  </li>
+<li>The session ended on this cliffhanger.</li>
+</ul>
+<p><strong>Ongoing Quests/Developments:</strong></p>
+<ul>
+<li><strong>The Lady of Coins (Lord Taran/Moxena):</strong> The party is now deep in a Thieves' Guild hideout, the faction led by Moxena with whom they just struck a deal. Their actions here could complicate that arrangement. Lord Taran's bounty for Moxena's head remains (intentionally) unfulfilled.  </li>
+<li><strong>Investigate the Cult of Lutheria (Queen Vallus):</strong> Still pending. The party is aware of potential sewer connections to the Temple of Lutheria and possesses Malachor's ledger.  </li>
+<li><strong>Explore Mytros Sewers:</strong> Actively ongoing. They have faced significant threats (Plague Worm, Grick, Otyugh), found valuable items (Potions of Proteus, Plague Worm Bile), and are now entangled with the Thieves' Guild. The DM mentioned more bosses and areas to explore.</li>
+</ul>
+<h1 id="session-23">Session 23</h1>
+<ul>
+<li><strong>Date:</strong> Sunday, 2nd week, morning.  </li>
+<li><strong>Location:</strong> Mytros Sewers – Thieves' Guild ("Cult of the Snake") Hideout (LL10), then northern sewer tunnels, culminating at a cellar entrance to the Temple of Lutheria.  </li>
+<li><strong>Thieves' Guild Hideout Interaction:</strong>  </li>
+<li>Successfully bluffed entry into the main common room/tavern area of the "Cult of the Snake" hideout.  </li>
+<li>Met key guild members: Vassilos (leader), Daskalos (lieutenant), Mira, Grigor the Gut, Petros the Rat, and Sister Eudoxia. Lydia was also present.  </li>
+<li>Kain observed Bronsidon, an adamantine pill-bug automaton, guarding the vault. Rhy-At identified it as a creation of Volkan.  </li>
+<li>Learned the guild steals wine from the Cult of Lutheria but is wary of them and denied knowledge of smuggled children.  </li>
+<li>Party members cleaned up after sewer exploration.  </li>
+<li>Took a long rest in the hideout; Rhy-At and Kain stood watch.  </li>
+<li>Morning: Andrew Lynx gave Lydia Klax's (looted) amulet in an attempt to placate her; she remained distressed.  </li>
+<li>Received directions from Grigor to find the Cult of Lutheria by heading north from the hideout.  </li>
+<li>Exited the hideout via a ladder Grigor showed them, leading to an alley behind the Siren's Roost.  </li>
+<li><strong>Sewer Exploration North:</strong>  </li>
+<li>Kain manipulated sluice gates to manage water levels.  </li>
+<li>Kain detected an invisible presence near a ladder.  </li>
+<li>Andrew Lynx cast Dispel Magic, revealing a Shield Guardian marked with Lutheria's symbols.  </li>
+<li>Rhy-At and Andrew identified it as a powerful sentinel with blindsight, immunities, spell storing, and regeneration.  </li>
+<li><strong>Combat: Shield Guardian:</strong>  </li>
+<li>Party failed to provide the correct password/riddle response ("Dreamers halt before the ladies' veil parts. Recite the lullaby that stoppers with minds speak or drown in violets.").  </li>
+<li>Initiated combat with a surprise attack (Nicandros, Andrew, Kain successful on stealth).  </li>
+<li>Shield Guardian regenerated and cast Black Tentacles, restraining most of the party. Andrew Lynx failed a counterspell attempt.  </li>
+<li>Rhy-At used Mind Sliver then quickened Magic Missiles to break the Guardian's concentration on Black Tentacles.  </li>
+<li>Tharok, in a rage, dealt the final blows.  </li>
+<li><strong>Loot &amp; Discovery:</strong>  </li>
+<li>Zephyrion claimed the Shield Guardian's head (for spell-storing).  </li>
+<li>Kain successfully used Thieves' Tools to extract the Shield Guardian Breastplate (crafting component). Failed to salvage the spell-storing plate.  </li>
+<li>Ascended the ladder the Guardian was protecting.  </li>
+<li><strong>Cult of Lutheria Cellar:</strong>  </li>
+<li>Discovered a magically silenced chamber with iron-barred cells.  </li>
+<li>Several children were visible, imprisoned within the cells. This is believed to be the cellar of the Temple of Lutheria.  </li>
+<li><strong>Cliffhanger:</strong> The party faces the choice of rescuing the children immediately or continuing to explore the sewers. </li>
+</ul>
+<h1 id="session-24">Session 24</h1>
+<ul>
+<li><strong>Date:</strong> Sunday, 2nd week, morning to early afternoon.  </li>
+<li><strong>Location:</strong> Mytros Sewers – Cult of Lutheria's hidden cellar, Mytros city streets, Queen Vallus's Palace, Engine-Works Vault (UL-6a/b), Web-Clogged Domes (UL-4).</li>
+</ul>
+<h4><strong>Rescue of the Children</strong></h4>
+<ul>
+<li>The party chose to immediately rescue the children from the Cult of Lutheria's cellar. Tharok smashed one cage open, while Kain picked the lock on the second.  </li>
+<li>The children were discovered to be wearing the purple-collared vestments of the Cult of Lutheria.  </li>
+<li>The party decided the safest course of action was to deliver the children to Queen Vallus's palace.  </li>
+<li>The two-hour journey was successful. They met the Queen's valet, <strong>Makaira</strong>, and entrusted the children to her care.  </li>
+<li>The head of the slain Shield Guardian was given to Makaira as evidence of the Cult of Lutheria's illicit activities.</li>
+</ul>
+<h4><strong>Volkan's Dynamo &amp; The New Quest</strong> {#volkan's-dynamo-&amp;-the-new-quest}</h4>
+<ul>
+<li>Upon returning to the sewers, the party discovered the <strong>Engine-Works Vault (UL-6a/b)</strong>, a massive pumping station in a state of disrepair.  </li>
+<li>They met <strong>Chief Engineer Petros "Ironhand" Galanis</strong> and his assistant <strong>Elara "Ironwrought,"</strong> who were struggling to prevent a catastrophic system failure.  </li>
+<li><strong>Quest Acquired:</strong> The engineers revealed the entire sewer system was damaged by the recent hurricane and tasked the party with recovering two critical components to prevent the city from "drowning in its own filth":  </li>
+<li><strong>1. Aetheric Capacitor:</strong> Lost in the northern Web-Clogged Domes, where a previous work crew was killed by a monstrous "broodmother".  </li>
+<li><strong>2. Vulcan-Forged Pressure Valve:</strong> Lost in the flooded Grand Cistern Complex to the east, where another crew led by Foreman Kastros has gone missing.</li>
+</ul>
+<h4><strong>The Web-Clogged Domes: Exploration</strong></h4>
+<ul>
+<li>The party proceeded north to the Web-Clogged Domes, finding the entrance choked with thick, shimmering webs that smelled of chemicals.  </li>
+<li><strong>Clue:</strong> Inside, Kain discovered the cocooned corpse of a city sewer worker. The body was unnaturally flat and shrunken, as if completely drained of all fluids.  </li>
+<li>They entered the main lair: a large cavern containing a luminous green lagoon, thousands of pulsing egg sacs, and numerous cocooned bodies hanging from the ceiling.</li>
+</ul>
+<h4><strong>Boss Fight: Eurysphex, the Broodmother</strong> {#boss-fight:-eurysphex,-the-broodmother}</h4>
+<ul>
+<li>The party was addressed by a voice identifying itself as <strong>Eurysphex</strong>, the Broodmother of Arachne, who referred to them as "little flies" caught in her "tapestry".  </li>
+<li><strong>Major Victory:</strong> The fight was initiated by Kain's flaming arrows. In a key tactical moment, Rhy-At's <em>Fireball</em> destroyed the webs Eurysphex was on, causing her to plummet 60 feet and take massive fall damage.  </li>
+<li>Eurysphex used a powerful villain action, "Arachne's Wrath," to transform, growing in size and gaining resistance to all damage except fire.  </li>
+<li>The boss cast <em>Polymorph</em> on Tharok, turning him into a rat. He was still able to land a raging opportunity attack while in his tiny form.  </li>
+<li><strong>Major Victory:</strong> After the boss returned to the ceiling, Andrew Lynx used <em>Eldritch Blast</em> to destroy her new web anchor, causing her to fall a second time.  </li>
+<li><strong>Boss Defeated:</strong> Tharok, having returned to his normal form, fought through the boss's poison and delivered the final blows, slaying Eurysphex.</li>
+</ul>
+<h4><strong>Loot &amp; Aftermath</strong> {#loot-&amp;-aftermath}</h4>
+<ul>
+<li>The party defeated the remaining spiderlings.  </li>
+<li><strong>Quest Item Recovered:</strong> Amidst the treasure, they found the <strong>Aetheric Capacitor</strong>, completing the first part of the engineers' quest.  </li>
+<li><strong>Magic Item Found:</strong> The party looted a powerful <strong>glowing bow</strong>. It can be a longbow or shortbow, deals an extra 1d6 radiant damage, and has several magical properties, including the ability to create an Energy Ladder, fire restraining arrows, or teleport a creature. Kain claimed the bow.  </li>
+<li>The party successfully harvested valuable poison from the broodmother's glands.</li>
+</ul>
+<h4><strong>Session End State</strong></h4>
+<ul>
+<li>The party took a short rest within the defeated spider's lair to recover and identify their new items.  </li>
+<li><strong>Next Objective:</strong> With the capacitor secured, the party must now venture to the Grand Cistern Complex to find the Vulcan-Forged Pressure Valve.  </li>
+<li></li>
+</ul>
+<p>Of course. Here is a quest log entry for the latest session, written in the style and format you requested.</p>
+<hr />
+<h1 id="session-25">Session 25</h1>
+<ul>
+<li><strong>Date:</strong> Sunday, 2nd week, late afternoon to evening.  </li>
+<li><strong>Location:</strong> Mytros Sewers – Engine-Works Vault (UL-6a/b), Great Cistern Complex (UR10), Upper-Right Cave Warrens (UR9, UR2, UR3, UR5, UR6, UR7, UR1).</li>
+</ul>
+<p><strong>Return to the Engineers &amp; The Next Task</strong></p>
+<ul>
+<li>The party returned the <strong>Aetheric Capacitor</strong> to Chief Engineer Petros "Ironhand" Galanis in the Engine-Works Vault.  </li>
+<li>They proceeded east towards the Grand Cistern Complex to find the second component, the Vulcan-Forged Pressure Valve.</li>
+</ul>
+<p><strong>The Grand Cistern &amp; a New Lead</strong></p>
+<ul>
+<li>Upon arriving at the Great Cistern (UR10), the party found it dangerously flooded and encountered Foreman Kastros and Engineer Thalia in a state of panic.  </li>
+<li>They learned that the <strong>Chief Engineer</strong> was missing, last seen investigating structural anomalies in a previously uncharted cave system connected to the sewers.</li>
+</ul>
+<p><strong>Infiltration of the Cave Warrens</strong></p>
+<ul>
+<li><strong>Kain</strong> scouted ahead and discovered a secret passage behind a recently rebuilt wall (UR9), which led into the cave warrens.  </li>
+<li><strong>Major Victory:</strong> Kain expertly disarmed a complex trap involving a pressure plate, collapsing ceiling, and a flood of acid bile, allowing the party safe entry into the hostile territory.  </li>
+<li>The caves were revealed to be the lair of a savage cult of reptilian creatures (Drakonians/Kobolds) who worship a monstrous entity called the "Maw of the Pit."</li>
+</ul>
+<p><strong>Rescue of the Chief Engineer</strong></p>
+<ul>
+<li><strong>Kain's</strong> stealthy reconnaissance located a prison area (UR2) where several captives were being held for a sacrificial ritual.  </li>
+<li><strong>Major Victory:</strong> Using the <em>Pass Without Trace</em> spell for concealment, the party executed a flawless surprise attack, silently eliminating the jailers before they could raise an alarm.  </li>
+<li><strong>Liberated Captives:</strong> The party successfully rescued the captives, who were identified as:<br />
+  1. <strong>Engineer Talia Ironrack</strong>, the missing Chief Engineer.<br />
+  2. <strong>Old Finn</strong>, a grizzled city sewer worker.<br />
+  3. <strong>Snik</strong>, a goblin captive from another tribe.  </li>
+<li>The party escorted the rescued individuals back to the safety of the main sewer tunnels before vowing to clear the rest of the warren.</li>
+</ul>
+<p><strong>Cleansing the Warrens</strong></p>
+<ul>
+<li>The party systematically and ruthlessly cleared the outer chambers of the Drakonian cult, neutralizing threats in their communal nest (UR1), hatchery (UR3), fungal grove (UR5), and workshop (UR7).  </li>
+<li>Their coordinated stealth tactics allowed them to ambush and eliminate numerous groups of kobolds, including warriors and scale sorcerers.</li>
+</ul>
+<p><strong>Loot &amp; Discoveries</strong></p>
+<ul>
+<li>The party recovered several items from the cleared rooms, including a beautifully crafted music box (worth 250 gp), a Carnelian gemstone (worth 50 gp), a kobold-brewed healing potion, and several large, well-cared-for kobold eggs.</li>
+</ul>
+<p><strong>Session End State</strong></p>
+<ul>
+<li>The party has successfully rescued the Chief Engineer and cleared the outlying sections of the Drakonian warrens.  </li>
+<li>They are aware that the heart of the cult's power—and likely a major boss encounter—lies ahead in the main sanctum (UR4), where a shaman named Vrasq was reportedly leading rituals.  </li>
+<li><strong>Next Objective:</strong> Confront the leader of the Drakonian cult and destroy the "Maw of the Pit" to fully secure the area and complete their mission in this part of the sewers.</li>
+</ul>
+<h1 id="session-26">Session 26</h1>
+<h3 id="quest-log:-session-of-june-19,-2025"><strong>Quest Log: Session of June 19, 2025</strong></h3>
+<p><strong>Objective:</strong> Fix the malfunctioning Mytros sewer system by aiding the city engineers.</p>
+<p><strong>Summary:</strong> After rescuing Engineer Talia Ironrack, the party ventured back into the reptilian cultists' warrens to eliminate the source of the corruption. They successfully ambushed the cultists, defeated two powerful abyssal monsters, and recovered a magical hammer, completing their quest and reaching Level 7.</p>
+<p><strong>Key Events &amp; Clues:</strong></p>
+<ul>
+<li><strong>The Shaman's Ritual:</strong> The party discovered the cultists, led by their shaman <strong>Vrask</strong>, in a state of religious ecstasy, performing a ritual around a large, dark pit.  </li>
+<li><strong>The Ambush:</strong> The party initiated a surprise attack, gaining a full round of actions against the unsuspecting cultists.  </li>
+<li>Kain killed an Elite Guard, whose body fell into the pit.  </li>
+<li>Zephyrion killed the shaman Vrask, ending the ritual chanting.  </li>
+<li><strong>Clue:</strong> The death of the guard provoked a reaction from the pit; the sounds of a giant creature eating and crunching bones echoed from below.  </li>
+<li><strong>Abyssal Monsters Emerge:</strong> Two monstrous creatures were revealed:  </li>
+<li><strong>The Maw of the Pit:</strong> A fleshy, horrifying creature with bone-like legs and a circular toothy maw emerged from the side of the pit.  </li>
+<li><strong>The Gullet Sovereign:</strong> A massive, veiny tendril with a giant mouth and smaller surrounding tentacles rose from the abyss itself.  </li>
+<li><strong>The Battle for the Pit:</strong>  </li>
+<li>The Gullet Sovereign proved a formidable foe, grappling both Rhy-at and Tharok and knocking Rhy-at unconscious.  </li>
+<li>Tharok heroically freed the unconscious Rhy-at by unleashing his axe's lightning damage on the capturing tendril.  </li>
+<li>The Maw of the Pit was destroyed by a fireball from Rhy-at.  </li>
+<li>Tharok delivered the killing blow to the Gullet Sovereign with a cinematic leap into the pit, destroying the creature completely.  </li>
+<li><strong>Sewer Plague:</strong> Tharok was bitten by the Gullet Sovereign and has contracted Sewer Plague.  </li>
+<li><strong>Clue:</strong> Symptoms will manifest in 24 hours (1d4 days) and include exhaustion and reduced healing. The party learned that a <em>lesser restoration</em> spell can cure the disease. Tharok himself is immune to disease.  </li>
+<li><strong>Quest Complete:</strong> The party returned to the engineers in the Great Cistern and gave them the recovered components. Foreman Castro confirmed the system was saved from catastrophic failure.  </li>
+<li><strong>Promised Reward:</strong> Foreman Castro assured the party the Queen would reward them handsomely for their efforts.  </li>
+<li><strong>Level Up:</strong> The party has reached <strong>Level 7</strong>.</li>
+</ul>
+<p><strong>Loot Recovered:</strong></p>
+<ul>
+<li><strong>From the Pit:</strong> After the battle, the party explored the bottom of the chasm and recovered the following treasures from the sludge and bones:  </li>
+<li>1,600 Gold Pieces.  </li>
+<li>Six Hematite Spheres (gems).  </li>
+<li>An Electrum Idol of a Fanged Moth (Art Object worth 750 gp).  </li>
+<li>A Ceramic Amphora with Draconian Scenes (Art Object worth 350 gp).  </li>
+<li>Three Potions of Greater Healing (found inside the amphora).  </li>
+<li><strong>The Hordemall:</strong> A magical warhammer that acts as a bag of holding for treasure (gold, gems, art objects) and can expend that wealth to create powerful magical effects, including a <em>wall of gold</em> or a <em>globe of invulnerability</em>.  </li>
+<li><strong>From the Maw of the Pit:</strong> The party successfully harvested one jar of Mimic Glue from the creature's remains.</li>
+</ul>
+<p><strong>Player Character Notes &amp; Plans:</strong></p>
+<ul>
+<li><strong>Tharok:</strong> Decided to multiclass, taking his first level in Fighter.  </li>
+<li><strong>Nikandros:</strong> Is considering multiclassing into Bard to provide more support for the party.  </li>
+<li><strong>Zephyrion:</strong> The party plans to use their Adamantine to craft him a functional, magical net at the Mithral Forge, as the standard version is useless.</li>
+</ul>
+<h1 id="session-27">Session 27</h1>
+<p>The session picked up directly after the party's success in the sewers.</p>
+<ol>
+<li><strong>Tharok's Sewer Plague &amp; Temple Visit:</strong><br />
+   * Tharok had contracted Sewer Plague.<br />
+   * The party discussed obtaining a Lesser Restoration spell.<br />
+   * They decided to go to the Temple of the Five Gods, knowing that common temple services, including Lesser and Greater Restoration, are offered for free.<br />
+   * At the temple, a high priest immediately tended to Tharok's affliction, performing a ritual that purified him, expelling "black dust" from his body.<br />
+   * The temple also offered them the use of their ritual baths and scented oils, which Tharok accepted.<br />
+   * They inquired about the cost of Death Ward (a 4th level spell) for future reference, learning it would be 320 gold for a scroll.<br />
+   * It was clarified that Divine Soul Sorcerers (like Rhy-At) can pick cleric spells, making them potential users of cleric spell scrolls.  </li>
+<li><strong>Audience with Queen Vallus and Royal Rewards:</strong><br />
+   * The party made their way to the Queen's palace.<br />
+   * They were met by Mikaera, the chief attendant, who informed them they arrived at "just the right time".<br />
+   * Queen Vallus was chastising and "dressing down" Trellus and Septia, the Lutherian cult members from the sketchy bar who smuggled children.<br />
+   * Tharok showed his disdain by mean-mugging and spitting at their feet as they were dragged away in chains.<br />
+   * Queen Vallus acknowledged their courage in rescuing the children and preventing the catastrophe in the sewers, noting their fame was growing.<br />
+   * She offered them a choice of<br />
+<strong>two</strong> items from the royal vaults as a reward, acknowledging their accomplishments.<br />
+   * After some persuasion (a successful roll of 29 with advantage and guidance from Rhy-At and Andrew Lynx, thanks to Nikandros's compelling case about Oracle's chosen heroes), the Queen agreed to grant them<br />
+<strong>two</strong> items instead of one.<br />
+   * The party discussed the options: Spell Needle, Titan's Fury Bow, Wand of Switch Step, Sending Stones, Master Guide, Tome of Harmonious Thought, and Robe of the Weave .  <ul>
+<li>The<br />
+<strong>Robe of the Weave</strong> was described as an "insane item". It gives +2 AC, +1 spell save DC, +1 spell attack rolls, and 1d6 hit points on successful saving throws against spells. It requires attunement by a sorcerer, warlock, or wizard.  </li>
+<li>The<br />
+<strong>Wand of Switch Step</strong> allows for instantaneous position exchange of allies/enemies. It has 1d4 charges, regains 1d4 at dawn, and has a 1 in 20 chance to vanish if all charges are expended.  </li>
+<li>The<br />
+<strong>Tome of Harmonious Thought</strong> gives +1 to Intelligence, Wisdom, and Charisma (permanently, once per 100 years per person).  </li>
+<li>They initially chose the Robe of the Weave and the Wand of Switch Step. Nikandros expressed interest in the Robe of the Weave due to its healing on saving throws. The party decided the Wand of Switch Step would be good for Nikandros due to its action cost and battlefield control.  </li>
+<li>The Queen also subtly warned them not to bring the<br />
+<em>Ultros</em> (the ancestor's ship) back to her husband, King Acastus, as he has other plans and is trying to use them. Andrew Lynx knew Astor Archelander (King Acastus's ancestor) was a bloodthirsty dragon lord.  </li>
+</ul>
+</li>
+<li><strong>Hero's Feast and Shopping Spree:</strong><br />
+   * The party decided to take a long rest and eat dinner at the palace, which granted them the benefits of a Hero's Feast.<br />
+   * The Hero's Feast cured diseases (like Tharok's sewer plague), granted immunity to poison and frightened conditions for 24 hours, advantage on Wisdom saving throws, and an increase in hit point maximum by 2d10 (Tharok rolled 15 extra HP).<br />
+   * After the feast, they went to the dive bar (Satyrs' Tail) where Tharok had previously arm-wrestled.<br />
+   * Tharok bought drinks for everyone (20 gold).<br />
+   * Zephyrion flirted with the satyr-human hybrid barmaid, Lyra.<br />
+   * Tharok challenged the minotaur (whom he previously defeated) to a drinking contest. The minotaur was "cowed" and agreed to a friendly wager of 5 gold pieces.<br />
+   * Nikandros played his harp (borrowing Tharok's magical instrument) and conjured squirrels to re-enact their sewer fight, impressing the crowd and earning 50 gold pieces.<br />
+   * Kain (the spy) met with his contact, Sari the Knight, at the bar. Sari provided three rumors for 50 gold pieces each (total 150 gp):  <ul>
+<li>Queen Thessalia wears a full helm because no one may look on her divine beauty.  </li>
+<li>A hidden bay on the east coast of the Isle of Themis is choked with rocks, but an underwater tunnel leads to it.  </li>
+<li>The Amazons have mutated and trained a giant hydra to guard their underground lair, devouring anyone who enters.  </li>
+<li>They then went to Talia's shop for supplies.  </li>
+<li>Tharok signed a potion for Talia as an "endorsement".  </li>
+<li>They tried to sell monster parts (cobold eggs, maw teeth). Tharok gave two kobold eggs to Vulcan and Pyra as gifts for future apprentices, keeping one for himself.  </li>
+<li>They purchased:  </li>
+<li>Two <strong>Superior Healing Potions</strong> for each of the 6 party members (12 total), at a discounted price due to Talia's appreciation for their fame. Initial price 330 gp each, total 3960 gp.  </li>
+<li><strong>Elixirs of Health</strong> (300 gp each, cures diseases/conditions). They bought two, making the total spend 3960 + 600 \= 4560 gp.  </li>
+<li>One<br />
+<strong>Oil of Sharpness</strong> (320 gp).  </li>
+<li>Five<br />
+<strong>Potions of Heroism</strong> (one for each except Tharok).  </li>
+<li>They sold various items:  </li>
+<li>Silver ring (Coil of the Eternal Serpent) for 100 gold. This ring provides 1d6 poison damage on piercing/slashing attacks, advantage on saves vs. poison, a bonus action to coat weapon for 2d6 extra damage on next hit (once per short rest), and allows speaking with snakes/serpentine creatures. It requires attunement.  </li>
+<li>Fine jade figurine for 275 gold (negotiated up from 200).  </li>
+<li>Finely crafted music box for 250 gold. It casts Soothing Lullaby (Calm Emotions) once per day.  </li>
+<li>Six Hematite Spheres for 900 gold (150 each).  </li>
+<li>Mithril Short Sword +1 and Scale Mail Armor with serpent. These were likely sold, though specific prices aren't immediately clear from the transcript.  </li>
+<li>They opted to keep the<br />
+<strong>Scarab of Protection</strong> in party loot (provides +1 to all saves, advantage on saves vs. spells, 12 charges to force succeed on necromancy/undead effects).  </li>
+</ul>
+</li>
+<li><strong>Travel to the Mithril Forge and New Revelations:</strong><br />
+   * The party decided to go directly to the Mithril Forge, delaying the<br />
+<em>Ultros</em> quest.<br />
+   * They chose to travel on<br />
+<strong>The Swift Dawn</strong> with Captain Ione Stormwind for 225 gold (negotiated down from 240, after initially being 120 and then 240 to increase speed). Nikandros playing his harp allowed them to get 7 mph speed.<br />
+   * The travel took 4 hours.<br />
+   * They arrived at the Mithril Forge around 2 PM.<br />
+   * Mage Hand was used to pull the lever and open the waterfall entrance.<br />
+   * At the forge, Pyra and Vulcan had been doing remodeling.<br />
+   * Pyra presented them with the<br />
+<strong>Cloak of Magic Immunity</strong> as their first commission. This cloak allows the wearer to spend charges (equal to spell's level) as a reaction to become immune to a spell's effects, regaining all charges daily.<br />
+   * Vulcan revealed a<br />
+<strong>Calydonian</strong>, a messenger construct from the old days, found during clearing ruins.<br />
+   * To repair the Calydonian, Vulcan needs two Mithril ingots and 1000 gold pieces.<br />
+   * The party immediately provided the Mithril (from a Mithril-inlaid axe and other Mithril items) and the 1000 gold pieces. Once repaired (in 3 days), the Calydonian can deliver commissioned items and collected materials directly to the party anywhere, saving travel time.<br />
+   * Vulcan also presented Tharok with a<br />
+<strong>Baby Basilisk companion</strong> (named "Baby Bjorn" or "Bjorn" after Tharok's axe), which will grow over time with feeding and care. It's a small creature that starts with a PB of 2.<br />
+   * Tharok also decided to give two of his kobold eggs to Vulcan and Pyra as gifts, for them to raise as apprentices. He kept one for himself.<br />
+   * The Wyvern egg they possess is expected to hatch in about 5 days.</li>
+</ol>
+<p><strong>Current Status of the Party:</strong></p>
+<ul>
+<li>Healed from Sewer Plague.  </li>
+<li>Received two powerful magic items: Robe of the Weave (Nikandros) and Wand of Switch Step.  </li>
+<li>Received the Cloak of Magic Immunity.  </li>
+<li>Commissioned the repair of the Calydonian messenger construct, providing the materials.  </li>
+<li>Tharok has a new baby basilisk companion (Baby Bjorn).  </li>
+<li>They are well-stocked with healing potions, elixirs of health, and potions of heroism.  </li>
+<li>They are currently at the Mithril Forge.  </li>
+<li>Their next major decision is whether to immediately pursue the<br />
+<em>Ultros</em> (as Queen Vallus secretly instructed) or return to Sour Vintage for more rumors (as she publicly suggested) before going for the ship.. The Wyvern egg is due to hatch soon</li>
+</ul>
+<h1 id="session-28">Session 28</h1>
+<ul>
+<li>
+<p><strong>Final Preparations at the Mithral Forge:</strong></p>
+<ul>
+<li>The session began with the party at the Mithral Forge, discussing their newly acquired magic items. Nikandros attuned to the powerful <strong>Robe of the Weave</strong>, while the <strong>Cloak of Magic Immunity</strong> was placed in the party loot for later consideration.</li>
+<li>Kain questioned Volkan about a weapon powerful enough to slay his ultimate quarry. Volkan spoke of legendary "god-killer" weapons forged by the Gygans during the First War.</li>
+<li><strong>New Lead:</strong> Volkan directed Kain to the <strong>Isle of Yonder</strong>, a fortress controlled by Sydon's fanatics. He mentioned a scholar there named <strong>Chondrus</strong>, a servant of the Lady of Dreams, who collects these rare Gygan artifacts. He warned that Chondrus is treacherous and the island is extremely dangerous.</li>
+<li>With a successful history check, Nikandros recalled seeing Chondrus in King Acastus's court.</li>
+<li>Volkan promised he could improve any Gygan weapon Kain might recover and assured the party that Queen Vallus would provide a means to navigate the Cerulean Gulf once they had secured the <em>Ultros</em>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Journey to the Sour Vintage:</strong></p>
+<ul>
+<li>The party departed the Mithral Forge via riverboat around 3 PM. The 10-hour journey brought them to the banks of the river near the Sour Vintage at 1 AM, the magical effects of their Hero's Feast having worn off.</li>
+<li>They decided to brave the 3-hour trek through the woods in the dead of night.</li>
+</ul>
+</li>
+<li>
+<p><strong>Midnight Encounter with Goatlings:</strong></p>
+<ul>
+<li>Due to a series of poor stealth rolls, the party stumbled directly into a clearing where a dozen goatlings were performing a ritual dance around an uprooted tree.</li>
+<li>Rhy-At's attempt at a peaceful offering of cheap liquor was met with confusion and the eerie music of a shaman's pan pipes. Another shaman caused magical snakes to erupt from Rhy-At's boots, which he calmly ignored.</li>
+<li>Rhy-At successfully intimidated the goatlings into backing down. Seizing the opportunity, Nikandros then persuaded the cowed creatures to offer the party a tribute.</li>
+<li>The party received a <strong>Goodberry Tonic</strong> from the goatling shaman and was allowed to pass peacefully.</li>
+</ul>
+</li>
+<li>
+<p><strong>Return to the Sour Vintage:</strong></p>
+<ul>
+<li>The heroes arrived at the tavern around 4:30 AM. The establishment had been visibly upgraded and rebranded to capitalize on its association with the "Heroes of the Prophecy."</li>
+<li>They were greeted by an awestruck stable boy, Marcus, who awkwardly offered to prepare a stall for Zephyrion.</li>
+<li>While waiting for the tavern to fully open, Zephyrion visited the town's farrier. By recounting the tale of his heroic deeds, he received a complimentary hoof trim and new horseshoes, which magically granted him increased speed and sure-footedness for 24 hours. Rhy-At, meanwhile, constructed a small, impromptu shrine to the five gods near the tavern.</li>
+<li>At 8 AM, the party entered the tavern to a hero's welcome from the patrons and the innkeeper, Aetala. Zephyrion magnanimously bought a round of drinks for the entire establishment.</li>
+</ul>
+</li>
+<li>
+<p><strong>Gathering Rumors &amp; Warnings:</strong></p>
+<ul>
+<li>Kain spoke with <strong>Alexios the former smuggler</strong>, who gave a grim warning about the Dead Falls. He spoke of a partner who vanished there years ago after seeing a ship in a hidden inlet, and mentioned that the water levels change and passages flood without warning.</li>
+<li>Following this, Kain engaged in some masterful haggling with Alexios, acquiring a magical <strong>Goblin Mask</strong> for the bargain price of 500 gold and four worthless gemstones.</li>
+<li>Kain then spoke with <strong>Corax the hunter</strong>, who provided an even more chilling account. He described a deathly silence that falls over the area at the stroke of midnight, of rock formations that look like screaming faces, and his unnerving certainty that the canyon walls themselves <em>breathe</em> and shift. He strongly advised the party not to travel there at midnight and to flee if the canyon begins to narrow.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tavern Happenings:</strong></p>
+<ul>
+<li>While information was being gathered, the rest of the party made their mark on the tavern.</li>
+<li>Zephyrion, in a grand display of confidence, had the merchant <strong>Philomena</strong> apply scented (and highly flammable) oils to his glistening equine physique.</li>
+<li>Nikandros played cards with <strong>Margot</strong>, a grieving war widow, bringing a smile to her face and drawing the jealous eye of another patron, Dorian.</li>
+<li>Kyra performed for the crowd, and Rhy-At took a moment to polish his warforged chassis with boiled olive oil.</li>
+</ul>
+</li>
+<li>
+<p><strong>Session End:</strong></p>
+<ul>
+<li>The session concluded with the party having gathered multiple, ominous warnings about the Dead Falls. They are well-rested, well-supplied, and now face the daunting task of approaching the haunted waters where the ghost ship <em>Ultros</em> is said to lie in wait.</li>
+</ul>
+</li>
+</ul>
+<p>Of course. Here is a detailed, bullet-pointed summary of Session 29 for your quest log.</p>
+<h3 id="session-29-quest-log-update"><strong>Session 29 Quest Log Update</strong></h3>
+<ul>
+<li>
+<p><strong>Arrival at the Dead Falls:</strong></p>
+<ul>
+<li>The party navigated a flooded passageway to reach a hidden lake where the ghost ship, the <em>Ultros</em>, was moored.</li>
+<li>While scouting, Kain killed a waterlogged undead corpse floating in the passage.</li>
+<li>Rhy-At explored the lakebed, discovering the remains of a previous adventurer and recovering a weather-damaged journal, 50 gp, and a silver locket.</li>
+</ul>
+</li>
+<li>
+<p><strong>Boarding the <em>Ultros</em></strong>:</p>
+<ul>
+<li>Upon boarding the ship, Kain touched the main mast and experienced a vision of the dryad Delphia, whose spirit is bound to the wood.</li>
+<li>This act awakened the ship, causing its spectral crew and its captain, Estor Arkelander, to materialize.</li>
+<li>A large, ghostly gray horned owl appeared in the rigging and was befriended by Zephyrion.</li>
+</ul>
+</li>
+<li>
+<p><strong>Encounter with Estor Arkelander:</strong></p>
+<ul>
+<li>Estor revealed his immortality is the result of a pact with "The Lady of Dreams" (Lutheria).</li>
+<li>He offered the party a quest: hunt down and destroy his three "traitorous" thanes. He promised that the most capable hero would inherit the ship and become its new captain.</li>
+<li>The party's insight revealed this offer is a trap, and Estor likely intends to possess the "winner".</li>
+</ul>
+</li>
+<li>
+<p><strong>Combat with Skaethon, the First Mate:</strong></p>
+<ul>
+<li>The party located the first thane, Skaethon, in the captain's cabin. He confirmed Estor's offer was a trap for possession.</li>
+<li>Kain attacked Skaethon, initiating combat.</li>
+<li>Nikandros used the <strong>Scepter of King Driptongue</strong> to cast <em>Dark Resonance</em>, imbuing the party with a vampiric bite attack they could use as a reaction when taking damage.</li>
+<li>During the fight, Zephyrion bit the animated sword <em>Ebony</em> in half, and Tharok bit a specter to death.</li>
+<li>Skaethon and his animated armor proved to be powerful foes, knocking both Zephyrion and Tharok unconscious.</li>
+<li>Andrew Lynx dealt the killing blow with a series of critical <em>Eldritch Blasts</em>, destroying Skaethon.</li>
+</ul>
+</li>
+<li>
+<p><strong>Loot and Aftermath:</strong></p>
+<ul>
+<li>Upon Skaethon's defeat, his animated gear became inert. The party recovered his magical armor, <strong>Azurescale</strong>, and his damaged sword, <strong>Ebony</strong>.</li>
+<li>A chest in the cabin contained 300 gp, 50 pp, a black pearl, four bloodstones, and other valuables.</li>
+<li>Three unique potions were found: <strong>Felix Felicis (Liquid Luck)</strong>, a <strong>Potion of Etherealness</strong>, and <strong>Sandman's Embrace</strong> (a sleep potion).</li>
+<li>Tharok's maximum HP is temporarily reduced from the specters' life drain attacks.</li>
+<li>Estor Arkelander remains on the upper deck, reading a book titled <strong>"The Ledger of Wills,"</strong> awaiting the party's next move.</li>
+</ul>
+</li>
+</ul>
+</body>
+</html>

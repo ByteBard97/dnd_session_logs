@@ -1,0 +1,286 @@
+#!/usr/bin/env python3
+"""generate_session_logs_html.py
+
+Convert one or many Markdown session log / recap files into a single self-contained
+HTML file that can be uploaded directly to a static hosting service.
+
+The script is intentionally lightweight – it does **not** attempt to inline images,
+fonts, or custom D&D styling.  It simply performs Markdown → HTML conversion and
+wraps the result in a minimal HTML scaffold.  The generated file works offline and
+renders well on modern browsers.
+
+Usage examples
+--------------
+# Convert a single markdown file
+python generate_session_logs_html.py ../game_transcripts_for_reference/session22_may6.txt
+
+# Convert all .md / .txt files inside a folder (alphabetical order)
+python generate_session_logs_html.py ../game_transcripts_for_reference/ --output session_logs.html
+
+Optional arguments
+------------------
+--output <file>      Set custom output filename (default: session_logs.html)
+--title  <string>    Set custom document <title>  (default: "D&D Session Logs")
+--toc                Include a generated Table of Contents linking to each session
+"""
+from __future__ import annotations
+
+import argparse
+import sys
+from pathlib import Path
+from typing import List
+
+try:
+    import markdown  # type: ignore
+except ImportError:
+    sys.stderr.write(
+        "The 'markdown' package is required. Install with: pip install markdown\n"
+    )
+    sys.exit(1)
+
+CSS_RESET = """
+/* Simple, readable defaults */
+body {
+  margin: 2rem auto;
+  max-width: 800px;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fafafa;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  margin-top: 1.5em;
+}
+code, pre {
+  background: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+pre {
+  overflow-x: auto;
+  padding: 1em;
+}
+a {
+  color: #0066cc;
+}
+"""
+
+def collect_markdown_files(path: Path) -> List[Path]:
+    """Return a list of markdown/text files to process.
+
+    If *path* is a file, return [path].
+    If *path* is a directory, return all .md/.markdown/.txt files inside (sorted).
+    """
+    if path.is_file():
+        return [path]
+
+    md_exts = {".md", ".markdown", ".txt"}
+    files = [p for p in sorted(path.iterdir()) if p.suffix.lower() in md_exts]
+    if not files:
+        raise FileNotFoundError(f"No markdown/text files found in directory: {path}")
+    return files
+
+
+def convert_files_to_html(
+    files: List[Path], *, include_toc: bool = False, debug: bool = False
+) -> str:
+    """Convert each markdown file and concatenate to a single HTML string.
+
+    Parameters
+    ----------
+    files: list of Path
+        Markdown/text files to convert.
+    include_toc: bool, optional
+        If True, prepend a generated Table of Contents.
+    debug: bool, optional
+        Emit verbose debugging information when True.
+    """
+    html_parts: List[str] = []
+    toc_entries: List[str] = []
+
+    md = markdown.Markdown(extensions=["extra", "toc", "tables", "sane_lists"])
+
+    for f in files:
+        session_id = f.stem.replace("_", " ").replace("-", " ")
+        heading_html = f"<h2 id=\"{f.stem}\">{session_id.title()}</h2>"
+        toc_entries.append(f"<li><a href=\"#{f.stem}\">{session_id.title()}</a></li>")
+
+        with f.open("r", encoding="utf-8") as fp:
+            md_text = fp.read()
+            # Remove inline anchor tags of the form {#anchor-id}
+            import re
+            md_text = re.sub(r"\s*\{#[-a-zA-Z0-9_:.]+\}", "", md_text)
+
+            if debug:
+                # Report any raw '####' markdown headers before conversion
+                for line_no, line in enumerate(md_text.splitlines(), start=1):
+                    if line.lstrip().startswith("#### "):
+                        print(
+                            f"[DEBUG] Raw #### header in {f.name} line {line_no}: {line.strip()[:120]}"
+                        )
+
+        body_html = md.convert(md_text)
+
+        if debug and '####' in body_html:
+            print(
+                f"[DEBUG] Literal #### found in rendered HTML for {f.name}; applying fallback conversion."
+            )
+
+        # Handle headings missed and wrapped in <p> tags
+        header_patterns = [
+            (r'<p>####\s+(.+?)</p>', r'<h4>\1</h4>'),
+            (r'<p>###\s+(.+?)</p>', r'<h3>\1</h3>'),
+            (r'<p>##\s+(.+?)</p>', r'<h2>\1</h2>'),
+            (r'<p>#\s+(.+?)</p>', r'<h1>\1</h1>'),
+            (r'^####\s+(.+)$', r'<h4>\1</h4>'),
+            (r'^###\s+(.+)$', r'<h3>\1</h3>'),
+            (r'^##\s+(.+)$', r'<h2>\1</h2>'),
+            (r'^#\s+(.+)$', r'<h1>\1</h1>'),
+        ]
+        for pattern, repl in header_patterns:
+            body_html = re.sub(pattern, repl, body_html, flags=re.MULTILINE)
+
+        if debug and '####' in body_html:
+            print(
+                f"[WARN] #### still present in HTML for {f.name} after fallback conversion – manual inspection recommended."
+            )
+
+        html_parts.append(heading_html)
+        html_parts.append(body_html)
+
+        # Reset markdown instance state between documents
+        md.reset()
+
+    if include_toc:
+        toc_html = "<nav><h2>Table of Contents</h2><ul>" + "\n".join(toc_entries) + "</ul></nav>"
+        html_parts.insert(0, toc_html)
+
+    return "\n\n".join(html_parts)
+
+
+def build_full_html(body_html: str, title: str, use_dnd: bool) -> str:
+    """Wrap *body_html* inside a basic HTML5 scaffold with optional D&D PHB styling."""
+    if use_dnd:
+        try:
+            from web_version.generate_offline_adventure_enhanced import get_dnd_phb_css  # type: ignore
+            phb_css = get_dnd_phb_css()
+        except ModuleNotFoundError:
+            # Attempt dynamic import using file path (handles running script directly)
+            enh_path = Path(__file__).parent / "generate_offline_adventure_enhanced.py"
+            if enh_path.exists():
+                import importlib.util
+                spec = importlib.util.spec_from_file_location("generate_offline_adventure_enhanced", enh_path)
+                if spec and spec.loader:
+                    module = importlib.util.module_from_spec(spec)
+                    spec.loader.exec_module(module)  # type: ignore
+                    phb_css = module.get_dnd_phb_css()  # type: ignore
+                else:
+                    phb_css = CSS_RESET
+            else:
+                sys.stderr.write("[WARN] Could not locate enhanced generator for D&D styling; falling back to minimal CSS.\n")
+                phb_css = CSS_RESET
+        except Exception as e:  # pragma: no cover
+            sys.stderr.write(f"[WARN] Error loading D&D styling ({e}); falling back to default.\n")
+            phb_css = CSS_RESET
+
+        return f"""<!DOCTYPE html>
+<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>{title}</title>\n  <style>{phb_css}</style>\n</head>\n<body class=\"phb-container\">\n  <h1>{title}</h1>\n  {body_html}\n</body>\n</html>"""
+    else:
+        return f"""<!DOCTYPE html>
+<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>{title}</title>\n  <style>{CSS_RESET}</style>\n</head>\n<body>\n  <h1>{title}</h1>\n  {body_html}\n</body>\n</html>"""
+
+
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Convert markdown session logs to a single HTML file.",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument(
+        "input_path",
+        type=Path,
+        help="Path to a markdown file or a directory containing markdown/text files.",
+    )
+    parser.add_argument(
+        "--output",
+        "-o",
+        type=Path,
+        default=Path("session_logs.html"),
+        help="Output HTML filename.",
+    )
+    parser.add_argument(
+        "--title",
+        "-t",
+        type=str,
+        default="D&D Session Logs",
+        help="Document title (<title> and top-level H1).",
+    )
+    parser.add_argument(
+        "--toc",
+        action="store_true",
+        help="Include a generated Table of Contents at the top of the document.",
+    )
+    parser.add_argument(
+        "--separate",
+        action="store_true",
+        help="When input_path is a directory, generate one HTML file per markdown file (placed next to each source) instead of concatenating them into a single document.",
+    )
+    parser.add_argument(
+        "--dnd-style",
+        action="store_true",
+        help="Embed D&D Player's Handbook styling (Foundry PHB CSS + embedded Solbera fonts) for authentic look.",
+    )
+    parser.add_argument(
+        "--out-dir",
+        type=Path,
+        default=Path("docs"),
+        help="Destination directory for generated HTML files (default: docs). Ignored when --output is an absolute path and --separate is false.",
+    )
+    parser.add_argument(
+        "--debug",
+        action="store_true",
+        help="Enable verbose debugging output (header detection, conversion stages).",
+    )
+    return parser.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
+    files = collect_markdown_files(args.input_path)
+
+    if args.separate and args.input_path.is_dir():
+        print(f"[INFO] Generating individual HTML files for {len(files)} source files…")
+
+        dest_dir = args.out_dir
+        dest_dir.mkdir(parents=True, exist_ok=True)
+
+        for src in files:
+            body_html = convert_files_to_html([src], include_toc=False, debug=args.debug)
+            # Use per-file title if not default
+            per_title = src.stem.replace("_", " ").title()
+            full_html = build_full_html(body_html, per_title, args.dnd_style)
+            out_path = dest_dir / f"{src.stem}.html"
+            out_path.write_text(full_html, encoding="utf-8")
+            if args.debug:
+                # Display a user-friendly path without raising errors for mixed absolute/relative cases
+                try:
+                    display_path = out_path.relative_to(Path.cwd()) if out_path.is_absolute() else out_path
+                except ValueError:
+                    display_path = out_path
+                print(f"  • Wrote {display_path}")
+    else:
+        print(f"[INFO] Converting {len(files)} file(s) to a single HTML…")
+        body_html = convert_files_to_html(files, include_toc=args.toc, debug=args.debug)
+        full_html = build_full_html(body_html, args.title, args.dnd_style)
+
+        output_path = args.output
+        if args.out_dir:
+            args.out_dir.mkdir(parents=True, exist_ok=True)
+            output_path = args.out_dir / args.output.name
+
+        output_path.write_text(full_html, encoding="utf-8")
+        print(f"[SUCCESS] Wrote {output_path.resolve()}")
+
+
+if __name__ == "__main__":
+    main() 
