@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Friday Session Recap</title>
+  <style>
+/* D&D 5e Player's Handbook Styling - Adapted from Foundry VTT */
+
+/* Font Embedding */
+
+
+/* Base Document Styling - Foundry VTT Adapted */
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c2c2c; /* Dark browser background */
+}
+
+.phb-container {
+    color: #000;
+    padding: 1cm 1.7cm;
+    padding-bottom: 1.5cm;
+    background-color: #EEE5CE;	
+    background-image: linear-gradient(135deg, #EEE5CE 0%, #F5F1E8 100%);
+    
+    font-family: "Bookinsanity", "Book Antiqua", serif !important;
+    font-size: 0.317cm !important;
+    text-rendering: optimizeLegibility !important;
+    
+    max-width: 21cm;
+    margin: 2em auto;
+    min-height: 29.7cm; /* A4 height */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    line-height: 1.3em;
+}
+
+/* Headers - Foundry VTT Style */
+.phb-container h1, 
+.phb-container h2, 
+.phb-container h3, 
+.phb-container h4 {
+    margin-top: 0.2em !important; 
+    margin-bottom: 0.2em !important;
+    font-family: "Mr Eaves Small Caps", "Cinzel", serif !important;
+    color: rgb(93, 24, 13) !important;
+    font-weight: normal;
+}
+
+.phb-container h1 {
+    font-size: 0.987cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1.2px;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.phb-container h2 {
+    font-size: 0.705cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h3 {
+    font-size: 0.529cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: 2px solid #c9ad6a;
+    -webkit-text-stroke-width: 0.6px;
+    padding-bottom: 0.1em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h4 {
+    margin-bottom: 0 !important;
+    font-size: 0.458cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    -webkit-text-stroke-width: 0.6px;
+}
+
+.phb-container h5 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-family: "Scaly Sans Caps", "Cinzel", serif;
+    font-size: 0.423cm;
+    font-weight: 900;
+    color: rgb(93, 24, 13);
+}
+
+/* Body Text - Foundry VTT Style */
+.phb-container p {
+    margin: 0 0 10.5px;
+    line-height: 1.3em;
+    -webkit-text-stroke-width: 0px;
+}
+
+.phb-container p + p {
+    margin-top: -0.8em;
+}
+
+/* First Letter Drop Cap - Foundry Style - Only for first content paragraph */
+.phb-container .section:first-of-type p:first-of-type::first-letter {
+    float: left;
+    font-family: "Solbera Imitation", "Cinzel Decorative", serif;
+    font-size: 5em;
+    color: #222;
+    line-height: 0.8em;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+}
+
+/* Paragraph Indentation - Foundry Style */
+.phb-container p + p, 
+.phb-container ul + p,
+.phb-container ol + p {
+    text-indent: 1em;
+}
+
+/* Read-Aloud Text Boxes */
+.phb-container .read-aloud, 
+.phb-container .descriptive-text {
+    background: #faf9f4;
+    border: 2px solid #c9ad6a;
+    border-radius: 0;
+    padding: 0.8em 1em;
+    margin: 1em 0;
+    font-style: italic;
+    position: relative;
+    text-indent: 0 !important; /* No indentation in boxes */
+}
+
+.phb-container .read-aloud::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid #8b7355;
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* Tables - Foundry Style */
+.phb-container table {
+    font-family: "Scaly Sans", "Noto Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.phb-container table th {
+    background: #c9ad6a;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    text-align: left;
+}
+
+/* Dialogue Entries - Enhanced Spacing */
+.phb-container .dialogue-entry {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+    border-left: 3px solid #c9ad6a;
+    padding-left: 1em;
+    margin-left: 0.5em;
+}
+
+.phb-container table td {
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    vertical-align: top;
+}
+
+.phb-container table tr:nth-child(even) {
+    background: #f5f3ed;
+}
+
+/* Lists */
+.phb-container ul, 
+.phb-container ol {
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+
+.phb-container li {
+    margin: 0.2em 0;
+}
+
+/* Strong and Emphasis */
+.phb-container strong, 
+.phb-container b {
+    font-weight: bold;
+    color: rgb(93, 24, 13);
+}
+
+.phb-container em, 
+.phb-container i {
+    font-style: italic;
+}
+
+/* Images */
+.phb-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #c9ad6a;
+    border-radius: 3px;
+    margin: 1em 0;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .phb-container {
+        margin: 1em;
+        padding: 1em;
+        font-size: 0.35cm !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .phb-container {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+    }
+}
+</style>
+</head>
+<body class="phb-container">
+  <h1>Friday Session Recap</h1>
+  <h2 id="session_recap">Session Recap</h2>
+
+<h1 id="session-35">Session 35:</h1>
+<p>When last we left our heroes, you stood before the impossible Tower of the Lotus Witch, a seamless black spire surrounded by a deadly enigma. Your experiments had revealed the terrifying truth of the golden wildflowers at its base—a field where time itself was broken, aging all who entered to dust in mere seconds. With the fate of the cursed centaurs resting on your shoulders, a choice had to be made.</p>
+<p>With courage befitting a Dragonlord, Delphi stepped forward. Tying a rope around his waist as a lifeline to his friends, he plunged into the temporal chaos. For him, the world dissolved into a dizzying blur of madly spinning suns and stars. For you, he simply vanished. Following his ghostly trail, the rest of you braved the field, reuniting before a door that had mysteriously appeared in the tower's obsidian face.</p>
+<p>The path led not to a monster's lair, but to a place far more unsettling: a nursery. Here, dozens of children—human, elf, minotaur—played amongst the discarded armor and weapons of their former lives, their minds wiped clean, their bodies de-aged by the tower's cruel mistress. They warned you of the "flower lady's" disappointment with uninvited guests and urged you to climb to the summit to face her with respect.</p>
+<p>Your ascent was a journey through wonders and horrors. You passed a museum of ancient beasts and fallen warriors, a chamber humming with the power of a grand summoning portal, and a room of windows that looked out upon other worlds—vistas of heaven, hell, and the starry void between.</p>
+<p>Finally, at the tower's peak, you met her. Seated upon a carved stone platform, with the body of a lioness, the wings of an eagle, and the ancient, knowing eyes of a woman, was the Lotus Witch. The magnificent gynosphinx, intrigued by your quest and the presence of a true Dragonlord, offered a bargain. She would share her knowledge, but only if you could prove yourselves worthy.</p>
+<p>And so her game began—a battle of wits with your very identities on the line. Answer three of her four riddles of Thylean history, and she would reveal the secrets you seek. Fail, and you would join the lost children in the nursery below, your adventures forgotten, your minds returned to infancy.</p>
+<p>You met her first challenge, correctly naming the cruelest of the Dragonlords: the ghostly captain of your own ship, Estor Arkelander. You answered her second, recalling the name of the first and greatest Dragonlord, the noble Xander. Two questions down, two correct. The path to victory seemed clear.</p>
+<p>But now, you face her third riddle. "When Thylea bore fruit," the Sphinx's voice echoes in the chamber, "which two Titans sprang forth from a single pit?" The air is thick with tension. One wrong answer could spell your doom. The Lotus Witch watches, her expression unreadable, as you weigh the fate of your quest on the tip of your tongue...</p>
+<h1 id="session-34-the-scourge-the-sundial">Session 34: The Scourge &amp; The Sundial</h1>
+<p>When last we left our heroes, they stood on the sun-scorched plains of Scorpion Island, locked in a desperate battle for survival. The sands were stained with the blood of the fallen Aresian monks, and before you stood a terrifying host of giant scorpions, led by a monstrous, building-sized Matriarch.</p>
+<p>The air filled with the sickening crunch of chitin and the screams of the dying. Aella, a blur of motion in the sky, unleashed her chakram in a devastating arc, while Astraeus's quick thinking with a <em>Hypnotic Pattern</em> took one of the giant beasts out of the fight. But the odds were grim. The last of the Aresian warriors were wiped out by a spray of venom, and the Matriarch loomed, a promise of certain death.</p>
+<p>Just as all hope seemed lost, a new sound cut through the chaos—not the chittering of scorpions, but the thunder of galloping hooves. Over the dunes charged a dozen proud centaurs, their leader Nessa crying a challenge as they crashed into the scorpion lines! With the aid of these unexpected allies, the tide of battle turned. Working in concert, you and the centaurs brought down the remaining scorpions, felling the monstrous Matriarch in a final, bloody onslaught.</p>
+<p>In the quiet aftermath, you learned the tragic truth of your new allies. Nessa explained the ancient curse laid upon her people by the Lotus Witch: every centaur on the island is doomed to transform into a monstrous scorpion upon reaching adulthood. Their only escape is to form a sacred bond with a mortal partner and flee the island forever.</p>
+<p>The centaurs led you toward the source of their curse—a single, seamless black tower at the island's heart, surrounded by a breathtakingly beautiful field of golden wildflowers. But this beauty concealed a deadly secret. The centaurs warned you that the field was enchanted, a place where time itself is broken.</p>
+<p>Your attempts to test this barrier only confirmed its terrifying nature. A <em>firebolt</em> aged into nothingness before it could strike. A thrown rock weathered and crumbled to dust in mid-air. A dead scorpion's carcass decayed to bone and then to nothing in seconds. Most horrifically, a dead scorpion carcass, hurled into the field, experienced a grotesque, rapid cycle , death, and monstrous transformation before disintegrating completely. Finally, sending a familiar through proved disastrous, the magical connection violently severed.</p>
+<p>And so, our session ended.  having taken a long rest, gazing at the impossible field. The Lotus Witch waits within her silent, seamless spire, and the fate of an entire people rests on your ability to break through a barrier of time itself. What will you do?</p>
+<hr />
+<h1 id="session-33-the-nightmare-the-scorpions">Session 33: The Nightmare &amp; The Scorpions</h1>
+<h2 id="session-33-opening-recap"><strong>Session 33 Opening Recap</strong></h2>
+<p><em>"As we return to our tale, the heroes of the Ultros find themselves in the midst of chaos and carnage on the treacherous shores of Scorpion Island...</em></p>
+<h3 id="a-troubled-voyage-lutherias-nightmare"><strong>A Troubled Voyage: Lutheria's Nightmare</strong></h3>
+<p>As the <em>Ultros</em> sailed toward the island marked by the Constellation of the Centaur, the party was assailed by a shared, horrifying dream sent by the Titan, Lutheria. The vision depicted shipwrecked sailors succumbing to cannibalism on a desolate shore. The dream's potent magic overwhelmed both Astraeus and Delphi, who awoke consumed by a violent bloodlust, turning on their companions.</p>
+<p>A chaotic struggle ensued below decks:
+* Aella and Rhaena, having resisted the dream's influence, fought to restrain their friends without causing serious harm.
+* Aella managed to grapple the frenzied Astraeus, while Rhaena attempted to subdue him with nets.
+* The conflict was resolved when Rhaena, having attuned to the recently acquired <strong>Titan's Scourge</strong>, used its power to break the nightmare's hold on both affected party members.</p>
+<h3 id="arrival-at-scorpion-island"><strong>Arrival at Scorpion Island</strong></h3>
+<p>Dawn brought relief as the nightmare's effects faded, and the party found themselves approaching a desolate, rocky island. The landscape was harsh and unwelcoming - jagged cliffs, sparse vegetation, and an ominous sense of danger pervading the air.</p>
+<h3 id="the-aresian-monks"><strong>The Aresian Monks</strong></h3>
+<p>Upon landing, the party encountered a group of <strong>Aresian monks</strong> - followers of Ares, the god of war. These warrior-priests had come to the island seeking to prove their worth through combat trials. The monks shared crucial information:</p>
+<ul>
+<li>They described the <strong>Lotus Witch's tower</strong> as a "trial for heroes" - a test of courage and skill that few survive.</li>
+<li>The monks spoke of the island's dangerous wildlife, particularly the <strong>giant scorpions</strong> that gave the island its name.</li>
+<li>They warned of the witch's power and the many who had attempted to reach her tower but never returned.</li>
+<li>The monks revealed they had been on the island for several days, gradually working their way toward the tower while battling the island's creatures.</li>
+</ul>
+<h3 id="the-scorpion-assault"><strong>The Scorpion Assault</strong></h3>
+<p>As the conversation with the monks continued, the party was suddenly attacked by a swarm of <strong>giant scorpions</strong> emerging from the rocky terrain. The battle was fierce and chaotic:</p>
+<ul>
+<li>Multiple <strong>Large Giant Scorpions</strong> emerged from hiding spots among the rocks.</li>
+<li>The creatures used their powerful claws and venomous stingers to deadly effect.</li>
+<li>Several of the Aresian monks were caught off guard and fell to the scorpions' assault.</li>
+<li>The party fought valiantly alongside the surviving monks, using their combined skills and magic to battle the arachnid menace.</li>
+</ul>
+<h3 id="the-matriarch-arrives"><strong>The Matriarch Arrives</strong></h3>
+<p>Just as the party seemed to be gaining the upper hand against the giant scorpions, the situation took a dire turn. A <strong>massive Scorpion Matriarch</strong> - easily the size of a building - emerged from deeper within the island's rocky terrain. This colossal creature dwarfed the other scorpions, its presence immediately shifting the balance of the battle.</p>
+<p>The session ended with this terrifying new threat bearing down on the party and the few surviving monks, its massive claws and stinger promising devastation. The heroes now face their greatest challenge yet on this cursed island, with the Lotus Witch's tower still distant and the path forward blocked by this monstrous guardian.</p>
+<p><em>The fate of the party hangs in the balance as they prepare to face the Scorpion Matriarch in what may be their most dangerous battle yet...</em></p>
+<hr />
+<h1 id="session-31">Session 31</h1>
+<p>Friday Recap: The Hydra's Maw &amp; Scholar's Secrets</p>
+<p>From the bloody temple of Themis, your path led directly to the very beast that guarded the queen's deepest secrets – the monstrous Hydra. With a daring plan, Astraeus unleashed a powerful</p>
+<p><em>Polymorph</em> spell, transforming the many-headed horror into a confused, ribbiting giant toad. Despite its newfound amphibian form, the toad still proved feisty, but Aella, ever fearless, bravely plunged her hand down its gullet. After a tense moment, she emerged victorious, clutching the legendary</p>
+<p><em>Titan's Bane</em>! This +3 adamantine blade is capable of shifting size (shortsword, longsword, or greatsword), dealing devastating necrotic damage (1d6, plus an additional 3d6 against Titans and cyclopes), and even casting</p>
+<p><em>dispel magic</em> with every strike! Its adamantine nature allows it to deal double damage against objects and constructs, and it has advantage on saving throws against attempts to damage it.</p>
+<p>With the sword secured and the grateful Bront reunited with his son Steros, the</p>
+<p><em>Ultros</em> set sail. Your journey brought you once more to the familiar shores of Jazirat Zulhaf, the Turtle Island. Here, you delivered the Perfect Basilisk Eye to the delighted marid, Shazum , and in exchange, received the mysterious</p>
+<p><em>Golemstone</em> as a reward. Shazum, ever seeking new curiosities, immediately tasked you with finding the intact stinger and tail of a giant scorpion. He also revealed the true nature of your perplexing red and blue potions: powerful enlarge/reduce draughts with a subtle, yet unknown, side effect. The shimmering pink liquid from Themis was identified as a</p>
+<p><em>Potion of Chromatic Displacement</em>, granting the ability to phase through solid objects, resistance to most damage, and translucence.</p>
+<p>In the Floating Lantern Inn, you discovered a new visitor: Elara Vancroft, a sharp-witted researcher in "Astro-Geological History" from the Mytrosian Royal Academy. After a cautious exchange, she agreed to trade knowledge: your firsthand accounts of the islands for her meticulous star charts. You confirmed that Fire Island is the Constellation of the Prisoner, and Elara stated the Constellation of the Centaur leads to either</p>
+<p><em>Scorpion Island</em> or <em>Indigo Island</em>. You also gained a new, more detailed map of the Cerulean Gulf from the Amazons, which Elara eagerly copied for her research. Elara further shared her belief that the Constellation of the Bard leads to the</p>
+<p><em>Isle of the Fates</em> and confirmed the Constellation of the Gygan leads to the <em>Island of Yonder</em> (Gaius's stronghold, where the missing Antikythera gear and Delphi's family armor are located).</p>
+<p>With new quests, powerful artifacts, and invaluable intelligence, you now continue your voyage into the unknown, setting course for the island marked by the Constellation of the Centaur.</p>
+<hr />
+<h1 id="session-30">Session 30</h1>
+<h3 id="friday-recap-the-tyrants-end"><strong>Friday Recap: The Tyrant's End</strong></h3>
+<p>When last we left our heroes, they stood deep within the serpent's den, the Amazon temple on the island of Themis1. With one of the medusa usurpers, Leia, already defeated, only the queen herself remained. You chose to press your advantage, formulating a daring plan to unmask the tyrant and reveal her monstrous nature to her followers2222.</p>
+<p>With Aella's magic cloaking your movements 3, Astraeus turned invisible and slipped past the guards4444. As Queen Thessalia performed her profane rites to Lutheria, a single, spectral hand reached out and ripped the platinum helmet from her head, and a torrent of snakes erupted for all to see5555! Accusations flew—Thessalia blamed you for a magical trick 6, while Aella and Darian revealed the truth of the coup that happened thirteen years prior7777. Darian's impassioned speech, empowered by Astraeus's magic, struck a chord with the Amazon warriors, who stood down in their confusion, refusing to fight for either side8.</p>
+<p>The battle was joined! Thessalia fought with the fury of a cornered snake, creating illusory duplicates of herself 9 and unleashing a petrifying gaze that began to turn Delphi to stone101010101010101010. But you were relentless. Your combined assault shattered her illusions 11111111, and Delphi fought off the petrification with a successful save12. When her last loyal attendant tried to heal her, Delphi's quick thinking with a <em>Counterspell</em> sealed her fate13. Bested and broken, the queen offered surrender, but Aella denied mercy to her mother's murderer14. In a final act of defiance, Queen Thessalia took her own life, her green blood staining the temple floor15.</p>
+<p>Though the tyrant is dead, the fight for the throne is not over. The Amazons' leader, Colonel Ilia, has issued a challenge: to prove her divine right to rule, Aella must slay the great Roc of the Forgotten Sea and present its head to the sisterhood16161616.</p>
+<p>Your victory yielded great rewards:</p>
+<ul>
+<li>You freed and de-brainwashed a group of captive men, several of whom have sworn to join your crew171717171717171717.  </li>
+<li></li>
+<li>Rhaena, you have claimed a greater family heirloom: a magnificent, hovering chariot imbued with the magic of your ancestors181818181818181818.  </li>
+<li></li>
+<li>Aella, you now wield the <strong>Oathkeeper Chakram</strong>, a deadly returning disc capable of unleashing a silent, vorpal path of destruction191919191919191919.  </li>
+<li></li>
+<li>You rescued the famed Jancan blacksmith, Bront, and can reunite him with his son Steros aboard the <em>Ultros</em>20202020.  </li>
+<li></li>
+<li>And you have a new quest: the goatlings revealed that the queen fed a legendary sword to the temple's hydra, a prize that now waits in the belly of the beast21.  </li>
+<li></li>
+</ul>
+<p>You have all gained a level for your heroic deeds22. Now, with the tyrant dead, a new challenge laid before you, and new allies and treasures in hand, you stand ready to leave this bloody temple and continue your journey. Your next destination has been chosen: the island marked by the Constellation of the Centaur23.</p>
+<h1 id="session-29">Session 29</h1>
+<p>Alright heroes, gather 'round and let's relive the blood, stone, and secrets from our last descent into the serpent's den!</p>
+<p>Our session began in the grim aftermath of your brutal takedown of the Amazonian guards. The iron door of a magically-silenced cell grated open, and a name, long thought lost to treachery, was whispered in the dark: Darian. With the rescue of Aella's childhood friend and cousin-in-spirit, your infiltration transformed into the first true strike to reclaim a stolen throne. After freeing the captive lizardfolk, Skal and Veth, you cleverly turned the enemy's prison against them, silencing the charmed Amazon guard Talia within the very cell that had held Darian for thirteen long years.</p>
+<p>While looting the barracks, you uncovered a trove of treasure and strange curiosities: adamantine daggers, platinum pieces, a sailor's map hinting at dangers on other isles, and a grim necklace made from a single, gnarled fingernail. After arming the vengeful Darian with the weapons of her former captors and healing her wounds with bitter wine and potions, you prepared to delve deeper into the usurper's lair.</p>
+<p>The path downward led past a mesmerizing, cobalt-glowing fountain. Behind one door lay a strange, perfumed salon where a harem of dazed young men lounged in a stupor—a puzzle you wisely chose to leave for later. Behind another, you found a grand feast hall, its central table a ruin of gluttony lorded over by a mysterious, black-clad woman named Voracia. A demon of trouble and boredom, she was amused by your quest for revenge and offered a poisoned chalice of information, pointing you toward the bedchamber of Leia, one of the medusa usurpers.</p>
+<p>Following her directions past a hidden trap plate, you arrived at a gilded door. Inside, a scene of cloying decadence: Leia, clad in silk, lounging on a bed with a powerful minotaur, serenaded by the maenad musician you now hold prisoner. The unsettling cries of infants echoed from a cradle in the corner.</p>
+<p>The ambush was perfect. You burst in with the fury of a storm, Aella's chakram screaming for vengeance as it found its mark on Leia. Astraeus bathed the room in Faerie Fire, Rhaena's spear skewered the minotaur, and Delphi's magic tore through the chamber. But your triumph was cut short by a horrifying turn. As the battle was joined, Leia unleashed her petrifying gaze. In a heartbeat, Astraeus and Delphi were turned to cold, unmoving stone! The "infants" in the cradle revealed their true form as goatling tricksters, one of whom transformed the mighty Makaira into a helpless rat.</p>
+<p>Just as disaster seemed imminent, Delphi, in his final moment of flesh and blood, unleashed a devastating, maximized bolt of lightning from a hard-won scroll. The blast incinerated Leia and one of the goatlings, breaking the polymorph spell on Makaira and turning the tide of battle for good. With their leader reduced to a charred husk, the remaining foes quickly surrendered.</p>
+<p>With the immediate threat neutralized, you used your last two precious doses of basilisk salve to restore your petrified friends. To secure your future, you marched back to the pens, butchered the remaining basilisks, and with skilled hands, harvested a fresh supply of the life-saving remedy.</p>
+<p>Now, with one sister vanquished and her chambers looted for maps and mysterious potions, you stand victorious but keenly aware of your depleted resources. Your quest for vengeance has just begun, and the true queen of the Amazons still sits on her venomous throne deeper in the complex. What new horrors await in the heart of the false queen's domain?</p>
+<h2 id="_1"></h2>
+<h2 id="session-28-deep-into-the-serpents-den"><strong>Session 28: Deep into the Serpent's Den</strong></h2>
+<h2 id="following-your-brutal-victory-over-the-regenerating-marble-guardians-your-partyaella-delphi-rhaena-astraeus-and-the-steadfast-makaira-with-kyra-diligently-recording-your-exploitsstood-at-the-threshold-of-the-sacred-temple-the-very-heart-of-the-usurper-queens-power-on-themis-the-air-was-thick-with-the-weight-of-aellas-thirteen-year-exile-her-quest-to-reclaim-her-birthright-burning-in-her-eyes"><strong>Following your brutal victory over the regenerating marble guardians, your party—Aella, Delphi, Rhaena, Astraeus, and the steadfast Makaira, with Kyra diligently recording your exploits—stood at the threshold of the Sacred Temple, the very heart of the usurper queen's power on Themis. The air was thick with the weight of Aella's thirteen-year exile, her quest to reclaim her birthright burning in her eyes.</strong></h2>
+<h2 id="aella-ever-the-keen-eyed-leader-discerned-the-secret-of-the-massive-bronze-door-a-rotating-mechanism-bearing-a-hand-shaped-imprint-a-silent-invitation-to-the-brave-through-it-you-descended-into-the-earth-the-pressure-building-in-your-ears-with-each-spiraling-step"><strong>Aella, ever the keen-eyed leader, discerned the secret of the massive bronze door: a rotating mechanism bearing a hand-shaped imprint, a silent invitation to the brave. Through it, you descended into the earth, the pressure building in your ears with each spiraling step.</strong></h2>
+<h2 id="you-emerged-into-a-cavernous-chamber-the-air-thick-with-the-musky-scent-of-reptiles-here-two-amazon-warriors-stood-guard-one-methodically-sharpening-a-cleaver-the-other-pacing-behind-bronze-bars-enormous-eight-legged-basilisks-rumbled-contentedly-their-reptilian-eyes-a-chilling-promise-of-petrification-after-a-quick-respite-to-recover-your-strength-you-decided-against-stealth-opting-for-a-decisive-strike-astraeus-with-his-enchanting-charisma-charmed-one-of-the-amazon-guards-talia-turning-her-heart-to-his-cause-the-battle-was-swift-and-brutal-aella-with-her-enchanted-chakram-cut-down-the-dwarf-basilisk-keeper-nura-and-her-companion-the-monstrous-basilisks-now-neutralized-under-hastily-thrown-sailcloth-snarled-in-frustration"><strong>You emerged into a cavernous chamber, the air thick with the musky scent of reptiles. Here, two Amazon warriors stood guard, one methodically sharpening a cleaver, the other pacing. Behind bronze bars, enormous eight-legged basilisks rumbled contentedly, their reptilian eyes a chilling promise of petrification. After a quick respite to recover your strength, you decided against stealth, opting for a decisive strike. Astraeus, with his enchanting charisma, charmed one of the Amazon guards, Talia, turning her heart to his cause. The battle was swift and brutal; Aella, with her enchanted chakram, cut down the dwarf basilisk-keeper Nura and her companion. The monstrous basilisks, now neutralized under hastily thrown sailcloth, snarled in frustration.</strong></h2>
+<h2 id="with-talia-charmed-and-bound-you-extracted-crucial-intelligence-you-learned-of-commander-lyra-queen-thesilea-vi-and-her-sister-leiaall-dwelling-deeper-within-the-complex-you-discovered-the-existence-of-other-prisoners-captured-lizardfolk-the-giant-jancan-blacksmith-bront-steross-father-and-most-importantly-darien-a-childhood-friend-of-aellas-and-a-high-ranking-loyalist-to-the-true-queen-imprisoned-for-thirteen-years-talia-also-divulged-the-dark-truth-behind-the-marble-statues-outside-they-are-the-petrified-favored-sons-of-lutheria-some-born-here-some-shipwrecked-some-gifts-from-afar-and-some-destined-as-fodder-for-the-basilisks-you-also-learned-of-an-underwater-entrance-though-its-exact-location-remained-a-mystery-the-fallen-amazon-warriors-were-disposed-of-tossed-over-the-cliff-their-bodies-carried-away-by-the-waves-unwittingly-taking-vital-keys-with-them"><strong>With Talia charmed and bound, you extracted crucial intelligence. You learned of Commander Lyra, Queen Thesilea VI, and her sister Leia—all dwelling deeper within the complex. You discovered the existence of other prisoners: captured lizardfolk, the giant Jancan blacksmith Bront (Steros's father!), and most importantly, Darien, a childhood friend of Aella's and a high-ranking loyalist to the true queen, imprisoned for thirteen years. Talia also divulged the dark truth behind the marble statues outside: they are the petrified "favored sons of Lutheria," some born here, some shipwrecked, some gifts from afar, and some destined as fodder for the basilisks. You also learned of an underwater entrance, though its exact location remained a mystery. The fallen Amazon warriors were disposed of, tossed over the cliff, their bodies carried away by the waves, unwittingly taking vital keys with them.</strong></h2>
+<h2 id="leaving-the-lovestruck-talia-gagged-and-bound-to-prevent-her-alerting-anyone-to-your-presence-behind-you-proceeded-deeper-the-next-bronze-door-proved-a-stubborn-challenge-its-lock-resisting-aellas-initial-attempts-even-with-stimfay-sent-to-scour-the-cliff-face-for-nuras-discarded-keys-a-futile-search-aellas-persistent-lockpicking-eventually-yielded"><strong>Leaving the lovestruck Talia (gagged and bound to prevent her alerting anyone to your presence) behind, you proceeded deeper. The next bronze door proved a stubborn challenge, its lock resisting Aella's initial attempts. Even with Stimfay sent to scour the cliff face for Nura's discarded keys (a futile search), Aella's persistent lockpicking eventually yielded.</strong></h2>
+<h2 id="beyond-a-honeycomb-like-tunnel-reeked-of-stagnant-water-your-heightened-senses-detected-a-subtle-trap-plate-as-aella-cautiously-investigated-thick-serpentine-hydra-heads-erupted-from-the-holes-in-the-walls-snapping-venomously-aella-narrowly-evaded-their-lethal-bites-realizing-the-danger-astraeus-raced-back-to-talia-charming-her-once-more-to-glean-the-password-by-the-grace-of-lutheria-whispering-the-blasphemous-phrase-you-felt-a-chilling-resonance-of-lutherias-power-a-sickening-echo-of-past-nightmares-but-the-monstrous-heads-retreated-allowing-passage"><strong>Beyond, a honeycomb-like tunnel reeked of stagnant water. Your heightened senses detected a subtle trap plate. As Aella cautiously investigated, thick, serpentine hydra heads erupted from the holes in the walls, snapping venomously! Aella narrowly evaded their lethal bites. Realizing the danger, Astraeus raced back to Talia, charming her once more to glean the password: "By the Grace of Lutheria." Whispering the blasphemous phrase, you felt a chilling resonance of Lutheria's power, a sickening echo of past nightmares, but the monstrous heads retreated, allowing passage.</strong></h2>
+<h2 id="navigating-around-more-hidden-trap-plates-you-discovered-a-side-passage-leading-to-the-amazon-barracks-astraeus-peeking-in-confirmed-two-more-amazon-warriors-inside-idly-playing-cards-without-hesitation-you-burst-in-rhaenas-longsword-carved-down-one-warrior-while-aellas-chakram-in-a-brutal-arc-decapitated-the-other-among-the-spoils-you-found-a-necklace-heavy-with-keys"><strong>Navigating around more hidden trap plates, you discovered a side passage leading to the Amazon Barracks. Astraeus, peeking in, confirmed two more Amazon warriors inside, idly playing cards. Without hesitation, you burst in. Rhaena's longsword carved down one warrior, while Aella's chakram, in a brutal arc, decapitated the other. Among the spoils, you found a necklace heavy with keys!</strong></h2>
+<h2 id="these-keys-opened-the-final-formidable-door-in-the-barracks-revealing-a-grim-sight-a-hallway-lined-with-prison-cells-two-lizardfolk-prisoners-pleaded-for-rescue-revealing-their-loyalty-to-queen-vytha-and-mentioning-the-cyclops-bronts-capture"><strong>These keys opened the final, formidable door in the barracks, revealing a grim sight: a hallway lined with prison cells. Two lizardfolk prisoners pleaded for rescue, revealing their loyalty to Queen Vytha and mentioning the cyclops Bront's capture.</strong></h2>
+<h2 id="but-the-true-revelation-lay-in-the-last-cell-a-young-woman-scarred-and-silent-recalling-talias-earlier-mention-of-a-high-ranking-loyalist-named-darien-held-prisoner-for-her-allegiance-to-the-true-queen-aella-addressed-the-unresponsive-figure-despite-aellas-impassioned-revelation-of-her-own-true-identity-and-her-denouncement-of-the-medusa-usurpers-treachery-the-woman-remained-eerily-silent-delphi-however-with-his-keen-senses-noticed-a-peculiar-acoustic-anomaly-in-her-cell-a-subtle-disturbance-suggesting-a-magical-silence-was-at-play-with-a-final-turn-of-a-hard-won-key-aella-opened-dariens-cell-as-the-iron-grated-open-the-young-woman-finally-looked-up-her-eyes-wide-with-a-mixture-of-nervousness-and-fear"><strong>But the true revelation lay in the last cell: a young woman, scarred and silent. Recalling Talia's earlier mention of a high-ranking loyalist named Darien held prisoner for her allegiance to the true queen, Aella addressed the unresponsive figure. Despite Aella's impassioned revelation of her own true identity and her denouncement of the medusa usurpers' treachery, the woman remained eerily silent. Delphi, however, with his keen senses, noticed a peculiar acoustic anomaly in her cell, a subtle disturbance suggesting a magical silence was at play. With a final turn of a hard-won key, Aella opened Darien's cell. As the iron grated open, the young woman finally looked up, her eyes wide with a mixture of nervousness and fear.</strong></h2>
+<h2 id="_2"></h2>
+<h2 id="_3"></h2>
+<h2 id="session-27-statues-and-stone-guardians"><strong>Session 27: Statues and Stone Guardians</strong></h2>
+<p><strong>Following your tense arrival on Themis and the initial, grim encounter with Amazon scouts fiercely loyal to the usurpers, your path led to the ominous small island in the eastern bay—a place your aerial reconnaissance had marked as the likely seat of the false queen's power. The island presented a chilling vista: a veritable forest of life-sized marble statues, the vast majority depicting beautiful, naked young men, alongside a grim collection of others, some scarred or maimed. At its heart, a grand marble staircase spiraled down into the earth, beckoning you towards the unknown.</strong></p>
+<p><strong>With Aella stepping onto her homeland after thirteen years of bitter exile, the air was thick with anticipation and the unspoken weight of her quest to reclaim her birthright. The party, including the knowledgeable warrior Makaira and the Jancan Steros—hopeful of finding his captive father, Bront, within whatever lay below—prepared to delve into the darkness. Delphi, ever cautious, invoked <em>Pass Without Trace</em> for the group, while Aella enhanced his agility with <em>Longstrider</em>.</strong></p>
+<p><strong>The first test came swiftly. As Delphi began his descent down the marble steps, intending to scout ahead with his re-summoned owl familiar, four of the stoic marble statues flanking the entrance ground to life, their stony silence replaced with hostile intent! A hasty retreat by Delphi caused the guardians to return to their inanimate repose. A chilling discovery followed: a chip Delphi had previously inflicted on a statue was observed to slowly regenerate, the marble magically mending itself.</strong></p>
+<p><strong>Further investigation revealed a crucial weakness: the golems remained inert when Aella, Rhaena, and Makaira approached, only animating to repel the men of the party, Astraeus and Delphi. While the women could pass, the problem of their male companions remained. Delphi's owl, ghosting past the sealed brass doors at the stairway's nadir, revealed two Amazon warriors within, seemingly at ease, playing cards.</strong></p>
+<p><strong>Aella dispatched her loyal Stimfay to circle the island's exterior, searching for alternative routes. The clockwork bird returned with two possibilities: a large, half-submerged stone culvert, and a narrow crack in the cliff face, currently at high tide, which might offer passage in a few hours.</strong></p>
+<p><strong>The party faced a choice: wait for the tide, attempt the culvert which might prove too small for Rhaena, or face the regenerating stone guardians head-on. Impatience and the desire for direct confrontation won out; the golems would be dealt with.</strong></p>
+<p><strong>Rhaena's initial attempt to topple a golem with ropes proved futile as she stumbled. The battle was joined! The party quickly learned the golem's resilience: they were immune to non-magical weaponry, Rhaena's mundane javelins bouncing harmlessly. Makaira, armed with the magical Spear of Pythor, and Aella, with her enchanted +2 mithral chakram, drew first blood. Astraeus's spells and enchanted arrows from the Shortbow of Cupid found their mark, while Delphi's magic blasted and hindered.</strong></p>
+<p><strong>The fight became a brutal dance of attrition. The golems struck hard, their marble fists and spear-like protrusions finding their targets, injuring Delphi and Makaira significantly. The key to victory lay in Rhaena's adamantine Nightblade, which carved grievous wounds in the constructs, bypassing their normal defenses and dealing devastating double damage. The party also discovered that dismembering the golems and casting the parts off the cliff—heads, legs—was vital. Though the constructs could still reassemble even when missing parts, removing the head induced blindness, and eventually, the relentless assault and strategic dismemberment proved too much. One by one, the regenerating statues were battered, torn apart, and finally stilled, their magical animation extinguished for good.</strong></p>
+<p><strong>Victorious but battered, the heroes stood before the now-undefended brass doors. The way into the Amazon's secret temple complex, the heart of the usurpers' domain on Themis, lay open. With the promise of leveling up upon clearing the island, and a short rest needed to recover, the stage is set to plunge deeper into Aella's troubled past and the island's deadly secrets.</strong></p>
+<h2 id="session-26"><strong>Session 26???</strong></h2>
+<p><strong>Okay, heroes, let's relive the whirlwind of fire, scales, and strange shores from our last adventure!</strong></p>
+<p><strong>Having struck down the usurper King Jankor within his volcanic fortress, your path led deeper into the fiery mountain's heart. The final prize, the second Brass Dragon Egg, lay hidden within the sweltering cave of the salamanders, Ignis and Cindra. Testing the cracked, glowing floor proved perilous, as Astraeus discovered when his foot ignited upon contact! Prudence demanded another approach.</strong>  </p>
+<p><strong>Harnessing potent magic, Delphi and Aella prepared potions of Spider Climb, while Astraeus invoked his enchanted lute to take flight. With Delphi scaling the walls like an arachnid, Astraeus floated into the cavern, confronting the protective salamanders. Wielding Jankor's captured <em>Staff of Thunder and Lightning</em>, Astraeus channeled newfound authority, mixing diplomacy with intimidation. Though wary, the salamanders yielded before the symbol of their fallen master and the party's demonstrated power, allowing you to claim the ancient Brass Dragon Egg – a key step in Delphi's path as the Vanished One. While there, Delphi also skillfully extracted several of the strange, humming red crystals embedded in the cave walls.</strong>  </p>
+<p><strong>Rallying your allies – the rescued Bloodscale warriors, the young dragonling Pyraxis (now fixated on the second egg and questioning Jankor's lies), and the eager Jancan smith Steros – you prepared to leave the smoldering fortress. A brief, unsettling encounter with the ancient, blind cyclops Polyphorus in his opulent chambers ended with you wisely declining his ominous arm-wrestling challenge after a quick consult with Steros.</strong>  </p>
+<p><strong>With the fortress explored and its treasures secured (including Jankor's secret lockbox ), you emerged into the jungle, guided back to the Bloodscale village. Queen Vytha hailed your victory, declaring the spoils of the fortress yours by right. But more than treasure, she offered an ancient blessing. As dawn broke, amidst drumming and Sessith's Draconic chants, Queen Vytha performed the Ritual of the Volcano's Heart. Anointing each of you with a paste of ash, scales, and moss, she drew symbols that surged with intense heat before settling into your skin, granting you the permanent Blessing of the Volcano's Heart – newfound resilience against fire.</strong>  </p>
+<p><strong>Returning to the <em>Ultros</em>, celebration mingled with new beginnings. Rhaena greeted Nissy, who returned bearing a gleaming Silver Dragon Egg! Delphi's expertise revealed both his Brass Egg and Rhaena's Silver Egg would hatch in a mere fifteen days. Steros set about finding space for his forge and tools, agreeing to help construct an incubator. Meanwhile, the contents of Jankor's hidden lockbox were examined: a journal written in Draconic, a Potion of Fire Breath, a potent Scroll of Lightning Bolt, valuable gems, a sinister Obsidian Sacrificial Dagger, a suspicious Potion of Storm Giant Strength seemingly tainted by Sydon, and a heavy, pulsating obsidian geode trapping a fiendish entity.</strong>  </p>
+<p><strong>As you set sail, a Siren messenger delivered a crucial letter from Aesop, Keeper of the Dragon Shrine, revealing his suspicion that other ancient dragons might still live, captured by the Titans. Your journey then took you back to the wandering Jazirat Zul'Haf, the Turtle Island. There, you delivered the promised fire snake eggs to the delighted marid, Shazum. As reward, you chose the mysterious Orb of Star Metal. Shazum, ever the trader, tasked you with acquiring a Perfect Basilisk Eye from your next destination – Themis – offering a choice of magical items or gold in return. You bartered with him, selling the risky Sydon-touched potion and purchasing scrolls and the Crusher's Ring for Aella, while Delphi acquired an Elemental Mote. A brief stop at the Floating Lantern tavern introduced you to the shaken Captain Arion, who recounted a harrowing tale of giant birds and shipwreck near the Aerie of the Roc, providing valuable, if terrifying, intelligence about the Forgotten Sea.</strong>  </p>
+<p><strong>With the Antikythera set for the Constellation of the Twins, you finally arrived at Themis, the legendary island of the Amazons. Guided by the knowledgeable warrior Makhaira, Aella stepped onto her homeland after thirteen long years of exile. The vast grasslands stretched before you, beautiful yet tense. Initial aerial scouting by Aella's Stimfay revealed herds of strange creatures, rhino riders, basilisk hounds, scattered war camps, and, ominously, a small island in the eastern bay covered in statue-like figures – the likely heart of the usurpers' power.</strong>  </p>
+<p><strong>Now, standing on the shores of Themis, with allies at your side and enemies unknown lurking across the plains, your quest for allies and answers truly begins... What dangers and discoveries await on this island of warrior women?</strong></p>
+</body>
+</html>

@@ -4,16 +4,21 @@
 High-level convenience runner that:
 1. Converts ALL Monday/Wednesday/Friday quest logs and session recaps from
    Markdown → standalone HTML (PHB styling inline).
-2. Drops the resulting *.html files into the project-level `docs/` folder.
-3. Regenerates a styled `docs/index.html` that links to everything.
+2. Converts ALL player character bios from Markdown → standalone HTML.
+3. Drops the resulting *.html files into the project-level `docs/` folder,
+   preserving the directory structure (e.g., `docs/monday/`, `docs/characters/`).
+4. Regenerates a styled `docs/index.html` that links to everything.
 
 Assumed filename convention inside *source_dir* (default: `quest_logs/`):
-    monday_quest_log.md        ← bullet-list version
-    monday_session_recap.md    ← narrative version
-    wednesday_quest_log.md
-    wednesday_session_recap.md
-    friday_quest_log.md
-    friday_session_recap.md
+- `monday/quest_log.md`
+- `monday/session_recap.md`
+- `wednesday/quest_log.md`
+- `wednesday/session_recap.md`
+- `friday/quest_log.md`
+- `friday/session_recap.md`
+- `characters/bilbo.md`
+- `characters/gandalf.md`
+- ...etc.
 
 Missing files are skipped with a warning, so you can build incrementally.
 
@@ -85,18 +90,41 @@ def main() -> None:
     for day_dir in sorted(p for p in src_dir.iterdir() if p.is_dir()):
         day = day_dir.name  # folder name becomes label
 
-        for kind, label in FILENAME_MAP.items():
-            src_md = find_markdown_file(day_dir, kind)
-            if not src_md:
-                sys.stderr.write(f"[WARN] Missing markdown: {day}/{kind}.md (skipping)\n")
+        # Handle session logs (Mon/Wed/Fri)
+        if day in ["monday", "wednesday", "friday"]:
+            for kind, label in FILENAME_MAP.items():
+                src_md = find_markdown_file(day_dir, kind)
+                if not src_md:
+                    sys.stderr.write(f"[WARN] Missing markdown: {day}/{kind}.md (skipping)\n")
+                    continue
+                title = f"{day.title()} {label}"
+                # Ensure corresponding output subdirectory exists under docs
+                out_day_dir = docs_dir / day
+                out_day_dir.mkdir(parents=True, exist_ok=True)
+                out_html = build_single(src_md, title, out_day_dir, dnd_style)
+                print(f" [OK] {src_md.relative_to(src_dir)} → {out_html.relative_to(Path.cwd()) if out_html.is_absolute() else out_html}")
+                generated.append(out_html)
+
+        # Handle Character bios
+        elif day == "characters":
+            out_char_dir = docs_dir / day
+            out_char_dir.mkdir(parents=True, exist_ok=True)
+
+            char_files = []
+            for ext in MD_EXTS:
+                char_files.extend(day_dir.glob(f"*{ext}"))
+
+            if not char_files:
+                sys.stderr.write(f"[WARN] No markdown files found in {day_dir}. Skipping.\n")
                 continue
-            title = f"{day.title()} {label}"
-            # Ensure corresponding output subdirectory exists under docs
-            out_day_dir = docs_dir / day
-            out_day_dir.mkdir(parents=True, exist_ok=True)
-            out_html = build_single(src_md, title, out_day_dir, dnd_style)
-            print(f" [OK] {src_md.relative_to(src_dir)} → {out_html.relative_to(Path.cwd()) if out_html.is_absolute() else out_html}")
-            generated.append(out_html)
+
+            for src_md in char_files:
+                if src_md.name.lower() in ["readme.md", "placeholder.txt"]:
+                    continue  # Don't convert READMEs or placeholders
+                title = src_md.stem.replace("_", " ").replace("-", " ").title()
+                out_html = build_single(src_md, title, out_char_dir, dnd_style)
+                print(f" [OK] {src_md.relative_to(src_dir)} → {out_html.relative_to(Path.cwd()) if out_html.is_absolute() else out_html}")
+                generated.append(out_html)
 
     if not generated:
         sys.stderr.write("[ERROR] No markdown files converted. Nothing to do.\n")

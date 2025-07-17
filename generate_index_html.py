@@ -38,28 +38,61 @@ def collect_html_files(docs_dir: Path, recursive: bool = False) -> List[Path]:
 
 
 def build_index_body(html_files: List[Path], docs_dir: Path) -> str:
-    """Generate an unordered list of links to *html_files*."""
-    items = []
+    """Generate a grouped list of links to *html_files*, organized by subdirectory."""
+    grouped_files = {}
     for f in html_files:
-        # Use the first H1 in the file as the display name if available
-        display = None
+        # Group by immediate parent directory relative to docs_dir
+        # e.g. docs/monday/foo.html -> 'monday'
+        # e.g. docs/bar.html -> '.' (root)
         try:
-            text = f.read_text(encoding="utf-8", errors="ignore")
-            import re
-            m = re.search(r"<h1[^>]*>(.*?)</h1>", text, flags=re.IGNORECASE | re.DOTALL)
-            if m:
-                # strip inner tags
-                display = re.sub(r"<[^>]+>", "", m.group(1)).strip()
-        except Exception:
-            pass
+            parent_dir = f.relative_to(docs_dir).parts[0]
+            if parent_dir == f.name:  # File is in the root of docs_dir
+                parent_dir = "General"
+        except IndexError:
+            parent_dir = "General"  # Should not happen if f is in docs_dir, but for safety
 
-        if not display:
-            display = f.stem.replace("_", " ").title()
+        if parent_dir not in grouped_files:
+            grouped_files[parent_dir] = []
+        grouped_files[parent_dir].append(f)
 
-        rel_path = f.relative_to(docs_dir)
-        items.append(f"<li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
+    output_html = ""
+    # Sort groups alphabetically, but maybe put "General" first if it exists
+    sorted_groups = sorted(grouped_files.keys())
 
-    return "<ul>\n" + "\n".join(items) + "\n</ul>"
+    for group_name in sorted_groups:
+        files_in_group = grouped_files[group_name]
+        if group_name == "index.html" or not files_in_group:
+            continue
+        # Use a more descriptive title if it's a known folder
+        if group_name == "characters":
+            output_html += "<h2>Player Characters</h2>\n"
+        elif group_name != "General":
+            output_html += f"<h2>{group_name.title()}</h2>\n"
+
+        items = []
+        for f in sorted(files_in_group):
+            # Use the first H1 in the file as the display name if available
+            display = None
+            try:
+                text = f.read_text(encoding="utf-8", errors="ignore")
+                import re
+                m = re.search(r"<h1[^>]*>(.*?)</h1>", text, flags=re.IGNORECASE | re.DOTALL)
+                if m:
+                    # strip inner tags
+                    display = re.sub(r"<[^>]+>", "", m.group(1)).strip()
+            except Exception:
+                pass
+
+            if not display:
+                display = f.stem.replace("_", " ").replace("-", " ").title()
+
+            rel_path = f.relative_to(docs_dir)
+            items.append(f"<li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
+
+        if items:
+            output_html += "<ul>\n" + "\n".join(items) + "\n</ul>\n"
+
+    return output_html
 
 
 def main() -> None:
@@ -79,6 +112,11 @@ def main() -> None:
     if not html_files:
         sys.stderr.write(f"[WARN] No HTML files found in {docs_dir}; nothing to index.\n")
         sys.exit(0)
+
+    # Force recursive if not specified, as the new structure depends on it.
+    if not args.recursive:
+        print("[INFO] --recursive not specified, but enabling it to find all logs in subdirectories.")
+        html_files = collect_html_files(docs_dir, recursive=True)
 
     body = build_index_body(html_files, docs_dir)
     full_html = build_full_html(body, args.title, args.dnd_style)
