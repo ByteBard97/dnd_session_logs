@@ -130,6 +130,16 @@ def main() -> None:
         sys.stderr.write("[ERROR] No markdown files converted. Nothing to do.\n")
         sys.exit(1)
 
+    # Also generate player character pages
+    try:
+        import build_player_pages  # type: ignore
+        sys_argv_backup = sys.argv[:]
+        sys.argv = ["build_player_pages", "--quest-logs", str(src_dir), "--docs", str(docs_dir)] + ([] if dnd_style else ["--no-dnd"])
+        build_player_pages.main()  # type: ignore
+        sys.argv = sys_argv_backup
+    except Exception as e:  # pragma: no cover
+        sys.stderr.write(f"[WARN] Could not generate player pages ({e}). Run build_player_pages.py manually.\n")
+
     # Regenerate landing page – call generate_index_html as a module to keep styling consistent
     try:
         import generate_index_html  # type: ignore

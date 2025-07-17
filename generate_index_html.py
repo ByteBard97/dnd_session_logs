@@ -38,61 +38,89 @@ def collect_html_files(docs_dir: Path, recursive: bool = False) -> List[Path]:
 
 
 def build_index_body(html_files: List[Path], docs_dir: Path) -> str:
-    """Generate a grouped list of links to *html_files*, organized by subdirectory."""
-    grouped_files = {}
+    """Generate a hierarchical list of links grouped by campaign day."""
+    import re
+    
+    # Group files by day (directory name)
+    day_groups = {}
+    root_files = []
+    
     for f in html_files:
-        # Group by immediate parent directory relative to docs_dir
-        # e.g. docs/monday/foo.html -> 'monday'
-        # e.g. docs/bar.html -> '.' (root)
+        rel_path = f.relative_to(docs_dir)
+        
+        # Check if file is in a subdirectory (campaign day)
+        if len(rel_path.parts) > 1:
+            day = rel_path.parts[0].lower()
+            if day not in day_groups:
+                day_groups[day] = []
+            day_groups[day].append(f)
+        else:
+            root_files.append(f)
+    
+    def get_display_name(file_path):
+        """Extract display name from file's first H1 or use filename."""
         try:
-            parent_dir = f.relative_to(docs_dir).parts[0]
-            if parent_dir == f.name:  # File is in the root of docs_dir
-                parent_dir = "General"
-        except IndexError:
-            parent_dir = "General"  # Should not happen if f is in docs_dir, but for safety
-
-        if parent_dir not in grouped_files:
-            grouped_files[parent_dir] = []
-        grouped_files[parent_dir].append(f)
-
-    output_html = ""
-    # Sort groups alphabetically, but maybe put "General" first if it exists
-    sorted_groups = sorted(grouped_files.keys())
-
-    for group_name in sorted_groups:
-        files_in_group = grouped_files[group_name]
-        if group_name == "index.html" or not files_in_group:
-            continue
-        # Use a more descriptive title if it's a known folder
-        if group_name == "characters":
-            output_html += "<h2>Player Characters</h2>\n"
-        elif group_name != "General":
-            output_html += f"<h2>{group_name.title()}</h2>\n"
-
-        items = []
-        for f in sorted(files_in_group):
-            # Use the first H1 in the file as the display name if available
-            display = None
-            try:
-                text = f.read_text(encoding="utf-8", errors="ignore")
-                import re
-                m = re.search(r"<h1[^>]*>(.*?)</h1>", text, flags=re.IGNORECASE | re.DOTALL)
-                if m:
-                    # strip inner tags
-                    display = re.sub(r"<[^>]+>", "", m.group(1)).strip()
-            except Exception:
-                pass
-
-            if not display:
-                display = f.stem.replace("_", " ").replace("-", " ").title()
-
+            text = file_path.read_text(encoding="utf-8", errors="ignore")
+            m = re.search(r"<h1[^>]*>(.*?)</h1>", text, flags=re.IGNORECASE | re.DOTALL)
+            if m:
+                return re.sub(r"<[^>]+>", "", m.group(1)).strip()
+        except Exception:
+            pass
+        return file_path.stem.replace("_", " ").title()
+    
+    # Build HTML structure
+    html_parts = []
+    
+    # Sort days in the desired order
+    day_order = ["monday", "wednesday", "friday"]
+    
+    for day in day_order:
+        if day in day_groups:
+            files = day_groups[day]
+            html_parts.append(f"<h2>{day.title()}</h2>")
+            html_parts.append("<ul>")
+            
+            # Sort files within each day: player characters first, then quest log, then session recap
+            def sort_key(f):
+                name = f.name.lower()
+                if "player" in name or "character" in name:
+                    return 0
+                elif "quest" in name:
+                    return 1
+                elif "session" in name or "recap" in name:
+                    return 2
+                else:
+                    return 3
+            
+            for f in sorted(files, key=sort_key):
+                display = get_display_name(f)
+                rel_path = f.relative_to(docs_dir)
+                html_parts.append(f"  <li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
+            
+            html_parts.append("</ul>")
+    
+    # Add any remaining days not in the standard order
+    for day, files in day_groups.items():
+        if day not in day_order:
+            html_parts.append(f"<h2>{day.title()}</h2>")
+            html_parts.append("<ul>")
+            for f in sorted(files, key=lambda x: x.name):
+                display = get_display_name(f)
+                rel_path = f.relative_to(docs_dir)
+                html_parts.append(f"  <li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
+            html_parts.append("</ul>")
+    
+    # Add any root-level files at the end
+    if root_files:
+        html_parts.append("<h2>Other</h2>")
+        html_parts.append("<ul>")
+        for f in sorted(root_files, key=lambda x: x.name):
+            display = get_display_name(f)
             rel_path = f.relative_to(docs_dir)
-            items.append(f"<li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
-
-        if items:
-            output_html += "<ul>\n" + "\n".join(items) + "\n</ul>\n"
-
-    return output_html
+            html_parts.append(f"  <li><a href=\"{rel_path.as_posix()}\">{display}</a></li>")
+        html_parts.append("</ul>")
+    
+    return "\n".join(html_parts)
 
 
 def main() -> None:

@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monday Quest Log</title>
+  <style>
+/* D&D 5e Player's Handbook Styling - Adapted from Foundry VTT */
+
+/* Font Embedding */
+
+
+/* Base Document Styling - Foundry VTT Adapted */
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c2c2c; /* Dark browser background */
+}
+
+.phb-container {
+    color: #000;
+    padding: 1cm 1.7cm;
+    padding-bottom: 1.5cm;
+    background-color: #EEE5CE;	
+    background-image: linear-gradient(135deg, #EEE5CE 0%, #F5F1E8 100%);
+    
+    font-family: "Bookinsanity", "Book Antiqua", serif !important;
+    font-size: 0.317cm !important;
+    text-rendering: optimizeLegibility !important;
+    
+    max-width: 21cm;
+    margin: 2em auto;
+    min-height: 29.7cm; /* A4 height */
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    line-height: 1.3em;
+}
+
+/* Headers - Foundry VTT Style */
+.phb-container h1, 
+.phb-container h2, 
+.phb-container h3, 
+.phb-container h4 {
+    margin-top: 0.2em !important; 
+    margin-bottom: 0.2em !important;
+    font-family: "Mr Eaves Small Caps", "Cinzel", serif !important;
+    color: rgb(93, 24, 13) !important;
+    font-weight: normal;
+}
+
+.phb-container h1 {
+    font-size: 0.987cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1.2px;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    line-height: 1.2em;
+    word-wrap: break-word;
+    hyphens: auto;
+}
+
+.phb-container h2 {
+    font-size: 0.705cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: none;
+    -webkit-text-stroke-width: 1px;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h3 {
+    font-size: 0.529cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    border-bottom: 2px solid #c9ad6a;
+    -webkit-text-stroke-width: 0.6px;
+    padding-bottom: 0.1em;
+    line-height: 1.3em;
+    word-wrap: break-word;
+}
+
+.phb-container h4 {
+    margin-bottom: 0 !important;
+    font-size: 0.458cm;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    -webkit-text-stroke-width: 0.6px;
+}
+
+.phb-container h5 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+    font-family: "Scaly Sans Caps", "Cinzel", serif;
+    font-size: 0.423cm;
+    font-weight: 900;
+    color: rgb(93, 24, 13);
+}
+
+/* Body Text - Foundry VTT Style */
+.phb-container p {
+    margin: 0 0 10.5px;
+    line-height: 1.3em;
+    -webkit-text-stroke-width: 0px;
+}
+
+.phb-container p + p {
+    margin-top: -0.8em;
+}
+
+/* First Letter Drop Cap - Foundry Style - Only for first content paragraph */
+.phb-container .section:first-of-type p:first-of-type::first-letter {
+    float: left;
+    font-family: "Solbera Imitation", "Cinzel Decorative", serif;
+    font-size: 5em;
+    color: #222;
+    line-height: 0.8em;
+    margin-right: 0.1em;
+    margin-top: 0.1em;
+}
+
+/* Paragraph Indentation - Foundry Style */
+.phb-container p + p, 
+.phb-container ul + p,
+.phb-container ol + p {
+    text-indent: 1em;
+}
+
+/* Read-Aloud Text Boxes */
+.phb-container .read-aloud, 
+.phb-container .descriptive-text {
+    background: #faf9f4;
+    border: 2px solid #c9ad6a;
+    border-radius: 0;
+    padding: 0.8em 1em;
+    margin: 1em 0;
+    font-style: italic;
+    position: relative;
+    text-indent: 0 !important; /* No indentation in boxes */
+}
+
+.phb-container .read-aloud::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 1px solid #8b7355;
+    border-radius: 0;
+    pointer-events: none;
+}
+
+/* Tables - Foundry Style */
+.phb-container table {
+    font-family: "Scaly Sans", "Noto Sans", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.phb-container table th {
+    background: #c9ad6a;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    text-align: left;
+}
+
+/* Dialogue Entries - Enhanced Spacing */
+.phb-container .dialogue-entry {
+    margin: 1em 0;
+    padding: 0.5em 0;
+    line-height: 1.5em;
+    border-left: 3px solid #c9ad6a;
+    padding-left: 1em;
+    margin-left: 0.5em;
+}
+
+.phb-container table td {
+    padding: 0.5em;
+    border: 1px solid #8b7355;
+    vertical-align: top;
+}
+
+.phb-container table tr:nth-child(even) {
+    background: #f5f3ed;
+}
+
+/* Lists */
+.phb-container ul, 
+.phb-container ol {
+    margin: 0.5em 0;
+    padding-left: 2em;
+}
+
+.phb-container li {
+    margin: 0.2em 0;
+}
+
+/* Strong and Emphasis */
+.phb-container strong, 
+.phb-container b {
+    font-weight: bold;
+    color: rgb(93, 24, 13);
+}
+
+.phb-container em, 
+.phb-container i {
+    font-style: italic;
+}
+
+/* Images */
+.phb-container img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #c9ad6a;
+    border-radius: 3px;
+    margin: 1em 0;
+    display: block;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .phb-container {
+        margin: 1em;
+        padding: 1em;
+        font-size: 0.35cm !important;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+    }
+    
+    .phb-container {
+        margin: 0;
+        box-shadow: none;
+        max-width: none;
+    }
+}
+</style>
+</head>
+<body class="phb-container">
+  <h1>Monday Quest Log</h1>
+  <h2 id="quest_log">Quest Log</h2>
+
+<p><a href="#session-5">Session 5</a></p>
+<p><a href="#session-4">Session 4</a></p>
+<p><a href="#session-3">Session 3</a></p>
+<p><a href="#session-2">Session 2</a></p>
+<p><a href="#the-mission-briefing-&amp;-miraleth's-interruption">The Mission Briefing &amp; Miraleth's Interruption</a></p>
+<p><a href="#valandor's-workshop-&amp;-the-telepathic-shark">Valandor's Workshop &amp; The Telepathic Shark</a></p>
+<p><a href="#the-procession-&amp;-journey-to-the-docks">The Procession &amp; Journey to the Docks</a></p>
+<p><a href="#arrival-at-the-docks">Arrival at the Docks</a></p>
+<p><a href="#session-1">Session 1</a></p>
+<p><a href="#session-1-outline:-the-price-of-ambition">Session 1 Outline: The Price of Ambition</a></p>
+<p><a href="#part-1:-introduction---a-house-on-the-brink">Part 1: Introduction - A House on the Brink</a></p>
+<p><a href="#part-2:-the-fighting-pits---a-lesson-in-philosophy">Part 2: The Fighting Pits - A Lesson in Philosophy</a></p>
+<p><a href="#part-3:-anxious-days---the-weight-of-waiting">Part 3: Anxious Days - The Weight of Waiting</a></p>
+<p><a href="#part-4:-the-mission---the-matron's-gambit">Part 4: The Mission - The Matron's Gambit</a></p>
+<h1 id="session-5-confronting-the-turbine-and-the-chief-engineer">Session 5: Confronting the Turbine and the Chief Engineer</h1>
+<p>This session picks up with the party in control of the Cinderfork Foundry's sub-level and mezzanine, their path forward blocked by a colossal, high-speed turbine. Their objective is to find a way past this deadly obstacle to reach the upper levels, where Valandor is imprisoned, and to acquire the three Rods of Opening required for his rescue.</p>
+<h3 id="scouting-the-controls">Scouting the Controls</h3>
+<ul>
+<li><strong>Deception and Intel:</strong> The party decided to first secure the turbine's control room (Gear Room). Ravi, disguised as the deceased Chief Researcher Korvun, and Malagar, disguised as a guard, entered the noisy chamber. They found a lone duergar worker, Brack Ironman, performing maintenance.</li>
+<li><strong>Lever Logic:</strong> Ravi engaged the worker, feigning an inspection and asking about the two large levers in the room. Brack proudly explained their function: one redirected steam pressure to the upper foundry for heating, while the other was an emergency vent to release pressure to the surface. He revealed that pulling both simultaneously would trigger a complete system shutdown, a procedure only performed during scheduled safety tests around midnight—still four hours away.</li>
+<li><strong>Eliminating the Witness:</strong> Realizing they couldn't wait, the party decided the worker had to be silenced. While Ravi kept him distracted, Malagar ambushed him with a drow-poisoned rapier. Though the tough duergar survived the initial blow, the party quickly dispatched him and dragged his body to the growing collection in the research cottage.</li>
+</ul>
+<h3 id="the-chief-engineers-last-stand">The Chief Engineer's Last Stand</h3>
+<ul>
+<li><strong>Synchronized Breach:</strong> With the Gear Room secured, the party planned their assault on the adjacent Power Distribution Hub, where they believed Chief Engineer Tholdrum—a likely key-holder—was located. The plan was a synchronized breach: Malagar and Zyntra would drop grenades from the mezzanine catwalk above, while the rest of the team stormed the doors.</li>
+<li><strong>A Noisy Entrance:</strong> The party took positions and moved in. Despite the overwhelming noise of the foundry giving them a tactical advantage, Clank fumbled his approach, prematurely opening a door and alerting the Chief Engineer.</li>
+<li><strong>Explosive Opening:</strong> Reacting instantly, Malagar and Zyntra dropped their grenades. The coordinated explosions were devastating, killing two duergar sentries outright and sending Chief Engineer Tholdrum flying, leaving him wounded and prone.</li>
+<li><strong>A Vicious Engagement:</strong> The party capitalized on the surprise. Malagar leaped down from the catwalk, marking Tholdrum with a Hunter's Mark before striking. Ravi and Haribo followed up with attacks of their own. Enraged, Tholdrum used a bonus action to overcharge his massive steam hammer, gaining resistance to nearly all damage. He then unleashed a furious volley on Ravi, knocking the bard unconscious in a single turn. After a quick heal from Haribo, Malagar pressed the attack, finally felling the Chief Engineer with a series of precise strikes.</li>
+</ul>
+<h3 id="aftermath-and-the-path-forward">Aftermath and the Path Forward</h3>
+<ul>
+<li><strong>Looting the Engineer:</strong> The party looted Tholdrum's body. They recovered his magical <strong>+1 Breastplate</strong>, a <strong>"Bottle of Lightning"</strong> grenade, a bizarre <strong>"Slug Potion"</strong>, and two potent <strong>"Dreamless Deep"</strong> potions capable of inducing a long rest in minutes. However, they made a critical discovery: <strong>Tholdrum did not have one of the Rods of Opening.</strong></li>
+<li><strong>The Turbine Dilemma:</strong> With the sub-level's command staff eliminated, the party returned to the problem of the turbine. They now know that pulling both levers will shut it down, but it will also trigger a foundry-wide emergency alert. They determined they have a very narrow window: it takes about 90 seconds for the turbine to slow to a crossable speed, but the first responders are expected to arrive in that same timeframe.</li>
+</ul>
+<p>The session ended with the party contemplating their next move, weighing the risks of a full-frontal assault against the possibility of using the turbine itself as a weapon to lure and eliminate their enemies.</p>
+<h1 id="session-4">Session 4</h1>
+<p><strong>Recap: The Culling of the Sub-Level</strong></p>
+<p>This session covers the party's continued infiltration of the Cinderfork Foundry's geothermal sub-level, focusing on systematically eliminating the personnel and securing the area.</p>
+<h3 id="cleaning-house-in-the-cottage">Cleaning House in the Cottage</h3>
+<ul>
+<li><strong>Luring the First Guard:</strong> The party began the session in the Research Cottage. To eliminate the nearby guard, Bentham took the form of the deceased Alyxina Fire-Beard and ran out screaming about a fire. The guard, <strong>Borland Emberback</strong>, was successfully lured inside.</li>
+<li><strong>Ambush and Assassination:</strong> The party, hiding in the kitchen, ambushed and quickly killed Borland as he entered. They looted his body, taking his keys and other personal effects.</li>
+<li><strong>A Chain of Deception:</strong> The party decided to systematically lure the remaining personnel on the level into their trap.<ul>
+<li>Rav'ithar, using his Whispers Bard ability, took on the shadow of the dead guard, Borland, and stood watch outside.</li>
+<li>He encountered another worker, <strong>Heldrick Stonebrow</strong>, and convinced him that "Alyxina" had a special new rum for him inside the cottage. Heldrick was lured in and killed by the party.</li>
+<li>Next, a tougher <strong>Stone Guard</strong> named <strong>Corgrim Smelt-Eye</strong> approached. Rav'ithar (as Borland) complained that Heldrick was slacking off and drinking inside the cottage, convincing Corgrim to go in and retrieve him. Corgrim was also ambushed and killed.</li>
+</ul>
+</li>
+</ul>
+<h3 id="silencing-the-alarm">Silencing the Alarm</h3>
+<ul>
+<li><strong>Encounter with "Peepers":</strong> The floating <strong>Scrutinizer</strong> construct ("Peepers") approached the cottage, noticing the empty guard post and calling for the guards.</li>
+<li><strong>Containment and Destruction:</strong> To prevent an alarm, Rav'ithar cast <em>Silence</em> over the area. Haribo followed up by casting <em>Entangle</em>, successfully restraining the construct. The party then moved in and destroyed Peepers, with Clank salvaging some of its mechanical parts. With this final kill, the immediate area around the cottage was secured.</li>
+</ul>
+<h3 id="knowledge-and-ascension">Knowledge and Ascension</h3>
+<ul>
+<li><strong>The Researcher's Knowledge:</strong> Rav'ithar, having absorbed the memories of Chief Researcher Korvun, gained a detailed understanding of the geothermal plant's layout, including the chief engineer's location, the function of the machinery, and the nature of the <strong>Bound Geothermal Elemental</strong> held in the steam chamber.</li>
+<li><strong>Clearing the Mezzanine:</strong> With the lower level temporarily secured, the party decided to move up to the mezzanine overlooking the factory floor. Rav'ithar assumed the form of Korvun, Malagar took the form of the dead Stone Guard Corgrim, and Clank disguised himself as a generic duergar worker. Bentham remained below, disguised as the guard Borland.</li>
+<li><strong>Systematic Elimination:</strong> The party methodically cleared the mezzanine level.<ul>
+<li>They first encountered an officious inspector named <strong>Kelzar</strong>. Rav'ithar (as Korvun) intimidated the inspector and lured him into a stairwell, where the party ambushed and killed him.</li>
+<li>Rav'ithar then commanded the two duergar workers on the main mezzanine to go "help the inspector," leading them into the same stairwell ambush.</li>
+<li>They moved to the containment array room, tricking the <strong>Duergar Hammerer</strong> inside to come out, where he was also slain.</li>
+<li>They finished by killing a final Hammerer in an ore-processing room.</li>
+</ul>
+</li>
+<li><strong>Loot and Intel:</strong> The party looted the mezzanine, acquiring valuable <strong>focusing crystals</strong>, a significant amount of <strong>unrefined mithril ore</strong>, and a <strong>Ledger of Test Batches</strong> that provided insight into the Dûmril alloying process.</li>
+</ul>
+<h3 id="an-unlikely-visitor">An Unlikely Visitor</h3>
+<ul>
+<li><strong>Og the Quaggoth:</strong> While the main party was upstairs, Bentham (in Borland's form) was approached at the guard post by <strong>Og</strong>, a large Quaggoth. Og was suffering from a chemical burn caused by coolant and was looking for a specific salve. Bentham successfully deceived Og, convincing him that the researchers were out. Og left, disappointed but unsuspecting.</li>
+</ul>
+<h3 id="session-conclusion">Session Conclusion</h3>
+<p>The session ended with the party having successfully and silently cleared the entire sub-level and the mezzanine of all personnel, accumulating a small mountain of bodies in the Research Cottage's storage room. They now have a secure base of operations within the foundry. They know they must pass through a massive, high-speed turbine to proceed, and are contemplating their next move, which involves either disabling the turbine or dealing with the powerful, enraged Geothermal Elemental.</p>
+<h3 id="_1"></h3>
+<h1 id="session-3">Session 3</h1>
+<p><strong>Session 3: Infiltration and Devastation at Cinderfork Foundry</strong></p>
+<p>The session began with the party aboard the <em>Silent Keel</em>, a skiff pulled by two monstrous Keelhauler eels, making their 20-hour journey across the Black Loch towards Cinderfork Foundry.</p>
+<ul>
+<li><strong>Journey Across the Black Loch:</strong>  </li>
+<li>The party settled onto the boat, with some (Rav'ithar) preferring the open deck and others (Clank) seeking a "moldy corner" below.  </li>
+<li>Malagar successfully used Insight to understand Borok the Silent's unspoken instructions: "follow instructions and there will be no problems."  </li>
+<li>Fadda Brinebless, the goblin priest, performed blessing rituals, sprinkling loch water on the PCs and the boat.  </li>
+<li>A Keelhauler eel lunged at the boat, splashing a PC, which Fadda cheerfully dismissed as a "hello" from the Deep Black.  </li>
+<li>The party experienced an "Atmospheric Encounter": they passed through a field of <strong>Hydrothermal Vents</strong>, causing a one-hour detour due to the heated water.  </li>
+<li>Another "Atmospheric Encounter" occurred: a <strong>Ghost Barge</strong> glided silently past, its spectral crew rowing endlessly. Fadda reacted with fear, performing a salt ritual, while Borok grimly acknowledged it as a common, albeit unsettling, sight on the loch. Grumble (if present) offered cynical commentary.  </li>
+<li>The party encountered the <strong>"Whisperer's Omen"</strong>, a mandatory mid-voyage event where the water grew still and a sub-aural thrum vibrated through the ship. Fadda frantically requested help with a ritual to appease the "Whisperer."  <ul>
+<li>The party engaged in a <strong>Group Skill Challenge</strong> (3 successes before 2 failures).  </li>
+<li>Clank (Scott) successfully channeled arcane energy into the lichen, creating a "jangle and a hum bass line."  </li>
+<li>Zyntra (Jeremiah) used rope to steady herself and the others, preventing components from being lost.  </li>
+<li>The ritual was successful, calming the waters and driving the unseen creature away. Borok gave a rare nod of approval, stating, "Good."  </li>
+</ul>
+</li>
+<li><strong>Approaching Cinderfork Foundry &amp; Initial Scouting:</strong>  </li>
+<li>The party decided on an <strong>underwater infiltration</strong> via the Moonpool, with the siege drill being used to breach a wall on the west side of the foundry.  </li>
+<li>They planned to coordinate with Grumble via <strong>sending stones</strong> and Haribo's <strong>Sporeling</strong> (which would be left with Grumble to signal when the drill was within 250 feet).  </li>
+<li>Haribo (Bert) volunteered to scout the foundry, casting <em>Pass Without Trace</em> on himself and then Wild Shaping into an <strong>invisible bat</strong> (using an Invisibility Potion).  </li>
+<li><strong>Haribo's Scouting Discoveries (as a bat):</strong>  <ul>
+<li><strong>Docks:</strong> Spotted three ships: a "Slag-Mule" (Duergar barge), the "Silk-Reaver" (Drow yacht), and Valandor's familiar "Night-Talon" speedboat (recognizing it with "dread"). Noted two watchtowers flanking the entrance.  </li>
+<li><strong>Ground Floor (Main Hall/Foyer):</strong> Flew through a portcullis into a large atrium with a 15-foot ceiling. Saw six off-duty Duergar workers playing cards and drinking. Noted a heavy, sealed, handle-less <strong>adamantine door</strong> on the west side (which they correctly assumed was the prison). Also saw a normal door (unlocked), a lift, and a stairwell.  </li>
+<li><strong>Upper Level (Forge Area):</strong> Flew up the lift shaft (5-6 stories). Observed Master Smiths and Duergar workers "hammering on this shell" of metal around another Duergar, seemingly forcing him into a "big suit" (a Screamer). Noted rivers of molten magma and a "bubbling of magma" to the north. Saw a "Scrutinizer" (Peepers) construct patrolling.  </li>
+<li><strong>Basement/Geothermal Plant:</strong> Flew down the stairwell. Entered a loud chamber filled with massive turning machinery and a spinning <strong>turbine</strong>. Noted a large room to the south with heavy fortified doors and heat-proof windows, filled with roiling, superheated steam, and a violently moving "massive form" (the Bound Geothermal Elemental). Determined the turbine blocked further passage, and its controls were in adjacent rooms.  </li>
+</ul>
+</li>
+<li><strong>Overheard Conversations (via bat scouting):</strong>  <ul>
+<li><strong>Barracks/Mess Hall:</strong> Overheard two Duergar guards complaining about "Kaldar pushing everyone to the brink since that new black metal came in." They mentioned "the drow prisoner, the artificer," who was "supposed to make the forgings easier," but instead "the Screamers wail louder than ever." They also said, "They say they finally broke the prisoner today."  </li>
+<li><strong>Workshop:</strong> Overheard two Duergar complaining about the "Peepers" constructs, confirming they were expensive and could "see right through a drow's disappearing trick."  </li>
+</ul>
+</li>
+<li><strong>Infiltration of the Research Cottage (Sub-Level):</strong>  </li>
+<li>The party (now back in regular form) entered the Moonpool and approached a "cozy-looking cottage" (Area 2).  </li>
+<li>They decided to sneak in together, with Zyntra's <em>Pass Without Trace</em> providing advantage.  </li>
+<li>Haribo sent his familiar spider (Skitter) to scout inside the cottage. Skitter reported seeing a "relatively cozy" interior and a woman cooking.  </li>
+<li>Bentham, still disguised in his normal form, opened the unlocked porch door.  </li>
+<li><strong>Encounter with Alyxina Fire-Beard:</strong>  <ul>
+<li>Alyxina, Chief Researcher Korvun's wife, was cooking.  </li>
+<li>Bentham (Brandon) ambushed her, grappling her and putting a hand over her mouth.  </li>
+<li>Malagar (Austin) attempted to intimidate her, but missed.  </li>
+<li>Bentham then interrogated her, asking about Valandor and the foundry's fortifications. Alyxina claimed she was "not in charge" and her husband was "just a researcher." Haribo's Insight check confirmed she was likely telling the truth about her limited knowledge.  </li>
+<li>Malagar, in a brutal improvisation, slit Alyxina's throat, killing her. Bentham then dragged her body into the storage room.  </li>
+<li>Haribo (Bert), using <em>Speak with Animals</em>, communicated with Alyxina's pet spider, Skitter, learning it liked "treats" (rats). Malagar successfully handled Skitter, feeding it a rat, and convinced it to follow him upstairs.  </li>
+</ul>
+</li>
+<li><strong>Looting the Storage Room (Area 3):</strong> The party found mundane supplies, but also several unlocked chests containing duergar work clothes, linens, and tools. Clank immediately began taking "spare parts."  </li>
+<li><strong>Looting the Display Shelf (Area C1 - Loft Landing):</strong> Zyntra (Teri) successfully identified various valuable mineral specimens, including Adamantine, Mithral, Orichalcum, and Starmetal. The party decided to take them all.  </li>
+<li><strong>Infiltration of Korvun's Loft/Study (Area C2/C3):</strong>  </li>
+<li>Bentham (Brandon) shape-shifted into Alyxina's form, and the party proceeded upstairs.  </li>
+<li>They encountered <strong>Chief Researcher Korvun</strong> (Alyxina's husband) in his study. Bentham, disguised as Alyxina, introduced the party as "college friends" and "research project" visitors. Rav'ithar introduced himself as a "famous author." Korvun was skeptical but allowed them to stay.  </li>
+<li>The party immediately ambushed Korvun.  </li>
+<li><strong>Combat with Korvun:</strong>  <ul>
+<li>Rav'ithar  cast <em>Hold Person</em>, paralyzing Korvun.  </li>
+<li>Haribo  used a "bacterial barrage" (Spores) to poison Korvun.  </li>
+<li>Malagar (Austin) attempted a non-lethal attack with his rapier, but missed.  </li>
+<li>Bentham (Brandon) then stabbed Korvun in the back, dealing significant damage.  </li>
+<li>Zyntra attempted to disarm a trap on a locked chest (in Area C3 - Bedroom) but failed, triggering a loud alarm and being knocked unconscious by soporific gas.  </li>
+<li>Clank (Scott), still downstairs, heard the alarm and switched his armor to "defender" mode.  </li>
+<li>Korvun, no longer held, was still poisoned.  </li>
+<li>Bentham interrogated the wounded Korvun, who revealed Valandor was "Upstairs, behind the high security adamantine door," and that three "special rods of unlocking" held by Master Smith Durkal, Acolyte Ghoran, and Director Koldar were needed to open it.  </li>
+<li>Zyntra, now conscious, successfully disarmed the alarm and the gas trap.  </li>
+<li>Bentham (Brandon) then murdered Korvun, stating, "I enjoyed killing your wife," as he shot him in the head.  </li>
+</ul>
+</li>
+<li><strong>Discoveries and Session End:</strong>  </li>
+<li><strong>Loot from Korvun's Study/Chest:</strong>  <ul>
+<li>Three <strong>Dûmril Ingots</strong> (Black Mithril) stamped with King Aron II's rune, confirming they were smuggled from the "royal catacombs of Auldbaern."  </li>
+<li>A <strong>Prototype Resonance Lens</strong> (magical item) that can cast <em>detect thoughts</em> and grants advantage on checks to interact with psionic devices.  </li>
+<li>A letter from <strong>Director Koldar</strong> (the foundry boss) to Korvun, sealed with House Glutthraz wax, demanding "quicken Screamer output or funding is cut," confirming Glutthraz's involvement.  </li>
+<li>A "Transmutation for the Tireless Smith" manual (taken by Clank).  </li>
+<li>Dûmril Fragments (two found, worth 30 gp each).  </li>
+<li>Korvun's Coded Folio (diagrams, graphs, charts, mentioning "Auldbaern cache" and "House Glutthraz will pay dearly for secrecy").  </li>
+<li>A "Folded Route-Map &amp; Note" from "Tharn Deep-Spire" hinting at the "Royal Catacombs" and "Dûmril cache."  </li>
+</ul>
+</li>
+<li><strong>Valandor's Status Clarification (from Korvun):</strong> The party now knows Valandor is imprisoned upstairs behind an adamantine door, requiring specific rods to open. <em>(This contradicts the pre-planned "fixed point" in the campaign guide where Valandor is found dead, implying a change in the narrative for the players.)</em>  </li>
+<li><strong>XP Awarded:</strong> 300 XP each for defeating Korvun (CR 5). Additional XP awarded for exploration (100 XP to Haribo), disarming the outer door (25 XP to Zyntra), and helping with the sea ritual (50 XP to Haribo, Malagar, Zyntra). Haribo leveled up to Level 4.  </li>
+<li>The session concluded with the party having secured valuable intelligence and Black Mithril, but with a clear path to Valandor's prison and the need to acquire the Rods of Opening from the remaining bosses.</li>
+</ul>
+<h1 id="session-2">Session 2</h1>
+<p>The session began with a recap of the previous game, reminding the players of House T'alzar's precarious situation due to the economic warfare waged by House Glutthras. The party revisited their victory against the Drider in the fighting pits, an event orchestrated by the zealous Vyssinia, and confirmed that the Amulet of Misty Step was the reward for the killing blow.</p>
+<p>The main part of the session covered the mission briefing from Matron Mother Severine, the party's subsequent preparations, and their journey through the city to the docks.</p>
+<h4 id="the-mission-briefing-&amp;-miraleth's-interruption"><strong>The Mission Briefing &amp; Miraleth's Interruption</strong></h4>
+<p>Matron Severine briefed the party on the official mission: her son and the party's brother, Valandor, was three days overdue from his research mission at Cinderfork Foundry. The party's objectives are to infiltrate the foundry, find Valandor, recover his research on "Black Mithril," and, if necessary, retaliate against House Glutthras . The Matron outlined three potential infiltration plans:</p>
+<ul>
+<li><strong>Force:</strong> Using a massive siege drill operated by the flesh golem, Grumble .  </li>
+<li><strong>Stealth:</strong> An underwater approach using Potions of Water Breathing and Scrolls of Invisibility .  </li>
+<li><strong>Deception:</strong> Using disguises to pose as neutral traders .</li>
+</ul>
+<p>The briefing was interrupted by Miraleth, Valandor's 12-year-old daughter. She rushed in, distressed, holding a broken clockwork spider her father had made. She told the party about a recurring nightmare of "fire and hammers" where she heard her father calling for help, expressing her fear that he was in real trouble.</p>
+<ul>
+<li><strong>Player Interaction:</strong> Malagar reassured Miraleth that they would bring her father home safely . Haribo used a Wild Magic surge to summon a fey spider to comfort her, which she appreciated .  </li>
+<li><strong>Outcome:</strong> This encounter served to personalize the mission's stakes, centering the emotional weight on Valandor's and his daughter's fates before the party departed.</li>
+</ul>
+<h4 id="valandor's-workshop-&amp;-the-telepathic-shark"><strong>Valandor's Workshop &amp; The Telepathic Shark</strong></h4>
+<p>Led by the spymaster Lirael, the party traveled to Valandor's secure workshop in the city's industrial district to retrieve the siege drill .</p>
+<ul>
+<li><strong>The Guardian:</strong> They were met by a guardian construct, an adamantine pillbug nicknamed "Nugget".  </li>
+<li><strong>Teeth in Dark:</strong> Inside, they discovered a large tank containing a telepathic Underdark shark named "Teeth in Dark," which Valandor was using for experiments related to Black Mithril. Malagar used his ability to speak with animals to communicate with the agitated shark, learning it was hungry and lonely. He went to the market, purchased a large quantity of fish, and fed the shark, calming it and seemingly earning its trust .  </li>
+<li><strong>Research &amp; Clues:</strong> The party investigated Valandor's "Oculo-Metalloscope" and his research notes. They discovered his analysis of "Black Mithril," noting that it was identical to a shard found in the "Catacombs of Aldebaran," the ruins upon which their city of Vlyn'darastyl was built .</li>
+</ul>
+<h4 id="the-procession-&amp;-journey-to-the-docks"><strong>The Procession &amp; Journey to the Docks</strong></h4>
+<p>To transport the large siege drill through the city without attracting attention, Lirael cast the spell</p>
+<p><em>Seeming</em> .</p>
+<ul>
+<li><strong>The Disguise:</strong> The drill was disguised as an obsidian statue of Lolth, and the party was disguised as temple attendants in a solemn religious procession, complete with illusory cattle (Rothe) and a hymn played by Lirael to deter onlookers .  </li>
+<li><strong>Street Encounters:</strong> During their journey, they successfully intimidated a drunken noble who tried to interfere. They were then extorted by a street gang, the "Rust Rats," and chose to pay the 100 gold piece toll to avoid combat and maintain their cover .</li>
+</ul>
+<h4 id="arrival-at-the-docks"><strong>Arrival at the Docks</strong></h4>
+<p>The party successfully reached the rendezvous point at the less-used Night-Tide Docks.</p>
+<ul>
+<li><strong>The Ferrymen:</strong> Lirael dropped the illusion and provided the passphrase—<em>"The silver moon still sings in the dark"</em>—to the waiting ferrymen. The crew consisted of the hulking Orog captain,<br />
+<strong>Borok the Silent</strong>, and his goblin first mate, <strong>Fadda Brinebless</strong>.  </li>
+<li><strong>The Vessel:</strong> Their transport is a skiff pulled by two giant, carnivorous eels known as Keelhaulers .</li>
+</ul>
+<p>Lirael bid the party farewell, and the session concluded as they boarded the skiff to begin the 20-hour journey across the Black Loch to Cinderfork Foundry.</p>
+<h1 id="session-1">Session 1</h1>
+<h3 id="session-1-outline-the-price-of-ambition"><strong>Session 1 Outline: The Price of Ambition</strong></h3>
+<p><strong>Overall Goal:</strong> Introduce the players to their characters, the precarious state of House T'alzar, the central family conflict, and the inciting incident for the campaign.</p>
+<hr />
+<h4 id="part-1-introduction-a-house-on-the-brink"><strong>Part 1: Introduction - A House on the Brink</strong></h4>
+<ul>
+<li><strong>DM Read-Aloud:</strong> Begin the session by reading the full introduction from the <strong>1_campaign_introduction.md</strong> document.  </li>
+<li><strong>Key Points to Establish:</strong>  <ul>
+<li><strong>House T'alzar:</strong> A noble house of renowned drow artificers.  </li>
+<li><strong>House Glutthras:</strong> The rival house waging a devastating economic war via their control of "the Obsidian Vault."  </li>
+<li><strong>The Hope:</strong> The mission of the brilliant artificer, <strong>Valandor T'alzar</strong>, who is away at Cinderfork Foundry researching a legendary alloy that could save the house.  </li>
+</ul>
+</li>
+<li><strong>Player Introductions:</strong> Each player introduces their character, their specific role within House T'alzar, and how they are personally affected by the house's decline.</li>
+</ul>
+<hr />
+<h4 id="part-2-the-fighting-pits-a-lesson-in-philosophy"><strong>Part 2: The Fighting Pits - A Lesson in Philosophy</strong></h4>
+<ul>
+<li><strong>The Summons:</strong> The party is summoned to the fighting pits by <strong>Lady Vyssinia T'alzar</strong> for a "practice session." Her sister, the spymaster <strong>Lirael T'alzar</strong>, is also present as an observer.  </li>
+<li><strong>The Reveal:</strong> Following the read-aloud from <strong>2_the_battle.md</strong>, Vyssinia bypasses a simple sparring match and orders the release of a full-fledged <strong>Drider</strong>.  </li>
+<li><strong>Combat Encounter:</strong> The party fights the Drider.  </li>
+<li><strong>Dynamic Commentary:</strong> Throughout the fight, the DM should use the scripted commentary from the battle document to highlight the sisters' conflicting views.  <ul>
+<li><strong>Vyssinia</strong> shouts encouragement for glorious, faith-driven violence.  </li>
+<li><strong>Lirael</strong> offers cool, tactical advice, growing frustrated with her sister's recklessness.  </li>
+</ul>
+</li>
+<li><strong>Victory &amp; Reward:</strong> The party defeats the Drider.  </li>
+<li><strong>The Killing Blow:</strong> Per your notes, <strong>Bentham</strong> lands the final hit.  </li>
+<li><strong>Vyssinia's Prize:</strong> Triumphant, Vyssinia rewards Bentham's prowess by offering a choice of one magic item from her personal collection (e.g., <em>Amulet of Misty Step</em>, <em>Gloves of the Growling Underdog</em>, etc.).  </li>
+<li><strong>The Aftermath - A Debate of Ideals:</strong> The two sisters descend to the arena floor and argue over the "lesson."  </li>
+<li>Vyssinia defends the act as a necessary and glorious sacrifice to Lolth.  </li>
+<li>Lirael condemns it as a foolish waste of a valuable intelligence asset (revealing the Drider was a captured spy).  </li>
+<li>This scene firmly establishes the deep ideological rift within the house leadership and gives the players their first chance to see who their philosophies might align with.</li>
+</ul>
+<hr />
+<h4 id="part-3-anxious-days-the-weight-of-waiting"><strong>Part 3: Anxious Days - The Weight of Waiting</strong></h4>
+<ul>
+<li><strong>Transition:</strong> A few days pass. The mood in T'alzar Tower grows heavy, as Valandor is now officially overdue.  </li>
+<li><strong>Downtime Opportunities (from 2.5_anxious_days.md):</strong> Run one or two short, optional scenes to build atmosphere and allow for character interaction.  </li>
+<li>A visit to <strong>Clank's workshop</strong> reveals the tangible effects of the Glutthraz blockade on their supplies.  </li>
+<li>Passing by the house shrine, the party can witness <strong>Vyssinia's fervent zealotry</strong>, foreshadowing her dangerous fanaticism.  </li>
+<li>A quiet conversation with <strong>Lirael</strong> in the library can build trust and provide tactical insight into their enemies.</li>
+</ul>
+<hr />
+<h4 id="part-4:-the-mission---the-matron's-gambit"><strong>Part 4: The Mission - The Matron's Gambit</strong></h4>
+<ul>
+<li><strong>The Briefing:</strong> The party is summoned to the grand ballroom, now converted into a war room. <strong>Matron Severine T'alzar</strong> and the morose flesh golem <strong>Grumble</strong> are waiting.  </li>
+<li><strong>The Dire News (from 3..0_the_briefing_claude.md):</strong> Matron Severine, with barely controlled emotion, informs the party that Valandor is officially missing.  </li>
+<li><strong>The Objectives:</strong> This is no longer a matter of waiting; it is a <strong>rescue mission</strong>.<br />
+  1. <strong>Primary:</strong> Infiltrate Cinderfork Foundry and bring Valandor home.<br />
+  2. <strong>Secondary:</strong> Secure all of his research on Black Mithril.<br />
+  3. <strong>Tertiary:</strong> Find proof of Glutthraz's involvement and, if Valandor is lost, send an unmistakable message of retribution.  </li>
+<li><strong>The Three Plans:</strong> The Matron lays out three potential avenues of approach for the party to choose from:<br />
+  1. <strong>The Artificer (Force):</strong> Use a massive siege drill operated by Grumble.<br />
+  2. <strong>The Ghost (Stealth):</strong> An underwater infiltration using potions and magic.<br />
+  3. <strong>The Serpent (Deception):</strong> A social infiltration using disguises.</li>
+</ul>
+<hr />
+<p><strong>End of Session:</strong></p>
+<p>The session concludes with the party being presented with these three plans. The weight of their brother's life and the fate of their entire house rests on the choice they make next.</p>
+</body>
+</html>
