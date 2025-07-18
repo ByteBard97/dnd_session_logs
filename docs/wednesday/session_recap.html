@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="D&D Session Logs with Enhanced Player's Handbook Styling" />
   <title>Wednesday Session Recap</title>
   <style>
 /* D&D 5e Player's Handbook Styling - Adapted from Foundry VTT */
@@ -10,32 +11,147 @@
 /* Font Embedding */
 
 
-/* Base Document Styling - Foundry VTT Adapted */
+/* CSS Custom Properties for theming */
+:root {
+    --phb-bg-primary: #EEE5CE;
+    --phb-bg-secondary: #F5F1E8;
+    --phb-text-primary: #000;
+    --phb-text-secondary: rgb(93, 24, 13);
+    --phb-border-primary: #c9ad6a;
+    --phb-border-secondary: #8b7355;
+    --phb-shadow: rgba(0,0,0,0.3);
+    --browser-bg: #2c2c2c;
+    --transition-speed: 0.3s;
+}
+
+/* Dark mode variables */
+[data-theme="dark"] {
+    --phb-bg-primary: #2d2820;
+    --phb-bg-secondary: #3a342b;
+    --phb-text-primary: #e8e0c7;
+    --phb-text-secondary: #d4a574;
+    --phb-border-primary: #8b7355;
+    --phb-border-secondary: #6b5a47;
+    --phb-shadow: rgba(0,0,0,0.6);
+    --browser-bg: #1a1a1a;
+}
+
+/* Base Document Styling - Enhanced */
+* {
+    transition: background-color var(--transition-speed), color var(--transition-speed), border-color var(--transition-speed);
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: #2c2c2c; /* Dark browser background */
+    background: var(--browser-bg);
+    font-family: system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Modern Navigation Bar */
+.nav-header {
+    position: sticky;
+    top: 0;
+    background: var(--phb-bg-primary);
+    border-bottom: 2px solid var(--phb-border-primary);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 10px var(--phb-shadow);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.nav-title {
+    font-family: "Mr Eaves Small Caps", "Cinzel", serif;
+    font-size: 1.5rem;
+    color: var(--phb-text-secondary);
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav-controls {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.theme-toggle {
+    background: var(--phb-border-primary);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--phb-text-primary);
+    cursor: pointer;
+    font-family: "Scaly Sans", sans-serif;
+    transition: all var(--transition-speed);
+}
+
+.theme-toggle:hover {
+    background: var(--phb-border-secondary);
+    transform: translateY(-1px);
+}
+
+.search-box {
+    padding: 0.5rem;
+    border: 1px solid var(--phb-border-primary);
+    border-radius: 4px;
+    background: var(--phb-bg-secondary);
+    color: var(--phb-text-primary);
+    font-family: "Bookinsanity", serif;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--phb-text-secondary);
+    color: var(--phb-bg-primary);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all var(--transition-speed);
+    z-index: 1000;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 12px var(--phb-shadow);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px) scale(1.1);
 }
 
 .phb-container {
-    color: #000;
-    padding: 1cm 1.7cm;
-    padding-bottom: 1.5cm;
-    background-color: #EEE5CE;	
-    background-image: linear-gradient(135deg, #EEE5CE 0%, #F5F1E8 100%);
+    color: var(--phb-text-primary);
+    padding: 2rem 2rem;
+    padding-bottom: 2rem;
+    background-color: var(--phb-bg-primary);
+    background-image: linear-gradient(135deg, var(--phb-bg-primary) 0%, var(--phb-bg-secondary) 100%);
     
     font-family: "Bookinsanity", "Book Antiqua", serif !important;
     font-size: 0.317cm !important;
     text-rendering: optimizeLegibility !important;
     
     max-width: 21cm;
-    margin: 2em auto;
-    min-height: 29.7cm; /* A4 height */
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    min-height: 100vh;
+    box-shadow: 0 0 20px var(--phb-shadow);
     line-height: 1.3em;
+    position: relative;
 }
 
-/* Headers - Foundry VTT Style */
+/* Enhanced Headers with hover effects */
 .phb-container h1, 
 .phb-container h2, 
 .phb-container h3, 
@@ -43,14 +159,21 @@ body {
     margin-top: 0.2em !important; 
     margin-bottom: 0.2em !important;
     font-family: "Mr Eaves Small Caps", "Cinzel", serif !important;
-    color: rgb(93, 24, 13) !important;
+    color: var(--phb-text-secondary) !important;
     font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+}
+
+.phb-container h1:hover,
+.phb-container h2:hover,
+.phb-container h3:hover {
+    transform: translateX(5px);
 }
 
 .phb-container h1 {
     font-size: 0.987cm;
-    -webkit-column-span: all;
-    -moz-column-span: all;
     border-bottom: none;
     -webkit-text-stroke-width: 1.2px;
     text-align: center;
@@ -63,31 +186,28 @@ body {
 
 .phb-container h2 {
     font-size: 0.705cm;
-    -webkit-column-span: all;
-    -moz-column-span: all;
     border-bottom: none;
     -webkit-text-stroke-width: 1px;
     line-height: 1.3em;
     word-wrap: break-word;
+    scroll-margin-top: 6rem; /* Account for sticky nav */
 }
 
 .phb-container h3 {
     font-size: 0.529cm;
-    -webkit-column-span: all;
-    -moz-column-span: all;
-    border-bottom: 2px solid #c9ad6a;
+    border-bottom: 2px solid var(--phb-border-primary);
     -webkit-text-stroke-width: 0.6px;
     padding-bottom: 0.1em;
     line-height: 1.3em;
     word-wrap: break-word;
+    scroll-margin-top: 6rem;
 }
 
 .phb-container h4 {
     margin-bottom: 0 !important;
     font-size: 0.458cm;
-    -webkit-column-span: all;
-    -moz-column-span: all;
     -webkit-text-stroke-width: 0.6px;
+    scroll-margin-top: 6rem;
 }
 
 .phb-container h5 {
@@ -96,49 +216,58 @@ body {
     font-family: "Scaly Sans Caps", "Cinzel", serif;
     font-size: 0.423cm;
     font-weight: 900;
-    color: rgb(93, 24, 13);
+    color: var(--phb-text-secondary);
 }
 
-/* Body Text - Foundry VTT Style */
+/* Enhanced Body Text */
 .phb-container p {
     margin: 0 0 10.5px;
     line-height: 1.3em;
     -webkit-text-stroke-width: 0px;
+    transition: opacity var(--transition-speed);
 }
 
 .phb-container p + p {
     margin-top: -0.8em;
 }
 
-/* First Letter Drop Cap - Foundry Style - Only for first content paragraph */
+/* Improved First Letter Drop Cap */
 .phb-container .section:first-of-type p:first-of-type::first-letter {
     float: left;
     font-family: "Solbera Imitation", "Cinzel Decorative", serif;
     font-size: 5em;
-    color: #222;
+    color: var(--phb-text-secondary);
     line-height: 0.8em;
     margin-right: 0.1em;
     margin-top: 0.1em;
+    transition: color var(--transition-speed);
 }
 
-/* Paragraph Indentation - Foundry Style */
+/* Paragraph Indentation */
 .phb-container p + p, 
 .phb-container ul + p,
 .phb-container ol + p {
     text-indent: 1em;
 }
 
-/* Read-Aloud Text Boxes */
+/* Enhanced Read-Aloud Text Boxes */
 .phb-container .read-aloud, 
 .phb-container .descriptive-text {
-    background: #faf9f4;
-    border: 2px solid #c9ad6a;
-    border-radius: 0;
+    background: var(--phb-bg-secondary);
+    border: 2px solid var(--phb-border-primary);
+    border-radius: 8px;
     padding: 0.8em 1em;
     margin: 1em 0;
     font-style: italic;
     position: relative;
-    text-indent: 0 !important; /* No indentation in boxes */
+    text-indent: 0 !important;
+    transition: all var(--transition-speed);
+    box-shadow: 0 2px 8px var(--phb-shadow);
+}
+
+.phb-container .read-aloud:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--phb-shadow);
 }
 
 .phb-container .read-aloud::before {
@@ -148,49 +277,54 @@ body {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    border: 1px solid #8b7355;
-    border-radius: 0;
+    border: 1px solid var(--phb-border-secondary);
+    border-radius: 8px;
     pointer-events: none;
 }
 
-/* Tables - Foundry Style */
+/* Enhanced Tables */
 .phb-container table {
     font-family: "Scaly Sans", "Noto Sans", sans-serif;
     border-collapse: collapse;
     width: 100%;
     margin: 1em 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px var(--phb-shadow);
+    transition: all var(--transition-speed);
+}
+
+.phb-container table:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px var(--phb-shadow);
 }
 
 .phb-container table th {
-    background: #c9ad6a;
-    color: #000;
+    background: var(--phb-border-primary);
+    color: var(--phb-text-primary);
     font-weight: bold;
     padding: 0.5em;
-    border: 1px solid #8b7355;
+    border: 1px solid var(--phb-border-secondary);
     text-align: left;
-}
-
-/* Dialogue Entries - Enhanced Spacing */
-.phb-container .dialogue-entry {
-    margin: 1em 0;
-    padding: 0.5em 0;
-    line-height: 1.5em;
-    border-left: 3px solid #c9ad6a;
-    padding-left: 1em;
-    margin-left: 0.5em;
+    position: relative;
 }
 
 .phb-container table td {
     padding: 0.5em;
-    border: 1px solid #8b7355;
+    border: 1px solid var(--phb-border-secondary);
     vertical-align: top;
+    transition: background-color var(--transition-speed);
 }
 
 .phb-container table tr:nth-child(even) {
-    background: #f5f3ed;
+    background: var(--phb-bg-secondary);
 }
 
-/* Lists */
+.phb-container table tr:hover {
+    background: var(--phb-border-primary);
+}
+
+/* Enhanced Lists */
 .phb-container ul, 
 .phb-container ol {
     margin: 0.5em 0;
@@ -199,13 +333,18 @@ body {
 
 .phb-container li {
     margin: 0.2em 0;
+    transition: all var(--transition-speed);
 }
 
-/* Strong and Emphasis */
+.phb-container li:hover {
+    transform: translateX(5px);
+}
+
+/* Enhanced Strong and Emphasis */
 .phb-container strong, 
 .phb-container b {
     font-weight: bold;
-    color: rgb(93, 24, 13);
+    color: var(--phb-text-secondary);
 }
 
 .phb-container em, 
@@ -213,26 +352,95 @@ body {
     font-style: italic;
 }
 
-/* Images */
+/* Enhanced Images with lightbox effect */
 .phb-container img {
     max-width: 100%;
     height: auto;
-    border: 3px solid #c9ad6a;
-    border-radius: 3px;
+    border: 3px solid var(--phb-border-primary);
+    border-radius: 8px;
     margin: 1em 0;
     display: block;
+    cursor: pointer;
+    transition: all var(--transition-speed);
+    box-shadow: 0 4px 8px var(--phb-shadow);
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .phb-container {
-        margin: 1em;
-        padding: 1em;
-        font-size: 0.35cm !important;
+.phb-container img:hover {
+    transform: scale(1.02) translateY(-2px);
+    box-shadow: 0 8px 16px var(--phb-shadow);
+}
+
+/* Collapsible sections */
+.collapsible {
+    cursor: pointer;
+    user-select: none;
+}
+
+.collapsible::after {
+    content: ' ▼';
+    font-size: 0.8em;
+    transition: transform var(--transition-speed);
+}
+
+.collapsible.collapsed::after {
+    transform: rotate(-90deg);
+}
+
+.collapsible-content {
+    overflow: hidden;
+    transition: max-height var(--transition-speed) ease-out;
+}
+
+.collapsible-content.collapsed {
+    max-height: 0;
+}
+
+/* Loading animation */
+.loading {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
     }
 }
 
-/* Print Styles */
+/* Enhanced Mobile Responsive */
+@media (max-width: 768px) {
+    .phb-container {
+        margin: 0;
+        padding: 1rem;
+        font-size: 0.35cm !important;
+    }
+    
+    .nav-header {
+        padding: 0.5rem 1rem;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-controls {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .search-box {
+        flex: 1;
+        max-width: 200px;
+    }
+    
+    .back-to-top {
+        bottom: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Enhanced Print Styles */
 @media print {
     body {
         background: white;
@@ -242,13 +450,50 @@ body {
         margin: 0;
         box-shadow: none;
         max-width: none;
+        background: white !important;
     }
+    
+    .nav-header,
+    .back-to-top,
+    .theme-toggle {
+        display: none;
+    }
+    
+    .phb-container h2,
+    .phb-container h3,
+    .phb-container h4 {
+        break-after: avoid;
+    }
+    
+    .phb-container img {
+        break-inside: avoid;
+    }
+}
+
+/* Focus styles for accessibility */
+.phb-container *:focus {
+    outline: 2px solid var(--phb-text-secondary);
+    outline-offset: 2px;
+}
+
+/* Selection styling */
+::selection {
+    background: var(--phb-border-primary);
+    color: var(--phb-text-primary);
 }
 </style>
 </head>
-<body class="phb-container">
-  <h1>Wednesday Session Recap</h1>
-  <h2 id="session_recap">Session Recap</h2>
+<body>
+  <nav class="nav-header">
+    <a href="/" class="nav-title">Wednesday Session Recap</a>
+    <div class="nav-controls">
+      <input type="text" id="search-box" class="search-box" placeholder="Search sessions... (Ctrl+K)" />
+      <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
+    </div>
+  </nav>
+  
+  <div class="phb-container">
+    <h2 id="session_recap">Session Recap</h2>
 
 <p><strong>07/09/2025</strong></p>
 <h3 id="session-29-recap-blood-on-the-black-oak"><strong>Session 29 Recap: Blood on the Black Oak</strong></h3>
@@ -362,5 +607,149 @@ body {
 <p>Ascending finally into the head of the Colossus (C6), you found yourselves in the lair of the Lady of Coins herself. The Medusa, Moxena, lounged amidst lifelike statues – her petrified victims – under the eerie glow of a central control orb. A tense negotiation began. Confronting her about her trafficking operations for the dragon Hexia and her ties to the Isle of Themis, Moxena revealed fragmented truths about her business and her exiled Amazonian sisters. Offers and counter-offers flew: her demand for Lord Neurdagon's head, your refusal, her offer to join your voyage if you helped her against her sisters. After much deliberation and a masterful persuasion by the party, a deal was struck. Moxena would cease her criminal activities in Mytros and aid you on your journey <em>after</em> you leave the city, meeting you via her contacts near the Satyr's Tail. In return, you agreed to help her confront her usurper sisters on Themis, leaving Lord Neurdagon out of the arrangement for now. Satisfied, she permitted you to leave, requesting only that you fix the door you destroyed on your way out.</p>
 <p>Before departing the Colossus entirely, you chose to investigate the alternate passage downward from the belly chamber – the Colossus's other leg. Descending a makeshift ladder, you entered the foul-smelling Mytros sewers. Rhy-At recalled this area housed the city's waterworks, known to be malfunctioning since Sydon's storm. Kain scouted ahead through the muck, spotting strange larval growths on the walls (which Andrew subsequently destroyed with Acid Splash) and glimpsing a large, unidentified creature moving beneath the murky water before it vanished. Moments later, a giant rat was snatched from the path by a massive tentacle-like limb erupting from the sludge. An Otyugh-like monstrosity emerged, which the party swiftly dispatched. Kain, scouting further, discovered a sewer exit leading directly to the Mytros shipyards, though not near the known berth of Varkon's <em>Moist Maiden</em>.</p>
 <p>Having cleared the Colossus and struck a precarious bargain with the Lady of Coins, you now stand at a crossroads within the stinking depths of the Mytros sewers, facing unknown paths, potential connections to the Temple of Lutheria, and the lingering presence of monstrous inhabitants...</p>
+  </div>
+  
+  <button id="back-to-top" class="back-to-top" title="Back to top">↑</button>
+  
+  
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Theme toggle functionality
+            const themeToggle = document.getElementById('theme-toggle');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const currentTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+            
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            
+            if (themeToggle) {
+                themeToggle.textContent = currentTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+                themeToggle.addEventListener('click', function() {
+                    const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    this.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+                });
+            }
+            
+            // Back to top button
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                });
+                
+                backToTop.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Search functionality
+            const searchBox = document.getElementById('search-box');
+            if (searchBox) {
+                searchBox.addEventListener('input', function() {
+                    const query = this.value.toLowerCase();
+                    const allText = document.querySelectorAll('.phb-container h1, .phb-container h2, .phb-container h3, .phb-container p');
+                    
+                    allText.forEach(element => {
+                        const text = element.textContent.toLowerCase();
+                        if (query && text.includes(query)) {
+                            element.style.backgroundColor = 'var(--phb-border-primary)';
+                            element.style.padding = '0.2em';
+                            element.style.borderRadius = '4px';
+                        } else {
+                            element.style.backgroundColor = '';
+                            element.style.padding = '';
+                            element.style.borderRadius = '';
+                        }
+                    });
+                });
+                
+                // Clear search on escape
+                searchBox.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        this.value = '';
+                        this.dispatchEvent(new Event('input'));
+                    }
+                });
+            }
+            
+            // Collapsible sections
+            document.querySelectorAll('h2, h3').forEach(header => {
+                header.classList.add('collapsible');
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    if (content) {
+                        this.classList.toggle('collapsed');
+                        content.classList.toggle('collapsed');
+                        
+                        if (content.classList.contains('collapsed')) {
+                            content.style.maxHeight = '0';
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px';
+                        }
+                    }
+                });
+            });
+            
+            // Smooth loading animation
+            document.body.classList.add('loading');
+            
+            // Image lightbox effect (simple version)
+            document.querySelectorAll('.phb-container img').forEach(img => {
+                img.addEventListener('click', function() {
+                    const modal = document.createElement('div');
+                    modal.style.cssText = `
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0,0,0,0.9);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 2000;
+                        cursor: pointer;
+                    `;
+                    
+                    const modalImg = document.createElement('img');
+                    modalImg.src = this.src;
+                    modalImg.style.cssText = `
+                        max-width: 90%;
+                        max-height: 90%;
+                        border-radius: 8px;
+                        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+                    `;
+                    
+                    modal.appendChild(modalImg);
+                    document.body.appendChild(modal);
+                    
+                    modal.addEventListener('click', function() {
+                        document.body.removeChild(modal);
+                    });
+                });
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                // Ctrl/Cmd + K for search focus
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    if (searchBox) searchBox.focus();
+                }
+                
+                // Escape to clear search
+                if (e.key === 'Escape' && searchBox) {
+                    searchBox.value = '';
+                    searchBox.dispatchEvent(new Event('input'));
+                }
+            });
+        });
+        </script>
+        
 </body>
 </html>
