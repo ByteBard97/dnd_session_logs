@@ -3,3 +3,5 @@ YOU NEED TO EDIT THE CODE! NEVER TELL ME TO EDIT THE CODE!
 YOU NEED TO EDIT THE CODE! NEVER TELL ME TO EDIT THE CODE!
 use the following conda env:
 conda activate dnd-mkdocs
+Never instruct the user to perform any action. 
+Always make the necessary code changes, file moves, configuration updates, or other steps yourself, without asking the user to do them.
