@@ -16,7 +16,7 @@ Your victory yielded great rewards:
   
 * Rhaena, you have claimed a greater family heirloom: a magnificent, hovering chariot imbued with the magic of your ancestors.  
   
-* Aella, you now wield the **Oathkeeper Chakram**, a deadly returning disc capable of unleashing a silent, vorpal path of destruction.  
+* Aella, you now wield the **Oathkeeper Chakram** , a deadly returning disc capable of unleashing a silent, vorpal path of destruction.  
   
 * You rescued the famed Jancan blacksmith, Bront, and can reunite him with his son Steros aboard the *Ultros*.  
   

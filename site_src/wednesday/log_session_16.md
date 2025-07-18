@@ -1,9 +1,9 @@
 # Session 16
 
-**Epic Path Reminders**
+ **Epic Path Reminders**
 
 * **Kain, The Dragonslayer:**  
-  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the **Forgekeeper in the Mithral Mines**. That journey awaits once you've dealt with the pressing threats in Estoria and reclaimed the Horn of Balmytria. Keep watch for clues that lead to the hidden Mithral Forge and the tools you'll need to face monstrous foes like Hexia.  
+  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the **Forgekeeper in the Mithral Mines** . That journey awaits once you've dealt with the pressing threats in Estoria and reclaimed the Horn of Balmytria. Keep watch for clues that lead to the hidden Mithral Forge and the tools you'll need to face monstrous foes like Hexia.  
 * **Tharok, The Cursed One:**  
   Damon, the guardian of the Necropolis, directed you to **Scorpion Island** to seek the Lotus Witch, who may hold the key to ending your curse. While that journey lies ahead, the path is dangerous and your party's immediate predicament in Estoria demands attention first. Remember that the answers you seek are out there, beyond the city's walls, once your current duties are done.  
 * **Zephyrion, The Demi-god:**  

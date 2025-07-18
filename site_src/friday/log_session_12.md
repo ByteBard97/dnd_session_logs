@@ -14,7 +14,7 @@ Agenda
 * Recover Pythor's Hammer from King Pythor and then Volkan can use it to repair your damaged items
 
 Log  
-**The Basilisk Cavern**
+ **The Basilisk Cavern**
 
 * Deep within the rocky gorge, you descended into the lair of the deadly basilisks. These monstrous creatures, harbingers of petrification, had claimed the lives and freedom of many—including a group of ill-fated bandits now frozen in stone.  
 * **The Battle:** You fought valiantly against these creatures, narrowly avoiding their petrifying gazes. Each strike of your weapons reverberated through the cavern, and though the battle was fierce, your resolve never wavered.  

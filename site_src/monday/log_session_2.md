@@ -39,7 +39,7 @@ To transport the large siege drill through the city without attracting attention
 The party successfully reached the rendezvous point at the less-used Night-Tide Docks.
 
 * **The Ferrymen:** Lirael dropped the illusion and provided the passphrase—*"The silver moon still sings in the dark"*—to the waiting ferrymen. The crew consisted of the hulking Orog captain,  
-   **Borok the Silent**, and his goblin first mate, **Fadda Brinebless**.  
+   **Borok the Silent** , and his goblin first mate, **Fadda Brinebless** .  
 * **The Vessel:** Their transport is a skiff pulled by two giant, carnivorous eels known as Keelhaulers .
 
 Lirael bid the party farewell, and the session concluded as they boarded the skiff to begin the 20-hour journey across the Black Loch to Cinderfork Foundry.

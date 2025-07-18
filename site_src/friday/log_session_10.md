@@ -16,7 +16,7 @@ Agenda
 
 Log
 
-**Session 10 Recap: The Fires of the Mithral Forge**
+ **Session 10 Recap: The Fires of the Mithral Forge**
 
 * **Battle in the Dwarven Hall**  
   * After your stealthy approach faltered, you faced off against vicious death dogs feasting on the colossal corpse of a three-headed cerberus.  
@@ -51,7 +51,7 @@ Log
   * Moving south, you discovered a grand chamber dominated by a bubbling pool of lava—a creature swam beneath its molten surface.  
   * Two death dogs guarded an enigmatic bronze sphere with a protruding spout.  
   * Without hesitation, Aella led the charge against the guardians.  
-  * Rheana invoked the **Fear of the Dragonlords**, her presence unsettling the death dogs and giving you the upper hand.  
+  * Rheana invoked the **Fear of the Dragonlords** , her presence unsettling the death dogs and giving you the upper hand.  
   * Upon their defeat, a serpentine figure emerged from the lava—the salamander known as Pyra, the Forgekeeper.  
   * She warned of the enchanted sphere, a deadly trap designed by the dwarves to keep her bound.  
 * **Disarming the Frozen Trap**  

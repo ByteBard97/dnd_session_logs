@@ -24,8 +24,8 @@
     * Andrew Lynx dealt the killing blow with a series of critical *Eldritch Blasts*, destroying Skaethon.
 
 * **Loot and Aftermath:**
-    * Upon Skaethon's defeat, his animated gear became inert. The party recovered his magical armor, **Azurescale**, and his damaged sword, **Ebony**.
+    * Upon Skaethon's defeat, his animated gear became inert. The party recovered his magical armor, **Azurescale ** , and his damaged sword, **Ebony** .
     * A chest in the cabin contained 300 gp, 50 pp, a black pearl, four bloodstones, and other valuables.
-    * Three unique potions were found: **Felix Felicis (Liquid Luck)**, a **Potion of Etherealness**, and **Sandman's Embrace** (a sleep potion).
+    * Three unique potions were found: **Felix Felicis (Liquid Luck) ** , a **Potion of Etherealness ** , and **Sandman's Embrace** (a sleep potion).
     * Tharok's maximum HP is temporarily reduced from the specters' life drain attacks.
     * Estor Arkelander remains on the upper deck, reading a book titled **"The Ledger of Wills,"** awaiting the party's next move.

@@ -72,7 +72,7 @@ The session picked up directly after the party's success in the sewers.
    * Pyra presented them with the  
       **Cloak of Magic Immunity** as their first commission. This cloak allows the wearer to spend charges (equal to spell's level) as a reaction to become immune to a spell's effects, regaining all charges daily.  
    * Vulcan revealed a  
-      **Calydonian**, a messenger construct from the old days, found during clearing ruins.  
+      **Calydonian** , a messenger construct from the old days, found during clearing ruins.  
    * To repair the Calydonian, Vulcan needs two Mithril ingots and 1000 gold pieces.  
    * The party immediately provided the Mithril (from a Mithril-inlaid axe and other Mithril items) and the 1000 gold pieces. Once repaired (in 3 days), the Calydonian can deliver commissioned items and collected materials directly to the party anywhere, saving travel time.  
    * Vulcan also presented Tharok with a  
@@ -80,7 +80,7 @@ The session picked up directly after the party's success in the sewers.
    * Tharok also decided to give two of his kobold eggs to Vulcan and Pyra as gifts, for them to raise as apprentices. He kept one for himself.  
    * The Wyvern egg they possess is expected to hatch in about 5 days.
 
-**Current Status of the Party:**
+ **Current Status of the Party:**
 
 * Healed from Sewer Plague.  
 * Received two powerful magic items: Robe of the Weave (Nikandros) and Wand of Switch Step.  

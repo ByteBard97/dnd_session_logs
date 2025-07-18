@@ -10,7 +10,7 @@ Agenda
 
 Log
 
-**A Morning of Farewells**
+ **A Morning of Farewells**
 
 * The party awoke well-rested in Boreas' villa, the storm-muted vineyard offering a brief reprieve from the chaos outside.  
 * After intense negotiations, Boreas agreed to trade the Boreal Harp for Astreus's magical lute, an exchange that cemented mutual respect between the party and the satyr.  
@@ -22,7 +22,7 @@ Log
 * Along their path, the party came upon a collapsed home. Muffled cries from beneath the rubble spurred them into action.  
 * Delphi used his magic to clear debris while the rest of the party dug through the wreckage. Their efforts inspired nearby neighbors, who joined in to pull the survivors to safety.  
   **The Impassable Steps**  
-* The path to Mount Volkan's summit was blocked by a mudslide, forcing the party to detour through **Stygian Row**, the city's slums.  
+* The path to Mount Volkan's summit was blocked by a mudslide, forcing the party to detour through **Stygian Row** , the city's slums.  
 * There, they discovered a man turned to stone. Using their magical ointment, they restored him, and he warned them about the Cult of the Snake, led by the enigmatic Lady of Coins.  
 * He pointed them toward the Satyr's Tail, a seedy watering hole where they could learn more about this mysterious faction. The party marked it on their map before continuing north.  
   **The Treacherous Ascent**  

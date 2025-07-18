@@ -1,6 +1,6 @@
 # Session 24
 
-**Diplomacy & Ritual:**
+ **Diplomacy & Ritual:**
 
 * Conferred with Queen Vytha of the Bloodscale tribe regarding her proposed sacrificial feast.  
 * Learned from Kyra that the Bloodscales' goddess "Chalcia" is likely the lost Goddess of Swiftness, sister to Sydon and Lutheria.  

@@ -15,7 +15,7 @@ Agenda
 
 Log
 
-**Unexpected Arrival:**
+ **Unexpected Arrival:**
 
 * As the heroes navigated the rekindled Mithral Forge, they sensed an impending threat. King Driptongue and his ruthless minions began descending the dwarven elevator, determined to seize control of the forge.  
   **Defensive Preparations:**  

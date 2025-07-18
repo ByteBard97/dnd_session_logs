@@ -1,13 +1,13 @@
 # Session 10
 
-**Epic Path Reminders**
+ **Epic Path Reminders**
 
 * **Ariasia ("Ari"), The Lost One:**  
-  You've learned that the key to finding your way home lies in the **lost treasure of the Dragonlords**. Pythor hinted that the undead captain Estor Arkelander—haunting the legendary ship Ultros—last possessed this treasure. To move forward, you must eventually seek out the Ultros and confront Estor's ghost. For now, the city's troubles and the stolen Horn of Balmytria stand in the way, but keep an ear open for anything that might lead you to that ghostly vessel.  
+  You've learned that the key to finding your way home lies in the **lost treasure of the Dragonlords** . Pythor hinted that the undead captain Estor Arkelander—haunting the legendary ship Ultros—last possessed this treasure. To move forward, you must eventually seek out the Ultros and confront Estor's ghost. For now, the city's troubles and the stolen Horn of Balmytria stand in the way, but keep an ear open for anything that might lead you to that ghostly vessel.  
 * **Demetrius, The Vanished One:**  
   You recovered the Crown of the Dragonlords, but **Gaius of the Order of Sydon** has stolen your famed armor. He's reportedly fortified himself on an island in the Cerulean Sea, well-guarded and loyal to the Titan Sydon. To fully reclaim your legacy, you'll need to retrieve your armor from Gaius. But first, you must survive your current obligations in Estoria, including the grim deal made with Gaius over Princess Anora's sacrifice.  
 * **Kain, The Dragonslayer:**  
-  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the **Forgekeeper in the Mithral Mines**. Keep watch for clues that lead to the hidden Mithral Forge.  
+  Destiny calls you to become the bane of evil dragons. To forge a weapon worthy of such a task, you must speak with the **Forgekeeper in the Mithral Mines** . Keep watch for clues that lead to the hidden Mithral Forge.  
 * **Kalian, The Gifted One:**  
   Your grandmother's spirit and the Oracle Versi guide you towards resurrecting the glory of the Dragonlords and exacting vengeance on Sydon.   
 * **Tharok, The Cursed One:**  

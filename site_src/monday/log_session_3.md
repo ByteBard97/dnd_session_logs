@@ -1,6 +1,6 @@
 # Session 3
 
-**Session 3: Infiltration and Devastation at Cinderfork Foundry**
+ **Session 3: Infiltration and Devastation at Cinderfork Foundry**
 
 The session began with the party aboard the *Silent Keel*, a skiff pulled by two monstrous Keelhauler eels, making their 20-hour journey across the Black Loch towards Cinderfork Foundry.
 
@@ -9,9 +9,9 @@ The session began with the party aboard the *Silent Keel*, a skiff pulled by two
   * Malagar successfully used Insight to understand Borok the Silent's unspoken instructions: "follow instructions and there will be no problems."  
   * Fadda Brinebless, the goblin priest, performed blessing rituals, sprinkling loch water on the PCs and the boat.  
   * A Keelhauler eel lunged at the boat, splashing a PC, which Fadda cheerfully dismissed as a "hello" from the Deep Black.  
-  * The party experienced an "Atmospheric Encounter": they passed through a field of **Hydrothermal Vents**, causing a one-hour detour due to the heated water.  
+  * The party experienced an "Atmospheric Encounter": they passed through a field of **Hydrothermal Vents** , causing a one-hour detour due to the heated water.  
   * Another "Atmospheric Encounter" occurred: a **Ghost Barge** glided silently past, its spectral crew rowing endlessly. Fadda reacted with fear, performing a salt ritual, while Borok grimly acknowledged it as a common, albeit unsettling, sight on the loch. Grumble (if present) offered cynical commentary.  
-  * The party encountered the **"Whisperer's Omen"**, a mandatory mid-voyage event where the water grew still and a sub-aural thrum vibrated through the ship. Fadda frantically requested help with a ritual to appease the "Whisperer."  
+  * The party encountered the **"Whisperer's Omen"** , a mandatory mid-voyage event where the water grew still and a sub-aural thrum vibrated through the ship. Fadda frantically requested help with a ritual to appease the "Whisperer."  
     * The party engaged in a **Group Skill Challenge** (3 successes before 2 failures).  
     * Clank (Scott) successfully channeled arcane energy into the lichen, creating a "jangle and a hum bass line."  
     * Zyntra (Jeremiah) used rope to steady herself and the others, preventing components from being lost.  
@@ -24,7 +24,7 @@ The session began with the party aboard the *Silent Keel*, a skiff pulled by two
     * **Docks:** Spotted three ships: a "Slag-Mule" (Duergar barge), the "Silk-Reaver" (Drow yacht), and Valandor's familiar "Night-Talon" speedboat (recognizing it with "dread"). Noted two watchtowers flanking the entrance.  
     * **Ground Floor (Main Hall/Foyer):** Flew through a portcullis into a large atrium with a 15-foot ceiling. Saw six off-duty Duergar workers playing cards and drinking. Noted a heavy, sealed, handle-less **adamantine door** on the west side (which they correctly assumed was the prison). Also saw a normal door (unlocked), a lift, and a stairwell.  
     * **Upper Level (Forge Area):** Flew up the lift shaft (5-6 stories). Observed Master Smiths and Duergar workers "hammering on this shell" of metal around another Duergar, seemingly forcing him into a "big suit" (a Screamer). Noted rivers of molten magma and a "bubbling of magma" to the north. Saw a "Scrutinizer" (Peepers) construct patrolling.  
-    * **Basement/Geothermal Plant:** Flew down the stairwell. Entered a loud chamber filled with massive turning machinery and a spinning **turbine**. Noted a large room to the south with heavy fortified doors and heat-proof windows, filled with roiling, superheated steam, and a violently moving "massive form" (the Bound Geothermal Elemental). Determined the turbine blocked further passage, and its controls were in adjacent rooms.  
+    * **Basement/Geothermal Plant: ** Flew down the stairwell. Entered a loud chamber filled with massive turning machinery and a spinning ** turbine**. Noted a large room to the south with heavy fortified doors and heat-proof windows, filled with roiling, superheated steam, and a violently moving "massive form" (the Bound Geothermal Elemental). Determined the turbine blocked further passage, and its controls were in adjacent rooms.  
   * **Overheard Conversations (via bat scouting):**  
     * **Barracks/Mess Hall:** Overheard two Duergar guards complaining about "Kaldar pushing everyone to the brink since that new black metal came in." They mentioned "the drow prisoner, the artificer," who was "supposed to make the forgings easier," but instead "the Screamers wail louder than ever." They also said, "They say they finally broke the prisoner today."  
     * **Workshop:** Overheard two Duergar complaining about the "Peepers" constructs, confirming they were expensive and could "see right through a drow's disappearing trick."  

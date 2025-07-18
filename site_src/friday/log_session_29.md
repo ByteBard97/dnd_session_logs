@@ -1,8 +1,8 @@
 # Session 29
 
-**Objective:** Infiltrate the Sacred Temple on Themis to find allies and confront the usurper queen.
+ **Objective:** Infiltrate the Sacred Temple on Themis to find allies and confront the usurper queen.
 
-**Status:** In Progress
+ **Status:** In Progress
 
 * **Entry to the Sacred Temple**
 

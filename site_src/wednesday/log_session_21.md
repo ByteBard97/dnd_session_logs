@@ -1,8 +1,8 @@
 # Session 21
 
-**Date:** Friday, 2nd week, mid-afternoon **Location:** Mytros, Colossus of Pythor (Areas C3-C6), Sewer Entrance (C2/UL8)
+ **Date:** Friday, 2nd week, mid-afternoon ** Location:** Mytros, Colossus of Pythor (Areas C3-C6), Sewer Entrance (C2/UL8)
 
-**Combat Continues in the Colossus's Belly (C3):**
+ **Combat Continues in the Colossus's Belly (C3):**
 
 * The session began mid-combat in the Colossus's belly chamber, filled with noxious green gas released by the Minotaur Hero.    
 * Rhy-At cast Mirror Image for defense. The Minotaur Hero dodged and continued opening the gas valve.    
@@ -16,14 +16,14 @@
 * Zephyrion used Mithral Thread bandages to cure Kain's poison.  
 * The party looted the fallen foes, finding gold, silver, onyx gems, standard armor, a shield with a minotaur imprint, and a vial containing foul-smelling liquid identified by Kragnos as "putrid shit" used as a thrown weapon. Tharok allowed Kragnos to leave.
 
-**Ascending the Colossus (C4 & C5):**
+ **Ascending the Colossus (C4 & C5):**
 
 * The party decided to proceed upwards rather than explore the alternate trapdoor exit leading down to the Colossus's other foot.    
 * They moved through the Torso chamber (C4), noting the acidic smell and strange gloss on the metal, but the acid trap was not active.    
 * In the Chest chamber (C5), they encountered several thugs and other individuals (dwarf, goblin, hobgoblin, well-dressed man, drow) playing cards near the furnace. The furnace trap was also inactive.    
 * The drow challenged the party, demanding a password. Tharok bluffed, claiming passage was granted by "Throx Iron Jaws" (Kragnos) to see "Moxina" regarding "lucrative deals," which surprisingly worked. The party noted several lifelike statues in the room.
 
-**Confronting the Lady of Coins (C6):**
+ **Confronting the Lady of Coins (C6):**
 
 * The party ascended to the head chamber (C6), finding Moxena (the Lady of Coins, a Medusa) lounging near statues of a dwarf, elf, and gnome.    
 * A negotiation ensued. The party revealed they knew of her operations and connection to Hexia, mentioning the sea captain Varkon. Moxena confirmed she was a businesswoman who acquired "assets," including talent for Hexia, and mentioned her Amazonian sisters being traitors.    
@@ -33,7 +33,7 @@
 * The party refused to kill Neurdagon but persuaded Moxena (DC 28 Persuasion check success) to accept the deal without his head. She agreed to stop her criminal activities in Mytros and meet them outside the city via her contacts near the Satyr's Tail when they were ready to leave for Themis. She warned them not to tell Queen Vallus.    
 * The party cleaned up the bodies from the earlier fight using Acid Splash.  
 
-**Exploring the Sewer Connection:**
+ **Exploring the Sewer Connection:**
 
 * After the deal with Moxena, the party decided to investigate the sewer connection (C2) leading out from the Colossus's foot.  
 * Descending the ladder, they found themselves in a sewer area (UL8 based on map description) with ankle-deep foul water and pipes discharging waste. Rhy-At recalled that Queen Vallus's water treatment operations were down here and had been experiencing issues since the hurricane.  
@@ -45,8 +45,8 @@
 
 ## **Updated Quest Log**
 
-* **The Lady of Coins (Lord Taran):** **\[Updated\]** Encountered Moxena, the Lady of Coins. Instead of killing her for Taran's bounty, the party negotiated a deal. She agreed to cease criminal operations in Mytros and assist the party later if they help her against her sisters on the Isle of Themis. Taran's bounty remains unfulfilled, and the party intends to deceive him.  
-* **Investigate the Cult of Lutheria (Queen Vallus):** **\[No Change\]** Still pending. The party possesses the ledger indicating child trafficking to the Temple of Lutheria but prioritized investigating the Colossus. They know there might be sewer connections to the Temple.  
-* **Recover the Ultros (King Acastus/Queen Vallus):** **\[No Change\]** Still pending.  
-* **Deal with Moxena (New):** **\[Active\]** The party has agreed to help Moxena deal with her traitorous sister(s) on the Isle of Themis. In return, she will cease criminal activities in Mytros and accompany them on their voyage after they leave the city.  
-* **Explore Mytros Sewers (New/Implied):** **\[Active\]** The party discovered a sewer network connected to the Colossus of Pythor. They encountered a large monster and noticed strange larval growths. They learned of potential wastewater treatment issues and a construct overseeing machinery. They found a sewer exit near the shipyards and discussed further exploration, potentially towards the Temple of Lutheria or the waterworks.
+* **The Lady of Coins (Lord Taran): ** ** \[Updated\]** Encountered Moxena, the Lady of Coins. Instead of killing her for Taran's bounty, the party negotiated a deal. She agreed to cease criminal operations in Mytros and assist the party later if they help her against her sisters on the Isle of Themis. Taran's bounty remains unfulfilled, and the party intends to deceive him.  
+* **Investigate the Cult of Lutheria (Queen Vallus): ** ** \[No Change\]** Still pending. The party possesses the ledger indicating child trafficking to the Temple of Lutheria but prioritized investigating the Colossus. They know there might be sewer connections to the Temple.  
+* **Recover the Ultros (King Acastus/Queen Vallus): ** ** \[No Change\]** Still pending.  
+* **Deal with Moxena (New): ** ** \[Active\]** The party has agreed to help Moxena deal with her traitorous sister(s) on the Isle of Themis. In return, she will cease criminal activities in Mytros and accompany them on their voyage after they leave the city.  
+* **Explore Mytros Sewers (New/Implied): ** ** \[Active\]** The party discovered a sewer network connected to the Colossus of Pythor. They encountered a large monster and noticed strange larval growths. They learned of potential wastewater treatment issues and a construct overseeing machinery. They found a sewer exit near the shipyards and discussed further exploration, potentially towards the Temple of Lutheria or the waterworks.

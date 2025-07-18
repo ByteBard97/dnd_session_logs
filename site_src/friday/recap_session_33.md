@@ -13,7 +13,7 @@ As the *Ultros* sailed toward the island marked by the Constellation of the Cent
 A chaotic struggle ensued below decks:
 * Aella and Rhaena, having resisted the dream's influence, fought to restrain their friends without causing serious harm.
 * Aella managed to grapple the frenzied Astraeus, while Rhaena attempted to subdue him with nets.
-* The conflict was resolved when Rhaena, having attuned to the recently acquired **Titan's Scourge**, used its power to break the nightmare's hold on both affected party members.
+* The conflict was resolved when Rhaena, having attuned to the recently acquired **Titan's Scourge** , used its power to break the nightmare's hold on both affected party members.
 
 ### **Arrival at Scorpion Island**
 

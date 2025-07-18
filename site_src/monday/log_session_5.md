@@ -17,7 +17,7 @@ This session picks up with the party in control of the Cinderfork Foundry's sub-
 
 ### Aftermath and the Path Forward
 
-*   **Looting the Engineer:** The party looted Tholdrum's body. They recovered his magical **+1 Breastplate**, a **"Bottle of Lightning"** grenade, a bizarre **"Slug Potion"**, and two potent **"Dreamless Deep"** potions capable of inducing a long rest in minutes. However, they made a critical discovery: **Tholdrum did not have one of the Rods of Opening.**
+*   **Looting the Engineer: ** The party looted Tholdrum's body. They recovered his magical ** +1 Breastplate **, a ** "Bottle of Lightning" ** grenade, a bizarre ** "Slug Potion" **, and two potent ** "Dreamless Deep" ** potions capable of inducing a long rest in minutes. However, they made a critical discovery: ** Tholdrum did not have one of the Rods of Opening.**
 *   **The Turbine Dilemma:** With the sub-level's command staff eliminated, the party returned to the problem of the turbine. They now know that pulling both levers will shut it down, but it will also trigger a foundry-wide emergency alert. They determined they have a very narrow window: it takes about 90 seconds for the turbine to slow to a crossable speed, but the first responders are expected to arrive in that same timeframe.
 
 The session ended with the party contemplating their next move, weighing the risks of a full-frontal assault against the possibility of using the turbine itself as a weapon to lure and eliminate their enemies.

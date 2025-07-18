@@ -8,13 +8,13 @@
 * The party chose to immediately rescue the children from the Cult of Lutheria's cellar. Tharok smashed one cage open, while Kain picked the lock on the second.  
 * The children were discovered to be wearing the purple-collared vestments of the Cult of Lutheria.  
 * The party decided the safest course of action was to deliver the children to Queen Vallus's palace.  
-* The two-hour journey was successful. They met the Queen's valet, **Makaira**, and entrusted the children to her care.  
+* The two-hour journey was successful. They met the Queen's valet, **Makaira** , and entrusted the children to her care.  
 * The head of the slain Shield Guardian was given to Makaira as evidence of the Cult of Lutheria's illicit activities.
 
 #### **Volkan's Dynamo & The New Quest**
 
-* Upon returning to the sewers, the party discovered the **Engine-Works Vault (UL-6a/b)**, a massive pumping station in a state of disrepair.  
-* They met **Chief Engineer Petros "Ironhand" Galanis** and his assistant **Elara "Ironwrought,"** who were struggling to prevent a catastrophic system failure.  
+* Upon returning to the sewers, the party discovered the **Engine-Works Vault (UL-6a/b)** , a massive pumping station in a state of disrepair.  
+* They met **Chief Engineer Petros "Ironhand" Galanis ** and his assistant ** Elara "Ironwrought,"** who were struggling to prevent a catastrophic system failure.  
 * **Quest Acquired:** The engineers revealed the entire sewer system was damaged by the recent hurricane and tasked the party with recovering two critical components to prevent the city from "drowning in its own filth":  
   * **1\. Aetheric Capacitor:** Lost in the northern Web-Clogged Domes, where a previous work crew was killed by a monstrous "broodmother".  
   * **2\. Vulcan-Forged Pressure Valve:** Lost in the flooded Grand Cistern Complex to the east, where another crew led by Foreman Kastros has gone missing.
@@ -27,7 +27,7 @@
 
 #### **Boss Fight: Eurysphex, the Broodmother**
 
-* The party was addressed by a voice identifying itself as **Eurysphex**, the Broodmother of Arachne, who referred to them as "little flies" caught in her "tapestry".  
+* The party was addressed by a voice identifying itself as **Eurysphex** , the Broodmother of Arachne, who referred to them as "little flies" caught in her "tapestry".  
 * **Major Victory:** The fight was initiated by Kain's flaming arrows. In a key tactical moment, Rhy-At's *Fireball* destroyed the webs Eurysphex was on, causing her to plummet 60 feet and take massive fall damage.  
 * Eurysphex used a powerful villain action, "Arachne's Wrath," to transform, growing in size and gaining resistance to all damage except fire.  
 * The boss cast *Polymorph* on Tharok, turning him into a rat. He was still able to land a raging opportunity attack while in his tiny form.  
@@ -37,8 +37,8 @@
 #### **Loot & Aftermath**
 
 * The party defeated the remaining spiderlings.  
-* **Quest Item Recovered:** Amidst the treasure, they found the **Aetheric Capacitor**, completing the first part of the engineers' quest.  
-* **Magic Item Found:** The party looted a powerful **glowing bow**. It can be a longbow or shortbow, deals an extra 1d6 radiant damage, and has several magical properties, including the ability to create an Energy Ladder, fire restraining arrows, or teleport a creature. Kain claimed the bow.  
+* **Quest Item Recovered: ** Amidst the treasure, they found the ** Aetheric Capacitor**, completing the first part of the engineers' quest.  
+* **Magic Item Found: ** The party looted a powerful ** glowing bow**. It can be a longbow or shortbow, deals an extra 1d6 radiant damage, and has several magical properties, including the ability to create an Energy Ladder, fire restraining arrows, or teleport a creature. Kain claimed the bow.  
 * The party successfully harvested valuable poison from the broodmother's glands.
 
 #### **Session End State**

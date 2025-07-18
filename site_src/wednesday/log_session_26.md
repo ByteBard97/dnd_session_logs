@@ -2,13 +2,13 @@
 
 ### **Quest Log: Session of June 19, 2025**
 
-**Objective:** Fix the malfunctioning Mytros sewer system by aiding the city engineers.
+ **Objective:** Fix the malfunctioning Mytros sewer system by aiding the city engineers.
 
-**Summary:** After rescuing Engineer Talia Ironrack, the party ventured back into the reptilian cultists' warrens to eliminate the source of the corruption. They successfully ambushed the cultists, defeated two powerful abyssal monsters, and recovered a magical hammer, completing their quest and reaching Level 7\.
+ **Summary:** After rescuing Engineer Talia Ironrack, the party ventured back into the reptilian cultists' warrens to eliminate the source of the corruption. They successfully ambushed the cultists, defeated two powerful abyssal monsters, and recovered a magical hammer, completing their quest and reaching Level 7\.
 
-**Key Events & Clues:**
+ **Key Events & Clues:**
 
-* **The Shaman's Ritual:** The party discovered the cultists, led by their shaman **Vrask**, in a state of religious ecstasy, performing a ritual around a large, dark pit.  
+* **The Shaman's Ritual: ** The party discovered the cultists, led by their shaman ** Vrask**, in a state of religious ecstasy, performing a ritual around a large, dark pit.  
 * **The Ambush:** The party initiated a surprise attack, gaining a full round of actions against the unsuspecting cultists.  
   * Kain killed an Elite Guard, whose body fell into the pit.  
   * Zephyrion killed the shaman Vrask, ending the ritual chanting.  
@@ -25,9 +25,9 @@
   * **Clue:** Symptoms will manifest in 24 hours (1d4 days) and include exhaustion and reduced healing. The party learned that a *lesser restoration* spell can cure the disease. Tharok himself is immune to disease.  
 * **Quest Complete:** The party returned to the engineers in the Great Cistern and gave them the recovered components. Foreman Castro confirmed the system was saved from catastrophic failure.  
 * **Promised Reward:** Foreman Castro assured the party the Queen would reward them handsomely for their efforts.  
-* **Level Up:** The party has reached **Level 7**.
+* **Level Up: ** The party has reached ** Level 7**.
 
-**Loot Recovered:**
+ **Loot Recovered:**
 
 * **From the Pit:** After the battle, the party explored the bottom of the chasm and recovered the following treasures from the sludge and bones:  
   * 1,600 Gold Pieces.  
@@ -38,7 +38,7 @@
   * **The Hordemall:** A magical warhammer that acts as a bag of holding for treasure (gold, gems, art objects) and can expend that wealth to create powerful magical effects, including a *wall of gold* or a *globe of invulnerability*.  
 * **From the Maw of the Pit:** The party successfully harvested one jar of Mimic Glue from the creature's remains.
 
-**Player Character Notes & Plans:**
+ **Player Character Notes & Plans:**
 
 * **Tharok:** Decided to multiclass, taking his first level in Fighter.  
 * **Nikandros:** Is considering multiclassing into Bard to provide more support for the party.  

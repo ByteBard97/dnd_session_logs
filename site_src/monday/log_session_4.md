@@ -1,16 +1,16 @@
 # Session 4
 
-**Recap: The Culling of the Sub-Level**
+ **Recap: The Culling of the Sub-Level**
 
 This session covers the party's continued infiltration of the Cinderfork Foundry's geothermal sub-level, focusing on systematically eliminating the personnel and securing the area.
 
 ### Cleaning House in the Cottage
 
-*   **Luring the First Guard:** The party began the session in the Research Cottage. To eliminate the nearby guard, Bentham took the form of the deceased Alyxina Fire-Beard and ran out screaming about a fire. The guard, **Borland Emberback**, was successfully lured inside.
+*   **Luring the First Guard:** The party began the session in the Research Cottage. To eliminate the nearby guard, Bentham took the form of the deceased Alyxina Fire-Beard and ran out screaming about a fire. The guard, ** Borland Emberback**, was successfully lured inside.
 *   **Ambush and Assassination:** The party, hiding in the kitchen, ambushed and quickly killed Borland as he entered. They looted his body, taking his keys and other personal effects.
 *   **A Chain of Deception:** The party decided to systematically lure the remaining personnel on the level into their trap.
     *   Rav'ithar, using his Whispers Bard ability, took on the shadow of the dead guard, Borland, and stood watch outside.
-    *   He encountered another worker, **Heldrick Stonebrow**, and convinced him that "Alyxina" had a special new rum for him inside the cottage. Heldrick was lured in and killed by the party.
+    *   He encountered another worker, **Heldrick Stonebrow** , and convinced him that "Alyxina" had a special new rum for him inside the cottage. Heldrick was lured in and killed by the party.
     *   Next, a tougher **Stone Guard** named **Corgrim Smelt-Eye** approached. Rav'ithar (as Borland) complained that Heldrick was slacking off and drinking inside the cottage, convincing Corgrim to go in and retrieve him. Corgrim was also ambushed and killed.
 
 ### Silencing the Alarm
@@ -23,7 +23,7 @@ This session covers the party's continued infiltration of the Cinderfork Foundry
 *   **The Researcher's Knowledge:** Rav'ithar, having absorbed the memories of Chief Researcher Korvun, gained a detailed understanding of the geothermal plant's layout, including the chief engineer's location, the function of the machinery, and the nature of the **Bound Geothermal Elemental** held in the steam chamber.
 *   **Clearing the Mezzanine:** With the lower level temporarily secured, the party decided to move up to the mezzanine overlooking the factory floor. Rav'ithar assumed the form of Korvun, Malagar took the form of the dead Stone Guard Corgrim, and Clank disguised himself as a generic duergar worker. Bentham remained below, disguised as the guard Borland.
 *   **Systematic Elimination:** The party methodically cleared the mezzanine level.
-    *   They first encountered an officious inspector named **Kelzar**. Rav'ithar (as Korvun) intimidated the inspector and lured him into a stairwell, where the party ambushed and killed him.
+    *   They first encountered an officious inspector named **Kelzar** . Rav'ithar (as Korvun) intimidated the inspector and lured him into a stairwell, where the party ambushed and killed him.
     *   Rav'ithar then commanded the two duergar workers on the main mezzanine to go "help the inspector," leading them into the same stairwell ambush.
     *   They moved to the containment array room, tricking the **Duergar Hammerer** inside to come out, where he was also slain.
     *   They finished by killing a final Hammerer in an ore-processing room.

@@ -17,8 +17,8 @@
 * **Return to Queen Vytha:**  
   * Returned to the Bloodscale village and reported Jankor's defeat.  
   * Vytha declared the fortress spoils yours (Jankor's staff, treasure).  
-  * Accepted Vytha's offer of the **Ritual of the Volcano's Heart**.  
-* **Ritual & Blessing:** Participated in the dawn ritual. Gained the permanent **Blessing of the Volcano's Heart**:  
+  * Accepted Vytha's offer of the **Ritual of the Volcano's Heart** .  
+* **Ritual & Blessing: ** Participated in the dawn ritual. Gained the permanent ** Blessing of the Volcano's Heart**:  
   * Advantage on saving throws vs. fire damage.  
   * Reaction (CON mod/LR times) to reduce fire damage taken by Proficiency Bonus.  
 * **Return to Ultros:** Departed Fire Island with Steros, Pyraxis (cared for by Kyra), the Brass Dragon Egg, Fire Snake Eggs, Humming Crystals, and Jankor's Staff.
@@ -26,14 +26,14 @@
 ### **Voyage & Turtle Island Stopover**
 
 * **Dragon Eggs:**  
-  * Nissy returned to the *Ultros* with Rhaena's chosen **Silver Dragon Egg**.  
-  * Determined (Nature checks) that both the Brass and Silver Dragon Eggs will hatch in **15 days**.  
+  * Nissy returned to the *Ultros* with Rhaena's chosen **Silver Dragon Egg** .  
+  * Determined (Nature checks) that both the Brass and Silver Dragon Eggs will hatch in **15 days** .  
   * Steros agreed to help build an incubator.  
 * **Jankor's Lockbox Loot:** Opened the hidden lockbox found in Jankor's chambers:  
   * **Journal:** Thick, hide-bound book written in Draconic.  
   * **Potion of Storm Giant Strength:** Tainted by Sydon.  
-  * **Potion of Fire Breath**.  
-  * **Scroll of Lightning Bolt (5th Level)**.  
+  * **Potion of Fire Breath** .  
+  * **Scroll of Lightning Bolt (5th Level)** .  
   * **Gems:** Assorted volcanic gems, 1 black pearl, 1 sapphire (Total value approx. 1150 gp).  
   * **Obsidian Sacrificial Dagger** (Value \~100 gp).  
   * **Small Sydon Idol** (Value \~250 gp).  
@@ -43,8 +43,8 @@
 * **Turtle Island (Jazirat Zul'Haf):**  
   * Navigated to the Turtle Island mid-journey.  
   * Delivered the **Fire Snake Eggs** to Shazum the Marid.  
-  * **Reward:** Chose the **Orb of Star Metal** crafting component.  
-  * **New Quest:** Accepted Shazum's request to retrieve a **Perfect Basilisk Eye** from Themis. Reward: Gold (750 gp suggested) OR choice of one magic item (Bag of Holding, Cloak of Protection, Gloves of Archery, Periapt of Wound Closure).  
+  * **Reward: ** Chose the ** Orb of Star Metal** crafting component.  
+  * **New Quest: ** Accepted Shazum's request to retrieve a ** Perfect Basilisk Eye** from Themis. Reward: Gold (750 gp suggested) OR choice of one magic item (Bag of Holding, Cloak of Protection, Gloves of Archery, Periapt of Wound Closure).  
   * **Trade with Shazum:**  
     * **Sold:** Sydon-Tainted Potion of Storm Giant Strength (+250 gp).  
     * **Purchased:** Crusher's Ring (Aella, \-400 gp), Elemental Mote (Fire) (Delphi, \-125 gp).  
@@ -54,7 +54,7 @@
 ### **Arrival at Themis**
 
 * **Journey:** Completed the 3-day journey to Themis (Constellation IX: The Twins).  
-* **Landing:** Arrived at the western bay of Themis, accompanied by the Amazon exile **Makhaira**.  
+* **Landing: ** Arrived at the western bay of Themis, accompanied by the Amazon exile ** Makhaira**.  
 * **Scouting:** Aella's rebuilt Stimfay scouted the area, reporting:  
   * Vast grasslands, unique fauna (giraffes, lions, rhinos, basilisks).  
   * Scattered war camps and patrols (rhino riders, basilisk handlers).  

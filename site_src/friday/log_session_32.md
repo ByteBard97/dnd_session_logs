@@ -1,10 +1,10 @@
 # Session 32
 
-**Session Summary: Post-Themis & Return to Turtle Island**
+ **Session Summary: Post-Themis & Return to Turtle Island**
 
 The session began following the heroes' victory on Themis, where they defeated Queen Thesilea and liberated the Amazon temple.
 
-**Themis Aftermath & Departures:**
+ **Themis Aftermath & Departures:**
 
 * **Bront & Steros:** The famed Jancan blacksmith Bront was successfully rescued from the temple and reunited with his son Steros aboard the *Ultros*. They are now available to craft non-magical items for the party.  
 * **Amazon Sisterhood:** Darien (Aella's cousin and rightful heir) and Makaira (the queen's attendant) remained on Themis to reorganize the Sisterhood, root out Lutheria's cult, and prepare for Aella's potential return as queen.  
@@ -19,21 +19,21 @@ The session began following the heroes' victory on Themis, where they defeated Q
   * **Titan's Bane (Blade of Talius):** The party successfully retrieved the legendary sword *Titan's Bane* from the hydra's stomach. It is a \+3 adamantine sword that deals \+1d6 necrotic damage, an additional \+3d6 necrotic damage against Titans and cyclopes, and casts  
      *dispel magic* when it hits a creature. It can change between a longsword, shortsword, or greatsword. Its adamantine nature allows it to deal double damage against objects and constructs, and it has advantage on saving throws against attempts to damage it. The sword has a subtle presence, like a voice in the wielder's mind. Rhaena cannot attune to it immediately due to other attuned items but noted the short rest attunement time.
 
-**The Hydra Encounter:**
+ **The Hydra Encounter:**
 
 * The party sought the legendary sword from the temple's hydra.  
 * Astraeus used  
    *Polymorph* to turn the 10-headed hydra into a giant toad, with the DM ruling that if the creature is killed while polymorphed, it reverts to its original form.  
 * Aella attempted to retrieve the sword from the polymorphed toad's gullet, finally succeeding on her second attempt.
 
-**Travel to Turtle Island:**
+ **Travel to Turtle Island:**
 
 * The party decided to stop at Turtle Island on their way to the next destination to deliver the basilisk eye to Shazum.  
 * Astraeus's attempt to use his harp to speed up travel failed, so the journey to Turtle Island (and then the Centaur constellation island) would take the full 3 days.  
 * Upon arrival, they noted a new Mytrosian Royal Academy caravel, the  
    *Sage's Voyage*, docked there.
 
-**Turtle Island (Jazirat Zulhaf) Interactions:**
+ **Turtle Island (Jazirat Zulhaf) Interactions:**
 
 * **Shazum:**  
   * Confirmed receipt of the Perfect Basilisk Eye, completing that quest.  
@@ -70,11 +70,11 @@ The session began following the heroes' victory on Themis, where they defeated Q
      *Island of Yonder* (Sydon's general Gaius's stronghold, where the missing Antikythera gear and Delphi's family armor are located).  
   * The party confirmed Themis is the Constellation of the Twins.
 
-**Future Crafting:**
+ **Future Crafting:**
 
 * The party inquired about enchanting a Mithril Chain Shirt into \+1 armor, which requires the Mithril Forge and ingredients like two Mithril Ingots and a Golemstone or Hydra Scales. They considered sending their flying construct, Caledony, with materials to the Mithril Forge. They will send the Golemstone they just received for this purpose.
 
-**Next Destination:**
+ **Next Destination:**
 
 * The party is now sailing from Turtle Island to the island marked by the Constellation of the Centaur (either Scorpion Island or Indigo Island).
 

@@ -31,4 +31,4 @@
 * **We heard that the cult of Sydon wants Pythor to sacrifice his daughter on the rock of Estor where should would be devoured by monsters**  
 * **We know there is something going on with the Mithril Mines and God of the Forge, Volkan who has a forge in the city**  
 * **We know that there is something to do in the Necropolis at Telemok**  
-* **Delphi's prophecy: "**You must retake your famed armor and crown. Seek them out in the Necropolis at Telamok. Old friends wait for you there.
+* **Delphi's prophecy: "** You must retake your famed armor and crown. Seek them out in the Necropolis at Telamok. Old friends wait for you there.
