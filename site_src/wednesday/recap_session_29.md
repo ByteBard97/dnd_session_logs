@@ -1,4 +1,5 @@
 # Session 29 Recap: Blood on the Black Oak
+
  **07/09/2025**
 
 Your adventure continued as you finally stood before the Dead Falls. After navigating a treacherous, flooded passage, you emerged into a silent, hidden lake where the legendary ghost ship, the * **Ultros** *, awaited. Upon boarding the eerily pristine vessel, Kain touched the central mast and was struck by a vision of the dryad Delphia, whose spirit was bound to the wood when her tree was felled to create it. This act awakened the ship, and you were confronted by its spectral crew and its fearsome captain, **Estor Arkelander** .

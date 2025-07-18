@@ -1,4 +1,5 @@
 # Session 35 [Session 35](#session-35)
+
 ## The Tower of the Lotus Witch
 
 * **Breaching the Barrier:** After discussing the dangers of the time-distorting field around the tower, the party decided to send one person in first to test it. [cite: 130, 131]

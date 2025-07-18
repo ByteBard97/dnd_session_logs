@@ -1,4 +1,5 @@
 # Session 28
+
 ## Deep into the Serpent's Den
 
 Following your brutal victory over the regenerating marble guardians, your party—Aella, Delphi, Rhaena, Astraeus, and the steadfast Makaira, with Kyra diligently recording your exploits—stood at the threshold of the Sacred Temple, the very heart of the usurper queen's power on Themis. The air was thick with the weight of Aella's thirteen-year exile, her quest to reclaim her birthright burning in her eyes.

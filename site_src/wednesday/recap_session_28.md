@@ -1,4 +1,5 @@
 # Session 28 Recap: Whispers of the Dead Falls
+
  **07/02/2025**
 
 Your last session began in the thrumming heat of the Mithral Forge. Armed with newly forged treasures and the promise of the *Calydonian Messenger* soon to take flight, you received a crucial piece of the puzzle for your resident Dragonslayer. Volkan, the grizzled smith, pulled Kain aside, speaking of weapons forged by Gygans—god-killers—and of a horned scholar named Chondrus who hoards them on the fortified Isle of Yonder. A new, dangerous path revealed itself.

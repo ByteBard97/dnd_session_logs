@@ -1,4 +1,5 @@
 # Session 23 Recap: Of Thieves, Traps, and Tender Souls
+
 ## **05/23/2025** 
 
 # Heroes of the Prophecy\! Your last foray into the stinking bowels of Mytros left you at the precipice of a tense standoff, the severed head of a plague worm your gruesome calling card to the wary denizens of a Thieves' Guild hideout.

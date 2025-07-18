@@ -1,5 +1,7 @@
 # Session 25 Recap: Of Rescues and Reptilians
+
 ## **06/11/2025**
+
  **Heroes of the Prophecy\!**
 
 Your quest to save Mytros from drowning in its own filth brought you to the brink of disaster. In the heart of the sewer system, you found the Great Cistern (UR10) groaning under the pressure of a magical flood. There, you met the panicked Foreman Kastros and the steel-nerved Engineer Thalia, who revealed that the Chief Engineer was missing, having vanished into a dangerous, uncharted cave system to the north.

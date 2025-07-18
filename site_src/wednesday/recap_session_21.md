@@ -1,4 +1,5 @@
 # Session 21 Recap:
+
 # 04/30/2025
 
 Heroes of the Prophecy, the battle within the Colossus of Pythor raged on, the noxious green gas swirling around you as the Minotaur Hero desperately fought. Rhy-At shielded himself with illusory duplicates while Tharok, fueled by rage and Nicandros's haste, relentlessly pressed the attack against the gas-releasing minotaur. Kain, though suffering the poison's effects, landed telling shots with his bow. Andrew Lynx's arcane blasts sought targets, while Zephyrion contended with the surprisingly resilient gladiator lady who had managed to break free from his crushing grapple, only to be struck down again by his swift reaction.

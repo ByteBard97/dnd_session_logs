@@ -1,4 +1,5 @@
 # Session 26 Recap:
+
 # **06/18/2025**
 
 Heroes of the Prophecy\! Your work in the foul warrens of the reptilian cultists had reached its bloody crescendo. Before you, the shaman Vrask led his followers in a religious frenzy, their chilling chants echoing over a dark, abyssal pit. You moved as one, silent shadows in the gloom, and unleashed a surprise attack. Arrow and arcane power silenced the guards, and Zephyrion's trident thrust silenced the shaman, ending his foul ritual. But your victory was met not with silence, but with a sickening, guttural sound of crunching bones from the darkness below.

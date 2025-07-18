@@ -1,4 +1,5 @@
 # Session 24 Recap: Cogs, Children, and a Queen of Spiders
+
 ## **06/04/2025**
 
 # Heroes of the Prophecy\!

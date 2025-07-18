@@ -1,6 +1,7 @@
 # PLAYER CHARACTERS
 
 ## Astraeus:
+
 ![Astraeus - Option 1](astreus1.webp)
 ![Astraeus - Option 2](astreus2.webp)
 ![Astraeus - Option 4](astreus4.webp)
@@ -16,6 +17,7 @@ Epic-Path.md @Running_the_Epic_Paths.md
 #
 
 ## Delphi Silverstar:
+
 ![Delphi](delphi.webp)
 A human male wizard (School of Evocation) and tempest domain cleric with "The Vanished One"
 background. Highly intelligent (20) spellcaster specializing in lightning and elemental magic.
@@ -30,6 +32,7 @@ this land"). Has darkvision and the Resilient (Con) feat. Epic Path: The Vanishe
 #
 
 ## Aella Swiftstrike:
+
 ![Aella](aella.webp)
 An exiled Amazon warrior from the Isle of Themis with regal bearing and fierce independence.
 Daughter of royalty whose mother was murdered and deposed from the throne. Expert in chakram
@@ -45,6 +48,7 @@ additional chakrams and kopis blades. Epic Path: The Exile. See @Running-the-Exi
 #
 
 ## Rhaena:
+
 ![Rhaena](rhaena.webp)
 A female Thylean centaur paladin who follows the Oath of the Dragonlord (level 7) with the Haunted
 One background. Strong and charismatic with impressive speed (40 ft). Wields longswords, spears, and
