@@ -1,6 +1,7 @@
 site_name: D&D Session Logs
 site_description: Logs and recaps for all D&D campaign groups
 site_author: Your Name
+site_url: https://bytebard97.github.io/dnd_session_logs/
 
 # Use Material for MkDocs theme
 theme:
@@ -28,6 +29,9 @@ site_dir: docs
 # Plugins
 plugins:
   - search
+
+# Directory URLs for GitHub Pages
+use_directory_urls: true
 
 # Navigation (auto-generated below)
 nav:
