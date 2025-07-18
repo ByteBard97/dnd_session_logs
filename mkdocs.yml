@@ -14,6 +14,11 @@ theme:
 
 extra_css:
   - custom_dd_style.css
+  - 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic'
+  - 'https://fonts.googleapis.com/css?family=Libre+Baskerville:700'
+
+extra_javascript:
+  - js/statblock5e-inlined.html
 
 # Source and output directories
 # (site_src contains markdown, docs is the output for GitHub Pages)
@@ -27,6 +32,7 @@ plugins:
 # Navigation (auto-generated below)
 nav:
   - Monday:
+      - Home: monday/index.md
       - PCs: monday/players/pcs.md
       - Recaps:
           - Recap 1: monday/recap_session_1.md
@@ -41,8 +47,9 @@ nav:
           - Session 4: monday/log_session_4.md
           - Session 5: monday/log_session_5.md
   - Wednesday:
-      - Epic Paths: wednesday/players/epic_paths.md
+      - Home: wednesday/index.md
       - PCs: wednesday/players/pcs.md
+      - Epic Paths: wednesday/players/epic_paths.md
       - Player Character Quests: wednesday/players/player_character_quests.md
       - Recaps:
           - Recap 21: wednesday/recap_session_21.md
@@ -85,8 +92,9 @@ nav:
           - Session 28: wednesday/log_session_28.md
           - Session 29: wednesday/log_session_29.md
   - Friday:
-      - Epic Paths: friday/players/epic_paths.md
+      - Home: friday/index.md
       - PCs: friday/players/pcs.md
+      - Epic Paths: friday/players/epic_paths.md
       - Recaps:
           - Recap 35: friday/recap_session_35.md
           - Recap 34: friday/recap_session_34.md
