@@ -1,4 +1,4 @@
-# Session 4 {#session-4}
+# Session 4
 
 **Recap: The Culling of the Sub-Level**
 

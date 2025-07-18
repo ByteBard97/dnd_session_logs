@@ -1,4 +1,4 @@
-# Session 24 {#session-24}
+# Session 24
 
 **Diplomacy & Ritual:**
 

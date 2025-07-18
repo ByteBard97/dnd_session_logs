@@ -1,4 +1,4 @@
-# Session 20 {#session-20}
+# Session 20
 
 * **Date:** Friday, 2nd week, early afternoon.  
 * **Location:** Mytros, heading towards the Lutheria cult's wine warehouse.  

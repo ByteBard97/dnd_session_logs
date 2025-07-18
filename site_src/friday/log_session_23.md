@@ -1,4 +1,4 @@
-# Session 23 {#session-23}
+# Session 23
 
 **Quest Log Update: Voyage to Fire Island & First Contact**
 

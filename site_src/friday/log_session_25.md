@@ -1,4 +1,4 @@
-# Session 25 {#session-25}
+# Session 25
 
 **Quest Log Update: Fire Island Fortress**
 

@@ -1,6 +1,6 @@
-# Session 26 {#session-26}
+# Session 26
 
-### **Fire Island Aftermath & Departure** {#fire-island-aftermath-&-departure}
+### **Fire Island Aftermath & Departure**
 
 * **Short Rest:** Took a short rest in the Firewalker fortress after defeating King Jankor.  
 * **Exploration & Hazard:** Explored more of the volcano fort. Astraeus tested the hot caldera floor, taking 1 fire damage.  
@@ -23,7 +23,7 @@
   * Reaction (CON mod/LR times) to reduce fire damage taken by Proficiency Bonus.  
 * **Return to Ultros:** Departed Fire Island with Steros, Pyraxis (cared for by Kyra), the Brass Dragon Egg, Fire Snake Eggs, Humming Crystals, and Jankor's Staff.
 
-  ### **Voyage & Turtle Island Stopover** {#voyage-&-turtle-island-stopover}
+### **Voyage & Turtle Island Stopover**
 
 * **Dragon Eggs:**  
   * Nissy returned to the *Ultros* with Rhaena's chosen **Silver Dragon Egg**.  
@@ -51,7 +51,7 @@
     * **Identified:** Obsidian Geode (contains fiend), Potion (Sydon-tainted).  
   * **Floating Lantern:** Met Captain Arion, survivor of a shipwreck near the Aerie of the Roc. Heard his tale and rumors about the Island of Time and a barrier in the Forgotten Sea.
 
-  ### **Arrival at Themis** {#arrival-at-themis}
+### **Arrival at Themis**
 
 * **Journey:** Completed the 3-day journey to Themis (Constellation IX: The Twins).  
 * **Landing:** Arrived at the western bay of Themis, accompanied by the Amazon exile **Makhaira**.  
@@ -61,7 +61,7 @@
   * An island in the eastern bay covered in statue-like figures, with stairs descending into the rock – likely the **Sacred Temple/Prison** stronghold.  
 * **Next Destination Chosen:** Decided the next major island destination after Themis will be guided by Constellation IV: The Trickster (Chimera Island).
 
-  ### **Current Situation** {#current-situation}
+### **Current Situation**
 
 * Standing on the shores of Themis's western bay with Makhaira.  
 * Aware of the general landscape and the location of the likely enemy stronghold in the east.  

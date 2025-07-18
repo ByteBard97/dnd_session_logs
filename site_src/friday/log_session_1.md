@@ -1,4 +1,4 @@
-# Session 1 {#session-1}
+# Session 1
 
 * 1\. The Summons at The Sour Vintage Inn  
   * Keerah's Summons: We were summoned to The Sour Vintage Inn, located twenty miles east of Estoria. Keerah, a renowned poet, revealed herself to be an agent of the Oracle. She informed us of our great destiny and tasked us with hunting a corrupted giant boar, unleashed by the Titans, Sydon and Lutheria, to terrorize the Heartlands.  

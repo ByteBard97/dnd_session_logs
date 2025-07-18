@@ -1,4 +1,4 @@
-# Session 18 {#session-18}
+# Session 18
 
 * Went up the mountain  
 * Kyrah played the harp to calm the storm, we fought Sydon's visage and minions  

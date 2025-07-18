@@ -1,4 +1,4 @@
-# Session 22 {#session-22}
+# Session 22
 
 * **Sewer Exploration & Sluice Gate Puzzles:**
 

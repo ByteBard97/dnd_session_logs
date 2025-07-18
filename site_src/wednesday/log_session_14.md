@@ -1,4 +1,4 @@
-# Session 14 {#session-14}
+# Session 14
 
 * The gang heads into the cave to find the remaining baskies  
 * The gang kills the baskies  

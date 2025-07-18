@@ -1,4 +1,4 @@
-# Session 21 {#session-21}
+# Session 21
 
 **Date:** Friday, 2nd week, mid-afternoon **Location:** Mytros, Colossus of Pythor (Areas C3-C6), Sewer Entrance (C2/UL8)
 
@@ -43,7 +43,7 @@
 * Kain scouted again, finding a sewer exit leading to the Mytros shipyards near the docks, but not near the Moist Maiden's usual berth. He also noted the sewer tunnel continued east or turned north.  
 * The party discussed their next move, considering exploring the sewers further (potentially finding the wastewater treatment plant or connections to the Temple of Lutheria) or leaving via the newly discovered exit.
 
-  ## **Updated Quest Log** {#updated-quest-log}
+## **Updated Quest Log**
 
 * **The Lady of Coins (Lord Taran):** **\[Updated\]** Encountered Moxena, the Lady of Coins. Instead of killing her for Taran's bounty, the party negotiated a deal. She agreed to cease criminal operations in Mytros and assist the party later if they help her against her sisters on the Isle of Themis. Taran's bounty remains unfulfilled, and the party intends to deceive him.  
 * **Investigate the Cult of Lutheria (Queen Vallus):** **\[No Change\]** Still pending. The party possesses the ledger indicating child trafficking to the Temple of Lutheria but prioritized investigating the Colossus. They know there might be sewer connections to the Temple.  

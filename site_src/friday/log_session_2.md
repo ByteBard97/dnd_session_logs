@@ -1,4 +1,4 @@
-# Session 2 {#session-2}
+# Session 2
 
 * Agenda
 

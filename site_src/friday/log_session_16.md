@@ -1,4 +1,4 @@
-# Session 16 {#session-16}
+# Session 16
 
 Agenda
 
@@ -15,7 +15,7 @@ Agenda
 
 Log
 
-### **Recap of Session 16: "Through the Storm and Shadows"** {#recap-of-session-16:-"through-the-storm-and-shadows"}
+### **Recap of Session 16: "Through the Storm and Shadows"**
 
 * **The Descent from Mount Volkan:**  
   * After dispelling Sydon's hurricane with the power of the **Boreal Harp**, the heroes began their descent from **Mount Volkan**, a place steeped in divine significance as the namesake of **Volkan, the God of Forges**. The mountain's harsh cliffs and storms tested their resolve one last time.  

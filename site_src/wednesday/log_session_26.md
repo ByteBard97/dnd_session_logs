@@ -1,6 +1,6 @@
-# Session 26 {#session-26}
+# Session 26
 
-### **Quest Log: Session of June 19, 2025** {#quest-log:-session-of-june-19,-2025}
+### **Quest Log: Session of June 19, 2025**
 
 **Objective:** Fix the malfunctioning Mytros sewer system by aiding the city engineers.
 

@@ -1,4 +1,4 @@
-# Session 20 {#session-20}
+# Session 20
 
 Log
 

@@ -1,4 +1,4 @@
-# Session 12 {#session-12}
+# Session 12
 
 * Big fight with the troglodytes  
 * Pyra thanks the party and starts working on robe of magic immunity  

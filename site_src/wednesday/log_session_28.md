@@ -1,4 +1,4 @@
-# Session 28 {#session-28}
+# Session 28
 
 *   **Final Preparations at the Mithral Forge:**
     *   The session began with the party at the Mithral Forge, discussing their newly acquired magic items. Nikandros attuned to the powerful **Robe of the Weave**, while the **Cloak of Magic Immunity** was placed in the party loot for later consideration.

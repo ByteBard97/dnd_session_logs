@@ -1,13 +1,13 @@
-# Session 31 {#session-31}
+# Session 31
 
-### **The Plan to Unmask the Queen** {#the-plan-to-unmask-the-queen}
+### **The Plan to Unmask the Queen**
 
 * The party decided to descend back to the temple level where they had previously killed the medusa, Leia.  
 * With the help of their companion Voratia, they identified the correct door leading to the Temple of Lutheria, where Queen Thessalia was performing a religious ceremony.  
 * The group devised a plan to reveal Thessalia's medusa nature to her Amazon followers. Astraeus would cast *Mage Hand*, then turn invisible, sneak in, and remove the queen's helmet to expose her snake hair.  
 * To aid in the infiltration, Aella cast *Pass Without Trace*.
 
-### **Confrontation and Battle** {#confrontation-and-battle}
+### **Confrontation and Battle**
 
 * Astraeus successfully snuck into the chamber while invisible and used the Mage Hand to remove the queen's platinum helmet, revealing her true form.  
 * Thessalia accused Aella of bewitching her, while Aella denounced her as an evil usurper, initiating combat by throwing her chakram.  
@@ -18,7 +18,7 @@
 * After being severely wounded by the party and seeing her attempt to be healed get thwarted by Delphi's *Counterspell*, Queen Thessalia offered to surrender.  
 * Aella refused to show mercy, recounting the murder of her family. Hearing this, Thessalia took her own life.
 
-### **The Aftermath and New Quests** {#the-aftermath-and-new-quests}
+### **The Aftermath and New Quests**
 
 * With the usurper dead, the remaining Amazon warriors were left speechless and shattered.  
 * Their leader, Colonel Ilia, declared that for Aella to be recognized as the true queen, she must complete a trial of strength: slay the Roc in the Forgotten Sea and bring back its head.  
@@ -28,7 +28,7 @@
 * Finally, they explored the lowest level of the complex and freed the giant Jancan blacksmith, Bront, who is the father of their crewmate, Steros.  
 * The goatlings also revealed that the former queen fed a powerful sword to the Hydra, creating an incentive for the party to hunt it down.
 
-### **Wrapping Up and Future Plans** {#wrapping-up-and-future-plans}
+### **Wrapping Up and Future Plans**
 
 * The party has gathered a significant amount of loot, including weapons, armor, and magical items from the armory. They plan to use the newly freed men to help carry it all back to the *Ultros*.  
 * Everyone in the party will level up before the next session.  

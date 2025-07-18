@@ -1,4 +1,4 @@
-# Session 3 {#session-3}
+# Session 3
 
 * **After defeating Braeca and his soldiers in the upper chamber of the temple, the heroes secured the area and ensured no immediate threats remained.**  
 * **They spoke with Proteus, the elder temple attendant, who informed them about the sea hag Heleka and her capture of the Oracle, Versi.**  

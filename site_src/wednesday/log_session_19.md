@@ -1,4 +1,4 @@
-# Session 19 {#session-19}
+# Session 19
 
 **Session Log: 2025-04-16**
 

@@ -99,3 +99,104 @@ Splitting quest_logs/monday/session_recap.md:
   -> site_src/monday/recap_session_3.md
   -> site_src/monday/recap_session_2.md
   -> site_src/monday/recap_session_1.md
+
+--- Split run ---
+
+Splitting quest_logs/wednesday/quest_log.md:
+  -> site_src/wednesday/log_session_1.md
+  -> site_src/wednesday/log_session_2.md
+  -> site_src/wednesday/log_session_3.md
+  -> site_src/wednesday/log_session_4.md
+  -> site_src/wednesday/log_session_5.md
+  -> site_src/wednesday/log_session_6.md
+  -> site_src/wednesday/log_session_7.md
+  -> site_src/wednesday/log_session_8.md
+  -> site_src/wednesday/log_session_9.md
+  -> site_src/wednesday/log_session_10.md
+  -> site_src/wednesday/log_session_11.md
+  -> site_src/wednesday/log_session_12.md
+  -> site_src/wednesday/log_session_13.md
+  -> site_src/wednesday/log_session_14.md
+  -> site_src/wednesday/log_session_15.md
+  -> site_src/wednesday/log_session_16.md
+  -> site_src/wednesday/log_session_17.md
+  -> site_src/wednesday/log_session_18.md
+  -> site_src/wednesday/log_session_19.md
+  -> site_src/wednesday/log_session_20.md
+  -> site_src/wednesday/log_session_21.md
+  -> site_src/wednesday/log_session_22.md
+  -> site_src/wednesday/log_session_23.md
+  -> site_src/wednesday/log_session_24.md
+  -> site_src/wednesday/log_session_25.md
+  -> site_src/wednesday/log_session_26.md
+  -> site_src/wednesday/log_session_27.md
+  -> site_src/wednesday/log_session_28.md
+  -> site_src/wednesday/log_session_29.md
+Splitting quest_logs/wednesday/session_recap.md:
+  -> site_src/wednesday/recap_session_29.md
+  -> site_src/wednesday/recap_session_28.md
+  -> site_src/wednesday/recap_session_27.md
+  -> site_src/wednesday/recap_session_26.md
+  -> site_src/wednesday/recap_session_25.md
+  -> site_src/wednesday/recap_session_24.md
+  -> site_src/wednesday/recap_session_23.md
+  -> site_src/wednesday/recap_session_22.md
+  -> site_src/wednesday/recap_session_21.md
+Splitting quest_logs/friday/quest_log.md:
+  -> site_src/friday/log_session_1.md
+  -> site_src/friday/log_session_2.md
+  -> site_src/friday/log_session_3.md
+  -> site_src/friday/log_session_4.md
+  -> site_src/friday/log_session_5.md
+  -> site_src/friday/log_session_6.md
+  -> site_src/friday/log_session_7.md
+  -> site_src/friday/log_session_8.md
+  -> site_src/friday/log_session_9.md
+  -> site_src/friday/log_session_10.md
+  -> site_src/friday/log_session_11.md
+  -> site_src/friday/log_session_12.md
+  -> site_src/friday/log_session_13.md
+  -> site_src/friday/log_session_14.md
+  -> site_src/friday/log_session_15.md
+  -> site_src/friday/log_session_16.md
+  -> site_src/friday/log_session_17.md
+  -> site_src/friday/log_session_18.md
+  -> site_src/friday/log_session_19.md
+  -> site_src/friday/log_session_20.md
+  -> site_src/friday/log_session_21.md
+  -> site_src/friday/log_session_22.md
+  -> site_src/friday/log_session_23.md
+  -> site_src/friday/log_session_24.md
+  -> site_src/friday/log_session_25.md
+  -> site_src/friday/log_session_26.md
+  -> site_src/friday/log_session_27.md
+  -> site_src/friday/log_session_28.md
+  -> site_src/friday/log_session_29.md
+  -> site_src/friday/log_session_30.md
+  -> site_src/friday/log_session_31.md
+  -> site_src/friday/log_session_32.md
+  -> site_src/friday/log_session_33.md
+  -> site_src/friday/log_session_34.md
+  -> site_src/friday/log_session_35.md
+Splitting quest_logs/friday/session_recap.md:
+  -> site_src/friday/recap_session_35.md
+  -> site_src/friday/recap_session_34.md
+  -> site_src/friday/recap_session_33.md
+  -> site_src/friday/recap_session_31.md
+  -> site_src/friday/recap_session_30.md
+  -> site_src/friday/recap_session_29.md
+  -> site_src/friday/recap_session_28.md
+  -> site_src/friday/recap_session_27.md
+  -> site_src/friday/recap_session_26.md
+Splitting quest_logs/monday/quest_log.md:
+  -> site_src/monday/log_session_5.md
+  -> site_src/monday/log_session_4.md
+  -> site_src/monday/log_session_3.md
+  -> site_src/monday/log_session_2.md
+  -> site_src/monday/log_session_1.md
+Splitting quest_logs/monday/session_recap.md:
+  -> site_src/monday/recap_session_5.md
+  -> site_src/monday/recap_session_4.md
+  -> site_src/monday/recap_session_3.md
+  -> site_src/monday/recap_session_2.md
+  -> site_src/monday/recap_session_1.md

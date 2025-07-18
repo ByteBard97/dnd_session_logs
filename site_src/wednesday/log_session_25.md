@@ -1,4 +1,4 @@
-# Session 25 {#session-25}
+# Session 25
 
 * **Date:** Sunday, 2nd week, late afternoon to evening.  
 * **Location:** Mytros Sewers – Engine-Works Vault (UL-6a/b), Great Cistern Complex (UR10), Upper-Right Cave Warrens (UR9, UR2, UR3, UR5, UR6, UR7, UR1).

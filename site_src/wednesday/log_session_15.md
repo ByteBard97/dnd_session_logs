@@ -1,4 +1,4 @@
-# Session 15 {#session-15}
+# Session 15
 
 * We decided to follow Kyrah's proposal to clear the storm  
 * Kain talked to Icarus the dragon and felt something is not right with the King's story  

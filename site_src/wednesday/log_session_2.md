@@ -1,4 +1,4 @@
-# Session 2 {#session-2}
+# Session 2
 
 * **The Sour Vintage Tavern**: Our adventure begins in the rustic Sour Vintage Inn, where the end of the Oath of Peace looms, granting only 75 days for heroes to rise and face the darkening tides in Thylea. Each of you has been called here, drawn by whispers of destiny.  
 * **A Prophetic Gathering**: Kyrah, a poet with secrets of her own, enters to greet you all—Ari, the siren rogue with charm and wit; Demetrius, the noble bard whose songs carry ancient echoes; Kain, the sea elf ranger destined to slay mighty beasts; Kyrios, the haunted medusa wizard who sees shadows in the future; Tharok, the fierce minotaur barbarian haunted by curses; and Zephyrion, the mighty centaur fighter blessed by gods. Together, you listen as Kyrah reveals your path: the Titans have unleashed a monstrous, corrupted boar—a harbinger of terror meant to cow the mortals into fear and submission.  

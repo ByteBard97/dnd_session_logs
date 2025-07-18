@@ -1,4 +1,4 @@
-# Session 9 {#session-9}
+# Session 9
 
 **Epic Path Reminders**
 

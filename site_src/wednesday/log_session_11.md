@@ -1,4 +1,4 @@
-# Session 11 {#session-11}
+# Session 11
 
 * The party debates the merits of escorting the two centaurs outside to the river  
 * We tell them to head out past the waterfall. It's only a 15 minute walk to the river  

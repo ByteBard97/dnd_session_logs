@@ -1,4 +1,4 @@
-# Session 23 {#session-23}
+# Session 23
 
 * **Date:** Sunday, 2nd week, morning.  
 * **Location:** Mytros Sewers – Thieves' Guild ("Cult of the Snake") Hideout (LL10), then northern sewer tunnels, culminating at a cellar entrance to the Temple of Lutheria.  

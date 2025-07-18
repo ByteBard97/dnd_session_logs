@@ -1,4 +1,4 @@
-# Session 13 {#session-13}
+# Session 13
 
 * We are meeting with the Knights of King Acastus  
 * Dragon guys want us to meet the king  

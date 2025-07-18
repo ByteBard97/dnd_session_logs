@@ -1,4 +1,4 @@
-# Session 8 {#session-8}
+# Session 8
 
 Agenda
 

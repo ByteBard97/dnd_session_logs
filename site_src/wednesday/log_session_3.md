@@ -1,4 +1,4 @@
-# Session 3 {#session-3}
+# Session 3
 
 ***Stealth in the Shadows:***
 

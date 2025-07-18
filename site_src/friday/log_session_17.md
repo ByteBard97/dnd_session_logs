@@ -1,4 +1,4 @@
-# Session 17 {#session-17}
+# Session 17
 
 Agenda
 

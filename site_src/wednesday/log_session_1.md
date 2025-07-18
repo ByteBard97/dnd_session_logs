@@ -1,4 +1,4 @@
-# Session 1 {#session-1}
+# Session 1
 
 * The Sour Vintage, our adventure begins.  
 * Oath of Peace is at its end, 75 days ad heroes must arise  

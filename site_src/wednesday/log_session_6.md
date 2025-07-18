@@ -1,4 +1,4 @@
-# Session 6 {#session-6}
+# Session 6
 
 Agenda
 

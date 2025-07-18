@@ -1,4 +1,4 @@
-# Session 29 {#session-29}
+# Session 29
 
 * **Arrival at the Dead Falls:**
     * The party navigated a flooded passageway to reach a hidden lake where the ghost ship, the *Ultros*, was moored.

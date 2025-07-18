@@ -1,4 +1,4 @@
-# Session 4 {#session-4}
+# Session 4
 
 * The party explores the city   
 * The gang went to the dragon tooth inn.   

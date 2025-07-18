@@ -1,4 +1,4 @@
-# Session 29 {#session-29}
+# Session 29
 
 **Objective:** Infiltrate the Sacred Temple on Themis to find allies and confront the usurper queen.
 

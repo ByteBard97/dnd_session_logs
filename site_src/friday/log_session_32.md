@@ -1,4 +1,4 @@
-# Session 32 {#session-32}
+# Session 32
 
 **Session Summary: Post-Themis & Return to Turtle Island**
 

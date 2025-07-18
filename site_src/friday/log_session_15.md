@@ -1,4 +1,4 @@
-# Session 15 {#session-15}
+# Session 15
 
 Agenda
 

@@ -1,4 +1,4 @@
-# Session 27 {#session-27}
+# Session 27
 
 The session picked up directly after the party's success in the sewers.
 

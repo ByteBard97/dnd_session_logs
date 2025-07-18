@@ -1,4 +1,4 @@
-# Session 17 {#session-17}
+# Session 17
 
 * We went up the mountain  
 * We played music, killed shit  

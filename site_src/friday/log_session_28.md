@@ -1,4 +1,4 @@
-# Session 28 {#session-28}
+# Session 28
 
 * The party landed on the small, statue-covered island in the eastern bay of Themis, believed to be a key location for the usurpers.  
 * The island features numerous marble statues, primarily of naked men, some appearing scarred or maimed, with a central marble staircase leading down into the earth.  

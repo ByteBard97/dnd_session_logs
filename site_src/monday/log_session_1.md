@@ -1,12 +1,12 @@
-# Session 1 {#session-1}
+# Session 1
 
-### **Session 1 Outline: The Price of Ambition** {#session-1-outline:-the-price-of-ambition}
+### **Session 1 Outline: The Price of Ambition**
 
 **Overall Goal:** Introduce the players to their characters, the precarious state of House T'alzar, the central family conflict, and the inciting incident for the campaign.
 
 ---
 
-#### **Part 1: Introduction \- A House on the Brink** {#part-1:-introduction---a-house-on-the-brink}
+#### **Part 1: Introduction \- A House on the Brink**
 
 * **DM Read-Aloud:** Begin the session by reading the full introduction from the **1\_campaign\_introduction.md** document.  
   * **Key Points to Establish:**  
@@ -17,7 +17,7 @@
 
 ---
 
-#### **Part 2: The Fighting Pits \- A Lesson in Philosophy** {#part-2:-the-fighting-pits---a-lesson-in-philosophy}
+#### **Part 2: The Fighting Pits \- A Lesson in Philosophy**
 
 * **The Summons:** The party is summoned to the fighting pits by **Lady Vyssinia T'alzar** for a "practice session." Her sister, the spymaster **Lirael T'alzar**, is also present as an observer.  
 * **The Reveal:** Following the read-aloud from **2\_the\_battle.md**, Vyssinia bypasses a simple sparring match and orders the release of a full-fledged **Drider**.  
@@ -35,7 +35,7 @@
 
 ---
 
-#### **Part 3: Anxious Days \- The Weight of Waiting** {#part-3:-anxious-days---the-weight-of-waiting}
+#### **Part 3: Anxious Days \- The Weight of Waiting**
 
 * **Transition:** A few days pass. The mood in T'alzar Tower grows heavy, as Valandor is now officially overdue.  
 * **Downtime Opportunities (from 2.5\_anxious\_days.md):** Run one or two short, optional scenes to build atmosphere and allow for character interaction.  
@@ -45,7 +45,7 @@
 
 ---
 
-#### **Part 4: The Mission \- The Matron's Gambit** {#part-4:-the-mission---the-matron's-gambit}
+#### **Part 4: The Mission \- The Matron's Gambit**
 
 * **The Briefing:** The party is summoned to the grand ballroom, now converted into a war room. **Matron Severine T'alzar** and the morose flesh golem **Grumble** are waiting.  
 * **The Dire News (from 3..0\_the\_briefing\_claude.md):** Matron Severine, with barely controlled emotion, informs the party that Valandor is officially missing.  

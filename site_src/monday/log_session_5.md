@@ -1,4 +1,4 @@
-# Session 5: Confronting the Turbine and the Chief Engineer {#session-5}
+# Session 5: Confronting the Turbine and the Chief Engineer
 
 This session picks up with the party in control of the Cinderfork Foundry's sub-level and mezzanine, their path forward blocked by a colossal, high-speed turbine. Their objective is to find a way past this deadly obstacle to reach the upper levels, where Valandor is imprisoned, and to acquire the three Rods of Opening required for his rescue.
 
