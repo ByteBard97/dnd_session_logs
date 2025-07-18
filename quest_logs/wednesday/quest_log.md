@@ -50,23 +50,9 @@
 
 [Session 24](#session-24)
 
-[Rescue of the Children](#rescue-of-the-children)
-
-[Volkan's Dynamo & The New Quest](#volkan's-dynamo-&-the-new-quest)
-
-[The Web-Clogged Domes: Exploration](#the-web-clogged-domes:-exploration)
-
-[Boss Fight: Eurysphex, the Broodmother](#boss-fight:-eurysphex,-the-broodmother)
-
-[Loot & Aftermath](#loot-&-aftermath)
-
-[Session End State](#session-end-state)
-
 [Session 25](#session-25)
 
 [Session 26](#session-26)
-
-[Quest Log: Session of June 19, 2025](#quest-log:-session-of-june-19,-2025)
 
 [Session 27](#session-27)
 
@@ -1250,7 +1236,7 @@ The session picked up directly after the party's success in the sewers.
 
 Of course. Here is a detailed, bullet-pointed summary of Session 29 for your quest log.
 
-### **Session 29 Quest Log Update**
+# Session 29 {#session-29}
 
 * **Arrival at the Dead Falls:**
     * The party navigated a flooded passageway to reach a hidden lake where the ghost ship, the *Ultros*, was moored.

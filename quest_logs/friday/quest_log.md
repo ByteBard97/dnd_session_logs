@@ -108,6 +108,12 @@
 
 [Session 32](#session-32)
 
+[Session 33](#session-33)
+
+[Session 34](#session-34)
+
+[Session 35](#session-35)
+
 # [Calendar](https://docs.google.com/spreadsheets/d/13vu8XWPwTKoo77ennZb3tMwfxkhC8--O-Vo4qnTio44/edit?gid=0#gid=0) {#calendar}
 
 # [Shared Inventory:](https://docs.google.com/spreadsheets/d/1iM1Ey1t23HlH1zbZcdRkpm66CLAuP38mUron78SQpJs/edit?usp=sharing) {#shared-inventory:}
@@ -1439,7 +1445,7 @@ The session began following the heroes' victory on Themis, where they defeated Q
 
 This session saw the successful conclusion of the Themis temple arc, the acquisition of powerful new magical items, a significant level-up, and key information gained about future destinations and their associated constellations. The path to reclaiming Aella's throne and facing the Titans is becoming clearer.
 
-# Session 33
+# Session 33 [Session 33](#session-33)
 
 ### **A Troubled Voyage: Lutheria's Nightmare**
 
@@ -1482,7 +1488,7 @@ The session ended on a cliffhanger. As the party fought the Gargantuan Scorpion,
 
 The party will begin the next session in the middle of this dangerous encounter. Once the island's business is concluded, they have discussed traveling to the **Isle of the Fates**, guided by the Constellation of the Bard, to pursue Astraeus's epic path.
 
-# Session 34
+# Session 34 [Session 34](#session-34)
 
 *   **Scorpion Battle Commencement:**
     *   The session began with the party facing three normal giant scorpions and the massive Scorpion Matriarch, alongside the Aresian warrior monks.
@@ -1518,7 +1524,8 @@ The party will begin the next session in the middle of this dangerous encounter.
 
     Here is a detailed log of the session's events, formatted for your quest log:
 
-### Session 35 Log: The Tower of the Lotus Witch
+# Session 35 [Session 35](#session-35)
+## The Tower of the Lotus Witch
 
 * **Breaching the Barrier:** After discussing the dangers of the time-distorting field around the tower, the party decided to send one person in first to test it. [cite: 130, 131]
 * **Delphi's Gamble:** Delphi volunteered to enter the field. [cite: 132] He cast *Bless* on himself, Aella, and Astraeus, and tied a rope around his waist for the party to hold. [cite: 133, 135, 136] Astraeus also granted him Bardic Inspiration. [cite: 137, 139]

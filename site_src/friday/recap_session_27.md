@@ -1,0 +1,21 @@
+# Session 27
+
+## Statues and Stone Guardians
+
+Following your tense arrival on Themis and the initial, grim encounter with Amazon scouts fiercely loyal to the usurpers, your path led to the ominous small island in the eastern bay—a place your aerial reconnaissance had marked as the likely seat of the false queen's power. The island presented a chilling vista: a veritable forest of life-sized marble statues, the vast majority depicting beautiful, naked young men, alongside a grim collection of others, some scarred or maimed. At its heart, a grand marble staircase spiraled down into the earth, beckoning you towards the unknown.
+
+With Aella stepping onto her homeland after thirteen years of bitter exile, the air was thick with anticipation and the unspoken weight of her quest to reclaim her birthright. The party, including the knowledgeable warrior Makaira and the Jancan Steros—hopeful of finding his captive father, Bront, within whatever lay below—prepared to delve into the darkness. Delphi, ever cautious, invoked *Pass Without Trace* for the group, while Aella enhanced his agility with *Longstrider*.
+
+The first test came swiftly. As Delphi began his descent down the marble steps, intending to scout ahead with his re-summoned owl familiar, four of the stoic marble statues flanking the entrance ground to life, their stony silence replaced with hostile intent\! A hasty retreat by Delphi caused the guardians to return to their inanimate repose. A chilling discovery followed: a chip Delphi had previously inflicted on a statue was observed to slowly regenerate, the marble magically mending itself.
+
+Further investigation revealed a crucial weakness: the golems remained inert when Aella, Rhaena, and Makaira approached, only animating to repel the men of the party, Astraeus and Delphi. While the women could pass, the problem of their male companions remained. Delphi's owl, ghosting past the sealed brass doors at the stairway's nadir, revealed two Amazon warriors within, seemingly at ease, playing cards.
+
+Aella dispatched her loyal Stimfay to circle the island's exterior, searching for alternative routes. The clockwork bird returned with two possibilities: a large, half-submerged stone culvert, and a narrow crack in the cliff face, currently at high tide, which might offer passage in a few hours.
+
+The party faced a choice: wait for the tide, attempt the culvert which might prove too small for Rhaena, or face the regenerating stone guardians head-on. Impatience and the desire for direct confrontation won out; the golems would be dealt with.
+
+Rhaena's initial attempt to topple a golem with ropes proved futile as she stumbled. The battle was joined\! The party quickly learned the golem's resilience: they were immune to non-magical weaponry, Rhaena's mundane javelins bouncing harmlessly. Makaira, armed with the magical Spear of Pythor, and Aella, with her enchanted \+2 mithral chakram, drew first blood. Astraeus's spells and enchanted arrows from the Shortbow of Cupid found their mark, while Delphi's magic blasted and hindered.
+
+The fight became a brutal dance of attrition. The golems struck hard, their marble fists and spear-like protrusions finding their targets, injuring Delphi and Makaira significantly. The key to victory lay in Rhaena's adamantine Nightblade, which carved grievous wounds in the constructs, bypassing their normal defenses and dealing devastating double damage. The party also discovered that dismembering the golems and casting the parts off the cliff—heads, legs—was vital. Though the constructs could still reassemble even when missing parts, removing the head induced blindness, and eventually, the relentless assault and strategic dismemberment proved too much. One by one, the regenerating statues were battered, torn apart, and finally stilled, their magical animation extinguished for good.
+
+Victorious but battered, the heroes stood before the now-undefended brass doors. The way into the Amazon's secret temple complex, the heart of the usurpers' domain on Themis, lay open. With the promise of leveling up upon clearing the island, and a short rest needed to recover, the stage is set to plunge deeper into Aella's troubled past and the island's deadly secrets.

@@ -1,5 +1,5 @@
+# Session 29 Recap: Blood on the Black Oak
 **07/09/2025**
-### **Session 29 Recap: Blood on the Black Oak**
 
 Your adventure continued as you finally stood before the Dead Falls. After navigating a treacherous, flooded passage, you emerged into a silent, hidden lake where the legendary ghost ship, the ***Ultros***, awaited. Upon boarding the eerily pristine vessel, Kain touched the central mast and was struck by a vision of the dryad Delphia, whose spirit was bound to the wood when her tree was felled to create it. This act awakened the ship, and you were confronted by its spectral crew and its fearsome captain, **Estor Arkelander**.
 
@@ -20,8 +20,9 @@ One thane is down, but two remain. Estor Arkelander sits upon his throne on the 
 
 
 
- **07/02/2025**
+
 # Session 28 Recap: Whispers of the Dead Falls
+ **07/02/2025**
 
 Your last session began in the thrumming heat of the Mithral Forge. Armed with newly forged treasures and the promise of the *Calydonian Messenger* soon to take flight, you received a crucial piece of the puzzle for your resident Dragonslayer. Volkan, the grizzled smith, pulled Kain aside, speaking of weapons forged by Gygans—god-killers—and of a horned scholar named Chondrus who hoards them on the fortified Isle of Yonder. A new, dangerous path revealed itself.
 
@@ -39,6 +40,8 @@ You now stand on the precipice, the boisterous life of the Sour Vintage behind y
 
 # ---
 
+
+# Session 27 Recap
 # **06/25/2025**
 
 Previously, on OODL D\&D\!
@@ -71,6 +74,8 @@ The journey continues, with powerful artifacts in hand, a loyal new companion, a
 
 # ---
 
+
+# Session 26 Recap:
 # **06/18/2025**
 
 Heroes of the Prophecy\! Your work in the foul warrens of the reptilian cultists had reached its bloody crescendo. Before you, the shaman Vrask led his followers in a religious frenzy, their chilling chants echoing over a dark, abyssal pit. You moved as one, silent shadows in the gloom, and unleashed a surprise attack. Arrow and arcane power silenced the guards, and Zephyrion's trident thrust silenced the shaman, ending his foul ritual. But your victory was met not with silence, but with a sickening, guttural sound of crunching bones from the darkness below.
@@ -89,10 +94,10 @@ Now, having taken a moment to recover and feeling a surge of new power as you re
 
 # ---
 
-# **06/11/2025**
 
-### **Session 25: Of Rescues and Reptilians**
 
+# Session 25 Recap: Of Rescues and Reptilians
+## **06/11/2025**
 **Heroes of the Prophecy\!**
 
 Your quest to save Mytros from drowning in its own filth brought you to the brink of disaster. In the heart of the sewer system, you found the Great Cistern (UR10) groaning under the pressure of a magical flood. There, you met the panicked Foreman Kastros and the steel-nerved Engineer Thalia, who revealed that the Chief Engineer was missing, having vanished into a dangerous, uncharted cave system to the north.
@@ -107,9 +112,9 @@ You have rescued the engineer, but the source of the corruption remains. What aw
 
 # ---
 
-# **06/04/2025**
 
-### **Session 24: Cogs, Children, and a Queen of Spiders**
+# Session 24 Recap: Cogs, Children, and a Queen of Spiders
+## **06/04/2025**
 
 # Heroes of the Prophecy\!
 
@@ -133,7 +138,8 @@ You have rescued the engineer, but the source of the corruption remains. What aw
 
 # 
 
-# **05/23/2025** **Session 23: Of Thieves, Traps, and Tender Souls**
+# Session 23 Recap: Of Thieves, Traps, and Tender Souls
+## **05/23/2025** 
 
 # Heroes of the Prophecy\! Your last foray into the stinking bowels of Mytros left you at the precipice of a tense standoff, the severed head of a plague worm your gruesome calling card to the wary denizens of a Thieves' Guild hideout.
 
@@ -159,7 +165,8 @@ You have rescued the engineer, but the source of the corruption remains. What aw
 
 # 
 
-# 05/07/2025
+# Session 22 Recap:
+## 05/07/2025
 
 ## **D\&D Session Recap: From Colossus to Cesspool – Mayhem in the Mytros Sewers\!**
 
@@ -207,6 +214,7 @@ And that's where the darkness, and the session, closed\! Will your bold, perhaps
 
 We'll find out next time\!
 
+# Session 21 Recap:
 # 04/30/2025
 
 Heroes of the Prophecy, the battle within the Colossus of Pythor raged on, the noxious green gas swirling around you as the Minotaur Hero desperately fought. Rhy-At shielded himself with illusory duplicates while Tharok, fueled by rage and Nicandros's haste, relentlessly pressed the attack against the gas-releasing minotaur. Kain, though suffering the poison's effects, landed telling shots with his bow. Andrew Lynx's arcane blasts sought targets, while Zephyrion contended with the surprisingly resilient gladiator lady who had managed to break free from his crushing grapple, only to be struck down again by his swift reaction.

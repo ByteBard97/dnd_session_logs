@@ -1,3 +1,23 @@
+# D&D Session Logs Website
+
+## Conda Environment
+
+This project requires a dedicated conda environment. Please ensure you are using the correct environment before working on this project.
+
+**To activate the environment:**
+
+```bash
+conda activate dnd-mkdocs
+```
+
+If you have not created the environment yet, you can do so with:
+
+```bash
+conda create -n dnd-mkdocs python=3.11
+```
+
+---
+
 # dnd_session_logs
 stores my D&amp;D session logs to show to my players
 

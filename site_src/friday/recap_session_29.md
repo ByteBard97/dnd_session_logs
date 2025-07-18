@@ -1,0 +1,19 @@
+# Session 29
+
+Alright heroes, gather 'round and let's relive the blood, stone, and secrets from our last descent into the serpent's den\!
+
+Our session began in the grim aftermath of your brutal takedown of the Amazonian guards. The iron door of a magically-silenced cell grated open, and a name, long thought lost to treachery, was whispered in the dark: Darian. With the rescue of Aella's childhood friend and cousin-in-spirit, your infiltration transformed into the first true strike to reclaim a stolen throne. After freeing the captive lizardfolk, Skal and Veth, you cleverly turned the enemy's prison against them, silencing the charmed Amazon guard Talia within the very cell that had held Darian for thirteen long years.
+
+While looting the barracks, you uncovered a trove of treasure and strange curiosities: adamantine daggers, platinum pieces, a sailor's map hinting at dangers on other isles, and a grim necklace made from a single, gnarled fingernail. After arming the vengeful Darian with the weapons of her former captors and healing her wounds with bitter wine and potions, you prepared to delve deeper into the usurper's lair.
+
+The path downward led past a mesmerizing, cobalt-glowing fountain. Behind one door lay a strange, perfumed salon where a harem of dazed young men lounged in a stupor—a puzzle you wisely chose to leave for later. Behind another, you found a grand feast hall, its central table a ruin of gluttony lorded over by a mysterious, black-clad woman named Voracia. A demon of trouble and boredom, she was amused by your quest for revenge and offered a poisoned chalice of information, pointing you toward the bedchamber of Leia, one of the medusa usurpers.
+
+Following her directions past a hidden trap plate, you arrived at a gilded door. Inside, a scene of cloying decadence: Leia, clad in silk, lounging on a bed with a powerful minotaur, serenaded by the maenad musician you now hold prisoner. The unsettling cries of infants echoed from a cradle in the corner.
+
+The ambush was perfect. You burst in with the fury of a storm, Aella's chakram screaming for vengeance as it found its mark on Leia. Astraeus bathed the room in Faerie Fire, Rhaena's spear skewered the minotaur, and Delphi's magic tore through the chamber. But your triumph was cut short by a horrifying turn. As the battle was joined, Leia unleashed her petrifying gaze. In a heartbeat, Astraeus and Delphi were turned to cold, unmoving stone\! The "infants" in the cradle revealed their true form as goatling tricksters, one of whom transformed the mighty Makaira into a helpless rat.
+
+Just as disaster seemed imminent, Delphi, in his final moment of flesh and blood, unleashed a devastating, maximized bolt of lightning from a hard-won scroll. The blast incinerated Leia and one of the goatlings, breaking the polymorph spell on Makaira and turning the tide of battle for good. With their leader reduced to a charred husk, the remaining foes quickly surrendered.
+
+With the immediate threat neutralized, you used your last two precious doses of basilisk salve to restore your petrified friends. To secure your future, you marched back to the pens, butchered the remaining basilisks, and with skilled hands, harvested a fresh supply of the life-saving remedy.
+
+Now, with one sister vanquished and her chambers looted for maps and mysterious potions, you stand victorious but keenly aware of your depleted resources. Your quest for vengeance has just begun, and the true queen of the Amazons still sits on her venomous throne deeper in the complex. What new horrors await in the heart of the false queen's domain?

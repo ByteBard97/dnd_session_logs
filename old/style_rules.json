@@ -1,0 +1,111 @@
+{
+  "version": "1.0",
+  "description": "D&D Adventure Content Style Rules",
+  "rules": {
+    "headers": {
+      "h1": {
+        "ideal_min": 10,
+        "ideal_max": 45,
+        "absolute_max": 60,
+        "mobile_max": 40,
+        "description": "Main section titles - center-aligned, large font"
+      },
+      "h2": {
+        "ideal_min": 8,
+        "ideal_max": 35,
+        "absolute_max": 50,
+        "mobile_max": 30,
+        "description": "Section headers - left-aligned, medium font"
+      },
+      "h3": {
+        "ideal_min": 5,
+        "ideal_max": 30,
+        "absolute_max": 40,
+        "mobile_max": 25,
+        "description": "Subsection headers - with golden underline"
+      },
+      "h4": {
+        "ideal_min": 3,
+        "ideal_max": 25,
+        "absolute_max": 30,
+        "mobile_max": 20,
+        "description": "Minor headers"
+      }
+    },
+    "content": {
+      "dialogue_character_name": {
+        "max_length": 15,
+        "description": "Character names in dialogue entries"
+      },
+      "dialogue_action": {
+        "max_length": 80,
+        "description": "Action descriptions in parentheses"
+      },
+      "dialogue_speech": {
+        "max_length": 200,
+        "recommended_max": 120,
+        "description": "Individual dialogue lines - break long speeches"
+      },
+      "read_aloud_line": {
+        "max_length": 100,
+        "description": "Individual lines in read-aloud boxes"
+      },
+      "read_aloud_total": {
+        "max_sentences": 4,
+        "description": "Total sentences per read-aloud box"
+      },
+      "image_caption": {
+        "max_length": 80,
+        "description": "Image alt text and captions"
+      },
+      "table_header": {
+        "max_length": 20,
+        "description": "Table column headers"
+      },
+      "table_cell": {
+        "max_length": 40,
+        "description": "Table cell content"
+      },
+      "line_length": {
+        "max_length": 120,
+        "recommended_max": 100,
+        "description": "Maximum line length for readability"
+      }
+    },
+    "formatting": {
+      "bullet_points": {
+        "required_pattern": "^\\*\\s+\\*\\*[^*]+\\*\\*:",
+        "description": "Dialogue bullets must follow: * **Character:** format"
+      },
+      "read_aloud": {
+        "required_pattern": "^>\\s+",
+        "description": "Read-aloud text must start with '> '"
+      },
+      "bold_character_names": {
+        "required_pattern": "\\*\\*[A-Za-z\\s]+\\*\\*:",
+        "description": "Character names in dialogue must be bold"
+      }
+    },
+    "structure": {
+      "max_consecutive_empty_lines": 2,
+      "require_space_after_headers": true,
+      "require_space_before_headers": true,
+      "description": "Document structure requirements"
+    }
+  },
+  "severity_levels": {
+    "error": "Breaks layout or readability",
+    "warning": "Exceeds ideal limits but within acceptable range", 
+    "info": "Minor style deviation"
+  },
+  "abbreviations": {
+    "Guide": "G.",
+    "Reference": "Ref.",
+    "Solutions": "Sol.",
+    "and": "&",
+    "Game Master": "GM",
+    "Non-Player Character": "NPC",
+    "Player Character": "PC",
+    "Dungeon Master": "DM"
+  }
+} 

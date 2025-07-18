@@ -179,11 +179,189 @@ def build_full_html(body_html: str, title: str, use_dnd: bool) -> str:
             sys.stderr.write(f"[WARN] Error loading D&D styling ({e}); falling back to default.\n")
             phb_css = CSS_RESET
 
+        # Modern interactive features JavaScript
+        interactive_js = """
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Theme toggle functionality
+            const themeToggle = document.getElementById('theme-toggle');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const currentTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
+            
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            
+            if (themeToggle) {
+                themeToggle.textContent = currentTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+                themeToggle.addEventListener('click', function() {
+                    const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+                    document.documentElement.setAttribute('data-theme', newTheme);
+                    localStorage.setItem('theme', newTheme);
+                    this.textContent = newTheme === 'dark' ? '☀️ Light' : '🌙 Dark';
+                });
+            }
+            
+            // Back to top button
+            const backToTop = document.getElementById('back-to-top');
+            if (backToTop) {
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 300) {
+                        backToTop.classList.add('visible');
+                    } else {
+                        backToTop.classList.remove('visible');
+                    }
+                });
+                
+                backToTop.addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            }
+            
+            // Search functionality
+            const searchBox = document.getElementById('search-box');
+            if (searchBox) {
+                searchBox.addEventListener('input', function() {
+                    const query = this.value.toLowerCase();
+                    const allText = document.querySelectorAll('.phb-container h1, .phb-container h2, .phb-container h3, .phb-container p');
+                    
+                    allText.forEach(element => {
+                        const text = element.textContent.toLowerCase();
+                        if (query && text.includes(query)) {
+                            element.style.backgroundColor = 'var(--phb-border-primary)';
+                            element.style.padding = '0.2em';
+                            element.style.borderRadius = '4px';
+                        } else {
+                            element.style.backgroundColor = '';
+                            element.style.padding = '';
+                            element.style.borderRadius = '';
+                        }
+                    });
+                });
+                
+                // Clear search on escape
+                searchBox.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        this.value = '';
+                        this.dispatchEvent(new Event('input'));
+                    }
+                });
+            }
+            
+            // Collapsible sections
+            document.querySelectorAll('h2, h3').forEach(header => {
+                header.classList.add('collapsible');
+                header.addEventListener('click', function() {
+                    const content = this.nextElementSibling;
+                    if (content) {
+                        this.classList.toggle('collapsed');
+                        content.classList.toggle('collapsed');
+                        
+                        if (content.classList.contains('collapsed')) {
+                            content.style.maxHeight = '0';
+                        } else {
+                            content.style.maxHeight = content.scrollHeight + 'px';
+                        }
+                    }
+                });
+            });
+            
+            // Smooth loading animation
+            document.body.classList.add('loading');
+            
+            // Image lightbox effect (simple version)
+            document.querySelectorAll('.phb-container img').forEach(img => {
+                img.addEventListener('click', function() {
+                    const modal = document.createElement('div');
+                    modal.style.cssText = `
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(0,0,0,0.9);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 2000;
+                        cursor: pointer;
+                    `;
+                    
+                    const modalImg = document.createElement('img');
+                    modalImg.src = this.src;
+                    modalImg.style.cssText = `
+                        max-width: 90%;
+                        max-height: 90%;
+                        border-radius: 8px;
+                        box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+                    `;
+                    
+                    modal.appendChild(modalImg);
+                    document.body.appendChild(modal);
+                    
+                    modal.addEventListener('click', function() {
+                        document.body.removeChild(modal);
+                    });
+                });
+            });
+            
+            // Keyboard shortcuts
+            document.addEventListener('keydown', function(e) {
+                // Ctrl/Cmd + K for search focus
+                if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                    e.preventDefault();
+                    if (searchBox) searchBox.focus();
+                }
+                
+                // Escape to clear search
+                if (e.key === 'Escape' && searchBox) {
+                    searchBox.value = '';
+                    searchBox.dispatchEvent(new Event('input'));
+                }
+            });
+        });
+        </script>
+        """
+
         return f"""<!DOCTYPE html>
-<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>{title}</title>\n  <style>{phb_css}</style>\n</head>\n<body class=\"phb-container\">\n  <h1>{title}</h1>\n  {body_html}\n</body>\n</html>"""
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="D&D Session Logs with Enhanced Player's Handbook Styling" />
+  <title>{title}</title>
+  <style>{phb_css}</style>
+</head>
+<body>
+  <nav class="nav-header">
+    <a href="/" class="nav-title">{title}</a>
+    <div class="nav-controls">
+      <input type="text" id="search-box" class="search-box" placeholder="Search sessions... (Ctrl+K)" />
+      <button id="theme-toggle" class="theme-toggle">🌙 Dark</button>
+    </div>
+  </nav>
+  
+  <div class="phb-container">
+    {body_html}
+  </div>
+  
+  <button id="back-to-top" class="back-to-top" title="Back to top">↑</button>
+  
+  {interactive_js}
+</body>
+</html>"""
     else:
         return f"""<!DOCTYPE html>
-<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\" />\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n  <title>{title}</title>\n  <style>{CSS_RESET}</style>\n</head>\n<body>\n  <h1>{title}</h1>\n  {body_html}\n</body>\n</html>"""
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{title}</title>
+  <style>{CSS_RESET}</style>
+</head>
+<body>
+  <h1>{title}</h1>
+  {body_html}
+</body>
+</html>"""
 
 
 def parse_args() -> argparse.Namespace:

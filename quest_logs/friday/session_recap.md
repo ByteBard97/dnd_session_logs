@@ -16,7 +16,9 @@ You met her first challenge, correctly naming the cruelest of the Dragonlords: t
 
 But now, you face her third riddle. "When Thylea bore fruit," the Sphinx's voice echoes in the chamber, "which two Titans sprang forth from a single pit?" The air is thick with tension. One wrong answer could spell your doom. The Lotus Witch watches, her expression unreadable, as you weigh the fate of your quest on the tip of your tongue...
 
-# Session 34: The Scourge & The Sundial
+# Session 34
+
+## The Scourge & The Sundial
 
 When last we left our heroes, they stood on the sun-scorched plains of Scorpion Island, locked in a desperate battle for survival. The sands were stained with the blood of the fallen Aresian monks, and before you stood a terrifying host of giant scorpions, led by a monstrous, building-sized Matriarch.
 
@@ -34,7 +36,9 @@ And so, our session ended.  having taken a long rest, gazing at the impossible f
 
 ---
 
-# Session 33: The Nightmare & The Scorpions
+# Session 33
+
+## The Nightmare & The Scorpions
 
 ## **Session 33 Opening Recap**
 
@@ -83,7 +87,7 @@ The session ended with this terrifying new threat bearing down on the party and 
 
 # Session 31
 
-Friday Recap: The Hydra's Maw & Scholar's Secrets
+## The Hydra's Maw & Scholar's Secrets
 
 From the bloody temple of Themis, your path led directly to the very beast that guarded the queen's deepest secrets – the monstrous Hydra. With a daring plan, Astraeus unleashed a powerful
 
@@ -113,7 +117,7 @@ With new quests, powerful artifacts, and invaluable intelligence, you now contin
 
 # Session 30
 
-### **Friday Recap: The Tyrant's End**
+## Friday Recap: The Tyrant's End
 
 When last we left our heroes, they stood deep within the serpent's den, the Amazon temple on the island of Themis. With one of the medusa usurpers, Leia, already defeated, only the queen herself remained. You chose to press your advantage, formulating a daring plan to unmask the tyrant and reveal her monstrous nature to her followers.
 
@@ -158,7 +162,8 @@ With the immediate threat neutralized, you used your last two precious doses of 
 
 Now, with one sister vanquished and her chambers looted for maps and mysterious potions, you stand victorious but keenly aware of your depleted resources. Your quest for vengeance has just begun, and the true queen of the Amazons still sits on her venomous throne deeper in the complex. What new horrors await in the heart of the false queen's domain?
 
-## Session 28: Deep into the Serpent's Den
+# Session 28
+## Deep into the Serpent's Den
 
 Following your brutal victory over the regenerating marble guardians, your party—Aella, Delphi, Rhaena, Astraeus, and the steadfast Makaira, with Kyra diligently recording your exploits—stood at the threshold of the Sacred Temple, the very heart of the usurper queen's power on Themis. The air was thick with the weight of Aella's thirteen-year exile, her quest to reclaim her birthright burning in her eyes.
 
@@ -179,7 +184,9 @@ These keys opened the final, formidable door in the barracks, revealing a grim s
 But the true revelation lay in the last cell: a young woman, scarred and silent. Recalling Talia's earlier mention of a high-ranking loyalist named Darien held prisoner for her allegiance to the true queen, Aella addressed the unresponsive figure. Despite Aella's impassioned revelation of her own true identity and her denouncement of the medusa usurpers' treachery, the woman remained eerily silent. Delphi, however, with his keen senses, noticed a peculiar acoustic anomaly in her cell, a subtle disturbance suggesting a magical silence was at play. With a final turn of a hard-won key, Aella opened Darien's cell. As the iron grated open, the young woman finally looked up, her eyes wide with a mixture of nervousness and fear.
 
 
-## **Session 27: Statues and Stone Guardians**
+# Session 27
+
+## Statues and Stone Guardians
 
 Following your tense arrival on Themis and the initial, grim encounter with Amazon scouts fiercely loyal to the usurpers, your path led to the ominous small island in the eastern bay—a place your aerial reconnaissance had marked as the likely seat of the false queen's power. The island presented a chilling vista: a veritable forest of life-sized marble statues, the vast majority depicting beautiful, naked young men, alongside a grim collection of others, some scarred or maimed. At its heart, a grand marble staircase spiraled down into the earth, beckoning you towards the unknown.
 
@@ -199,7 +206,7 @@ The fight became a brutal dance of attrition. The golems struck hard, their marb
 
 Victorious but battered, the heroes stood before the now-undefended brass doors. The way into the Amazon's secret temple complex, the heart of the usurpers' domain on Themis, lay open. With the promise of leveling up upon clearing the island, and a short rest needed to recover, the stage is set to plunge deeper into Aella's troubled past and the island's deadly secrets.
 
-## **Session 26**
+# Session 26
 
 Okay, heroes, let's relive the whirlwind of fire, scales, and strange shores from our last adventure\!
 
