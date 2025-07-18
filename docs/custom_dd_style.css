@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Bookinsanity';
+    src: url('fonts/Bookinsanity.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Bookinsanity';
+    src: url('fonts/Bookinsanity Bold.otf') format('opentype');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Bookinsanity';
+    src: url('fonts/Bookinsanity Italic.otf') format('opentype');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Bookinsanity';
+    src: url('fonts/Bookinsanity Bold Italic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'MrJeeves';
+    src: url('fonts/Mr Eaves Small Caps.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NodestoCaps';
+    src: url('fonts/Nodesto Caps Condensed.otf') format('opentype');
+}
+@font-face {
+    font-family: 'ScalySans';
+    src: url('fonts/Scaly Sans.otf') format('opentype');
+}
+
+body {
+    background: #EEE5CE url('images/5e-phb-background-imitation.png');
+    font-family: 'Bookinsanity', Georgia, serif;
+    color: #2d1b00;
+}
+
+.md-header, .md-tabs {
+    background: #4b2e05;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'MrJeeves', 'Bookinsanity', Georgia, serif;
+    color: rgb(93, 24, 13);
+    text-shadow: 1px 1px 0 #f8e7c1;
+}
+
+blockquote {
+    background-color: #e0e5c1;
+    border-image: url('images/note-wrap-imitation.png') 40;
+    border-width: 11px;
+    border-style: solid;
+    box-shadow: 1px 4px 14px #888;
+    font-family: 'ScalySans', Georgia, serif;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+}
+
+.md-content {
+    border: 2px solid #bfa76f;
+    border-radius: 8px;
+    background: rgba(255, 248, 220, 0.95);
+    box-shadow: 0 0 12px #bfa76f33;
+    padding: 2em;
+}
+
+img {
+    border: 2px solid #bfa76f;
+    border-radius: 6px;
+    background: #fffbe6;
+    box-shadow: 0 2px 8px #bfa76f44;
+}
+
+.md-nav__title, .md-nav__link {
+    font-family: 'Bookinsanity', 'Georgia', serif;
+}
+
+.md-sidebar {
+    background: #f8f5e3 url('images/5e-phb-background-imitation.png');
+} 
