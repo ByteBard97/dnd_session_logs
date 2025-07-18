@@ -35,6 +35,7 @@ use_directory_urls: true
 
 # Navigation (auto-generated below)
 nav:
+  - Home: index.md
   - Monday:
       - Home: monday/index.md
       - PCs: monday/players/pcs.md

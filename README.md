@@ -1,5 +1,8 @@
 # D&D Session Logs Website
 
+**View the published site:**  
+https://bytebard97.github.io/dnd_session_logs/
+
 ## Conda Environment
 
 This project requires a dedicated conda environment. Please ensure you are using the correct environment before working on this project.
