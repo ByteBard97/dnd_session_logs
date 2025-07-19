@@ -1,38 +1,38 @@
 title: Quest Logs
-arrange:
-  - log_session_36.md
-  - log_session_35.md
-  - log_session_34.md
-  - log_session_33.md
-  - log_session_32.md
-  - log_session_31.md
-  - log_session_30.md
-  - log_session_29.md
-  - log_session_28.md
-  - log_session_27.md
-  - log_session_26.md
-  - log_session_25.md
-  - log_session_24.md
-  - log_session_23.md
-  - log_session_22.md
-  - log_session_21.md
-  - log_session_20.md
-  - log_session_19.md
-  - log_session_18.md
-  - log_session_17.md
-  - log_session_16.md
-  - log_session_15.md
-  - log_session_14.md
-  - log_session_13.md
-  - log_session_12.md
-  - log_session_11.md
-  - log_session_10.md
-  - log_session_9.md
-  - log_session_8.md
-  - log_session_7.md
-  - log_session_6.md
-  - log_session_5.md
-  - log_session_4.md
-  - log_session_3.md
-  - log_session_2.md
-  - log_session_1.md 
+nav:
+  - Session 36: log_session_36.md
+  - Session 35: log_session_35.md
+  - Session 34: log_session_34.md
+  - Session 33: log_session_33.md
+  - Session 32: log_session_32.md
+  - Session 31: log_session_31.md
+  - Session 30: log_session_30.md
+  - Session 29: log_session_29.md
+  - Session 28: log_session_28.md
+  - Session 27: log_session_27.md
+  - Session 26: log_session_26.md
+  - Session 25: log_session_25.md
+  - Session 24: log_session_24.md
+  - Session 23: log_session_23.md
+  - Session 22: log_session_22.md
+  - Session 21: log_session_21.md
+  - Session 20: log_session_20.md
+  - Session 19: log_session_19.md
+  - Session 18: log_session_18.md
+  - Session 17: log_session_17.md
+  - Session 16: log_session_16.md
+  - Session 15: log_session_15.md
+  - Session 14: log_session_14.md
+  - Session 13: log_session_13.md
+  - Session 12: log_session_12.md
+  - Session 11: log_session_11.md
+  - Session 10: log_session_10.md
+  - Session 9: log_session_9.md
+  - Session 8: log_session_8.md
+  - Session 7: log_session_7.md
+  - Session 6: log_session_6.md
+  - Session 5: log_session_5.md
+  - Session 4: log_session_4.md
+  - Session 3: log_session_3.md
+  - Session 2: log_session_2.md
+  - Session 1: log_session_1.md 
