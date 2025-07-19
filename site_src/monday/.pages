@@ -1,5 +1,7 @@
 title: Monday Campaign
 nav:
+  - index.md
   - players
   - recaps
-  - logs 
+  - logs
+  - Test Fancy Effects: test_effects.md 
