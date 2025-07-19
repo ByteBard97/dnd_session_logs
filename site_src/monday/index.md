@@ -1,5 +1,7 @@
 # Monday
 
+<link rel="stylesheet" href="drow_theme.css">
+
 <p align="center">
   <img src="players/LMotD.webp" alt="Campaign Banner" style="max-width: 100%; display: block; margin: 0 auto;" />
 </p>
