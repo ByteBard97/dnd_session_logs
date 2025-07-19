@@ -62,7 +62,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -3462,37 +3471,37 @@
 <h2 id="lost-mine-of-the-drow">Lost Mine of the Drow</h2>
 <p>This document provides a quick reference for the main characters in the "Lost Mine of the Drow" campaign.</p>
 <h2 id="ravithar">Rav'ithar</h2>
-<p><img alt="Rav'ithar" src="ravithar.webp" /></p>
+<p><a class="glightbox" href="ravithar.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Rav'ithar" src="ravithar.webp" /></a></p>
 <p><strong>Race/Class:</strong> Male Drow, Whispers Bard (Level 5)
 <strong>Role:</strong> Party Leader
 <strong>Background Notes:</strong> From a lesser T'alzar faction in Vlyn'darastyl, family adopted into the main house. His renowned "adventures" are fabrications based on his late father's exploits, a secret he guards fiercely to maintain his status and income. This mission is his chance for genuine heroism and new literary material. Mentors Malaggar. Carries a pistol named "Fear."</p>
 <hr />
 <h2 id="malaggar-youngest-son-of-house-talzar">Malaggar (Youngest Son of House T'alzar)</h2>
-<p><img alt="Malaggar" src="malaggar.webp" /></p>
+<p><a class="glightbox" href="malaggar.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Malaggar" src="malaggar.webp" /></a></p>
 <p><strong>Race/Class:</strong> Male Drow, Gloomstalker Ranger (Level 4)
 <strong>Role:</strong> Lieutenant of the strike team.
 <strong>Background Notes:</strong> Eager to prove himself.</p>
 <hr />
 <h2 id="haribo-the-spreader-knight-of-the-musca">Haribo the Spreader, Knight of the Musca</h2>
-<p><img alt="Haribo" src="haribo.webp" /></p>
+<p><a class="glightbox" href="haribo.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Haribo" src="haribo.webp" /></a></p>
 <p><strong>Race/Class:</strong> Myconid, Spore Druid
 <strong>Role:</strong> Member of the strike team, representative of the Musca colony.
 <strong>Background Notes:</strong> Driven to spread the Musca and establish new colonies. Reports to Uulk, the Musca Leader. Values collective effort.</p>
 <hr />
 <h2 id="mordath-clank-ironshroud">Mordath "Clank" Ironshroud</h2>
-<p><img alt="Clank" src="clank.webp" /></p>
+<p><a class="glightbox" href="clank.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Clank" src="clank.webp" /></a></p>
 <p><strong>Race/Class:</strong> Duergar, Artificer
 <strong>Role:</strong> Clan crafter for House T'alzar, member of the strike team.
 <strong>Background Notes:</strong> Brilliant tinkerer and inventor. Hates surface dwellers, especially dwarves. Seeks to establish a duergar stronghold on the surface. Suffers from "mind fits" due to ancestral trauma.</p>
 <hr />
 <h2 id="bentham-the-loyal-shadow">Bentham ("The Loyal Shadow")</h2>
-<p><img alt="Bentham" src="bentham.webp" /></p>
+<p><a class="glightbox" href="bentham.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Bentham" src="bentham.webp" /></a></p>
 <p><strong>Race/Class:</strong> Doppelganger, Assassin
 <strong>Role:</strong> Slave mercenary, member of the strike team.
 <strong>Background Notes:</strong> Born into slavery, fiercely loyal to their Matron Mother, whom they aim to please above all else.</p>
 <hr />
 <h2 id="zyntra">Zyntra</h2>
-<p><img alt="Zyntra" src="zyntra.webp" /></p>
+<p><a class="glightbox" href="zyntra.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Zyntra" src="zyntra.webp" /></a></p>
 <p><strong>Race/Class:</strong> Female Drow, Arcane Trickster (Urchin Background)
 <strong>Role:</strong> Outsider/adopted member of the strike team.
 <strong>Background Notes:</strong> Raised as a street urchin, possibly the result of a union between a male T'alzar and a commoner. Not seen as fully legitimate by the family. The Matron Mother saw value in her skills as a thief and brought her into the fold, possibly to shape and mold her due to her genetic linkage to the family. This linkage is not known to the other family members. Spunky, resourceful, and streetwise.</p>
@@ -3554,5 +3563,7 @@
         <script src="../../js/statblock5e-inlined.html"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

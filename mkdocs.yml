@@ -31,9 +31,12 @@ site_dir: docs
 plugins:
   - search
   - awesome-pages
+  - glightbox
+  - include-markdown
 
-# Basic markdown extensions for tabs
+# Basic markdown extensions for tabs and callouts
 markdown_extensions:
+  - admonition
   - pymdownx.tabbed:
       alternate_style: true
 

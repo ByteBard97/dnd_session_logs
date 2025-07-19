@@ -62,7 +62,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     <body dir="ltr">
@@ -3359,7 +3368,7 @@
 
 <h1 id="player-characters">PLAYER CHARACTERS</h1>
 <h2 id="astraeus">Astraeus</h2>
-<p><img alt="Astraeus - Option 1" src="astreus1.webp" /></p>
+<p><a class="glightbox" href="astreus1.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Astraeus - Option 1" src="astreus1.webp" /></a></p>
 <!--
 ![Astraeus - Option 2](astreus2.webp)
 ![Astraeus - Option 4](astreus4.webp)
@@ -3374,7 +3383,7 @@ bardic magic that can be used in combat. </p>
 <p>Epic Path: The Curious One. </p>
 <h1 id="_1"></h1>
 <h2 id="delphi-silverstar">Delphi Silverstar</h2>
-<p><img alt="Delphi" src="delphi.webp" />
+<p><a class="glightbox" href="delphi.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Delphi" src="delphi.webp" /></a>
 A human male wizard (School of Evocation) and tempest domain cleric with "The Vanished One"
 background. Highly intelligent (20) spellcaster specializing in lightning and elemental magic.
 Wields powerful spells including Lightning Bolt, Thunderwave, and Fire Bolt. Possesses Channel
@@ -3386,7 +3395,7 @@ this land"). Has darkvision and the Resilient (Con) feat. </p>
 <p>Epic Path: The Vanished One. </p>
 <h1 id="_2"></h1>
 <h2 id="aella-swiftstrike">Aella Swiftstrike</h2>
-<p><img alt="Aella" src="aella.webp" />
+<p><a class="glightbox" href="aella.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Aella" src="aella.webp" /></a>
 An exiled Amazon warrior from the Isle of Themis with regal bearing and fierce independence.
 Daughter of royalty whose mother was murdered and deposed from the throne. Expert in chakram
 techniques, possessing exceptional dexterity and constitution. Wields a magical +2 mithral chakram
@@ -3399,7 +3408,7 @@ additional chakrams and kopis blades. </p>
 <p>Epic Path: The Exile. </p>
 <h1 id="_3"></h1>
 <h2 id="rhaena">Rhaena</h2>
-<p><img alt="Rhaena" src="rhaena.webp" />
+<p><a class="glightbox" href="rhaena.webp" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Rhaena" src="rhaena.webp" /></a>
 A female Thylean centaur paladin who follows the Oath of the Dragonlord (level 7) with the Haunted
 One background. Strong and charismatic with impressive speed (40 ft). Wields longswords, spears, and
 various divine smite abilities including Thunderous Smite, Branding Smite, and Wrathful Smite.
@@ -3467,5 +3476,7 @@ corner. I don't talk about the thing that torments me. I'd rather not burden oth
         <script src="../../js/statblock5e-inlined.html"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
