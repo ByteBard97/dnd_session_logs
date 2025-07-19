@@ -1,4 +1,4 @@
-# Cast of Player Characters
+# Players
 
 ## Lost Mine of the Drow
 

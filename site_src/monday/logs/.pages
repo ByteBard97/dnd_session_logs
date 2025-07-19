@@ -1,7 +1,7 @@
 title: Quest Logs
-arrange:
-  - log_session_5.md
-  - log_session_4.md
-  - log_session_3.md
-  - log_session_2.md
-  - log_session_1.md 
+nav:
+  - Session 5: log_session_5.md
+  - Session 4: log_session_4.md
+  - Session 3: log_session_3.md
+  - Session 2: log_session_2.md
+  - Session 1: log_session_1.md 
