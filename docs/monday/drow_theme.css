@@ -1,0 +1,78 @@
+/* Drow Theme for Monday Campaign Only */
+
+/* Dark purple background */
+body {
+    background: linear-gradient(135deg, #1a0f2e 0%, #2d1b3d 100%) !important;
+    color: #e6d7ff !important;
+}
+
+/* Purple headers and navigation */
+.md-header, .md-tabs {
+    background-color: #2d1b3d !important;
+}
+
+/* Purple-themed content area */
+.md-content {
+    background: rgba(45, 27, 61, 0.95) !important;
+    border: 2px solid #6b3d7a !important;
+    color: #e6d7ff !important;
+}
+
+/* Purple text colors */
+h1, h2, h3, h4 {
+    color: #e6d7ff !important;
+    text-shadow: 1px 1px 0 #4a2c5a !important;
+}
+
+/* Purple-themed navigation links */
+.md-nav__link {
+    color: #b19cd9 !important;
+}
+
+.md-nav__link:hover {
+    color: #e6d7ff !important;
+}
+
+/* Purple-themed sidebar */
+.md-sidebar {
+    background: linear-gradient(135deg, #1a0f2e 0%, #2d1b3d 100%) !important;
+}
+
+/* Purple-themed blockquotes */
+blockquote {
+    background-color: #4a2c5a !important;
+    border-color: #6b3d7a !important;
+    color: #e6d7ff !important;
+}
+
+/* Purple-themed images */
+img {
+    border: 2px solid #6b3d7a !important;
+    background: #4a2c5a !important;
+}
+
+/* Purple-themed links */
+a {
+    color: #b19cd9 !important;
+}
+
+a:hover {
+    color: #e6d7ff !important;
+}
+
+/* Purple-themed code blocks */
+code {
+    background-color: #4a2c5a !important;
+    color: #e6d7ff !important;
+}
+
+/* Purple-themed admonitions */
+.admonition {
+    background-color: #4a2c5a !important;
+    border-left-color: #b19cd9 !important;
+}
+
+.admonition-title {
+    background-color: #6b3d7a !important;
+    color: #e6d7ff !important;
+} 

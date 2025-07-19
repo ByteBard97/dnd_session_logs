@@ -1,4 +1,6 @@
-# Session 1
+<link rel="stylesheet" href="../drow_theme.css">
+
+# Session 1 Recap
 
 ---
 

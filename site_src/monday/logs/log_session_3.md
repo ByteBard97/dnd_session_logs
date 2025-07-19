@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../drow_theme.css">
+
 # Session 3
 
  **Session 3: Infiltration and Devastation at Cinderfork Foundry**

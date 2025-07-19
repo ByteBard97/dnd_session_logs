@@ -1,4 +1,6 @@
-# Session 2
+<link rel="stylesheet" href="../drow_theme.css">
+
+# Session 2 Recap
 
 Welcome back to the Underdark. When last we left our heroes, you had been entrusted with the most critical mission your house has ever faced.
 

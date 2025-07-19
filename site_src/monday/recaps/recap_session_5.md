@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../drow_theme.css">
+
 # Session 5 Recap: The Engineer's Gambit and the Silent Turbine
 
 When last we left our ruthless agents of House T'alzar, you were masters of a silent fortress. The sub-level was yours, its former guardians silenced and stacked in closets. But your path forward was blocked by a colossal, roaring turbine, a spinning wall of steel between you and your brother, **Valandor** .

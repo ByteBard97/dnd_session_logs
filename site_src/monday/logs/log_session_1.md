@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../drow_theme.css">
+
 # Session 1
 
 ### **Session 1 Outline: The Price of Ambition**

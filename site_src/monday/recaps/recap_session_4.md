@@ -1,4 +1,6 @@
-# Session 4 Player Recap: The Silence and the Slaughter
+<link rel="stylesheet" href="../drow_theme.css">
+
+# Session 4 Recap
 
 When last we left our ruthless agents of House T'alzar, you had drawn first blood in the Cinderfork Foundry, silencing the researchers in their own home. But the sub-level was far from secure, its halls still echoing with the clang of machinery and the tread of duergar boots. What followed was not a battle, but a systematic, chilling purge.
 

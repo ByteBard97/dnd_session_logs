@@ -1,4 +1,6 @@
-# Session 3
+<link rel="stylesheet" href="../drow_theme.css">
+
+# Session 3 Recap
 
 ### **The Black Loch Crossing & A Glimmer of Hope**
 

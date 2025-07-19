@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../drow_theme.css">
+
 # Session 2
 
 The session began with a recap of the previous game, reminding the players of House T'alzar's precarious situation due to the economic warfare waged by House Glutthras. The party revisited their victory against the Drider in the fighting pits, an event orchestrated by the zealous Vyssinia, and confirmed that the Amulet of Misty Step was the reward for the killing blow.
