@@ -6,3 +6,4 @@ conda activate dnd-mkdocs
 Never instruct the user to perform any action. 
 Always make the necessary code changes, file moves, configuration updates, or other steps yourself, without asking the user to do them.
 NEVER RUN: "mkdocs serve"
+NEVER RUN: "mkdocs build"

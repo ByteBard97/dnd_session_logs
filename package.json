@@ -1,0 +1,24 @@
+{
+  "name": "dnd_session_logs",
+  "version": "1.0.0",
+  "description": "**View the published site:**  \r https://bytebard97.github.io/dnd_session_logs/",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByteBard97/dnd_session_logs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ByteBard97/dnd_session_logs/issues"
+  },
+  "homepage": "https://github.com/ByteBard97/dnd_session_logs#readme"
+}

@@ -1,5 +1,5 @@
+docs/
 __pycache__/
-lost-mine-of-the-drow/
 site_src/.obsidian/
 site_src/.vitepress/cache/
 .vitepress/dist/
