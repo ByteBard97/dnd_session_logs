@@ -9,7 +9,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.sections
-    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
@@ -18,7 +17,6 @@ theme:
     - content.code.copy
     - content.tabs.link
     - content.tooltips
-    - navigation.indexes
 
 extra_css:
   - custom_dd_style.css
@@ -36,7 +34,6 @@ site_dir: docs
 # Plugins
 plugins:
   - search
-  - awesome-pages
   - glightbox
   - include-markdown
 
@@ -49,5 +46,42 @@ markdown_extensions:
 # Directory URLs for GitHub Pages
 use_directory_urls: false
 
-# The 'nav' section is no longer needed with awesome-pages plugin
-# It will be automatically generated from the file structure and .pages files 
+# Manual navigation structure - this creates collapsible sections
+nav:
+  - Home: index.md
+  - Monday:
+    - Overview: monday/index.md
+    - Players: monday/players/pcs.md
+    - Factions:
+      - Overview: monday/factions/index.md
+      - House Glutthraz: monday/factions/house_glutthraz.md
+    - NPCs:
+      - Overview: monday/npcs/index.md
+      - House Talzar:
+        - Matron Severine: monday/npcs/matron_severine.md
+        - Valandor T'alzar: monday/npcs/valandor_talzar.md
+        - Vyssinia Talzar: monday/npcs/vyssinia_talzar.md
+        - Grumble: monday/npcs/grumble.md
+    - Locations:
+      - Overview: monday/locations/index.md
+      - Key Locations:
+        - Cinderfork Foundry: monday/locations/cinderfork_foundry.md
+        - The Black Loch: monday/locations/black_loch.md
+    - Lore: monday/lore/index.md
+    - Items: monday/items/index.md
+    - Recaps:
+      - Session 5: monday/recaps/recap_session_5.md
+      - Session 4: monday/recaps/recap_session_4.md
+      - Session 3: monday/recaps/recap_session_3.md
+      - Session 2: monday/recaps/recap_session_2.md
+      - Session 1: monday/recaps/recap_session_1.md
+    - Quest Logs:
+      - Session 5: monday/logs/log_session_5.md
+      - Session 4: monday/logs/log_session_4.md
+      - Session 3: monday/logs/log_session_3.md
+      - Session 2: monday/logs/log_session_2.md
+      - Session 1: monday/logs/log_session_1.md
+  - Wednesday:
+    - Overview: wednesday/index.md
+  - Friday:
+    - Overview: friday/index.md 
