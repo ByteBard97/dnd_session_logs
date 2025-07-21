@@ -2,6 +2,6 @@
 
 Choose a campaign to explore:
 
-- [Monday Campaign](monday/)
-- [Wednesday Campaign](wednesday/)
-- [Friday Campaign](friday/) 
+- [Monday Campaign](monday/index.md)
+- [Wednesday Campaign](wednesday/index.md)
+- [Friday Campaign](friday/index.md) 

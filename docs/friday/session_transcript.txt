@@ -1,0 +1,532 @@
+DATE: 2025-07-18
+
+CAMPAIGN CONTEXT:
+The heroes of the Adventure continue their journey.
+
+
+SESSION TRANSCRIPT:
+
+DM: It's been so helpful, because now what I can do is I can put the transcript into my Quest log notes as just a markdown file. And I can ask it, what did we do? What did I say here inside of Cursor? So now Cursor can just search through the transcript when I need to remember what I said. It's pretty amazing. Alright, I'm going to read our quest log, and I'm going to read our recap. Number one. 35? Recap 35. When we last left our heroes, you stood before the impossible tower of the lotus. And let's bring that up so you can see it. Where are you? Scorpion Island. Here's the tower. Can the tower open? Okay, where did I... I lost my place. I have like a million tabs open. I need to close out all of them. Do a quick cleanup. Did I post a podcast about our adventure ever?
+Aella, Delphi, Rhaena: you Yes, at some point I remember listening to it.
+DM: Okay. Well, typically for the Wednesday group, I will make a podcast with Notebook LM, which have any of you guys used it?
+Aella, Delphi, Rhaena: you
+DM: I mean, for me, it is an amazing way to consume information because you can put whatever documents you want and have a very realistic-sounding podcast be created, and you can ask it to focus on something specifically. Like some, you know, I could say, like, I put all the documents in there for the next part of the adventure, and I say, help me prepare to run this. And then they'll just have a podcast about the next, you know, the next island we're going to or whatever. And I can just listen to it while I go for my walk. And it's great. I mean, it's a really good way to sort of... And then you can also upload all your documents and then just ask questions about them too, to inside of Notebook LM. I found it to be really helpful. Roxy told me, she sent me a Slack message saying, oh, you showed me this and I'm loving it. It's really great.
+Aella, Delphi, Rhaena: Boom.
+DM: So it's free. You have access to it. I found it to be super useful and fun. And I use it for both D&D and work. Um... So where are we? Okay, so I showed you the picture, because Meriden wasn't here last week. Now I need to find my way back to our recap. Okay. Your experiments revealed that terrifying truth of the golden wildflowers at its base, a field where time itself was broken, aging all who entered to dust in mere seconds. It was a little bit more complicated than that. That's kind of not accurate. With the fate of the cursed centaurs resting on your shoulders, a choice had to be made. with courage befitting a dragon lord delphi stepped forward tying a rope around his waist as a lifeline to his friends he plunged into the temporal chaos for him the world dissolved into a dizzying blur of madly spinning suns and stars for you he simply vanished following the ghostly trail the rest of you braved the field reuniting before a door had mysteriously appeared in the tower's obsidian face. No, actually what happened, it skipped a piece, was that Delphi tried to leave the field of flowers and came back out. And when he came back out, it was a different time of day and the rest of the party was not there.
+Aella, Delphi, Rhaena: okay
+DM: So then he went back inside and decided to go into the tower. And then while that was happening, Jake was waiting outside and was just like, I guess we'll follow him in. Because it had been like 20 or 30 minutes, subjective time for Jake. So the rest of the party goes into the field, and then they see Delphi entering the tower, and they catch up with him. For whatever reason, it left that detail out. Just for grins, I want to see, did it? put it in the quest log at all Um, he cast Delphi cast bless. He tied a rope around himself. Delphi witnessed time become unlord. Delphi appeared in a state of superposition before vanishing entirely. Okay, so it does say in the quest log, after briefly exiting the field to find his companions gone, Delphi re-entered. Ella Estrelles also entered the field, and they saw him enter the tower door. Following him into the temper field, the party was reunited. There we go. the path led not to a monster's lair but to a place far more unsettling a nursery here dozens of children human elf minotaur played amongst the discarded armor and weapons of their former lives their minds wiped clean not quite that's not quite true their bodies de-aged by the tower's cruel mistress they warned you of the flower lady's disappointment with the uninvited guests and urge you to climb to the summit to face her with respect. Your ascent was a journey through wonders and horrors. You passed a museum of ancient beasts and fallen warriors, a chamber humming with the power of a grand summoning portal, and a room of windows that looked out upon other worlds, vistas of heaven, hell, and the starry void in between. Finally, at the tower's peak, you met her, seated upon a carved stone platform with the body of a lioness, the wings of an eagle, and the ancient knowing eyes of a woman was the lotus witch. The magnificent gynosphinx, intrigued by your quest and the presence of a true dragon lord, offered a bargain. She would share her knowledge, but only if you could prove yourselves worthy. And so her game began, a battle of wits with your very identities on the line. Answer three of her four riddles of Bilean history and she would reveal the secrets you seek. Fail and you would join the lost children in the nursery below. your adventures forgotten and your minds returned to infancy. You met her first challenge, correctly naming the cruelest of the dragon lords, the ghostly captain of your own ship, Esther Archelander. You answered her second question, recalling the name of the first and greatest dragon lord, the noble Xander. Two questions down, two correct. The path to victory seemed clear, but now you face her third riddle. When Thylea bore fruit, the sphinx's voice echoes in the chamber. Which two titans sprang forth from a single pit? The air is thick with tension. One wrong answer could spell your doom. The lotus witch watches, her expression unreadable, as you weigh the fate of your quest on the tip of your tongue.
+Aella, Delphi, Rhaena: um
+Astraeus: I remember we rolled to, like, have an idea of which ones that were, but I forget what the rolls specifically were. Or, like, what the things you said were were.
+DM: If everybody else forgot to, we could do that again.
+Aella, Delphi, Rhaena: So,
+Astraeus: you
+Aella, Delphi, Rhaena: I think it was like between... Well, first we sort of thought like Sidon and Litheria like Darius Sidon's sister-wife. And then. Kentymean and somebody else But like, and I thought we only sort of knew about four Titans. Um,
+Astraeus: you you
+DM: Well, the players know about four Titans, but the characters know about other Titans.
+Aella, Delphi, Rhaena: Okay.
+DM: So I told you based on your role what your character would think.
+Astraeus: I remember rolling in, I think I remember I sided in the multi-handed guy. Whose name, Kentamine? Is that Kentamine?
+Aella, Delphi, Rhaena: Yeah.
+DM: But if you guys want, we can do the blind roll over again. And I can, if we don't remember what, it's fine if we want to redo that. And then I'll tell you what you think your characters think based on your blind roll.
+Astraeus: you Sure, I'm down to roll it again. And it's just blind roll. 20 plus 1.
+DM: Okay, just do the... the answer to this question.
+Aella, Delphi, Rhaena: or
+DM: Okay, and I need to not say it out loud. Okay, so don't say it out loud. Okay, I saw what you just got, Jake.
+Astraeus: Yeah, that happened last time.
+Aella, Delphi, Rhaena: you
+Astraeus: Don't say it out loud. Yes.
+Aella, Delphi, Rhaena: All right, here's Delphi.
+Astraeus: Thank you.
+Aella, Delphi, Rhaena: And, hey, I'll end.
+DM: Okay. Reina, can you use this blind roll thingy? Where did we put it? Did we just put it in the... Oh, it's in the upper left-hand corner. You can just click on it.
+Aella, Delphi, Rhaena: Hello.
+Astraeus: Thank you.
+Aella, Delphi, Rhaena: Oh.
+Astraeus: Uh,
+DM: And which, Craig, which character was which? Oh, I can tell because there's a modifier.
+Astraeus: Hello.
+Aella, Delphi, Rhaena: Yep.
+DM: Okay.
+Aella, Delphi, Rhaena: The blind role, which one do it's asking for? Intelligence. Intelligence.
+DM: It should be a history check.
+Aella, Delphi, Rhaena: History or? Which? Intelligence.
+DM: If it won't let you roll a history check, we just need to add your proficiency bonus if you're proficient in history. So is anybody proficient in history that rolled the check? No.
+Aella, Delphi, Rhaena: Nope. That's just intelligence.
+Astraeus: No.
+DM: Okay. And.
+Aella, Delphi, Rhaena: yeah
+DM: Um, So it doesn't seem to work. Let me see. Can I do this? Blind roll. Okay, when I click Blind Roll, Delph is one of the options. Interesting. Okay, well, so the macro seems to not work. How did you guys just do those blind rolls? Did you use the chat to do it? Can you paste the text that you used so that Raina can use it?
+Astraeus: I used the text command. Yeah. Thank you. Let's see. Now, I pre, let's see, can I?
+Aella, Delphi, Rhaena: wow It's like if you type exclamation,
+Astraeus: Yeah, just ignore the dot and use that to get it through.
+Aella, Delphi, Rhaena: Fine. Blindfold.
+Astraeus: And then plus your history modifier.
+Aella, Delphi, Rhaena: like 1d20 plus whatever intelligence What is this?
+DM: Okay, that worked. And nobody has proficiency in history, is that correct?
+Aella, Delphi, Rhaena: uh
+Astraeus: Correct.
+Aella, Delphi, Rhaena: Yeah.
+DM: Okay, so the roles are just with your intelligence modifier and no other modifier Okay, I am going to tell you what each of your characters think
+Aella, Delphi, Rhaena: you
+DM: It's thinking, sorry for the...
+Aella, Delphi, Rhaena: And have we, in the game, have we heard about talk of other titans aside from Thylea, Pentamine, Leucaria, and Cytan?
+DM: I don't recall specifically mentioning other Titans to you, but just out of game, there are a bunch of other Titans. And just because I have not specifically mentioned them to you does not mean that your characters would not know about them, especially if they have history. Okay, here's what Ayala thinks. With the confidence that only Ayala speaks first, It is obvious the first fruit would bear the first Titans. It was the mother goddess, Stylia and her husband, Kentamane, who sprang from the pit together to create all of this. Raina. So I will paste that into the chat so you can read it.
+Aella, Delphi, Rhaena: Okay. yeah
+DM: Let's go to our Discord. And I'll put it into the general.
+Aella, Delphi, Rhaena: Hello.
+DM: That's what Aeola thinks, based on her role. Raina shakes her head, the memory hazy. No, that doesn't sound right. I remember hearing that Sidon was one of them. A powerful, stormy birth. He must have been born alongside his father, the Hundred-Handed. My guess is Sidon and Kentimane. Alright, so that's Raina.
+Aella, Delphi, Rhaena: Oh um
+DM: Astraeus, the poet, delves into the more tragic verses of history. I recall a sadder tale of brothers betrayed. Perhaps it was not a birth, but a downfall that bound them. I believe it was Talius, the god of crafting, and Hergaron, the god of valor, the two brothers who were overthrown by twins. So that's what Astraeus thinks. Delphi closes his eyes for a moment, trying to clear his memory from his studies and travels. No, the others are confusing different legends. The answer lies in the sky, in the constellation of the twins. The stories say six pits bore one Titan each, but from the seventh pit a pair was born, the youngest of Kentamane's children. They were the twin brother and sister who would one day rule together, Sidon and Lutheria. And that's what Delphi thinks. The So that's what your characters think based on their roles. They're a recollection of history.
+Aella, Delphi, Rhaena: Okay.
+Astraeus: Hmm.
+Aella, Delphi, Rhaena: All right, well, that wasn't terribly helpful.
+Astraeus: Hey Unfortunately not.
+DM: I mean, it is definitely the names of the people you need are on in this text here. I'll give you that much.
+Astraeus: Oh yeah, for sure. Oh yeah. you
+Aella, Delphi, Rhaena: you
+DM: And don't ask ChatGPT because it'll tell you the right answer.
+Astraeus: Okay.
+Aella, Delphi, Rhaena: Yeah.
+Astraeus: I think it's Siren and Kintamine.
+Aella, Delphi, Rhaena: Thank you.
+Astraeus: It sounds... Because I don't think it's Idenulatheria.
+Aella, Delphi, Rhaena: But Tentimane is husband to Thaglia.
+Astraeus: Um...
+Aella, Delphi, Rhaena: And I thought that Sidon and Lutharia were like the offspring of those two.
+Astraeus: That...
+Aella, Delphi, Rhaena: because I signed into an area of brother and sister for life that twins
+Astraeus: So that'll do the theory, final answer.
+Aella, Delphi, Rhaena: Ansel Weiss in the sky and the Constellation of the Twins, like, but I wasn't I don't know if we've ever heard if the twins is supposed to be side men with Daria. Maybe we can ask Wow. Jeez. Kyron, Dad. Hey, Kyron. Who does the constellation of the twins depict? Yes.
+Astraeus: you
+DM: Yeah, what is it? Um, let me see if Kyra would know.
+Aella, Delphi, Rhaena: you
+DM: She does not have history on her character sheet, so she's just going to roll an intelligence check. But she's reasonably smart. I'm going to GM roll this so that you cannot see it. Oh, that was wisdom. I mean, can you guys, could you guys see that? I accidentally rolled a wisdom check.
+Aella, Delphi, Rhaena: nope
+Astraeus: Uh, do not see it.
+DM: Okay. Kyra says, I'm pretty sure that was Sidon and Luthoria are the twins in the constellation.
+Aella, Delphi, Rhaena: Yeah.
+DM: And she like messes with, she has a magical wand and she's been sort of playing with it and like, you know, kind of swirling it around like a fidget spinner. The wand has many colors on it. It's a colorful wand.
+Aella, Delphi, Rhaena: you Okay. Yeah, so I'd vote, I'd say, silently, period.
+DM: Does anybody else have an opinion?
+Astraeus: Saddle Etheria, final answer.
+DM: Okay.
+Astraeus: you
+DM: You have answered three of my questions correctly. Would you care to go for a fourth for a bonus? Or will you not tempt fate?
+Aella, Delphi, Rhaena: Ha! Well, what if we get it wrong? What's the consequence?
+DM: You just won't... I will not be pleased. But I will not harm you either. If you get it right, I might give you... I don't know... A favor.
+Aella, Delphi, Rhaena: Yeah, let's ask us the final question.
+DM: All right.
+Aella, Delphi, Rhaena: Bye.
+DM: Lotus Switch. Who created the Murmikis race? Who created the Murmukese race?
+Astraeus: you
+DM: I'll put this in the chat.
+Aella, Delphi, Rhaena: you
+Astraeus: Uh, did we have the encounter the marmite keys?
+DM: You can roll a... History, uh, I, I, you, you can roll a visible history check, the whole party, and I will tell you what you know about the Merman keys, but without telling you the person. Without telling you the answer. Okay. Um.
+Astraeus: Sure. 15. Thank you.
+Aella, Delphi, Rhaena: wow
+DM: The Murma keys... What did everybody else roll?
+Astraeus: 21 there.
+Aella, Delphi, Rhaena: Point one.
+DM: The Murmukese race was a race That was built by one of the Titans.
+Astraeus: you
+DM: They are like bug people. They're like ants. And they live on... There's an island that has a bunch of them on it. And they can be found in other places, too.
+Astraeus: Okay.
+DM: Um, and, uh...
+Astraeus: And a Titan, not a God, for clarification.
+DM: It could have been a god or a titan. And I'm going to give you a little bit more information about them in a second, because a 21 is pretty good.
+Astraeus: . Yeah. Okay.
+Aella, Delphi, Rhaena: you
+DM: It's going real slow. As a student of epic poetry and chronicling history, a roll of 15 would grant Astraeus access to common myths and legends surrounding this mysterious race. He has read accounts describing the Myrmekees as a race of intelligent insect-like humanoids that resemble giant ants with wings. They are known to be industrious and operate with a collective hive mind intelligence. The stories say that the Myrmekees were one of the earliest creations of the Titans, though the specific Titan is not named in most common tales. They were considered a mistake or a folly, as they were incredibly aggressive and expansionist. Legends claim that the Myrmekees were a dire threat to the native races of Thylea, overwhelming the other creatures through their rapid breeding and consumption of resources. The myths agree on their fate. The gods, seeing the danger they posed, imprisoned the entire race on a remote island, now known as Titan's Folly. The island is to be sealed by an impassable magical barrier, and the Myrmekees have not been seen in the wider world for millennia. With a 21, Delphi's brilliant mind and his hazy status as a former dragonlord who lived through that era grant him a much deeper and more specific understanding. He knows everything Astraeus knows, but he can also recall the falling precise near-forgotten details. You recall with certainty that it was Talius, the titan of crafting, who created the Myrmekees. They were intended to be his masterpiece, but their nature proved too aggressive and dangerous for the world. Delphi knows the situation was more complex than a simple failed creation. The Myrmekees' expansion caused a major conflict between the Titans themselves. It was their father, Kentamane of the Hundred Hands, who was forced to intervene personally, gathering the Myrmekees onto one island and sealing it to stop a war between his own children. He remembers that the creation of the Myrmekeids led directly to Taliesin's downfall. As a punishment for his pride and the chaos he unleashed, Kentamain stripped Taliesin of his power, which was then given to Sidon. This was a pivotal event that cemented the dominance of the Titan twins. Most importantly, a roll this high allows Delphi to connect ancient history to a chillin' modern reality. While the legends say all Myrmekeids are imprisoned, his knowledge of Sidon's power and recent events would lead him to a troubling conclusion. He knows that Sidon now has advanced Myrmeches working in the forge of his tower, Praxis.
+Aella, Delphi, Rhaena: well
+DM: This implies that Sidon has found a way to bypass the ancient prison, likely by holding the Mermiquiz... I'm not going to say that. Okay.
+Astraeus: Okay, that's quite a bit of information there. That is...
+DM: Hello. 21 was a good history roll.
+Astraeus: 21's a good history roll for sure. Okay. So we know that it was Talius who actually I was probably like, it probably wasn't Vulcan. So I was like Talius. Cause we just found out about him from this thing. So that was convenient. But no, yeah.
+Aella, Delphi, Rhaena: Yeah.
+DM: I mean, your characters, you know, like, would know about it.
+Astraeus: Yeah. I'm saying I only just learned from my own.
+DM: We just haven't had cause to talk. Like, there's a whole... This book is 500 pages, and there's a crap ton of lore in it. And, you know, you can only do so much exposition to the characters and expect them to pay attention. So...
+Astraeus: Huh. Bye.
+DM: I need to do one other thing. She says, yes, I am very impressed with your knowledge. Now, now that we have played my game and you have succeeded, I am at your disposal. What is it that I can do for you?
+Aella, Delphi, Rhaena: okay
+DM: And let me grab
+Aella, Delphi, Rhaena: Yes, ma'am.
+DM: Quest log chapter 5. Which is Lotus with maps. Where did I put you?
+Aella, Delphi, Rhaena: you
+DM: Oh, it's these two. Okay.
+Aella, Delphi, Rhaena: Okay.
+DM: See you.
+Aella, Delphi, Rhaena: extremely
+DM: It falls in your court party.
+Aella, Delphi, Rhaena: again hey not the same
+Astraeus: Well, I guess I have an epic quest that I could be doing here. I guess I'm looking for a grimoire?
+DM: Let me put that in there.
+Astraeus: Thank you.
+DM: Ah, you seeked. And I put your epic path stuff, so let's look at that. I put it in here.
+Astraeus: Okay. That's why I saw that that was actually super helpful for me because I've actually forgot all about this particular one.
+DM: I put the epic... Yeah. Um...
+Astraeus: Thank you.
+DM: Alright, so... I will ask her about the Grimoire. Let me, I need to copy paste that. Give me one second. Sorry for the delay. Player characters. Delphi, while that is percolating, tell me the question you would like to ask, and I will percolate the answer.
+Aella, Delphi, Rhaena: All right. Well, there are several sort of things I'm interested in. Do we only get like one question each or something? Or can we just sort of like talk with her and ask her things?
+DM: Uh, you'll get, uh, you get a limited number of questions, and some of them you will see, well, she will be about, yeah, you basically have a limited number of questions. Yes.
+Aella, Delphi, Rhaena: Okay. All right. So, um, Um. By the way, how do you prefer to be addressed?
+DM: Everyone calls me the Lotus Witch. My name is not pronounceable with your tongues. You may call me the Lotus Witch.
+Aella, Delphi, Rhaena: Okay. Lotus Witch. We have a couple of dragon eggs that we have found that will hatch in the very near future. and we intend to bond them to ourselves. We have also encountered the king of Mitros, who has a silver dragon as a companion or servant almost. The silver dragon...
+DM: That's Icarus. His name is Icarus.
+Aella, Delphi, Rhaena: Okay. And Icarus, his personality seems that of a very young dragon, but... His body seems that of a... Of a, like, adult dragon. So my question is... And given your... manipulation of time, as is evidenced by the field around your tower, do you possess any way to age a dragon or our two dragons so that they might grow up quickly and be stronger as companions for us?
+DM: Okay, I'm gonna, this is gonna take a minute to percolate, and I've written the whole thing down.
+Aella, Delphi, Rhaena: Yep.
+DM: Okay, that's going to percolate, and I'm going to come back to you, uh... Um... Trying to find it. Okay. Her voice is a dry rasp like stones in the desert winds. The little poet seeks a vessel for his epic. Queen Valis has a fine taste in objectives, if not in husbands. You seek a tome with pages that drink ink, yet are never full, bound in the hide of a beast that never was. A worthy prize for a chronicler of heroes. She shifts her weight, a movement slow and deliberate. I do not have such a thing in my collection. Trinkets like that invite too much attention, but I know who does. The tome you seek rests in the great library on the Isle of Yonder. It is held by the library's master, a tiefling named Condorus, a sycophant of the Mistress of Death. He covets knowledge and objects of power, and he may be willing to part with the grimoire. But be warned, a priest of Lutheria never gives a gift without expecting a much greater one in return. His price will likely be a piece of your story, or your soul. And then she adds, also, the three fates may have such a book, or know where to get one. You could talk to them and ask. Well, these questions take a minute to percolate because it's like using the entire book as a resource. So do you want to ask a follow-up question, Astreias?
+Astraeus: I think that tells me everything I need. I know where to go.
+DM: Okay. There's two places she mentioned. The Isle of Yonder, and I think you guys know where the Isle of Yonder is now, right?
+Astraeus: Yes. Yonder and the Fates. We know where the Isle of Fates is.
+Aella, Delphi, Rhaena: Yeah.
+DM: I think I gave you, or maybe we winnowed it down to two constellations. Could be the Isle of Yonder. Yeah.
+Astraeus: or yonder i think so i don't think we know the exact yonder constellation yet
+DM: Okay, well you you want to ask her?
+Aella, Delphi, Rhaena: The Gigan is the most likely, but we can ask. We can say, does the constellation of the Gigan correspond to the island of Yonder?
+Astraeus: you
+DM: Okay, I'll let that percolate for a second and come back to you, Delphi.
+Aella, Delphi, Rhaena: check
+DM: You are more perceptive than others who have blundered into my presence. You see the king's dragon and you do not see a marvel. You see a flaw. A body of an adult and the mind of a hatchling. Power without wisdom. A dangerous broken tool. That is the result of forcing a vessel to age before its spirit is ready. It is a perversion. I can create, but one I will not. A true bond with a dragon is not forged in an instant. it is tempered over years of shared experience. To rob yourself of that is to create a powerful beast, but not a true companion. Your request to create such a creature I must refuse. It is a foolish path born of mortal impatience. However, she tilts her head a slow deliberate motion. The eggs are on the cusp of life. Time's river already flows swiftly for them. I can encourage the stream. I can ensure they hatch not as helpless Wyrmlings but as young dragons Their minds and bodies aligned Their strength formidable And their bond to you ready to be forged In the fires of your destiny Bring the Eggs here and I will Work my magic on them
+Aella, Delphi, Rhaena: Oh, that would be most agreeable. Thank you, Loom Switch.
+DM: You should also know that I was once a member of the Isle of Time, and I had a disagreement with them and was outcast. So now I have my own little Isle of Time. Since you answered all my questions, you should know that they have great power, and they could come in useful to you. and your adventures.
+Aella, Delphi, Rhaena: They.
+DM: Seek the Isle of Time.
+Aella, Delphi, Rhaena: I have a time, okay. I have time. I'm not sure we've ever heard of that.
+DM: It lies in the forgotten sea.
+Aella, Delphi, Rhaena: Okay.
+DM: You guys have been restricted from going to the Forgotten Sea because you do not have the gear and the Antikythera necessary to navigate it.
+Aella, Delphi, Rhaena: Amen.
+DM: Okay, now let me queue up a follow-up question for you. So she will, when are the dragons supposed to hatch?
+Aella, Delphi, Rhaena: They're supposed to hatch in like a week.
+DM: So here's what she'll do. She's not going to turn them into young dragons for you. But what she will do is if you bring the dragons here, she'll hatch them for you and get them on their way to being young adult dragons. So like halfway between hatchling and young adult. So they're actually useful to you. She'll hatch them and you can have a ceremony where they hatch in front of your eyes. and then they'll be like a I'll make a stat block for an in-between dragon that's like not a hatchling but also not a young adult
+Aella, Delphi, Rhaena: Yeah. Okay. Okay. And then another question I have is,
+DM: You know what dragon it what color dragons you guys have I
+Aella, Delphi, Rhaena: What? I think Reina got like a silver dragon and I think mine is like brass or bronze. I think it's maybe bronze.
+DM: Okay.
+Aella, Delphi, Rhaena: but it's not going to be. try again
+DM: She says, bring the eggs to this chamber. You should know, though, that when you leave this time field, you may be a few days in the past or in the future. It's possible your ship might not be here yet.
+Aella, Delphi, Rhaena: Yeah. Oh. Okay. Understood. All right.
+DM: You'll need to watch the constellations to try to tell what day it is. So somebody will need to roll a survival check to see if you can use the constellations to use them as a chronometer.
+Aella, Delphi, Rhaena: Okay. Thank you. Bye.
+DM: The field, when you exit the field, she'll just tell you this, like, you could move somewhat forward in time or somewhat backward in time from the point of reference that you entered. And that's why when Delphi left the field, all the other players were gone, because he had gone back in time by several days. So when you exit this place, we'll roll dice to determine if you're going forward in time or backward in time and by how much.
+Aella, Delphi, Rhaena: Yeah. So, why have you turned this island's centaurs into giant scorpions?
+DM: I think I know this one. But I'm going to let Okay, I'm going to let that percolate for a minute and go back to what... Okay, the other question that you asked was, yes, the constellation of the Gigan corresponds to the Isle of Yonder. The Isle of Yonder is located in the Cerulean Gulf, is what she answers. Do you have a follow-up question to that one?
+Aella, Delphi, Rhaena: Um,
+DM: Well, the first question is thinking.
+Aella, Delphi, Rhaena: Do you imagine that we are powerful enough currently to combat our foes on the Isle of Yonder?
+DM: And we are now eighth level party or are we seventh level?
+Aella, Delphi, Rhaena: Peace. Peace.
+DM: Party. um Okay, that question is percolating. All right. I cursed those creatures as a punishment for an act of profound ignorance and destruction. When I came to this island seeking knowledge of a living library, a collection of wisdom carved into the trees of the island's forest, the centaur-tribed... had been charged with protecting the forest. Instead of protecting it, they chopped it down into firewood. And because of this inimaginable crime and the reckless destruction of knowledge, I cursed the tribe, causing them to transform into monstrous giant scorpions when they reach adulthood.
+Aella, Delphi, Rhaena: Hmm.
+DM: You want to queue up a follow-up question?
+Aella, Delphi, Rhaena: So doesn't that mean that they will all go extinct eventually, since they'll once they'll all reach adulthood and be gone? Not very young?
+DM: That's thinking, okay.
+Aella, Delphi, Rhaena: so
+DM: The lotus wish lets a slow ancient smile grace her lips. This is to the previous question. Let's a slow ancient smile grace her lips. It does not reach her eyes, which seem to gaze past you, seeing the countless threads of probability that extend from a single moment. And let me show you her picture, because I worked hard on making this. I mean, a couple of different versions of it. It's very difficult to get chimeric creatures to show up with the AI. It cannot make humans that have mixed body parts with other creatures. It's really hard. So I think I like the... It started out really dark, the really dark one, and then I lightened it up some with GIMP, and that's my the one with the lady with like the she has like a egyptian kind of hair thing and she has a vaguely egyptian vibe um and her eyes are really like luminous glowing green that's probably my favorite one um
+Aella, Delphi, Rhaena: Yeah.
+DM: All right, back to her answer to your question. Powerful, she purrs, the word hanging in the air. You have slain beasts and men. You carry enchanted steel and the favor of fledgling gods. By mortal standards, you are indeed powerful. But the Isle of Yonder is not a simple beast to be slain. She shifts on her lion's haunches, a sound like stone grinding on sand. The fortress there is garrisoned by the Order of Sidon, warriors whose fanaticism makes them blind to fear and they are led by the zealot Gaius who believes his destiny is forged by a wrathful god he is predictable but relentless he is not the true danger the true danger is the master of the library the tiefling chondrist he is a priest of Lutheria and a schemer who bargains with powers you do not yet comprehend he does not fight with the strength of his arms but with the cunning of his mind He will see you coming long before you reach the Soar. So are you powerful enough? Strength is a blunt instrument. It can shatter a gate, but it cannot unlock a secret. You could sail there now and throw yourselves against their walls. You might even prevail through a tidal wave of blood and luck. Or you might be utterly annihilated, your names becoming a forgotten footnote in the history that continues without you. She leans forward slightly, her gaze sharp and piercing. Power is more than a sharp blade or a potent spell. True power is knowing where the blade must fall. I seek the past and the present, but there are others who claim to weave the future itself. On the bleak, rain-swept island in this very sea, three ancient sisters sit at their loom. They are the ones mortals call the Fates. They see the knots in the threads of destiny before they are pulled tight. They might show you a weakness in your enemies, or a secret path or a future you desperately wish to avoid, go to the Isle of the Fates and survive an audience with them. If you return with the knowledge they offer, then you will be powerful enough. But be warned, the price for their knowledge is always steep, and they do not suffer fools.
+Aella, Delphi, Rhaena: Yeah.
+DM: All right. Is there a follow-up question I can kick off before we go to the other one?
+Aella, Delphi, Rhaena: Yeah, is Constellation the Bard, does that correspond to the Isle of the Fates?
+DM: Anything else besides that?
+Aella, Delphi, Rhaena: And then about the centaurs here. We have met some young centaurs that we became friendly with. They helped us overcome some of the giant scorpions here. and Seems like they are unaware of their ancestors' folly. And seems like your retribution is completed. And the curse no longer punishes those who committed the original crime. So I would argue that perhaps it's time to... Release the remaining centaurs from the curse. Perhaps with the. Their assurance that they will no longer commit. Any such folly again.
+DM: Okay, go ahead and roll a persuasion check, and Estrella, you're welcome to help if you want.
+Astraeus: Some Bardically Inspired, let's go.
+Aella, Delphi, Rhaena: Yeah.
+Astraeus: .
+Aella, Delphi, Rhaena: All right. Wow.
+DM: Tell me what you got.
+Aella, Delphi, Rhaena: Whoa!
+Astraeus: We do not succeed.
+Aella, Delphi, Rhaena: hello
+DM: Tell me what you got.
+Astraeus: Uh, seven. Four plus three, Bardic.
+Aella, Delphi, Rhaena: or in Frank
+DM: A four and a seven, you said?
+Aella, Delphi, Rhaena: seven total.
+Astraeus: Well,
+DM: Even with the bardic.
+Astraeus: Yeah, even with the bardic.
+Aella, Delphi, Rhaena: I rolled a four. And I have zero charisma.
+Astraeus: And I rolled a three.
+Aella, Delphi, Rhaena: Stray should have been the one trying to convince her. But, oh, well.
+DM: We'll see what she says. All right. So doesn't that mean they'll all go extinct eventually? That they will not bury any young? The Lotus Witch's expression does not change. A faint, almost imperceptible smile might touch her lips, as if you stumbled upon the rule of her game that she was waiting for you to notice. Extinction? No, that would be an end. This is a curse, an eternal lesson, not a final judgment. There has always been an escape for those clever enough to find it. Before the transformation takes them in adulthood, they may form a sacred bond with a mortal partner and leave this island forever. Those who find a partner and flee live out their lives on the world beyond. They bear young, and in time, some of their descendants feel an ancient pull, a need to return here to face the same trial as their ancestors. It is a cycle, a constant test. Can they find wisdom and connection in another, or will they succumb to the ignorance that doomed their forebears? Most fail. They transform, and the warrior monks of Aresia grant them peace in death that they could not find in life. The tribe does not go extinct. Only the ignorant do. Is there a follow-up to this before we get back to the other one?
+Aella, Delphi, Rhaena: Okay. I don't think so.
+DM: All right. All right, I'm going to write something else. One second. Can you look up, did we write down what color the dragon egg is? I'm just writing that down. Let's see.
+Aella, Delphi, Rhaena: It's brass and silver.
+DM: Okay. What have you guys been doing? There's a little dragon that Kyra has been taking care of and acting motherly to, which is unlike her. Do you guys remember that guy's name?
+Aella, Delphi, Rhaena: To not remember what she named it.
+DM: Let me see. Dragon.
+Aella, Delphi, Rhaena: It was also a brass dragon, I think.
+DM: Yeah, I think that's true. Let me look it up. Dargon. Dragon. Um... Oh man, there's too many... That dragon seems a little ornery, though. Like, he got treated... He was hanging out with all the lizard people who are crazy Aesitan worshippers. He's sort of ornery. And you guys are not bonded to him.
+Aella, Delphi, Rhaena: Yeah.
+DM: I'll just look this up later. There is that other bronze dragon Okay, that's going, and we'll be able to do the dragon eggs in a minute. Is the constellation of the bard corresponds to the Isle of the Fates? Yes. The constellation of the bard corresponds to the Isle of the Fates. Question two, a plea for centaurs. The lotus witch's expression does not soften. If anything, a flicker of profound annoyance crosses her ancient features. Her voice loses its melodic undertone, becoming as sharp and cold as obsidian. Your plea is noted, she says, her tone dripping with scorn, and it is dismissed. She looks down upon you as if you were children who had just uttered a profound foolishness. You say their ancestors' folly. It was not folly. It was a crime. They burned a library of living knowledge for firewood. They turned centuries of history to ash out of base ignorance. You see a few pitiable younglings and feel a pang of mortal sentiment. I see a ghost of a thousand stories that can now never be told. You claim my retribution is complete? You who have lived for but a handful of seasons presume to tell me when justice is served? The curse is not merely a punishment. It is a lesson. It teaches a race defined by arrogance that survival depends on humility and reliance on others. The fact that they aided you, that they seek bonds with outsiders, proves only that the curse is working as intended. She lets out a dry, mirthless chuckle. And you offer me their promise? The promise of Mayflies? It is worthless. The curse remains, and that is my will. Do not waste my time with such sentimental drivel again. You have other questions, I presume? Ask them before my patience wears thin.
+Aella, Delphi, Rhaena: Very well, Lotus Reach. I shall not touch on that again. Thank you. Amen.
+DM: So, Reyna, you get a dragon egg, right? It's your dragon egg? The silver one is your dragon egg? Okay. I'm not sure how you would ride. You definitely won't be able to ride it for... I mean, even if it was a big full-sized dragon, I'm not sure how you would ride it.
+Aella, Delphi, Rhaena: Yeah. ... Bye.
+DM: Um, I'm going to see. All right. So what do you, she has basically indicated that you can come back to the tower, um, and bring your dragon eggs and she'll work her magic on them.
+Aella, Delphi, Rhaena: yeah Yes. What else?
+DM: Delphi, you're a human wizard, right? Are you half-elf?
+Aella, Delphi, Rhaena: I'm human. It's like the... It's essentially human, but it was a custom lineage.
+DM: that gave you like night vision.
+Aella, Delphi, Rhaena: 30.
+DM: Yeah, so you're basically a half-elf. Do you want to do anything else before you leave the tower?
+Aella, Delphi, Rhaena: um Sing. There was a... Another like silver dragon egg on the... on our ship. And what's that was sort of like in a some sort of state of suspended animation or something?
+DM: Are you... So, one of the Thanes has a box that he was guarding. Is that the one you're thinking about? I can't. Did somebody say something? It got cut off.
+Aella, Delphi, Rhaena: Yeah, that's the one.
+DM: Yeah, there is a dragon egg, but it is guarded by all of the spirits of people who got sucked into the box that were murdered by Esther Archelander. And In order to get out the dragon egg, you have to deal with all the evil spirits that are trapped inside the... the... like a soul box. So you would need to go either perform some sort of exorcism or allow the creatures to come out of the box and fight them. And you could do that. I could set that up in a few minutes. Or you could ask this lady to see if she knew anything about dealing with the box. Since you guys did answer all four of her questions correctly, you are, you know, she's given you like a bonus.
+Aella, Delphi, Rhaena: Absolutely. okay Yeah. Yeah, I guess I would ask how to deal with that situation without having to fight all the spirits.
+DM: Okay, I'm working on your dragon prompt, so let me... Okay, let me put thing... One second, I need to copy-paste this into the chat, and then I will tell you what she says. Alrighty, game notes. So this was from chapter three, when we got the Ultros. Um, so let me, I have my notes on chapter three in a different place. Chef desktop. Jake, I've been using Clog code, and it runs pretty automatedly. I've been pretty impressed so far. It's been pretty awesome. D&D
+Astraeus: hello
+Aella, Delphi, Rhaena: okay
+DM: Wednesday. Yeah, there it is. Questlaw. Where are you? Sorry, I'm looking for the... I have hundreds of documents in my various D&D folders, and I'm trying to find just the right one. Not that one. There we go. Okay, could you be more specific about the question you want to ask her about the spirit box?
+Aella, Delphi, Rhaena: How do we exercise the spirits in the spirit box so we can retrieve the dragon egg from it?
+DM: Okay. It's thinking. And... All right, let me see if I can make you a nice picture of your dragon hatching, Reina.
+Aella, Delphi, Rhaena: Patching dragons.
+DM: The answer is percolating, so I'll get back to you in a minute. So she will give you an answer, but... Do you guys want to ask anything else besides this question before we wrap up this island?
+Aella, Delphi, Rhaena: Hello. Anybody else?
+Astraeus: Uh, I got the information I'm looking for.
+Aella, Delphi, Rhaena: What? I can't think of anything else, Owen.
+DM: Okay, and you have a bronze dragon, right, Delphi?
+Aella, Delphi, Rhaena: Yeah.
+DM: OK, excellent question. This is a fantastic player-driven problem. uh Okay, that's going. Where did my chat GPT session go? Did I close it? Oh, very nice. Okay, now as to the answer about... the question of the box. You wish to retrieve the egg from the reliquary of sorrows. It is not a simple lock to be picked. Those spirits are not merely a guard. They are a preservation. Their cold, undying rage against Esther Archelander creates a stasis, a necrotic winter that holds the egg timeless. To take the egg is to break that winter. There are three paths before you. She raises a single sharp finger. The first path is for the brute. You may shatter the arcane lock and meet the rage with your steel. Slay every last specter as it emerges from the box. Where the last one is dust, the egg will be yours. But the stasis will be broken, the life within will awaken, and its clock will begin to tick. The second path is for the thief. Be faster than sorrow. Open the box and snatch the prize from its nest of ghosts, and slam the door before the full host can emerge. You will face only a fraction of their wrath, but the result is the same. The egg will be yours, and its time will have begun. She raises a third finger, and her gaze becomes more intense, as if this is the only solution she finds interesting. The third path is for the hero. You do not seek to defeat the spirits, but to release them. They are victims trapped by vengeance, and they do not desire battle. They desire justice. They cry out for their stories to be honored and their murder to be brought to his final rest. Open the box, but instead of drawing your weapons, offer them a promise more powerful than their pain. Perform a rite that gives peace to the unavenged, a paladin's oath to see justice done, a cleric's blessing to guide them to the afterlife, a bard's lament to ensure their sacrifice is never forgotten. If your intent is true, they may grant you the egg and will find their own way from this world. If your words are hollow, their rage will be all the greater. She settles back on her haunches, her part in the explanation complete. The choice, as always, is yours. Will you be a butcher, a thief, or an exorcist? The spirits in the box will be awaiting your answer.
+Aella, Delphi, Rhaena: okay Very good. Well, perhaps we'll return with three dragon eggs then. you I can't think of anything else.
+DM: Okay, well, if you guys go and visit the Fates, you can ask them questions, and they know different kinds of information than she does.
+Aella, Delphi, Rhaena: Yeah.
+DM: But she warned you about the fates, right?
+Astraeus: Yes.
+DM: Okay. They are not friendly. Let's put it that way. That's just...
+Aella, Delphi, Rhaena: Yeah, do you have any advice to how to deal with the things?
+DM: Okay, I will ask her that. Astreias, I think part of your epic path is to go to the Isle of the Fates and recover something there.
+Astraeus: Yes.
+Aella, Delphi, Rhaena: and
+Astraeus: is the actually is vague bsi that's my next step is to go to the fates
+Aella, Delphi, Rhaena: Yeah, that's where we decided to go next from here.
+DM: Oh, wow. That's nice. Okay. I've got some nice stuff to show you. Okay. Um, Party what? Oh, about the fates. That's what you want to know about. She leans forward, her voice dropping to a conspiratorial whisper. You seek advice on how to treat with the weavers of destiny? A wise question. Few are clever enough to ask it before they find their own entrails being measured for a new thread. Listen closely and do not interrupt. The fates are not creature of simple malice like a beast you can slay. They are merchants, and their currency is despair and desire, and they have been in business since the dawn of time. To approach them, you must understand what they are, a coven of ancient hags. Do not go to them with swords drawn. To them, a battle is a dull transaction, and they will end it quickly and painfully. Go to them as supplicants seeking knowledge. They are vain and relish the chance to display their power. Know what you want before you arrive. They will sense your deepest desires, so do not try to hide them. But more importantly, know what you are willing to give. Their price is never simple gold. They will ask for a promise, a memory, or an act that will stain your soul. Be prepared to pay it or walk away. Address the three individually. They are a coven, but they are not one mind. The old one, Granny Morta, finds amusement in mortal suffering. She is doting and ribald. Flatter her grotesque sense of humor. A well-timed dark joke may please her more than any treasure. The angry one, Nona, is resentful and despises beauty. Do not show her anything you are prepared to see ruined. Keep your prized possessions and your most beautiful companion out of her sight. The quiet one, Decima, is bashful and nurses a pathetic desire for affection. A honeyed word may soothe her, but her poison is no less potent. Their power is in their loom, where the threads of your lives are woven. remember that when they weave what they weave cannot be on what they weave can be undone but only by one of them go to them as supplicants not conquerors and pray they find you more useful alive than as a thread in their magical tapestry and i'll paste this into our chat so you can reread it Thank you. That was pretty good.
+Aella, Delphi, Rhaena: Greetings from
+DM: Okay, so that is now in the chat, just in case you guys want to reference it. But it'll also probably show up in our quest log too, since I read it out to you. Okay. All right, I'm still working on making your pictures, Party. What are you going to do with, as far as... dealing with this other box that has the dragon in it.
+Aella, Delphi, Rhaena: Um, let's see. I think we're ready to head back to the ship then to grab the dragon eggs. So while they're... We should open the box and see if we can convince the spirits to... to be sued I think Estrella should write and sing of their... write them a tale. Into a tale.
+DM: Okay, party. The...
+Aella, Delphi, Rhaena: oh
+DM: Lotus Witch bids you to come back to her after you visit your ship. I'm not going to have us go back down through the tower, because I never got the teleportation stuff set up. I hope that's okay with everybody, because I didn't figure out where we were going to use it. So you are just able to make your way down through the tower all the way to the exit. But when you exit the field, you're going to need to roll some dice. to determine what day it is.
+Aella, Delphi, Rhaena: Yeah.
+Astraeus: Sure.
+Aella, Delphi, Rhaena: again
+Astraeus: Thank you. .
+DM: All the children ask you how your meeting with the Lotus Witch went.
+Astraeus: It was fruitful.
+DM: They're surprised that you are not one of them.
+Astraeus: Thank you.
+DM: Okay. Everybody, please roll art. You guys can individually roll. It's up to you. Um...
+Astraeus: What are we, what dice?
+DM: It's going to be D6s. And I want... We need a total of...
+Astraeus: Thank you. .
+DM: 86
+Astraeus: Eight d6.
+Aella, Delphi, Rhaena: please
+Astraeus: So I just roll one for myself then, right?
+DM: Roll two for you. Everybody just roll two d6.
+Astraeus: Okay. Wow. Okay.
+DM: Okay, can you guys tell me what you got?
+Aella, Delphi, Rhaena: Okay.
+DM: Okay, so the
+Astraeus: you
+Aella, Delphi, Rhaena: Thank you.
+DM: okay All right, players, as you're inside of the field of flowers and exiting out of it, you exit out of the field. And what looked like it was time going forward and backward and in this random direction, you have exited the field. And now it is night. And you can hear the crickets chirping. and you are outside the field of flowers and you can see the stars and the moon overhead
+Aella, Delphi, Rhaena: All right. I think we should also try and go back to the young centaurs and see if we can, see if they want to come with us. Break their curse. The curse on them.
+DM: Uh, she explained that you have to do like a bonding ritual with them in order to, in order for them to leave, you have to bond with them, which is basically like marrying them. So be sure that's what you want to do. And we're going to accumulate so many followers that you're going to just have to pick... I'll let you pick two companions to bring with you. And Kyra does not have to be one of... It could be Kyra and so-and-so, but we can't have an army of tokens just because it's completely unmanageable. So I'll let you pick two companions to bring with the party. And one of those right now is Kyra.
+Aella, Delphi, Rhaena: Yeah. Shit. Yeah.
+DM: I did give Kyra her mischief wand, though, that she uses.
+Aella, Delphi, Rhaena: again
+DM: You should know that in a fight, if you bring, for example, Pythor, he will bring his drinking problem with him.
+Aella, Delphi, Rhaena: All right. Okay.
+DM: Anyways, you guys have meant... You guys stepped outside of the field of flowers, and you are now...
+Astraeus: That's half the fun.
+DM: Back into the real world. And you can roll a navigation, or you can roll a survival check, or if you have some other way to do constellation stuff, you may roll it now.
+Aella, Delphi, Rhaena: Do we have the Antiquit there with us?
+DM: It's up to you. You could have brought it or not. It's up to you.
+Aella, Delphi, Rhaena: yeah Uh, I think it probably would have left it on the ship.
+DM: Probably.
+Astraeus: Well, I got a roll of eight, so I probably don't know where I'm at. Or when I'm at, I guess.
+Aella, Delphi, Rhaena: Survival. Hello guys. Holy moly. Welcome. Ooh, an advent from my ally.
+DM: A.L. I got an 11.
+Aella, Delphi, Rhaena: Yeah.
+DM: Well, Ayala will tell you we're at least in the same month that we left in. I'm not sure I can tell you much more than that.
+Aella, Delphi, Rhaena: E Okay. All right, well, let's head back to the bay. the shore
+DM: Alright, party, you're able to sail your way, or you can find your dinghy, or you can go to talk with the centaurs if you want, or you can bypass that. Um...
+Astraeus: I'm looking to sneak out.
+DM: That's fine. All right, you are able to sail your dinghy back to the ship.
+Aella, Delphi, Rhaena: Yeah. okay
+DM: And I need to look at the calendar to see what day it is. And our Discord. Documents. Calendar, here we go. All right, so you sail forward to the ship. And you see the crew. Is Makaira with the crew, or did she stay on the island of the Amazons?
+Aella, Delphi, Rhaena: I think she stayed. Yeah.
+Astraeus: I think she was left behind, right? To, like...
+DM: I think she stayed. So maybe Pythor would... He's got a big cup of wine that he's sloshing over. Hey, where did you guys go? I was worried about you. I thought you might be dead in there. You've been gone for six days.
+Astraeus: Uh...
+Aella, Delphi, Rhaena: Six days. Oh, wow.
+Astraeus: We got trapped in a time warp-y thing. you
+Aella, Delphi, Rhaena: Don't count us out yet. We had an encounter with the Lotus Witch, who we managed to get some beneficial information from, and she has agreed to help us with hashing our ground.
+DM: Oh, that sounds really useful. You mind if I come along and watch? It's been a while since I've seen a dragon egg hatch.
+Aella, Delphi, Rhaena: Um...
+Astraeus: Sure, why not.
+Aella, Delphi, Rhaena: You may come along, however. Cannot drink while we're away from the ship.
+DM: Uh, okay. I'll, uh... I'll leave the... I'll leave the wine jug here. And he takes a final swig of it, getting ready. Um...
+Aella, Delphi, Rhaena: Yes, but first we need to go see if we can deal with this stasis box thing that is below Dex. And deal with lots of angry spirits of crewmen that were trapped there by Esther Erklander.
+DM: okay here's what i need to paste what the lady said into the chat give me one second um Where did I put this? Okay, so the party goes back to the boat and Are you going to go talk to the navigator, Metron?
+Aella, Delphi, Rhaena: Yeah, we feel like the keeper of the box, kind of.
+DM: Yes, and he was the one who you made the deal with that, like... That he was like, we need to protect this. There's something very valuable in it. Maybe he even mentioned there's a dragon. I don't know how you found out about that.
+Aella, Delphi, Rhaena: Okay. I mean, We do know it was a dragon egg, so he must have been the one to tell us. Yeah, it's good to talk to him.
+DM: Okay, he's in the back of the boat in his usual haunt.
+Aella, Delphi, Rhaena: wrong
+DM: Are you guys able to control your characters?
+Astraeus: Uh-huh.
+DM: He is at his desk looking over his charts and star charts, and he's got his astrolab out, and he looks up and he says, Oh, we had thought the worst might have happened to you.
+Astraeus: you
+DM: It's been six days since you left the ship, and we thought you might be done for. But I'm pleased to see that you're back here and alive.
+Aella, Delphi, Rhaena: We're pleased to be back and see you as well.
+DM: Wow.
+Aella, Delphi, Rhaena: So, Metron, let us talk about this magic lockbox here that holds the spirits of your shipmates.
+DM: Let me show you what that I just happened to make a lockbox image for this just recently So I will show it to you Because the other party is doing this part of the adventure right now It's in discord it is in here Here is what the box looks like. I have to save it. Oh. Let's see if I can just copy the link. Copy image. And then... Paste it. Can I paste it here? Nope, can't do that. Um... Sorry, I'm trying to... I can't paste the image directly into the game. So here we go. Let's do this. You guys see the big, huge box?
+Aella, Delphi, Rhaena: you Well, Yeah. Okay, yeah.
+DM: And now my game is frozen. Okay, so let me refresh the page. You can see wisps of like bluish smoke coming out of it. Now where did it go? Did it get deleted?
+Aella, Delphi, Rhaena: Oh yeah!
+DM: Okay, there we go. It actually placed it. There you go. Here's the box. Can you guys see it?
+Aella, Delphi, Rhaena: in
+DM: All right. It's a glowing, ornate, locked box.
+Aella, Delphi, Rhaena: Metron. We met a being known as the Lotus Witch, who essentially controls this island. And she told us how to potentially deal with this box here. Maybe we can help the spirits who have been trapped inside by Esther Artlander to finally rest.
+DM: thinking, sorry. Metron's ghostly form solidifies slightly as he listens, his translucent head tilting with interest. The news that you've consulted with a being as ancient and powerful as the Lotus Witch seems to command his respect. A long weary sigh escapes him, a sound like a faint, distant wind. The Lotus Witch? So you sought counsel from one who was old when this world was young. She is wise, though her methods are harsh. If she believes there is a path to peace for those poor souls, then there must be. He looks from Raina's determined face to Delphi's thoughtful expression and then to Estrella's poised demeanor. She speaks the truth. Their rage is a cage built of sorrow. I have held the key for centuries, but I never knew how to turn it. I only knew how to contain them, but you are different. You're not conquerors like Estor was. To give them peace is the only true way to free them without staining this vessel further with violence. They were Gygans who died defending their homes, Amazons who fought for their queen, and centaurs who ran free on the steps. They do not need to be defeated again. They need to be honored. Perform your rites. Let the paladin's oath promised them justice. They were denied. Let the cleric's blessing guide their souls from the darkness. Let the bard's song tell the story of their sacrifice so that they are not forgotten. Do this and perhaps their rage will be quiet. Their long watch will be over. He gestures a translucent hand toward the box. When you are ready, I will not stand in your way. Open the box and show them the honor that my captain denied them. Free them and the egg will be yours. What approach are you going to take, party? While I try to recover all the pictures of this stuff.
+Aella, Delphi, Rhaena: We will honor their memories.
+DM: You will need to perform a ritual to put their souls to rest.
+Aella, Delphi, Rhaena: Oh, yeah. So, Delphi's a cleric. So, he can perform a little... I don't know, whatever kind of rate. say a prayer and then Seuss.
+DM: You're going... You will take this box up to the deck and perform the ritual under the moonlight.
+Aella, Delphi, Rhaena: Oh, okay. very well We shall. Pythor came and she rigged me
+DM: Each person in the party will need to play a role to aid in putting these poor souls to rest.
+Aella, Delphi, Rhaena: So we have to come up with the rules that we're trying to play.
+DM: Yeah, why don't you come up with some suggestions? I made some material for this that I am copying over from my other game so that we can see it in this game. And it's a tedious process to copy items from one thing to another, but I'm going to see if I can do it real quick. So I have these guys in... Um, Okay, I know exactly where they are. Okay, so I'll just copy over this. We're going to undo that. Yeah, and go ahead while I'm doing this, I'm copying these creatures over, go ahead and suggest how you could do a ritual to free their souls under the moonlight on the deck of the Ultros. Feel free to grab, I gave you that website with all of our quest history on it, and you can copy paste a lot of that into chat GPT or whatever, or you can come up with your own thing. But that's an easy way to get some interesting ideas really quickly. I'm going to be copying these tokens over so we can use them. We're going to copy them onto series.
+Aella, Delphi, Rhaena: Bye.
+DM: Yep. Eat. Okay, there's that one. Uh... There we go. I think I got all of them. All right. Now let's check back on here and see. Can it copy it? Okay, it did copy it. Let's go. Alright. All right, just going to copy paste all these guys.
+Aella, Delphi, Rhaena: set
+DM: They found a nice friendly owl in this boat. And they were like, why is there an owl in this boat? And I said, I guess it was just nesting here. I don't know why there was an owl in this boat.
+Aella, Delphi, Rhaena: Thank you.
+DM: All right.
+Aella, Delphi, Rhaena: but
+DM: there we go everybody's character should be here i made a nice little picture of this drummer lady
+Aella, Delphi, Rhaena: Okay. Okay, are we going to go up to the main deck?
+DM: Uh, yes. Um, and I'm going to... I will put you on the main deck here in one second. And we're going to bring that box up with us. Who do you want to help you in doing this ritual?
+Aella, Delphi, Rhaena: I don't know. I don't know. I don't know.
+DM: Okay.
+Aella, Delphi, Rhaena: She is a bard as well.
+DM: Okay. Every one of you will need to use your special abilities in this ritual.
+Aella, Delphi, Rhaena: Dan.
+DM: Kyra will sing. Um, she sets up some incense and lights it all over the deck around in four corners around the box. And, um, Metron stands up there and says, let me know when you want me to open this, the lid to this, I'll unlock it.
+Aella, Delphi, Rhaena: Right.
+DM: Uh. uh Where do you want to place the box, Party?
+Aella, Delphi, Rhaena: Let's place it near the main mass.
+DM: So like right here.
+Aella, Delphi, Rhaena: Yeah.
+DM: Okay, you can see like the blue, it's not exactly smoke, but it's like blue wisps are coming out of it. Kyra begins singing her song, which is like a sad lullaby for the dead. The deck of the ghost ship is silent, save for the gentle lapping water of the nether seas, black water against the hull. The specter crewmen pause in their duties, and their translucent forms watch you with unreadable stillness. Under the eerie light of the astral sky, you notice the ornate spirit box in the center of the deck. Metron's ghost gives a slow, solemn nod. Are you guys ready to open the box?
+Aella, Delphi, Rhaena: Yes, let's go.
+DM: As you open the box, a wave of profound cold and sorrow washes over the ship. A cacophony of silent screams and hateful whispers fills your minds. Swirling within the box is a vortex of spectral energy, the tormented faces of Gygans, Centaurs, and Amazons flashing within the mist. The rage is a palpable force threatening to erupt into violence. Before the spirits can fully manifest their rage, Kaira steps forward, her voice usually full of mirth and mischief, and is now low and mournful. She begins to sing a song in the ancient tongue of the dragons. Kaira's song is not one of battle or a glory, but a divine lament for the lost. The melody is heartbreakingly beautiful, and it speaks of ancient forests turned to ash, of broken oaths, and of the sorrow of the gods themselves.
+Aella, Delphi, Rhaena: That was.
+DM: She has opened a path for you, turning their rage into sorrow, and now you must guide them to peace. The ritual is now ready for the players to perform their part. Um... Astraeus, you will go first. Kyra has given the spirits a voice for their grief, but you must make them a promise for their stories will not be forgotten.
+Astraeus: This is a performance role or?
+DM: Yes, you can step forward and take a melody of Kyra's Lament on your own instrument. You can weave new words into the song, naming the peoples who are lost, the stone-shaping Gygans, the proud Amazons of Old Themis, and the free centaurs of the steppes. You're singing a sad song and using epic poetry to acknowledge their lives and promise that their sacrifice will be recorded in his great work, assuring they are remembered as the victims of a tyrant, not forgotten souls. Go ahead and roll your performance check.
+Astraeus: Mm-hmm. 23.
+DM: Okay, well, describe the melody. It's very beautiful. And you can see a bunch of different... Undead. Oops, let me put him over here. bunch of undead Amazon's march out from the box and like are given life Are not life exactly, but they are given form let's say and you see a whole heart host of them march out of this box and sort of flutter up into the heavens up and away and they they sort of coalesce and merge with the moonlight out of sight and Next? Who wants to go next?
+Aella, Delphi, Rhaena: Delphi will go next. Delphi steps up to the box and says, Oh, great Zeus, please bless these poor souls who were wronged by the Mr. Arcalander and made to spend eternity
+DM: Estor Arcalander.
+Aella, Delphi, Rhaena: filled in this box. Guide them to the heavens where they may peace, so that they no longer suffer such torment for eternity. And you, Zeus, who know the lord of storms, can grant this to them. Make it be so.
+DM: Okay. Okay, so you could roll a wisdom religion check, or if you have another idea of a more appropriate way to do that, I would probably allow it. I think wisdom is usually intelligence, but we're combining... Do you have a religion?
+Aella, Delphi, Rhaena: Hi. Now, I only have Arcana, Investigation, Perception, and Stealth.
+DM: Okay, well, you need to roll some sort of wisdom-based skill or check to see how well your right has gone off.
+Aella, Delphi, Rhaena: with the holidays. Yeah.
+DM: It could just be a wisdom check, or if you have another...
+Aella, Delphi, Rhaena: I mean, I think that'll be it. And I'll cast guidance on myself too.
+DM: Okay.
+Aella, Delphi, Rhaena: Oh, there we go.
+DM: Okay, wow.
+Aella, Delphi, Rhaena: 12
+DM: Alright, so you see a bunch of centaurs come leaping out of the box. This one has his head severed. I was amazed that I was able to get this image. It was very difficult to make. But there are other ones missing other body parts. And they leap out of the box and they trot around the deck. But gradually their faces seem more peaceful. and then they trot up to the place where the moonlight is hitting the deck the strongest and they just sort of like shimmer and and gradually turn transparent and vanish in the moonlight. All right, that leaves Reyna and Aella. I can tell you to do something, or you can use your imagination to do something.
+Aella, Delphi, Rhaena: um and you just tell me to do something come on
+DM: Yeah. I guess it didn't give me a thing for you, Raina, for some reason, so I'm having to make it. thinking Okay. When did you guys learn about Astar when you finally defeated him?
+Aella, Delphi, Rhaena: Are you looking for something specific or?
+DM: Anything? Yeah, did you remember anything about Estor after he was defeated?
+Aella, Delphi, Rhaena: Like, after we defeated him on the boat?
+DM: Yes.
+Aella, Delphi, Rhaena: Um. you Well, he was going to, like, he wanted to make a deal with us to, like, captain the ship. Um, And we didn't want to do that.
+DM: Okay, here's what Reyna can do. You can present a piece of evidence if one exists, perhaps a fragment of Esther's ghostly essence, or simply the authority of her word as the one who defeated him. Do you guys remember who landed the killing blow on Esther Arklander?
+Astraeus: Thank you.
+DM: Was it Raina?
+Aella, Delphi, Rhaena: All right.
+Astraeus: .
+DM: And then she will condemn Astar on behalf of the very order he shammed, since you are the order of the Dragonlord's paladin, so you have some authority there. Officially casting him out and declaring his legacy to be one of cowardice and betrayal. She will then offer the spirits their final release, assuring them that their murderer is gone and their memory will now be honored. And in order to do this, she will need to roll a charisma persuasion check. And because she is speaking the absolute truth and is uniquely qualified as both one who defeated their tormentor and as the haunted one, she makes this check with advantage. and here's what it here's the dialogue it has you saying you don't i'll read it if you don't want to um
+Aella, Delphi, Rhaena: Read it. I'll read it.
+DM: Okay, I will paste it into the chat. and roll your check.
+Aella, Delphi, Rhaena: okay uh spirits of the fallen listen to me i am reina a paladin of the dragon lord's oath and i am the one who is haunted i know the torment of being an unremembered soul your long watch is over the man who murdered you the traitor dragon lord esther arklander has been vanquished. We faced him on this very deck. We shattered his ghostly form and broke his he is defeated. As the paladin of the order he shamed, I declare his name Anathema? Anathema. Anathema. His legacy is Thank you.
+DM: Anathema.
+Aella, Delphi, Rhaena: Well, one of honor, we will carry your story. We will ensure you are not killed. Your murderer has been brought to justice. You are free. Go now and find your peace.
+DM: Okay, that's good. Now roll your, what did it say? Persuasion with advantage? Is that what it said? Reyna must make a charisma persuasion check. with advantage.
+Aella, Delphi, Rhaena: Yeah.
+DM: Okay, Raina, you have, like, really given a stirring speech, and these giant Gigan warriors are coming out of this area, some of them with their arms hacked off and their body parts chopped off. They look into your eyes as you make this solemn promise, and they just sort of gradually fade into the dusk, into the moonlight. They seem like there's a... There's a... They have a look of peace on their face after being trapped in here, feeling nothing but anger and hatred and wanting revenge. There's one final character, and that is... Ayala. And Aella, what you need to do is...
+Aella, Delphi, Rhaena: Yeah.
+DM: The spirits within the box are warriors who died a dishonorable death, betrayed and unmourned. Aeola, as a fellow warrior and exiled Amazon, can offer them the martial respect they were denied. Aeola can draw her copus or chakram, not in a threatening way, but in a formal warrior salute. She can speak to the spirits directly, especially the Amazons, acknowledging them as sisters in arms. As a ranger, she can call upon the ancient laws of the hunt and the cycle of life and death, vowing to act as their guardian in this final journey to stand, vigil, and ensure their passage to the afterlife is safe from further dishonor. She will roll a wisdom survival check to present her connection to the natural cycle and her solemn duty as the guardian of that passage. So Aella, say a few words and roll your skill check.
+Aella, Delphi, Rhaena: Okay. Hey, Alex.
+DM: And you could have been talking to the undead Amazon warriors because they're more your style.
+Aella, Delphi, Rhaena: So she lets out an Amazon battle cry. Says, ancient warriors... by Esther Arklander. Come forth, your vengeance at hand. Call upon the ancient ways of nature to help see you to the afterlife where you shall rest eternity and be granted the the just fate that you always deserved, and that is peace and knowledge that your enemy, ancient enemy, has been defeated, and I shall stand watch as you pass to your final resting place. All right. Was it survival? No survival. um Maybe she needs a little bardic inspiration.
+DM: That's what bards do. Mastrayus?
+Astraeus: Yep, I'm rolling my dice. Thank you.
+Aella, Delphi, Rhaena: That's pretty good.
+Astraeus: That's five.
+Aella, Delphi, Rhaena: A little musical accompaniment.
+DM: All right, what'd you get?
+Aella, Delphi, Rhaena: 17.
+DM: Alright, that's good enough. The spirits, the Amazon warriors, salute Aela as she honors them with her warrior's pride. And they march off into the moonlight, the burden of their existence being lifted. You have purged the box of all the spirits. and now it is safe to look inside.
+Aella, Delphi, Rhaena: All right. Bye, everyone.
+DM: And there might be... Let me ask if there's any other loot in here. Metron hands over the key to the... There's like... I guess maybe there's two locks. I don't know if there's an inner lock and an outer lock. But he asks you if you're ready to open it.
+Aella, Delphi, Rhaena: I thought it was open already, but if it wasn't, then we are ready.
+DM: Okay, he opens the inner part of the box, and here's what you see. Thank you. Give it a second. With the spirits pacified and their sorrowful energy dissipated into the moonlight, the oppressive cold lifts from the deck of the Ultros. A profound silence settles over the ship. You gather around the ornate box, its lid open to the starry otherworldly sky of the Nether Sea. Here's what the party sees inside. The interior of the box is lined with faded ancient silk, now covered in a fine silvery dust, the only remnant of the souls who were imprisoned within for centuries. Nestled in the shimmering dust is a dragon egg. It is larger than a war helmet, requiring two hands to lift, and its surface is as flawless as opalescent silver like polished moonlight. For a moment, it is just a beautiful still object, cold to the touch. Then, as if awakened by the sudden absence of the spirit's sorrow, a soft, warm pulse of golden light starts to glow around the egg. The egg radiates palpable living warmth suddenly. Reina, your paladin sense is tingling, you can feel the life spark within, no longer dormant but actively stirring after a slumber that has lasted for ages. And this is what you guys see. I made a nice picture of it.
+Aella, Delphi, Rhaena: Thank you. oh
+DM: There is the glowing cell. And even like the chest even looks the same. Isn't that cool?
+Aella, Delphi, Rhaena: me I start.
+DM: Okay, are you ready to go back to the island? You can, it's in, you know, it's like 9 o'clock at night, but... Yeah, it means nothing to the island.
+Aella, Delphi, Rhaena: That means nothing.
+Astraeus: Yeah.
+Aella, Delphi, Rhaena: Yeah, let's go.
+DM: Oh, did you, would you have had anything delivered to the ship before?
+Aella, Delphi, Rhaena: Oh, sorry.
+DM: I don't see any delivers pending. I gotta run to the bathroom real quick. You can make your way back to the island and sail. If you should have had some deliveries pending, you could get them. But I don't see any on the map. Or I don't see any on the...
+Astraeus: Thank you.
+Aella, Delphi, Rhaena: So on the 29th, we had sent off like the change.
+DM: I got to pee. I'll come back.
+Aella, Delphi, Rhaena: Good. Sure.
+DM: Okay. I needed some popcorn. Um... You find the dragon eggs. How are you going to carry them? You have three of them. How do you guys can take the dinghy back to the shore? How are you going to carry them?
+Aella, Delphi, Rhaena: We'll like wrap them up in some cloth and put them in a backpack.
+DM: Okay?
+Aella, Delphi, Rhaena: Each person carries their own egg. Maybe we can put them in the chariot thing.
+DM: Okay. You could make some sort of sling for the chariot and, like, make a little nest in the chariot.
+Aella, Delphi, Rhaena: And that's probably a good place to stop.
+DM: What time is it? Okay, so are you guys... You're going to go back to the aisle... The turtle aisle, I assume, with the scorpion tail in tow?
+Astraeus: Thank you. Yes.
+DM: Um, you guys really, so you guys have two silver dragon eggs and one brass or bronze dragon egg?
+Aella, Delphi, Rhaena: Press.
+DM: Okay, so I'm going to write down a nice little ritual for you guys to read to you when you come back. And you'll have three... Let's look at the stat block for... If we look up young... Strat. Silver. It is a CR 9 creature, yeah. So it is going to be... The creature I give you will be in between a Wyrmling and a Young Silver Dragon. What's the Wyrmling look like? What did you guys do with that egg of the weaver? Did you sell it?
+Astraeus: Uh... Didn't we... Did we? I thought we gave it to the dude on the island. To Turtle Island. Didn't we not?
+Aella, Delphi, Rhaena: Thank you.
+DM: Oh, did you?
+Aella, Delphi, Rhaena: Hmm.
+Astraeus: i think we i i know we were contemplating selling it to him but i forget if we actually did
+DM: Can I show this to you?
+Aella, Delphi, Rhaena: uh
+Astraeus: Hmm?
+DM: Is there a way to show the players this stat block? Brit. Silver dragon wormling. Let's see. And then how do I show this to players? I guess I need to go here. So you learned about there's an isle of time. that exists in the big forgotten sea, which has more powerful, uh, Sphinxes on it.
+Aella, Delphi, Rhaena: Yeah.
+DM: Okay, so what's the difference between, what's halfway between? So the Wyrmling is CR2, and the Young Silver is CR9, so it'll be about halfway in between.
+Aella, Delphi, Rhaena: all
+DM: And how big is the young silver dragon?
+Aella, Delphi, Rhaena: hello
+DM: It is large. I'll have to think about whether I want to let you ride it or not. You might need to let it grow up a little bit more before you can...
+Aella, Delphi, Rhaena: Yeah.
+DM: Fried on it. Okay. Well, I hope everybody has a nice weekend. And I'll talk to you guys on Tuesday evening for me.
+Aella, Delphi, Rhaena: Yep, alright. We'll see you.

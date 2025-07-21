@@ -3,16 +3,19 @@
 ## Astraeus
 
 ![Astraeus - Option 1](astreus1.webp)
+<!--
 ![Astraeus - Option 2](astreus2.webp)
 ![Astraeus - Option 4](astreus4.webp)
+-->
 An Aurae (fey race) multiclass College of Epic Poetry Bard (6) and Hexblade Warlock with high
 charisma (20) and the "Curious One" epic path. Wields bardic inspiration (d8), dissonant whispers,
 vicious mockery, eldritch blast, and healing magic. Carries a light crossbow, daggers, and the
 enchanted Shortbow of Cupid. Has natural abilities including Enthralling Beauty and Aurae Ancestry.
 Master of persuasion and performance with Jack of All Trades allowing him to add half his
 proficiency bonus to any ability check. Able to cast ritual spells and inspire allies with powerful
-bardic magic that can be used in combat. Epic Path: The Curious One. See @Running-The Curious-One
-Epic-Path.md @Running_the_Epic_Paths.md
+bardic magic that can be used in combat. 
+
+Epic Path: The Curious One. 
 
 #
 
@@ -26,8 +29,9 @@ Divinity abilities including Destructive Wrath and Turn Undead. Carries magical 
 the Shield of Volkan, Scepter of King Driptongue, and Crown of Dragonlords. His personality combines
 curiosity about his new surroundings ("I'm fascinated by the beauty and wonder of this new land")
 with connection to foreign traditions ("I honor my deities through practices that are foreign to
-this land"). Has darkvision and the Resilient (Con) feat. Epic Path: The Vanished One. See
-@Running-the-Vanished-One.md @Running_the_Epic_Paths.md
+this land"). Has darkvision and the Resilient (Con) feat. 
+
+Epic Path: The Vanished One. 
 
 #
 
@@ -42,8 +46,9 @@ magical abilities from her Amazonian heritage. Proud and aristocratic in demeano
 "above the unwashed masses," yet seeks to be recognized as a "hero of the people." Her fighting
 style focuses on archery and thrown weapons, enhanced by sharpshooter and chakram expert feats.
 Equipment includes a Scarab of Protection, fine studded leather armor, and various weapons including
-additional chakrams and kopis blades. Epic Path: The Exile. See @Running-the-Exile-Epic-Path.md
-@Running_the_Epic_Paths.md
+additional chakrams and kopis blades. 
+
+Epic Path: The Exile. 
 
 #
 
@@ -58,20 +63,6 @@ including Lay on Hands, Divine Sense, and Divine Health. Has a pseudodragon fami
 personality is defined by her monster-hunting purpose: "I kill monsters to make the world a safer
 place, and to exorcise my own demons" and her secretive nature: "I expect danger around every
 corner. I don't talk about the thing that torments me. I'd rather not burden others with my curse."
-Epic Path: The Haunted One. See @Running_the_Epic_Paths.md
 
-#
+Epic Path: The Haunted One.
 
-## CAMPAIGN SPECIFICS
-
-The party travels aboard the legendary ship **Ultros** , once commanded by the ghostly captain Estor
-Arkelander, now serving as their vessel.
-The heroes are working to prevent war by renewing the **Oath of Peace** before it expires in
-approximately 60 days. **Queen Vallus** , the goddess of wisdom, has provided the party with the
- **Antikythera** , an ancient navigational device that guides their journey through treacherous
-waters.
-They seek a **brass dragon egg** rumored to be on Fire Island, as well as **fire snake eggs** that
-could be traded for valuable materials.*The party must confront **Sidon** in his tower at Praxis
-and **Lutheria** on her throne in the Nether Sea to renew the Oath of Peace.The **Axe of Xander** is
-a powerful weapon in their possession that deals additional damage against Titans and giants.*A
-character named **Kyra** travels with the party, recording their adventures.

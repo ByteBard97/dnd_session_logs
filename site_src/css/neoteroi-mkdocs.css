@@ -1,0 +1,132 @@
+/* Neoteroi MkDocs CSS for D&D themed enhancements */
+
+/* Cards styling for better D&D aesthetic */
+.nt-cards {
+  display: grid;
+  grid-gap: 1rem;
+  margin: 2rem 0;
+}
+
+.nt-cards.nt-grid.cols-1 { grid-template-columns: 1fr; }
+.nt-cards.nt-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.nt-cards.nt-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.nt-cards.nt-grid.cols-4 { grid-template-columns: repeat(4, 1fr); }
+.nt-cards.nt-grid.cols-5 { grid-template-columns: repeat(5, 1fr); }
+.nt-cards.nt-grid.cols-6 { grid-template-columns: repeat(6, 1fr); }
+
+.nt-card {
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nt-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-color: var(--md-primary-fg-color);
+}
+
+.nt-card-content {
+  padding: 1.5rem;
+}
+
+.nt-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--md-primary-fg-color);
+}
+
+.nt-card img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* D&D specific card styling */
+.character-card {
+  border-left: 4px solid var(--md-accent-fg-color);
+}
+
+.npc-card {
+  border-left: 4px solid #ff6b6b;
+}
+
+.location-card {
+  border-left: 4px solid #4ecdc4;
+}
+
+/* Timeline styling for session progression */
+.nt-timeline {
+  margin: 2rem 0;
+}
+
+.nt-timeline-item {
+  border-left: 2px solid var(--md-primary-fg-color);
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.nt-timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--md-primary-fg-color);
+}
+
+.nt-timeline-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+  margin-bottom: 0.5rem;
+}
+
+.nt-timeline-content {
+  color: var(--md-default-fg-color--light);
+}
+
+/* Special styling for different timeline events */
+.timeline-combat::before {
+  background: #ff4757;
+}
+
+.timeline-social::before {
+  background: #3742fa;
+}
+
+.timeline-exploration::before {
+  background: #2ed573;
+}
+
+.timeline-mystery::before {
+  background: #a55eea;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nt-cards.nt-grid.cols-3,
+  .nt-cards.nt-grid.cols-4,
+  .nt-cards.nt-grid.cols-5,
+  .nt-cards.nt-grid.cols-6 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .nt-card-content {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .nt-cards.nt-grid {
+    grid-template-columns: 1fr;
+  }
+} 
