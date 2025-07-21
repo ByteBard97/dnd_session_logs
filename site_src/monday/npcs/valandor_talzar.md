@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Valandor T'alzar](images/valandor.webp)
+
 ## Overview
 **Name:** Valandor T'alzar  
 **Role:** Master Artificer, House Innovation Leader  

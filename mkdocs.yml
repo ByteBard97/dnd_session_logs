@@ -61,7 +61,17 @@ nav:
         - Matron Severine: monday/npcs/matron_severine.md
         - Valandor T'alzar: monday/npcs/valandor_talzar.md
         - Vyssinia Talzar: monday/npcs/vyssinia_talzar.md
+        - Lirael T'alzar: monday/npcs/lirael_talzar.md
+        - Miraleth T'alzar: monday/npcs/miraleth_talzar.md
+      - House Staff:
+        - Prefect Kaelen: monday/npcs/prefect_kaelen.md
         - Grumble: monday/npcs/grumble.md
+        - Splurg: monday/npcs/splurg.md
+        - Veridia: monday/npcs/veridia.md
+      - House Glutthraz:
+        - Matron Zephyra: monday/npcs/matron_zephyra.md
+      - Ferry Crew:
+        - Fadda Brinebless: monday/npcs/fadda_brinebless.md
     - Locations:
       - Overview: monday/locations/index.md
       - Key Locations:

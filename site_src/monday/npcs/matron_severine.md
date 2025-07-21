@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Matron Severine](images/matron_mother_severine.jpg)
+
 ## Overview
 **Name:** Matron Mother Severine T'alzar  
 **Role:** Head of House T'alzar  
