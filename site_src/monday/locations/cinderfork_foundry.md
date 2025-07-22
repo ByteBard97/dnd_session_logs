@@ -50,3 +50,12 @@ The foundry is currently under infiltration by House T'alzar operatives seeking 
 - **Screamers** - Magical construct soldiers
 - **Industrial equipment** - Various duergar crafted items
 - **Research materials** - Black Mithril processing and analysis
+
+## Map Reference
+*Map provided by [Milby's Maps](https://www.milbysmaps.com/)*
+
+![Cinderfork Foundry](https://www.milbysmaps.com/wp-content/uploads/2022/09/Cinderfork-Foundry-WEB-38x85-1.jpg)
+
+---
+
+*"The forges of Cinderfork burn with more than flame—they kindle the ambitions of houses and the suffering of prisoners."*

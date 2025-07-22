@@ -68,24 +68,38 @@ nav:
         - Grumble: monday/npcs/grumble.md
         - Splurg: monday/npcs/splurg.md
         - Veridia: monday/npcs/veridia.md
+        - Bronzidon ("Nugget"): monday/npcs/bronzidon.md
       - House Glutthraz:
         - Matron Zephyra: monday/npcs/matron_zephyra.md
       - Ferry Crew:
+        - Borok the Silent: monday/npcs/borok_the_silent.md
         - Fadda Brinebless: monday/npcs/fadda_brinebless.md
+        - Black Loch Keelhauler: monday/npcs/black_loch_keelhauler.md
     - Locations:
       - Overview: monday/locations/index.md
-      - Key Locations:
+      - Major Regions:
+        - Vlyn'darastyl: monday/locations/vlyn_darastyl.md
+        - The Black Loch Region: monday/locations/black_loch_region.md
         - Cinderfork Foundry: monday/locations/cinderfork_foundry.md
+      - Key Locations:
+        - T'alzar Tower: monday/locations/talzar_tower.md
+        - Valandor's Workshop: monday/locations/valandor_workshop.md
+        - Night-Tide Docks: monday/locations/night_tide_docks.md
         - The Black Loch: monday/locations/black_loch.md
     - Lore: monday/lore/index.md
-    - Items: monday/items/index.md
+    - Items:
+      - Overview: monday/items/index.md
+      - T'alzarine Prime Explosives: monday/items/talzarine_prime_explosives.md
+    - Credits: monday/credits.md
     - Recaps:
+      - Session 6: monday/recaps/recap_session_6.md
       - Session 5: monday/recaps/recap_session_5.md
       - Session 4: monday/recaps/recap_session_4.md
       - Session 3: monday/recaps/recap_session_3.md
       - Session 2: monday/recaps/recap_session_2.md
       - Session 1: monday/recaps/recap_session_1.md
     - Quest Logs:
+      - Session 6: monday/logs/log_session_6.md
       - Session 5: monday/logs/log_session_5.md
       - Session 4: monday/logs/log_session_4.md
       - Session 3: monday/logs/log_session_3.md

@@ -1,20 +1,20 @@
 /* Drow Theme for Monday Campaign Only - Using the provided color palette */
 
-/* Dark indigo background */
+/* Dark indigo background using drow palette */
 body {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+    background: linear-gradient(135deg, #191b31 0%, #1b1536 100%) !important;
     color: #e6d7ff !important;
 }
 
 /* Deep indigo headers and navigation */
 .md-header, .md-tabs {
-    background-color: #1a1a2e !important;
+    background-color: #1b1536 !important;
 }
 
 /* Muted purple content area */
 .md-content {
-    background: rgba(26, 26, 46, 0.95) !important;
-    border: 2px solid #4a4a6a !important;
+    background: rgba(25, 27, 49, 0.95) !important; /* #191b31 with transparency */
+    border: 2px solid #646085 !important;
     color: #e6d7ff !important;
 }
 
@@ -24,35 +24,39 @@ h1, h2, h3, h4 {
     text-shadow: 1px 1px 0 #2d2d4a !important;
 }
 
-/* Muted purple navigation links */
+/* Navigation links using palette */
 .md-nav__link {
-    color: #8b7bb8 !important;
+    color: #646085 !important;
 }
 
 .md-nav__link:hover {
     color: #e6d7ff !important;
+    background-color: rgba(42, 48, 79, 0.3) !important; /* Subtle highlight */
 }
 
-/* Subtle selected menu item - just a border */
+/* Selected menu item with gold accent */
 .md-nav__link--active {
     color: #e6d7ff !important;
-    border-left: 2px solid #8b7bb8 !important;
+    border-left: 3px solid #747443 !important; /* Gold accent */
+    background-color: rgba(42, 48, 79, 0.5) !important;
 }
 
 .md-nav__link--active:hover {
-    border-left-color: #e6d7ff !important;
+    border-left-color: #747443 !important;
 }
 
 /* Dark indigo sidebar */
 .md-sidebar {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+    background: linear-gradient(135deg, #191b31 0%, #1b1536 100%) !important;
 }
 
-/* Dark olive green blockquotes */
+/* Dark indigo blockquotes using drow palette */
 blockquote {
-    background-color: #2d4a3a !important;
-    border-color: #4a6a5a !important;
+    background-color: #2a304f !important; /* Mid-dark blue from palette */
+    border-left: 4px solid #646085 !important; /* Muted purple from palette */
     color: #e6d7ff !important;
+    padding: 1em !important;
+    margin: 1em 0 !important;
 }
 
 /* Muted purple images */
@@ -61,13 +65,14 @@ img {
     background: #2d2d4a !important;
 }
 
-/* Muted purple links */
+/* Muted purple links with gold accent on hover */
 a {
-    color: #8b7bb8 !important;
+    color: #646085 !important;
+    transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #e6d7ff !important;
+    color: #747443 !important; /* Gold accent from palette */
 }
 
 /* Dark indigo code blocks */
@@ -76,14 +81,15 @@ code {
     color: #e6d7ff !important;
 }
 
-/* Dark olive green admonitions */
+/* Dark indigo admonitions to match theme */
 .admonition {
-    background-color: #2d4a3a !important;
+    background-color: rgba(22, 33, 62, 0.95) !important;
     color: #e6d7ff !important;
+    border-left: 4px solid #4a4a6a !important;
 }
 
 .admonition-title {
-    background-color: #4a6a5a !important;
+    background-color: #16213e !important;
     color: #e6d7ff !important;
 }
 
@@ -170,4 +176,56 @@ nav.md-nav__item--active > a.md-nav__link::before {
 /* Reinforce sidebar transparency */
 .md-sidebar {
     background: transparent !important;
+}
+
+/* Fix table styling for stat blocks using drow palette colors */
+table {
+    background-color: #191b31 !important; /* Darkest blue from palette */
+    color: #e6d7ff !important; /* Purple text */
+    border: 1px solid #646085 !important; /* Muted purple border from palette */
+}
+
+table th {
+    background-color: #1b1536 !important; /* Deep purple from palette */
+    color: #e6d7ff !important; /* Purple text */
+    border: 1px solid #646085 !important; /* Muted purple border */
+    padding: 8px !important;
+    font-weight: bold !important;
+}
+
+table td {
+    background-color: #191b31 !important; /* Darkest blue from palette */
+    color: #e6d7ff !important; /* Purple text */
+    border: 1px solid #646085 !important; /* Muted purple border */
+    padding: 8px !important;
+}
+
+/* Alternate row coloring for better readability */
+table tr:nth-child(even) td {
+    background-color: #2a304f !important; /* Mid-dark blue from palette */
+}
+
+/* Hover effect for table rows */
+table tr:hover td {
+    background-color: rgba(100, 96, 133, 0.3) !important; /* Muted purple highlight */
+}
+
+/* Fix for stat block blockquotes containing tables - use drow palette */
+blockquote table {
+    background-color: #2a304f !important; /* Mid-dark blue from palette */
+    margin: 10px 0 !important;
+}
+
+blockquote table th {
+    background-color: #1b1536 !important; /* Deep purple from palette */
+    border-color: #646085 !important; /* Muted purple border */
+}
+
+blockquote table td {
+    background-color: #2a304f !important; /* Mid-dark blue from palette */
+    border-color: #646085 !important; /* Muted purple border */
+}
+
+blockquote table tr:nth-child(even) td {
+    background-color: rgba(25, 27, 49, 0.7) !important; /* Darkest blue with transparency */
 } 

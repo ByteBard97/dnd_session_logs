@@ -47,3 +47,12 @@ The Black Loch serves as both a natural moat protecting Cinderfork Foundry and a
 - Party's covert crossing to infiltrate Cinderfork Foundry
 - Various encounters with lake creatures during transit
 - Regular commercial traffic between settlements
+
+## Map Reference
+*Map provided by [Milby's Maps](https://www.milbysmaps.com/)*
+
+![The Black Loch Region](https://www.milbysmaps.com/wp-content/uploads/2021/03/The-Black-Loch-1e-WEB.jpg)
+
+---
+
+*"The Black Loch holds secrets in its depths that even the drow fear to disturb."*
