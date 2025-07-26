@@ -1,4 +1,4 @@
-# Vyssinia T'alzar, The Usurper Matron
+# Vyssinia T'alzar
 
 <link rel="stylesheet" href="../drow_theme.css">
 
@@ -100,8 +100,8 @@ As a bonus action, Vyssinia can cast Spiritual Weapon (2nd-level slot). It creat
 
 ## Biography
 
-Vyssinia T'alzar, the Usurper Matron, is a fearsome Oath of Conquest Paladin devoted to the tyrannical aspect of Lolth. Believing her mother's pragmatism was a weakness, she seized control of House T'alzar with the backing of House Glutthraz. She rules through fear and martial prowess, convinced that true power flows from breaking the will of one's enemies. On the battlefield, she is a whirlwind of dark divine power and flashing steel, her presence alone enough to cower lesser foes.
+Vyssinia T'alzar, is a fearsome Oath of Conquest Paladin devoted to the tyrannical aspect of Lolth. Believing her mother's pragmatism was a weakness, she seized control of House T'alzar with the backing of House Glutthraz. She rules through fear and martial prowess, convinced that true power flows from breaking the will of one's enemies. On the battlefield, she is a whirlwind of dark divine power and flashing steel, her presence alone enough to cower lesser foes.
 
 ---
 
-*"Vyssinia T'alzar, The Usurper Matron stands ready to serve the interests of their house and the will of the Spider Queen."*
+*"Vyssinia T'alzar, stands ready to serve the interests of their house and the will of the Spider Queen."*

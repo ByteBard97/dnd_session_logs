@@ -1,43 +1,33 @@
 <link rel="stylesheet" href="../drow_theme.css">
+# Player Characters - Lost Mine of the Drow
 
-# Cast of Player Characters - Lost Mine of the Drow
+## **Rav'ithar** ![Rav'ithar](ravithar.webp)
+*   **Race/Class:** Male Drow, Whispers Bard
+*   **Role:** Nominal Team Leader & Master Deceiver
+*   **Background Notes:** Adopted into House T'alzar as if he were family, Rav'ithar serves as the public face and strategic mind of the team. While his reputation is built on fabricated stories, he has proven to be a capable and ruthless leader. He excels at deception, using his bardic abilities to assume the forms of his victims and orchestrate complex ambushes. He once gained critical intelligence by consuming a slain enemy's memories. His tactical use of spells like *Silence* has been key to the party's silent, systematic slaughter of their enemies.
 
-This document provides a quick reference for the main characters in the "Lost Mine of the Drow" campaign.
+## **Malaggar (Youngest Son of House T'alzar)** ![Malaggar](malaggar.webp)
+*   **Race/Class:** Male Drow, Gloomstalker Ranger
+*   **Role:** Lieutenant & Deadly Striker
+*   **Background Notes:** As the team's lieutenant, Malaggar is a highly effective and brutal combatant whose Gloomstalker abilities make him a terror in an ambush. He often works in tandem with Bentham to silently eliminate sentries. Despite his lethality—personally executing a captured researcher with "brutal efficiency"—he has shown moments of surprising compassion, such as comforting his young niece, Miraleth, and taking the time to feed a lonely, captive Underdark shark.
 
-## Player Chars (The T'alzar Strike Team)
+## **Haribo the Spreader, Knight of the Musca** ![Haribo](haribo.webp)
+*   **Race/Class:** Myconid, Spore Druid
+*   **Role:** Healer & Battlefield Controller
+*   **Background Notes:** A brave and creative member of the team. Haribo has used his Wild Shape ability to perform dangerous solo scouting missions and shows compassion for creatures, befriending a cave spider and comforting Miraleth with summoned fey. In combat, he is a crucial healer (saving Rav'ithar's life) and a clever tactician, using spells like *Spike Growth* to control the battlefield and even using a foundry's portcullis as a weapon.
 
-* **Rav'ithar** ![Rav'ithar](ravithar.webp)
-   * **Race/Class:** Male Drow, Whispers Bard (Level 5)
-   * **Role:** Party Leader
-   * **Background Notes:** From a lesser T'alzar faction in Vlyn'darastyl, family adopted into the main house. His renowned "adventures" are fabrications based on his late father's exploits, a secret he guards fiercely to maintain his status and income. This mission is his chance for genuine heroism and new literary material. Mentors Malaggar. Carries a gun named "Fear."
+## **Mordath "Clank" Ironshroud** ![Clank](clank.webp)
+*   **Race/Class:** Duergar, Artificer
+*   **Role:** Clan Crafter & Pragmatic Support
+*   **Background Notes:** The team's brilliant but sometimes clumsy tinkerer. True to his Duergar nature, Clank is practical and resourceful, always seeking to salvage spare parts from fallen constructs. While providing reliable ranged support in combat, his eagerness has sometimes led to mishaps, such as initiating an ambush prematurely. He is driven by a deep-seated hatred for surface dwellers and a desire to forge a new legacy for his people.
 
-* **Malaggar (Youngest Son of House T'alzar)** ![Malaggar](malaggar.webp)
-   * **Race/Class:** Male Drow, Battle Master Fighter (Level 5)
-   * **Role:** Frontline Combat
-   * **Background Notes:** Youngest son of House T'alzar, sent on this mission to prove his worth and earn his place in the family hierarchy. Eager to prove himself but somewhat naive about the dangers they face. Wields a family heirloom sword.
+## **Bentham ("The Loyal Shadow")** ![Bentham](bentham.webp)
+*   **Race/Class:** Doppelganger, Assassin
+*   **Role:** Master Infiltrator & Executioner
+*   **Background Notes:** A terrifyingly effective and silent killer, fiercely loyal to his Matron Mother. Bentham's Doppelganger abilities are central to the team's strategy of infiltration and deception; he masterfully assumes the forms of victims to lure others into traps. As an Assassin, his first strike is almost always lethal. He displays a chillingly cruel streak, taunting his victims, yet is pragmatic enough to de-escalate situations to maintain cover.
 
-* **Haribo** ![Haribo](haribo.webp)
-   * **Race/Class:** Male Drow, Arcane Trickster Rogue (Level 5)
-   * **Role:** Stealth and Utility
-   * **Background Notes:** Former street urchin who learned to survive in the harsh underbelly of drow society. Skilled at infiltration and information gathering. Has a network of contacts throughout the Underdark. Carries a collection of lockpicks and small tools.
+## **Zyntra** ![Zyntra](zyntra.webp)
+*   **Race/Class:** Female Drow, Arcane Trickster (Urchin Background)
+*   **Role:** Outsider & Arcane Striker
+*   **Background Notes:** A resourceful and spunky addition to the team, bringing valuable skills from her life as a street urchin. Zyntra contributes with her arcane spells like *Green-Flame Blade* in combat and her thieving skills in identifying valuables and attempting to disarm traps. While her attempts aren't always successful, her contributions have been vital to the party's coordinated assaults.
 
-* **Clank** ![Clank](clank.webp)
-   * **Race/Class:** Male Drow, Artillerist Artificer (Level 5)
-   * **Role:** Support and Crafting
-   * **Background Notes:** Brilliant inventor and tinkerer who creates magical devices and weapons. Somewhat eccentric but highly skilled. His inventions often prove crucial to the team's success. Carries a variety of gadgets and tools.
-
-* **Bentham** ![Bentham](bentham.webp)
-   * **Race/Class:** Male Drow, Shadow Monk (Level 5)
-   * **Role:** Stealth and Mobility
-   * **Background Notes:** Former member of a secretive drow assassin guild who left to pursue his own path. Skilled in stealth and hand-to-hand combat. Has a mysterious past that he rarely discusses. Moves with supernatural grace and speed.
-
-* **Zyntra** ![Zyntra](zyntra.webp)
-   * **Race/Class:** Female Drow, Hexblade Warlock (Level 5)
-   * **Role:** Magic and Damage
-   * **Background Notes:** Made a pact with a mysterious entity for power, though the details of her pact remain unclear. Skilled in both melee combat and spellcasting. Has a somewhat dark and brooding personality. Wields a magical weapon that seems to have a mind of its own.
-
-## Campaign Overview
-
-The party has been assembled by House T'alzar for a critical mission: infiltrate and investigate the activities of rival drow houses that may be plotting against House T'alzar. The mission is dangerous and the stakes are high, but the rewards for success could secure the party's positions within the house hierarchy.
-
-The campaign is set in the Underdark, specifically in and around the drow city of Vlyn'darastyl, where political intrigue and danger lurk around every corner.
