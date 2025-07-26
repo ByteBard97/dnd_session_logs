@@ -1,2 +1,16 @@
 __pycache__/
 lost-mine-of-the-drow/
+# to the public repository.
+CLAUDE.md
+chatGPT_research.md
+claude_research.md
+# Ignore the poetry lock file
+poetry.lock
+/.venv
+# Ignore python virtual environments
+.venv
+# Ignore VSCode settings
+.vscode/
+# Ignore PyCharm settings
+.idea/
+.env

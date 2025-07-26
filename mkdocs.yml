@@ -124,6 +124,8 @@ nav:
       - Epic Paths: wednesday/players/epic_paths.md
       - Player Quests: wednesday/players/player_character_quests.md
     - Recaps:
+      - Session 31: wednesday/recaps/recap_session_31.md
+      - Session 30: wednesday/recaps/recap_session_30.md
       - Session 29: wednesday/recaps/recap_session_29.md
       - Session 28: wednesday/recaps/recap_session_28.md
       - Session 27: wednesday/recaps/recap_session_27.md
@@ -134,6 +136,8 @@ nav:
       - Session 22: wednesday/recaps/recap_session_22.md
       - Session 21: wednesday/recaps/recap_session_21.md
     - Quest Logs:
+      - Session 31: wednesday/logs/log_session_31.md
+      - Session 30: wednesday/logs/log_session_30.md
       - Session 29: wednesday/logs/log_session_29.md
       - Session 28: wednesday/logs/log_session_28.md
       - Session 27: wednesday/logs/log_session_27.md
@@ -168,7 +172,9 @@ nav:
     - Players:
       - PCs: friday/players/pcs.md
       - Epic Paths: friday/players/epic_paths.md
+      - Dragons: friday/players/dragons.md
     - Recaps:
+      - Session 37: friday/recaps/recap_session_37.md
       - Session 36: friday/recaps/recap_session_36.md
       - Session 35: friday/recaps/recap_session_35.md
       - Session 34: friday/recaps/recap_session_34.md
@@ -180,6 +186,7 @@ nav:
       - Session 27: friday/recaps/recap_session_27.md
       - Session 26: friday/recaps/recap_session_26.md
     - Quest Logs:
+      - Session 37: friday/logs/log_session_37.md
       - Session 36: friday/logs/log_session_36.md
       - Session 35: friday/logs/log_session_35.md
       - Session 34: friday/logs/log_session_34.md
