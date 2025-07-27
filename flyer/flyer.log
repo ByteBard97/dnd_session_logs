@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2025.7.13)  23 JUL 2025 17:26
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2025.7.13)  27 JUL 2025 08:26
  restricted system commands enabled.
 **flyer.tex
 (./flyer.tex
@@ -401,14 +401,14 @@ Here is how much of LuaTeX's memory you used:
  411 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 49 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:372,3:134,4:56,5:712,6:38,7:2832,8:1,9:216,10:3,11:172
+   avail lists: 2:372,3:130,4:56,5:690,6:38,7:2778,8:1,9:212,10:2,11:138
  26859 multiletter control sequences out of 65536+600000
  39 fonts using 2222623 bytes
  68i,12n,79p,243b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/truetype/ndiscovered/cinzel/Cinzel-Regular.
 ttf></usr/share/texlive/texmf-dist/fonts/truetype/ndiscovered/cinzel/Cinzel-Bold
 .ttf>
-Output written on flyer.pdf (1 page, 3374991 bytes).
+Output written on flyer.pdf (1 page, 3374886 bytes).
 
 PDF statistics: 28 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream
