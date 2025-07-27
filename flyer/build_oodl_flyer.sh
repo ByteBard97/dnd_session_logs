@@ -6,7 +6,7 @@
 echo "--- Starting OODL Flyer Build ---"
 
 # Change to the flyer directory
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/oodl_files"
 
 # Compile the LaTeX document using lualatex
 # The -output-directory flag tells lualatex where to put the generated files.

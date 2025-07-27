@@ -1,0 +1,85 @@
+\documentclass[a4paper, 8pt]{extarticle}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{eso-pic}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{enumitem}
+
+% Define a custom color for the text
+\definecolor{OODL_Blue}{HTML}{1a4247}
+\definecolor{DragonRed}{HTML}{990000}
+
+% Set the main font to Cinzel
+\setmainfont{Cinzel}
+
+\geometry{
+  a4paper,
+  left=40mm,
+  right=40mm,
+  top=90mm,
+  bottom=25mm,
+}
+
+\pagestyle{empty}
+
+\begin{document}
+\color{OODL_Blue}
+
+\AddToShipoutPicture*{%
+  \put(0,0){%
+    \includegraphics[width=\paperwidth,height=\paperheight]{oodl_background_stretched.png}%
+  }%
+}
+
+\vspace{2cm}
+
+\subsection*{\textbf{The Pitch}}
+\vspace{-1mm}
+Embark on an epic journey in the world of Thylea! Inspired by ancient Greek mythology, "Odyssey of the Dragonlords" is a 5e campaign where you will become heroes destined to challenge the Dragonlords themselves.
+
+\vspace{-1mm}
+\subsection*{\textbf{The Vibe}}
+\begin{itemize}[itemsep=-1mm]
+    \item High fantasy adventure with a touch of Greek tragedy.
+    \item Explore a vibrant world filled with gods, monsters, and mythical creatures.
+    \item Forge your own legend and shape the fate of Thylea.
+\end{itemize}
+
+\vspace{-1mm}
+\subsection*{\textbf{Who We're Looking For}}
+\begin{itemize}[itemsep=-1mm]
+    \item Two reliable players (21+) for a character-driven story.
+    \item We want someone excited by grand adventures and heroic tales.
+    \item A team player who enjoys collaborative storytelling and epic quests.
+\end{itemize}
+
+\vspace{-1mm}
+\subsection*{\textbf{Your Character}}
+\vspace{-1mm}
+Create a hero worthy of legend! All classes and character concepts are welcome, but a strong connection to the world of Thylea is encouraged.
+
+\vspace{-1mm}
+\subsection*{\textbf{The Details}}
+\begin{itemize}[itemsep=-1mm]
+    \item \textbf{When}: Wednesdays, 6:30-10:30 PM
+    \item \textbf{Where}: Crescent Heights, St. Pete
+    \item \textbf{Vibe}: Established, casual group. We share food/drinks.
+\end{itemize}
+
+\vspace{-1mm}
+\subsection*{\textbf{To Apply}}
+\vspace{-1mm}
+\textcolor{DragonRed}{\textbf{st.pete.dnd@outlook.com}}. We're looking for players who are ready to embrace their destiny and can join us every Wednesday night.
+
+\vspace{0.2cm}
+\begin{table}[h!]
+\centering
+\begin{tabular}{c@{\hspace{1in}}c}
+\includegraphics[width=1in]{players_guide_to_oodl_qr_code.png} & \includegraphics[width=1in]{oodl_wednesday_night_qr_code.png} \\
+Player's Guide & Campaign Site \\
+\end{tabular}
+\end{table}
+
+\end{document} 
