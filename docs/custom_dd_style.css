@@ -79,4 +79,13 @@ img {
 
 .md-sidebar {
     background: #f8f5e3 url('images/5e-phb-background-imitation.png');
+}
+
+.recruitment-email {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+    color: #990000 !important;
+    text-align: center !important;
+    display: block !important;
+    margin: 1em 0 !important;
 } 

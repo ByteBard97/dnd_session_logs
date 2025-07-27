@@ -228,4 +228,13 @@ blockquote table td {
 
 blockquote table tr:nth-child(even) td {
     background-color: rgba(25, 27, 49, 0.7) !important; /* Darkest blue with transparency */
+}
+
+.recruitment-email {
+    font-size: 1.5em !important;
+    font-weight: bold !important;
+    color: #990000 !important;
+    text-align: center !important;
+    display: block !important;
+    margin: 1em 0 !important;
 } 

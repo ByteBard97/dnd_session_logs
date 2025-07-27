@@ -6,24 +6,22 @@
   <img src="players/LMotD.webp" alt="Campaign Banner" style="max-width: 100%; display: block; margin: 0 auto;" />
 </p>
 
-Welcome to the Monday campaign! Here you'll find recaps, character info, and more. 
 
----
+## Looking for New Players
 
-## Looking for a New Player?
-
-We are currently looking for one more player to join our Monday night D&D 5e campaign. If you found this site via a QR code, welcome!
+We are currently looking for two more players to join our Monday night D&D 5e campaign. If you found this site via a QR code, welcome!
 
 ### The Pitch
 What if you were the other side of the story? Join a drow noble house of magical artificers on a desperate mission. This campaign runs parallel to "Lost Mine of Phandelver," but from the villain's point of view.
 
 ### The Vibe
+*   A balance of combat, exploration, and roleplay.
 *   Morally complex characters with personal stakes.
 *   Family loyalty, politics, and difficult choices.
 *   Playing characters who aren't traditional heroes but have believable motivations.
 
 ### Who We're Looking For
-*   One reliable player (21+) for a character-driven story.
+*   Two reliable players (21+) for a character-driven story.
 *   We want someone excited by moral complexity and political intrigue.
 *   A team player who enjoys collaborative storytelling.
 
@@ -36,4 +34,6 @@ Your character will be an integral part of House T’alzar’s fight for surviva
 *   **Vibe**: Established, casual group. We share food/drinks.
 
 ### How to Apply
-If you're interested, please email us at **st.pete.dnd@outlook.com**. We're looking for a player who is ready to get into character and can join us every Monday night. 
+If you're interested, please email us at:
+<p class="recruitment-email">st.pete.dnd@outlook.com</p>
+We're looking for a player who is ready to get into character and can join us every Monday night. 

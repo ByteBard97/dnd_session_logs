@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2025.7.13)  27 JUL 2025 09:26
+This is LuaHBTeX, Version 1.14.0 (TeX Live 2022/dev/Debian)  (format=lualatex 2025.7.13)  27 JUL 2025 09:45
  restricted system commands enabled.
 **oodl_flyer.tex
 (./oodl_flyer.tex
@@ -379,30 +379,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <6> on input line 79.
+(Font)              <6> on input line 80.
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 79.
+(Font)              <5> on input line 80.
 <players_guide_to_oodl_qr_code.png, id=1, 146.7081pt x 146.7081pt>
 File: players_guide_to_oodl_qr_code.png Graphic file (type png)
 <use players_guide_to_oodl_qr_code.png>
 Package luatex.def Info: players_guide_to_oodl_qr_code.png  used on input line 
-80.
+81.
 (luatex.def)             Requested size: 72.26999pt x 72.27039pt.
 <oodl_wednesday_night_qr_code.png, id=2, 145.7445pt x 145.7445pt>
 File: oodl_wednesday_night_qr_code.png Graphic file (type png)
 <use oodl_wednesday_night_qr_code.png>
 Package luatex.def Info: oodl_wednesday_night_qr_code.png  used on input line 8
-0.
+1.
 (luatex.def)             Requested size: 72.26999pt x 72.2694pt.
-<oodl_background_stretched.png, id=3, 4111.36pt x 6167.04pt>
-File: oodl_background_stretched.png Graphic file (type png)
-<use oodl_background_stretched.png>
-Package luatex.def Info: oodl_background_stretched.png  used on input line 85.
+<oodl_background_stretched.jpg, id=3, 4111.36pt x 6167.04pt>
+File: oodl_background_stretched.jpg Graphic file (type jpg)
+<use oodl_background_stretched.jpg>
+Package luatex.def Info: oodl_background_stretched.jpg  used on input line 86.
 (luatex.def)             Requested size: 597.48073pt x 845.02997pt.
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}<./oodl_background_stretched.
-png><./players_guide_to_oodl_qr_code.png><./oodl_wednesday_night_qr_code.png>] 
+jpg><./players_guide_to_oodl_qr_code.png><./oodl_wednesday_night_qr_code.png>] 
 (./oodl_flyer.aux))
 
 Here is how much of LuaTeX's memory you used:
@@ -411,14 +411,14 @@ Here is how much of LuaTeX's memory you used:
  406 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 48 glue_spec,
  4 attribute_list, 1 write nodes
-   avail lists: 2:382,3:148,4:56,5:686,6:38,7:2778,8:1,9:212,10:2,11:134
+   avail lists: 2:398,3:156,4:60,5:722,6:40,7:2912,8:1,9:220,10:2,11:144
  27187 multiletter control sequences out of 65536+600000
  39 fonts using 2222623 bytes
  68i,12n,79p,248b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/truetype/ndiscovered/cinzel/Cinzel-Regular.
 ttf></usr/share/texlive/texmf-dist/fonts/truetype/ndiscovered/cinzel/Cinzel-Bold
 .ttf>
-Output written on oodl_flyer.pdf (1 page, 34023353 bytes).
+Output written on oodl_flyer.pdf (1 page, 9482208 bytes).
 
 PDF statistics: 27 PDF objects out of 1000 (max. 8388607)
  12 compressed objects within 1 object stream

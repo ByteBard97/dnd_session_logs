@@ -16,7 +16,8 @@ We are currently looking for two more players to join our Wednesday night "Odyss
 Embark on an epic journey in the world of Theros! Inspired by ancient Greek mythology, "Odyssey of the Dragonlords" is a 5e campaign where you will become heroes destined to challenge the Dragonlords themselves.
 
 ### The Vibe
-*   High fantasy adventure with a touch of Greek tragedy.
+*   A balance of combat, exploration, and roleplay.
+*   Mythic fantasy adventure with a touch of Greek tragedy.
 *   Explore a vibrant world filled with gods, monsters, and mythical creatures.
 *   Forge your own legend and shape the fate of Theros.
 
@@ -26,7 +27,7 @@ Embark on an epic journey in the world of Theros! Inspired by ancient Greek myth
 *   A team player who enjoys collaborative storytelling and epic quests.
 
 ### Your Character
-Create a hero worthy of legend! All classes and character concepts are welcome, but a strong connection to the world of Theros is encouraged.
+Create a hero worthy of legend! All classes and character concepts are welcome, but a strong connection to the world of Theros is encouraged. You can download the Player's Guide here: [Odyssey Player's Guide](/assets/downloads/Players_Guide_to_Odyssey_v1.pdf)
 
 ### The Details
 *   **When**: Wednesdays, 6:30 PM to 10:30 PM
@@ -34,4 +35,6 @@ Create a hero worthy of legend! All classes and character concepts are welcome, 
 *   **Vibe**: Established, casual group. We share food/drinks.
 
 ### How to Apply
-If you're interested, please email us at **st.pete.dnd@outlook.com**. We're looking for players who are ready to embrace their destiny and can join us every Wednesday night. 
+If you're interested, please email us at:
+<p class="recruitment-email">st.pete.dnd@outlook.com</p>
+We're looking for players who are ready to embrace their destiny and can join us every Wednesday night. 

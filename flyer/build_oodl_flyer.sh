@@ -17,7 +17,7 @@ lualatex -jobname=oodl_flyer oodl_flyer.tex
 if [ -f "oodl_flyer.pdf" ]; then
   echo "SUCCESS: oodl_flyer.pdf has been created successfully."
   echo "Converting PDF to JPG..."
-  pdftoppm -jpeg oodl_flyer.pdf oodl_flyer-image
+  pdftoppm -jpeg -r 300 oodl_flyer.pdf oodl_flyer-image
 else
   echo "FAILURE: Could not create oodl_flyer.pdf. Please check the logs above for errors."
   exit 1
