@@ -11,6 +11,9 @@
 ## Description
 The Black Loch is a vast underground body of water that serves as both a natural barrier and a dangerous passage between the drow city and the duergar industrial complex. Its dark waters hide numerous threats and require skilled navigation to traverse safely.
 
+![The Black Loch Region](https://www.milbysmaps.com/wp-content/uploads/2021/03/The-Black-Loch-1e-WEB.jpg)
+*Map provided by [Milby's Maps](https://www.milbysmaps.com/)*
+
 ## Geography
 ### Surface Waters
 - Primary travel route for ferry services
@@ -48,10 +51,6 @@ The Black Loch serves as both a natural moat protecting Cinderfork Foundry and a
 - Various encounters with lake creatures during transit
 - Regular commercial traffic between settlements
 
-## Map Reference
-*Map provided by [Milby's Maps](https://www.milbysmaps.com/)*
-
-![The Black Loch Region](https://www.milbysmaps.com/wp-content/uploads/2021/03/The-Black-Loch-1e-WEB.jpg)
 
 ---
 

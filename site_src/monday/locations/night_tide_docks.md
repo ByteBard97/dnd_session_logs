@@ -11,6 +11,9 @@
 ## Description
 The Night-Tide Docks represent the forgotten maritime past of Vlyn'darastyl's lower districts. Once a bustling freight pier, this area has fallen into disrepair and now serves as a meeting point for those who prefer to conduct business away from prying eyes.
 
+![Night-Tide Docks](https://i.redd.it/l02g2i5jbrt91.jpg)
+*Map by Afternoon Maps - Source: [City Docks Map on Patreon](https://www.patreon.com/posts/city-docks-map-72289319)*
+
 ## Physical Features
 
 ### The Old Wharf
@@ -89,8 +92,6 @@ During the siege drill transport:
 - **Cover Story** - Temple ceremony to explain the movement
 - **Quick Transition** - Rapid loading once illusion was dropped
 
-## Map Reference
-*Dock layout inspired by Old Wharf maps from Patreon creator (attribution pending)*
 
 ---
 

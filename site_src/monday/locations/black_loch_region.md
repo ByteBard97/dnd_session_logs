@@ -11,6 +11,9 @@
 ## Description
 The Black Loch is a massive underground body of water that stretches into darkness beyond the reach of even drow darkvision. Its inky waters are home to ancient creatures and serve as the primary trade route between Vlyn'darastyl and the remote industrial outposts of the deep Underdark.
 
+![The Black Loch Region](https://www.milbysmaps.com/wp-content/uploads/2021/03/The-Black-Loch-1e-WEB.jpg)
+*Regional layout and hazards based on maps by [Milby's Maps](https://www.milbysmaps.com/)*
+
 ## Geographic Features
 
 ### The Loch Proper
@@ -67,10 +70,6 @@ Despite its dangers, the Black Loch serves as a vital trade route:
 - **Information Networks** - Secret communications between settlements
 - **Passenger Service** - Dangerous but necessary travel for those who can afford it
 
-## Map Reference
-*Regional layout and hazards based on maps by [Milby's Maps](https://www.milbysmaps.com/)*
-
-![The Black Loch Region](https://www.milbysmaps.com/wp-content/uploads/2021/03/The-Black-Loch-1e-WEB.jpg)
 
 ---
 

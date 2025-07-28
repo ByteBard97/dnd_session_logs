@@ -11,6 +11,9 @@
 ## Description
 Vlyn'darastyl is a sprawling drow metropolis carved into the living rock of the Underdark. The city rises in gothic spires and terraced districts, connected by bridges that span vast chasms. Bioluminescent fungi and magical lighting create an ethereal glow throughout the urban landscape.
 
+![Vlyn'darastyl - The Drow City](https://www.milbysmaps.com/wp-content/uploads/2020/04/Vlyndarastyl-annotated-web.jpg)
+*City layout and districts based on maps by [Milby's Maps](https://www.milbysmaps.com/)*
+
 ## City Districts
 
 ### The Noble Quarter
@@ -52,10 +55,6 @@ Built upon the ruins of the ancient dwarven Catacombs of Aldebaran, the city has
 - Increasing tensions over control of ancient resources
 - Secret alliances forming around Black Mithril research
 
-## Map Reference
-*City layout and districts based on maps by [Milby's Maps](https://www.milbysmaps.com/)*
-
-![Vlyn'darastyl - The Drow City](https://www.milbysmaps.com/wp-content/uploads/2020/04/Vlyndarastyl-annotated-web.jpg)
 
 ---
 

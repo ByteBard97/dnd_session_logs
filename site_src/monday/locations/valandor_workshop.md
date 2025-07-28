@@ -11,6 +11,9 @@
 ## Description
 Valandor T'alzar's private workshop represents the pinnacle of drow artificing. Hidden away in the industrial district, this laboratory serves as both research facility and secure storage for the family's most dangerous projects and valuable prototypes.
 
+![The Artificer's Workshop Lair](https://i.redd.it/x987zar9sts21.jpg)
+*Workshop layout based on "The Artificer's Workshop Lair" map from [Reddit r/battlemaps](https://www.reddit.com/r/battlemaps/comments/be7rfa/the_artificers_workshop_lair_30x30/)*
+
 ## Workshop Layout
 
 ### Main Laboratory
@@ -85,10 +88,6 @@ During the Cinderfork rescue mission, the workshop served as:
 - **Resource Thieves** - Criminals targeting valuable materials
 - **Construct Theft** - Attempts to steal or sabotage guardian systems
 
-## Map Reference
-*Workshop layout based on "The Artificer's Workshop Lair" map from [Reddit r/battlemaps](https://www.reddit.com/r/battlemaps/comments/be7rfa/the_artificers_workshop_lair_30x30/)*
-
-![The Artificer's Workshop Lair](https://i.redd.it/x987zar9sts21.jpg)
 
 ---
 

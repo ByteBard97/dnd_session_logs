@@ -11,6 +11,9 @@
 ## Description
 Cinderfork Foundry is a massive duergar industrial complex that serves as both a manufacturing facility and a prison. The foundry specializes in producing magical constructs called "Screamers" and has become central to the conflict between Houses T'alzar and Glutthraz.
 
+![Cinderfork Foundry](https://www.milbysmaps.com/wp-content/uploads/2022/09/Cinderfork-Foundry-WEB-38x85-1.jpg)
+*Map provided by [Milby's Maps](https://www.milbysmaps.com/)*
+
 ## Key Personnel
 - **Director Koldar** - Administrative head, holds Rod of Opening
 - **Master Smith Durkal** - Chief smith, holds Rod of Opening  
@@ -51,10 +54,6 @@ The foundry is currently under infiltration by House T'alzar operatives seeking 
 - **Industrial equipment** - Various duergar crafted items
 - **Research materials** - Black Mithril processing and analysis
 
-## Map Reference
-*Map provided by [Milby's Maps](https://www.milbysmaps.com/)*
-
-![Cinderfork Foundry](https://www.milbysmaps.com/wp-content/uploads/2022/09/Cinderfork-Foundry-WEB-38x85-1.jpg)
 
 ---
 
