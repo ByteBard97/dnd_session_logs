@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+{% if page and page.file and page.file.src_path.startswith('monday/') %}
+<link rel="stylesheet" href="{{ 'monday/drow_theme.css' | url }}">
+{% endif %}
+{% endblock %}

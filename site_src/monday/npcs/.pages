@@ -1,2 +1,4 @@
+# This controls the navigation for the NPCs section
+# The awesome-pages plugin will auto-discover all .md files
 title: NPCs
-collapse: true
+collapse: true  # Makes this section collapsible in the navigation

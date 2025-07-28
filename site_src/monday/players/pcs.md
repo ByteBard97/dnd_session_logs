@@ -1,5 +1,4 @@
-<link rel="stylesheet" href="../drow_theme.css">
-# Player Characters - Lost Mine of the Drow
+# Player Characters
 
 ## **Rav'ithar** ![Rav'ithar](ravithar.webp)
 *   **Race/Class:** Male Drow, Whispers Bard
