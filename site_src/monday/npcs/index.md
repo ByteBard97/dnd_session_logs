@@ -51,3 +51,7 @@ The T'alzar Jade Spider Sentinel. A Large construct guardian with a quirky perso
 
 ### [Bronzidon ("Nugget")](bronzidon.md)
 Valandor's friendly workshop guardian construct. An adamantine pillbug with a cheerful personality and protective instincts.
+
+## Cinderfork Foundry
+
+The massive duergar industrial complex serves as both manufacturing facility and prison. See the [Cinderfork Foundry](cinderfork_foundry/index.md) section for all personnel, creatures, and constructs associated with this facility.

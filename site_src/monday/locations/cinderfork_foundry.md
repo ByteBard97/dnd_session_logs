@@ -30,7 +30,7 @@ Cinderfork Foundry is a massive duergar industrial complex that serves as both a
 **DM Modification Note:** *This Tom Cartos water wheel map was adapted for the foundry by converting the lake into a moonpool, removing surface vegetation, and reimagining the paddle wheel as a steam-powered turbine system driven by a bound geothermal elemental.*
 
 #### The Steam Turbine Chamber
-The centerpiece of the geothermal plant is a massive steam-powered turbine that has replaced the original water wheel. Cool water pumped from the Black Loch feeds into a specialized chamber containing the [Bound Geothermal Elemental](../npcs/generated/bound_geothermal_elemental.md). The elemental's intense heat converts this water into superheated steam under extreme pressure, which then drives the turbine system.
+The centerpiece of the geothermal plant is a massive steam-powered turbine that has replaced the original water wheel. Cool water pumped from the Black Loch feeds into a specialized chamber containing the [Geothermal Elemental](../npcs/cinderfork_foundry/geothermal_elemental.md). The elemental's intense heat converts this water into superheated steam under extreme pressure, which then drives the turbine system.
 
 #### The Gearing Rooms
 Multiple interconnected chambers house an elaborate system of gears and mechanical power transmission equipment. These gear rooms distribute the turbine's mechanical energy throughout the foundry, powering forges, hammers, and other industrial equipment. Numerous control levers throughout these areas allow operators to adjust steam flow, gear ratios, and power distribution to different sections of the facility.
@@ -42,10 +42,10 @@ A complex network of pipes and venting controls manages the flow of steam throug
 What appears as rushing white water around the turbine is actually a carefully controlled mix of steam and water discharge. The original lake has been converted into an underwater moonpool that connects directly to the Black Loch, allowing for both water intake and covert access to the facility. Infiltrators using magical diving gear (such as a Cloak of the Manta Ray) can swim up through this underwater entrance.
 
 #### Research Cottage
-Located in the lower section of the complex, this residential area houses [Alyxina Fire-Beard](../npcs/generated/alyxina_fire_beard.md) and her husband [Chief Researcher Korvun](../npcs/generated/chief_researcher_korvun.md). The cottage serves as both living quarters and a private research facility for their work on magical constructs and arcane metallurgy.
+Located in the lower section of the complex, this residential area houses [Alyxina Fire-Beard](../npcs/cinderfork_foundry/alyxina_fire_beard.md) and her husband [Chief Researcher Korvun](../npcs/cinderfork_foundry/chief_researcher_korvun.md). The cottage serves as both living quarters and a private research facility for their work on magical constructs and arcane metallurgy.
 
 #### Plant Operations
-The entire geothermal system is overseen by [Chief Engineer Tholdrum "Steam-Heart" Garn](../npcs/generated/chief_engineer_tholdrum_steam_heart_garn.md), who manages day-to-day operations and maintenance. The plant requires constant monitoring to maintain optimal steam pressure, prevent mechanical failures, and ensure the elemental binding remains stable.
+The entire geothermal system is overseen by [Chief Engineer Tholdrum "Steam-Heart" Garn](../npcs/cinderfork_foundry/chief_engineer_tholdrum_steam_heart_garn.md), who manages day-to-day operations and maintenance. The plant requires constant monitoring to maintain optimal steam pressure, prevent mechanical failures, and ensure the elemental binding remains stable.
 
 **Tactical Considerations:** Infiltrators face a complex challenge - they must either find a way to disable or slow the turbine system to pass safely through the steam-filled areas, or risk freeing the bound elemental, which would eliminate the steam hazard but trigger foundry-wide alarms alerting all personnel to the breach.
 
