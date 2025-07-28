@@ -10,7 +10,7 @@ Welcome to the Wednesday campaign! Here you’ll find recaps, character info, an
 
 ## Looking for New Players!
 
-We are currently looking for two more players to join our Wednesday night "Odyssey of the Dragonlords" D&D 5e campaign.
+We are currently looking for players to join our Wednesday night "Odyssey of the Dragonlords" D&D 5e campaign.
 
 ### The Pitch
 Embark on an epic journey in the world of Theros! Inspired by ancient Greek mythology, "Odyssey of the Dragonlords" is a 5e campaign where you will become heroes destined to challenge the Dragonlords themselves.

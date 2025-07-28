@@ -9,7 +9,7 @@
 
 ## Looking for New Players
 
-We are currently looking for two more players to join our Monday night D&D 5e campaign. If you found this site via a QR code, welcome!
+We are currently looking for players to join our Monday night D&D 5e campaign. If you found this site via a QR code, welcome!
 
 ### The Pitch
 What if you were the other side of the story? Join a drow noble house of magical artificers on a desperate mission. This campaign runs parallel to "Lost Mine of Phandelver," but from the villain's point of view.
