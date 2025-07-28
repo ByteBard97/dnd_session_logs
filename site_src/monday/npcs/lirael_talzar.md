@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
-![Lirael T'alzar](images/lirael_talzar.jpg)
+![Lirael T'alzar](images/lirael_talzar.webp)
 
 ## Overview
 **Name:** Lirael T'alzar  

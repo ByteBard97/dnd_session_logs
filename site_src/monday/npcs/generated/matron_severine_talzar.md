@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Matron Severine T'alzar](../images/matron_mother_severine.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Medium | humanoid (drow) | lawful evil | 1 |

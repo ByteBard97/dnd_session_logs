@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Veridia, the T'alzar Jade Spider Sentinel](../images/jade_spider.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Large | construct | unaligned | 10 |

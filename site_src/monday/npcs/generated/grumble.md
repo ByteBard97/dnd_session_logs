@@ -1,7 +1,7 @@
 # Grumble
 
 <link rel="stylesheet" href="../drow_theme.css">
-![Grumble](grumble.webp)
+![Grumble](../images/grumble.webp)
 
 
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |

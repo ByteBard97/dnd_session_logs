@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Vyssinia T'alzar](../images/vyssinia_talzar.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Medium | humanoid (drow) | lawful evil | 9 |

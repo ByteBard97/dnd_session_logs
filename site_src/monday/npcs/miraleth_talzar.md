@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
-![Miraleth T'alzar](images/miraleth1.jpg)
+![Miraleth T'alzar](images/miraleth1.webp)
 
 ## Overview
 **Name:** Miraleth T'alzar  

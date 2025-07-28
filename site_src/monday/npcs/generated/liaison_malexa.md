@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Liaison Malexa](../images/liason_malexa.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Medium | humanoid (elf) | Neutral Evil | 2 |

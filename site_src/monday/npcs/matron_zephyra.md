@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
-![Matron Zephyra Glutthraz](images/matron_eating1_contrast.jpg)
+![Matron Zephyra Glutthraz](images/matron_eating1_contrast.webp)
 
 ## Overview
 **Name:** Matron Mother Zephyra Glutthraz  

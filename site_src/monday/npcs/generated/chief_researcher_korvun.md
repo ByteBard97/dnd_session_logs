@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Chief Researcher Korvun](../images/chief_researcher_korvun.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Medium | humanoid (duergar) | lawful evil | 5 |

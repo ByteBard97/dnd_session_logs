@@ -1,7 +1,7 @@
 # Director Koldar
 
 <link rel="stylesheet" href="../drow_theme.css">
-![Director Koldar](director_koldar.jpg)
+![Director Koldar](../images/director_koldar.webp)
 
 
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |

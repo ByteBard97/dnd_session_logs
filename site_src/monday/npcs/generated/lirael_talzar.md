@@ -1,7 +1,7 @@
 # Lirael T'alzar
 
 <link rel="stylesheet" href="../drow_theme.css">
-![Lirael T'alzar](lirael_talzar.jpg)
+![Lirael T'alzar](../images/lirael_talzar.webp)
 
 
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |

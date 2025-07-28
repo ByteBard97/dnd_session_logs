@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Alyxina Fire-Beard](../images/alexyna_firebeard_01.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Medium | humanoid (duergar) | lawful neutral | 1/4 |

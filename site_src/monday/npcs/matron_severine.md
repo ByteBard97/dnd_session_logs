@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
-![Matron Severine](images/matron_mother_severine.jpg)
+![Matron Severine](images/matron_mother_severine.webp)
 
 ## Overview
 **Name:** Matron Mother Severine T'alzar  

@@ -1,7 +1,7 @@
 # Fadda Brinebless
 
 <link rel="stylesheet" href="../drow_theme.css">
-![Fadda Brinebless](fadda_brinebless.webp)
+![Fadda Brinebless](../images/fadda_brinebless.webp)
 
 
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |

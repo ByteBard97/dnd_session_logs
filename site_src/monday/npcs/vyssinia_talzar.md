@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
-![Vyssinia Talzar](images/vyssinia_gala.png)
+![Vyssinia Talzar](images/vyssinia_gala.webp)
 
 ## Overview
 **Name:** Vyssinia Talzar  

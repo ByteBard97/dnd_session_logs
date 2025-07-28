@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Miraleth T'alzar](../images/miraleth1.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Small | humanoid (drow, sorcerer) | chaotic neutral | 1/8 |

@@ -2,6 +2,8 @@
 
 <link rel="stylesheet" href="../drow_theme.css">
 
+![Chief Engineer Tholdrum "Steam-Heart" Garn](../images/chief_engineer_tholdrum.webp)
+
 > | **Size** | **Type** | **Alignment** | **Challenge Rating** |
 > |----------|----------|---------------|----------------------|
 > | Medium | humanoid (duergar) | lawful evil | 4 |
