@@ -22,12 +22,12 @@ Embark on an epic journey in the world of Theros! Inspired by ancient Greek myth
 *   Forge your own legend and shape the fate of Theros.
 
 ### Who We're Looking For
-*   Two reliable players (21+) for a character-driven story.
+*   Reliable players (21+) for a character-driven story.
 *   We want someone excited by grand adventures and heroic tales.
 *   A team player who enjoys collaborative storytelling and epic quests.
 
 ### Your Character
-Create a hero worthy of legend! All classes and character concepts are welcome, but a strong connection to the world of Theros is encouraged. You can download the Player's Guide here: [Odyssey Player's Guide](/assets/downloads/Players_Guide_to_Odyssey_v1.pdf)
+Create a hero worthy of legend! All classes and character concepts are welcome, but a strong connection to the world of Theros is encouraged. You can download the Player's Guide here: [Odyssey Player's Guide](../assets/downloads/Players_Guide_to_Odyssey_v1.pdf)
 
 ### The Details
 *   **When**: Wednesdays, 6:30 PM to 10:30 PM

@@ -108,7 +108,7 @@ Fungal settlement built around the sentient Red Warden mushroom.
 - **Notable Feature:** The Red Warden sees all through spore network
 - **Information Network:** Perfect memory of 200 years of loch history
 - **Alliance:** Provides intelligence to House T'alzar
-- [Related NPCs](../npcs/uulk_musca_leader.md)
+- [Related NPCs](../npcs/generated/uulk_musca_leader.md)
 
 ### **The Chesterboro Arms** - Frontier Inn
 The "worst inn in the world" that's still the safest place to rest in its region.
