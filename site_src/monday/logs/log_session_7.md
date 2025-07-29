@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../drow_theme.css">
+
 # **Session 7 Quest Log: The Depths of the Foundry**
 
 **Starting Point:** The T'alzar Strike Team has just cleared the mess hall (Area 10\) on the middle floor of the Cinderfork Foundry. Moments ago, the grenade traps they set in the main stairwell above detonated with three massive explosions.
