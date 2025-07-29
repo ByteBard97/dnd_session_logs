@@ -1,0 +1,23 @@
+# Session 7 Recap
+
+<link rel="stylesheet" href="../drow_theme.css">
+
+When last we left our ruthless agents of House T'alzar, you stood in the deafening silence of your own making. The mess hall was a charnel house, its former occupants cooling in pools of their own blood. Then the unnatural quiet was violently broken by thunder from above—three massive explosions as your trap detonated in the stairwell, shaking Cinderfork Foundry to its very foundations. Your perfectly placed grenades had found a structural weakness, and tons of stone and metal came crashing down, sealing the main stairs in an avalanche of rubble. Whatever forces had triggered your trap were now entombed in their own fortress.
+
+With the foundry seemingly deaf to your rampage, you seized the moment to plunder and explore. First, you examined the adamantine door to Valandor's cell—its surface crawling with glowing, pulsating runes that promised magical retribution to any who dared breach it without the proper keys. Your systematic search became a tapestry of grim discovery. Behind a faded tapestry of ancient Auldbaern, Clank deciphered a desperate warning scrawled in Dwarvish: "The Screamers' wails are worse now. That black stuff's cursed, I tell you." In the kitchen, Rav'ithar identified the stupor afflicting two cooks as the work of distilled Peep's Slumber Fungus. Malaggar's blade ended one's chemical journey permanently, while the other was bound for later questioning.
+
+But treachery lurked even in rest. As Zyntra searched the guards' quarters, a poisoned needle trap hidden in a torn mattress struck her down, her drow constitution failing against a toxin designed to shut down respiratory systems. Only Haribo's quick thinking saved her, the myconid forcing his own spores down her throat in a desperate bid to counteract the poison.
+
+The prize for that near-death experience? A blood-stained journal belonging to Tharn Deep-Spire—a voice from the grave revealing the terrifying truth. The Black Mithril, the Dûmril, becomes psychically unstable without proper dwarven purification rituals. The drow, ignorant of this requirement, were creating weapons of madness. Page after page detailed not only the alchemical formula to cleanse the corruption—requiring holy water, powdered sapphire, and drow blood—but darker revelations: House Glutthraz has infiltrated Clan Fire-Beard with a spy, seeking the "binding code" to control ancient vaults sealed beneath Cairnhollow Isle, marked by a lone lighthouse. Most chilling of all, the journal's final entry was a direct plea to Valandor—your rescue target—from a fellow scientist who saw the coming disaster.
+
+Your exploration led to a latrine door marked with dire warnings. From the bubbling filth erupted a nightmare—an Otyugh twisted by foundry runoff, its hide embedded with the same black metal veins as the Screamers. Yet where others would see only a monster, you saw opportunity. Through Malaggar's druidic diplomacy and Haribo's healing touch, you soothed the creature's black mithril sores. The grateful beast, calling itself Autiog, became an unlikely ally, sharing precious intelligence: secret tunnels beneath the forge floor, drow who enter during "peak fire time" and never return, and a high priest in a bright hat whose rituals are strongest when the forges burn hottest.
+
+As Autiog pointed a tentacle toward a maze of foul-smelling pipes leading upward, its words were drowned by a deafening roar. The floor of the cold storeroom exploded in a shower of stone and splintered barrels as your cantankerous ally Grumble burst through in his massive siege drill, complaining bitterly about the pickled eels he'd just ruined.
+
+And so you stand at a crossroads. Behind you, a charnel house of your own making and a secure tunnel to the outside world. Before you, two paths into the foundry's heart: the main lift or a narrow network of pipes reeking of death and industrial waste. With Haribo crafting makeshift gas masks from his fungal flesh, you've chosen the stealthier path, ready to climb into the stinking guts of Cinderfork Foundry.
+
+The three Rods of Opening remain missing. Valandor still languishes behind an adamantine door. And somewhere above, the foundry's leadership waits, unaware that death creeps upward through their own pipes. What new horrors—and what vital keys—await in the darkness above?
+
+---
+
+*"In the depths of industry, even garbage can become an ally—and knowledge more poisonous than any needle trap."*
