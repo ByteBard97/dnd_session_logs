@@ -91,12 +91,12 @@ Veridia can be deactivated by someone with knowledge of House T'alzar's command 
 ### Crystal Behavior
 - **Threat Response:** Her central jade crystal glows with varying intensity based on perceived threat level
 - **Mood Indicator:** The crystal's intensity may also reflect her 'emotional' state
-- **Vyssinia Effect:** The crystal dims noticeably when Vyssinia T'alzar approaches (foreshadowing future plot developments)
+- **Recognition Response:** The crystal briefly alters its hue when high-ranking family members approach, a harmless aesthetic quirk
 
 ## Relationships
 - **Matron Severine:** Creator and primary authority figure
 - **House T'alzar Members:** Recognizes and protects all family members
-- **Vyssinia:** Has knowledge of deactivation commands (crystal dims in her presence)
+- **Vyssinia:** As head of security, she knows the standard deactivation commands
 - **Visitors:** Greets authorized guests with cryptic commentary
 
 ## Roleplay Notes

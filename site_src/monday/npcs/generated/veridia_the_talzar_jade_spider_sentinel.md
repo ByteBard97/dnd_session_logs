@@ -76,7 +76,7 @@ Veridia can be deactivated by someone with knowledge of House T'alzar's command 
 Roleplay Notes:
 - Veridia's central jade crystal glows with varying intensity based on her perceived threat level or perhaps her 'mood.'
 - She communicates in Drow and Undercommon, making distinct clicking and chittering sounds that often accompany her speech or punctuate her patrols.
-- The crystal is known to dim noticeably when Vyssinia T'alzar approaches, a subtle foreshadowing of the betrayal in Act II.
+- When any high-ranking T'alzar approaches, the crystal momentarily shifts hue as a courtesy acknowledgement.
 - If Veridia is destroyed, her large central jade crystal is likely to shatter into valuable fragments, potentially useful for artificing, especially for someone like Clank.
 
 ---

@@ -130,7 +130,7 @@ Northernmost settlement of the Bluescale Empire.
 Home of an 11,000-year-old red dragon with a legendary hoard.
 - **Resident:** Kaliphex the Immortal
 - **Treasure:** Legendary hammer "Ghal-Maraz"
-- **Connection:** Ancestor of Miraleth T'alzar (hidden draconic bloodline)
+- **Connection:** Rumors link the dragon to several ancient bloodlines in the Underdark.
 
 ### **Sanctum of Psor'il** - Aboleth's Domain
 Hidden lair of an ancient aboleth in the Deep Reaches.

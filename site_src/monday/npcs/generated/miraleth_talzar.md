@@ -28,7 +28,7 @@
 
 **Senses:** darkvision 120 ft., passive Perception 10
 
-**Languages:** Common, Elvish, Undercommon, Draconic
+**Languages:** Common, Elvish, Undercommon
 
 ## Equipment
 
@@ -49,7 +49,7 @@ While in sunlight, Miraleth has disadvantage on attack rolls, as well as on Wisd
 ### Drow Magic
 Miraleth can cast the Dancing Lights cantrip at will (CHA is her spellcasting ability for it).
 
-### Draconic Resilience
+### Innate Resilience
 Miraleth's hit point maximum increases by 1, and while not wearing armor, her AC equals 13 + her Dexterity modifier.
 
 ### Ember-Spark Temper
@@ -77,7 +77,7 @@ Spell attack; ignites flammable objects that aren't being worn or carried.
 
 ## Biography
 
-Miraleth is bright-eyed, affectionate, and endlessly curious.  Her red-dragon blood shows in faint copper-rose scales and in a warmth that seems to follow her moods: candles flare when she laughs, and harmless sparks dance when she startles.  She is slow to anger, but an insult to her family can earn a sudden, fiery retort—always followed by an apologetic blush.  In play, emphasise her sentimentality (she clings to keepsakes), her wish to be helpful, and the protective instincts she inspires in those around her.  She will never start combat, but if pressed will hurl a nervous Fire Bolt—then hide behind the nearest PC.
+Miraleth is bright-eyed, affectionate, and endlessly curious.  She radiates an unusual, almost elemental warmth—candles flare when she laughs, and harmless sparks dance when she startles.  She is slow to anger, but an insult to her family can earn a sudden, fiery retort—always followed by an apologetic blush.  In play, emphasise her sentimentality (she clings to keepsakes), her wish to be helpful, and the protective instincts she inspires in those around her.  She will never start combat, but if pressed will hurl a nervous Fire Bolt—then hide behind the nearest PC.
 
 ---
 
