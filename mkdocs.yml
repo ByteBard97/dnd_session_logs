@@ -119,6 +119,8 @@ nav:
     - Session Archives:
       - Recaps:
         - Overview: monday/recaps/index.md
+        - Session 9: monday/recaps/recap_session_9.md
+        - Session 8: monday/recaps/recap_session_8.md
         - Session 7: monday/recaps/recap_session_7.md
         - Session 6: monday/recaps/recap_session_6.md
         - Session 5: monday/recaps/recap_session_5.md
@@ -128,6 +130,8 @@ nav:
         - Session 1: monday/recaps/recap_session_1.md
       - Quest Logs:
         - Overview: monday/logs/index.md
+        - Session 9: monday/logs/log_session_9.md
+        - Session 8: monday/logs/log_session_8.md
         - Session 7: monday/logs/log_session_7.md
         - Session 6: monday/logs/log_session_6.md
         - Session 5: monday/logs/log_session_5.md
