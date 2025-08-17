@@ -31,3 +31,8 @@
 *   **Role:** Outsider & Arcane Striker
 *   **Background Notes:** A resourceful and spunky addition to the team, bringing valuable skills from her life as a street urchin. Zyntra contributes with her arcane spells like *Green-Flame Blade* in combat and her thieving skills in identifying valuables and attempting to disarm traps. While her attempts aren't always successful, her contributions have been vital to the party's coordinated assaults.
 
+## **Velryss** ![Velryss](velryss.webp)
+*   **Race/Class:** Male Drow, Bladesinger Wizard
+*   **Role:** Flamboyant Duelist & Strategic Disruptor
+*   **Background Notes:** Nephew and personal protégé of the Matron Mother, Velryss is the house's designated weapon of spectacle. His flamboyant persona, razor wit, and dueling prowess are a calculated mask, designed to draw attention, sow misdirection, and protect the family's true interests from the shadows. While others work in silence, Velryss steps into the spotlight, using his forbidden Bladesinging artistry to dazzle, distract, and disarm. He is fiercely protective of his cousin Miraleth, whose innocence reminds him what he truly fights for, and is driven to uncover the truth behind Valandor's disappearance.
+

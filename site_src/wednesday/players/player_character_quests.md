@@ -38,10 +38,9 @@ Prophecy.
 * **Secondary Quest** : You must seek the wisdom of the Sun God and find a weapon powerful enough to fight a dragon, believed to have been forged by the gygans of Yonder. You recently acquired a powerful magical bow from the broodmother's lair.
 * **Next Step ** : Travel to the **Island of Yonder** to seek out the gygan smiths who forged legendary dragonslaying weapons in the First War.
 
-### **Andrew Lynx (The Sphinx's Agent)**
+### **Andrew Lynx (REDACTED)**
+[REDACTED]
 
-* **Primary Quest** : Your patron is the Androsphinx, a timeless being from the Island of Time. You have been sent to Thylea to prevent a future cataclysm that threatens to destroy this world. Defeating the Titans is the first step in preparing Thylea for the true, alien threat that your patron has foreseen.
-* **Secondary Quest ** : You must guide your companions to the **Island of Time** to commune with your patron, face his riddles, and learn more about the impending doom. Your patron may also task you with finding artifacts that exist outside the normal flow of time.* **Next Step ** : Convince your companions to travel to the **Island of Time** to meet your patron.* **Quest Giver ** : **The Androsphinx** (his patron) provides guidance through visions and dreams.
 
 ### **Tharok (The Cursed One)**
 

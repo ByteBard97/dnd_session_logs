@@ -37,3 +37,4 @@ mkdocs-obsidian-interactive-graph-plugin
 mkdocs-glightbox
 mkdocs-macros-plugin
 mkdocs-include-markdown-plugin
+mkdocs-minify-plugin
