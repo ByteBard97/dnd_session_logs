@@ -26,6 +26,7 @@ extra_css:
 
 extra_javascript:
   - js/statblock5e-inlined.html
+  - js/auto-theme-loader.js
 
 # Source and output directories
 # (site_src contains markdown, docs is the output for GitHub Pages)
@@ -118,7 +119,6 @@ nav:
     - Credits: monday/credits.md
     - Session Archives:
       - Recaps:
-        - Overview: monday/recaps/index.md
         - Session 9: monday/recaps/recap_session_9.md
         - Session 8: monday/recaps/recap_session_8.md
         - Session 7: monday/recaps/recap_session_7.md
@@ -129,7 +129,6 @@ nav:
         - Session 2: monday/recaps/recap_session_2.md
         - Session 1: monday/recaps/recap_session_1.md
       - Quest Logs:
-        - Overview: monday/logs/index.md
         - Session 9: monday/logs/log_session_9.md
         - Session 8: monday/logs/log_session_8.md
         - Session 7: monday/logs/log_session_7.md
@@ -145,107 +144,109 @@ nav:
       - PCs: wednesday/players/pcs.md
       - Epic Paths: wednesday/players/epic_paths.md
       - Player Quests: wednesday/players/player_character_quests.md
-    - Recaps:
-      - Session 33: wednesday/recaps/recap_session_33.md
-      - Session 32: wednesday/recaps/recap_session_32.md
-      - Session 31: wednesday/recaps/recap_session_31.md
-      - Session 30: wednesday/recaps/recap_session_30.md
-      - Session 29: wednesday/recaps/recap_session_29.md
-      - Session 28: wednesday/recaps/recap_session_28.md
-      - Session 27: wednesday/recaps/recap_session_27.md
-      - Session 26: wednesday/recaps/recap_session_26.md
-      - Session 25: wednesday/recaps/recap_session_25.md
-      - Session 24: wednesday/recaps/recap_session_24.md
-      - Session 23: wednesday/recaps/recap_session_23.md
-      - Session 22: wednesday/recaps/recap_session_22.md
-      - Session 21: wednesday/recaps/recap_session_21.md
-    - Quest Logs:
-      - Session 33: wednesday/logs/log_session_33.md
-      - Session 32: wednesday/logs/log_session_32.md
-      - Session 31: wednesday/logs/log_session_31.md
-      - Session 30: wednesday/logs/log_session_30.md
-      - Session 29: wednesday/logs/log_session_29.md
-      - Session 28: wednesday/logs/log_session_28.md
-      - Session 27: wednesday/logs/log_session_27.md
-      - Session 26: wednesday/logs/log_session_26.md
-      - Session 25: wednesday/logs/log_session_25.md
-      - Session 24: wednesday/logs/log_session_24.md
-      - Session 23: wednesday/logs/log_session_23.md
-      - Session 22: wednesday/logs/log_session_22.md
-      - Session 21: wednesday/logs/log_session_21.md
-      - Session 20: wednesday/logs/log_session_20.md
-      - Session 19: wednesday/logs/log_session_19.md
-      - Session 18: wednesday/logs/log_session_18.md
-      - Session 17: wednesday/logs/log_session_17.md
-      - Session 16: wednesday/logs/log_session_16.md
-      - Session 15: wednesday/logs/log_session_15.md
-      - Session 14: wednesday/logs/log_session_14.md
-      - Session 13: wednesday/logs/log_session_13.md
-      - Session 12: wednesday/logs/log_session_12.md
-      - Session 11: wednesday/logs/log_session_11.md
-      - Session 10: wednesday/logs/log_session_10.md
-      - Session 9: wednesday/logs/log_session_9.md
-      - Session 8: wednesday/logs/log_session_8.md
-      - Session 7: wednesday/logs/log_session_7.md
-      - Session 6: wednesday/logs/log_session_6.md
-      - Session 5: wednesday/logs/log_session_5.md
-      - Session 4: wednesday/logs/log_session_4.md
-      - Session 3: wednesday/logs/log_session_3.md
-      - Session 2: wednesday/logs/log_session_2.md
-      - Session 1: wednesday/logs/log_session_1.md
+    - Session Archives:
+      - Recaps:
+        - Session 33: wednesday/recaps/recap_session_33.md
+        - Session 32: wednesday/recaps/recap_session_32.md
+        - Session 31: wednesday/recaps/recap_session_31.md
+        - Session 30: wednesday/recaps/recap_session_30.md
+        - Session 29: wednesday/recaps/recap_session_29.md
+        - Session 28: wednesday/recaps/recap_session_28.md
+        - Session 27: wednesday/recaps/recap_session_27.md
+        - Session 26: wednesday/recaps/recap_session_26.md
+        - Session 25: wednesday/recaps/recap_session_25.md
+        - Session 24: wednesday/recaps/recap_session_24.md
+        - Session 23: wednesday/recaps/recap_session_23.md
+        - Session 22: wednesday/recaps/recap_session_22.md
+        - Session 21: wednesday/recaps/recap_session_21.md
+      - Quest Logs:
+        - Session 33: wednesday/logs/log_session_33.md
+        - Session 32: wednesday/logs/log_session_32.md
+        - Session 31: wednesday/logs/log_session_31.md
+        - Session 30: wednesday/logs/log_session_30.md
+        - Session 29: wednesday/logs/log_session_29.md
+        - Session 28: wednesday/logs/log_session_28.md
+        - Session 27: wednesday/logs/log_session_27.md
+        - Session 26: wednesday/logs/log_session_26.md
+        - Session 25: wednesday/logs/log_session_25.md
+        - Session 24: wednesday/logs/log_session_24.md
+        - Session 23: wednesday/logs/log_session_23.md
+        - Session 22: wednesday/logs/log_session_22.md
+        - Session 21: wednesday/logs/log_session_21.md
+        - Session 20: wednesday/logs/log_session_20.md
+        - Session 19: wednesday/logs/log_session_19.md
+        - Session 18: wednesday/logs/log_session_18.md
+        - Session 17: wednesday/logs/log_session_17.md
+        - Session 16: wednesday/logs/log_session_16.md
+        - Session 15: wednesday/logs/log_session_15.md
+        - Session 14: wednesday/logs/log_session_14.md
+        - Session 13: wednesday/logs/log_session_13.md
+        - Session 12: wednesday/logs/log_session_12.md
+        - Session 11: wednesday/logs/log_session_11.md
+        - Session 10: wednesday/logs/log_session_10.md
+        - Session 9: wednesday/logs/log_session_9.md
+        - Session 8: wednesday/logs/log_session_8.md
+        - Session 7: wednesday/logs/log_session_7.md
+        - Session 6: wednesday/logs/log_session_6.md
+        - Session 5: wednesday/logs/log_session_5.md
+        - Session 4: wednesday/logs/log_session_4.md
+        - Session 3: wednesday/logs/log_session_3.md
+        - Session 2: wednesday/logs/log_session_2.md
+        - Session 1: wednesday/logs/log_session_1.md
   - Friday:
     - Overview: friday/index.md
     - Players:
       - PCs: friday/players/pcs.md
       - Epic Paths: friday/players/epic_paths.md
       - Dragons: friday/players/dragons.md
-    - Recaps:
-      - Session 37: friday/recaps/recap_session_37.md
-      - Session 36: friday/recaps/recap_session_36.md
-      - Session 35: friday/recaps/recap_session_35.md
-      - Session 34: friday/recaps/recap_session_34.md
-      - Session 33: friday/recaps/recap_session_33.md
-      - Session 31: friday/recaps/recap_session_31.md
-      - Session 30: friday/recaps/recap_session_30.md
-      - Session 29: friday/recaps/recap_session_29.md
-      - Session 28: friday/recaps/recap_session_28.md
-      - Session 27: friday/recaps/recap_session_27.md
-      - Session 26: friday/recaps/recap_session_26.md
-    - Quest Logs:
-      - Session 37: friday/logs/log_session_37.md
-      - Session 36: friday/logs/log_session_36.md
-      - Session 35: friday/logs/log_session_35.md
-      - Session 34: friday/logs/log_session_34.md
-      - Session 33: friday/logs/log_session_33.md
-      - Session 32: friday/logs/log_session_32.md
-      - Session 31: friday/logs/log_session_31.md
-      - Session 30: friday/logs/log_session_30.md
-      - Session 29: friday/logs/log_session_29.md
-      - Session 28: friday/logs/log_session_28.md
-      - Session 27: friday/logs/log_session_27.md
-      - Session 26: friday/logs/log_session_26.md
-      - Session 25: friday/logs/log_session_25.md
-      - Session 24: friday/logs/log_session_24.md
-      - Session 23: friday/logs/log_session_23.md
-      - Session 22: friday/logs/log_session_22.md
-      - Session 21: friday/logs/log_session_21.md
-      - Session 20: friday/logs/log_session_20.md
-      - Session 19: friday/logs/log_session_19.md
-      - Session 18: friday/logs/log_session_18.md
-      - Session 17: friday/logs/log_session_17.md
-      - Session 16: friday/logs/log_session_16.md
-      - Session 15: friday/logs/log_session_15.md
-      - Session 14: friday/logs/log_session_14.md
-      - Session 13: friday/logs/log_session_13.md
-      - Session 12: friday/logs/log_session_12.md
-      - Session 11: friday/logs/log_session_11.md
-      - Session 10: friday/logs/log_session_10.md
-      - Session 9: friday/logs/log_session_9.md
-      - Session 8: friday/logs/log_session_8.md
-      - Session 7: friday/logs/log_session_7.md
-      - Session 6: friday/logs/log_session_6.md
-      - Session 5: friday/logs/log_session_5.md
-      - Session 4: friday/logs/log_session_4.md
-      - Session 3: friday/logs/log_session_3.md
-      - Session 2: friday/logs/log_session_2.md
-      - Session 1: friday/logs/log_session_1.md 
+    - Session Archives:
+      - Recaps:
+        - Session 37: friday/recaps/recap_session_37.md
+        - Session 36: friday/recaps/recap_session_36.md
+        - Session 35: friday/recaps/recap_session_35.md
+        - Session 34: friday/recaps/recap_session_34.md
+        - Session 33: friday/recaps/recap_session_33.md
+        - Session 31: friday/recaps/recap_session_31.md
+        - Session 30: friday/recaps/recap_session_30.md
+        - Session 29: friday/recaps/recap_session_29.md
+        - Session 28: friday/recaps/recap_session_28.md
+        - Session 27: friday/recaps/recap_session_27.md
+        - Session 26: friday/recaps/recap_session_26.md
+      - Quest Logs:
+        - Session 37: friday/logs/log_session_37.md
+        - Session 36: friday/logs/log_session_36.md
+        - Session 35: friday/logs/log_session_35.md
+        - Session 34: friday/logs/log_session_34.md
+        - Session 33: friday/logs/log_session_33.md
+        - Session 32: friday/logs/log_session_32.md
+        - Session 31: friday/logs/log_session_31.md
+        - Session 30: friday/logs/log_session_30.md
+        - Session 29: friday/logs/log_session_29.md
+        - Session 28: friday/logs/log_session_28.md
+        - Session 27: friday/logs/log_session_27.md
+        - Session 26: friday/logs/log_session_26.md
+        - Session 25: friday/logs/log_session_25.md
+        - Session 24: friday/logs/log_session_24.md
+        - Session 23: friday/logs/log_session_23.md
+        - Session 22: friday/logs/log_session_22.md
+        - Session 21: friday/logs/log_session_21.md
+        - Session 20: friday/logs/log_session_20.md
+        - Session 19: friday/logs/log_session_19.md
+        - Session 18: friday/logs/log_session_18.md
+        - Session 17: friday/logs/log_session_17.md
+        - Session 16: friday/logs/log_session_16.md
+        - Session 15: friday/logs/log_session_15.md
+        - Session 14: friday/logs/log_session_14.md
+        - Session 13: friday/logs/log_session_13.md
+        - Session 12: friday/logs/log_session_12.md
+        - Session 11: friday/logs/log_session_11.md
+        - Session 10: friday/logs/log_session_10.md
+        - Session 9: friday/logs/log_session_9.md
+        - Session 8: friday/logs/log_session_8.md
+        - Session 7: friday/logs/log_session_7.md
+        - Session 6: friday/logs/log_session_6.md
+        - Session 5: friday/logs/log_session_5.md
+        - Session 4: friday/logs/log_session_4.md
+        - Session 3: friday/logs/log_session_3.md
+        - Session 2: friday/logs/log_session_2.md
+        - Session 1: friday/logs/log_session_1.md 
