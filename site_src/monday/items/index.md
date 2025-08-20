@@ -21,6 +21,24 @@ The signature explosive devices of House T'alzar, representing centuries of arti
 
 *Enchanted weapons, armor, and tools found during adventures will be catalogued here.*
 
+### [Clan Firebeard Ceremonial Dagger](duergar_ceremonial_dagger.md)
+A returning dagger whose corrosive touch can melt through objects and strike a second foe on its return flight. *(Rare)*
+
+### [Duergar Fire Lance](duergar_firelance.md)
+A volatile and deadly duergar invention that combines a martial lance with an alchemical flamethrower. *(Rare)*
+
+### [Malexa's Stiletto](malexas_stiletto.md)
+A venomous dagger humming with predatory magic, allowing its wielder to strike twice with devastating sneak attacks. *(Very Rare)*
+
+### [Rod of Torment](rod_of_torment.md)
+A rod of black iron that thrums with psychic power, allowing the wielder to unleash dissonant melodies and phantasmal horrors. *(Rare)*
+
+### [Tholdrum's Pressure-Valve Harness](tholdrums_pressure_valve_harness.md)
+The signature armor of a duergar engineer, capable of venting scalding steam and superheating its wearer's strikes. *(Very Rare)*
+
+### [Vambraces of Misdirection](vambraces_of_misdirection.md)
+Dark mithral-adamantine bracers that blur the user's form, providing an arcane defense and access to protective spells. *(Very Rare)*
+
 ## Research Materials
 
 *Experimental items and prototype devices from Valandor's workshop will be listed here.*

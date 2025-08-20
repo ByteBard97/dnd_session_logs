@@ -52,6 +52,14 @@ nav:
       - Ravithar: monday/players/character_dossiers/ravithar.md
       - Velryss: monday/players/character_dossiers/velryss.md
       - Zyntra: monday/players/character_dossiers/zyntra.md
+    - Magical Items:
+      - Duergar Ceremonial Dagger: monday/items/duergar_ceremonial_dagger.md
+      - Duergar Fire Lance: monday/items/duergar_firelance.md
+      - Malexa's Stiletto: monday/items/malexas_stiletto.md
+      - Rod of Torment: monday/items/rod_of_torment.md
+      - T'alzarine Prime Explosives: monday/items/talzarine_prime_explosives.md
+      - Tholdrum's Pressure-Valve Harness: monday/items/tholdrums_pressure_valve_harness.md
+      - Vambraces of Misdirection: monday/items/vambraces_of_misdirection.md
   - Factions:
     - Overview: monday/factions/index.md
     - House Glutthraz: monday/factions/house_glutthraz.md
@@ -112,9 +120,6 @@ nav:
     - Overview: monday/lore/index.md
     - Drow Pantheon: monday/lore/drow_pantheon.md
     - Drow Society: monday/lore/drow_society.md
-  - Items:
-    - Overview: monday/items/index.md
-    - T'alzarine Prime Explosives: monday/items/talzarine_prime_explosives.md
   - Credits: monday/credits.md
   - Session Archives:
     - Recaps:
