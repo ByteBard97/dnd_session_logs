@@ -38,3 +38,17 @@ Matron Zephyra is currently engaged in economic warfare against House T'alzar, u
 
 ## House Glutthraz Leadership
 Under Zephyra's guidance, House Glutthraz has become synonymous with wealth, financial power, and economic influence in drow society, making them a formidable opponent for any rival house.
+## Combat Statistics
+
+<div id="matron-zephyra-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/matron_glutthraz.json', 'matron-zephyra-statblock');
+  }, 100);
+});
+</script>
+

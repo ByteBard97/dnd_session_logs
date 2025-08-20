@@ -1,0 +1,101 @@
+{
+  "name": "Chief Engineer Tholdrum \"Steam-Heart\" Garn",
+  "size": "Medium",
+  "type": "humanoid (duergar)",
+  "alignment": "lawful evil",
+  "cr": "4",
+  "ac": {
+    "value": 16,
+    "notes": "Reinforced Breastplate"
+  },
+  "hp": {
+    "average": 75,
+    "formula": "10d8 + 30"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 17,
+    "int": 14,
+    "wis": 12,
+    "cha": 11
+  },
+  "saves": {
+    "con": "+6",
+    "int": "+5"
+  },
+  "skills": {
+    "athletics": "+6",
+    "history": "+5",
+    "perception": "+3",
+    "smiths_tools": "+8"
+  },
+  "damage_resistances": "fire, poison",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Dwarvish, Undercommon, Common",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Tholdrum has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Tholdrum has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "Tholdrum's innate spellcasting ability is Intelligence (spell save DC 13). He can innately cast the following spells, requiring no material components:\n\n1/day each: Enlarge/Reduce (self only, Enlarge option only), Invisibility (self only)"
+    },
+    {
+      "name": "Steam-Heart Engineer",
+      "desc": "Tholdrum has advantage on ability checks made to operate, repair, or sabotage mechanical devices and forge machinery."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Tholdrum makes two attacks with his Steam Hammer or uses Steam Hammer once and Pressure Vent once, if available."
+    },
+    {
+      "name": "Steam Hammer",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+6",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+4",
+        "type1": "bludgeoning",
+        "dmg2": "1d6",
+        "type2": "fire"
+      },
+      "desc": "A heavy warhammer fitted with a pressurised heating core. On a hit, the target takes bludgeoning plus fire damage."
+    },
+    {
+      "name": "Pressure Vent (Recharge 5-6)",
+      "attack": {
+        "type": "Special",
+        "reach": "15-ft. cone",
+        "target": "each creature in area",
+        "save": "DC 15 DEX save",
+        "dmg1": "4d6",
+        "type1": "fire"
+      },
+      "desc": "Tholdrum releases a blast of scalding steam from a shoulder-mounted valve. Creatures that fail the save take fire damage and are pushed 10 ft. away. On a success, they take half damage and aren't pushed. The area becomes lightly obscured until the start of Tholdrum's next turn."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Overcharge Valve (1/Day)",
+      "desc": "Tholdrum superheats the core in his armour. Until the start of his next turn, he has resistance to all damage except psychic, and his Steam Hammer deals an extra 1d6 fire damage. At the end of the duration, he takes 5 force damage."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Gear Parry",
+      "desc": "When a creature Tholdrum can see hits him with a melee attack, he can add +2 to his AC against that attack, potentially causing it to miss."
+    }
+  ],
+  "bio": "Tholdrum Garn earned the nickname \"Steam-Heart\" after a near-fatal boiler explosion left a lattice of burn-scars across his chest and fused a pressure-valve harness permanently into his armour. Raised in Clan Fire-Beard's lower forges, he rose through grit and innovation to become the chief engineer of Cinderfork's geothermal plant. Tholdrum cares little for politics—his loyalty is to the machinery that keeps the foundry beating. He despises Korvun's \"theory-first\" meddling, believing real progress is forged with sweat and steel, not chalkboards.\n\nThough cruel in typical duergar fashion, he is fiercely protective of his crew; hidden in an iron locket he carries are charcoal sketches of his twin broodlings, proof that even a heart of steam still pumps blood. If convinced the foundry is doomed, he will bargain for his life—and theirs—offering access codes and shutdown procedures in exchange for safe passage."
+} 

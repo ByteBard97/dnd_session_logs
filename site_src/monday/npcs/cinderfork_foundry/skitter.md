@@ -3,30 +3,22 @@
 <link rel="stylesheet" href="../../drow_theme.css">
 ![Skitter](../images/skitter.webp)
 
+## Combat Statistics
 
-> | **Size** | **Type** | **Alignment** | **Challenge Rating** |
-> |----------|----------|---------------|----------------------|
-> | Medium | monstrosity (beast) | unaligned | 1/8 |
+<div id="skitter-statblock"></div>
 
-## Core Statistics
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('../json/skitter_the_cave_spider.json', 'skitter-statblock');
+  }, 100);
+});
+</script>
 
-> | **Armor Class** | **Hit Points** | **Speed** | **Proficiency Bonus** |
-> |-----------------|----------------|-----------|------------------------|
-> | 12 (Natural armor) | 11 (2d8 + 2) | 30 ft., climb 30 ft. | +2 |
 
-## Ability Scores
-
-> | **STR** | **DEX** | **CON** | **INT** | **WIS** | **CHA** |
-> |---------|---------|---------|---------|---------|---------|
-> | 12 (+1) | 14 (+2) | 13 (+1) | 4 (-3) | 12 (+1) | 8 (-1) |
-
-## Additional Statistics
-
-**Skills:** Perception +3, Stealth +4
-
-**Senses:** darkvision 60 ft., passive Perception 13
-
-**Languages:** ---
+---
 
 ## Traits
 
@@ -41,13 +33,6 @@ Skitter is a loyal house pet and is not aggressive. It will only attack if it pe
 
 ### Affectionate Nuzzle
 As an action, Skitter can nuzzle a friendly creature. The creature must succeed on a DC 10 Dexterity saving throw or have one of their limbs (at the DM's choice) covered in a thin, harmless layer of sticky webbing that can be removed with an action. Skitter does this as a sign of affection.
-
-## Actions
-
-### Bite
-Melee: +4 to hit, reach 5 ft., one creature. *Hit:* 1d6+2 piercing.
-
-A simple, non-venomous bite.
 
 ## Biography
 

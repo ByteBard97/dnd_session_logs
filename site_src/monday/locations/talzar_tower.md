@@ -317,4 +317,16 @@ During Valandor's disappearance:
 
 ---
 
+## Map Credits
+
+The stunning maps used for T'alzar Tower are from the **Drow Manor** map pack by [Czepeku](https://www.czepeku.com/fantasy/maps/drow-manor/jade-spider-front-entrance). These exceptional battlemaps bring the tower to life with their detailed artwork and atmospheric design.
+
+- **Artist:** Czepeku
+- **Map Pack:** [Drow Manor on Patreon](https://www.patreon.com/posts/drow-manor-25936246)
+- **Website:** [czepeku.com](https://www.czepeku.com)
+
+*Special thanks to Czepeku for creating such evocative maps that perfectly capture the dark elegance of drow architecture.*
+
+---
+
 *"T'alzar Tower stands not merely as stone and jade, but as the heart of a family's honor and the fortress of their ambitions."*

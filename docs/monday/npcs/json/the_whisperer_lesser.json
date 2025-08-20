@@ -1,0 +1,122 @@
+{
+  "name": "Lesser Whisperer",
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "Chaotic Evil",
+  "ac": {
+    "value": 15,
+    "notes": "natural armor"
+  },
+  "hp": {
+    "average": 112,
+    "formula": "15d10+30"
+  },
+  "speed": "30 ft., swim 40 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 14,
+    "int": 16,
+    "wis": 15,
+    "cha": 18
+  },
+  "saves": {
+    "wis": "+5",
+    "cha": "+7"
+  },
+  "skills": {
+    "stealth": "+4",
+    "performance": "+7",
+    "persuasion": "+7"
+  },
+  "damage_resistances": "psychic",
+  "damage_immunities": "",
+  "condition_immunities": "charmed",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Understands Abyssal and Deep Speech but can't speak them; telepathy 60 ft.",
+  "cr": "6",
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The Lesser Whisperer can breathe air and water."
+    },
+    {
+      "name": "Elusive Nature",
+      "desc": "The Lesser Whisperer can squeeze through a space that is large enough for a creature one size smaller than it (Medium). While squeezing through a space, it moves at half speed."
+    },
+    {
+      "name": "Hypnotic Eyes",
+      "desc": "The Lesser Whisperer has 1d4 eyes on stalks that can cast dim light in a 15-foot radius. As a bonus action, The Lesser Whisperer can do one of the following:\n\n• Activate or deactivate the glow of any number of its eyes.\n• Disguise one eye stalk to appear as a small humanoid figure (illusion, Investigation DC 15 to discern).\n• Emit a low hum that can be heard within 150 ft. Creatures who hear it must succeed on a DC 15 WIS save or feel compelled to move toward the source."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Lesser Whisperer makes two tentacle attacks."
+    },
+    {
+      "name": "Tentacle",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+7",
+        "distance": "15 ft.",
+        "target": "one target",
+        "dmg1": "1d8+4",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 8 (1d8 + 4) bludgeoning damage, and the target is grappled (escape DC 15). Until the grapple ends, the target is restrained. The Lesser Whisperer has 4 tentacles, each of which can grapple one target."
+    },
+    {
+      "name": "Bite",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+7",
+        "distance": "5 ft.",
+        "target": "one creature that is grappled by The Lesser Whisperer",
+        "dmg1": "2d8+4",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 13 (2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Mesmerizing Whisper (Recharge 5-6)",
+      "desc": "The Lesser Whisperer targets one creature it can see within 30 feet of it. The target must succeed on a DC 15 WIS save or be magically charmed by The Lesser Whisperer for 1 minute. The charmed target is incapacitated and has a speed of 0. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target takes damage, it immediately gets another saving throw with advantage."
+    },
+    {
+      "name": "Ink Cloud (1/Day)",
+      "desc": "While underwater, The Lesser Whisperer expels a cloud of dark ink in a 20-foot radius. The cloud spreads around corners, and that area is heavily obscured to creatures other than The Lesser Whisperer. Each creature other than The Lesser Whisperer that starts its turn there must succeed on a DC 13 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears after 1 minute."
+    }
+  ],
+  "legendary": {
+    "count": 2,
+    "actions": [
+      {
+        "name": "Tentacle",
+        "desc": "The Lesser Whisperer makes a tentacle attack."
+      },
+      {
+        "name": "Move",
+        "desc": "The Lesser Whisperer moves up to its speed without provoking opportunity attacks."
+      },
+      {
+        "name": "Whisper (Costs 2 Actions)",
+        "desc": "The Lesser Whisperer uses Mesmerizing Whisper if available, or targets one creature within 30 feet. The target must succeed on a DC 15 WIS save or be frightened until the end of their next turn."
+      }
+    ]
+  },
+  "regional_effects": {
+    "desc": "The region containing a Lesser Whisperer's territory shows minor signs of its presence:",
+    "effects": [
+      "Water within 1 mile of the Lesser Whisperer's territory is slightly murky. Light sources have their radius reduced by 10 feet in this area.",
+      "Occasionally, 1d2 spectral fish-like creatures (use ghost statistics but with 1/4 the hit points) may appear to harass creatures hostile to the Lesser Whisperer.",
+      "Small aquatic creatures in the area seem unusually aggressive and territorial."
+    ]
+  },
+  "lore": {
+    "source": "Based on The Whisperer by Odd's Gardens (Hovis and Sunga). Original details available at: https://www.milbysmaps.com/wp-content/uploads/2022/01/Whisperer-watermarked.pdf",
+    "description": "Lesser Whisperers are juvenile or weakened variants of the dreaded Whisperer. While not as powerful as their full-grown counterparts, they retain the same unsettling ability to communicate telepathically and manipulate the minds of their prey.",
+    "behavior": "Unlike the full Whisperer, Lesser Whisperers are more opportunistic hunters, preferring to ambush lone travelers or small groups. They often use their hypnotic abilities to lure victims into underwater caves or dark pools.",
+    "origins": "Some scholars believe Lesser Whisperers are spawn of the greater creature, while others theorize they are the result of the Whisperer's influence corrupting ordinary cephalopods over time.",
+    "tactics": "A Lesser Whisperer typically tries to charm the strongest-looking opponent first, then uses its tentacles to grapple multiple enemies while retreating to deeper water where it has the advantage."
+  }
+} 

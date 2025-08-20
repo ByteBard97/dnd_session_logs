@@ -1,0 +1,55 @@
+{
+  "name": "Duergar Forgeworker",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "lawful evil",
+  "cr": "1/4",
+  "ac": {
+    "value": 13,
+    "notes": "natural armor"
+  },
+  "hp": {
+    "average": 13,
+    "formula": "2d8 + 4"
+  },
+  "speed": "25 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "athletics": "+4"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Forge Hammer",
+      "attack": {
+        "type": "Melee or Ranged Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft. or range 20/60 ft.",
+        "target": "one target",
+        "dmg1": "1d6+2",
+        "type1": "bludgeoning"
+      },
+      "desc": "A heavy hammer used for both metalwork and defense."
+    }
+  ],
+  "bio": "These are the common laborers of the Cinderfork Foundry. They are strong and resilient from a lifetime of toil in the extreme heat, but lack the formal military training or advanced equipment of Duergar guards. They fight with the heavy hammers they use for their daily work, making them a dangerous obstacle in numbers."
+} 

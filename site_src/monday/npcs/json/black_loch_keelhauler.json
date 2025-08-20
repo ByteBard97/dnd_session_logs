@@ -1,0 +1,72 @@
+{
+  "name": "Black Loch Keelhauler",
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "5",
+  "ac": {
+    "value": 15,
+    "notes": "Natural Armor"
+  },
+  "hp": {
+    "average": 126,
+    "formula": "12d10 + 60"
+  },
+  "speed": "0 ft., swim 50 ft.",
+  "pb": "+3",
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 20,
+    "int": 5,
+    "wis": 12,
+    "cha": 7
+  },
+  "saves": {},
+  "skills": {},
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "understands commands in Orcish but can't speak",
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The Keelhauler can breathe air and water."
+    },
+    {
+      "name": "Beast of Burden",
+      "desc": "The Keelhauler is considered to be one size larger for the purpose of determining its carrying capacity."
+    },
+    {
+      "name": "Tamed Nature (Tamed Only)",
+      "desc": "A tamed Keelhauler is indifferent to humanoids it doesn't perceive as a threat. It will not attack a creature that falls into the water unless commanded to or if the creature attacks it first."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Crushing Bite",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+8",
+        "distance": "5 ft.",
+        "target": "one creature",
+        "dmg1": "2d10+5",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 16 (2d10 + 5) piercing damage."
+    },
+    {
+      "name": "Tail Slam",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+8",
+        "distance": "10 ft.",
+        "target": "one creature",
+        "dmg1": "2d6+5",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 12 (2d6 + 5) bludgeoning damage, and the target must succeed on a DC 16 Strength saving throw or be knocked prone."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "bio": "The Black Loch Keelhauler is a powerful aquatic monstrosity, prized by the corsairs and slavers of the Underdark as a peerless beast of burden. Its long, muscular body and powerful fins allow it to tow vessels weighing several tons for days on end without tiring. A Keelhauler's most distinct feature is the series of bony, hooked ridges that flank its spine. These are not part of its skeleton, but rather growths of dense, flexible cartilage that can be pierced with minimal harm to the creature."
+} 

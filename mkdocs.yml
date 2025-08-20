@@ -2,251 +2,252 @@ site_name: D&D Session Logs
 site_description: Logs and recaps for all D&D campaign groups
 site_author: Your Name
 site_url: https://bytebard97.github.io/dnd_session_logs/
-
-# Use Material for MkDocs theme
 theme:
   name: material
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.top
-    - navigation.indexes
-    - search.suggest
-    - search.highlight
-    - search.share
-    - content.code.annotate
-    - content.code.copy
-    - content.tabs.link
-    - content.tooltips
-
+  - navigation.tabs
+  - navigation.sections
+  - navigation.top
+  - navigation.indexes
+  - search.suggest
+  - search.highlight
+  - search.share
+  - content.code.annotate
+  - content.code.copy
+  - content.tabs.link
+  - content.tooltips
 extra_css:
-  - custom_dd_style.css
-  - 'https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic'
-  - 'https://fonts.googleapis.com/css?family=Libre+Baskerville:700'
-
+- custom_dd_style.css
+- css/statblock.css
+- https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic
+- https://fonts.googleapis.com/css?family=Libre+Baskerville:700
 extra_javascript:
-  - js/statblock5e-inlined.html
-  - js/auto-theme-loader.js
-
-# Source and output directories
-# (site_src contains markdown, docs is the output for GitHub Pages)
+# - js/statblock5e-inlined.html  # Commented out - conflicts with torillic-statblock plugin
+- js/auto-theme-loader.js
+- js/statblock-generator.js
+- js/json-statblock-loader.js
 docs_dir: site_src
 site_dir: docs
-
-# Plugins
 plugins:
-  - search
-  - glightbox
-  - include-markdown
-
-# Basic markdown extensions for tabs and callouts
+- search
+- glightbox
+- include-markdown
 markdown_extensions:
-  - admonition
-  - pymdownx.tabbed:
-      alternate_style: true
-
-# Directory URLs for GitHub Pages
+- admonition
+- pymdownx.tabbed:
+    alternate_style: true
 use_directory_urls: false
-
-# Manual navigation structure - this creates collapsible sections
 nav:
-  - Home: index.md
-  - Monday:
-    - Overview: monday/index.md
-    - Campaign Overview: monday/campaign_overview.md
-    - Players: monday/players/pcs.md
-    - Factions:
-      - Overview: monday/factions/index.md
-      - House Glutthraz: monday/factions/house_glutthraz.md
-      - House Cull'thaine: monday/factions/house_cullthaine.md
-      - House Vaerixas: monday/factions/house_vaerixas.md
-    - NPCs:
-      - Overview: monday/npcs/index.md
-      - House Talzar:
-        - Matron Severine: monday/npcs/matron_severine.md
-        - Valandor T'alzar: monday/npcs/valandor_talzar.md
-        - Vyssinia Talzar: monday/npcs/vyssinia_talzar.md
-        - Lirael T'alzar: monday/npcs/lirael_talzar.md
-        - Miraleth T'alzar: monday/npcs/miraleth_talzar.md
-      - House Staff:
-        - Prefect Kaelen: monday/npcs/prefect_kaelen.md
-        - Grumble: monday/npcs/grumble.md
-        - Splurg: monday/npcs/splurg.md
-        - Veridia: monday/npcs/veridia.md
-        - Bronzidon ("Nugget"): monday/npcs/bronzidon.md
-      - House Glutthraz:
-        - Matron Zephyra: monday/npcs/matron_zephyra.md
-      - Ferry Crew:
-        - Borok the Silent: monday/npcs/borok_the_silent.md
-        - Fadda Brinebless: monday/npcs/fadda_brinebless.md
-        - Black Loch Keelhauler: monday/npcs/black_loch_keelhauler.md
-      - Cinderfork Foundry:
-        - Overview: monday/npcs/cinderfork_foundry/index.md
-        - Director Koldar: monday/npcs/cinderfork_foundry/director_koldar.md
-        - Chief Engineer Tholdrum "Steam-Heart" Garn: monday/npcs/cinderfork_foundry/chief_engineer_tholdrum_steam_heart_garn.md
-        - Chief Researcher Korvun: monday/npcs/cinderfork_foundry/chief_researcher_korvun.md
-        - Alyxina Fire-Beard: monday/npcs/cinderfork_foundry/alyxina_fire_beard.md
-        - Master Smith Durkal: monday/npcs/cinderfork_foundry/master_smith_durkal.md
-        - Acolyte Ghoran: monday/npcs/cinderfork_foundry/acolyte_ghoran.md
-        - Foundry Master Borok: monday/npcs/cinderfork_foundry/foundry_master_borok.md
-        - Black Mithril Screamer: monday/npcs/cinderfork_foundry/black_mithril_screamer.md
-        - Duergar Forgeworker: monday/npcs/cinderfork_foundry/duergar_forgeworker.md
-        - Duergar Sentry: monday/npcs/cinderfork_foundry/duergar_sentry.md
-        - Geothermal Elemental: monday/npcs/cinderfork_foundry/geothermal_elemental.md
-        - Liaison Malexa: monday/npcs/cinderfork_foundry/liaison_malexa.md
-        - Scrutinizer: monday/npcs/cinderfork_foundry/scrutinizer.md
-        - Skitter: monday/npcs/cinderfork_foundry/skitter.md
-    - Locations:
-      - Overview: monday/locations/index.md
-      - Major Regions:
-        - Black Loch Codex: monday/locations/black_loch_codex.md
-        - Vlyn'darastyl: monday/locations/vlyn_darastyl.md
-        - The Black Loch Region: monday/locations/black_loch_region.md
-        - Cinderfork Foundry: monday/locations/cinderfork_foundry.md
-      - Key Locations:
-        - T'alzar Tower: monday/locations/talzar_tower.md
-        - Valandor's Workshop: monday/locations/valandor_workshop.md
-        - Night-Tide Docks: monday/locations/night_tide_docks.md
-        - The Black Loch: monday/locations/black_loch.md
-        - Lost Catacombs of Auldbaern: monday/locations/lost_catacombs_auldbaern.md
-    - Lore:
-      - Overview: monday/lore/index.md
-      - Drow Pantheon: monday/lore/drow_pantheon.md
-      - Drow Society: monday/lore/drow_society.md
-    - Items:
-      - Overview: monday/items/index.md
-      - T'alzarine Prime Explosives: monday/items/talzarine_prime_explosives.md
-    - Credits: monday/credits.md
-    - Session Archives:
-      - Recaps:
-        - Session 9: monday/recaps/recap_session_9.md
-        - Session 8: monday/recaps/recap_session_8.md
-        - Session 7: monday/recaps/recap_session_7.md
-        - Session 6: monday/recaps/recap_session_6.md
-        - Session 5: monday/recaps/recap_session_5.md
-        - Session 4: monday/recaps/recap_session_4.md
-        - Session 3: monday/recaps/recap_session_3.md
-        - Session 2: monday/recaps/recap_session_2.md
-        - Session 1: monday/recaps/recap_session_1.md
-      - Quest Logs:
-        - Session 9: monday/logs/log_session_9.md
-        - Session 8: monday/logs/log_session_8.md
-        - Session 7: monday/logs/log_session_7.md
-        - Session 6: monday/logs/log_session_6.md
-        - Session 5: monday/logs/log_session_5.md
-        - Session 4: monday/logs/log_session_4.md
-        - Session 3: monday/logs/log_session_3.md
-        - Session 2: monday/logs/log_session_2.md
-        - Session 1: monday/logs/log_session_1.md
-  - Wednesday:
-    - Overview: wednesday/index.md
-    - Players:
-      - PCs: wednesday/players/pcs.md
-      - Epic Paths: wednesday/players/epic_paths.md
-      - Player Quests: wednesday/players/player_character_quests.md
-    - Session Archives:
-      - Recaps:
-        - Session 33: wednesday/recaps/recap_session_33.md
-        - Session 32: wednesday/recaps/recap_session_32.md
-        - Session 31: wednesday/recaps/recap_session_31.md
-        - Session 30: wednesday/recaps/recap_session_30.md
-        - Session 29: wednesday/recaps/recap_session_29.md
-        - Session 28: wednesday/recaps/recap_session_28.md
-        - Session 27: wednesday/recaps/recap_session_27.md
-        - Session 26: wednesday/recaps/recap_session_26.md
-        - Session 25: wednesday/recaps/recap_session_25.md
-        - Session 24: wednesday/recaps/recap_session_24.md
-        - Session 23: wednesday/recaps/recap_session_23.md
-        - Session 22: wednesday/recaps/recap_session_22.md
-        - Session 21: wednesday/recaps/recap_session_21.md
-      - Quest Logs:
-        - Session 33: wednesday/logs/log_session_33.md
-        - Session 32: wednesday/logs/log_session_32.md
-        - Session 31: wednesday/logs/log_session_31.md
-        - Session 30: wednesday/logs/log_session_30.md
-        - Session 29: wednesday/logs/log_session_29.md
-        - Session 28: wednesday/logs/log_session_28.md
-        - Session 27: wednesday/logs/log_session_27.md
-        - Session 26: wednesday/logs/log_session_26.md
-        - Session 25: wednesday/logs/log_session_25.md
-        - Session 24: wednesday/logs/log_session_24.md
-        - Session 23: wednesday/logs/log_session_23.md
-        - Session 22: wednesday/logs/log_session_22.md
-        - Session 21: wednesday/logs/log_session_21.md
-        - Session 20: wednesday/logs/log_session_20.md
-        - Session 19: wednesday/logs/log_session_19.md
-        - Session 18: wednesday/logs/log_session_18.md
-        - Session 17: wednesday/logs/log_session_17.md
-        - Session 16: wednesday/logs/log_session_16.md
-        - Session 15: wednesday/logs/log_session_15.md
-        - Session 14: wednesday/logs/log_session_14.md
-        - Session 13: wednesday/logs/log_session_13.md
-        - Session 12: wednesday/logs/log_session_12.md
-        - Session 11: wednesday/logs/log_session_11.md
-        - Session 10: wednesday/logs/log_session_10.md
-        - Session 9: wednesday/logs/log_session_9.md
-        - Session 8: wednesday/logs/log_session_8.md
-        - Session 7: wednesday/logs/log_session_7.md
-        - Session 6: wednesday/logs/log_session_6.md
-        - Session 5: wednesday/logs/log_session_5.md
-        - Session 4: wednesday/logs/log_session_4.md
-        - Session 3: wednesday/logs/log_session_3.md
-        - Session 2: wednesday/logs/log_session_2.md
-        - Session 1: wednesday/logs/log_session_1.md
-  - Friday:
-    - Overview: friday/index.md
-    - Players:
-      - PCs: friday/players/pcs.md
-      - Epic Paths: friday/players/epic_paths.md
-      - Dragons: friday/players/dragons.md
-    - Session Archives:
-      - Recaps:
-        - Session 37: friday/recaps/recap_session_37.md
-        - Session 36: friday/recaps/recap_session_36.md
-        - Session 35: friday/recaps/recap_session_35.md
-        - Session 34: friday/recaps/recap_session_34.md
-        - Session 33: friday/recaps/recap_session_33.md
-        - Session 31: friday/recaps/recap_session_31.md
-        - Session 30: friday/recaps/recap_session_30.md
-        - Session 29: friday/recaps/recap_session_29.md
-        - Session 28: friday/recaps/recap_session_28.md
-        - Session 27: friday/recaps/recap_session_27.md
-        - Session 26: friday/recaps/recap_session_26.md
-      - Quest Logs:
-        - Session 37: friday/logs/log_session_37.md
-        - Session 36: friday/logs/log_session_36.md
-        - Session 35: friday/logs/log_session_35.md
-        - Session 34: friday/logs/log_session_34.md
-        - Session 33: friday/logs/log_session_33.md
-        - Session 32: friday/logs/log_session_32.md
-        - Session 31: friday/logs/log_session_31.md
-        - Session 30: friday/logs/log_session_30.md
-        - Session 29: friday/logs/log_session_29.md
-        - Session 28: friday/logs/log_session_28.md
-        - Session 27: friday/logs/log_session_27.md
-        - Session 26: friday/logs/log_session_26.md
-        - Session 25: friday/logs/log_session_25.md
-        - Session 24: friday/logs/log_session_24.md
-        - Session 23: friday/logs/log_session_23.md
-        - Session 22: friday/logs/log_session_22.md
-        - Session 21: friday/logs/log_session_21.md
-        - Session 20: friday/logs/log_session_20.md
-        - Session 19: friday/logs/log_session_19.md
-        - Session 18: friday/logs/log_session_18.md
-        - Session 17: friday/logs/log_session_17.md
-        - Session 16: friday/logs/log_session_16.md
-        - Session 15: friday/logs/log_session_15.md
-        - Session 14: friday/logs/log_session_14.md
-        - Session 13: friday/logs/log_session_13.md
-        - Session 12: friday/logs/log_session_12.md
-        - Session 11: friday/logs/log_session_11.md
-        - Session 10: friday/logs/log_session_10.md
-        - Session 9: friday/logs/log_session_9.md
-        - Session 8: friday/logs/log_session_8.md
-        - Session 7: friday/logs/log_session_7.md
-        - Session 6: friday/logs/log_session_6.md
-        - Session 5: friday/logs/log_session_5.md
-        - Session 4: friday/logs/log_session_4.md
-        - Session 3: friday/logs/log_session_3.md
-        - Session 2: friday/logs/log_session_2.md
-        - Session 1: friday/logs/log_session_1.md 
+- Home: index.md
+- Monday:
+  - Overview: monday/index.md
+  - Campaign Overview: monday/campaign_overview.md
+  - Players:
+    - Overview: monday/players/pcs.md
+    - Character Dossiers:
+      - All Characters: monday/players/character_dossiers/pcs.md
+      - Bentham: monday/players/character_dossiers/bentham.md
+      - Clank: monday/players/character_dossiers/clank.md
+      - Haribo: monday/players/character_dossiers/haribo.md
+      - Ravithar: monday/players/character_dossiers/ravithar.md
+      - Velryss: monday/players/character_dossiers/velryss.md
+      - Zyntra: monday/players/character_dossiers/zyntra.md
+  - Factions:
+    - Overview: monday/factions/index.md
+    - House Glutthraz: monday/factions/house_glutthraz.md
+    - House Cull'thaine: monday/factions/house_cullthaine.md
+    - House Vaerixas: monday/factions/house_vaerixas.md
+  - NPCs:
+    - Overview: monday/npcs/index.md
+    - House Talzar:
+      - Matron Severine: monday/npcs/matron_severine.md
+      - Valandor T'alzar: monday/npcs/valandor_talzar.md
+      - Vyssinia Talzar: monday/npcs/vyssinia_talzar.md
+      - Lirael T'alzar: monday/npcs/lirael_talzar.md
+      - Miraleth T'alzar: monday/npcs/miraleth_talzar.md
+    - House Staff:
+      - Prefect Kaelen: monday/npcs/prefect_kaelen.md
+      - Grumble: monday/npcs/grumble.md
+      - Splurg: monday/npcs/splurg.md
+      - Veridia: monday/npcs/veridia.md
+      - Bronzidon ("Nugget"): monday/npcs/bronzidon.md
+    - House Glutthraz:
+      - Matron Zephyra: monday/npcs/matron_zephyra.md
+    - Ferry Crew:
+      - Borok the Silent: monday/npcs/borok_the_silent.md
+      - Fadda Brinebless: monday/npcs/fadda_brinebless.md
+      - Black Loch Keelhauler: monday/npcs/black_loch_keelhauler.md
+    - Black Loch Region:
+      - Uulk (Myconid Leader): monday/npcs/uulk_myconid_leader.md
+    - Cinderfork Foundry:
+      - Overview: monday/npcs/cinderfork_foundry/index.md
+      - Director Koldar: monday/npcs/cinderfork_foundry/director_koldar.md
+      - Chief Engineer Tholdrum "Steam-Heart" Garn: monday/npcs/cinderfork_foundry/chief_engineer_tholdrum_steam_heart_garn.md
+      - Chief Researcher Korvun: monday/npcs/cinderfork_foundry/chief_researcher_korvun.md
+      - Alyxina Fire-Beard: monday/npcs/cinderfork_foundry/alyxina_fire_beard.md
+      - Master Smith Durkal: monday/npcs/cinderfork_foundry/master_smith_durkal.md
+      - Acolyte Ghoran: monday/npcs/cinderfork_foundry/acolyte_ghoran.md
+      - Foundry Master Borok: monday/npcs/cinderfork_foundry/foundry_master_borok.md
+      - Black Mithril Screamer: monday/npcs/cinderfork_foundry/black_mithril_screamer.md
+      - Duergar Forgeworker: monday/npcs/cinderfork_foundry/duergar_forgeworker.md
+      - Duergar Sentry: monday/npcs/cinderfork_foundry/duergar_sentry.md
+      - Geothermal Elemental: monday/npcs/cinderfork_foundry/geothermal_elemental.md
+      - Liaison Malexa: monday/npcs/cinderfork_foundry/liaison_malexa.md
+      - Scrutinizer: monday/npcs/cinderfork_foundry/scrutinizer.md
+      - Skitter: monday/npcs/cinderfork_foundry/skitter.md
+  - Locations:
+    - Overview: monday/locations/index.md
+    - Major Regions:
+      - Black Loch Codex: monday/locations/black_loch_codex.md
+      - Vlyn'darastyl: monday/locations/vlyn_darastyl.md
+      - The Black Loch Region: monday/locations/black_loch_region.md
+      - Cinderfork Foundry: monday/locations/cinderfork_foundry.md
+    - Key Locations:
+      - T'alzar Tower: monday/locations/talzar_tower.md
+      - Valandor's Workshop: monday/locations/valandor_workshop.md
+      - Night-Tide Docks: monday/locations/night_tide_docks.md
+      - The Black Loch: monday/locations/black_loch.md
+      - Lost Catacombs of Auldbaern: monday/locations/lost_catacombs_auldbaern.md
+  - Lore:
+    - Overview: monday/lore/index.md
+    - Drow Pantheon: monday/lore/drow_pantheon.md
+    - Drow Society: monday/lore/drow_society.md
+  - Items:
+    - Overview: monday/items/index.md
+    - T'alzarine Prime Explosives: monday/items/talzarine_prime_explosives.md
+  - Credits: monday/credits.md
+  - Session Archives:
+    - Recaps:
+      - Session 10: monday/recaps/recap_session_10.md
+      - Session 9: monday/recaps/recap_session_9.md
+      - Session 8: monday/recaps/recap_session_8.md
+      - Session 7: monday/recaps/recap_session_7.md
+      - Session 6: monday/recaps/recap_session_6.md
+      - Session 5: monday/recaps/recap_session_5.md
+      - Session 4: monday/recaps/recap_session_4.md
+      - Session 3: monday/recaps/recap_session_3.md
+      - Session 2: monday/recaps/recap_session_2.md
+      - Session 1: monday/recaps/recap_session_1.md
+    - Quest Logs:
+      - Session 10: monday/logs/log_session_10.md
+      - Session 9: monday/logs/log_session_9.md
+      - Session 8: monday/logs/log_session_8.md
+      - Session 7: monday/logs/log_session_7.md
+      - Session 6: monday/logs/log_session_6.md
+      - Session 5: monday/logs/log_session_5.md
+      - Session 4: monday/logs/log_session_4.md
+      - Session 3: monday/logs/log_session_3.md
+      - Session 2: monday/logs/log_session_2.md
+      - Session 1: monday/logs/log_session_1.md
+- Wednesday:
+  - Overview: wednesday/index.md
+  - Players:
+    - PCs: wednesday/players/pcs.md
+    - Epic Paths: wednesday/players/epic_paths.md
+    - Player Quests: wednesday/players/player_character_quests.md
+  - Session Archives:
+    - Recaps:
+      - Session 33: wednesday/recaps/recap_session_33.md
+      - Session 32: wednesday/recaps/recap_session_32.md
+      - Session 31: wednesday/recaps/recap_session_31.md
+      - Session 30: wednesday/recaps/recap_session_30.md
+      - Session 29: wednesday/recaps/recap_session_29.md
+      - Session 28: wednesday/recaps/recap_session_28.md
+      - Session 27: wednesday/recaps/recap_session_27.md
+      - Session 26: wednesday/recaps/recap_session_26.md
+      - Session 25: wednesday/recaps/recap_session_25.md
+      - Session 24: wednesday/recaps/recap_session_24.md
+      - Session 23: wednesday/recaps/recap_session_23.md
+      - Session 22: wednesday/recaps/recap_session_22.md
+      - Session 21: wednesday/recaps/recap_session_21.md
+    - Quest Logs:
+      - Session 33: wednesday/logs/log_session_33.md
+      - Session 32: wednesday/logs/log_session_32.md
+      - Session 31: wednesday/logs/log_session_31.md
+      - Session 30: wednesday/logs/log_session_30.md
+      - Session 29: wednesday/logs/log_session_29.md
+      - Session 28: wednesday/logs/log_session_28.md
+      - Session 27: wednesday/logs/log_session_27.md
+      - Session 26: wednesday/logs/log_session_26.md
+      - Session 25: wednesday/logs/log_session_25.md
+      - Session 24: wednesday/logs/log_session_24.md
+      - Session 23: wednesday/logs/log_session_23.md
+      - Session 22: wednesday/logs/log_session_22.md
+      - Session 21: wednesday/logs/log_session_21.md
+      - Session 20: wednesday/logs/log_session_20.md
+      - Session 19: wednesday/logs/log_session_19.md
+      - Session 18: wednesday/logs/log_session_18.md
+      - Session 17: wednesday/logs/log_session_17.md
+      - Session 16: wednesday/logs/log_session_16.md
+      - Session 15: wednesday/logs/log_session_15.md
+      - Session 14: wednesday/logs/log_session_14.md
+      - Session 13: wednesday/logs/log_session_13.md
+      - Session 12: wednesday/logs/log_session_12.md
+      - Session 11: wednesday/logs/log_session_11.md
+      - Session 10: wednesday/logs/log_session_10.md
+      - Session 9: wednesday/logs/log_session_9.md
+      - Session 8: wednesday/logs/log_session_8.md
+      - Session 7: wednesday/logs/log_session_7.md
+      - Session 6: wednesday/logs/log_session_6.md
+      - Session 5: wednesday/logs/log_session_5.md
+      - Session 4: wednesday/logs/log_session_4.md
+      - Session 3: wednesday/logs/log_session_3.md
+      - Session 2: wednesday/logs/log_session_2.md
+      - Session 1: wednesday/logs/log_session_1.md
+- Friday:
+  - Overview: friday/index.md
+  - Players:
+    - PCs: friday/players/pcs.md
+    - Epic Paths: friday/players/epic_paths.md
+    - Dragons: friday/players/dragons.md
+  - Session Archives:
+    - Recaps:
+      - Session 37: friday/recaps/recap_session_37.md
+      - Session 36: friday/recaps/recap_session_36.md
+      - Session 35: friday/recaps/recap_session_35.md
+      - Session 34: friday/recaps/recap_session_34.md
+      - Session 33: friday/recaps/recap_session_33.md
+      - Session 31: friday/recaps/recap_session_31.md
+      - Session 30: friday/recaps/recap_session_30.md
+      - Session 29: friday/recaps/recap_session_29.md
+      - Session 28: friday/recaps/recap_session_28.md
+      - Session 27: friday/recaps/recap_session_27.md
+      - Session 26: friday/recaps/recap_session_26.md
+    - Quest Logs:
+      - Session 37: friday/logs/log_session_37.md
+      - Session 36: friday/logs/log_session_36.md
+      - Session 35: friday/logs/log_session_35.md
+      - Session 34: friday/logs/log_session_34.md
+      - Session 33: friday/logs/log_session_33.md
+      - Session 32: friday/logs/log_session_32.md
+      - Session 31: friday/logs/log_session_31.md
+      - Session 30: friday/logs/log_session_30.md
+      - Session 29: friday/logs/log_session_29.md
+      - Session 28: friday/logs/log_session_28.md
+      - Session 27: friday/logs/log_session_27.md
+      - Session 26: friday/logs/log_session_26.md
+      - Session 25: friday/logs/log_session_25.md
+      - Session 24: friday/logs/log_session_24.md
+      - Session 23: friday/logs/log_session_23.md
+      - Session 22: friday/logs/log_session_22.md
+      - Session 21: friday/logs/log_session_21.md
+      - Session 20: friday/logs/log_session_20.md
+      - Session 19: friday/logs/log_session_19.md
+      - Session 18: friday/logs/log_session_18.md
+      - Session 17: friday/logs/log_session_17.md
+      - Session 16: friday/logs/log_session_16.md
+      - Session 15: friday/logs/log_session_15.md
+      - Session 14: friday/logs/log_session_14.md
+      - Session 13: friday/logs/log_session_13.md
+      - Session 12: friday/logs/log_session_12.md
+      - Session 11: friday/logs/log_session_11.md
+      - Session 10: friday/logs/log_session_10.md
+      - Session 9: friday/logs/log_session_9.md
+      - Session 8: friday/logs/log_session_8.md
+      - Session 7: friday/logs/log_session_7.md
+      - Session 6: friday/logs/log_session_6.md
+      - Session 5: friday/logs/log_session_5.md
+      - Session 4: friday/logs/log_session_4.md
+      - Session 3: friday/logs/log_session_3.md
+      - Session 2: friday/logs/log_session_2.md
+      - Session 1: friday/logs/log_session_1.md

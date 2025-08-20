@@ -31,54 +31,17 @@ She is prone to unusual, sometimes cryptic, comments and observations, a result 
 
 ## Combat Statistics
 
-> **Veridia, the T'alzar Jade Spider Sentinel**
-> *Large construct, unaligned*
-> 
-> **Armor Class** 18 (natural armor)
-> **Hit Points** 142 (15d10 + 60)
-> **Speed** 30 ft., climb 30 ft.
-> 
-> | STR     | DEX     | CON     | INT     | WIS     | CHA     |
-> |---------|---------|---------|---------|---------|---------|
-> | 18 (+4) | 16 (+3) | 18 (+4) | 10 (+0) | 14 (+2) | 10 (+0) |
-> 
-> **Saving Throws** Str +8, Con +8, Wis +6
-> **Skills** Athletics +8, Investigation +4, Perception +6
-> **Damage Resistances** bludgeoning, piercing, and slashing from nonmagical attacks
-> **Damage Immunities** poison, psychic
-> **Condition Immunities** charmed, exhaustion, frightened, paralyzed, petrified, poisoned
-> **Senses** blindsight 60 ft., darkvision 120 ft., passive Perception 16
-> **Languages** Drow, Undercommon
-> **Challenge** 10 (5,900 XP)
-> 
-> **House T'alzar Imprinting.** Veridia recognizes all members of House T'alzar and those bearing a T'alzar house insignia. She will not attack recognized individuals unless specifically commanded by a T'alzar matron.
-> 
-> **Magic Resistance.** Veridia has advantage on saving throws against spells and other magical effects.
-> 
-> **Immutable Form.** Veridia is immune to any spell or effect that would alter her form.
-> 
-> **Spider Climb.** Veridia can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.
-> 
-> **Jade Resonance.** Veridia's jade crystal creates an anti-magic field in a 10-foot radius around her. Spells of 3rd level or lower are automatically dispelled when cast within this area. Higher level spells require a DC 15 ability check using the caster's spellcasting ability.
+<div id="veridia-statblock"></div>
 
-### Actions
-
-> **Multiattack.** Veridia makes two jade claw attacks and can use her Web Snare if available.
-> 
-> **Jade Claw.** *Melee Weapon Attack:* +8 to hit, reach 10 ft., one target. *Hit:* 15 (2d10 + 4) slashing damage plus 7 (2d6) force damage.
-> 
-> **Web Snare (Recharge 5-6).** Veridia launches crystallized web strands in a 20-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw or be restrained by the jade webbing. A creature can use its action to make a DC 16 Strength check, freeing itself or another creature within reach on a success. The webbing has AC 15 and 20 hit points.
-> 
-> **Guardian's Alarm (1/Day).** Veridia releases a piercing psychic shriek that alerts all House T'alzar members within 1 mile. Additionally, all hostile creatures within 30 feet must make a DC 16 Wisdom saving throw or be stunned until the end of Veridia's next turn.
-
-### Legendary Actions
-*Veridia can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Veridia regains spent legendary actions at the start of her turn.*
-
-> **Detect.** Veridia makes a Wisdom (Perception) check.
-> 
-> **Skitter.** Veridia moves up to half her speed without provoking opportunity attacks.
-> 
-> **Jade Pulse (Costs 2 Actions).** Veridia's crystal flares, forcing all creatures within 15 feet to make a DC 16 Constitution saving throw or be blinded until the end of their next turn.
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/jade_spider_sentinel.json', 'veridia-statblock');
+  }, 100);
+});
+</script>
 
 ## Special Mechanics
 

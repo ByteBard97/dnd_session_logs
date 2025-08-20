@@ -1,0 +1,133 @@
+{
+  "name": "The Whisperer",
+  "size": "Gargantuan",
+  "type": "aberration",
+  "alignment": "Chaotic Evil",
+  "ac": {
+    "value": 17,
+    "notes": "natural armor"
+  },
+  "hp": {
+    "average": 175,
+    "formula": "14d20+28"
+  },
+  "speed": "30 ft., swim 50 ft.",
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 15,
+    "int": 19,
+    "wis": 18,
+    "cha": 22
+  },
+  "saves": {},
+  "skills": {
+    "stealth": "+7",
+    "performance": "+9",
+    "persuasion": "+9"
+  },
+  "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "damage_immunities": "psychic",
+  "condition_immunities": "charmed, frightened",
+  "senses": "truesight 100 ft., passive Perception 14",
+  "languages": "Understands Abyssal, Celestial, Infernal, and Primordial but can't speak them; Aquan; Deep Speech; telepathy 120 ft.",
+  "cr": "9",
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The Whisperer can breathe air and water."
+    },
+    {
+      "name": "Coleoideaic",
+      "desc": "The Whisperer can squeeze through a space that is large enough for a creature two sizes smaller than it (large). While squeezing through a space, the whisperer can move at normal speed. Other movement penalties apply."
+    },
+    {
+      "name": "Dead Ringer",
+      "desc": "The Whisperer has 1d6 eyes. Each sits on a vaguely humanoid-shaped stalk and is capable of casting bright light in a 30-foot radius and dim light for an additional 30 feet. While little more than primitive light receptors, these eyes are equipped with quite advanced psionic powers of detection and subterfuge. As a bonus action, The Whisperer can do one of the following:\n\n• Activate or deactivate the glow of any number of its eyes.\n• Enshroud one of its eye stalks in a magical disguise functionally equivalent to the alter self spell (requiring no components), making it appear as any medium-sized humanoid that The Whisperer can see within range or with which it is familiar.\n• Emit a low-frequency thrum from the socket of any eyestalk. This thrum can be heard in a radius of 300 ft. both above and below water. Creatures who hear the thrum must succeed on a DC 17 CHA save or are compelled to identify the source of the sound."
+    },
+    {
+      "name": "Freedom of Movement",
+      "desc": "The Whisperer ignores difficult terrain, and magical effects can't reduce its speed or cause it to be restrained. It can spend 5 feet of movement to escape from nonmagical restraints or being grappled."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tentacle",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+10",
+        "distance": "20 ft.",
+        "target": "one target",
+        "dmg1": "2d6+5",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 12 (2d6 + 5) bludgeoning damage, and the target is grappled (escape DC 18). Until the grapple ends, the target is restrained. The Whisperer has 1d6+2 tentacles, each of which can grapple one target."
+    },
+    {
+      "name": "Bite",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+10",
+        "distance": "5 ft.",
+        "target": "one creature that is grappled by The Whisperer",
+        "dmg1": "4d8+5",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 23 (4d8 + 5) piercing damage. If the target is a Medium or smaller, that creature is swallowed, and the grapple ends. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects outside The Whisperer, and it takes 21 (6d6) acid damage at the start of each of The Whisperer's turns."
+    },
+    {
+      "name": "Fling",
+      "desc": "One Medium or smaller object held or creature grappled by The Whisperer is thrown up to 40 feet in a random direction and knocked prone. If a thrown target strikes a solid surface, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 18 Dexterity saving throw or take the same damage and be knocked prone."
+    },
+    {
+      "name": "Enthrall",
+      "desc": "The Whisperer targets one creature it can see within 30 feet of it. The target must succeed on a DC 17 WIS save or be magically charmed by The Whisperer until The Whisperer dies or until it is on a different plane of existence from the target. The charmed target is under The Whisperer's control and can't take reactions, and The Whisperer and the target can communicate telepathically with each other over any distance. Whenever the charmed target takes damage, the target can repeat the saving throw. On a success, the effect ends. No more than once every 24 hours, the target gains awareness of its charmed condition and can also repeat the saving throw when it is at least 1 mile away from The Whisperer.\n\nUpon the effect ending, the creature is cursed, and must make a DC 20 History check to recall any of the actions it took while charmed, as well as any communications it had with The Whisperer, taking 2d6 psychic damage on a fail. This effect may be removed by a remove curse, greater restoration, or wish spell."
+    }
+  ],
+  "legendary": {
+    "count": 3,
+    "actions": [
+      {
+        "name": "Tentacle Attack or Fling",
+        "desc": "The Whisperer makes a tentacle attack or uses its Fling."
+      },
+      {
+        "name": "Detect",
+        "desc": "The Whisperer makes a WIS (Perception) check."
+      },
+      {
+        "name": "Milky Cloud (Costs 3 Actions)",
+        "desc": "While underwater, The Whisperer expels a cloud of greenish murk in a 40-foot radius underwater. The cloud spreads around corners, and that area is heavily obscured to creatures other than The Whisperer. Each creature other than The Whisperer that ends its turn there must succeed on a DC 20 Constitution saving throw, taking 11 (2d10) poison damage on a failed save, or half as much damage on a successful one. A strong current disperses the cloud, which otherwise disappears in three turns."
+      }
+    ]
+  },
+  "mythic_actions": {
+    "desc": "Lair Actions: On initiative count 20 (losing initiative ties), The Whisperer takes a lair action to cause one of the following effects; The Whisperer can't use the same effect two rounds in a row.",
+    "actions": [
+      {
+        "name": "Lair Action: Hydrothermal Acceleration",
+        "desc": "The hydrothermal vents in The Whisperer's lair accelerate their propulsion. The water within a 100-ft sphere around each vent becomes extremely hot. Creatures entering this area or starting their turn here must make a DC 15 CON save or take 4d8 fire damage on a fail or half on a success. Creatures that fail must spend all subsequent movement this round attempting to escape the hot water via the most direct route possible. The water retains this condition for 1d4 rounds."
+      },
+      {
+        "name": "Lair Action: Churning Waters",
+        "desc": "The water in The Whisperer's lair churns wildly. All creatures within the lair are pushed 20 ft. in a random direction determined by the roll of a d6."
+      }
+    ]
+  },
+  "regional_effects": {
+    "desc": "The region containing The Whisperer's lair is warped by the creature's haunting presence, creating the following effects:",
+    "effects": [
+      "The water within 6 miles of The Whisperer's lair is dark and brackish. Any method of illumination—magical or non-magical—casts only half its usual radius of light.",
+      "The spectral spirits of 1d4 dead fishfolk appear and attack any creatures hostile to The Whisperer. These spirits use the ghost stat block but each carry a net and a spear. Each of these weapons deals an additional 3d6 necrotic damage beyond its base damage on a hit.",
+      "There is colony of crypt sharks, abyssal mermaids, and/or sahuagin within 6 miles of The Whisperer's lair.",
+      "The silence of the depths deadens the mind. Creatures hostile to The Whisperer roll all Survival, Perception, Investigation, and Nature checks at disadvantage with 6 miles of its lair."
+    ]
+  },
+  "lore": {
+    "source": "Original creation by Odd's Gardens (Hovis and Sunga). Full details available at: https://www.milbysmaps.com/wp-content/uploads/2022/01/Whisperer-watermarked.pdf",
+    "description": "Most recorded observations of The Whisperer hinge not on its physical appearance but rather on the tenor of its eponymous 'whisper' or 'song.' Those who've encountered The Whisperer and lived share an obsessive need to record in great detail the cadence, volume, pitch, and resonance of its telepathic communications. Survivors are never satisfied by their own descriptions; moreover, no two accounts are the same.",
+    "behavior": "The night before The Whisperer attacks a ship, witnesses often report seeing pulsing lights and ghostly apparitions—often in the form of a crew member—floating above the waves. Superstitious captains treat these wordless visitations as courtesy requests, believing that if the portrayed crew member appears above the black waves, The Whisperer can be appeased by sacrificing that individual to the depths.",
+    "dormancy": "The Whisperer is known to habitually disappear, only to return several hundred years later to hunt the same waters and tunnels, as though no time has passed. Theories abound ranging from the belief that The Whisperer may be migratory, or may not even nest in this plane of existence.",
+    "survivor_account": "Only one individual has ever reported surviving an actual attack. Captain Briggit Coalhew of the Deathknot Mining Company sacrificed herself to The Whisperer in an effort to save her crew. She was discovered on an island a hundred miles away from the ship's point of departure, missing two legs and one arm. Her body was punctured in nearly every part, suggesting an attack by a creature with several rows of extremely narrow, ridged teeth, each approximately half a foot in length."
+  }
+} 

@@ -1,0 +1,122 @@
+{
+  "name": "Acolyte Ghoran",
+  "size": "Medium",
+  "type": "humanoid (duergar)",
+  "alignment": "lawful evil",
+  "cr": "3",
+  "ac": {
+    "value": 14,
+    "notes": "Chain Shirt, Holy Chains"
+  },
+  "hp": {
+    "average": 44,
+    "formula": "8d8 + 8"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 12,
+    "dex": 10,
+    "con": 12,
+    "int": 13,
+    "wis": 17,
+    "cha": 14
+  },
+  "saves": {
+    "wis": "+5",
+    "cha": "+4"
+  },
+  "skills": {
+    "intimidation": "+4",
+    "medicine": "+5",
+    "religion": "+3"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Dwarvish, Undercommon",
+  "spellcasting_ability": "Wisdom",
+  "caster_level": 5,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Ghoran has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Ghoran has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "Ghoran can innately cast the following spells, requiring no material components:\n\n1/day each: Enlarge/Reduce (self only, Enlarge option only), Invisibility (self only)"
+    },
+    {
+      "name": "Spellcasting (Cleric)",
+      "desc": "Ghoran is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). He has the following cleric spells prepared:\n\nCantrips (at will): Sacred Flame, Guidance, Toll the Dead\n1st Level (4 slots): Bane, Command, Inflict Wounds, Shield of Faith\n2nd Level (3 slots): Hold Person, Heat Metal, Spiritual Weapon\n3rd Level (2 slots): Bestow Curse, Spirit Guardians"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Ghoran makes two attacks with his Binding Chains."
+    },
+    {
+      "name": "Binding Chains",
+      "attack": {
+        "type": "Mele Weapon Attack",
+        "tohit": "+3",
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "1d6+1",
+        "type1": "bludgeoning"
+      },
+      "desc": "If the target is a Large or smaller creature, it must succeed on a DC 13 Strength saving throw or be restrained and pulled up to 10 feet closer to Ghoran. A restrained creature can use its action to make a DC 13 Strength check, freeing itself on a success."
+    },
+    {
+      "name": "Toll the Dead",
+      "attack": {
+        "type": "Spell",
+        "reach": "60 ft.",
+        "target": "one creature",
+        "save": "DC 13 WIS save",
+        "dmg1": "1d8",
+        "type1": "necrotic",
+        "dmg2": "1d12",
+        "type2": "necrotic (if target is missing any HP)"
+      },
+      "desc": "The target must succeed on a Wisdom saving throw or take necrotic damage. If the target is missing any of its hit points, it instead takes the higher damage roll."
+    },
+    {
+      "name": "Spirit Guardians (Costs a 3rd-Level Spell Slot)",
+      "attack": {
+        "type": "Spell",
+        "reach": "15 ft. radius",
+        "target": "Each creature in range",
+        "dmg1": "3d8",
+        "type1": "necrotic",
+        "save": "DC 13 WIS save for half damage"
+      },
+      "desc": "Ghoran calls forth spirits to protect him. For the duration (up to 10 minutes, concentration), when a creature enters the area for the first time on a turn or starts its turn there, it must make a Wisdom saving throw, taking damage on a failed save. The area is difficult terrain for enemies."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Spiritual Weapon Attack",
+      "attack": {
+        "type": "Melee Spell Attack",
+        "tohit": "+5",
+        "reach": "5 ft. (from weapon)",
+        "target": "one creature",
+        "dmg1": "1d8+3",
+        "type1": "force"
+      },
+      "desc": "Attack with a currently active Spiritual Weapon. This is a bonus action on Ghoran's turn."
+    }
+  ],
+  "reactions": [],
+  "bio": "Acolyte Ghoran is the spiritual authority within the Cinderfork Foundry, a terrifying figure whose fanatical devotion to Laduguer is plain to see. He wears a tall, imposing mitre and heavy, dark robes, with thick iron chains draped over his shoulders as a sign of his holy burden. His eyes glow with a malevolent orange light as he oversees the ritualistic creation of Screamers, viewing each tormented shriek as a hymn to his god. He believes that suffering is a holy state and that true power is forged only through pain and agony."
+} 

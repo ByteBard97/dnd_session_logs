@@ -29,6 +29,21 @@ As Head of Security, Vyssinia is responsible for:
 - Serving as the house champion in formal duels
 - Advising on security matters and threat assessment
 
+
+## Combat Statistics
+
+<div id="vyssinia-talzar-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/vyssinia_talzar.json', 'vyssinia-talzar-statblock');
+  }, 100);
+});
+</script>
+
 ## Relationships
 - **Matron Severine:** Respects her mother's leadership while sometimes questioning her pragmatic approach
 - **Valandor:** Has a complex relationship with her brother, respecting his brilliance while preferring more traditional methods

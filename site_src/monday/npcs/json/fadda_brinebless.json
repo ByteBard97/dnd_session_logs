@@ -1,0 +1,171 @@
+{
+  "name": "Fadda Brinebless",
+  "size": "Small",
+  "type": "humanoid (goblin)",
+  "alignment": "chaotic neutral",
+  "ac": {
+    "value": 14,
+    "notes": "Studded Leather + Dex"
+  },
+  "hp": {
+    "average": 45,
+    "formula": "7d6 + 14"
+  },
+  "speed": "30 ft., swim 30 ft.",
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 14,
+    "int": 12,
+    "wis": 18,
+    "cha": 13
+  },
+  "saves": {
+    "wis": "+7",
+    "cha": "+4"
+  },
+  "skills": {
+    "animal_handling": "+7",
+    "insight": "+7",
+    "medicine": "+7",
+    "nature": "+4",
+    "perception": "+7",
+    "religion": "+4",
+    "survival": "+10",
+    "water_vehicles": "+6"
+  },
+  "damage_resistances": "cold",
+  "senses": "darkvision 60 ft., passive Perception 17",
+  "languages": "Common, Goblin, Undercommon (pidgin creole dialect)",
+  "pb": "+3",
+  "spellcasting_ability": "Wisdom",
+  "caster_level": 5,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+  },
+  "equipment": [
+    {
+      "name": "Studded Leather Armor",
+      "desc": "Made from treated rothé hide with bone studs."
+    },
+    {
+      "name": "Loch-Blessed Trident",
+      "desc": "A magical trident that glows faintly blue underwater. +1 to attack and damage rolls. Can cast Create or Destroy Water once per day."
+    },
+    {
+      "name": "Navigator's Compass of the Deep",
+      "desc": "Always points toward the nearest safe harbor on the Black Loch. Grants advantage on Survival checks for navigation."
+    },
+    {
+      "name": "Pouch of Sacred Loch Salt",
+      "desc": "Contains enough blessed salt for 10 ritual blessings. Can be used as a spell component."
+    },
+    {
+      "name": "Bone Dice Set",
+      "desc": "Carved from keelhauler bones with eel motifs. Used for gambling and minor divination."
+    }
+  ],
+  "traits": [
+    {
+      "name": "Nimble Escape",
+      "desc": "Fadda can take the Disengage or Hide action as a bonus action on each of his turns."
+    },
+    {
+      "name": "Loch-Born",
+      "desc": "Fadda has advantage on Constitution saving throws against cold and exhaustion from aquatic environments. He can hold his breath for up to 15 minutes."
+    },
+    {
+      "name": "Spellcasting (Druid/Cleric Hybrid)",
+      "desc": "Fadda is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). He has the following spells prepared:\n\nCantrips (at will): Druidcraft, Guidance, Mending, Thaumaturgy\n1st level (4 slots): Create or Destroy Water, Cure Wounds, Detect Magic, Fog Cloud\n2nd level (3 slots): Augury, Enhance Ability, Locate Object, Water Walk\n3rd level (2 slots): Call Lightning, Water Breathing, Wind Wall"
+    },
+    {
+      "name": "Ritual Casting",
+      "desc": "Fadda can cast spells with the ritual tag as rituals if he has them prepared."
+    },
+    {
+      "name": "Deep Loch Blessing",
+      "desc": "Once per long rest, Fadda can perform a 10-minute ritual to grant himself and up to 6 allies one of the following benefits for 24 hours: resistance to cold damage, advantage on Constitution saves against exhaustion, or the ability to see clearly underwater to a distance of 60 feet."
+    },
+    {
+      "name": "Loch Whispers",
+      "desc": "Fadda can sense the general mood and danger level of the Black Loch within 1 mile. He knows if there are hostile creatures, dangerous weather, or magical disturbances in the water."
+    },
+    {
+      "name": "Master Navigator",
+      "desc": "Fadda never becomes lost on or near the Black Loch. He can determine his exact location and the direction to any known destination on the loch."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Fadda makes two attacks: one with his trident and one cantrip, or two cantrip attacks."
+    },
+    {
+      "name": "Loch-Blessed Trident",
+      "attack": {
+        "type": "Melee or Ranged",
+        "tohit": "+6",
+        "reach": "5 ft. or range 20/60 ft.",
+        "target": "one target",
+        "dmg1": "1d6+4",
+        "type1": "piercing",
+        "dmg2": "1d4",
+        "type2": "cold"
+      },
+      "desc": "Deals additional cold damage when used underwater or in rain. Can be thrown and returns to Fadda's hand."
+    },
+    {
+      "name": "Druidcraft",
+      "desc": "Fadda can instantly make a flower bloom, a seed pod open, or a leaf bud bloom. He can create a harmless sensory effect, predict weather for the next 24 hours, or light/snuff a small flame."
+    },
+    {
+      "name": "Loch's Wrath (Recharge 5-6)",
+      "desc": "Fadda calls upon the Black Loch's power. All creatures within 20 feet must make a DC 15 Dexterity saving throw. On a failure, they take 3d6 cold damage and are knocked prone by a surge of icy water. On a success, they take half damage and aren't knocked prone."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Blessing of Safe Passage",
+      "desc": "Fadda can use a bonus action to bless a creature within 30 feet. The target gains advantage on their next saving throw or ability check related to water, navigation, or survival."
+    },
+    {
+      "name": "Loch's Guidance",
+      "desc": "Fadda casts Guidance as a bonus action, flavored as whispered prayers to the Black Loch."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Deep Current Shield",
+      "desc": "When Fadda or an ally within 30 feet takes damage from a ranged attack, he can use his reaction to create a wall of water that grants +2 AC against that attack."
+    },
+    {
+      "name": "Loch's Warning",
+      "desc": "When a creature Fadda can see is about to make a Wisdom (Survival) or Intelligence (Navigation) check, he can use his reaction to grant them advantage on the roll."
+    }
+  ],
+  "spells": {
+    "cantrips": ["Druidcraft", "Guidance", "Mending", "Thaumaturgy"],
+    "level1": ["Create or Destroy Water", "Cure Wounds", "Detect Magic", "Fog Cloud"],
+    "level2": ["Augury", "Enhance Ability", "Locate Object", "Water Walk"],
+    "level3": ["Call Lightning", "Water Breathing", "Wind Wall"]
+  },
+  "personality": {
+    "speech_pattern": "High-pitched pidgin creole mixing Goblin, Undercommon, and invented words",
+    "sample_phrases": [
+      "Deep Black guard da iron worm!",
+      "Loch sees all, Loch knows all!",
+      "Fadda Brinebless keep ta faith!",
+      "We give respect, Loch gives safe passage.",
+      "For da Deep Eye ta watch."
+    ],
+    "mannerisms": [
+      "Constantly sprinkling 'blessed' loch water on things",
+      "Muttering prayers and blessings under his breath",
+      "Tossing small offerings into the water",
+      "Reading omens in the movement of water and mist"
+    ]
+  },
+  "bio": "Fadda Brinebless is a devout goblin shaman who has spent his entire life on the Black Loch. He serves as first mate aboard various vessels, combining practical seamanship with his mystical devotion to the loch itself, which he worships as a living deity. His pidgin speech and constant rituals might seem eccentric, but his supernatural ability to navigate the treacherous waters and predict the loch's moods makes him invaluable to any crew. Despite his superstitious nature, he possesses genuine magical power drawn from his faith in the Deep Black, as he calls his deity."
+} 

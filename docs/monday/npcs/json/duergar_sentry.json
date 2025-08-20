@@ -1,0 +1,55 @@
+{
+  "name": "Duergar Sentry",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "lawful evil",
+  "cr": "1/4",
+  "ac": {
+    "value": 15,
+    "notes": "leather armor, shield"
+  },
+  "hp": {
+    "average": 13,
+    "formula": "2d8 + 4"
+  },
+  "speed": "25 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 9
+  },
+  "skills": {
+    "perception": "+2"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "War Pick",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+2",
+        "type1": "piercing"
+      },
+      "desc": ""
+    }
+  ],
+  "bio": "A Duergar Sentry is a worker pulled from the forges and assigned to guard duty. While not a professional soldier, they are equipped with a shield and a proper weapon, making them more defensively capable than a standard forgeworker. They are the common patrols and stationary guards of the foundry."
+} 

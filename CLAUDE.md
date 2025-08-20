@@ -4,10 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Environment Setup
 
-This project requires the `dnd-mkdocs` conda environment:
+This project requires the `dnd_docs` conda environment:
 
 ```bash
-conda activate dnd-mkdocs
+conda activate dnd_docs
 ```
 
 ## Build and Development Commands

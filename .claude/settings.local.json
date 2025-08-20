@@ -15,7 +15,12 @@
       "Bash(mv:*)",
       "Bash(chmod:*)",
       "Bash(timeout 10s mkdocs serve -f mkdocs-dev.yml)",
-      "Bash(timeout 10s mkdocs serve -f mkdocs-monday.yml --dev-addr 127.0.0.1:8001)"
+      "Bash(timeout 10s mkdocs serve -f mkdocs-monday.yml --dev-addr 127.0.0.1:8001)",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:codepen.io)",
+      "WebFetch(domain:valloric.github.io)"
     ],
     "deny": []
   }

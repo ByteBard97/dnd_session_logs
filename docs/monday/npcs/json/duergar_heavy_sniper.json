@@ -1,0 +1,92 @@
+{
+  "name": "Duergar Heavy Sniper",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "typically lawful evil",
+  "cr": "4",
+  "ac": {
+    "value": 15,
+    "notes": "studded leather"
+  },
+  "hp": {
+    "average": 78,
+    "formula": "12d8 + 24"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 14,
+    "int": 11,
+    "wis": 12,
+    "cha": 9
+  },
+  "saves": {},
+  "skills": {
+    "perception": "+5"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Quick Loader",
+      "desc": "The duergar ignores the loading quality of crossbows."
+    },
+    {
+      "name": "Sharpshooter",
+      "desc": "The duergar's ranged weapon attacks ignore half cover and three-quarters cover and attacking at long range doesn't impose disadvantage on the duergar's ranged weapon attack rolls."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The duergar makes two Shortsword attacks or two Heavy Crossbow attacks."
+    },
+    {
+      "name": "Shortsword",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+5",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d6+3",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Heavy Crossbow",
+      "attack": {
+        "type": "Ranged Weapon Attack",
+        "tohit": "+5",
+        "reach": "100/400 ft.",
+        "target": "one target",
+        "dmg1": "1d10+3",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 8 (1d10 + 3) piercing damage."
+    },
+    {
+      "name": "Invisibility (Recharges after a Short or Long Rest)",
+      "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Steady Aim (3/Day)",
+      "desc": "The duergar takes careful aim at a creature it can see within range of its ranged weapon. Until the end of its turn, the duergar deals an extra 10 (3d6) damage with its ranged weapon attack against the target."
+    }
+  ],
+  "reactions": [],
+  "bio": "Duergar heavy snipers are experts at the use of the heavy crossbow, which is evident in the speed that they demonstrate when reloading what others may regard as a slow and cumbersome weapon. Excellent sharpshooters, heavy snipers can kill targets with just one shot from greater distances, even when the targets are partially hidden by cover."
+} 

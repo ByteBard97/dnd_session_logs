@@ -39,3 +39,17 @@ Grumble embodies existential pessimism with intellectual superiority. He speaks 
 
 ## Role in House Talzar
 Grumble serves as the house's go-to specialist for heavy-duty tasks and machinery operation. Despite his constant complaints, he remains functionally loyal to the house and occasionally provides valuable counsel when his vast accumulated knowledge is actually consulted.
+## Combat Statistics
+
+<div id="grumble-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/grumble_flesh_golem.json', 'grumble-statblock');
+  }, 100);
+});
+</script>
+

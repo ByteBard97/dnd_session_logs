@@ -1,0 +1,98 @@
+{
+  "name": "Duergar Battle Smith",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "typically lawful evil",
+  "cr": "4",
+  "ac": {
+    "value": 15,
+    "notes": "scale mail"
+  },
+  "hp": {
+    "average": 78,
+    "formula": "12d8 + 24"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 12,
+    "dex": 12,
+    "con": 14,
+    "int": 18,
+    "wis": 10,
+    "cha": 9
+  },
+  "saves": {},
+  "skills": {
+      "perception": "+2"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+    "spellcasting_ability": "Intelligence",
+  "traits": [
+    {
+      "name": "Battle Ready",
+      "desc": "The duergar uses its Intelligence modifier, instead of its Strength or Dexterity, for the attack and damage rolls when attacking with a weapon (included in the attacks)."
+    },
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+        "name": "Spellcasting (Artificer)",
+        "desc": "The Duergar Battle Smith casts one of the following spells using Intelligence as the spellcasting ability (spell save DC 14, +6 to hit with spell attacks). It has the following artificer spells prepared:\n\nAt will: fire bolt (3d10), mending, message\n1/day each: conjure barrage, haste, heroism"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The duergar makes two Maul attacks."
+    },
+    {
+      "name": "Maul",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+6",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "2d6+4",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 11 (2d6 + 4) bludgeoning damage, or 18 (4d6 + 4) bludgeoning damage while enlarged."
+    },
+    {
+        "name": "Enlarge (Recharges after a Short or Long Rest)",
+        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+    },
+    {
+        "name": "Invisibility (Recharges after a Short or Long Rest)",
+        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    },
+    {
+        "name": "Summon Iron Defender (Recharges after a Long Rest)",
+        "desc": "The duergar summons its mechanical companion. In combat, the iron defender shares the duergar's initiative count, but it takes its turn immediately after the duergar. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action, unless the duergar used Command Iron Defender this turn."
+    }
+  ],
+  "bonus_actions": [
+      {
+          "name": "Branding Smite (3/Day)",
+          "desc": "Immediately after the duergar hits a target with an attack roll, the duergar deals an extra 7 (2d6) radiant damage to the target, which becomes visible if it is invisible, and the target sheds dim light in a 5-foot radius and can't become invisible for 1 minute."
+      },
+      {
+          "name": "Command Iron Defender",
+          "desc": "The duergar targets the iron defender it summoned and it can see within 60 feet of it. If the target can see or hear the duergar, the target can use its reaction to make a melee weapon attack, or take the Dash, Disengage, Help, or Repair action."
+      }
+  ],
+  "reactions": [
+      {
+          "name": "Protective Shield (3/Day)",
+          "desc": "When the duergar is hit by an attack roll, the duergar gains a +5 bonus to its AC until the start of the its next turn, which can cause the triggering attack roll to miss."
+      }
+  ],
+  "bio": "A duergar battle smith is an artificer who can create and command constructs, known as iron defenders, in battle. The iron defender would often resemble a mechanical spider that can inject poison with its bite. Together, the battle smith and iron defender form a potent team that can prove challenging to a low level party of adventurers."
+} 

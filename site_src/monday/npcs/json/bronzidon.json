@@ -1,0 +1,93 @@
+{
+  "name": "Bronzidon (\"Nugget\"), Workshop Custodian",
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "unaligned",
+  "ac": {
+    "value": 18,
+    "notes": "natural armor, adamantine carapace"
+  },
+  "hp": {
+    "average": 136,
+    "formula": "16d10+48"
+  },
+  "speed": "30 ft., climb 20 ft.",
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 17,
+    "int": 5,
+    "wis": 12,
+    "cha": 5
+  },
+  "saves": {},
+  "skills": {
+    "perception": "+6",
+    "athletics": "+9",
+    "stealth": "+5"
+  },
+  "damage_immunities": "poison, psychic",
+  "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine weapons; fire",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "Common, Undercommon (speaks in soft, staccato clicks)",
+  "cr": "8",
+  "traits": [
+    {
+      "name": "Construct Nature",
+      "desc": "Bronzidon does not require air, food, drink, or sleep."
+    },
+    {
+      "name": "Adamantine Carapace",
+      "desc": "Bronzidon has advantage on saving throws against spells and other magical effects, and critical hits against it become normal hits."
+    },
+    {
+      "name": "Dim-Light Camouflage",
+      "desc": "Bronzidon has advantage on Dexterity (Stealth) checks made in dim light or darkness."
+    },
+    {
+      "name": "Friendly Custodian",
+      "desc": "Bronzidon recognizes members of House T'alzar and designated allies. Against such creatures it never makes lethal attacks and will instead attempt to restrain or herd them out of hazardous areas, scolding them with metallic chirps (\"TINK-tink! Unsafe behavior detected!\")."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Bronzidon makes two Bite attacks, or one Bite and one Seize attack."
+    },
+    {
+      "name": "Bite",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "3d8+5",
+        "type1": "piercing"
+      },
+      "desc": "If the target is a creature, it must succeed on a DC 16 Constitution saving throw or be poisoned until the end of its next turn as tiny sparks dance across the wound. Bronzidon can choose to deal bludgeoning damage instead of piercing."
+    },
+    {
+      "name": "Seize",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8",
+        "reach": "10 ft.",
+        "target": "one Medium or smaller creature",
+        "dmg1": "2d6+5",
+        "type1": "bludgeoning"
+      },
+      "desc": "The target is grappled (escape DC 16). Until the grapple ends, Bronzidon can't make another Seize attack."
+    },
+    {
+      "name": "Arc-Slag Fumes (Recharge 5-6)",
+      "desc": "Bronzidon expels a cloud of shimmering, super-heated vapor in a 30-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save a creature is incapacitated and its speed becomes 0 as coughing gear seizures set in. The creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. The effect is non-lethal and leaves a sooty metallic scent."
+    }
+  ],
+  "legendary": {
+    "count": 0,
+    "actions": []
+  },
+  "init_tiebreaker": "@{dexterity}/100",
+  "bio": "Bronzidon was Valandor T'alzar's favorite workshop helper—a pillbug-shaped construct with a spotless adamantine shell and bright sapphire sensor-nodes. Programmed with a surprisingly cheery demeanor, it trundles about the forge humming metallic tunes, fetching tools and warning visitors not to touch volatile prototypes. Its polite clicks translate to short Common phrases such as, \"Greetings-friend! Mind the molten slag—thank you!\" House members affectionately call it 'Nugget' due to its rounded, metallic body. Although capable of powerful defensive measures, Bronzidon always attempts restraint or rebuke before violence, reflecting Valandor's respect for craftsmanship over conflict."
+} 

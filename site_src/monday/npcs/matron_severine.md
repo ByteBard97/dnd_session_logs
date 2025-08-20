@@ -30,3 +30,17 @@ Severine has been coordinating efforts to locate and rescue Valandor from his im
 - **Vyssinia T'alzar** - Eldest daughter, House Champion
 - **Lirael T'alzar** - Daughter, House Spymaster
 - **Miraleth** - Granddaughter (Valandor's child)
+
+## Combat Statistics
+
+<div id="severine-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/matron_mother_severine.json', 'severine-statblock');
+  }, 100);
+});
+</script>

@@ -1,0 +1,134 @@
+{
+  "name": "Duergar Inquisitor",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "typically lawful evil",
+  "cr": "6",
+  "ac": {
+    "value": 18,
+    "notes": "plate"
+  },
+  "hp": {
+    "average": 97,
+    "formula": "15d8 + 30"
+  },
+  "speed": "25 ft.",
+  "pb": "+3",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 15,
+    "int": 11,
+    "wis": 12,
+    "cha": 15
+  },
+  "saves": {
+      "wis": "+4",
+      "cha": "+5"
+  },
+  "skills": {
+    "intimidation": "+5",
+    "perception": "+4"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Aura of Judgement",
+      "desc": "A creature hostile to the duergar that is within 10 feet of the duergar has disadvantage on saving throws against being frightened, provided that the duergar isn't incapacitated."
+    },
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The duergar can cast the following spells using Charisma as the spellcasting ability (spell save DC 13): 2/day each: command, fear, hold person"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The duergar makes two flail attacks."
+    },
+    {
+      "name": "Flail",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+6",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+3",
+        "type1": "bludgeoning",
+        "dmg2": "2d8",
+        "type2": "psychic"
+      },
+      "desc": "Hit: 7 (1d8 + 3) bludgeoning damage, or 12 (2d8 + 3) bludgeoning damage while enlarged, plus 9 (2d8) psychic damage."
+    },
+    {
+      "name": "Heavy Crossbow",
+      "attack": {
+        "type": "Ranged Weapon Attack",
+        "tohit": "+3",
+        "reach": "100/400 ft.",
+        "target": "one target",
+        "dmg1": "1d10",
+        "type1": "piercing",
+        "dmg2": "2d8",
+        "type2": "psychic"
+      },
+      "desc": "Hit: 5 (1d10) piercing damage plus 9 (2d8) psychic damage."
+    },
+    {
+      "name": "Enlarge (Recharges after a Short or Long Rest)",
+      "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+    },
+    {
+      "name": "Invisibility (Recharges after a Short or Long Rest)",
+      "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    },
+    {
+      "name": "Command (2/Day)",
+      "attack": {
+        "type": "Spell",
+        "reach": "60 ft.",
+        "target": "one creature",
+        "save": "DC 13 WIS save"
+      },
+      "desc": "The Inquisitor speaks a one-word command to a creature it can see within range. The target must succeed on a DC 13 Wisdom saving throw or follow the command on its next turn. The spell has no effect if the target is undead, if it doesn’t understand the language, or if the command is directly harmful to it."
+    },
+    {
+      "name": "Fear (2/Day)",
+      "attack": {
+        "type": "Spell",
+        "reach": "30-foot cone",
+        "target": "each creature in cone",
+        "save": "DC 13 WIS save"
+      },
+      "desc": "Each creature in a 30-foot cone must succeed on a DC 13 Wisdom saving throw or drop whatever it is holding and become Frightened for the duration. While frightened, a creature must take the Dash action and move away from the Inquisitor by the safest available route on each of its turns, unless there is nowhere to move."
+    },
+    {
+      "name": "Hold Person (2/Day)",
+      "attack": {
+        "type": "Spell",
+        "reach": "60 ft.",
+        "target": "one humanoid",
+        "save": "DC 13 WIS save"
+      },
+      "desc": "The target must succeed on a DC 13 Wisdom saving throw or be Paralyzed for 1 minute. At the end of each of its turns, the target can make another Wisdom saving throw. On a success, the spell ends on the target."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Smite",
+      "desc": "Immediately after the duergar hits a target with an attack roll, the duergar deals an extra 7 (2d6) psychic damage to the target and forces the target to make a DC 13 Wisdom saving throw or the target is frightened of the duergar until the end of the duergar's next turn."
+    }
+  ],
+  "reactions": [],
+  "bio": "The inquisitor is a wicked unholy warrior fiercely loyal to the worship of Laduguer. It is always on the hunt for other dwarven subraces and worshipers of the Morndinsamman. Armed with a vicious flail, the inquisitor strides through the Underdark while emanating a frightening aura of judgement – a veritable symbol of fear among its enemies and brethren alike."
+} 

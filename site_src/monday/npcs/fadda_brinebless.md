@@ -30,6 +30,21 @@ Fadda speaks in a high-pitched pidgin blend of goblin, undercommon, and his own 
 - **Passenger Relations:** Explains (in his unique way) the lake's dangers
 - **Morale Officer:** Uses humor and superstition to manage fear
 
+
+## Combat Statistics
+
+<div id="fadda-brinebless-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/fadda_brinebless.json', 'fadda-brinebless-statblock');
+  }, 100);
+});
+</script>
+
 ## Relationships
 - **Borok the Silent:** Deep mutual respect hidden beneath surface dynamics
 - **The Keelhaulers:** Treats the massive eels like dangerous but beloved pets
@@ -58,59 +73,6 @@ Fadda speaks in a high-pitched pidgin blend of goblin, undercommon, and his own 
 
 ## Current Activities
 Continues to serve as Borok's first mate, maintaining the spiritual and practical well-being of the *Silent Keel* and its passengers. His rituals, while seemingly nonsensical, have kept the vessel safe through countless dangerous crossings.
-
-## Combat Statistics
-
-> **Fadda Brinebless**
-> *Small humanoid (goblin), chaotic neutral*
-> 
-> **Armor Class** 14 (studded leather)
-> **Hit Points** 45 (7d6 + 14)
-> **Speed** 30 ft., swim 30 ft.
-> 
-> | STR    | DEX     | CON     | INT     | WIS     | CHA     |
-> |--------|---------|---------|---------|---------|---------|
-> | 8 (-1) | 16 (+3) | 14 (+2) | 12 (+1) | 18 (+4) | 13 (+1) |
-> 
-> **Saving Throws** Wis +7, Cha +4
-> **Skills** Animal Handling +7, Insight +7, Medicine +7, Nature +4, Perception +7, Religion +4, Survival +10, Water Vehicles +6
-> **Damage Resistances** cold
-> **Senses** darkvision 60 ft., passive Perception 17
-> **Languages** Common, Goblin, Undercommon (pidgin creole dialect)
-> **Challenge** 5 (1,800 XP)
-> 
-> **Nimble Escape.** Fadda can take the Disengage or Hide action as a bonus action on each of his turns.
-> 
-> **Loch-Born.** Fadda has advantage on Constitution saving throws against cold and exhaustion from aquatic environments. He can hold his breath for up to 15 minutes.
-> 
-> **Spellcasting.** Fadda is a 5th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). He has the following spells prepared:
-> 
-> Cantrips (at will): *druidcraft, guidance, mending, thaumaturgy*
-> 1st level (4 slots): *create or destroy water, cure wounds, detect magic, fog cloud*
-> 2nd level (3 slots): *augury, enhance ability, locate object, water walk*
-> 3rd level (2 slots): *call lightning, water breathing, wind wall*
-> 
-> **Deep Loch Blessing.** Once per long rest, Fadda can perform a 10-minute ritual to grant himself and up to 6 allies one of the following benefits for 24 hours: resistance to cold damage, advantage on Constitution saves against exhaustion, or the ability to see clearly underwater to a distance of 60 feet.
-> 
-> **Loch Whispers.** Fadda can sense the general mood and danger level of the Black Loch within 1 mile. He knows if there are hostile creatures, dangerous weather, or magical disturbances in the water.
-> 
-> **Master Navigator.** Fadda never becomes lost on or near the Black Loch. He can determine his exact location and the direction to any known destination on the loch.
-
-### Actions
-
-> **Multiattack.** Fadda makes two attacks: one with his trident and one cantrip, or two cantrip attacks.
-> 
-> **Loch-Blessed Trident.** *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 20/60 ft., one target. *Hit:* 7 (1d6 + 4) piercing damage plus 2 (1d4) cold damage. Deals additional cold damage when used underwater or in rain. Can be thrown and returns to Fadda's hand.
-> 
-> **Loch's Wrath (Recharge 5-6).** Fadda calls upon the Black Loch's power. All creatures within 20 feet must make a DC 15 Dexterity saving throw. On a failure, they take 10 (3d6) cold damage and are knocked prone by a surge of icy water. On a success, they take half damage and aren't knocked prone.
-
-### Bonus Actions
-
-> **Blessing of Safe Passage.** Fadda can use a bonus action to bless a creature within 30 feet. The target gains advantage on their next saving throw or ability check related to water, navigation, or survival.
-
-### Reactions
-
-> **Deep Current Shield.** When Fadda or an ally within 30 feet takes damage from a ranged attack, he can use his reaction to create a wall of water that grants +2 AC against that attack.
 
 ## Equipment
 - **Loch-Blessed Trident:** +1 magical trident that glows faintly blue underwater

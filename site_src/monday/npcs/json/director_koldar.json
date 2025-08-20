@@ -1,0 +1,77 @@
+{
+  "name": "Director Koldar",
+  "size": "Medium",
+  "type": "humanoid (duergar)",
+  "alignment": "lawful evil",
+  "cr": "2",
+  "ac": {
+    "value": 12,
+    "notes": "Fine Robes"
+  },
+  "hp": {
+    "average": 33,
+    "formula": "6d8 + 6"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 17,
+    "wis": 14,
+    "cha": 16
+  },
+  "saves": {
+    "int": "+5",
+    "cha": "+5"
+  },
+  "skills": {
+    "deception": "+5",
+    "insight": "+4",
+    "intimidation": "+5",
+    "persuasion": "+5"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Common, Dwarvish, Elvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Koldar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "Koldar's innate spellcasting ability is Intelligence (spell save DC 13). He can innately cast the following spells, requiring no material components:\n\n1/day each: invisibility (self only), suggestion"
+    },
+    {
+        "name": "Cunning Negotiator",
+        "desc": "Koldar has advantage on Charisma (Deception) and Charisma (Persuasion) checks when negotiating contracts or business deals."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Koldar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Poisoned Dagger",
+      "attack": {
+        "type": "Melee or Ranged Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft. or range 20/60 ft.",
+        "target": "one target",
+        "dmg1": "1d4+2",
+        "type1": "piercing"
+      },
+      "desc": "A creature hit by this attack must succeed on a DC 13 Constitution saving throw or take 7 (2d6) poison damage and become poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "reactions": [
+    {
+        "name": "Redirect Blame",
+        "desc": "When Koldar is targeted by an attack while a creature is within 5 feet of him, he can use his reaction to force the attacker to make a DC 13 Charisma saving throw. On a failed save, the attacker must target the creature nearest to Koldar instead. This ability cannot be used again until he finishes a short or long rest."
+    }
+  ],
+  "bio": "Director Koldar is the shrewd, calculating administrator of the Cinderfork Foundry. He manages the business with an iron fist, using his sharp mind and political acumen to navigate the treacherous relationships with outsiders like House Glutthraz. He is a master of the deal, always seeking to turn a profit and expand his influence, viewing the forge's output as mere assets in a larger economic game."
+} 

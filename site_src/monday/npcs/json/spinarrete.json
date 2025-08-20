@@ -1,0 +1,143 @@
+{
+
+    "name": "Spinneret",
+  
+    "size": "Medium",
+  
+    "type": "construct",
+  
+    "alignment": "neutral",
+  
+    "cr": "-",
+  
+    "ac": {
+  
+      "value": 15,
+  
+      "notes": "natural armor"
+  
+    },
+  
+    "hp": {
+  
+      "average": 42,
+  
+      "formula": "2 + (Valandor's CON mod * 5) + (Valandor's Artificer Level * 5)"
+  
+    },
+  
+    "speed": "40 ft.",
+  
+    "pb": "+4",
+  
+    "abilities": {
+  
+      "str": 14,
+  
+      "dex": 12,
+  
+      "con": 14,
+  
+      "int": 4,
+  
+      "wis": 10,
+  
+      "cha": 6
+  
+    },
+  
+    "saves": {
+  
+      "dex": "+5",
+  
+      "con": "+6"
+  
+    },
+  
+    "skills": {
+  
+      "athletics": "+6",
+  
+      "perception": "+4"
+  
+    },
+  
+    "damage_immunities": "poison",
+  
+    "condition_immunities": "charmed, exhaustion, poisoned",
+  
+    "senses": "darkvision 60 ft., passive Perception 14",
+  
+    "languages": "understands the languages of its creator but can't speak",
+  
+    "traits": [
+  
+      {
+  
+        "name": "Vigilant",
+  
+        "desc": "The defender can't be surprised."
+  
+      },
+  
+      {
+  
+          "name": "Might of the Master",
+  
+          "desc": "The following numbers include Valandor's proficiency bonus (+4)."
+  
+      }
+  
+    ],
+  
+    "actions": [
+  
+      {
+  
+        "name": "Force-Empowered Rend",
+  
+        "attack": {
+  
+          "type": "Melee",
+  
+          "tohit": "+9",
+  
+          "reach": "5 ft.",
+  
+          "target": "one target",
+  
+          "dmg1": "1d8+4",
+  
+          "type1": "force"
+  
+        },
+  
+        "desc": "Magical melee attack. The to-hit is based on Valandor's spell attack bonus."
+  
+      },
+  
+      {
+  
+        "name": "Repair (3/Day)",
+  
+        "desc": "The defender can use its action to restore 2d8 + 4 hit points to itself or to one construct or object within 5 feet."
+  
+      }
+  
+    ],
+  
+    "reactions": [
+  
+      {
+  
+        "name": "Deflect Attack",
+  
+        "desc": "The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender."
+  
+      }
+  
+    ],
+  
+    "bio": "Valandor's personal creation, a spider-like construct that moves with unsettling speed. It serves as his mobile workbench, bodyguard, and assistant. Its chassis is a mix of darkwood and reinforced bronze, with multiple articulated limbs that can manipulate tools or stabilize its body like a tripod. It is fiercely loyal and acts with cold, calculated efficiency to protect its master."
+  
+  } 

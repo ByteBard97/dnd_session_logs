@@ -38,3 +38,17 @@ Maintains a secret research facility in the industrial district, guarded by Nugg
 
 ## Current Status
 Missing and presumed imprisoned. Family efforts are focused on infiltrating Cinderfork Foundry and securing the keys needed for his release.
+## Combat Statistics
+
+<div id="valandor-talzar-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/valandor_talzar.json', 'valandor-talzar-statblock');
+  }, 100);
+});
+</script>
+

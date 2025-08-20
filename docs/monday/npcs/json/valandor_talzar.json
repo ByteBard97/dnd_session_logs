@@ -1,0 +1,144 @@
+{
+  "name": "Valandor T'alzar, The Lost Visionary",
+  "size": "Medium",
+  "type": "humanoid (drow)",
+  "alignment": "neutral good",
+  "cr": "7",
+  "ac": {
+    "value": 19,
+    "notes": "Mithral Half Plate (Infused +1), Shield"
+  },
+  "hp": {
+    "average": 68,
+    "formula": "9d8 + 27"
+  },
+  "speed": "30 ft.",
+  "pb": "+4",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 12,
+    "cha": 10
+  },
+  "saves": {
+    "con": "+7",
+    "int": "+9"
+  },
+  "skills": {
+    "arcana": "+13",
+    "investigation": "+13",
+    "history": "+9",
+    "perception": "+5"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "Common, Elvish, Undercommon, Dwarvish, Gnomish",
+  "spellcasting_ability": "Intelligence",
+  "caster_level": 9,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "Valandor has advantage on saving throws against being charmed, and magic can't put him to sleep."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Valandor has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Artificer Infusions (4 Active)",
+      "desc": "Valandor has infused his gear with magical power. He currently has active: Enhanced Defense (on his armor), Enhanced Weapon (on his rapier), Repeating Shot (on his hand crossbow), and Mind Sharpener (on his robes)."
+    },
+    {
+      "name": "Mind Sharpener",
+      "desc": "When Valandor fails a CON saving throw to maintain concentration, he can use his reaction to succeed instead (4 charges, recharges at dawn)."
+    },
+    {
+      "name": "Arcane Jolt (5/Long Rest)",
+      "desc": "Once on each of his turns when he hits a target with a magic weapon attack, Valandor can cause the attack to deal an extra 2d6 force damage, or he can choose one creature or construct he can see within 30 feet of the target and restore 2d6 hit points to it."
+    },
+    {
+      "name": "Amulet of Proof against Detection and Location",
+      "desc": "Valandor is hidden from divination magic. He can't be targeted by such magic or perceived through magical scrying sensors."
+    },
+    {
+      "name": "Spellcasting (Artificer)",
+      "desc": "Valandor is a 9th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He has the following artificer spells prepared:\n\n(Spells with * are always prepared Battle Smith spells)\nCantrips: Guidance, Mending, Fire Bolt\n1st Level (4 slots): Absorb Elements, Cure Wounds, Faerie Fire, *Heroism*, *Shield*\n2nd Level (3 slots): Invisibility, See Invisibility, Web, *Warding Bond*, *Branding Smite*\n3rd Level (2 slots): Dispel Magic, Haste, *Aura of Vitality*, *Conjure Barrage*"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Valandor makes two attacks with his Infused Rapier or Infused Hand Crossbow."
+    },
+    {
+      "name": "Infused Rapier +1",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+10",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+6",
+        "type1": "piercing"
+      },
+      "desc": "This attack is magical. Valandor uses his Intelligence for the attack and damage rolls."
+    },
+    {
+      "name": "Infused Hand Crossbow +1",
+      "attack": {
+        "type": "Ranged",
+        "tohit": "+9",
+        "range": "30/120 ft.",
+        "target": "one target",
+        "dmg1": "1d6+5",
+        "type1": "piercing"
+      },
+      "desc": "This attack is magical, ignores the loading property, and uses Valandor's Intelligence for attack and damage rolls."
+    },
+    {
+      "name": "Force-Empowered Rend (Defender's Attack)",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+9",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+4",
+        "type1": "force"
+      },
+      "desc": "The T'alzar Web-Runner makes this attack when commanded. The to-hit is based on Valandor's spell attack bonus."
+    },
+    {
+      "name": "Fire Bolt (Cantrip)",
+      "attack": {
+        "type": "Ranged Spell Attack",
+        "tohit": "+9",
+        "range": "120 ft.",
+        "target": "one target",
+        "dmg1": "2d10",
+        "type1": "fire"
+      },
+      "desc": "A ranged spell attack that deals 2d10 fire damage on a hit."
+    },
+    {
+      "name": "Command Defender",
+      "desc": "Valandor commands his Steel Defender to take an action. As a bonus action, he can command it to take the Dodge, Help, or Dash action."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shield (Spell)",
+      "desc": "When hit by an attack, Valandor can use his reaction to cast Shield, giving him +5 AC until his next turn."
+    },
+    {
+      "name": "Mind Sharpener",
+      "desc": "When Valandor fails a concentration save, he can use his reaction to succeed instead."
+    }
+  ],
+  "bio": "Valandor T'alzar is the brilliant mind behind House T'alzar's arcane innovations. As the family's CTO, he is the visionary counterpart to his mother's strategic leadership, believing superior technology is the key to T'alzar's supremacy. His research into 'Black Mithril' led to his disappearance near the Cinderfork Foundry, a crippling blow to his house."
+} 

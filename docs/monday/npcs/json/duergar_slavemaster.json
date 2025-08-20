@@ -1,0 +1,78 @@
+{
+  "name": "Duergar Slavemaster",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "typically lawful evil",
+  "cr": "3",
+  "ac": {
+    "value": 16,
+    "notes": "chain mail"
+  },
+  "hp": {
+    "average": 71,
+    "formula": "11d8 + 22"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 10,
+    "cha": 12
+  },
+  "saves": {},
+  "skills": {
+      "intimidation": "+3",
+      "perception": "+2"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The duergar uses Enlarge if it is available. It then makes one Flail attack and one Whip attack."
+    },
+    {
+      "name": "Flail",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+5",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+3",
+        "type1": "bludgeoning",
+        "dmg2": "1d8",
+        "type2": "psychic"
+      },
+      "desc": "Hit: 7 (1d8 + 3) bludgeoning damage, or 12 (2d8 + 3) bludgeoning damage while enlarged, plus 4 (1d8) psychic damage."
+    },
+    {
+      "name": "Whip",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+5",
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "1d4+3",
+        "type1": "slashing"
+      },
+      "desc": "Hit: 5 (1d4 + 3) slashing damage, or 8 (2d4 + 3) slashing damage while enlarged and the target has disadvantage on attack rolls until the end of the duergar's next turn."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "bio": "Slave masters lead and control slaves that the duergar acquire in their raids or from slave-trading drows. These vicious duergar use a combination of their flails and whips to punish and prod humans, orcs, kobolds, and any other wretched creature into hard labor or forced battles. While sergeants and other leaders use their commanding presence to maneuver allies in combat, slave masters use pain and punishment to force slaves to do their bidding, often ending up as fodder in battle."
+} 

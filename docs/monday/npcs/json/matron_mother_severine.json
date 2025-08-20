@@ -1,0 +1,173 @@
+{
+  "name": "Matron Severine T'alzar",
+  "size": "Medium",
+  "type": "humanoid (drow)",
+  "alignment": "lawful evil",
+  "ac": {
+    "value": 17,
+    "notes": "+1 Adamantine Mithril Breastplate"
+  },
+  "hp": {
+    "average": 85,
+    "formula": "10d6 + 3d10 + 26"
+  },
+  "speed": "30 ft.",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 14,
+    "int": 20,
+    "wis": 16,
+    "cha": 16
+  },
+  "saves": {
+    "int": "+10",
+    "wis": "+8"
+  },
+  "skills": {
+    "deception": "+8",
+    "history": "+10",
+    "insight": "+8",
+    "intimidation": "+8",
+    "investigation": "+10",
+    "perception": "+8",
+    "persuasion": "+8"
+  },
+  "senses": "darkvision 120 ft., passive Perception 18",
+  "languages": "Common, Elvish, Undercommon, Draconic, Dwarvish",
+  "pb": "+5",
+  "spellcasting_ability": "Intelligence",
+  "caster_level": 10,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 2
+  },
+  "equipment": [
+    {
+      "name": "+1 Adamantine Mithril Breastplate of Mastermind's Contingency",
+      "desc": "Once per long rest: Cast Misty Step, become invisible until start of next turn."
+    },
+    {
+      "name": "Tactical Precision Rapier +1",
+      "desc": "Permanent poison coating (DC 15 Con save: 2d4 poison + disadvantage on next attack/save). Advantage on opportunity attacks. Free maneuver on opportunity attack hits."
+    },
+    {
+      "name": "Arcane Grimoire +2",
+      "desc": "+2 to spell attacks and spell save DC. Functions as a spellbook."
+    },
+    {
+      "name": "Crystal Ball of Mind Reading",
+      "desc": "Allows for scrying and casting Detect Thoughts."
+    },
+    {
+      "name": "T'alzar Signet of Command",
+      "desc": "3 charges: Cast Sending to T'alzar members, +2 initiative to allies, advantage on social checks vs. house members."
+    }
+  ],
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "Severine has advantage on saving throws against being charmed, and magic can't put her to sleep."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Severine has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Drow Magic",
+      "desc": "Can cast Dancing Lights, Faerie Fire, and Darkness once per day each."
+    },
+    {
+      "name": "Spellcasting (Wizard)",
+      "desc": "Severine is a 10th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks, both boosted by her Arcane Grimoire). She has the following wizard spells prepared:\n\nCantrips (at will): Fire Bolt, Mage Hand, Minor Illusion, Prestidigitation\n1st level (4 slots): Shield, Magic Missile, Detect Magic, Comprehend Languages\n2nd level (3 slots): Misty Step, Hold Person, Detect Thoughts, Web\n3rd level (3 slots): Counterspell, Fireball, Hypnotic Pattern\n4th level (3 slots): Polymorph, Greater Invisibility, Arcane Eye\n5th level (2 slots): Wall of Force, Dominate Person"
+    },
+    {
+        "name": "Arcane Recovery",
+        "desc": "Once per day after a short rest, she can recover spell slots with a combined level equal to half her wizard level (5)."
+    },
+    {
+        "name": "Portent (2/day)",
+        "desc": "At the end of a long rest, roll 2d20 and record the numbers. She can replace any attack roll, saving throw, or ability check made by her or a creature she can see with one of these foretelling rolls. She must choose to do so before the roll, and can only use one Portent die per turn."
+    },
+    {
+        "name": "Expert Divination",
+        "desc": "When she casts a divination spell of 2nd level or higher, she regains one expended spell slot of a level lower than the one she cast."
+    },
+    {
+        "name": "The Third Eye",
+        "desc": "As an action, she can gain one of the following benefits for 1 hour: Darkvision 60ft, see invisibility, or read any language."
+    },
+    {
+        "name": "Fighting Style: Defense",
+        "desc": "While wearing armor, she gains a +1 bonus to AC (already included)."
+    },
+    {
+        "name": "Second Wind",
+        "desc": "Once per short or long rest, she can use a bonus action to regain 1d10 + 3 hit points."
+    },
+    {
+        "name": "Action Surge",
+        "desc": "Once per short or long rest, she can take one additional action on her turn."
+    },
+    {
+        "name": "Combat Superiority",
+        "desc": "She has 4 superiority dice (d8s). A superiority die is expended when she uses it. She regains all of her expended superiority dice when she finishes a short or long rest. Save DC 13."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Tactical Precision Rapier +1",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+8",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+3",
+        "type1": "piercing",
+        "dmg2": "2d4",
+        "type2": "poison"
+      },
+      "desc": "On a failed DC 15 CON save, target takes poison damage and has disadvantage on its next attack roll or saving throw."
+    },
+    {
+      "name": "Fire Bolt",
+      "attack": {
+        "type": "Ranged Spell Attack",
+        "tohit": "+12",
+        "range": "120 ft.",
+        "target": "one target",
+        "dmg1": "3d10",
+        "type1": "fire"
+      },
+      "desc": "A simple ranged spell attack."
+    }
+  ],
+  "bonus_actions": [
+    {
+        "name": "Commander's Strike",
+        "desc": "When she takes the Attack action on her turn, she can forgo one of her attacks and use a bonus action to direct one of her companions to strike. When she does so, she chooses a friendly creature who can see or hear her and expends one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
+    },
+    {
+        "name": "Rally",
+        "desc": "On her turn, she can use a bonus action and expend one superiority die to bolster the resolve of one of her companions. When she does so, she chooses a friendly creature who can see or hear her. That creature gains temporary hit points equal to the superiority die roll + her Charisma modifier."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shield (Spell)",
+      "desc": "When hit by an attack or targeted by magic missile, she can use her reaction to cast shield, gaining +5 to AC until the start of her next turn."
+    }
+  ],
+  "spells": {
+    "cantrips": ["Fire Bolt", "Mage Hand", "Minor Illusion", "Prestidigitation"],
+    "level1": ["Shield", "Magic Missile", "Detect Magic", "Comprehend Languages"],
+    "level2": ["Misty Step", "Hold Person", "Detect Thoughts", "Web"],
+    "level3": ["Counterspell", "Fireball", "Hypnotic Pattern"],
+    "level4": ["Polymorph", "Greater Invisibility", "Arcane Eye"],
+    "level5": ["Wall of Force", "Dominate Person"]
+  },
+  "bio": "Matron Mother Severine T'alzar is the brilliant and ruthless head of House T'alzar. She treats every interaction like a game of chess—always three moves ahead—and speaks in layered implications. She disdains religious fanaticism, believing that true power comes from knowledge and superior tactics, not blind faith. Her ultimate goal is the survival and advancement of House T'alzar above all else. 'The Spider Queen rewards cunning, child. But I prefer to rely on my own web.'"
+} 

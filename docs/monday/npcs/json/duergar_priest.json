@@ -1,0 +1,81 @@
+{
+  "name": "Duergar Priest",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "lawful evil",
+  "cr": "3",
+  "ac": {
+    "value": 16,
+    "notes": "scale mail, shield"
+  },
+  "hp": {
+    "average": 44,
+    "formula": "8d8 + 8"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 12,
+    "int": 11,
+    "wis": 16,
+    "cha": 12
+  },
+  "saves": {},
+  "skills": {},
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Dwarvish, Undercommon",
+  "spellcasting_ability": "Wisdom",
+  "caster_level": 5,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting (Cleric)",
+      "desc": "The Duergar Priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It has the following cleric spells prepared:\n\nCantrips (at will): mending, poison spray, sacred flame, thaumaturgy\n1st level (4 slots): bane, command, divine favor, healing word, shield of faith\n2nd level (3 slots): blindness/deafness, hold person, magic weapon, silence, spiritual weapon\n3rd level (2 slots): crusader's mantle, dispel magic, meld into stone, revivify, spirit guardians"
+    }
+  ],
+  "actions": [
+    {
+        "name": "Enlarge (Recharges after a Short or Long Rest)",
+        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+    },
+    {
+      "name": "Warhammer",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+2",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 6 (1d8 + 2) bludgeoning damage, or 11 (2d8 + 2) bludgeoning damage while enlarged."
+    },
+    {
+        "name": "Invisibility (Recharges after a Short or Long Rest)",
+        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    }
+  ],
+  "bonus_actions": [
+      {
+          "name": "Wrath of Laduguer",
+          "desc": "As a bonus action, when the duergar hits a creature with a weapon attack, it can expend a spell slot to deal 1d8 necrotic damage to the target, and the target must succeed on a DC 14 Wisdom saving throw or be frightened until the end of the duergar's next turn. If the duergar expends a spell slot of 2nd level or higher, the extra necrotic damage increases by 1d8 for each level above 1st (maximum 5d8)."
+      }
+  ],
+  "reactions": [],
+  "bio": "Duergar priests are a staple in any duergar company. They serve as the primary support for duergar guard patrols and armies. They almost always worship either Laduguer or Deep Duerra."
+} 

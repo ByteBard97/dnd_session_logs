@@ -1,0 +1,80 @@
+{
+  "name": "Foundry Master Borok",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "lawful evil",
+  "cr": "3",
+  "ac": {
+    "value": 17,
+    "notes": "splint armor"
+  },
+  "hp": {
+    "average": 58,
+    "formula": "9d8 + 18"
+  },
+  "speed": "25 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "skills": {
+    "athletics": "+5",
+    "perception": "+2"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Borok has advantage on saving throws against poison, spells, and illusions."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Borok has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Borok makes two warhammer attacks."
+    },
+    {
+      "name": "Warhammer",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+5",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+3",
+        "type1": "bludgeoning"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Heavy Crossbow",
+      "attack": {
+        "type": "Ranged Weapon Attack",
+        "tohit": "+3",
+        "reach": "range 100/400 ft.",
+        "target": "one target",
+        "dmg1": "1d10+1",
+        "type1": "piercing"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Enlarge (Recharges after a Short or Long Rest)",
+      "desc": "For 1 minute, Borok magically increases in size, along with anything he is wearing or carrying. While enlarged, he is Large, doubles his damage dice on Strength-based weapon attacks, and makes Strength checks and Strength saving throws with advantage. If he lacks the room to become Large, he attains the maximum size possible in the space available."
+    },
+    {
+      "name": "Invisibility (Recharges after a Short or Long Rest)",
+      "desc": "Borok magically turns invisible until he attacks, casts a spell, or uses his Enlarge, or until his concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment he wears or carries is invisible with him."
+    }
+  ],
+  "bio": "Foundry Master Borok is the pragmatic and iron-fisted ruler of Cinderfork Foundry. He is a manager and a tough veteran, more concerned with production quotas and security than with personal glory. He sees the partnership with House Glutthraz as a necessary evil, a lucrative but irritating arrangement. He will defend his foundry and his office with brutal efficiency."
+} 

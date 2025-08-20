@@ -1,0 +1,168 @@
+/* D&D 5e Statblock CSS - Based on CodePen example */
+.stat-block * {
+  box-sizing: border-box !important;
+  max-width: 100% !important;
+  font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif !important;
+  color: #922610 !important; /* Force dark red text */
+  text-shadow: none !important; /* Remove all text shadows */
+}
+
+.stat-block {
+  text-align: left !important;
+  margin: 20px !important;
+  display: inline-block !important;
+  vertical-align: top !important;
+  width: 420px !important; /* Made wider */
+  min-width: 420px !important; /* Made wider */
+  background: #FDF1DC !important;
+  padding: 15px 20px 25px !important; /* More padding for wider layout */
+  box-shadow: 0 0 1.5em #867453 !important;
+  font-size: 13.5px !important;
+  line-height: 1.2em !important;
+}
+
+.stat-block .orange-border {
+  display: block !important;
+  background: #E69A28 !important;
+  border: 1px solid #000 !important;
+  height: 5px !important;
+  padding: 0 10px 0 !important;
+  margin: -10px -10px 0 !important;
+  box-sizing: initial !important;
+}
+
+.stat-block .orange-border.bottom {
+  margin: 15px -10px -20px !important;
+}
+
+.stat-block .tapered-rule {
+  display: block !important;
+  width: 100% !important;
+  height: 5px !important;
+  border: none !important;
+  color: #922610 !important;
+  fill: #922610 !important;
+  stroke: #922610 !important;
+}
+
+.stat-block .creature-heading h1 {
+  font-family: 'Libre Baskerville', 'Lora', 'Calisto MT', 'Bookman Old Style', Bookman, 'Goudy Old Style', Garamond, 'Hoefler Text', 'Bitstream Charter', Georgia, serif !important;
+  color: #922610 !important;
+  font-size: 23px !important;
+  line-height: 1.2em !important;
+  margin: 10px 0 0 !important;
+  letter-spacing: 1px !important;
+  font-variant: small-caps !important;
+  font-weight: bold !important;
+}
+
+.stat-block .creature-heading h2 {
+  font-weight: normal !important;
+  font-style: italic !important;
+  font-size: 12px !important;
+  line-height: 1.2em !important;
+  margin: 0 0 10px !important;
+  color: #922610 !important;
+}
+
+.stat-block .property-line h4,
+.stat-block .property-line p {
+  display: inline !important;
+  margin: 0 !important;
+  color: #922610 !important;
+  font-size: 13.5px !important;
+  line-height: 1.2em !important;
+}
+
+.stat-block .property-line h4 {
+  color: #7A200D !important;
+}
+
+.stat-block .property-line {
+  text-indent: -1em !important;
+  padding-left: 1.1em !important;
+  line-height: 1.4em !important;
+}
+
+.stat-block .property-line.first {
+  margin: 8px 0 0 !important;
+}
+
+.stat-block .property-line.last {
+  margin: 0 0 10px !important;
+}
+
+.stat-block .abilities {
+  text-align: center !important;
+  color: #922610 !important;
+}
+
+.stat-block .abilities > div {
+  display: inline-block !important;
+  vertical-align: middle !important;
+  width: 15.5% !important;
+  min-width: 40px !important;
+  font-size: 12px !important;
+  line-height: 1em !important;
+}
+
+.stat-block .abilities h4 {
+  margin: 10px 0 2px !important;
+  font-size: 14px !important;
+  line-height: 1.2em !important;
+  text-transform: uppercase !important;
+  color: #7A200D !important;
+}
+
+.stat-block .abilities p {
+  margin: 0 0 10px !important;
+  line-height: 1.2em !important;
+  color: #922610 !important;
+}
+
+.stat-block .property-block h4,
+.stat-block .property-block p {
+  font-size: 13.5px !important;
+  line-height: 1.2em !important;
+  display: inline !important;
+  margin: 0 !important;
+  color: #922610 !important;
+}
+
+.stat-block .property-block h4 {
+  font-style: italic !important;
+  color: #922610 !important;
+}
+
+.stat-block .property-block {
+  padding: 10px 2px 0 !important;
+}
+
+.stat-block .actions h3 {
+  border-bottom: 1px solid #7A200D !important;
+  color: #7A200D !important;
+  font-size: 21px !important;
+  font-variant: small-caps !important;
+  font-weight: normal !important;
+  letter-spacing: 1px !important;
+  margin: 20px 0 0 !important;
+  padding: 0 0 10px !important;
+  text-indent: 5px !important;
+}
+
+.stat-block .actions {
+  margin: 0 0 20px !important;
+}
+
+.stat-block .actions:last-child {
+  margin: 0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stat-block {
+    width: 100% !important;
+    min-width: 280px !important;
+    margin: 10px 0 !important;
+  }
+}

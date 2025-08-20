@@ -25,6 +25,21 @@ Lirael is analytical, reserved, and deeply perceptive. She prefers subtlety over
 ## Communication Style
 Lirael communicates with quiet directness, her words carefully chosen for maximum impact and clarity. Her lessons often serve as tests, requiring others to think strategically and consider multiple angles of any situation.
 
+
+## Combat Statistics
+
+<div id="lirael-talzar-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/lirael_talzar.json', 'lirael-talzar-statblock');
+  }, 100);
+});
+</script>
+
 ## Relationships
 - **Matron Severine**: Trusted advisor and intelligence chief
 - **Vyssinia**: Philosophical differences over approach but mutual respect

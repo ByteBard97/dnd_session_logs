@@ -47,34 +47,68 @@ Borok's crew consists of two gaunt, powerful Grimlocks marked with his Corsair i
 
 ## Combat Statistics
 
-> **Borok the Silent**
-> *Medium humanoid (orog), neutral evil*
-> 
-> **Armor Class** 18 (plate armor)
-> **Hit Points** 60 (7d8 + 28)
-> **Speed** 30 ft.
-> 
-> | STR     | DEX     | CON     | INT     | WIS     | CHA     |
-> |---------|---------|---------|---------|---------|---------|
-> | 19 (+4) | 12 (+1) | 18 (+4) | 12 (+1) | 14 (+2) | 12 (+1) |
-> 
-> **Saving Throws** Str +6, Con +6
-> **Skills** Athletics +6, Intimidation +3, Perception +4, Survival +4
-> **Senses** darkvision 120 ft., passive Perception 14
-> **Languages** Common, Orc, Undercommon
-> **Challenge** 3 (700 XP)
-> 
-> **Aggressive.** As a bonus action on his turn, Borok can move up to his speed toward a hostile creature that he can see.
-> 
-> **Proficient Navigator.** Borok adds double his proficiency bonus (+4) to any ability check he makes to pilot a water vehicle or avoid getting lost while on the Black Loch.
+<div id="borok-statblock"></div>
 
-### Actions
+<script>
+// Wait for the page to load and statblock generator to be available
+document.addEventListener('DOMContentLoaded', function() {
+  // Wait a bit more to ensure statblock-generator.js is loaded
+  setTimeout(function() {
+    const borokData = {
+      name: "Borok the Silent",
+      size: "Medium",
+      type: "humanoid (orog)",
+      alignment: "neutral evil",
+      ac: "18 (plate armor)",
+      hp: "60 (7d8 + 28)",
+      speed: "30 ft.",
+      abilities: {
+        str: ability(19),
+        dex: ability(12),
+        con: ability(18),
+        int: ability(12),
+        wis: ability(14),
+        cha: ability(12)
+      },
+      saves: "Str +6, Con +6",
+      skills: "Athletics +6, Intimidation +3, Perception +4, Survival +4",
+      senses: "darkvision 120 ft., passive Perception 14",
+      languages: "Common, Orc, Undercommon",
+      challenge: "3 (700 XP)",
+      traits: [
+        {
+          name: "Aggressive",
+          description: "As a bonus action on his turn, Borok can move up to his speed toward a hostile creature that he can see."
+        },
+        {
+          name: "Proficient Navigator",
+          description: "Borok adds double his proficiency bonus (+4) to any ability check he makes to pilot a water vehicle or avoid getting lost while on the Black Loch."
+        }
+      ],
+      actions: [
+        {
+          name: "Multiattack",
+          description: "Borok makes two attacks with his Bilge-Axe."
+        },
+        {
+          name: "Bilge-Axe (Greataxe)",
+          description: "<i>Melee Weapon Attack:</i> +6 to hit, reach 5 ft., one target. <i>Hit:</i> 10 (1d12 + 4) slashing damage. This custom axe is shaped like a sharpened ship's anchor."
+        },
+        {
+          name: "Javelin",
+          description: "<i>Melee or Ranged Weapon Attack:</i> +6 to hit, reach 5 ft. or range 30/120 ft., one target. <i>Hit:</i> 7 (1d6 + 4) piercing damage."
+        }
+      ]
+    };
 
-> **Multiattack.** Borok makes two attacks with his Bilge-Axe.
-> 
-> **Bilge-Axe (Greataxe).** *Melee Weapon Attack:* +6 to hit, reach 5 ft., one target. *Hit:* 10 (1d12 + 4) slashing damage. This custom axe is shaped like a sharpened ship's anchor.
-> 
-> **Javelin.** *Melee or Ranged Weapon Attack:* +6 to hit, reach 5 ft. or range 30/120 ft., one target. *Hit:* 7 (1d6 + 4) piercing damage.
+    if (typeof createStatblock !== 'undefined' && typeof ability !== 'undefined') {
+      document.getElementById('borok-statblock').innerHTML = createStatblock(borokData);
+    } else {
+      console.error('Statblock generator functions not loaded');
+    }
+  }, 100);
+});
+</script>
 
 ## Relationships
 - **Fadda Brinebless:** Tolerates and secretly appreciates his goblin first mate's superstitious practices

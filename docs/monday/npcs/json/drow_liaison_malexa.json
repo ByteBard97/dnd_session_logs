@@ -1,0 +1,99 @@
+{
+    "name": "Liaison Malexa",
+    "size": "Medium",
+    "type": "humanoid (elf)",
+    "alignment": "Neutral Evil",
+    "cr": "2",
+    "xp": 450,
+    "pb": "+2",
+    "ac": {
+        "value": 15,
+        "notes": "Studded Leather"
+    },
+    "hp": {
+        "average": 33,
+        "formula": "6d8 + 6"
+    },
+    "speed": "30 ft.",
+    "abilities": {
+        "str": 10,
+        "dex": 16,
+        "con": 12,
+        "int": 14,
+        "wis": 12,
+        "cha": 14
+    },
+    "skills": {
+        "acrobatics": "+5",
+        "arcana": "+4",
+        "deception": "+4",
+        "insight": "+3",
+        "perception": "+3",
+        "stealth": "+5"
+    },
+    "senses": "Superior Darkvision 120 ft., passive Perception 13",
+    "languages": "Common, Elvish, Undercommon",
+    "traits": [
+        {
+            "name": "Fey Ancestry",
+            "desc": "Malexa has advantage on saving throws against being charmed, and magic can't put her to sleep."
+        },
+        {
+            "name": "Sunlight Sensitivity",
+            "desc": "While in sunlight, Malexa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+        },
+        {
+            "name": "Sneak Attack (1/Turn)",
+            "desc": "Malexa deals an extra 7 (2d6) damage when she hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of Malexa that isn't incapacitated and Malexa doesn't have disadvantage on the attack roll."
+        },
+        {
+            "name": "Mage Hand Legerdemain",
+            "desc": "When Malexa casts Mage Hand, she can make the spectral hand invisible, and can perform the following tasks with it: stow one object the hand is holding on the person of another creature; retrieve an object from a container worn or carried by another creature; use thieves' tools to pick locks and disarm traps at range."
+        },
+        {
+            "name": "Spellcasting",
+            "desc": "Malexa is a 4th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). She has the following wizard spells prepared:\n\nCantrips (at will): Mage Hand, Message, Minor Illusion\n1st level (3 slots): Disguise Self, Shield, Silent Image"
+        },
+        {
+            "name": "Innate Spellcasting",
+            "desc": "Malexa's innate spellcasting ability is Charisma (spell save DC 12). She can innately cast the following spells, requiring no material components:\n\nAt will: dancing lights\n1/day each: darkness, faerie fire"
+        }
+    ],
+    "actions": [
+        {
+            "name": "Multiattack",
+            "desc": "Malexa makes two shortsword attacks."
+        },
+        {
+            "name": "Shortsword",
+            "attack": {
+                "type": "Melee",
+                "tohit": "+5",
+                "reach": "5 ft.",
+                "target": "one target",
+                "dmg1": "1d6+3",
+                "type1": "piercing"
+            },
+            "desc": "Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour."
+        },
+        {
+            "name": "Hand Crossbow",
+            "attack": {
+                "type": "Ranged",
+                "tohit": "+5",
+                "range": "30/120 ft.",
+                "target": "one target",
+                "dmg1": "1d6+3",
+                "type1": "piercing"
+            },
+            "desc": "Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the target is instead poisoned for 24 hours."
+        }
+    ],
+    "bonus_actions": [
+        {
+            "name": "Cunning Action",
+            "desc": "On each of her turns, Malexa can use a bonus action to take the Dash, Disengage, or Hide action."
+        }
+    ],
+    "bio": "Liaison Malexa is a skilled Arcane Trickster and spy representing House Glutthraz. Trained from a young age to blend infiltration with illusion magic, she serves as an overseer, ensuring the Duergar uphold their secret pact. She is cunning and will use her magic to confuse and disable opponents before escaping to report any threats to her matron. If captured, she is found to be carrying coded travel papers and a report on Black Mithril production intended for Matron Glutthraz's eyes only."
+} 

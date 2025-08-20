@@ -1,0 +1,88 @@
+{
+  "name": "Duergar High Priest",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "lawful evil",
+  "cr": "10",
+  "ac": {
+    "value": 18,
+    "notes": "chain mail, shield"
+  },
+  "hp": {
+    "average": 117,
+    "formula": "18d8 + 36"
+  },
+  "speed": "25 ft.",
+  "pb": "+4",
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 18,
+    "cha": 14
+  },
+  "saves": {},
+  "skills": {},
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Dwarvish, Undercommon",
+  "spellcasting_ability": "Wisdom",
+  "caster_level": 11,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 2,
+    "6": 1
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting (Cleric)",
+      "desc": "The Duergar High Priest is a 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It has the following cleric spells prepared:\n\nCantrips (at will): mending, poison spray, sacred flame, thaumaturgy\n1st level (4 slots): bane, divine favor, healing word, shield of faith\n2nd level (3 slots): blindness/deafness, hold person, magic weapon, silence, spiritual weapon\n3rd level (3 slots): crusader's mantle, dispel magic, meld into stone, revivify, spirit guardians\n4th level (3 slots): banishment, freedom of movement, locate creature, stone shape, stoneskin\n5th level (2 slots): flame strike, hold monster, mass cure wounds\n6th level (1 slot): blade barrier, harm"
+    }
+  ],
+  "actions": [
+    {
+        "name": "Multiattack",
+        "desc": "The duergar makes two warhammer attacks and uses Enlarge if it is available."
+    },
+    {
+        "name": "Enlarge (Recharges after a Short or Long Rest)",
+        "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+    },
+    {
+      "name": "Warhammer",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+5",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+2",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 6 (1d8 + 2) bludgeoning damage, or 11 (2d8 + 2) bludgeoning damage while enlarged."
+    },
+    {
+        "name": "Invisibility (Recharges after a Short or Long Rest)",
+        "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    }
+  ],
+  "bonus_actions": [
+      {
+          "name": "Wrath of Laduguer",
+          "desc": "As a bonus action, when the duergar hits a creature with a weapon attack, it can expend a spell slot to deal 1d8 necrotic damage to the target, and the target must succeed on a DC 14 Wisdom saving throw or be frightened until the end of the duergar's next turn. If the duergar expends a spell slot of 2nd level or higher, the extra necrotic damage increases by 1d8 for each level above 1st (maximum 5d8)."
+      }
+  ],
+  "reactions": [],
+  "bio": "Duergar high priests sometimes serve as leaders and overlords of duergar companies, but more often take the role of advisors to duergar nobility and despots. Young duergar high priests prefer to reinforce themselves with magical protection and strength-enhancing spells before entering melee. The older ones prefer to hang back behind the shield wall and support its kin with protective spells or throw devastating ones at their enemies."
+} 

@@ -1,0 +1,111 @@
+{
+  "name": "Veridia, the T'alzar Jade Spider Sentinel",
+  "size": "Large",
+  "type": "construct",
+  "alignment": "unaligned",
+  "ac": {
+    "value": 18,
+    "notes": "natural armor"
+  },
+  "hp": {
+    "average": 142,
+    "formula": "15d10+60"
+  },
+  "speed": "30 ft., climb 30 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 18,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "saves": {
+    "str": "+8",
+    "dex": "+3",
+    "con": "+8",
+    "int": "+0",
+    "wis": "+6",
+    "cha": "+0"
+  },
+  "skills": {
+    "athletics": "+8",
+    "perception": "+6",
+    "investigation": "+4"
+  },
+  "damage_immunities": "poison, psychic",
+  "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 16",
+  "languages": "Drow, Undercommon",
+  "cr": "10",
+  "traits": [
+    {
+      "name": "House T'alzar Imprinting",
+      "desc": "Veridia recognizes all members of House T'alzar and those bearing a T'alzar house insignia. She will not attack recognized individuals unless specifically commanded by a T'alzar matron."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Veridia has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "Veridia is immune to any spell or effect that would alter her form."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "Veridia can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Jade Resonance",
+      "desc": "Veridia's jade crystal creates an anti-magic field in a 10-foot radius around her. Spells of 3rd level or lower are automatically dispelled when cast within this area. Higher level spells require a DC 15 ability check using the caster's spellcasting ability."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Veridia makes two jade claw attacks and can use her Web Snare if available."
+    },
+    {
+      "name": "Jade Claw",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8", 
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "2d10+4",
+        "type1": "slashing",
+        "dmg2": "2d6",
+        "type2": "force"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Web Snare (Recharge 5-6)",
+      "desc": "Veridia launches crystallized web strands in a 20-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw or be restrained by the jade webbing. A creature can use its action to make a DC 16 Strength check, freeing itself or another creature within reach on a success. The webbing has AC 15 and 20 hit points."
+    },
+    {
+      "name": "Guardian's Alarm (1/Day)",
+      "desc": "Veridia releases a piercing psychic shriek that alerts all House T'alzar members within 1 mile. Additionally, all hostile creatures within 30 feet must make a DC 16 Wisdom saving throw or be stunned until the end of Veridia's next turn."
+    }
+  ],
+  "legendary": {
+    "count": 3,
+    "actions": [
+      {
+        "name": "Detect",
+        "desc": "Veridia makes a Wisdom (Perception) check."
+      },
+      {
+        "name": "Skitter",
+        "desc": "Veridia moves up to half her speed without provoking opportunity attacks."
+      },
+      {
+        "name": "Jade Pulse (Costs 2 Actions)",
+        "desc": "Veridia's crystal flares, forcing all creatures within 15 feet to make a DC 16 Constitution saving throw or be blinded until the end of their next turn."
+      }
+    ]
+  },
+  "init_tiebreaker": "@{dexterity}/100",
+  "bio": "Veridia is the T'alzar Jade Spider Sentinel, a construct of unique character tasked with guarding the main entryway to the T'alzar household. Created under the direct supervision of Matron Severine T'alzar, with the aid of duergar artificers and house craftsmen, Veridia's intricate jade and metal form houses a surprisingly quirky personality. She is prone to unusual, sometimes cryptic, comments and observations, a result of the complex and perhaps slightly unstable artifice that brought her to life – a 'slight screw loose,' as some might whisper. Veridia recognizes all members of House T'alzar and their allies, often greeting them with her unique brand of commentary. She is fiercely loyal and a formidable guardian.\n\nHer dialogue and interactions when players come and go can be used to establish elements of house security, acting as a Chekhov's gun for later plot developments.\n\nDeactivation Vulnerability:\nVeridia can be deactivated by someone with knowledge of House T'alzar's command words (like Vyssinia) using an action while touching her central jade crystal. When deactivated:\n- She becomes inert for 24 hours.\n- All her magical effects, including the Jade Resonance field, cease.\n- She cannot be reactivated except by a T'alzar matron or someone with the proper activation ritual.\n\nRoleplay Notes:\n- Veridia's central jade crystal glows with varying intensity based on her perceived threat level or perhaps her 'mood.'\n- She communicates in Drow and Undercommon, making distinct clicking and chittering sounds that often accompany her speech or punctuate her patrols.\n- The crystal is known to dim noticeably when Vyssinia T'alzar approaches, a subtle foreshadowing of the betrayal in Act II.\n- If Veridia is destroyed, her large central jade crystal is likely to shatter into valuable fragments, potentially useful for artificing, especially for someone like Clank."
+} 

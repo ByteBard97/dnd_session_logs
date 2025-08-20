@@ -1,0 +1,99 @@
+{
+  "name": "Black Mithril Screamer",
+  "size": "Large",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "6",
+  "ac": {
+    "value": 18,
+    "notes": "Black Mithril Plating"
+  },
+  "hp": {
+    "average": 114,
+    "formula": "12d10 + 48"
+  },
+  "speed": "25 ft.",
+  "pb": "+3",
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 18,
+    "int": 3,
+    "wis": 10,
+    "cha": 5
+  },
+  "saves": {
+    "str": "+8",
+    "con": "+7"
+  },
+  "damage_vulnerabilities": "psychic",
+  "damage_immunities": "poison",
+  "damage_resistances": "fire; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "understands Duergar and Drow but can't speak",
+  "traits": [
+    {
+      "name": "Psionic Feedback Loop",
+      "desc": "The screamer is vulnerable to psychic damage. However, whenever it takes psychic damage, its Unstable Matrix trait immediately triggers and its Resonant Scream action is instantly recharged."
+    },
+    {
+      "name": "Black Mithril Plating",
+      "desc": "The screamer has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The screamer deals double damage to objects and structures."
+    },
+    {
+      "name": "Unstable Matrix",
+      "desc": "If the screamer takes 20 or more damage in a single round, it must succeed on a DC 10 Wisdom saving throw at the start of its next turn or go berserk. While berserk, it must use its action to make a Multiattack against the nearest creature it can see. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The screamer makes two attacks: one with its Mithril Drill and one with its Slam."
+    },
+    {
+      "name": "Mithril Drill",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8",
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "2d10+5",
+        "type1": "piercing"
+      },
+      "desc": "If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the screamer can't use its drill on another target."
+    },
+    {
+      "name": "Slam",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "2d6+5",
+        "type1": "bludgeoning"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Resonant Scream (Recharge 5-6)",
+      "attack": {
+        "type": "Spell",
+        "reach": "30-foot cone",
+        "target": "Each creature in area",
+        "save": "DC 15 CON save",
+        "dmg1": "4d8",
+        "type1": "thunder"
+      },
+      "desc": "Each creature in the area must make a DC 15 Constitution saving throw. On a failed save, a creature takes 4d8 thunder damage, is pushed 15 feet away from the screamer, and is knocked prone. On a successful save, the creature takes half as much damage and is not pushed or knocked prone."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "bio": "The Black Mithril Screamer is the terrifying result of House Glutthraz's funding and the duergars' profane craftsmanship. A hulking suit of interlocking black metal plates that glow with faint orange fissures, this construct is built around the tormented soul of a living creature. Its right arm has been replaced with a massive, revolving drill capable of tearing through steel and stone, and its tortured screams can shatter bone. The Black Mithril fused to its chassis makes it incredibly resilient but dangerously unstable."
+} 
+

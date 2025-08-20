@@ -1,0 +1,146 @@
+{
+  "name": "Chief Researcher Korvun",
+  "size": "Medium",
+  "type": "humanoid (duergar)",
+  "alignment": "lawful evil",
+  "cr": "5",
+  "ac": {
+    "value": 15,
+    "notes": "Mage Armor (12 + Dex) + Shield Spell"
+  },
+  "hp": {
+    "average": 58,
+    "formula": "9d8 + 18"
+  },
+  "speed": "25 ft.",
+  "pb": "+3",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 18,
+    "wis": 13,
+    "cha": 10
+  },
+  "saves": {
+    "int": "+7",
+    "wis": "+4"
+  },
+  "skills": {
+    "arcana": "+10",
+    "history": "+7",
+    "investigation": "+7",
+    "perception": "+4"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "Common, Dwarvish, Undercommon, Draconic",
+  "spellcasting_ability": "Intelligence",
+  "caster_level": 7,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 3,
+    "4": 1
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Korvun has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Korvun has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "Korvun can innately cast the following spells, requiring no material components: \n\n1/day each: Enlarge/Reduce (self only), Invisibility (self only)"
+    },
+    {
+      "name": "Spellcasting (Wizard)",
+      "desc": "Korvun is a 7th-level spellcaster. His spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). He has the following wizard spells prepared:\n\nCantrips (at will): Fire Bolt, Mage Hand, Minor Illusion, Prestidigitation\n1st level (4 slots): Mage Armor, Magic Missile, Shield, Detect Magic\n2nd level (3 slots): Misty Step, Scorching Ray, Web\n3rd level (3 slots): Fireball, Counterspell, Slow\n4th level (1 slot): Molten Swarm (see below), Polymorph"
+    },
+    {
+      "name": "Transmutation Savant",
+      "desc": "The gold and time Korvun must spend to copy a transmutation spell into his spellbook is halved."
+    },
+    {
+      "name": "Minor Alchemy",
+      "desc": "Starting at 2nd level, Korvun can temporarily alter the physical properties of one nonmagical object, changing it from one substance into another. He performs a special alchemical procedure on one object composed entirely of wood, stone (but not a gemstone), iron, copper, or silver, transforming it into a different one of those materials. For each 10 minutes he spends performing the procedure, he can transform a 1-foot cube of material. After 1 hour, or until he loses his concentration, the material reverts to its original substance."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+3",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d6",
+        "type1": "bludgeoning",
+        "dmg2": "1d8",
+        "type2": "bludgeoning (if two-handed)"
+      },
+      "desc": "A simple melee weapon attack."
+    },
+    {
+      "name": "Fire Bolt",
+      "attack": {
+        "type": "Ranged Spell Attack",
+        "tohit": "+7",
+        "range": "120 ft.",
+        "target": "one target",
+        "dmg1": "2d10",
+        "type1": "fire"
+      },
+      "desc": "A simple ranged spell attack that can ignite flammable objects."
+    },
+    {
+      "name": "Molten Swarm (4th Level Spell, 1/Day)",
+      "desc": "Korvun's signature spell combines Animate Objects and Heat Metal. He animates up to 10 Tiny objects (scrap metal, tools, gears) within 120 feet. Each animated object has AC 18, 20 hit points, and flies at 50 feet speed. As a bonus action on subsequent turns, he can mentally command any or all objects to move up to 50 feet and attack different targets within 5 feet of them. Each object makes a +8 attack roll dealing 1d4+4 bludgeoning damage plus 1d4 fire damage on hit. Objects remain animated for 1 minute. If a creature is hit by 3 or more objects in the same turn, they must make a DC 15 Constitution save or be stunned until the end of their next turn from the overwhelming heat and impacts."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Command Molten Swarm",
+      "desc": "While his Molten Swarm spell is active, Korvun can use his bonus action to command the animated objects to move and attack as described above."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Shield (1st Level Spell)",
+      "desc": "When hit by an attack or targeted by Magic Missile, Korvun can use his reaction to cast Shield, gaining +5 AC until the start of his next turn."
+    },
+    {
+      "name": "Counterspell (3rd Level Spell)",
+      "desc": "When a creature within 60 feet casts a spell, Korvun can use his reaction to attempt to counter it. The spell fails if it's 3rd level or lower, or if he makes a successful spellcasting ability check against DC 10 + the spell's level for higher level spells."
+    }
+  ],
+  "spells": {
+    "cantrips": ["Fire Bolt", "Mage Hand", "Minor Illusion", "Prestidigitation"],
+    "level1": ["Mage Armor", "Magic Missile", "Shield", "Detect Magic"],
+    "level2": ["Misty Step", "Scorching Ray", "Web"],
+    "level3": ["Fireball", "Counterspell", "Slow"],
+    "level4": ["Molten Swarm", "Polymorph"]
+  },
+  "equipment": [
+    {
+      "name": "Quarterstaff of Minor Transmutation",
+      "desc": "This oak quarterstaff allows Korvun to use his Minor Alchemy ability as a bonus action once per short rest."
+    },
+    {
+      "name": "Robes of the Artificer",
+      "desc": "These soot-stained robes grant advantage on Constitution saves to maintain concentration on transmutation spells."
+    },
+    {
+      "name": "Alchemical Pouches",
+      "desc": "Contains various alchemical components and metal samples. Can be used to enhance the Molten Swarm spell's visual effects."
+    },
+    {
+      "name": "Research Notes",
+      "desc": "Detailed notes on Black Mithril properties, elemental binding techniques, and foundry optimization. Valuable intelligence for the party."
+    }
+  ],
+  "bio": "Chief Researcher Korvun is a brilliant but obsessive duergar wizard who has dedicated his life to perfecting the foundry's operations through arcane research. He lives in the Research Cottage with his wife, Alyxina Fire-Beard. His greatest achievement is the development of 'Molten Swarm,' a devastating spell that turns the foundry's own tools and debris into superheated weapons. He views the basement as his personal laboratory and becomes enraged when his work is interrupted. His robes are permanently stained with soot and metal filings, and his beard is singed from countless experiments with volatile materials. He speaks in rapid, technical jargon and treats combat like another research opportunity to test his theories."
+} 

@@ -1,0 +1,73 @@
+{
+  "name": "Alyxina Fire-Beard",
+  "title": "Quartermaster of Comfort, Keeper of the Hearth-Lab",
+  "image": "npcs/images/Alyxina Fire-Beard.jpg",
+  "size": "Medium",
+  "type": "humanoid (duergar)",
+  "alignment": "lawful neutral",
+  "cr": "1/4",
+  "ac": {
+    "value": 12,
+    "notes": "Leather corset & bracers"
+  },
+  "hp": {
+    "average": 13,
+    "formula": "2d8 + 4"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 12,
+    "dex": 10,
+    "con": 14,
+    "int": 13,
+    "wis": 14,
+    "cha": 10
+  },
+  "skills": {
+    "insight": "+4",
+    "perception": "+4"
+  },
+  "proficiencies": [
+    {
+      "name": "Cook's utensils",
+      "value": "+3"
+    },
+    {
+      "name": "Tinker's tools",
+      "value": "+3"
+    }
+  ],
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "Common, Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Alyxina has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Alyxina has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "Alyxina can innately cast the following spells, requiring no material components:\n\n1/day each: Enlarge/Reduce (self only), Invisibility (self only)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Cast-Iron Ladle",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+3",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d6+1",
+        "type1": "bludgeoning"
+      },
+      "desc": "A heavy ladle that she wields like a mace."
+    }
+  ],
+  "bio": "Alyxina Fire-Beard is the wife of Chief Researcher Korvun, and she is the heart of their small household within the grim Cinderfork Foundry. Her official style is 'Quartermaster of Comfort, Keeper of the Hearth-Lab,' a title she embraces with fiery optimism. She is fiercely protective of her husband, whom she affectionately calls 'my clever fool,' and will not abide others mocking him. With a tinkerer's curiosity, she can't resist fiddling with unattended gadgets, gems, or fungi. While she projects warmth, she is a sturdy clan matron who won't hesitate to defend her home with a cast-iron ladle. She is typically found in the Research Cottage (Area 2) on the foundry's sub-level."
+} 

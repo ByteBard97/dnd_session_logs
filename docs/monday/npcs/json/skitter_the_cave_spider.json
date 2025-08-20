@@ -1,0 +1,65 @@
+{
+  "name": "Skitter",
+  "image": "npcs/images/skitter_the_cave_spider.jpg",
+  "size": "Medium",
+  "type": "monstrosity (beast)",
+  "alignment": "unaligned",
+  "cr": "1/8",
+  "ac": {
+    "value": 12,
+    "notes": "Natural armor"
+  },
+  "hp": {
+    "average": 11,
+    "formula": "2d8 + 2"
+  },
+  "speed": "30 ft., climb 30 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 13,
+    "int": 4,
+    "wis": 12,
+    "cha": 8
+  },
+  "skills": {
+    "perception": "+3",
+    "stealth": "+4"
+  },
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "---",
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "Skitter can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Walker",
+      "desc": "Skitter ignores movement restrictions caused by webbing."
+    },
+    {
+      "name": "Domesticated",
+      "desc": "Skitter is a loyal house pet and is not aggressive. It will only attack if it perceives a direct, physical threat to Korvun or Alyxina. It often behaves like a large, curious dog."
+    },
+    {
+      "name": "Affectionate Nuzzle",
+      "desc": "As an action, Skitter can nuzzle a friendly creature. The creature must succeed on a DC 10 Dexterity saving throw or have one of their limbs (at the DM's choice) covered in a thin, harmless layer of sticky webbing that can be removed with an action. Skitter does this as a sign of affection."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+4",
+        "reach": "5 ft.",
+        "target": "one creature",
+        "dmg1": "1d6+2",
+        "type1": "piercing"
+      },
+      "desc": "A simple, non-venomous bite."
+    }
+  ],
+  "bio": "Skitter is a large, domesticated cave spider with an unusually friendly disposition and large, expressive eyes. Korvun and Alyxina raised him from an egg, and he behaves much like a loyal, well-trained dog. He can be found scuttling around their quarters in the Research Cottage, often curling up by the hearth or waiting by the door for his masters to return. He chitters happily when given attention and has a habit of affectionately nuzzling people, sometimes leaving them covered in a bit of harmless webbing."
+} 

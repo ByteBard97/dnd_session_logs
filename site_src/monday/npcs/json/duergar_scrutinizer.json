@@ -1,0 +1,77 @@
+{
+    "name": "Scrutinizer",
+    "size": "Small",
+    "type": "construct",
+    "alignment": "lawful neutral",
+    "ac": {
+        "value": 15,
+        "notes": "Natural Armor"
+    },
+    "hp": {
+        "average": 55,
+        "formula": "10d6 + 20"
+    },
+    "speed": "30 ft.",
+    "abilities": {
+        "str": 12,
+        "dex": 12,
+        "con": 14,
+        "int": 8,
+        "wis": 14,
+        "cha": 6
+    },
+    "damage_immunities": "Poison, Psychic",
+    "condition_immunities": "Charmed, Exhaustion, Frightened, Paralyzed, Petrified, Poisoned",
+    "senses": "Darkvision 120 ft., Passive Perception 12",
+    "languages": "Understands Duergar but communicates through a series of chirps, whirs, and pre-recorded phrases",
+    "challenge": "3 (700 XP)",
+    "traits": [
+        {
+            "name": "Ocular Sensor",
+            "desc": "The Scrutinizer's central eye grants it the ability to see invisible creatures and objects out to a range of 120 feet."
+        },
+        {
+            "name": "Inquisitive Protocol",
+            "desc": "When the Scrutinizer detects an unknown creature, it approaches cautiously, its head tilting as it analyzes them. It will issue a series of chirps followed by a recorded query in a flat voice, such as \"Query: Your designation is unfamiliar. Please state your purpose.\" It is not inherently hostile and is primarily focused on identifying and reporting anomalies."
+        }
+    ],
+    "actions": [
+        {
+            "name": "Ram",
+            "attack": {
+                "type": "Melee Weapon Attack",
+                "tohit": "+3",
+                "reach": "5 ft.",
+                "target": "one target",
+                "dmg1": "1d4+1",
+                "type1": "bludgeoning"
+            },
+            "desc": "The target must succeed on a DC 11 Strength saving throw or be pushed 5 feet away."
+        },
+        {
+            "name": "Alarm Klaxon (Recharge 6)",
+            "desc": "The Scrutinizer emits a deafeningly loud alarm and a flash of bright light. Each creature within 30 feet must succeed on a DC 12 Constitution saving throw or be deafened for 1 minute. This alarm is audible up to 600 feet away and alerts all guards in the vicinity."
+        },
+        {
+            "name": "Ocular Scan (At-Will)",
+            "desc": "The Scrutinizer casts Detect Magic from its eye."
+        },
+        {
+            "name": "Detailed Analysis (1/Day)",
+            "desc": "The Scrutinizer casts Identify from its eye on a creature or object it is observing."
+        },
+        {
+            "name": "Illumination Flare (1/Day)",
+            "desc": "The Scrutinizer casts Faerie Fire (spell save DC 12) from its eye. Its primary purpose is to reveal invisible intruders."
+        },
+        {
+            "name": "Dazzling Burst (1/Day)",
+            "desc": "As a defensive measure when cornered, the Scrutinizer casts Color Spray from its eye."
+        },
+        {
+            "name": "Logic Loop (1/Day)",
+            "desc": "The Scrutinizer casts Tasha's Hideous Laughter (spell save DC 12) from its eye, targeting one creature within 30 feet."
+        }
+    ],
+    "bio": "The Scrutinizer model is a recent innovation from the Cinderfork Foundry's own artificers, designed to solve a specific problem: Duergar using their innate invisibility to shirk their duties or pilfer supplies. Designated 'Unit 734' but affectionately (and mockingly) called 'Peepers' by the forgeworkers, this construct patrols the foundry with a tireless, inquisitive nature. It exhibits a childlike curiosity, often stopping to analyze mundane objects with its large optical sensor before continuing on its programmed route. It is not designed for combat, but follows its security protocols with unflinching logic, chirping and whirring before escalating to a deafening alarm when it encounters something—or someone—that doesn't fit its parameters."
+} 

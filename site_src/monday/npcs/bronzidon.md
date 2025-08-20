@@ -64,6 +64,21 @@ Despite being a construct, Bronzidon displays a remarkably friendly and helpful 
 > 
 > **Arc-Slag Fumes (Recharge 5-6).** Bronzidon expels a cloud of shimmering, super-heated vapor in a 30-foot cone. Each creature in that area must make a DC 16 Constitution saving throw. On a failed save a creature is incapacitated and its speed becomes 0 as coughing fits set in. The creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. The effect is non-lethal and leaves a sooty metallic scent.
 
+
+## Combat Statistics
+
+<div id="bronzidon-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/bronzidon.json', 'bronzidon-statblock');
+  }, 100);
+});
+</script>
+
 ## Relationships
 - **Valandor T'alzar:** Creator and primary charge; shows deep loyalty and affection
 - **House Vaerixas members:** Recognizes family members as allies and protects them

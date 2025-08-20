@@ -1,0 +1,188 @@
+{
+  "name": "Matron Mother Zephyra Glutthraz",
+  "size": "Medium",
+  "type": "humanoid (drow)",
+  "alignment": "lawful evil",
+  "ac": {
+    "value": 19,
+    "notes": "natural armor, magical vestments"
+  },
+  "hp": {
+    "average": 165,
+    "formula": "22d8 + 77"
+  },
+  "speed": "30 ft., fly 60 ft. (magical)",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 17,
+    "int": 16,
+    "wis": 19,
+    "cha": 22
+  },
+  "saves": {
+    "wis": "+10",
+    "cha": "+12"
+  },
+  "skills": {
+    "deception": "+12",
+    "insight": "+10",
+    "intimidation": "+18",
+    "perception": "+10",
+    "religion": "+9"
+  },
+  "damage_resistances": "necrotic, fire",
+  "damage_immunities": "charm",
+  "condition_immunities": "charmed, frightened",
+  "senses": "darkvision 120 ft., truesight 60 ft., passive Perception 20",
+  "languages": "Common, Elvish, Undercommon, Abyssal, telepathy 120 ft.",
+  "cr": "14",
+  "pb": "+5",
+  "spellcasting_ability": "Charisma",
+  "caster_level": 15,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 2,
+    "6": 1,
+    "7": 1,
+    "8": 1
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "Zephyra has advantage on saving throws against being charmed, and magic can't put her to sleep."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Zephyra has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Zephyra is a 15th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 20, +12 to hit with spell attacks). She has the following spells prepared:\n\nCantrips (at will): eldritch blast, mage hand, minor illusion, prestidigitation, thaumaturgy, toll the dead\n1st level (4 slots): charm person, command, detect magic, shield\n2nd level (3 slots): detect thoughts, hold person, suggestion\n3rd level (3 slots): counterspell, dispel magic, fireball, hypnotic pattern\n4th level (3 slots): confusion, dimension door, greater invisibility, wall of fire\n5th level (2 slots): dominate person, flame strike, scrying\n6th level (1 slot): harm, mass suggestion\n7th level (1 slot): fire storm, plane shift\n8th level (1 slot): feeblemind, power word stun"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Zephyra fails a saving throw, she can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Zephyra has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Resource Monopolist",
+      "desc": "Zephyra can command vast resources. Once per day, she can summon 2d4 drow elite warriors or 1d2 drow mages as reinforcements (they arrive in 1d4 rounds)."
+    },
+    {
+      "name": "Aura of Dominance",
+      "desc": "Hostile creatures within 30 feet of Zephyra have disadvantage on saving throws against being charmed or frightened. Allied creatures within 30 feet have advantage on saving throws against being charmed or frightened."
+    },
+    {
+      "name": "Spider Queen's Blessing",
+      "desc": "Zephyra can walk on walls and ceilings as if they were normal ground. She can also cast spider climb at will without expending a spell slot."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Zephyra can cast a spell and make one weapon attack, or make two weapon attacks, or cast two spells of 3rd level or lower."
+    },
+    {
+      "name": "Scourge of Fangs",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+10",
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "2d6+4",
+        "type1": "slashing",
+        "dmg2": "3d6",
+        "type2": "necrotic"
+      },
+      "desc": "On a hit, target must succeed on a DC 20 CON save or be poisoned for 1 minute."
+    },
+    {
+      "name": "Hand Crossbow",
+      "attack": {
+        "type": "Ranged",
+        "tohit": "+10",
+        "range": "30/120 ft.",
+        "target": "one target",
+        "dmg1": "1d6+4",
+        "type1": "piercing",
+        "dmg2": "4d6",
+        "type2": "poison"
+      },
+      "desc": "On a hit, target must succeed on a DC 18 CON save for half poison damage."
+    },
+    {
+      "name": "Crushing Authority (Recharge 5-6)",
+      "desc": "Zephyra unleashes her overwhelming presence in a 30-foot radius. All creatures of her choice in the area must make a DC 20 Wisdom saving throw. On a failure, they take 21 (6d6) psychic damage and are stunned until the end of their next turn. On a success, they take half damage and are not stunned."
+    },
+    {
+      "name": "Glutthraz's Wealth (1/Day)",
+      "desc": "Zephyra channels her house's vast resources into a devastating display. She creates a 20-foot radius area of difficult terrain centered on a point within 60 feet. The area fills with summoned treasure, weapons, and constructs that attack indiscriminately. Creatures starting their turn in the area take 14 (4d6) bludgeoning damage (DC 20 Dex save for half). The effect lasts for 1 minute."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Eldritch Blast",
+      "desc": "Zephyra casts eldritch blast as a bonus action, making three separate attacks (+12 to hit, 120 ft. range, 1d10 + 6 force damage each)."
+    },
+    {
+      "name": "Command Resources",
+      "desc": "Zephyra can command any allied creature within 60 feet to move up to its speed or take the Dash action without provoking opportunity attacks."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Counterspell",
+      "desc": "When a creature casts a spell within 60 feet, Zephyra can cast counterspell using a spell slot."
+    },
+    {
+      "name": "Shield",
+      "desc": "When hit by an attack or targeted by magic missile, Zephyra can cast shield to gain +5 AC until the start of her next turn."
+    }
+  ],
+  "legendary": {
+    "count": 3,
+    "actions": [
+      {
+        "name": "Move",
+        "desc": "Zephyra moves up to her speed without provoking opportunity attacks."
+      },
+      {
+        "name": "Cantrip",
+        "desc": "Zephyra casts a cantrip."
+      },
+      {
+        "name": "Scourge Attack",
+        "desc": "Zephyra makes one Scourge of Fangs attack."
+      },
+      {
+        "name": "Spell (Costs 2 Actions)",
+        "desc": "Zephyra casts a spell of 4th level or lower. If she casts a spell of 3rd level or higher, this costs one additional legendary action."
+      }
+    ]
+  },
+  "mythic_actions": {
+    "desc": "Lair Actions: On initiative count 20 (losing initiative ties), Zephyra takes a lair action to cause one of the following effects; she can't use the same effect two rounds in a row. These are presented here as 'Mythic Actions' for display on the character sheet.",
+    "actions": [
+      {
+        "name": "Lair Action: Resource Surge",
+        "desc": "Magical wealth and resources erupt from the ground in a 20-foot radius within 120 feet. Creatures in the area must make a DC 18 Dexterity saving throw or take 10 (3d6) bludgeoning damage and be restrained until the end of their next turn."
+      },
+      {
+        "name": "Lair Action: Oppressive Wealth",
+        "desc": "The weight of Glutthraz's accumulated power bears down on enemies. All hostile creatures within the lair must make a DC 18 Strength saving throw or have their speed reduced by half until the next initiative count 20."
+      },
+      {
+        "name": "Lair Action: Call to Arms",
+        "desc": "Zephyra's wealth summons defenders. 1d4 drow or 1d2 duergar guards appear in unoccupied spaces within 60 feet of her and act immediately."
+      }
+    ]
+  },
+  "bio": "Matron Mother Zephyra Glutthraz is the ruthless head of House Glutthraz, the resource monopolist house that has systematically crushed House T'alzar's economic power. Where Severine T'alzar is a subtle chess master, Zephyra is overwhelming force personified - she believes that sufficient resources and power can solve any problem. Her house controls critical supply lines, mining operations, and trade routes throughout the Underdark. She views House T'alzar's resistance as an irritating inefficiency to be eliminated. Zephyra's power comes not just from her personal magical abilities, but from her house's vast accumulated wealth and the armies it can buy. She sees the surface world as another resource to be claimed and exploited, making the mission to Phandalin a direct threat to her expanding dominion."
+} 

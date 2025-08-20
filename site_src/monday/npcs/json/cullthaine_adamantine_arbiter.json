@@ -1,0 +1,107 @@
+{
+  "name": "Cull'thaine Adamantine Arbiter",
+  "size": "Large",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "ac": {
+    "value": 20,
+    "notes": "adamantine armor"
+  },
+  "hp": {
+    "average": 210,
+    "formula": "20d10+100"
+  },
+  "speed": "30 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 14,
+    "con": 20,
+    "int": 10,
+    "wis": 12,
+    "cha": 12
+  },
+  "saves": {},
+  "skills": {
+    "perception": "+7",
+    "insight": "+6",
+    "intimidation": "+8"
+  },
+  "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine weapons",
+  "damage_resistances": "fire",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 17",
+  "languages": "Common, Elvish, Undercommon",
+  "cr": "16",
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The arbiter has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The arbiter is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Adamantine Armor",
+      "desc": "Critical hits against the arbiter become normal hits instead."
+    },
+    {
+      "name": "Gala Peacekeeping Protocols",
+      "desc": "When a creature within 30 feet of the arbiter makes a weapon attack or casts a spell that deals damage, the arbiter automatically knows its location until the end of that creature's next turn. Recognized Cull'thaine nobles and their honored guests are ignored by this trait unless they target another guest."
+    },
+    {
+      "name": "Commanding Voice",
+      "desc": "The arbiter speaks in a calm, resonant tone. When it verbally reprimands a creature, that creature must succeed on a DC 18 Charisma saving throw or have disadvantage on the next attack roll or spell it makes before the end of its next turn."
+    },
+    {
+      "name": "Magical Awareness",
+      "desc": "At will, the arbiter can sense the presence of magic within 30 feet and see invisible creatures and objects as if they were visible. It automatically pinpoints the location of any spell being cast within that range."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The arbiter makes two Runeblade attacks or one Runeblade attack and one Humiliating Repulse, or it uses Binding Verdict if available."
+    },
+    {
+      "name": "Runeblade",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+12",
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "2d10+6",
+        "type1": "slashing",
+        "dmg2": "2d6",
+        "type2": "force"
+      },
+      "desc": "The arbiter's elongated adamantine blade is etched with glowing runes. On a hit, the target takes slashing damage plus force damage from the blade's arcane resonance."
+    },
+    {
+      "name": "Pacifying Breath (Recharge 5-6)",
+      "desc": "The arbiter exhales a cloud of scintillating motes in a 15-foot cone. Each creature in that area must make a DC 18 Constitution saving throw. On a failed save, the creature is poisoned and incapacitated for 1 minute. While poisoned in this way, the creature's speed is 0. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Creatures bearing an official Cull'thaine invitation make this save with advantage."
+    },
+    {
+      "name": "Humiliating Repulse",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+12",
+        "reach": "5 ft.",
+        "target": "one incapacitated or restrained creature",
+        "dmg1": "0",
+        "type1": "bludgeoning"
+      },
+      "desc": "The arbiter grabs the target and hurls it up to 40 feet in a straight line. The creature lands prone and takes 2d6 bludgeoning damage. If the throw would push the creature outside the gala hall's warded boundary, arcane runes flare and gently levitate the creature down the entrance stairs, publicly shaming it."
+    },
+    {
+      "name": "Binding Verdict (Recharge 6)",
+      "desc": "The arbiter targets one creature it can see within 60 feet that it has witnessed violate gala protocol. The target must succeed on a DC 19 Wisdom saving throw or be paralyzed for 1 minute and levitates up to 10 feet off the ground. While paralyzed in this way, the creature slowly drifts 10 feet toward the nearest exit at the start of each of its turns. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "legendary": {
+    "count": 0,
+    "actions": []
+  },
+  "init_tiebreaker": "@{dexterity}/100",
+  "bio": "Elite constructs forged by House Cull'thaine to police high-society functions. Their adamantine plating and arcane dampeners ensure elegance is never marred by violence. Any guest who breaks the Eight-Eyes Etiquette is frozen in place, ceremonially expelled, and remembered as a spectacle of disgrace for centuries to come."
+} 

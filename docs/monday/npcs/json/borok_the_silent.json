@@ -1,0 +1,82 @@
+{
+  "name": "Borok the Silent",
+  "size": "Medium",
+  "type": "humanoid (orog)",
+  "alignment": "neutral evil",
+  "cr": "3",
+  "ac": {
+    "value": 18,
+    "notes": "Plate Armor"
+  },
+  "hp": {
+    "average": 60,
+    "formula": "7d8 + 28"
+  },
+  "speed": "30 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 18,
+    "int": 12,
+    "wis": 14,
+    "cha": 12
+  },
+  "saves": {
+    "str": "+6",
+    "con": "+6"
+  },
+  "skills": {
+    "athletics": "+6",
+    "intimidation": "+3",
+    "perception": "+4",
+    "survival": "+4"
+  },
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "Common, Orc, Undercommon",
+  "traits": [
+    {
+      "name": "Proficient Navigator",
+      "desc": "Borok adds double his proficiency bonus (+4) to any ability check he makes to pilot a water vehicle or avoid getting lost while on the Black Loch."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Borok makes two attacks with his greataxe."
+    },
+    {
+      "name": "Greataxe",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+6",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d12+4",
+        "type1": "slashing"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Javelin",
+      "attack": {
+        "type": "Melee or Ranged",
+        "tohit": "+6",
+        "reach": "5 ft.",
+        "range": "30/120 ft.",
+        "target": "one target",
+        "dmg1": "1d6+4",
+        "type1": "piercing"
+      },
+      "desc": ""
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action on his turn, Borok can move up to his speed toward a hostile creature that he can see."
+    }
+  ],
+  "reactions": [],
+  "bio": "Borok is a massive Orog, even larger than most of his kind, with broad, powerful shoulders and skin the color of wet slate. His face is a mask of scars, with one milky-white eye and one that is a sharp, intelligent black. He is bald, and a series of interlocking, geometric tattoos cover his scalp and the left side of his face, marking him as a member of the unaffiliated Black-Tusk Corsairs. He wears piecemeal armor of chitin and blackened steel and carries a heavy, serrated greataxe strapped to his back. Borok is taciturn to a fault, communicating in grunts and short, guttural commands to his crew. He is a pragmatic professional; the mission and his payment are all that matter."
+} 

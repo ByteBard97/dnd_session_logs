@@ -1,0 +1,93 @@
+{
+  "name": "Duergar Sergeant",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "typically lawful evil",
+  "cr": "2",
+  "ac": {
+    "value": 16,
+    "notes": "scale mail, shield"
+  },
+  "hp": {
+    "average": 32,
+    "formula": "5d8 + 10"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 10,
+    "cha": 10
+  },
+  "saves": {},
+  "skills": {},
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Phalanx Formation",
+      "desc": "The duergar has advantage on attack rolls and Dexterity saving throws while standing within 5 feet of a duergar ally wielding a shield."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The duergar makes two War Pick or Javelin attacks. It can use Command in place of one of these attacks."
+    },
+    {
+      "name": "Enlarge (Recharges after a Short or Long Rest)",
+      "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+    },
+    {
+      "name": "War Pick",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+2",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 6 (1d8 + 2) piercing damage, or 11 (2d8 + 2) piercing damage while enlarged."
+    },
+    {
+      "name": "Javelin",
+      "attack": {
+        "type": "Melee or Ranged Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft. or range 30/120 ft.",
+        "target": "one target",
+        "dmg1": "1d6+2",
+        "type1": "piercing"
+      },
+      "desc": "Hit: 5 (1d6 + 2) piercing damage, or 9 (2d6 + 2) piercing damage while enlarged."
+    },
+    {
+      "name": "Command",
+      "desc": "The duergar targets one ally it can see within 30 feet of it. If the target can see and hear the duergar, the target can make one weapon attack as a reaction."
+    },
+    {
+        "name": "Maneuver Allies (Recharge 5-6)",
+        "desc": "Up to four allies within 60 feet of the duergar that can hear it can each use their reaction to move up to half their speed without provoking opportunity attacks."
+    },
+    {
+      "name": "Invisibility (Recharges after a Short or Long Rest)",
+      "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "bio": "Duergar sergeants are squad leaders and intelligent tacticians in battle. They often arm themselves with heavy armor while carrying a sharp war pick and a selection of javelins. These duergar have strong commanding presence enough to maneuver allies in the battlefield. A phalanx formation led by a duergar sergeant is thought to be unbreakable, moving in a synchronized and almost mechanical manner, giving no room for attackers to strike."
+} 

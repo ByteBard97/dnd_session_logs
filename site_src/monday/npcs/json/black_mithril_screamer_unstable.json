@@ -1,0 +1,107 @@
+{
+  "name": "Black Mithril Screamer (Unstable)",
+  "size": "Large",
+  "type": "construct",
+  "alignment": "chaotic neutral",
+  "cr": "6",
+  "ac": {
+    "value": 18,
+    "notes": "Black Mithril Plating"
+  },
+  "hp": {
+    "average": 114,
+    "formula": "12d10 + 48"
+  },
+  "speed": "25 ft.",
+  "pb": "+3",
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 18,
+    "int": 3,
+    "wis": 10,
+    "cha": 5
+  },
+  "saves": {
+    "str": "+8",
+    "con": "+7"
+  },
+  "damage_vulnerabilities": "psychic",
+  "damage_immunities": "poison",
+  "damage_resistances": "fire; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "understands Duergar and Drow but can't speak",
+  "traits": [
+    {
+      "name": "UNSTABLE MATRIX - ROLL EVERY TURN",
+      "desc": "⚠️ DM REMINDER: Roll d6 at start of Screamer's turn! ⚠️\n\n1-2: BERSERK - Must attack nearest creature (friend or foe) with advantage\n3: CHAOTIC MOVEMENT - Moves 25 ft in random direction (roll d8), attacks first creature in path\n4: PSIONIC OVERLOAD - Resonant Scream triggers immediately (free action)\n5: SPARKING MALFUNCTION - All creatures within 10 ft take 1d6 fire damage\n6: BRIEF CLARITY - Acts normally this turn (DM choice)\n\n🔥 TELEGRAPH TO PLAYERS: Orange fissures flare, metal groans, sparks fly - describe the chaos!"
+    },
+    {
+      "name": "Psionic Feedback Loop",
+      "desc": "The screamer is vulnerable to psychic damage. However, whenever it takes psychic damage, its Unstable Matrix immediately triggers an additional chaos roll, and its Resonant Scream action is instantly recharged."
+    },
+    {
+      "name": "Black Mithril Plating",
+      "desc": "The screamer has advantage on saving throws against spells and other magical effects. The dark metal pulses with unstable energy, creating visible fissures of orange light."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The screamer deals double damage to objects and structures."
+    },
+    {
+      "name": "Chaotic Emergence",
+      "desc": "🎭 ROLEPLAY NOTE: This construct was torn from its ritual bindings prematurely. It cannot distinguish friend from foe and lashes out unpredictably. The Black Mithril makes it incredibly powerful but dangerously unstable."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The screamer makes two attacks: one with its Mithril Drill and one with its Slam. ⚠️ TARGET DETERMINED BY UNSTABLE MATRIX ROLL ⚠️"
+    },
+    {
+      "name": "Mithril Drill",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8",
+        "reach": "10 ft.",
+        "target": "one target",
+        "dmg1": "2d10+5",
+        "type1": "piercing"
+      },
+      "desc": "🎭 DESCRIPTION: The massive drill arm screams as it spins, spraying sparks and metal shavings. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the screamer can't use its drill on another target."
+    },
+    {
+      "name": "Slam",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+8",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "2d6+5",
+        "type1": "bludgeoning"
+      },
+      "desc": "🎭 DESCRIPTION: The construct's free arm swings with bone-crushing force, metal joints shrieking with each movement."
+    },
+    {
+      "name": "Resonant Scream (Recharge 5-6 or Chaos Trigger)",
+      "attack": {
+        "type": "Spell",
+        "reach": "30-foot cone",
+        "target": "Each creature in area",
+        "save": "DC 15 CON save",
+        "dmg1": "4d8",
+        "type1": "thunder"
+      },
+      "desc": "🎭 DESCRIPTION: The tortured soul within unleashes a bone-shattering wail of pure anguish. Each creature in the area must make a DC 15 Constitution saving throw. On a failed save, a creature takes 4d8 thunder damage, is pushed 15 feet away from the screamer, and is knocked prone. On a successful save, the creature takes half as much damage and is not pushed or knocked prone.\n\n⚠️ NOTE: Can be triggered by Unstable Matrix roll or psychic damage!"
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Chaos Reaction",
+      "desc": "When the screamer takes 15 or more damage from a single source, the orange fissures in its plating flare brightly. All creatures within 15 feet must succeed on a DC 13 Constitution saving throw or be blinded until the end of their next turn."
+    }
+  ],
+  "bio": "⚠️ UNSTABLE VARIANT ⚠️\n\nThis Black Mithril Screamer was ripped from its ritual bindings before the process was complete. The interrupted ceremony has left the construct in a state of chaotic fury, unable to distinguish between friend and foe. Orange energy crackles along the fissures in its black metal plating, and its movements are erratic and unpredictable.\n\nThe tortured soul bound within screams not just in anguish, but in confusion - it attacks whatever is nearest, regardless of allegiance. The Black Mithril's raw power makes it incredibly dangerous, but its instability means even its creators cannot control it.\n\n🎭 ROLEPLAY TIPS:\n- Describe the orange fissures flaring before each chaos roll\n- The construct groans and sparks unpredictably\n- Its movements are jerky and unnatural\n- Even the duergar are terrified of their creation\n- Perfect foreshadowing for Act II house assault"
+}

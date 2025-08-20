@@ -1,0 +1,148 @@
+{
+  "name": "Vyssinia T'alzar, The Usurper Matron",
+  "size": "Medium",
+  "type": "humanoid (drow)",
+  "alignment": "lawful evil",
+  "cr": "9",
+  "ac": {
+    "value": 19,
+    "notes": "+1 Adamantine Plate Armor"
+  },
+  "hp": {
+    "average": 95,
+    "formula": "10d10 + 40"
+  },
+  "speed": "30 ft.",
+  "pb": "+4",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 18,
+    "int": 10,
+    "wis": 14,
+    "cha": 16
+  },
+  "saves": {
+    "str": "+7",
+    "dex": "+4",
+    "con": "+7",
+    "int": "+3",
+    "wis": "+9",
+    "cha": "+10"
+  },
+  "skills": {
+    "athletics": "+8",
+    "intimidation": "+7",
+    "perception": "+6",
+    "religion": "+4"
+  },
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "Common, Elvish, Undercommon",
+  "spellcasting_ability": "Charisma",
+  "caster_level": 10,
+  "spell_slots": {
+    "1": 4,
+    "2": 3,
+    "3": 2
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "Vyssinia has advantage on saving throws against being charmed, and magic can't put her to sleep."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Vyssinia has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Aura of Protection",
+      "desc": "Vyssinia and friendly creatures within 10 feet of her gain a bonus to all saving throws equal to her Charisma modifier (+3, already included in her saves)."
+    },
+    {
+      "name": "Aura of Conquest",
+      "desc": "If a creature is frightened of Vyssinia, its speed is reduced to 0 while in her 10ft aura, and it takes psychic damage equal to half her paladin level (5) if it starts its turn there."
+    },
+    {
+      "name": "Fighting Style: Great Weapon Fighting",
+      "desc": "When Vyssinia rolls a 1 or 2 on a damage die for an attack with her two-handed weapon, she can reroll the die and must use the new roll."
+    },
+    {
+      "name": "Divine Health",
+      "desc": "Vyssinia is immune to disease."
+    },
+    {
+      "name": "Vyssinia's Spite (Legendary Scimitar)",
+      "desc": "This fearsome +1 double-bladed scimitar is forged from swirling mithral and adamantine. When Vyssinia hits a creature with this weapon, she can trigger its Creeping Contagion property."
+    },
+    {
+      "name": "Spellcasting (Paladin)",
+      "desc": "Vyssinia is a 10th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). She has the following paladin spells prepared:\n\n1st Level (4 slots): Armor of Agathys*, Command*, Wrathful Smite, Shield of Faith\n2nd Level (3 slots): Hold Person*, Spiritual Weapon*, Aid, Find Steed\n3rd Level (2 slots): Bestow Curse*, Fear*, Revivify, Dispel Magic\n(*Oath of Conquest spells are always prepared)"
+    },
+    {
+      "name": "Channel Divinity (1/Short Rest)",
+      "desc": "Vyssinia has two Channel Divinity options:\n• Conquering Presence: As an action, each creature of her choice within 30 feet must make a DC 15 Wisdom save or be frightened for 1 minute.\n• Guided Strike: When Vyssinia makes an attack roll, she can use her Channel Divinity to gain a +10 bonus to the roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Vyssinia makes two attacks with her double-bladed scimitar."
+    },
+    {
+      "name": "Vyssinia's Spite (+1 Double-Bladed Scimitar)",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+9",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "2d4+5",
+        "type1": "slashing",
+        "dmg2": "1d6",
+        "type2": "necrotic"
+      },
+      "desc": "Can trigger the scimitar's Creeping Contagion property on a hit."
+    },
+    {
+      "name": "Creeping Contagion (Recharges on a Short or Long Rest)",
+      "desc": "When Vyssinia hits with her scimitar, she can force the target to make a DC 10 Constitution saving throw. On a failure, the target becomes Infected. If a creature that is already Infected fails this saving throw again, it becomes afflicted with Flesh Rot (Vulnerability to all damage). A creature can repeat the saving throw at the end of each of its turns, ending the Flesh Rot on a success. The Infected condition can only be removed by magic like Lesser Restoration."
+    },
+    {
+      "name": "Lay on Hands (50 HP)",
+      "desc": "As an action, Vyssinia can touch a creature and restore a number of hit points up to her pool of 50 HP. Alternatively, she can expend 5 HP from the pool to cure the target of one disease or neutralize one poison affecting it."
+    },
+    {
+      "name": "Spiritual Weapon Attack",
+      "attack": {
+        "type": "Melee Spell Attack",
+        "tohit": "+7",
+        "reach": "5 ft. (from weapon)",
+        "target": "one creature",
+        "dmg1": "1d8+3",
+        "type1": "force"
+      },
+      "desc": "Attack with a currently active Spiritual Weapon. This is a bonus action on Vyssinia's turn."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Scimitar Bonus Attack",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+9",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d4+5",
+        "type1": "slashing",
+        "dmg2": "1d6",
+        "type2": "necrotic"
+      },
+      "desc": "A second attack made with the double-bladed scimitar. This can also trigger the Creeping Contagion property on a hit: On a failure of a DC 10 CON save, the target becomes Infected. If an already Infected creature fails again, it gets Flesh Rot (Vulnerability to all damage) until it saves."
+    },
+    {
+      "name": "Spiritual Weapon",
+      "desc": "As a bonus action, Vyssinia can cast Spiritual Weapon (2nd-level slot). It creates a floating weapon that she can use to make a spell attack (1d8 + 3 force damage) as a bonus action on subsequent turns for 1 minute."
+    }
+  ],
+  "reactions": [],
+  "bio": "Vyssinia T'alzar, the Usurper Matron, is a fearsome Oath of Conquest Paladin devoted to the tyrannical aspect of Lolth. Believing her mother's pragmatism was a weakness, she seized control of House T'alzar with the backing of House Glutthraz. She rules through fear and martial prowess, convinced that true power flows from breaking the will of one's enemies. On the battlefield, she is a whirlwind of dark divine power and flashing steel, her presence alone enough to cower lesser foes."
+} 

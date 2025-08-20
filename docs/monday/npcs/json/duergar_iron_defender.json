@@ -1,0 +1,71 @@
+{
+  "name": "Duergar Battle Smith's Iron Defender (Spider Form)",
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "1",
+  "ac": {
+    "value": 15,
+    "notes": "natural armor"
+  },
+  "hp": {
+    "average": 50,
+    "formula": ""
+  },
+  "speed": "30 ft., climb 30 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 4,
+    "wis": 10,
+    "cha": 6
+  },
+  "saves": {},
+  "skills": {
+      "perception": "+2"
+  },
+  "damage_immunities": "poison",
+  "condition_immunities": "charmed, exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "understands one language of its creator but can't speak",
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "The iron defender can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Vigilant",
+      "desc": "The iron defender can't be surprised."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "attack": {
+        "type": "Melee Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+2",
+        "type1": "piercing",
+        "dmg2": "2d4",
+        "type2": "poison"
+      },
+      "desc": "Hit: 6 (1d8 + 2) piercing damage plus 5 (2d4) poison damage."
+    },
+    {
+        "name": "Repair (3/Day)",
+        "desc": "The magical mechanisms inside the iron defender restore 2d8 + 2 hit points to itself or to one construct or object within 5 feet of it."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+      {
+          "name": "Defensive Pounce",
+          "desc": "The iron defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the iron defender."
+      }
+  ],
+  "bio": "A mechanical spider companion for the Duergar Battle Smith."
+} 

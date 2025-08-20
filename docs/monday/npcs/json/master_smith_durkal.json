@@ -1,0 +1,82 @@
+{
+  "name": "Master Smith Durkal",
+  "size": "Medium",
+  "type": "humanoid (duergar)",
+  "alignment": "lawful evil",
+  "cr": "3",
+  "ac": {
+    "value": 17,
+    "notes": "Splint Mail"
+  },
+  "hp": {
+    "average": 58,
+    "formula": "9d8 + 18"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "saves": {},
+  "skills": {
+    "athletics": "+5",
+    "perception": "+2"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "Durkal has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, Durkal has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "Durkal can innately cast the following spells, requiring no material components: \n\n1/day each: Enlarge/Reduce (self only, Enlarge option only), Invisibility (self only)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Durkal makes two attacks with his Warhammer."
+    },
+    {
+      "name": "Warhammer",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+5",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "1d8+3",
+        "type1": "bludgeoning",
+        "dmg2": "1d10+3",
+        "type2": "bludgeoning (if two-handed)"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Heavy Crossbow",
+      "attack": {
+        "type": "Ranged",
+        "tohit": "+3",
+        "range": "100/400 ft.",
+        "target": "one target",
+        "dmg1": "1d10+1",
+        "type1": "piercing"
+      },
+      "desc": ""
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "bio": "Master Smith Durkal is the undisputed master of the Cinderfork Foundry's forges. His focus is entirely on the physical craft, the purity of the metal, and the quality of the arms produced. He moves with the brute force and confidence of someone who has spent a lifetime bending steel to his will. In a fight, he is a terrifying whirlwind of hammer blows, using his psionic ability to become a giant, embodying the raw power of the forge."
+} 

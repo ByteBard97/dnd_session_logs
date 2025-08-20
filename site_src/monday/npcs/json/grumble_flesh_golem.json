@@ -1,0 +1,105 @@
+{
+  "name": "Grumble",
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "cr": "5",
+  "ac": {
+    "value": 15,
+    "notes": "natural armor with adamantine plating"
+  },
+  "hp": {
+    "average": 93,
+    "formula": "11d8 + 44"
+  },
+  "speed": "30 ft.",
+  "abilities": {
+    "str": 19,
+    "dex": 9,
+    "con": 18,
+    "int": 16,
+    "wis": 10,
+    "cha": 8
+  },
+  "skills": {
+    "arcana": "+6",
+    "history": "+6",
+    "investigation": "+6",
+    "athletics": "+7" 
+  },
+  "damage_immunities": "lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine",
+  "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common, Undercommon",
+  "traits": [
+    {
+      "name": "Berserk",
+      "desc": "Whenever Grumble starts his turn with 40 hit points or fewer, roll a d6. On a 6, Grumble goes berserk. On each of his turns while berserk, Grumble attacks the nearest creature he can see. If no creature is near enough to move to and attack, Grumble attacks an object, with preference for an object smaller than himself. Once Grumble goes berserk, he continues to do so until he is destroyed or regains all his hit points."
+    },
+    {
+      "name": "Aversion to Fire",
+      "desc": "If Grumble takes fire damage, he has disadvantage on attack rolls and ability checks until the end of his next turn."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "Grumble is immune to any spell or effect that would alter his form."
+    },
+    {
+      "name": "Lightning Absorption",
+      "desc": "Whenever Grumble is subjected to lightning damage, he takes no damage and instead regains a number of hit points equal to the lightning damage dealt."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Grumble has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Intelligent Construct",
+      "desc": "Unlike typical flesh golems, Grumble possesses a formidable, if profoundly cynical, intellect (a 'brain the size of a planet,' he might gloomily assert) and a distinct personality. He is capable of complex communication, creative problem-solving (usually to point out the futility of the problem or the intellectual inferiority of the plan), and expressing his existential despair with cutting wit and a surprisingly vast vocabulary."
+    },
+    {
+      "name": "Pessimistic Commentary",
+      "desc": "Grumble frequently makes dour, sarcastic, and highly articulate observations about the utter pointlessness of most situations. These comments, delivered in his characteristic monotone, can sometimes, quite by accident from his perspective, provide an uncomfortably astute insight into problems, giving allies advantage on one Intelligence-based skill check per day when Grumble deigns to share his 'helpful' perspective on impending doom or wasted effort. This is particularly true for matters of Arcana, History, or Investigation, fields in which his intellect far outstrips his assigned duties."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The golem makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "attack": {
+        "type": "Melee",
+        "tohit": "+7",
+        "reach": "5 ft.",
+        "target": "one target",
+        "dmg1": "2d8+4",
+        "type1": "bludgeoning"
+      },
+      "desc": ""
+    },
+    {
+      "name": "Vicious Mockery (Cantrip)",
+      "attack": {
+        "type": "Spell",
+        "save": "WIS 13",
+        "dmg1": "2d4",
+        "type1": "psychic"
+      },
+      "desc": "On a failed save, the target takes psychic damage and has disadvantage on its next attack roll."
+    }
+  ],
+  "bonus_actions": [
+    {
+      "name": "Sarcastic Observation (Bonus Action)",
+      "desc": "Grumble makes a particularly cutting remark about the current dire situation or an enemy's obvious failings, perhaps referencing an obscure historical precedent for such folly. Choose one enemy within 30 feet that can hear him. That creature must make a DC 12 Wisdom saving throw or be momentarily distracted by the sheer accuracy of his pessimism, giving the next attack against it advantage."
+    }
+  ],
+  "reactions": [
+    {
+      "name": "Defeatist Deflection",
+      "desc": "When an ally within 30 feet is attacked, Grumble can mutter something profoundly pessimistic about their chances (e.g., 'Oh, don't bother dodging, it'll only prolong the inevitable sense of disappointment, much like my continued existence in this capacity'). The sheer unexpectedness of this advice somehow helps them. The ally gains +2 AC against that attack."
+    }
+  ],
+  "bio": "Grumble is an intelligent flesh golem assembled by Matron Severine to serve House T'alzar. He is dour, sarcastic, and prone to dry, pessimistic commentary (think Marvin the Paranoid Android). He obeys the party leader's commands, but rarely cheerfully. His loyalty is functional, not emotional, and he often complains about the indignities of his existence."
+} 

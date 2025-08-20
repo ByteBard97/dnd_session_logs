@@ -37,3 +37,17 @@ Miraleth currently resides in T'alzar Tower under the protective watch of the fa
 
 ## Significance to the House
 Beyond being Valandor's beloved daughter, Miraleth represents the future of House T'alzar and embodies the values and innocence that the family strives to preserve in their political world. Her wellbeing is a driving motivation for many family decisions.
+## Combat Statistics
+
+<div id="miraleth-talzar-statblock"></div>
+
+<script>
+// Wait for page load to ensure all scripts are available
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(function() {
+    // Load statblock from JSON file
+    loadJsonStatblock('json/miraleth_talzar_public.json', 'miraleth-talzar-statblock');
+  }, 100);
+});
+</script>
+

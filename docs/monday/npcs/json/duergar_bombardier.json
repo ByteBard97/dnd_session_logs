@@ -1,0 +1,89 @@
+{
+  "name": "Duergar Bombardier",
+  "size": "Medium",
+  "type": "humanoid (dwarf)",
+  "alignment": "typically lawful evil",
+  "cr": "3",
+  "ac": {
+    "value": 16,
+    "notes": "breastplate"
+  },
+  "hp": {
+    "average": 60,
+    "formula": "11d8 + 12"
+  },
+  "speed": "25 ft.",
+  "pb": "+2",
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 12,
+    "int": 16,
+    "wis": 10,
+    "cha": 9
+  },
+  "saves": {},
+  "skills": {
+    "perception": "+2"
+  },
+  "damage_resistances": "poison",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+  "spellcasting_ability": "Intelligence",
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting (Artificer)",
+      "desc": "The Duergar Bombardier casts one of the following spells using Intelligence as the spellcasting ability (spell save DC 13):\n\nAt will: mage hand, mending, prestidigitation\n2/day each: shatter, thunderwave"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Enlarge (Recharges after a Short or Long Rest)",
+      "desc": "For 1 minute, the duergar magically increases in size, along with anything it is wearing or carrying. While enlarged, the duergar is Large, doubles its damage dice on Strength-based weapon attacks (included in the attacks), and makes Strength checks and Strength saving throws with advantage. If the duergar lacks the room to become Large, it attains the maximum size possible in the space available."
+    },
+    {
+      "name": "Light Hammer",
+      "attack": {
+        "type": "Melee or Ranged Weapon Attack",
+        "tohit": "+4",
+        "reach": "5 ft. or range 20/60 ft.",
+        "target": "one target",
+        "dmg1": "1d4+2",
+        "type1": "bludgeoning"
+      },
+      "desc": "Hit: 4 (1d4 + 2) bludgeoning damage, or 7 (2d4 + 2) bludgeoning damage while enlarged, plus 9 (2d8) force damage."
+    },
+    {
+      "name": "Arcane Bombard (Recharge 4-6)",
+      "attack": {
+        "type": "Spell",
+        "reach": "150 ft.",
+        "target": "15-foot-radius sphere",
+        "save": "DC 11 DEX save",
+        "dmg1": "10d6",
+        "type1": "force"
+      },
+      "desc": "The duergar fires from its cannon an arcane shell at a point it can see within 150 feet of it. The arcane shell explodes upon impact, creating a blast wave. Each creature in a 15-foot-radius sphere centered on that point must make a Dexterity saving throw. On a failed save, a target takes 35 (10d6) force damage and is knocked prone. On a successful save, a target takes half as much damage and isn't knocked prone. The duergar must immediately make a DC 11 Constitution saving throw or be incapacitated until the end of its next turn. If the duergar is enlarged, it has advantage on the saving throw."
+    },
+    {
+      "name": "Invisibility (Recharges after a Short or Long Rest)",
+      "desc": "The duergar magically turns invisible until it attacks, casts a spell, or uses its Enlarge, or until its concentration is broken, up to 1 hour (as if concentrating on a spell). Any equipment the duergar wears or carries is invisible with it."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [
+    {
+      "name": "Protective Shield (3/Day)",
+      "desc": "When the duergar is hit by an attack roll, the duergar gains a +5 bonus to its AC until the start of the its next turn, which can cause the triggering attack roll to miss."
+    }
+  ],
+  "bio": "Duergar bombardiers are artificers that use long range cannons, capable of raining death and destruction from a great distance."
+} 

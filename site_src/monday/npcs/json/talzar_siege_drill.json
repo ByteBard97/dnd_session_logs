@@ -1,0 +1,72 @@
+{
+  "name": "T'alzar Siege Drill",
+  "size": "Gargantuan",
+  "type": "vehicle",
+  "alignment": "unaligned",
+  "cr": "12",
+  "pb": "+4",
+  "ac": {
+    "value": 19,
+    "notes": "Reinforced Adamantine/Mithral Plate"
+  },
+  "hp": {
+    "average": 250,
+    "formula": "20d20+40"
+  },
+  "speed": "30 ft., burrow 6 ft. (in soft earth) or 5 ft. per minute (in solid rock)",
+  "abilities": {
+    "str": 24,
+    "dex": 6,
+    "con": 22,
+    "int": 0,
+    "wis": 0,
+    "cha": 0
+  },
+  "damage_immunities": "poison, psychic",
+  "condition_immunities": "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned, unconscious",
+  "senses": "blindsight 30 ft., tremorsense 60 ft., passive Perception 10",
+  "languages": "--",
+  "saves": {
+    "str": "+11",
+    "con": "+10"
+  },
+  "skills": {
+    "athletics": "+11"
+  },
+  "init_tiebreaker": "@{dexterity}/100",
+  "traits": [
+    {
+      "name": "Damage Threshold",
+      "desc": "The drill has a damage threshold of 10. It is immune to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold, in which case it takes damage as normal."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The drill deals double damage to objects and structures."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The drill is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Stations",
+      "desc": "The drill requires a crew to operate effectively. It has a crew capacity of 4 (1 pilot, 3 crew) and a cargo capacity of 1 ton.\n\n* Pilot's Cockpit (1 Crew): Steers the drill and operates its actions. The pilot has three-quarters cover.\n* Engine Room (2 Crew): Manages the arcane-geothermal engine. The drill's speed is halved if this station is not fully crewed.\n* Support (1 Crew): Acts as a spotter or navigator. All Wisdom (Perception) checks made from the drill are made from this station."
+    },
+    {
+      "name": "Stable Tunnel",
+      "desc": "When the drill burrows, it leaves behind a 15-foot-diameter tunnel lined with fused stone and metal shavings that remains structurally sound. Medium or smaller creatures—and even Large mounts or vehicles—can travel the passage safely unless it suffers significant seismic damage or purposeful collapse."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Drill",
+      "desc": "The pilot can move the siege drill up to its burrow speed, clearing a 15-foot-diameter tunnel. If the drill enters a structure's space for the first time on a turn, it deals 55 (10d10) bludgeoning damage to the structure."
+    },
+    {
+      "name": "Ram",
+      "desc": "The pilot moves the drill up to its standard speed in a straight line. Any creature in its path must make a DC 19 Dexterity saving throw. On a failed save, a creature takes 22 (4d10) bludgeoning damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone."
+    }
+  ],
+  "bonus_actions": [],
+  "reactions": [],
+  "bio": "A marvel of House T'alzar's ingenuity and House Ironshroud's craftsmanship, the Siege Drill is a powerful tool for excavation and demolition. It measures 20 feet long by 15 feet wide. Loud and unsubtle, it is designed to tunnel through the rock of the Underdark to create new passages or to breach enemy fortifications. Its arcane-geothermal engine requires rare minerals to function but provides immense power to the adamantine-tipped drill."
+} 
