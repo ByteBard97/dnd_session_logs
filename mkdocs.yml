@@ -22,7 +22,6 @@ extra_css:
 - https://fonts.googleapis.com/css?family=Noto+Sans:400,700,400italic,700italic
 - https://fonts.googleapis.com/css?family=Libre+Baskerville:700
 extra_javascript:
-# - js/statblock5e-inlined.html  # Commented out - conflicts with torillic-statblock plugin
 - js/auto-theme-loader.js
 - js/statblock-generator.js
 - js/json-statblock-loader.js
@@ -154,6 +153,7 @@ nav:
     - Player Quests: wednesday/players/player_character_quests.md
   - Session Archives:
     - Recaps:
+      - Session 34: wednesday/recaps/recap_session_34.md
       - Session 33: wednesday/recaps/recap_session_33.md
       - Session 32: wednesday/recaps/recap_session_32.md
       - Session 31: wednesday/recaps/recap_session_31.md
@@ -168,6 +168,7 @@ nav:
       - Session 22: wednesday/recaps/recap_session_22.md
       - Session 21: wednesday/recaps/recap_session_21.md
     - Quest Logs:
+      - Session 34: wednesday/logs/log_session_34.md
       - Session 33: wednesday/logs/log_session_33.md
       - Session 32: wednesday/logs/log_session_32.md
       - Session 31: wednesday/logs/log_session_31.md
