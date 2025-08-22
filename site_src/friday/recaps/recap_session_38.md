@@ -1,0 +1,14 @@
+# **Session 38: The Swamp of Dreadful Fates**
+*Session 38 Recap - August 1, 2025*
+
+---
+
+When last we saw our heroes, you stood upon the wandering shores of Jazirat Zulhaf, the Turtle Island. Your business with the marid Shazum was not yet concluded. Intrigued by your next destination, he offered a new pact: venture into the dreaded lair of the Three Fates and procure for him a sample of the strange, bubbling ichor from their sacred pit—a foul substance swimming with worm-like larvae bearing mortal faces. In exchange for this perilous task, he offered a choice of legendary rewards: a powerful warhammer known as the Hordemall, a sea chart revealing the secret paths to two hidden islands, or vials of potent Gorgon's blood for crafting.
+
+After stocking up on supplies, where Astraeus acquired a powerful Erosion Potion, you prepared to depart. Aella was presented with her newly crafted mithral chain shirt, light as silk but strong as bedrock. As the *Ultros* set sail, you began your new downtime regimens for the two-day voyage. While Astraeus continued to master the Boreal Harp, Delphi began a grueling training routine, swimming alongside the ship in the open sea to bolster his physical constitution, with his dragon Avia keeping a watchful eye.
+
+The journey brought you to a bleak and stormy shore, a place shrouded in perpetual mist and dread: the Isle of the Fates. Jagged black cliffs rose from a turbulent sea as you navigated a narrow, treacherous inlet—the only possible landing. Leaving the *Ultros* moored in the churning bay, you took to longboats and rowed into the oppressive gloom, finding not a shore, but a vast and ominous mangrove swamp.
+
+Your path led you onto rickety wooden walkways winding through the dark, murky water. The air was thick with the howl of the wind and a constant, driving rain that made even the dragons struggle for purchase. The swamp itself seemed alive and hostile. Avia, wading through the bog, was suddenly swarmed by schools of vicious, piranha-like quippers. Later, a misplaced step sent Aella plunging into the black water, where a massive, unseen creature briefly engulfed her before she could break free and take to the air.
+
+Pressing forward through the grasping trees and collapsing planks, you faced the hidden predator again. As Astraeus floated over a gap in the walkway using his magic, a tendril of rotting vegetation and swampy debris shot up from the depths. It coiled around him, its crushing grip pulling him from the air as its foul poison began to seep into him. With Astraeus ensnared by the amorphous horror, his dragon Argon launched a furious counter-attack, tearing the tendril apart. Though Astraeus was freed, the unseen monstrosity still lurks beneath the murky surface, and the heart of the swamp—and the lair of the Fates—still lies ahead.
