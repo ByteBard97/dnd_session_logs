@@ -210,6 +210,7 @@ nav:
     - Dragons: friday/players/dragons.md
   - Session Archives:
     - Recaps:
+      - Session 39: friday/recaps/recap_session_39.md
       - Session 38: friday/recaps/recap_session_38.md
       - Session 37: friday/recaps/recap_session_37.md
       - Session 36: friday/recaps/recap_session_36.md
@@ -223,6 +224,7 @@ nav:
       - Session 27: friday/recaps/recap_session_27.md
       - Session 26: friday/recaps/recap_session_26.md
     - Quest Logs:
+      - Session 39: friday/logs/log_session_39.md
       - Session 38: friday/logs/log_session_38.md
       - Session 37: friday/logs/log_session_37.md
       - Session 36: friday/logs/log_session_36.md

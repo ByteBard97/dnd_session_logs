@@ -1,0 +1,23 @@
+# **Session 39: The Price of Prophecy**
+
+*Session 39 Recap \- August 22, 2025*
+
+When last we saw our heroes, Astraeus had just been freed from the crushing grip of the Bog Terror, a horrifying monstrosity lurking in the dark waters of the mangrove swamp. Realizing that fighting the creature in its own domain was a fool's errand, you pressed onward, navigating the treacherous maze of collapsing walkways and grasping trees. With every snapped plank and ominous ripple in the water, the feeling of being stalked by the unseen horror intensified, but you pushed through the oppressive gloom, driven by your quest.
+
+Your perseverance paid off as you finally emerged from the dense mangroves into a sunken hollow at the island's heart. Before you lay a fetid pond, its dark surface choked with lily pads that could not conceal the pale, reaching arms of skeletons tangled in the roots below. Dominating the clearing was the colossal, moss-covered skull of a dragon, its gaping maw forming the entrance to a dark cave. Standing guard was the stoic lamia sentinel, **Moira**, a cursed Amazon warrior bound to the Fates' service. Deeming your purpose serious enough, she agreed to lead you into the sanctum of the Eternal Three, but not before warning that your dragon companions must remain outside.
+
+Moira guided you deep into a cavern system that reeked of sulfur and decay. You entered a vast, horrifying chamber dominated by a bubbling pit of yellow ichor, in which writhed worm-like larvae with the faces of tormented mortals. In the far corner of the room stood an imposing loom carved from dragon bone, attended by three hideous crones: the doting and cruel **Granny Morta**, the resentful and hungry **Nona**, and the bashful, quiet **Decima**.
+
+The Fates greeted you as if expecting you, their loom having already woven the tale of your arrival. They invited you to bargain for the knowledge and power you sought, and one by one, you stepped forward to pay their terrible price.
+
+**Delphi**, you asked for the truth of the five centuries you've forgotten and the nature of your descendant, Gaius. For this knowledge, the Fates demanded a steep price. You agreed to surrender your **Body's Resilience**. As the hags revealed the secrets of your past, you felt a profound physical weakening, leaving you with a permanent **disadvantage on all Strength, Dexterity, and Constitution saving throws**.
+
+**Rhaena**, you sought the truth of your erased family and your destiny to "break the power of death." For this major revelation, the Fates demanded a major price. Refusing to perform one of their evil tasks, you chose to give them **Your Breath**. The hags drew a shimmering wisp of your very life force from you, leaving you forever feeling the chill of the grave. You now only regain **half of your missing hit points during a short or long rest**. In return, the loom showed you the truth: your family was slaughtered by **Lutheria**, and their souls are trapped within her **crystal scythe**. You were saved by a silver dragon who erased you from the world's memory to hide you. Your destiny is now clear: you must destroy the scythe to free your family.
+
+While the hags were distracted by their grisly transaction with Rhaena, **Aella** covertly scooped a vial of the bubbling **ichor** from the pit, securing the prize promised to the marid Shazum.
+
+**Astraeus**, you requested the artifact Queen Vallus promised would ensure your survival. The Fates offered you the chance to weave it yourself on their loom, but the price was a piece of your very being. To protect your future, you agreed to sacrifice your past, giving the Fates **Your Memory**. Under their guidance, you wove the shimmering **Cloak of Displacement**. But as it was completed, the hags plunged their spectral fingers into your mind, devouring a lifetime of accumulated knowledge. You now have **disadvantage on all History, Arcana, Religion, and Nature checks**.
+
+With your bargains concluded, the Fates dismissed you. You wisely declined Moira's unsettling offer to show you their "pets" and navigated your way back to the *Ultros*, cleverly avoiding another encounter with the Bog Terror. Having completed two perilous isles, you have all advanced to **Level 9**.
+
+The session concluded with a fast-forward to your return to Jazirat Zulhaf. After a masterful display of persuasion by Astraeus, you traded the vial of ichor to **Shazum** not for one of his offered items, but for a handsome sum of **9,000 gold pieces** and a **Potion of Water Breathing**. Now, with new power, new burdens, and heavier purses, you prepare to set sail for your next destination: the Isle of Yonder.
