@@ -1,0 +1,31 @@
+# **Session 36: The Three-Eyed God**
+
+- **Assault on the Chamber of Worship (V8)**
+  - Following the sounds of chanting, the party located a large chamber within a dragon turtle shell where a Lizard Queen, a shaman, and two guards were performing a ritual.
+  - **Kain** initiated the assault by casting _Fog Cloud_, obscuring the entire chamber and causing the Lizard Queen to become frightened.
+  - While the enemies were blinded, **Nikandros** cast a twinned _Haste_ on Zephyrion and Tharok.
+  - An archer (presumably Kain) fired into the fog, wounding the shaman.
+- **Battle in the Mist**
+  - The hasted warriors charged into the fog.
+  - **Zephyrion** was struck by a bolt of lightning from a three-eyed statue of Sydon. He then located the wounded shaman by sound and killed him with his trident.
+  - **Tharok** charged in and was also targeted by the statue's lightning, which he absorbed with his axe. He retaliated by striking the statue, damaging it and causing its emerald eyes to dim.
+  - Frustrated by the fog, Tharok called for it to be cleared. Kain dropped the spell.
+- **Surrender and Interrogation**
+  - With the fog gone, the party saw the two guards attempting to flee with their hysterical queen.
+  - **Kain** fired a powerful force arrow, striking the statue's head and dislodging one of its emerald eyes.
+  - Faced with overwhelming force, the **Lizard Queen** surrendered and offered to deactivate the statue. After a brief hesitation, she spoke a command word, and the statue powered down completely.
+  - The party tied up the queen and her guards. The interrogation revealed key intelligence:
+    - One **brass dragon egg** has hatched into a wyrmling that is now King Jankor's companion.
+    - A second **brass dragon egg** is held in a **salamander's nest (V15)**.
+    - **Fire snake eggs** are kept in a northwest chamber **(V5)**.
+    - The Firewalkers have a captive cyclops smith named **Steros** in the southwest of the fortress **(V9)**.
+- **A Brutal Advance**
+  - The party took the queen and her guards as hostages, with Zephyrion carrying the queen and Tharok leading the guards on ropes.
+  - **Kain** scouted from a high cliff, silently pushing two patrolling guards to their deaths in the lava below.
+  - **Tharok**, with a distraction from Kain, ambushed a third guard and kicked him into the magma.
+  - **Zephyrion** grappled a fourth guard and threw him from a bridge. This was witnessed by a **salamander guard** in the King's throne room, who shouted an alarm.
+- **Confrontation with the King**
+  - With the alarm raised, the party faced the entrance to the throne room **(V3)**.
+  - They saw **King Jankor** on his throne, accompanied by the **brass dragon wyrmling**.
+  - Zephyrion attempted to use the captive queen as a hostage, but Jankor refused to negotiate, declaring his ultimate loyalty to Sydon over his own queen.
+  - The session ended with the party in a tense standoff, poised for a major battle with the Firewalker king.

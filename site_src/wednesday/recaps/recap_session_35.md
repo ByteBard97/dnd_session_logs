@@ -17,17 +17,3 @@ In exploring the tunnels, **Kain** stumbled into a nest of carrion crawlers. The
 ### Current Position
 
 With patrols silenced and Xatli leading us on, we have gained a foothold in the volcanic fortress. The Firewalkers remain unaware of our presence — for now. Strange chanting echoes deeper in the tunnels, a sign of dangers yet to come.
-
----
-
-## Opening Recap for Next Session
-
-\*"Last we left our heroes, you stood in the shadows of the Firewalker fortress, deep in the volcanic tunnels of Fire Island. Blood still dripped where Kain’s arrows had sent guards tumbling into magma. The Horde Maul glowed with searing heat, supercharged by the mysterious red crystals you pried from the living rock.
-
-Behind you lay the corpses of carrion crawlers, their paralytic venom now bottled and ready. At your side, Xatli gripped her obsidian spear, her earlier warnings echoing as the mountain itself seemed to breathe around you.
-
-And ahead — faint, rhythmic chanting carried through the stone. The element of surprise is yours… but for how long?"\*
-
----
-
-Do you want me to also **reformat this directly into a `log_session_35.md` file** so you can slot it into your campaign logs alongside your other sessions?
