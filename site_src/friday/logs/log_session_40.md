@@ -1,0 +1,16 @@
+# **Quest Log: The Isle of Yonder**
+
+* **Accepted the Librarian's Gambit:** Upon returning to the Turtle Island, we met with the marid merchant, Shazum. He tasked us with a dangerous mission: infiltrate the Great Library on the Isle of Yonder, the main fortress of Gaius and the Order of Sydon. Our objective is to steal a rare tome bound in bronze and stone called **'The Chronos Anvil'**. Shazum warned us that the library is the heart of the enemy's fortress, guarded by soldiers, gygans, and magical constructs, and that we should be wary of the commander Gaius and the library's keeper, a mage named Chondrus.
+* **Secured a Legendary Weapon:** Before we departed, Astraeus successfully persuaded Shazum to provide us with one of the promised rewards upfront to aid our mission. After a successful persuasion roll, Shazum agreed to trade us the **Voidcaller Bow**, a legendary weapon, in exchange for Astraeus's current bow as collateral.
+* **Prepared During the Voyage:** During our two-day journey to Yonder, we undertook several activities to prepare for the challenges ahead.
+    * **Magical Fishing:** Our dragons, Avia and Aragorn, spent time fishing in the magical waters. Avia caught a **Celestial Stardust Koi**, which granted her one use of Legendary Resistance and aged her by four months, and a **Flickerfish**, which caused Aragorn's scales to shimmer with iridescent colors and aged him by one month. Astraeus's dragon also fished, consuming a **Stormcloud Grouper** (gaining lightning resistance), a **Nether Sea Eel**, and a **Glimmering Coral Trout**, aging a total of four months.
+    * **Crafting & Scribing:** Rhaena successfully brewed a **Greater Healing Potion** using ingredients purchased from Shazum, while Aella scribed a scroll of *Pass Without Trace*.
+    * **A Glimpse of the Past:** Delphi spoke privately with Kyra, revealing that his recovered memories now included her at the original creation of the Oath of Peace. Visibly emotional, Kyra stated she was forbidden from speaking about that time.
+* **Arrived at the Fortress-Isle:** We arrived at the Isle of Yonder under the cover of night. Our lookout spotted a large, adult silver dragon patrolling the skies before landing somewhere inland. We chose a stealthy approach, mooring the *Ultros* behind a large, rocky outcropping to remain hidden from the shore.
+* **Conducted Aerial Reconnaissance:** To gather intelligence, we cast *invisibility* on one of our dragons and sent it to scout the enemy compound. The reconnaissance revealed the formidable nature of the fortress:
+    * The main base is situated on a high, sheer cliff plateau.
+    * The island is heavily patrolled by soldiers, six-armed cyclops (gygans), and captains mounted on metallic bulls (gorgons).
+    * The fortress is protected by a unique magical alarm system: giant stone statues with cages for heads, inside which sit watchful harpies.
+    * Inside the library, the scout witnessed a horned, blue-skinned man (Chondrus) communing with dancing shadows.
+    * The adult silver dragon, Argyn, was seen resting within the main courtyard.
+* **Next Objective:** We are currently hidden offshore, planning our infiltration. We must find a way to bypass the beach encampment, navigate the patrolled jungle, and ascend the cliffs to the fortress to gain entry to the Great Library.

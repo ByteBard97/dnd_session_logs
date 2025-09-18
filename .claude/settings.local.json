@@ -20,7 +20,9 @@
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:github.com)",
       "WebFetch(domain:codepen.io)",
-      "WebFetch(domain:valloric.github.io)"
+      "WebFetch(domain:valloric.github.io)",
+      "Read(//home/geoff/projects/**)",
+      "Bash(./build_site.sh:*)"
     ],
     "deny": []
   }

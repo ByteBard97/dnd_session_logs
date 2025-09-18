@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D 5e Line of Sight Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: #764ba2;
+            margin-bottom: 10px;
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 30px;
+        }
+
+        .controls {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid #e9ecef;
+        }
+
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-section {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #dee2e6;
+        }
+
+        .control-section:last-child {
+            border-bottom: none;
+        }
+
+        .section-title {
+            color: #764ba2;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #495057;
+            font-size: 0.9em;
+        }
+
+        input[type="number"], select {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #dee2e6;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+            background: white;
+        }
+
+        input[type="number"]:focus, select:focus {
+            outline: none;
+            border-color: #764ba2;
+            box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.1);
+        }
+
+        .input-with-unit {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .input-with-unit input, .input-with-unit select {
+            flex: 1;
+        }
+
+        .unit {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .visualization {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        canvas {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            background: #fafafa;
+        }
+
+        .results {
+            margin-top: 20px;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .result-item {
+            margin-bottom: 10px;
+            padding: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        .result-label {
+            font-weight: bold;
+            display: inline-block;
+            min-width: 150px;
+        }
+
+        .success {
+            background: #28a745;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .failure {
+            background: #dc3545;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .warning {
+            background: #ffc107;
+            color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .legend {
+            margin-top: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.9em;
+        }
+
+        .legend-item {
+            margin-bottom: 5px;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            vertical-align: middle;
+            margin-right: 8px;
+            border: 1px solid #dee2e6;
+        }
+
+        .note {
+            background: #e7f3ff;
+            border-left: 4px solid #2196F3;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+            color: #0c5297;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏹 D&D 5e Line of Sight Calculator</h1>
+        <p class="subtitle">Calculate line of sight for ranged attacks through windows with elevation</p>
+        
+        <div class="main-content">
+            <div class="controls">
+                <div class="control-section">
+                    <div class="section-title">📍 Attacker Position</div>
+                    
+                    <div class="control-group">
+                        <label for="casterHeight">Height Relative to Ground</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="casterHeight" value="40" step="5">
+                            <span class="unit">feet</span>
+                        </div>
+                        <div class="note">Use negative values for below ground (e.g., -40 for 40ft below)</div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="horizontalDistance">Horizontal Distance to Window</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="horizontalDistance" value="45" min="0" step="5">
+                            <span class="unit">feet</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="attackerEyeHeight">Attacker Eye Height</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="attackerEyeHeight" value="5" min="0" step="0.5">
+                            <span class="unit">feet (from their floor)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <div class="section-title">🪟 Window Configuration</div>
+                    
+                    <div class="control-group">
+                        <label for="windowBottom">Window Bottom Height</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="windowBottom" value="0" min="0" step="5">
+                            <span class="unit">feet (from ground)</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="windowHeight">Window Height</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="windowHeight" value="10" min="1" step="1">
+                            <span class="unit">feet</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="control-section">
+                    <div class="section-title">🎯 Target Details</div>
+                    
+                    <div class="control-group">
+                        <label for="targetSize">Creature Size</label>
+                        <select id="targetSize">
+                            <option value="2.5">Tiny (2.5 ft)</option>
+                            <option value="5">Small (5 ft)</option>
+                            <option value="5" selected>Medium (5 ft)</option>
+                            <option value="10">Large (10 ft)</option>
+                            <option value="15">Huge (15 ft)</option>
+                            <option value="20">Gargantuan (20 ft)</option>
+                            <option value="custom">Custom Height</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group" id="customHeightGroup" style="display: none;">
+                        <label for="targetHeight">Custom Height</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="targetHeight" value="5" min="0" step="1">
+                            <span class="unit">feet</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="targetDistance">Distance Inside Window</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="targetDistance" value="5" min="0" step="5">
+                            <span class="unit">feet</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="floorHeight">Floor Height (Inside Room)</label>
+                        <div class="input-with-unit">
+                            <input type="number" id="floorHeight" value="0" min="0" step="5">
+                            <span class="unit">feet (from ground)</span>
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label for="targetAimPoint">Aim Point on Target</label>
+                        <select id="targetAimPoint">
+                            <option value="center" selected>Center Mass</option>
+                            <option value="top">Top (Head)</option>
+                            <option value="bottom">Bottom (Feet)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="color-box" style="background: #764ba2;"></span>
+                        Attacker
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-box" style="background: #dc3545;"></span>
+                        Target
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-box" style="background: #28a745;"></span>
+                        Clear Line of Sight
+                    </div>
+                    <div class="legend-item">
+                        <span class="color-box" style="background: #ffc107;"></span>
+                        Blocked Line of Sight
+                    </div>
+                </div>
+            </div>
+
+            <div class="visualization">
+                <canvas id="canvas"></canvas>
+                
+                <div class="results">
+                    <h3 style="margin-bottom: 10px;">📊 Calculations</h3>
+                    <div class="result-item">
+                        <span class="result-label">Direct Distance:</span>
+                        <span id="directDistance">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">D&D Squares:</span>
+                        <span id="squares">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Min Window Height:</span>
+                        <span id="minWindow">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Angle of Attack:</span>
+                        <span id="angle">-</span>
+                    </div>
+                    <div id="status"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        function resizeCanvas() {
+            const rect = canvas.getBoundingClientRect();
+            canvas.width = rect.width;
+            canvas.height = rect.height;
+        }
+
+        function getTargetHeight() {
+            const sizeSelect = document.getElementById('targetSize');
+            if (sizeSelect.value === 'custom') {
+                return parseFloat(document.getElementById('targetHeight').value);
+            }
+            return parseFloat(sizeSelect.value);
+        }
+
+        function calculate() {
+            resizeCanvas();
+            
+            const casterHeight = parseFloat(document.getElementById('casterHeight').value);
+            const horizontalDist = parseFloat(document.getElementById('horizontalDistance').value);
+            const attackerEyeHeight = parseFloat(document.getElementById('attackerEyeHeight').value);
+            const windowBottom = parseFloat(document.getElementById('windowBottom').value);
+            const windowHeight = parseFloat(document.getElementById('windowHeight').value);
+            const targetDist = parseFloat(document.getElementById('targetDistance').value);
+            const floorHeight = parseFloat(document.getElementById('floorHeight').value);
+            const targetHeight = getTargetHeight();
+            const aimPoint = document.getElementById('targetAimPoint').value;
+
+            // Calculate actual shooting position (eye level)
+            const shooterEyeLevel = casterHeight + attackerEyeHeight;
+            
+            // Calculate target aim point
+            let targetAimHeight;
+            if (aimPoint === 'top') {
+                targetAimHeight = floorHeight + targetHeight;
+            } else if (aimPoint === 'bottom') {
+                targetAimHeight = floorHeight;
+            } else { // center
+                targetAimHeight = floorHeight + (targetHeight / 2);
+            }
+            
+            // Calculate where the ray intersects the window plane
+            const totalHorizontal = horizontalDist + targetDist;
+            const windowRatio = horizontalDist / totalHorizontal;
+            const lineAtWindow = shooterEyeLevel - (shooterEyeLevel - targetAimHeight) * windowRatio;
+            
+            // Check if line of sight passes through window
+            const windowTop = windowBottom + windowHeight;
+            const hasLineOfSight = lineAtWindow >= windowBottom && lineAtWindow <= windowTop;
+            
+            // Calculate minimum window height needed
+            const minWindowHeight = Math.max(0, lineAtWindow - windowBottom);
+            
+            // Calculate direct distance (3D)
+            const directDistance = Math.sqrt(
+                Math.pow(totalHorizontal, 2) + 
+                Math.pow(shooterEyeLevel - targetAimHeight, 2)
+            );
+            
+            // Calculate angle (positive = shooting down, negative = shooting up)
+            const angle = Math.atan2(shooterEyeLevel - targetAimHeight, totalHorizontal) * (180 / Math.PI);
+            
+            // Update results
+            document.getElementById('directDistance').textContent = directDistance.toFixed(1) + ' feet';
+            document.getElementById('squares').textContent = Math.ceil(directDistance / 5) + ' squares';
+            document.getElementById('minWindow').textContent = minWindowHeight.toFixed(1) + ' feet';
+            document.getElementById('angle').textContent = angle.toFixed(1) + '° ' + (angle > 0 ? '(down)' : '(up)');
+            
+            const statusDiv = document.getElementById('status');
+            if (hasLineOfSight) {
+                statusDiv.className = 'success';
+                statusDiv.textContent = '✅ CLEAR SHOT! Line of sight confirmed!';
+            } else {
+                statusDiv.className = 'failure';
+                if (lineAtWindow < windowBottom) {
+                    statusDiv.textContent = '❌ BLOCKED! Shot hits below the window.';
+                } else {
+                    statusDiv.textContent = '❌ BLOCKED! Shot hits above the window.';
+                }
+            }
+            
+            // Draw visualization
+            drawScene(shooterEyeLevel, casterHeight, horizontalDist, windowBottom, windowHeight, 
+                     targetDist, floorHeight, targetHeight, targetAimHeight, 
+                     hasLineOfSight, lineAtWindow);
+        }
+
+        function drawScene(shooterEyeLevel, casterHeight, horizontalDist, windowBottom, windowHeight, 
+                          targetDist, floorHeight, targetHeight, targetAimHeight, 
+                          hasLineOfSight, lineAtWindow) {
+            const padding = 40;
+            const width = canvas.width - 2 * padding;
+            const height = canvas.height - 2 * padding;
+            
+            // Calculate bounds to fit everything
+            const minY = Math.min(0, casterHeight) - 10;
+            const maxY = Math.max(shooterEyeLevel, windowBottom + windowHeight, floorHeight + targetHeight) + 10;
+            const totalHorizontal = horizontalDist + targetDist + 20;
+            const totalHeight = maxY - minY;
+            
+            const scale = Math.min(width / totalHorizontal, height / totalHeight);
+            
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.save();
+            
+            // Translate to handle negative heights properly
+            ctx.translate(padding, canvas.height - padding + minY * scale);
+            ctx.scale(scale, -scale);
+            
+            // Draw grid
+            ctx.strokeStyle = '#e9ecef';
+            ctx.lineWidth = 0.3;
+            for (let x = 0; x <= totalHorizontal; x += 5) {
+                ctx.beginPath();
+                ctx.moveTo(x, minY);
+                ctx.lineTo(x, maxY);
+                ctx.stroke();
+            }
+            for (let y = Math.floor(minY/5)*5; y <= maxY; y += 5) {
+                ctx.beginPath();
+                ctx.moveTo(0, y);
+                ctx.lineTo(totalHorizontal, y);
+                ctx.stroke();
+            }
+            
+            // Draw ground level
+            ctx.strokeStyle = '#6c757d';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(-10, 0);
+            ctx.lineTo(totalHorizontal, 0);
+            ctx.stroke();
+            
+            // Label ground
+            ctx.save();
+            ctx.scale(1, -1);
+            ctx.font = '3px sans-serif';
+            ctx.fillStyle = '#6c757d';
+            ctx.fillText('Ground Level', totalHorizontal - 20, 2);
+            ctx.restore();
+            
+            // Draw attacker platform/position if not at ground
+            if (Math.abs(casterHeight) > 0.1) {
+                ctx.strokeStyle = '#9c27b0';
+                ctx.lineWidth = 1;
+                ctx.setLineDash([3, 3]);
+                ctx.beginPath();
+                ctx.moveTo(-5, casterHeight);
+                ctx.lineTo(10, casterHeight);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+            
+            // Draw room floor if elevated
+            if (floorHeight > 0) {
+                ctx.strokeStyle = '#8b4513';
+                ctx.lineWidth = 1;
+                ctx.setLineDash([3, 3]);
+                ctx.beginPath();
+                ctx.moveTo(horizontalDist, floorHeight);
+                ctx.lineTo(horizontalDist + targetDist + 10, floorHeight);
+                ctx.stroke();
+                ctx.setLineDash([]);
+            }
+            
+            // Draw wall
+            ctx.fillStyle = '#dee2e6';
+            ctx.fillRect(horizontalDist - 2, minY, 4, maxY - minY);
+            
+            // Draw window
+            ctx.fillStyle = '#87ceeb';
+            ctx.globalAlpha = 0.3;
+            ctx.fillRect(horizontalDist - 2, windowBottom, 4, windowHeight);
+            ctx.globalAlpha = 1;
+            
+            ctx.strokeStyle = '#495057';
+            ctx.lineWidth = 1.5;
+            ctx.strokeRect(horizontalDist - 2, windowBottom, 4, windowHeight);
+            
+            // Draw attacker (show full figure with eye level marked)
+            ctx.fillStyle = '#764ba2';
+            ctx.globalAlpha = 0.2;
+            ctx.fillRect(-2, casterHeight, 4, shooterEyeLevel - casterHeight);
+            ctx.globalAlpha = 1;
+            
+            // Draw eye point
+            ctx.fillStyle = '#764ba2';
+            ctx.beginPath();
+            ctx.arc(0, shooterEyeLevel, 2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Draw target
+            ctx.fillStyle = '#dc3545';
+            ctx.globalAlpha = 0.3;
+            ctx.fillRect(horizontalDist + targetDist - 2, floorHeight, 4, targetHeight);
+            ctx.globalAlpha = 1;
+            ctx.strokeStyle = '#dc3545';
+            ctx.lineWidth = 2;
+            ctx.strokeRect(horizontalDist + targetDist - 2, floorHeight, 4, targetHeight);
+            
+            // Draw aim point
+            ctx.fillStyle = '#dc3545';
+            ctx.beginPath();
+            ctx.arc(horizontalDist + targetDist, targetAimHeight, 2, 0, Math.PI * 2);
+            ctx.fill();
+            
+            // Draw single line of sight ray
+            ctx.strokeStyle = hasLineOfSight ? '#28a745' : '#ffc107';
+            ctx.lineWidth = 2;
+            ctx.setLineDash([5, 5]);
+            ctx.beginPath();
+            ctx.moveTo(0, shooterEyeLevel);
+            ctx.lineTo(horizontalDist + targetDist, targetAimHeight);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            
+            // Mark window intersection point
+            ctx.fillStyle = hasLineOfSight ? '#28a745' : '#ffc107';
+            ctx.beginPath();
+            ctx.arc(horizontalDist, lineAtWindow, 2.5, 0, Math.PI * 2);
+            ctx.fill();
+            
+            ctx.restore();
+            
+            // Draw labels
+            ctx.font = 'bold 12px sans-serif';
+            ctx.fillStyle = '#495057';
+            
+            const groundY = canvas.height - padding + minY * scale;
+            
+            // Attacker label
+            const attackerY = groundY - shooterEyeLevel * scale;
+            ctx.fillText('Attacker', padding - 20, attackerY - 10);
+            
+            // Target label
+            const targetY = groundY - (floorHeight + targetHeight) * scale;
+            ctx.fillText('Target', padding + (horizontalDist + targetDist) * scale - 15, targetY - 10);
+            
+            // Window label
+            const windowY = groundY - (windowBottom + windowHeight) * scale;
+            ctx.fillText('Window', padding + horizontalDist * scale - 20, windowY - 10);
+        }
+
+        // Event listeners
+        document.getElementById('targetSize').addEventListener('change', function() {
+            const customGroup = document.getElementById('customHeightGroup');
+            if (this.value === 'custom') {
+                customGroup.style.display = 'block';
+            } else {
+                customGroup.style.display = 'none';
+            }
+            calculate();
+        });
+
+        document.querySelectorAll('input, select').forEach(input => {
+            input.addEventListener('input', calculate);
+        });
+
+        window.addEventListener('resize', calculate);
+
+        // Initial calculation
+        calculate();
+    </script>
+</body>
+</html>
