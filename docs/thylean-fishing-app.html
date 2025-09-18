@@ -419,22 +419,10 @@
         #dragonPortrait {
             width: 100%;
             height: 140px;
+            object-fit: contain;
             display: block;
-        }
-        
-        .dragon-body {
-            fill: #9bd1ff;
-            opacity: 0.85;
-            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.35));
-        }
-        
-        .dragon-wing {
-            fill: #78b7f2;
-            opacity: 0.75;
-        }
-        
-        .dragon-eye {
-            fill: #0a1929;
+            border-radius: 8px;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
         }
         
         .dragon-size-label {
@@ -546,23 +534,7 @@
                     
                     <!-- Dragon portrait -->
                     <div id="dragonPortraitWrap" class="dragon-portrait">
-                        <svg id="dragonPortrait" viewBox="0 0 200 120" aria-label="Dragon silhouette">
-                            <g id="dragonGraphic" transform="translate(20,10)">
-                                <!-- Body -->
-                                <path class="dragon-body" d="M10,80 C10,50 40,45 60,40 C80,35 90,25 110,20 
-                                           C120,18 135,20 145,25 
-                                           C140,35 135,45 125,50 
-                                           C115,55 105,55 95,60 
-                                           C85,65 80,75 70,85 
-                                           C55,100 35,100 25,92 Z"/>
-                                <!-- Wing -->
-                                <path class="dragon-wing" d="M70,40 C60,20 80,10 95,18 
-                                           C105,10 125,12 135,22 
-                                           C120,25 110,30 95,40 Z"/>
-                                <!-- Eye -->
-                                <circle cx="46" cy="52" r="2" class="dragon-eye"/>
-                            </g>
-                        </svg>
+                        <img id="dragonPortrait" src="assets/dragons01.webp" alt="Dragon portrait" style="width: 100%; height: 140px; object-fit: contain; display: block;">
                         <div class="dragon-size-label"><span id="dragonSizeText">Tiny (0%)</span></div>
                     </div>
                 </div>
@@ -1246,23 +1218,56 @@
             if (!currentDragon) return;
             const totalMonths = currentDragon.ageMonths || 0;
             const scale = computeDragonScale(totalMonths);
-            
-            const g = document.getElementById('dragonGraphic');
-            if (!g) return;
-            
-            // store scale in a CSS var for animation keyframes
+
+            // Get the dragon image element
+            const img = document.getElementById('dragonPortrait');
+            if (!img) return;
+
+            // Always use the monochrome base image
+            img.src = `assets/dragons01.webp`;
+
+            // Apply color filter based on dragon species
+            let colorFilter;
+            switch (currentDragon.species) {
+                case 'Bronze':
+                    // Bronze: deeper bronze metallic tones
+                    colorFilter = 'sepia(1) hue-rotate(35deg) saturate(2.5) brightness(0.7) contrast(1.2)';
+                    break;
+                case 'Brass':
+                    // Brass: golden yellow tones
+                    colorFilter = 'sepia(1) hue-rotate(45deg) saturate(2.2) brightness(1.1)';
+                    break;
+                case 'Copper':
+                    // Copper: reddish-brown tones
+                    colorFilter = 'sepia(1) hue-rotate(10deg) saturate(2.5) brightness(0.85)';
+                    break;
+                case 'Silver':
+                    // Silver: cool gray/blue tones
+                    colorFilter = 'sepia(0.3) hue-rotate(200deg) saturate(1.5) brightness(1.2)';
+                    break;
+                case 'Gold':
+                    // Gold: bright golden tones
+                    colorFilter = 'sepia(1) hue-rotate(40deg) saturate(2.8) brightness(1.3)';
+                    break;
+                default:
+                    // Default: no filter (original monochrome)
+                    colorFilter = 'none';
+            }
+
+            // Store scale in a CSS var for animation keyframes
             const wrap = document.getElementById('dragonPortraitWrap');
             wrap?.style.setProperty('--dragonScale', scale);
-            
-            // Apply scale (compose with idle sway's translate)
-            g.style.transform = `translate(20px,10px) scale(${scale})`;
-            
-            // Label \"Tiny / Small / Medium…\" with % to next stage
+
+            // Apply scale and color filter to the image
+            img.style.transform = `scale(${scale})`;
+            img.style.filter = `${colorFilter} drop-shadow(0 2px 4px rgba(0,0,0,0.3))`;
+
+            // Label "Tiny / Small / Medium…" with % to next stage
             const stage = DRAGON_STAGE_BREAKS.find(s => totalMonths >= s.min && totalMonths < s.max) || DRAGON_STAGE_BREAKS[DRAGON_STAGE_BREAKS.length - 1];
             const span = isFinite(stage.max) ? (stage.max - stage.min) : 1;
             const done = Math.max(0, Math.min(span, totalMonths - stage.min));
             const pct = isFinite(stage.max) ? Math.floor((done / span) * 100) : 100;
-            
+
             const sizeBand = (m => m < 12 ? 'Tiny' : m < 24 ? 'Small' : m < 60 ? 'Medium' : m < 120 ? 'Large' : 'Huge')(totalMonths);
             const txt = document.getElementById('dragonSizeText');
             if (txt) txt.textContent = `${sizeBand} (${pct}%)`;
