@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thylean Dragon Fishing</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Crimson+Text:wght@400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(180deg, #0a1929 0%, #1e3c72 50%, #2a5298 100%);
+            min-height: 100vh;
+            color: #e8f4fd;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* Animated wave background */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 200%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,300 Q300,200 600,300 T1200,300 L1200,600 L0,600 Z" fill="rgba(255,255,255,0.03)"/><path d="M0,350 Q300,250 600,350 T1200,350 L1200,600 L0,600 Z" fill="rgba(255,255,255,0.02)"/></svg>');
+            animation: waves 20s linear infinite;
+            pointer-events: none;
+        }
+        
+        @keyframes waves {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(50%); }
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 30px;
+            background: linear-gradient(135deg, rgba(10, 25, 41, 0.9), rgba(30, 60, 114, 0.9));
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(135, 206, 235, 0.3);
+        }
+        
+        h1 {
+            font-family: 'Pirata One', cursive;
+            color: #ffd700;
+            font-size: 3.5em;
+            margin-bottom: 10px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+            letter-spacing: 2px;
+        }
+        
+        .subtitle {
+            color: #87ceeb;
+            font-size: 1.3em;
+            font-style: italic;
+        }
+        
+        .main-content {
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .panel {
+            background: linear-gradient(135deg, rgba(10, 25, 41, 0.95), rgba(30, 60, 114, 0.85));
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(135, 206, 235, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        h2, h3 {
+            font-family: 'Pirata One', cursive;
+            color: #ffd700;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+        
+        select, input, button {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.1em;
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 10px;
+            border: 2px solid #4682b4;
+            background: rgba(255, 255, 255, 0.9);
+            color: #0a1929;
+            transition: all 0.3s ease;
+        }
+        
+        select:focus, input:focus {
+            outline: none;
+            border-color: #ffd700;
+            box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+        
+        button {
+            background: linear-gradient(135deg, #1e90ff, #4682b4);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(30, 144, 255, 0.4);
+        }
+        
+        .roll-button {
+            font-size: 1.4em;
+            padding: 18px;
+            background: linear-gradient(135deg, #ff6b35, #f77737);
+            margin-top: 20px;
+        }
+        
+        .roll-button:hover {
+            box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+        }
+        
+        .dragon-info {
+            background: rgba(255, 215, 0, 0.1);
+            border: 2px solid #ffd700;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .dragon-age {
+            font-size: 1.3em;
+            color: #ffd700;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .dragon-stage {
+            display: inline-block;
+            padding: 8px 20px;
+            background: linear-gradient(135deg, #8b4513, #d2691e);
+            color: white;
+            border-radius: 25px;
+            margin-top: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        label {
+            display: block;
+            color: #87ceeb;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        /* 3D Dice Container */
+        .dice-container {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: radial-gradient(ellipse at center, rgba(30, 144, 255, 0.2), transparent);
+            border-radius: 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+        
+        .dice-3d {
+            width: 80px;
+            height: 80px;
+            margin: 0 20px;
+            transform-style: preserve-3d;
+            animation: roll 1s ease-in-out;
+            cursor: pointer;
+        }
+        
+        @keyframes roll {
+            0% { transform: rotateX(0deg) rotateY(0deg); }
+            50% { transform: rotateX(720deg) rotateY(360deg); }
+            100% { transform: rotateX(1440deg) rotateY(720deg); }
+        }
+        
+        .dice-face {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #fff, #e0e0e0);
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            border-radius: 10px;
+        }
+        
+        .dice-result {
+            text-align: center;
+            font-size: 1.8em;
+            color: #ffd700;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+        }
+        
+        /* Fish Results */
+        .fish-result {
+            background: linear-gradient(135deg, rgba(135, 206, 235, 0.1), rgba(70, 130, 180, 0.1));
+            border-left: 5px solid #4682b4;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+            animation: slideIn 0.5s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .fish-result.mundane {
+            border-left-color: #708090;
+            background: linear-gradient(135deg, rgba(112, 128, 144, 0.1), rgba(119, 136, 153, 0.1));
+        }
+        
+        .fish-result.common {
+            border-left-color: #3cb371;
+            background: linear-gradient(135deg, rgba(60, 179, 113, 0.1), rgba(46, 139, 87, 0.1));
+        }
+        
+        .fish-result.uncommon {
+            border-left-color: #4169e1;
+            background: linear-gradient(135deg, rgba(65, 105, 225, 0.1), rgba(100, 149, 237, 0.1));
+        }
+        
+        .fish-result.rare {
+            border-left-color: #ff8c00;
+            background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 165, 0, 0.1));
+        }
+        
+        .fish-result.legendary {
+            border-left-color: #ff1493;
+            background: linear-gradient(135deg, rgba(255, 20, 147, 0.1), rgba(255, 105, 180, 0.1));
+            box-shadow: 0 0 20px rgba(255, 20, 147, 0.3);
+            animation: legendaryGlow 2s ease-in-out infinite;
+        }
+        
+        @keyframes legendaryGlow {
+            0%, 100% { box-shadow: 0 0 20px rgba(255, 20, 147, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(255, 20, 147, 0.6); }
+        }
+        
+        .fish-name {
+            font-family: 'Pirata One', cursive;
+            font-size: 1.8em;
+            color: #ffd700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .fish-description {
+            font-style: italic;
+            color: #b0e0e6;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .fish-effect {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            border: 1px solid rgba(135, 206, 235, 0.3);
+        }
+        
+        .fish-growth {
+            font-weight: 600;
+            color: #90ee90;
+            font-size: 1.3em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        
+        .fish-icon {
+            float: right;
+            font-size: 3em;
+            opacity: 0.5;
+        }
+        
+        .catch-log {
+            max-height: 400px;
+            overflow-y: auto;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        .log-entry {
+            background: rgba(135, 206, 235, 0.1);
+            border-left: 3px solid #4682b4;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            animation: slideIn 0.3s ease-out;
+        }
+        
+        .log-timestamp {
+            color: #87ceeb;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
+        .inventory {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .inventory-item {
+            background: linear-gradient(135deg, rgba(70, 130, 180, 0.2), rgba(135, 206, 235, 0.2));
+            border: 2px solid #4682b4;
+            border-radius: 15px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .inventory-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(70, 130, 180, 0.4);
+            border-color: #ffd700;
+        }
+        
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #4682b4, #1e90ff);
+            border-radius: 10px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #1e90ff, #4682b4);
+        }
+        
+        /* Dragon portrait styling */
+        .dragon-portrait {
+            margin-top: 12px;
+            background: radial-gradient(ellipse at 60% 40%, rgba(135,206,235,0.15), rgba(0,0,0,0));
+            border: 1px solid rgba(135,206,235,0.25);
+            border-radius: 14px;
+            padding: 12px;
+            position: relative;
+        }
+        
+        #dragonPortrait {
+            width: 100%;
+            height: 140px;
+            display: block;
+        }
+        
+        .dragon-body {
+            fill: #9bd1ff;
+            opacity: 0.85;
+            filter: drop-shadow(0 2px 2px rgba(0,0,0,0.35));
+        }
+        
+        .dragon-wing {
+            fill: #78b7f2;
+            opacity: 0.75;
+        }
+        
+        .dragon-eye {
+            fill: #0a1929;
+        }
+        
+        .dragon-size-label {
+            position: absolute;
+            right: 10px;
+            bottom: 8px;
+            font-size: 0.9em;
+            color: #87ceeb;
+            background: rgba(0,0,0,0.25);
+            padding: 4px 8px;
+            border-radius: 10px;
+            border: 1px solid rgba(135,206,235,0.25);
+        }
+        
+        /* Grow pulse animation when fed */
+        @keyframes growPulse {
+            0%   { transform: scale(var(--dragonScale,1)) translateZ(0); filter: drop-shadow(0 0 0 rgba(255,215,0,0)); }
+            40%  { transform: scale(calc(var(--dragonScale,1) * 1.06)); filter: drop-shadow(0 0 10px rgba(255,215,0,0.6)); }
+            100% { transform: scale(var(--dragonScale,1)); filter: drop-shadow(0 0 0 rgba(255,215,0,0)); }
+        }
+        
+        .grow-anim #dragonGraphic {
+            animation: growPulse 0.6s ease-out;
+        }
+        
+        /* Subtle idle sway to make portrait feel alive */
+        @keyframes idleSway {
+            0%, 100% { transform: translate(20px,10px) rotate(0deg); }
+            50%      { transform: translate(20px,12px) rotate(-0.3deg); }
+        }
+        
+        #dragonGraphic {
+            transform-origin: 50% 60%;
+            animation: idleSway 6s ease-in-out infinite;
+        }
+        
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            h1 {
+                font-size: 2.5em;
+            }
+            
+            .dice-3d {
+                width: 60px;
+                height: 60px;
+            }
+            
+            .dice-face {
+                width: 60px;
+                height: 60px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚓ Thylean Dragon Fishing ⚓</h1>
+            <div class="subtitle">Cast your line into the mystical waters of Thylea</div>
+        </header>
+        
+        <div class="main-content">
+            <div class="panel">
+                <h2>🐉 Dragon Harbor</h2>
+                
+                <div class="dragon-selector">
+                    <label for="dragonSelect">Select Your Dragon:</label>
+                    <select id="dragonSelect">
+                        <option value="">-- Add Dragon --</option>
+                    </select>
+                </div>
+                
+                <div id="newDragonForm" style="display: block;">
+                    <input type="text" id="dragonName" placeholder="Dragon's Name">
+                    <select id="dragonSpecies">
+                        <option value="Bronze">Bronze Dragon</option>
+                        <option value="Brass">Brass Dragon</option>
+                        <option value="Copper">Copper Dragon</option>
+                        <option value="Silver">Silver Dragon</option>
+                        <option value="Gold">Gold Dragon</option>
+                    </select>
+                    <label for="dragonAgeInput" style="margin-top: 10px;">Current Age in Months (0 for newly hatched)</label>
+                    <input type="number" id="dragonAgeInput" placeholder="Age in months (e.g., 6 months)" min="0" max="240" value="0">
+                    <button onclick="createDragon()">🐉 Add Dragon</button>
+                </div>
+                
+                <div id="dragonInfo" class="dragon-info" style="display: none;">
+                    <div class="dragon-age">Age: <span id="dragonAgeDisplay">0 months</span></div>
+                    <div class="dragon-stage" id="dragonStage">Wyrmling</div>
+                    <div style="margin-top: 15px; color: #87ceeb;">
+                        <small>Species: <span id="dragonSpeciesDisplay"></span></small>
+                    </div>
+                    
+                    <!-- Progress to next stage -->
+                    <div class="progress-wrap" style="margin-top: 20px;">
+                        <div style="display: flex; justify-content: space-between; font-size: 0.95em; color: #87ceeb; margin-bottom: 6px;">
+                            <span>Growth to next stage</span>
+                            <span id="stagePctLabel">0%</span>
+                        </div>
+                        <div class="progress-outer" style="height: 14px; border-radius: 999px; background: rgba(255,255,255,0.12); overflow: hidden; border: 1px solid rgba(135,206,235,0.35);">
+                            <div id="stageProgress" style="height: 100%; width: 0%; background: linear-gradient(90deg, #3cb371, #ffd700); box-shadow: 0 0 12px rgba(255,215,0,0.4) inset; transition: width 0.5s ease;"></div>
+                        </div>
+                        <div id="stageEta" style="margin-top: 6px; font-size: 0.9em; color: #87ceeb;"></div>
+                    </div>
+                    
+                    <!-- Dragon portrait -->
+                    <div id="dragonPortraitWrap" class="dragon-portrait">
+                        <svg id="dragonPortrait" viewBox="0 0 200 120" aria-label="Dragon silhouette">
+                            <g id="dragonGraphic" transform="translate(20,10)">
+                                <!-- Body -->
+                                <path class="dragon-body" d="M10,80 C10,50 40,45 60,40 C80,35 90,25 110,20 
+                                           C120,18 135,20 145,25 
+                                           C140,35 135,45 125,50 
+                                           C115,55 105,55 95,60 
+                                           C85,65 80,75 70,85 
+                                           C55,100 35,100 25,92 Z"/>
+                                <!-- Wing -->
+                                <path class="dragon-wing" d="M70,40 C60,20 80,10 95,18 
+                                           C105,10 125,12 135,22 
+                                           C120,25 110,30 95,40 Z"/>
+                                <!-- Eye -->
+                                <circle cx="46" cy="52" r="2" class="dragon-eye"/>
+                            </g>
+                        </svg>
+                        <div class="dragon-size-label"><span id="dragonSizeText">Tiny (0%)</span></div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 30px;">🎣 Fishing Tackle</h3>
+                
+                <div class="fishing-controls">
+                    <label for="survivalBonus">Survival Skill Bonus:</label>
+                    <input type="number" id="survivalBonus" value="5" min="-5" max="20">
+                    
+                    <label for="gearBonus">Magical Gear Bonus:</label>
+                    <input type="number" id="gearBonus" value="0" min="0" max="10">
+                    
+                    <label for="seaRegion">Current Waters:</label>
+                    <select id="seaRegion">
+                        <option value="15">Cerulean Gulf (DC 15)</option>
+                        <option value="18">Forgotten Sea (DC 18)</option>
+                        <option value="20">Nether Sea (DC 20)</option>
+                    </select>
+                    
+                    <button class="roll-button" onclick="goFishing()">🎲 Cast Your Line!</button>
+                </div>
+                
+                <h3 style="margin-top: 30px;">📅 Campaign Calendar</h3>
+                <div class="calendar-box" style="background: rgba(0,0,0,0.2); border: 1px solid rgba(135,206,235,0.2); border-radius: 12px; padding: 15px; margin-bottom: 20px;">
+                    <label for="campaignDate" style="display: block; margin-bottom: 5px;">Current Date</label>
+                    <input type="date" id="campaignDate" style="width: 100%; margin-bottom: 10px;">
+                    
+                    <label for="oathDate" style="display: block; margin-bottom: 5px;">Oath of Peace Ends</label>
+                    <input type="date" id="oathDate" style="width: 100%; margin-bottom: 10px;">
+                    
+                    <div id="oathCountdown" style="margin-top: 12px; padding: 10px; background: rgba(255,215,0,0.1); border-radius: 8px; color: #ffd700; font-weight: 600; text-align: center;"></div>
+                    
+                    <div style="display: flex; gap: 8px; margin-top: 12px;">
+                        <button onclick="saveCalendar()" style="flex: 1;">💾 Save</button>
+                        <button onclick="advanceDays(1)" style="flex: 1;">+1 Day</button>
+                        <button onclick="advanceDays(7)" style="flex: 1;">+1 Week</button>
+                    </div>
+                </div>
+                
+                <h3>🐟 Ship's Hold</h3>
+                <div id="inventory" class="inventory">
+                    <div style="color: #87ceeb; text-align: center; grid-column: 1/-1;">
+                        <em>No preserved fish yet...</em>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="panel">
+                <h2>🌊 The Catch</h2>
+                
+                <div class="dice-container" id="diceContainer">
+                    <div id="dice-scene" style="width: 100%; height: 150px; display: none;"></div>
+                    <div id="diceDisplay" style="color: #87ceeb; font-size: 1.2em;">
+                        Ready to cast your line into Thylean waters...
+                    </div>
+                </div>
+                
+                <div id="fishResults"></div>
+                
+                <div class="catch-log">
+                    <h3>📜 Ship's Log</h3>
+                    <div id="catchLog">
+                        <div style="color: #87ceeb; text-align: center;">
+                            <em>The waters are calm... for now.</em>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Complete 100-entry fish table - growth values are in MONTHS not days
+        const fishTable = [
+            // Mundane (1-30) - No growth
+            { range: [1, 5], name: "Cerulean Sardine", description: "A common silver-blue fish found throughout the Cerulean Gulf", effect: "Provides a light, nourishing meal", growth: null, rarity: "mundane" },
+            { range: [6, 10], name: "Mytrosian Anchovy", description: "Small, salty fish often found in Mytrosian harbor nets", effect: "Provides a light, nourishing meal", growth: null, rarity: "mundane" },
+            { range: [11, 15], name: "Barnacle Bass", description: "More barnacle than bass, requires extensive cleaning", effect: "A modest, chewy meal", growth: null, rarity: "mundane" },
+            { range: [16, 20], name: "Estorian River Trout", description: "A freshwater fish that sometimes washes out to sea", effect: "Tastes of home and hearth", growth: null, rarity: "mundane" },
+            { range: [21, 25], name: "Reef Goby", description: "Tiny, colorful fish that lives among the coral", effect: "Barely a mouthful, but pretty to look at", growth: null, rarity: "mundane" },
+            { range: [26, 30], name: "Sand Flounder", description: "Flatfish that buries itself in the sand of the shallows", effect: "A simple, nourishing meal", growth: null, rarity: "mundane" },
+            
+            // Common (31-60) - 1d4 months growth
+            { range: [31, 34], name: "Glimmerfin", description: "Small, fast-moving fish that glitters with inner light", effect: "Grants light cantrip effects for 8 hours", growth: "1d4", rarity: "common" },
+            { range: [35, 38], name: "Bronze-Scale Mackerel", description: "Muscular fish with scales like polished bronze", effect: "+1 AC for 1 hour", growth: "1d4", rarity: "common" },
+            { range: [39, 42], name: "Satyr's Sea-Grape", description: "Strange spherical fish that smells of wine and mischief", effect: "DC 12 CON save or harmless laughter for 1 minute", growth: "1d4", rarity: "common" },
+            { range: [43, 46], name: "Stoneskin Cod", description: "Dense, heavy fish with granite-like scales", effect: "Resistance to bludgeoning for 10 minutes", growth: "1d4", rarity: "common" },
+            { range: [47, 50], name: "Hoplite's Courage Carp", description: "Common carp with surprisingly defiant eyes", effect: "Advantage on next save vs frightened", growth: "1d4", rarity: "common" },
+            { range: [51, 54], name: "Nymph's Teardrop", description: "Small, translucent fish shaped like a tear", effect: "Cures poisoned condition", growth: "1d4", rarity: "common" },
+            { range: [55, 57], name: "Philosopher's Grouper", description: "Dopey-looking fish lost in thought", effect: "Advantage on next Investigation check", growth: "1d4", rarity: "common" },
+            { range: [58, 60], name: "Minor Healing Salpa", description: "Gelatinous tube creature with faint green glow", effect: "Heals 1d4+1 HP", growth: "1d4", rarity: "common" },
+            
+            // Uncommon (61-85) - 1d6+1 months growth
+            { range: [61, 64], name: "Storm-Cloud Snapper", description: "Scales swirl with storm patterns, crackling with static", effect: "Lightning resistance 1 hr (Bronze dragons: immunity)", growth: "1d6+1", rarity: "uncommon" },
+            { range: [65, 68], name: "Silverfin Trout", description: "Sleek trout with silver-shining fins", effect: "Cold resistance 1 hr (Silver dragons: +1 Paralyzing Breath)", growth: "1d6+1", rarity: "uncommon" },
+            { range: [69, 72], name: "Copper-Tongue Wrasse", description: "Clever fish with coppery sheen and acidic spit", effect: "Acid resistance 1 hr (Copper dragons: +1 Slowing Breath)", growth: "1d6+1", rarity: "uncommon" },
+            { range: [73, 75], name: "Brass-Belly Sunfish", description: "Wide, flat fish radiating gentle warmth", effect: "Fire resistance 1 hr (Brass dragons: +1 Sleep Breath)", growth: "1d6+1", rarity: "uncommon" },
+            { range: [76, 78], name: "Nereid's Glimmer", description: "Beautiful, almost translucent ethereal fish", effect: "Water breathing 8 hrs, swim speed = walk speed", growth: "1d6+1", rarity: "uncommon" },
+            { range: [79, 81], name: "Aresian Battlefish", description: "Aggressive red-finned fish with fighting spirit", effect: "Next melee attack is critical hit", growth: "1d6+1", rarity: "uncommon" },
+            { range: [82, 85], name: "Golden Koi of Helios", description: "Golden fish shining with sun's light", effect: "Immune to blinded 24 hrs (Gold dragons: +1 Weakening Breath)", growth: "1d6+1", rarity: "uncommon" },
+            
+            // Rare (86-95) - 2d6+2 months growth
+            { range: [86, 87], name: "Siren's Lament", description: "Hauntingly beautiful fish humming sorrowful melody", effect: "Disadvantage on frightened saves 1 hr, advantage on Performance 1 hr", growth: "2d6+2", rarity: "rare" },
+            { range: [88, 89], name: "Abyssal Angler", description: "Hideous Chasm fish with glowing lure", effect: "Darkvision 120 ft for 24 hrs, disadvantage on WIS saves", growth: "2d6+2", rarity: "rare" },
+            { range: [90, 91], name: "Fates-Touched Flounder", description: "Flatfish with one eye gazing into the future", effect: "Reroll one d20 in next 24 hours (must use new roll)", growth: "2d6+2", rarity: "rare" },
+            { range: [92, 93], name: "Nether Sea Leech", description: "Slick black leech-fish from the Chasm", effect: "Next attack: +4d6 necrotic damage, heal half dealt", growth: "2d6+2", rarity: "rare" },
+            { range: [94, 95], name: "Roc's Shadow Ray", description: "Large ray mimicking a Roc's shadow", effect: "Cast Fly spell once within 8 hours", growth: "2d6+2", rarity: "rare" },
+            
+            // Legendary (96-100) - 3d6+3 months growth
+            { range: [96, 96], name: "Heart-Kelp Leviathan", description: "Sentient kelp ribbon with Thylea's life force", effect: "PERMANENT: +1 Constitution (max 22 dragons, 20 PCs)", growth: "3d6+3", rarity: "legendary" },
+            { range: [97, 97], name: "Oracle's Reflection", description: "Liquid silver fish mirroring your fate", effect: "Receive true prophecy about immediate quest", growth: "3d6+3", rarity: "legendary" },
+            { range: [98, 98], name: "Kraken's Spite", description: "Storm-charged spawn of the Kraken", effect: "Size Huge 1 hr, +1d10 thunder damage, max HP halved", growth: "3d6+3", rarity: "legendary" },
+            { range: [99, 99], name: "Shard of the Fallen Star", description: "Crystalline fish fallen from heavens", effect: "PERMANENT: Learn one Sorcerer cantrip (CHA-based)", growth: "3d6+3", rarity: "legendary" },
+            { range: [100, 100], name: "Primordial Coelacanth", description: "Living fossil from before the Oath of Peace", effect: "Storm Giant Strength 1 hr, Kentimane knows location", growth: "3d6+3", rarity: "legendary" }
+        ];
+        
+        // Stage thresholds in MONTHS
+        const DRAGON_STAGE_BREAKS = [
+            { name: "Wyrmling", min: 0, max: 18 },
+            { name: "Adolescent Wyrmling", min: 18, max: 48 },
+            { name: "Young Dragon", min: 48, max: 120 },
+            { name: "Young Adult Dragon", min: 120, max: Infinity }
+        ];
+        
+        // Game state
+        let dragons = [];
+        let currentDragon = null;
+        let inventory = [];
+        let catchLog = [];
+        let campaign = {
+            currentISO: null,  // "YYYY-MM-DD"
+            oathISO: null      // "YYYY-MM-DD"
+        };
+        
+        // Initialize
+        function init() {
+            console.log('Initializing Thylean Dragon Fishing app...');
+            loadData();
+            loadDragons();
+            updateInventoryDisplay();
+            updateCatchLog();
+            initCalendarUI();
+            renderDragonPortrait();
+            console.log('Initialization complete');
+        }
+        
+        function rollDice(sides) {
+            return Math.floor(Math.random() * sides) + 1;
+        }
+        
+        function rollDiceNotation(notation) {
+            if (!notation) return 0;
+            const match = notation.match(/(\d+)d(\d+)(?:\+(\d+))?/);
+            if (!match) return 0;
+            
+            const count = parseInt(match[1]);
+            const sides = parseInt(match[2]);
+            const modifier = parseInt(match[3] || 0);
+            
+            let total = modifier;
+            for (let i = 0; i < count; i++) {
+                total += rollDice(sides);
+            }
+            return total;
+        }
+        
+        function convertGrowthToMonths(growth) {
+            if (!growth) return 0;
+            
+            // Handle the growth notation (e.g., "1d4", "1d6+1", "3d6+3")
+            const months = rollDiceNotation(growth);
+            return months;
+        }
+        
+        function getDragonStage(months) {
+            if (months < 18) return "Wyrmling";
+            if (months < 48) return "Adolescent Wyrmling";
+            if (months < 120) return "Young Dragon";
+            return "Young Adult Dragon";
+        }
+        
+        function loadDragons() {
+            const select = document.getElementById('dragonSelect');
+            select.innerHTML = '<option value="">-- Add Dragon --</option>';
+            
+            dragons.forEach(dragon => {
+                const option = document.createElement('option');
+                option.value = dragon.id;
+                option.textContent = `${dragon.name} (${dragon.species})`;
+                select.appendChild(option);
+            });
+            
+            if (currentDragon) {
+                select.value = currentDragon.id;
+                selectDragon(currentDragon.id);
+            }
+        }
+        
+        function selectDragon(dragonId) {
+            console.log('selectDragon called with ID:', dragonId);
+            if (!dragonId) {
+                document.getElementById('newDragonForm').style.display = 'block';
+                document.getElementById('dragonInfo').style.display = 'none';
+                currentDragon = null;
+                console.log('No dragon selected, showing creation form');
+                return;
+            }
+            
+            currentDragon = dragons.find(d => d.id === dragonId);
+            if (currentDragon) {
+                console.log('Selected dragon:', currentDragon);
+                document.getElementById('newDragonForm').style.display = 'none';
+                document.getElementById('dragonInfo').style.display = 'block';
+                updateDragonDisplay();
+                renderDragonPortrait();
+            }
+        }
+        
+        function updateDragonDisplay() {
+            if (!currentDragon) return;
+            
+            const totalMonths = currentDragon.ageMonths || 0;
+            const years = Math.floor(totalMonths / 12);
+            const months = totalMonths % 12;
+            
+            let ageText = '';
+            if (years > 0 && months > 0) {
+                ageText = `${years} ${years === 1 ? 'year' : 'years'}, ${months} ${months === 1 ? 'month' : 'months'}`;
+            } else if (years > 0) {
+                ageText = `${years} ${years === 1 ? 'year' : 'years'}`;
+            } else {
+                ageText = `${months} ${months === 1 ? 'month' : 'months'}`;
+            }
+            
+            document.getElementById('dragonAgeDisplay').textContent = ageText;
+            document.getElementById('dragonStage').textContent = getDragonStage(totalMonths);
+            document.getElementById('dragonSpeciesDisplay').textContent = currentDragon.species;
+            
+            // Update progress meter
+            const stage = DRAGON_STAGE_BREAKS.find(s => totalMonths >= s.min && totalMonths < s.max) || DRAGON_STAGE_BREAKS[DRAGON_STAGE_BREAKS.length - 1];
+            const span = Math.max(1, (isFinite(stage.max) ? (stage.max - stage.min) : 1));
+            const done = Math.max(0, Math.min(span, totalMonths - stage.min));
+            const pct = Math.floor((done / span) * 100);
+            
+            const bar = document.getElementById('stageProgress');
+            const label = document.getElementById('stagePctLabel');
+            if (bar && label) {
+                bar.style.width = pct + '%';
+                label.textContent = isFinite(stage.max) ? (pct + '%') : 'MAX';
+            }
+            
+            const eta = document.getElementById('stageEta');
+            if (eta) {
+                if (isFinite(stage.max)) {
+                    const monthsLeft = Math.max(0, stage.max - totalMonths);
+                    const nextStageName = DRAGON_STAGE_BREAKS.find(s => s.min === stage.max)?.name || "next stage";
+                    eta.textContent = `${monthsLeft} month${monthsLeft === 1 ? '' : 's'} to ${nextStageName}`;
+                } else {
+                    eta.textContent = `At maximum defined stage`;
+                }
+            }
+            renderDragonPortrait();
+        }
+        
+        function createDragon() {
+            console.log('createDragon called');
+            const name = document.getElementById('dragonName').value.trim();
+            const species = document.getElementById('dragonSpecies').value;
+            const ageMonths = parseInt(document.getElementById('dragonAgeInput').value) || 0;
+            
+            console.log(`Creating dragon: ${name}, ${species}, ${ageMonths} months old`);
+            
+            if (!name) {
+                alert('Please name your dragon!');
+                return;
+            }
+            
+            const dragon = {
+                id: Date.now().toString(),
+                name: name,
+                species: species,
+                ageMonths: ageMonths,
+                createdAt: new Date().toISOString()
+            };
+            
+            dragons.push(dragon);
+            console.log('Dragon created:', dragon);
+            saveData();
+            
+            loadDragons();
+            document.getElementById('dragonSelect').value = dragon.id;
+            selectDragon(dragon.id);
+            
+            document.getElementById('dragonName').value = '';
+            document.getElementById('dragonAgeInput').value = '0';
+        }
+        
+        function goFishing() {
+            console.log('goFishing called');
+            if (!currentDragon) {
+                console.log('No dragon selected');
+                alert('Please select or create a dragon first!');
+                return;
+            }
+            
+            const survivalBonus = parseInt(document.getElementById('survivalBonus').value) || 0;
+            const gearBonus = parseInt(document.getElementById('gearBonus').value) || 0;
+            const dc = parseInt(document.getElementById('seaRegion').value);
+            
+            const d20 = rollDice(20);
+            const total = d20 + survivalBonus + gearBonus;
+            console.log(`Fishing roll: d20=${d20} + bonuses=${survivalBonus + gearBonus} = ${total} vs DC ${dc}`);
+            
+            // Show dice roll result - update display div only, preserve dice-scene for future 3D dice
+            const diceDisplay = document.getElementById('diceDisplay');
+            diceDisplay.innerHTML = `
+                <div class="dice-result">
+                    <div>Survival Check (DC ${dc})</div>
+                    <div style="margin-top: 10px;">
+                        <span style="font-size: 2em;">🎲 ${d20}</span>
+                        <span style="font-size: 1.5em;"> + ${survivalBonus + gearBonus} = </span>
+                        <span style="font-size: 2em; color: ${total >= dc ? '#90ee90' : '#ff6b6b'};">${total}</span>
+                    </div>
+                </div>
+            `;
+            
+            let fishCount = 0;
+            if (d20 === 20 || total >= dc + 10) {
+                fishCount = 3;
+            } else if (total >= dc + 5) {
+                fishCount = 2;
+            } else if (total >= dc) {
+                fishCount = 1;
+            }
+            
+            const resultsDiv = document.getElementById('fishResults');
+            resultsDiv.innerHTML = '';
+            
+            if (fishCount === 0) {
+                resultsDiv.innerHTML = '<div class="fish-result mundane">The line goes slack... no catch this time. The sea keeps her secrets.</div>';
+                return;
+            }
+            
+            resultsDiv.innerHTML = `<h3 style="text-align: center; color: #ffd700;">You caught ${fishCount} fish!</h3>`;
+            
+            for (let i = 0; i < fishCount; i++) {
+                setTimeout(() => {
+                    const d100 = rollDice(100);
+                    const fish = getFishByRoll(d100);
+                    displayFish(fish, d100);
+                }, i * 500);
+            }
+        }
+        
+        function getFishByRoll(roll) {
+            return fishTable.find(fish => roll >= fish.range[0] && roll <= fish.range[1]);
+        }
+        
+        function displayFish(fish, roll) {
+            const resultsDiv = document.getElementById('fishResults');
+            const fishDiv = document.createElement('div');
+            fishDiv.className = `fish-result ${fish.rarity}`;
+            
+            const growthMonths = convertGrowthToMonths(fish.growth);
+            
+            let fishIcon = '🐟';
+            if (fish.rarity === 'rare') fishIcon = '🐠';
+            if (fish.rarity === 'legendary') fishIcon = '🌟';
+            
+            fishDiv.innerHTML = `
+                <div class="fish-icon">${fishIcon}</div>
+                <div class="fish-name">${fish.name} <span style="font-size: 0.6em; color: #87ceeb;">(d100: ${roll})</span></div>
+                <div class="fish-description">${fish.description}</div>
+                <div class="fish-effect">
+                    <strong>Effect:</strong> ${fish.effect}
+                </div>
+                <div class="fish-growth">
+                    <strong>Dragon Growth:</strong> ${fish.growth ? `${growthMonths} months` : 'None'}
+                </div>
+                <div style="margin-top: 15px; display: flex; gap: 10px;">
+                    <button class="feed-btn">🐉 Feed to Dragon</button>
+                    <button class="preserve-btn">📦 Preserve</button>
+                </div>
+            `;
+            
+            // Add event listeners to the buttons
+            const feedBtn = fishDiv.querySelector('.feed-btn');
+            feedBtn.addEventListener('click', (event) => {
+                feedToDragon(fish.name, growthMonths, fish.effect, event);
+            });
+            
+            const preserveBtn = fishDiv.querySelector('.preserve-btn');
+            preserveBtn.addEventListener('click', (event) => {
+                preserveFish(fish.name, fish.effect, growthMonths, event);
+            });
+            
+            resultsDiv.appendChild(fishDiv);
+        }
+        
+        function feedToDragon(fishName, growthMonths, effect, event) {
+            console.log(`feedToDragon called: ${fishName}, +${growthMonths} months`);
+            if (!currentDragon) return;
+            
+            currentDragon.ageMonths = (currentDragon.ageMonths || 0) + growthMonths;
+            console.log(`Dragon aged from ${currentDragon.ageMonths - growthMonths} to ${currentDragon.ageMonths} months`);
+            
+            const logEntry = {
+                dragonId: currentDragon.id,
+                dragonName: currentDragon.name,
+                fishName: fishName,
+                effect: effect,
+                growthMonths: growthMonths,
+                timestamp: new Date().toISOString()
+            };
+            
+            catchLog.unshift(logEntry);
+            if (catchLog.length > 20) catchLog.pop();
+            
+            saveData();
+            updateDragonDisplay();
+            renderDragonPortrait();
+            flashDragonGrow();
+            updateCatchLog();
+            
+            // Remove the fish card
+            const fishCard = event.target.closest('.fish-result');
+            fishCard.style.animation = 'slideIn 0.5s ease-out reverse';
+            setTimeout(() => {
+                fishCard.remove();
+            }, 500);
+        }
+        
+        function preserveFish(fishName, effect, growthMonths, event) {
+            const preservedFish = {
+                name: fishName,
+                effect: effect,
+                growthMonths: growthMonths,
+                preservedDate: new Date().toISOString()
+            };
+            
+            inventory.push(preservedFish);
+            saveData();
+            updateInventoryDisplay();
+            
+            alert(`${fishName} has been preserved in the ship's hold!`);
+            
+            // Remove the fish card
+            const fishCard = event.target.closest('.fish-result');
+            fishCard.remove();
+        }
+        
+        function updateInventoryDisplay() {
+            const inventoryDiv = document.getElementById('inventory');
+            
+            if (inventory.length === 0) {
+                inventoryDiv.innerHTML = '<div style="color: #87ceeb; text-align: center; grid-column: 1/-1;"><em>No preserved fish yet...</em></div>';
+                return;
+            }
+            
+            inventoryDiv.innerHTML = '';
+            inventory.forEach((fish, index) => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'inventory-item';
+                itemDiv.innerHTML = `
+                    <div style="font-size: 2em; margin-bottom: 10px;">🐟</div>
+                    <div style="font-weight: bold; color: #ffd700;">${fish.name}</div>
+                    <div style="font-size: 0.9em; color: #90ee90;">+${fish.growthMonths} months</div>
+                `;
+                itemDiv.onclick = () => feedPreservedFish(index);
+                inventoryDiv.appendChild(itemDiv);
+            });
+        }
+        
+        function feedPreservedFish(index) {
+            if (!currentDragon) {
+                alert('Please select a dragon first!');
+                return;
+            }
+            
+            const fish = inventory[index];
+            currentDragon.ageMonths = (currentDragon.ageMonths || 0) + (fish.growthMonths);
+            
+            const logEntry = {
+                dragonId: currentDragon.id,
+                dragonName: currentDragon.name,
+                fishName: fish.name + ' (preserved)',
+                effect: fish.effect,
+                growthMonths: fish.growthMonths,
+                timestamp: new Date().toISOString()
+            };
+            
+            catchLog.unshift(logEntry);
+            if (catchLog.length > 20) catchLog.pop();
+            
+            inventory.splice(index, 1);
+            
+            saveData();
+            updateDragonDisplay();
+            renderDragonPortrait();
+            updateInventoryDisplay();
+            updateCatchLog();
+        }
+        
+        function updateCatchLog() {
+            const logDiv = document.getElementById('catchLog');
+            
+            if (catchLog.length === 0) {
+                logDiv.innerHTML = '<div style="color: #87ceeb; text-align: center;"><em>The waters are calm... for now.</em></div>';
+                return;
+            }
+            
+            logDiv.innerHTML = '';
+            catchLog.forEach(entry => {
+                const entryDiv = document.createElement('div');
+                entryDiv.className = 'log-entry';
+                
+                const date = new Date(entry.timestamp);
+                const timeStr = date.toLocaleTimeString();
+                
+                entryDiv.innerHTML = `
+                    <div class="log-timestamp">${timeStr}</div>
+                    <div><strong style="color: #ffd700;">${entry.dragonName}</strong> consumed ${entry.fishName}</div>
+                    <div style="color: #90ee90;">Growth: +${entry.growthMonths} months</div>
+                `;
+                
+                logDiv.appendChild(entryDiv);
+            });
+        }
+        
+        function saveData() {
+            localStorage.setItem('thyleanDragons', JSON.stringify(dragons));
+            localStorage.setItem('thyleanInventory', JSON.stringify(inventory));
+            localStorage.setItem('thyleanCatchLog', JSON.stringify(catchLog));
+            localStorage.setItem('thyleanCampaign', JSON.stringify(campaign));
+            if (currentDragon) {
+                localStorage.setItem('thyleanCurrentDragon', currentDragon.id);
+            }
+        }
+        
+        function migrateDragonsToMonths() {
+            let changed = false;
+            dragons.forEach(d => {
+                // Legacy: had ageDays only
+                if (typeof d.ageDays === 'number' && (d.ageMonths == null || d.ageMonths === 0)) {
+                    console.log(`Migrating dragon ${d.name} from days to months`);
+                    d.ageMonths = Math.round(d.ageDays / 30); // Convert days to months
+                    delete d.ageDays;
+                    changed = true;
+                }
+                // If both exist, trust ageMonths and drop ageDays
+                if (typeof d.ageMonths === 'number' && typeof d.ageDays === 'number') {
+                    delete d.ageDays;
+                    changed = true;
+                }
+            });
+            if (changed) {
+                console.log('Migration complete, saving updated dragons');
+                localStorage.setItem('thyleanDragons', JSON.stringify(dragons));
+            }
+        }
+
+        function loadData() {
+            console.log('Loading data from localStorage...');
+            dragons = JSON.parse(localStorage.getItem('thyleanDragons') || '[]');
+            inventory = JSON.parse(localStorage.getItem('thyleanInventory') || '[]');
+            catchLog = JSON.parse(localStorage.getItem('thyleanCatchLog') || '[]');
+            const loadedCampaign = JSON.parse(localStorage.getItem('thyleanCampaign') || 'null');
+            if (loadedCampaign) {
+                campaign = loadedCampaign;
+            }
+            
+            console.log(`Loaded ${dragons.length} dragons, ${inventory.length} inventory items, ${catchLog.length} log entries`);
+            
+            // Migrate any old ageDays data to ageMonths
+            migrateDragonsToMonths();
+            
+            const currentDragonId = localStorage.getItem('thyleanCurrentDragon');
+            if (currentDragonId) {
+                currentDragon = dragons.find(d => d.id === currentDragonId);
+                console.log('Current dragon loaded:', currentDragon);
+            }
+        }
+        
+        // Calendar functions
+        function initCalendarUI() {
+            // Set defaults: today and +500 days for Oath of Peace (Odyssey default)
+            const today = new Date();
+            const oath = new Date(today.getTime() + 500 * 24 * 3600 * 1000);
+            
+            if (!campaign.currentISO) {
+                campaign.currentISO = today.toISOString().slice(0, 10);
+            }
+            if (!campaign.oathISO) {
+                campaign.oathISO = oath.toISOString().slice(0, 10);
+            }
+            
+            const campaignDateEl = document.getElementById('campaignDate');
+            const oathDateEl = document.getElementById('oathDate');
+            
+            if (campaignDateEl && oathDateEl) {
+                campaignDateEl.value = campaign.currentISO;
+                oathDateEl.value = campaign.oathISO;
+                updateOathCountdown();
+            }
+        }
+        
+        function saveCalendar() {
+            const campaignDateEl = document.getElementById('campaignDate');
+            const oathDateEl = document.getElementById('oathDate');
+            
+            if (campaignDateEl && oathDateEl) {
+                campaign.currentISO = campaignDateEl.value;
+                campaign.oathISO = oathDateEl.value;
+                saveData();
+                updateOathCountdown();
+                console.log('Calendar saved:', campaign);
+            }
+        }
+        
+        function advanceDays(n) {
+            if (!campaign.currentISO) return;
+            
+            const d = new Date(campaign.currentISO);
+            d.setDate(d.getDate() + n);
+            campaign.currentISO = d.toISOString().slice(0, 10);
+            
+            const campaignDateEl = document.getElementById('campaignDate');
+            if (campaignDateEl) {
+                campaignDateEl.value = campaign.currentISO;
+            }
+            
+            saveData();
+            updateOathCountdown();
+            console.log(`Advanced ${n} day(s) to ${campaign.currentISO}`);
+        }
+        
+        function updateOathCountdown() {
+            const countdownEl = document.getElementById('oathCountdown');
+            if (!countdownEl || !campaign.currentISO || !campaign.oathISO) {
+                return;
+            }
+            
+            const cur = new Date(campaign.currentISO);
+            const tgt = new Date(campaign.oathISO);
+            const ms = tgt - cur;
+            const daysLeft = Math.ceil(ms / (24 * 3600 * 1000));
+            
+            let line;
+            if (daysLeft > 0) {
+                line = `⏰ ${daysLeft} day${daysLeft === 1 ? '' : 's'} until the Oath of Peace ends`;
+            } else if (daysLeft === 0) {
+                line = `⚠️ The Oath of Peace ends TODAY!`;
+            } else {
+                line = `⚔️ ${Math.abs(daysLeft)} day${Math.abs(daysLeft) === 1 ? '' : 's'} since the Oath ended`;
+            }
+            
+            countdownEl.textContent = line;
+        }
+        
+        // Dragon portrait scaling and animation functions
+        function computeDragonScale(totalMonths) {
+            const stage = DRAGON_STAGE_BREAKS.find(s => totalMonths >= s.min && totalMonths < s.max) || DRAGON_STAGE_BREAKS[DRAGON_STAGE_BREAKS.length - 1];
+            const span = isFinite(stage.max) ? (stage.max - stage.min) : 120; // arbitrary span for last stage
+            const t = Math.max(0, Math.min(1, (totalMonths - stage.min) / Math.max(1, span)));
+            
+            // Stage base scales (feel free to tweak for drama)
+            const baseByStage = {
+                \"Wyrmling\": 1.00,
+                \"Adolescent Wyrmling\": 1.12,
+                \"Young Dragon\": 1.22,
+                \"Young Adult Dragon\": 1.30
+            };
+            const base = baseByStage[stage.name] ?? 1.00;
+            // Within-stage growth adds up to +0.10
+            return +(base + t * 0.10).toFixed(3);
+        }
+        
+        // Update the portrait to current size (also updates size text)
+        function renderDragonPortrait() {
+            if (!currentDragon) return;
+            const totalMonths = currentDragon.ageMonths || 0;
+            const scale = computeDragonScale(totalMonths);
+            
+            const g = document.getElementById('dragonGraphic');
+            if (!g) return;
+            
+            // store scale in a CSS var for animation keyframes
+            const wrap = document.getElementById('dragonPortraitWrap');
+            wrap?.style.setProperty('--dragonScale', scale);
+            
+            // Apply scale (compose with idle sway's translate)
+            g.style.transform = `translate(20px,10px) scale(${scale})`;
+            
+            // Label \"Tiny / Small / Medium…\" with % to next stage
+            const stage = DRAGON_STAGE_BREAKS.find(s => totalMonths >= s.min && totalMonths < s.max) || DRAGON_STAGE_BREAKS[DRAGON_STAGE_BREAKS.length - 1];
+            const span = isFinite(stage.max) ? (stage.max - stage.min) : 1;
+            const done = Math.max(0, Math.min(span, totalMonths - stage.min));
+            const pct = isFinite(stage.max) ? Math.floor((done / span) * 100) : 100;
+            
+            const sizeBand = (m => m < 12 ? 'Tiny' : m < 24 ? 'Small' : m < 60 ? 'Medium' : m < 120 ? 'Large' : 'Huge')(totalMonths);
+            const txt = document.getElementById('dragonSizeText');
+            if (txt) txt.textContent = `${sizeBand} (${pct}%)`;
+        }
+        
+        // Flash the grow animation when fed
+        function flashDragonGrow() {
+            const wrap = document.getElementById('dragonPortraitWrap');
+            if (!wrap) return;
+            wrap.classList.remove('grow-anim');
+            // reflow to restart CSS animation
+            void wrap.offsetWidth;
+            wrap.classList.add('grow-anim');
+        }
+        
+        // Event listeners
+        document.getElementById('dragonSelect').addEventListener('change', (e) => {
+            console.log('Dragon selector changed to:', e.target.value);
+            selectDragon(e.target.value);
+        });
+        
+        // Initialize on load
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('DOM loaded, initializing app...');
+            init();
+        });
+    </script>
+</body>
+</html>
