@@ -21,6 +21,6 @@ cp site_src/assets/dragons*.webp docs/assets/ 2>/dev/null || echo "    Warning: 
 # Copy HTML utility apps to docs root
 echo "  Copying HTML utility apps..."
 cp site_src/thylean-fishing-app.html docs/ 2>/dev/null || echo "    Warning: thylean-fishing-app.html not found"
-cp site_src/dnd-los-calculato.html docs/ 2>/dev/null || echo "    Warning: dnd-los-calculato.html not found"
+cp site_src/dnd-los-calculator.html docs/ 2>/dev/null || echo "    Warning: dnd-los-calculato.html not found"
 
 echo "Additional files copied successfully!"
